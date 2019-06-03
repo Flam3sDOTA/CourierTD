@@ -1,0 +1,83 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/play.css" />
+		<include src="file://{resources}/styles/custom_game/team_select.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/team_select.js" />
+	</scripts>
+	<Panel hittest="false" class="TeamSelect">
+		<Panel hittest="false" id="TeamSelectContainer" selectionpos="auto">`
+			<!--Empty space to let the loading screen and chat be visible-->
+			<Panel hittest="false" id="TeamsSelectEmptySpace" />
+
+			<!--Teams List, left hand panel-->
+			<Panel id="TeamsList" >
+				<Panel id="TeamsListGroup" >
+					<Panel id="TeamListHeader">
+						<Label id="TeamListHeaderLabel" text="#custom_game_team_select" />
+						<Image id="TeamListLockedIcon" src="file://{images}/control_icons/lock_small.png" />
+					</Panel>
+					<Panel id="TeamsListRoot" />
+				<Panel id="OptionList">
+                    <Panel id="OptionListGroup">
+                        <Label id="OptionTitle" text="Options" />
+						<Panel id="OptionDivider" />
+						<Panel id="StartGameCountdownTimer">
+							<Image id="TimerBg" src="file://{images}/status_icons/timer_background.psd" />
+							<Image id="TimerRing" src="file://{images}/status_icons/timer_ring.psd" />
+							<Label id="TeamSelectTimer" text="#custom_game_team_select_timer" />
+							<Panel id="TimerLabelBox" >
+								<Label id="TimerLabelAutoStart" text="#custom_game_team_select_auto_start" />
+								<Label id="TimerLabelGameStart" text="#custom_game_team_select_starting" />
+							</Panel>
+						</Panel>
+						<Panel id="OptionDivider2" />
+                        <Panel id="Options">
+							<Button id="AutoAssignButtonNew"  class="untoggled" onactivate="OnAutoAssignPressed()">
+								<Label id="battleLabel" text="Auto Assign" />
+							</Button>
+							<Button id="ShuffleTeamAssignmentButtonNew"  class="untoggled" onactivate="OnShufflePlayersPressed()">
+								<Label id="TradeLabel" text="Shuffle Teams" />
+							</Button>
+						</Panel>
+					</Panel>
+				</Panel>					
+				</Panel>
+			</Panel>
+	
+			<!--Game Info and Unassigned players, right hand panel-->
+			<Panel id="GameAndPlayersRoot">
+				<Panel id="GameInfoPanel" >
+					<!--Game mode and map-->
+					<Panel id="CustomGameModeName">
+						<Label id="GameModeNameLabel" text="#addon_game_name" />
+					</Panel>
+					<Panel id="MapInfo">
+						<Label id="MapInfoLabel" text="#LoadingScreenMapInfo" />
+					</Panel>
+				</Panel>
+				<!--Unassigned players-->
+				<Panel id="UnassignedPlayerPanel" >
+					<Button id="UnassignedPlayersButton" onactivate="OnLeaveTeamPressed()">
+						<Panel id="UnassignedPlayersHeader">
+							<Label text="#custom_game_team_select_unassigned_players" />
+						</Panel>
+						<Panel id="UnassignedPlayersDivider" />
+						<Panel id="UnassignedPlayersContainer" />
+					</Button>						
+				</Panel>
+				<Button id="DiscordButton"  onactivate="ExternalBrowserGoToURL('https://discord.gg/vSYcJRd');" onmouseover="UIShowTextTooltip( Click to join us on Discord!  )"  onmouseout="UIHideTextTooltip()">
+					<Image id="DiscordImage" src="file://{images}/custom_game/game_info/Discord.png" />
+				</Button>
+				<Button id="LockAndStartButton" class="PlayButton" onactivate="OnLockAndStartPressed()">
+					<Label text="#custom_game_team_select_lock_start" />
+				</Button>
+				<Button id="CancelAndUnlockButton" class="PlayButton" onactivate="OnCancelAndUnlockPressed()">
+					<Label text="#custom_game_team_select_cancel_unlock" />
+				</Button>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

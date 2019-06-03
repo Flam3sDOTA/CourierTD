@@ -1,0 +1,105 @@
+.Root
+{
+  width: 100%;
+  height: 100%;
+  
+  margin-top: 60px;
+}
+
+.AvatarsPanel
+{
+	flow-children: down;
+	horizontal-align: right;
+}
+
+
+.PlayerPanel
+{			
+	width: 210px;
+	height: 109px;
+	opacity: 1;
+	background-image: url("file://{images}/custom_game/TopUIcenter.png");
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #25282acc ), color-stop( .5, #25282acc), to( #000000dd ) );
+	transition-duration: .05s;
+	transition-property: background-image;
+	transition-timing-function: ease-in-out;
+	margin-bottom: 5px;
+}
+
+.GrayOut
+{
+	width: 210px;
+	height: 109px;
+	background-color: gray;
+	background-image: url("file://{images}/custom_game/TopUIcenter.png");
+	opacity: 0.8;
+	transition-duration: .05s;
+	transition-property: background-image;
+	transition-timing-function: ease-in-out;
+	margin-bottom: 5px;
+}
+
+.UserAvatar
+{			
+	width: 84px;
+	height: 84px;
+	background-size: 100%;
+	background-image:url('file://{images}/custom_game/user_avatar.png');
+	horizontal-align: left;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+.Username
+{	
+	horizontal-align: center;
+	margin-top: 8px;
+	margin-left: 80px;
+}
+Label {
+	color: white;
+	font-size: 25px;
+	text-shadow: 2px 2px 2px black;
+	text-overflow: clip;
+}
+
+.HeroName
+{	
+	horizontal-align: center;
+	color: orange;
+	font-size: 24px;
+	text-shadow: 2px 2px 2px black;
+	text-overflow: clip;
+	margin-top: 45px;
+	margin-left: 85px;
+}
+
+.PlayerHealth
+{	
+  width: 210px;
+  height: 25px;  
+  margin-top: 84px;
+  margin-left:0px;
+  border-style: solid;
+  border-width: 0.7px;
+  border-radius: 0px;
+  border-color: #25282acc;
+}
+
+.PlayerHealth .ProgressBarLeft
+{
+  background-color: #339933;
+  background-color: gradient( linear, 0% 0%, 0% 100%, from( #425d25 ), color-stop( 0.2, #5BA539 ), color-stop( .5, #4D9030), to( #425d25) );
+}
+
+.HealthPercentage
+{
+	margin-top: 83px;
+	font-size: 22px;
+	horizontal-align: right;
+}
+
+.Invisible
+{
+	opacity: 0;
+}

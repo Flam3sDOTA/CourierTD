@@ -1,0 +1,1888 @@
+.Root {
+    width: 100%;
+    height: 100%;
+}
+
+#ErrorPanel {
+	width: 1000px;
+	height: 100px;
+	horizontal-align: center;
+	vertical-align: bottom;
+	margin-bottom: 300px;
+	opacity: 0;
+	transform: scaleX(1.5) scaleY(1.5);
+	transition-property: transform, opacity;
+	transition-duration: 0.3s;
+	visibility: collapse;
+}
+.error_appeared #ErrorPanel {
+	opacity: 1;
+	transform: scaleX(1) scaleY(1);
+	visibility: visible;
+}
+#ErrorMessage {
+    horizontal-align: center;
+    vertical-align: middle;
+    font-size: 40px;
+    opacity: 1;
+    text-align: center;
+    color: #CF350C;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+/*
+.DevModeInfoPanel {
+	width: 1000px;
+	height: 100px;
+	horizontal-align: center;
+	vertical-align: top;
+	margin-top: 75px;
+}
+.DevModeInfo {
+	horizontal-align: center;
+	vertical-align: top;
+	font-size: 36px;
+	text-align: center;
+	color: #FF0000;
+	text-shadow: 2px 2px 2px #000000;
+	visibility: collapse;
+}
+*/
+
+.TopLeftMenu {
+    width: 775px;
+    height: 149px;
+	margin-top: -30px;
+	margin-left: -240px;
+	background-image: url("file://{images}/custom_game/TopUILeft.png");
+	background-size: 100%;
+	opacity: 1;
+	transition-duration: .05s;
+	transition-property: background-image;
+	transition-timing-function: ease-in-out;
+}
+
+.TopLeftMenuButton {
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	margin-bottom: 0px;
+	opacity: 0.7;
+	wash-color: #CCDDFF;
+	transition-property: opacity;
+	transition-duration: 0.2s;
+	tooltip-position: bottom;
+}
+
+#NewDashboardButton {
+	background-image: url("s2r://panorama/images/control_icons/return_to_game_png.vtex");
+	background-size: 100%;
+	margin-top: 42px;
+	margin-left: 265px;
+}
+#NewScoreboardButton {
+	background-image: url("s2r://panorama/images/control_icons/hamburger_png.vtex");
+	background-size: 25px;
+	margin-top: 43px;
+	margin-left: 305px;
+}
+#LeaderboardButton {
+	background-image: url("s2r://panorama/images/hud/reborn/icon_combat_log_psd.vtex");
+	background-size: 26px;
+	margin-top: 43px;
+	margin-left: 345px;
+}
+#StoreButton {
+	background-image: url("s2r://panorama/images/hud/reborn/icon_courier_dead_psd.vtex");
+	background-size: 26px;
+	margin-top: 43px;
+	margin-left: 385px;
+	wash-color: white;
+}
+#NewSettingsButton {
+	background-image: url("s2r://panorama/images/control_icons/gear_png.vtex");
+	background-size: 25px;
+	margin-top: 44px;
+	margin-left: 425px;
+}
+
+.Discord,
+.Reddit,
+.Steam {
+	horizontal-align: center;
+	opacity: 1;
+	transition-duration: 0.0s;
+	font-size: 17px;
+	text-decoration: underline;
+	color: white;
+	margin-top: 45px;
+	tooltip-position: bottom;
+}
+.Discord {
+	margin-left: 250px;	
+}
+.Reddit {
+	margin-left: 370px;
+}
+.Steam {
+	margin-left: 510px;
+}
+
+#NewDashboardButton:hover,
+#LeaderboardButton:hover,
+#NewScoreboardButton:hover,
+#NewSettingsButton:hover,
+#StoreButton:hover { opacity: 1.0; }
+
+#NewDashboardButton:active,
+#LeaderboardButton:active,
+#NewScoreboardButton:active,
+#NewSettingsButton:active,
+#StoreButton:active { opacity: 1.0; }
+
+
+.Discord:hover,
+.Reddit:hover,
+.Steam:hover { opacity: 1.5; }
+
+.Divider {
+	width: 3px;
+    height: 30px;
+	opacity: 1.3;
+	background-color: gray;
+}
+
+#Divider {
+	horizontal-align: left;
+	margin-top: 17px;
+	margin-left: 155px;
+}
+#Divider2 {
+	horizontal-align: center;
+	margin-top: 42px;
+	margin-left: 160px;
+}
+#Divider3 {
+	horizontal-align: center;
+	margin-top: 17px;
+	margin-left: 265px;
+}
+#Divider4 {
+    height: 35px;
+	horizontal-align: left;
+	margin-top: 15px;
+	margin-left: 320px;
+}
+#Divider5 {
+    horizontal-align: left;
+	margin-top: 17px;
+	margin-left: 112px;
+}
+#Divider6 {
+    horizontal-align: left;
+	margin-top: 17px;
+	margin-left: 200px;
+}
+#Divider7 {
+    horizontal-align: left;
+	margin-top: 17px;
+	margin-left: 285px;
+}
+#Divider8 {
+    horizontal-align: left;
+	margin-top: 17px;
+	margin-left: 465px;
+}
+
+.MainCenter {
+	width: 775px;
+    height: 159px;
+	horizontal-align: center;
+	margin-top: -30px;
+	margin-left: 150px;
+	background-image: url("file://{images}/custom_game/TopUICenternew.png");
+	background-size: 100%;
+	opacity: 1;
+	transition-duration: .05s;
+	transition-property: background-image;
+	transition-timing-function: ease-in-out;
+}
+
+
+.MainRight {
+    width: 775px;
+    height: 149px;
+	margin-top: -30px;
+	background-image: url("file://{images}/custom_game/topUIRight.png");
+	background-size: 100%;
+	opacity: 1;
+	transition-duration: .05s;
+	transition-property: background-image;
+	transition-timing-function: ease-in-out;
+	horizontal-align: right;
+	margin-right: -61px;
+	z-index: 1;
+}
+
+
+#RoundNumber {
+	margin-top: 30px;
+	margin-left: 90px;
+    horizontal-align: left;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 30px;
+	color: gradient( linear, 0% 0%, 0% 100%, from( #c88423 ), color-stop( 0.25, #c88423 ), color-stop( 0.5, #fffb84 ), color-stop( 0.75, #c88423 ), to( #9a6717 ) );
+    text-overflow: clip;
+}
+
+#RoundNumberLabel {
+	margin-top: 55px;
+	margin-left: 115px;
+    horizontal-align: left;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 32px;
+	color: gradient( linear, 0% 0%, 0% 100%, from( #c88423 ), color-stop( 0.25, #c88423 ), color-stop( 0.5, #fffb84 ), color-stop( 0.75, #c88423 ), to( #9a6717 ) );
+    text-overflow: clip;
+}
+
+.RoundName {
+	margin-top: 35px;
+	margin-left: 230px;
+    horizontal-align: left;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 18px;
+	color: #ffffee;
+	border-color: black;
+	font-weight: bold;
+    text-overflow: clip;
+	text-shadow: 2px 2px 2px black;
+}
+
+.RoundNameLabel {
+	margin-top: 35px;
+	margin-left: 315px;
+    horizontal-align: left;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 18px;
+	color: greenyellow;
+	border-color: black;
+	font-weight: bold;
+    text-overflow: clip;
+	text-shadow: 2px 2px 2px black;
+}
+
+.UnitCount {
+	margin-top: 60px;
+	margin-left: 230px;
+    horizontal-align: left;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 18px;
+	color: #ffffee;
+	border-color: black;
+	font-weight: bold;
+    text-overflow: clip;
+	text-shadow: 2px 2px 2px black;
+}
+
+.UnitCountLabel {
+	margin-top: 60px;
+	margin-left: 322px;
+    horizontal-align: left;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 18px;
+	color: greenyellow;
+	border-color: black;
+	font-weight: bold;
+    text-overflow: clip;
+	text-shadow: 2px 2px 2px black;
+}
+
+.NextRound {
+	margin-top: 45px;
+	margin-left: 439px;
+    horizontal-align: left;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 20px;
+	color: #ffffee;
+	border-color: black;
+	font-weight: bold;
+    text-overflow: clip;
+	text-shadow: 2px 2px 2px black;
+}
+
+.NextRoundLabel {
+	margin-top: 46px;
+	margin-left: 622px;
+    horizontal-align: left;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 20px;
+	color: greenyellow;
+	border-color: black;
+	font-weight: bold;
+    text-overflow: clip;
+	text-shadow: 2px 2px 2px black;
+}
+
+#TimeTitleLabel {
+	horizontal-align: left;
+	vertical-align: center;
+	color: orange;
+	font-size: 20px;
+	text-shadow: 2px 2px 2px black;
+	text-overflow: clip;
+	margin-top: 108px;
+	margin-left: 330px;	
+}
+
+#Timer {
+	horizontal-align: left;
+	vertical-align: center;
+	color: white;
+	font-size: 20px;
+	text-shadow: 2px 2px 2px black;
+	text-overflow: clip;
+	margin-top: 115px;
+	margin-left: 357px;		
+	tooltip-position: bottom;
+}
+
+#StoreRoot {
+	width: 1500px;
+	height: 1500px;
+	align: center center;
+	visibility: collapse;
+}
+
+.StoreHeader {
+	align: center top;
+	margin-top: 120px;
+	width:1300px;
+	height:40px;
+	background-image: url("s2r://panorama/images/hud/reborn/bg_scoreboard_psd.vtex");
+	background-size: cover;
+	background-color: #000000da;
+	transition-duration: 1s;
+	transition-property: background-image;
+	transition-timing-function: ease-in-out;
+	opacity: 2;
+	border-style: solid;
+    border-width: 1px;
+    border-color: #444444;
+	border-radius: 7px;
+}
+
+.StoreMain {
+	align: center top;
+	width:1300px;
+	height:700px;
+	margin-top: 160px;
+	opacity: 2;
+    background-image: url("s2r://panorama/images/backgrounds/gallery_background_png.vtex");
+	box-shadow: fill #00000066 -4px -4px 8px 8px;
+	border-style: solid;
+    border-width: 1px;
+    border-color: #444444;
+	border-radius: 7px;
+}
+
+.StoreTitle {
+	vertical-align: top;
+	horizontal-align: center;
+	color: white;
+	font-size: 40px;
+	text-shadow: 2px 2px 2px black;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-overflow: clip;
+	margin-top: 5px;
+	text-decoration: underline;
+}
+
+.StoreRoot {
+    width: 400px;
+    height: 300px;
+	margin-left: 20px;
+	background-color: #111111AA;
+	border-style: solid;
+    border-width: 1px;
+    border-color: #444444;
+	flow-children: down;
+	border-radius: 7px;
+}
+
+.StoreRoot2 {
+    width: 400px;
+    height: 300px;
+	margin-left: 450px;
+	background-color: #111111AA;
+	border-style: solid;
+    border-width: 1px;
+    border-color: #444444;
+	flow-children: down;
+	border-radius: 7px;
+}
+
+.StoreRoot3 {
+    width: 400px;
+    height: 670px;
+	margin-top: 15px;
+	margin-left: 880px;
+	background-color: #111111AA;
+	border-style: solid;
+    border-width: 1px;
+    border-color: #444444;
+	flow-children: down;
+	border-radius: 7px;
+}
+
+.StoreRoot4 {
+    width: 400px;
+    height: 300px;
+	margin-top: 310px;
+	margin-left: 20px;
+	background-color: #111111AA;
+	border-style: solid;
+    border-width: 1px;
+    border-color: #444444;
+	flow-children: down;
+	border-radius: 7px;
+}
+
+.StoreRoot5 {
+    width: 400px;
+    height: 300px;
+	margin-top: 310px;
+	margin-left: 450px;
+	background-color: #111111AA;
+	border-style: solid;
+    border-width: 1px;
+    border-color: #444444;
+	flow-children: down;
+	border-radius: 7px;
+}
+
+.StoreRoot6 {
+    width: 400px;
+    height: 300px;
+	margin-top: 620px;
+	margin-left: 20px;
+	background-color: #111111AA;
+	border-style: solid;
+    border-width: 1px;
+    border-color: #444444;
+	flow-children: down;
+	border-radius: 7px;
+}
+
+.StoreRoot7 {
+    width: 400px;
+    height: 300px;
+	margin-top: 620px;
+	margin-left: 450px;
+	background-color: #111111AA;
+	border-style: solid;
+    border-width: 1px;
+    border-color: #444444;
+	flow-children: down;
+	border-radius: 7px;
+}
+
+.CurrencyRoot {
+    width: 400px;
+    height: 100px;
+	margin-top: 15px;
+	margin-left: 20px;
+	background-color: #111111AA;
+	border-style: solid;
+    border-width: 1px;
+    border-color: #444444;
+	flow-children: down;
+	border-radius: 7px;
+}
+
+.StoreSellRoot {
+	width: 880px;
+	margin-top: 120px;
+	overflow: squish scroll;
+}
+
+.TokenLabel {
+	font-size: 35px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	min-width: 60px;
+	margin-left: 80px;
+	margin-top: -50px;
+	width: 100%;
+	letter-spacing: 1px;
+	text-overflow: shrink;
+	text-shadow: 0px 1px 0px 3.0 #00000077;
+	transition-property: color;
+	transition-duration: .1811s;
+	transition-timing-function: ease-in-out;
+}
+
+.TokenIcon {
+	background-image:url('file://{images}/custom_game/token.tga');
+	background-size: 100% 100%;
+	width: 15%;
+	height: 100%;
+	margin-bottom: 0px;
+	margin-left: 130px;
+}
+
+
+
+.CategoryBoxStore {
+	align: left top;
+	width: 400px;
+	height: 35px;
+	background-image: url("s2r://panorama/images/hud/reborn/bg_scoreboard_psd.vtex");
+	background-size: cover;
+	background-color: #000000da;
+	border-style: solid;
+    border-width: 1px;
+    border-color: #444444;
+}
+
+
+
+.FoodLimitBackground {
+    width: 100%;
+    height: 100%;
+	tooltip-position: top;
+}
+
+.FoodLimitButton {
+    width: 120px;
+    height: 36px;
+	background-image: url("s2r://panorama/images/hud/reborn/shop_launcher_button_psd.vtex");
+	background-size: 100% 100%;
+	brightness: 1;
+	z-index: -1;
+	box-shadow: #000000aa 0px 0px 2px 2px;
+	align: right bottom;
+	margin-bottom: 12px;
+	margin-right: 5px;
+	transition-property: background-image;
+	transition-duration: .18s;
+	transition-timing-function: ease-in-out;
+	tooltip-position: top;
+}
+
+.FoodLimitButton:hover {
+	opacity: 1.5;
+}
+
+.FoodLimitLabel {
+	font-size: 22px;
+	font-weight: bold;
+	color: white;
+	text-align: right;
+	horizontal-align: right;
+	margin-top: 4px;
+	min-width: 60px;
+	vertical-align: center;
+	margin-right: 40px;
+	width: 100%;
+	letter-spacing: 1px;
+	text-overflow: shrink;
+	text-shadow: 0px 1px 0px 3.0 #00000077;
+	transition-property: color;
+	transition-duration: .1811s;
+	transition-timing-function: ease-in-out;
+}
+
+.FoodIcon {
+	background-image:url('file://{images}/custom_game/food_icon.png');
+	background-size: 100% 100%;
+	width: 26px;
+	height: 26px;
+	horizontal-align: right;
+	margin-right: 8px;
+	vertical-align: center;
+}
+
+
+
+#LeaderboardsRoot {
+	width: 1500px;
+	height: 1500px;
+	align: center center;
+	visibility: collapse;
+}
+
+.LeaderboardsHeader {
+	align: center top;
+	margin-top: 120px;
+	width:1300px;
+	height:40px;
+	background-image: url("s2r://panorama/images/hud/reborn/bg_scoreboard_psd.vtex");
+	background-size: cover;
+	background-color: #000000da;
+	transition-duration: 1s;
+	transition-property: background-image;
+	transition-timing-function: ease-in-out;
+	opacity: 2;
+	border-style: solid;
+    border-width: 1px;
+    border-color: #444444;
+	border-radius: 7px;
+}
+
+#CloseRoot {
+	width: 32px;
+	height: 32px;
+	wash-color: white;
+	background-image:url('file://{images}/custom_game/close.png');
+	background-size: 24px 24px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	margin: 4px;
+	transition-property: wash-color, pre-transform-scale2d, background-color;
+	transition-duration: 0.1s;
+	transition-timing-function: ease-in;
+	align: right top;
+}
+
+#CloseRoot:hover {
+	transform: scale3d( 1.03, 1.03, 1.03);
+	background-color: #111111AA;
+	border-radius: 5px;
+}
+
+.StatisticsLabel {
+	align: center center;
+	font-size: 30px;
+	color: white;
+	text-transform: uppercase;
+}
+
+.LeaderboardsMain {
+	align: center top;
+	width:1300px;
+	height:700px;
+	margin-top: 160px;
+	opacity: 2;
+    background-image: url("s2r://panorama/images/backgrounds/gallery_background_png.vtex");
+	box-shadow: fill #00000066 -4px -4px 8px 8px;
+	border-style: solid;
+    border-width: 1px;
+    border-color: #444444;
+	border-radius: 7px;
+}
+
+.LifetimeStatisticRoot {
+    width: 400px;
+    height: 670px;
+	margin-top: 15px;
+	margin-left: 10px;
+	background-color: #111111AA;
+	border-style: solid;
+    border-width: 1px;
+    border-color: #444444;
+	flow-children: down;
+	border-radius: 7px;
+}
+
+.LeftPanel {
+	margin-top: 26px;
+    horizontal-align: left;
+	margin-left: 10px;
+}
+
+.RightPanel {
+	margin-top: 26px;
+    horizontal-align: right;
+	margin-right: 20px;
+}
+
+.RowDividerNEW {
+	background-color: #1c3F3d85;
+	width: 100%;
+	height: 33px;
+	margin-top: 26px;
+}
+
+.RowDividerNEW2 {
+	background-color: #1c3F3d85;
+	width: 100%;
+	height: 33px;
+	margin-top: 96px;
+}
+
+.RowDividerNEW3 {
+	background-color: #1c3F3d85;
+	width: 100%;
+	height: 33px;
+	margin-top: 165px;
+}
+
+.RowDividerNEW4 {
+	background-color: #1c3F3d85;
+	width: 100%;
+	height: 33px;
+	margin-top: 234px;
+}
+
+.RowDividerNEW5 {
+	background-color: #1c3F3d85;
+	width: 100%;
+	height: 33px;
+	margin-top: 305px;
+}
+
+.RowDividerNEW6 {
+	background-color: #1c3F3d85;
+	width: 100%;
+	height: 33px;
+	margin-top: 375px;
+}
+
+.RowDividerNEW7 {
+	background-color: #1c3F3d85;
+	width: 100%;
+	height: 33px;
+	margin-top: 445px;
+}
+
+.RowDividerNEW8 {
+	background-color: #1c3F3d85;
+	width: 100%;
+	height: 33px;
+	margin-top: 515px;
+}
+
+.RowDividerNEW9 {
+	background-color: #1c3F3d85;
+	width: 100%;
+	height: 33px;
+	margin-top: 585px;
+}
+
+.RankingRoot {
+    width: 400px;
+    height: 670px;
+	margin-top: 15px;
+	margin-left: 450px;
+	background-color: #111111AA;
+	border-style: solid;
+    border-width: 1px;
+    border-color: #444444;
+	flow-children: down;
+	border-radius: 7px;
+}
+
+.RowDivider {
+	background-color: #1c333d85;
+	width: 100%;
+	height: 33px;
+	margin-top: 26px;
+}
+
+.RowDivider2 {
+	background-color: #1c333d85;
+	width: 100%;
+	height: 33px;
+	margin-top: 96px;
+}
+
+.RowDivider3 {
+	background-color: #1c333d85;
+	width: 100%;
+	height: 33px;
+	margin-top: 165px;
+}
+
+.RowDivider4 {
+	background-color: #1c333d85;
+	width: 100%;
+	height: 33px;
+	margin-top: 234px;
+}
+
+.RowDivider5 {
+	background-color: #1c333d85;
+	width: 100%;
+	height: 33px;
+	margin-top: 305px;
+}
+
+.RowDivider6 {
+	background-color: #1c333d85;
+	width: 100%;
+	height: 33px;
+	margin-top: 375px;
+}
+
+.RowDivider7 {
+	background-color: #1c333d85;
+	width: 100%;
+	height: 33px;
+	margin-top: 445px;
+}
+
+.RowDivider8 {
+	background-color: #1c333d85;
+	width: 100%;
+	height: 33px;
+	margin-top: 515px;
+}
+
+.RowDivider9 {
+	background-color: #1c333d85;
+	width: 100%;
+	height: 33px;
+	margin-top: 585px;
+}
+
+.RowDividerHistory1 {
+	background-color: #1a355585;
+	width: 100%;
+	height: 33px;
+	margin-top: 26px;
+}
+
+.RowDividerHistory2 {
+	background-color: #1a355585;
+	width: 100%;
+	height: 33px;
+	margin-top: 96px;
+}
+
+.RowDividerHistory3 {
+	background-color: #1a355585;
+	width: 100%;
+	height: 33px;
+	margin-top: 165px;
+}
+
+.RowDividerHistory4 {
+	background-color: #1a355585;
+	width: 100%;
+	height: 33px;
+	margin-top: 234px;
+}
+
+#RankingLabels {
+    width: 100%;
+    margin: 5px;
+}
+
+#RankingList {
+    flow-children: down;
+    max-height: 450px;
+    overflow: scroll;
+}
+
+.RankingAttribute {
+    width: 400px;
+}
+
+.RankingRank {
+    horizontal-align: left;
+}
+
+.RankingValue {
+    horizontal-align: middle;
+}
+
+.RankingName {
+    horizontal-align: right;
+}
+
+.Ranking1 {
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+.Ranking2 {
+	padding-top: 40px;
+	padding-bottom: 10px;
+}
+
+.Ranking3 {
+	padding-top: 75px;
+	padding-bottom: 10px;
+}
+
+.Ranking4 {
+	padding-top: 110px;
+	padding-bottom: 10px;
+}
+
+.Ranking5 {
+	padding-top: 145px;
+	padding-bottom: 10px;
+}
+
+.Ranking6 {
+	padding-top: 180px;
+	padding-bottom: 10px;
+}
+
+.Ranking7 {
+	padding-top: 215px;
+	padding-bottom: 10px;
+}
+
+.Ranking8 {
+	padding-top: 250px;
+	padding-bottom: 10px;
+}
+
+.Ranking9 {
+	padding-top: 285px;
+	padding-bottom: 10px;
+}
+
+.Ranking10 {
+	padding-top: 320px;
+	padding-bottom: 10px;
+}
+
+.Ranking11 {
+	padding-top: 355px;
+	padding-bottom: 10px;
+}
+
+.Ranking12 {
+	padding-top: 390px;
+	padding-bottom: 10px;
+}
+
+.Ranking13 {
+	padding-top: 425px;
+	padding-bottom: 10px;
+}
+
+.Ranking14 {
+	padding-top: 460px;
+	padding-bottom: 10px;
+}
+
+.Ranking15 {
+	padding-top: 495px;
+	padding-bottom: 10px;
+}
+
+#RankingLocalRank {
+    horizontal-align: left;
+	padding-left: 13px;
+	color: white;
+}
+
+#RankingLocalValue {
+    horizontal-align: center;
+	color: white;
+}
+
+.RankingRankTop10 {
+    horizontal-align: left;
+	padding-left: 8px;
+	padding-top: 26px;
+	color: white;
+}
+
+.RankingRankTop10_1 {
+    horizontal-align: left;
+	padding-left: 8px;
+	padding-top: 26px;
+	color: gold;
+}
+
+.RankingRankTop10_2 {
+    horizontal-align: left;
+	padding-left: 8px;
+	padding-top: 26px;
+	color: #5D6D7E;
+}
+
+.RankingRankTop10_3 {
+    horizontal-align: left;
+	padding-left: 8px;
+	padding-top: 26px;
+	color: #cd7f32;
+}
+
+.RankingValueTOP10 {
+	padding-left: 175px;
+	padding-top: 26px;
+	color: white;
+}
+
+.RankingValueTOP10_1 {
+	padding-left: 175px;
+	padding-top: 26px;
+	color: gold;
+}
+
+.RankingValueTOP10_2 {
+	padding-left: 175px;
+	padding-top: 26px;
+	color: #5D6D7E;
+}
+
+.RankingValueTOP10_3 {
+	padding-left: 175px;
+	padding-top: 26px;
+	color: #cd7f32;
+}
+
+
+
+.AvatarImage {
+	margin-left: 360px;
+	margin-top: 23px;
+	background-image: url("file://{images}/custom_game/user_avatar.png");
+	background-size: 100%;
+	width: 28px;
+	height: 28px;
+}
+
+.AvatarText {
+    color: white;
+    font-size: 16px;
+	horizontal-align: right;
+	margin-top: 27px;
+	margin-right: 35px;
+}
+
+.AvatarText1 {
+    color: gold;
+    font-size: 16px;
+	horizontal-align: right;
+	margin-top: 27px;
+	margin-right: 35px;
+}
+
+.AvatarText2 {
+    color: #5D6D7E;
+    font-size: 16px;
+	horizontal-align: right;
+	margin-top: 27px;
+	margin-right: 35px;
+}
+
+.AvatarText3 {
+    color: #cd7f32;
+    font-size: 16px;
+	horizontal-align: right;
+	margin-top: 27px;
+	margin-right: 35px;
+}
+
+.AvatarText4 {
+    color: white;
+    font-size: 16px;
+	horizontal-align: right;
+	margin-top: 27px;
+	margin-right: 35px;
+}
+
+#RankingLocal {
+    width: 100%;
+    margin-top: -55px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-top: 1px solid #AAAAAA;
+	padding-top: 23px;
+    padding-left: -5px;
+    padding-right: -5px;
+}
+
+#Name {
+    margin-right: 40px;
+    max-width: 100px;
+    overflow: scroll;
+}
+
+DOTAAvatarImage {
+    width: 28px;
+    height: 28px;
+    vertical-align: top;
+    horizontal-align: right;
+	border-color: gray;
+	border-style: solid;
+	border-width: 0.7px;
+}
+
+.StatisticsText {
+    color: white;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.LocalName {
+    color: white;
+    margin-right: 40px;
+    font-size: 16px;
+}
+
+#Avatar {
+    margin-right: 5px;
+	margin-top: -6px;
+	width: 30px;
+	height: 30px;
+}
+
+
+
+.MatchHistoryRoot {
+    width: 400px;
+    height: 350px;
+	margin-top: 15px;
+	margin-left: 890px;
+	background-color: #111111AA;
+	border-style: solid;
+    border-width: 1px;
+    border-color: #444444;
+	flow-children: down;
+	border-radius: 7px;
+}
+
+.Date {
+    horizontal-align: left;
+}
+
+.Result {
+    horizontal-align: middle;
+}
+
+.Duration {
+    horizontal-align: right;
+}
+
+#matchduration1 {
+	margin-top: 26px;
+    horizontal-align: right;
+	margin-right: 20px;
+}
+
+#matchduration2 {
+	margin-top: 26px;
+    horizontal-align: right;
+	margin-right: 20px;
+}
+
+#matchduration3 {
+	margin-top: 26px;
+    horizontal-align: right;
+	margin-right: 17px;
+}
+
+#matchduration4 {
+	margin-top: 26px;
+    horizontal-align: right;
+	margin-right: 20px;
+}
+
+#matchduration5 {
+	margin-top: 26px;
+    horizontal-align: right;
+	margin-right: 17px;
+}
+
+#matchduration6 {
+	margin-top: 26px;
+    horizontal-align: right;
+	margin-right: 20px;
+}
+
+#matchduration7 {
+	margin-top: 26px;
+    horizontal-align: right;
+	margin-right: 17px;
+}
+
+#matchduration8 {
+	margin-top: 26px;
+    horizontal-align: right;
+	margin-right: 15px;
+}
+
+.MatchWin {
+	padding-left: 175px;
+	padding-top: 26px;
+	color: green;
+}
+
+.MatchLose {
+	padding-left: 173px;
+	padding-top: 26px;
+	color: red;
+}
+
+.history1 {
+	width: 100%;
+	padding-top: 6px;
+	padding-bottom: 10px;
+}
+
+.history2 {
+	width: 100%;
+	padding-top: 42px;
+	padding-bottom: 10px;
+}
+
+.history3 {
+	width: 100%;
+	padding-top: 77px;
+	padding-bottom: 10px;
+}
+
+.history4 {
+	width: 100%;
+	padding-top: 111px;
+	padding-bottom: 10px;
+}
+
+.history5 {
+	width: 100%;
+	padding-top: 145px;
+	padding-bottom: 10px;
+}
+
+.history6 {
+	width: 100%;
+	padding-top: 180px;
+	padding-bottom: 10px;
+}
+
+.history7 {
+	width: 100%;
+	padding-top: 215px;
+	padding-bottom: 10px;
+}
+
+.history8 {
+	width: 100%;
+	padding-top: 250px;
+	padding-bottom: 10px;
+}
+
+.history9 {
+	width: 100%;
+	padding-top: 285px;
+	padding-bottom: 10px;
+}
+
+.history10 {
+	width: 100%;
+	padding-top: 320px;
+	padding-bottom: 10px;
+}
+
+.history11 {
+	width: 100%;
+	padding-top: 355px;
+	padding-bottom: 10px;
+}
+
+.history12 {
+	width: 100%;
+	padding-top: 390px;
+	padding-bottom: 10px;
+}
+
+.history13 {
+	width: 100%;
+	padding-top: 425px;
+	padding-bottom: 10px;
+}
+
+.history14 {
+	width: 100%;
+	padding-top: 460px;
+	padding-bottom: 10px;
+}
+
+.history15 {
+	width: 100%;
+	padding-top: 495px;
+	padding-bottom: 10px;
+}
+
+.history16 {
+	width: 100%;
+	padding-top: 530px;
+	padding-bottom: 10px;
+}
+
+.history17 {
+	width: 100%;
+	padding-top: 565px;
+	padding-bottom: 10px;
+}
+
+.LevelRoot {
+    width: 400px;
+    height: 265px;
+	margin-top: 420px;
+	margin-left: 890px;
+	background-color: #111111AA;
+	border-style: solid;
+    border-width: 1px;
+    border-color: #444444;
+	flow-children: down;
+	border-radius: 7px;
+}
+
+#LevelBadgeBG {
+	height: 150px;
+	width: 150px;
+	z-index: 499;
+	align: center center;
+	background-size: contain;
+	margin-top: -20px;
+}
+
+#ProfileLevel Label {
+	color: white;
+	vertical-align: bottom;
+	horizontal-align: center;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	text-shadow: 2px 2px 2px 1.0 #000000;
+}
+
+#LevelProgress {
+	horizontal-align: center;
+	box-shadow: inset #1f2020 2px 2px 4px 4px;
+	background-color: #464748;
+	border: 1px solid #3d4746;
+	height: 32px;
+	padding: 4px;
+	width: 90%;
+	margin-top: 160px;
+}
+
+.ProgressBar {
+	width: 320px;
+	height: 22px;
+	border: 3px solid black;
+	border-radius: 2px;
+	background-color: #000000ff;
+}
+
+#LevelProgress .ProgressBarLeft {
+	background-color: gradient( linear, 0% 0%, 100% 0%, from( #222222FF ), to( #444f52FF ) );
+	border-radius: 2px;
+	
+	width: 50px;
+	transition-property: width;
+	transition-duration: 1.0s;
+	transition-timing-function: linear;
+}
+
+#LevelProgress Label {
+	horizontal-align: center;
+	vertical-align: center;
+	font-size: 16px;
+	color: white;
+	margin-top: 2px;
+}
+
+.CategoryBox {
+	align: left top;
+	width: 400px;
+	height: 35px;
+	background-image: url("s2r://panorama/images/hud/reborn/bg_scoreboard_psd.vtex");
+	background-size: cover;
+	background-color: #000000da;
+	border-style: solid;
+    border-width: 1px;
+    border-color: #444444;
+}
+
+.CategoryBoxLabel {
+	align: center center;
+	font-size: 25px;
+	color: white;
+	text-transform: uppercase;
+}
+
+.StoreLabel {
+	align: center center;
+	margin-left: 25px;
+	margin-top: 5px;
+	font-size: 30px;
+	color: white;
+	text-transform: uppercase;
+}
+
+
+
+/* DEV TOOLS */
+.CustomHudRoot {
+    width: 100%;
+	height: 100%;
+	visibility: collapse;
+}
+
+.DemoHud {
+    flow-children: right;
+    height: 100%;
+    width: 100%;
+}
+
+.ControlPanel {
+    transform: translateX( 0% ) translateY( -100px );
+    vertical-align: middle;
+    horizontal-align: left;
+    padding: 4px;
+    padding-left: 0px;
+	padding-top: 150px;
+
+    transition-property: background-color, transform;
+	transition-duration: 0.35s;
+	transition-timing-function: ease-in-out;
+}
+
+.HUDFlipped .ControlPanel {
+    horizontal-align: right;
+    flow-children: left;
+    transform: translateX( 0% ) translateY( -100px );
+    margin-right: -4px;
+}
+
+.ControlPanelContainer {
+    flow-children: right;
+    vertical-align: middle;
+    horizontal-align: left;
+    height: 760px;
+    width: 160px;
+    font-size: 16;
+    background-color: #181818dd;
+    border: 2px solid #222222;
+   	box-shadow: #000000aa -4px -4px 8px 8px;
+}
+
+.HUDFlipped .ControlPanelContainer {
+    horizontal-align: right;
+    box-shadow: #000000aa -4px -4px 8px 8px;
+}
+
+#ControlPanelSlideThumb {
+	width: 32px;
+	height: 96px;
+	transform: translateX( 0px );
+    background-color: #181818cc;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+   	box-shadow: #00000055 -4px -4px 8px 8px;
+	vertical-align: middle;
+}
+
+.HUDFlipped #ControlPanelSlideThumb {
+    transform: scaleX(-1);
+}
+
+.RightArrowButtonIcon {
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+	horizontal-align: right;
+	background-image: url("s2r://panorama/images/control_icons/double_arrow_left_png.vtex");
+    background-position: 0% 50%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	wash-color: #91aba6;
+
+	transform: translateX( -9px );
+	
+	transition-property: transform, wash-color;
+	transition-delay: 0.0s;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-in-out;
+}
+
+#ControlPanelSlideThumb:hover {
+	background-color: #383838cc;
+}
+
+#ControlPanelSlideThumb:hover .RightArrowButtonIcon {
+	transform: translateX( -12px );
+	wash-color: white;
+}
+
+.Minimized .ControlPanel .RightArrowButtonIcon {
+	transform: rotateZ(180deg) translateX( -6px );
+}
+
+.Minimized .ControlPanel #ControlPanelSlideThumb:hover .RightArrowButtonIcon {
+	transform: translateX( 3px ) rotateZ(180deg);
+	wash-color: white;
+}
+
+.ControlPanel. #ControlPanelSlideThumb:hover .RightArrowButtonIcon {
+    transform: translateX( 3px ) rotateZ(180deg);
+    wash-color: white;
+}
+
+.Minimized .ControlPanel {
+    transform: translateX( -160px ) translateY( -100px );
+}
+
+.HUDFlipped .Minimized .ControlPanel {
+    transform: translateX( 160px ) translateY( -100px );
+}
+
+.ControlPanelContainer Label {
+	flow-children: down;
+
+	horizontal-align: left;
+	font-size: 24;	
+	color: #444444;
+	margin-top: 7px;
+	margin-bottom: 6px;
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+.ControlPanelContainer .Category Label {
+	horizontal-align: left;
+	margin-left: 0%;
+	margin-top: 2px;
+	font-size: 20;
+	color: #888888;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: left;
+	min-width: 100%;
+}
+
+.ControlPanelContainer #Maximized {
+	flow-children: down;
+	visibility:visible;
+}
+
+.ControlPanelContainer #Maximized #MinimizeButton {
+	flow-children: down;
+    transform: translateX( 0% ) translateY( 0% );
+    vertical-align: middle;
+    horizontal-align: left;
+    width: 100%;
+    background-color: #181818;
+    border: 2px solid #111111;
+	visibility:visible;
+}
+
+.ControlPanelContainer #Maximized #MinimizeButton Label {
+	font-size: 18;
+	color: #666666;
+}
+
+#MinimizeButton {
+	horizontal-align: right;
+}
+
+#MinimizeButton Label {
+	font-size: 16;
+	color: #666666;
+}
+
+#MinimizeButton:hover Label {
+	font-size: 16;
+	color: #aaaaaa;
+}
+
+.Category {
+	flow-children: down;
+	border-style: solid;
+	border-color: #00000022;
+	border-width: 0%;
+	/*border-radius: 5px;*/
+
+	box-shadow: fill #00000011 -4px -4px 8px 9px;
+
+	padding: 5px;
+
+	background-color: #11111166;
+}
+
+.Row {
+	flow-children: right;
+	margin-top: 0%;
+	margin-bottom: 0%;
+	margin-right: 0%;
+	width: 100%;
+}
+
+.Category .Row Label {
+	horizontal-align: right;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 18;
+	color: #888888;
+}
+
+.Row #DemoButton {
+	
+}
+
+.Row TextEntry {
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #111111FF ), to( #222222FF ) );
+	border: 1px solid baseBorder;
+	
+	color: lightgrey;
+    font-size: 16;
+
+    margin-top: 3px;
+	margin-bottom: 3px;
+	margin-left: 3px;
+	margin-right: 3px;
+
+    height: 20px;
+	width: 40px;
+
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.Row TextEntry #PlaceholderText {
+    opacity: 1.0;
+
+    transition-property: opacity;
+    transition-duration: 0.1s;
+
+    vertical-align: middle;
+
+	color: #444444;
+	font-size: 16;
+}
+
+.Row TextEntry:focus {
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.Row TextEntry:focus #PlaceholderText, TextEntry.HasInput #PlaceholderText {
+    opacity: 0.0;
+}
+
+.DemoButton {
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #307663 ), to( #245a4b ) );
+
+	height: 32px;
+	width: 140px;
+
+	margin-top: 3px;
+	margin-bottom: 3px;
+	margin-left: 3px;
+	margin-right: 3px;
+
+    border-style: solid;
+    border-width: 1px;
+
+    border-top: 1px solid #ffffff22;
+	border-left: 1px solid #ffffff11;
+	border-right: 1px solid #00000044;
+	border-bottom: 1px solid #00000088;
+
+    transition-property: background-color;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+
+.DemoButton2 {
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #307663 ), to( #245a4b ) );
+
+	height: 40px;
+	width: 140px;
+
+	margin-top: 3px;
+	margin-bottom: 3px;
+	margin-left: 3px;
+	margin-right: 3px;
+
+    border-style: solid;
+    border-width: 1px;
+
+    border-top-color: #444444;
+    border-left-color: #494949;
+    border-bottom-color: #111111;
+    border-right-color: #404040;
+
+    transition-property: background-color;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+
+.BuyTokensButton {
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #60862d ), to( #3d5f1c ) );
+
+	height: 40px;
+	width: 300px;
+
+	margin-top: 50px;
+	margin-bottom: 3px;
+	margin-left: 500px;
+	margin-right: 3px;
+
+    border-style: solid;
+    border-width: 1px;
+
+    border-top: 1px solid #ffffff22;
+	border-left: 1px solid #ffffff11;
+	border-right: 1px solid #00000044;
+	border-bottom: 1px solid #00000088;
+
+    transition-property: background-color;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+
+.Category .Row .DemoButton#FieldButton {
+	height: 40px;
+	width: 140px;
+}
+
+.Category .DemoButton Label {
+    margin-top: 5px;
+/*	padding: 6% 12% 6% 3%;*/
+    color: #cccccc;
+    font-size: 15;
+    font-weight: thin;
+    vertical-align: middle;
+    text-transform: none;
+    letter-spacing: 0px;
+}
+
+.Category .DemoButton:hover {
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #444444 ), to( #555555 ) );
+}
+
+.Category .DemoButton:hover Label {
+    /*color: #cccccc;*/
+}
+
+.Category .DemoButton:active {
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #888888 ), to( #aaaaaa ) );
+	pre-transform-scale2d: 1.02;
+}
+
+.Category .DemoButton:active Label {
+    /*color: #eeeeee;*/
+}
+
+.Category .DemoButton:selected {
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #777777 ), to( #999999 ) );
+}
+
+.BuyTokensButton#FieldButton {
+	height: 40px;
+	width: 140px;
+}
+
+.BuyTokensButton Label {
+    margin-top: 0px;
+/*	padding: 6% 12% 6% 3%;*/
+    color: #cccccc;
+    font-size: 25;
+    vertical-align: middle;
+	horizontal-align: center;
+    text-transform: none;
+    letter-spacing: 0px;
+}
+
+.BuyTokensButton:hover {
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #444444 ), to( #555555 ) );
+}
+
+.BuyTokensButton:hover Label {
+    /*color: #cccccc;*/
+}
+
+.BuyTokensButton:active {
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #888888 ), to( #aaaaaa ) );
+	pre-transform-scale2d: 1.02;
+}
+
+.BuyTokensButton:active Label {
+    /*color: #eeeeee;*/
+}
+
+.BuyTokensButton:selected {
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #777777 ), to( #999999 ) );
+}
+
+.Category .Row .DemoButton2#FieldButton {
+	height: 40px;
+	width: 140px;
+}
+
+.Category .DemoButton2 Label {
+    margin-top: 5px;
+/*	padding: 6% 12% 6% 3%;*/
+    color: #cccccc;
+    font-size: 15;
+    font-weight: thin;
+    vertical-align: middle;
+    text-transform: none;
+    letter-spacing: 0px;
+}
+
+.Category .DemoButton2:hover {
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #444444 ), to( #555555 ) );
+}
+
+.Category .DemoButton2:hover Label {
+    /*color: #cccccc;*/
+}
+
+.Category .DemoButton2:active {
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #888888 ), to( #aaaaaa ) );
+	pre-transform-scale2d: 1.02;
+}
+
+.Category .DemoButton2:active Label {
+    /*color: #eeeeee;*/
+}
+
+.Category .DemoButton2:selected {
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #777777 ), to( #999999 ) );
+}
+
+
+#SelectHeroContainer {
+	vertical-align: center;
+	margin-left: 200px;
+	background-color: #000c;
+
+	opacity: 0.0;
+    transform: translateX( -60px ) translateY( -100px );
+
+	transition-property: opacity, transform;
+	transition-duration: 0.2s;
+}
+
+.HUDFlipped  #SelectHeroContainer {
+	margin-left: 0px;
+	margin-right: 200px;
+	horizontal-align: right;
+	transform: translateX( 60px ) translateY( -100px );
+}
+
+#SelectHeroContainer.HeroPickerVisible {
+	opacity: 1.0;
+	transform: translateX( 0px ) translateY( -100px );
+}
+
+#CancelButton {
+	horizontal-align: right;
+	width: 14px;
+	height: 14px;
+}

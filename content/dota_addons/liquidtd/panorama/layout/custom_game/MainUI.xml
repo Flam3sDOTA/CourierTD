@@ -1,0 +1,457 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="file://{resources}/styles/custom_game/MainHud.css" />
+    </styles>
+    
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/mainhud.js" />
+    </scripts>
+	
+	 <script>
+	 
+	 </script>
+    
+    <Panel hittest="false" class="Root">
+        <Panel hittest="false" id="ErrorPanel">
+            <Label id="ErrorMessage" text="" />
+        </Panel>
+        <Panel hittest="false" class="TopLeftMenu">
+			<Button id="NewDashboardButton" class="TopLeftMenuButton" onactivate="DOTAHUDShowDashboard();" onmouseover="UIShowTextTooltip(DOTA_HUD_BackToDashboard)"  onmouseout="UIHideTextTooltip()" />
+			<Button id="NewScoreboardButton" class="TopLeftMenuButton" onactivate="DOTAHUDToggleScoreboard();" onmouseover="UIShowTextTooltip(DOTA_HUD_Scoreboard)"  onmouseout="UIHideTextTooltip()" />
+			<Button id="LeaderboardButton" class="TopLeftMenuButton" onactivate="OnLeaderboardOpenButtonPressed();" onmouseover="UIShowTextTooltip(Statistics - Coming Soon)"  onmouseout="UIHideTextTooltip()" />
+			<Button id="StoreButton" class="TopLeftMenuButton" onactivate="OnStoreOpenButtonPressed();" onmouseover="UIShowTextTooltip(Store - Coming Soon)"  onmouseout="UIHideTextTooltip()" />
+			<Button id="NewSettingsButton" class="TopLeftMenuButton" onactivate="DOTAShowSettingsPopup();" onmouseover="UIShowTextTooltip(DOTA_HUD_Settings)"  onmouseout="UIHideTextTooltip()" />
+			<Panel hittest="false" id="Divider2" class="Divider" />
+			<Label class="Discord" text="Discord" onactivate="ExternalBrowserGoToURL('https://discord.gg/vSYcJRd');" onmouseover="UIShowTextTooltip(Join the Community at Discord)"  onmouseout="UIHideTextTooltip()"/>	
+			<Label class="Reddit" text="Reddit" onactivate="ExternalBrowserGoToURL('');" onmouseover="UIShowTextTooltip(Join the Community at Reddit)"  onmouseout="UIHideTextTooltip()"/>	
+			<Label class="Steam" text="Patch Notes" onactivate="ExternalBrowserGoToURL('https://steamcommunity.com/sharedfiles/filedetails/changelog/1757498918');" onmouseover="UIShowTextTooltip(Click here for the Patch Notes!)"  onmouseout="UIHideTextTooltip()"/>	
+		</Panel>
+		
+		<Panel hittest="false" class="MainCenter">
+			<Label id="Timer" class="Timer" text="00:00:00" />
+			<Label id="RoundNumber" text="Round" />
+			<Label id="RoundNumberLabel" text="01" />
+			
+			<Label id="RoundName" class="RoundName" text="Unit Type:" />
+			<Label id="RoundNameLabel" class="RoundNameLabel" text="Normal" />
+			
+			<Label id="UnitCount" class="UnitCount" text="Unit Count:" />
+			<Label id="UnitCountLabel" class="UnitCountLabel" text="20" />
+			
+			<Label id="NextRound" class="NextRound" text="Next Round Starts in:" />
+			<Label id="NextRoundLabel" class="NextRoundLabel" text="00:30" />
+		</Panel>
+		
+		<Panel hittest="false" id="LeaderboardsRoot">
+			<Panel hittest="false" class="LeaderboardsHeader">
+				<Label class="StatisticsLabel" text="Statistics" />
+				<Button id="CloseRoot" onactivate="OnLeaderboardCloseButtonPressed()"/>
+			</Panel>
+			<Panel hittest="false" class="LeaderboardsMain">
+			
+				<Panel hittest="false" class="LifetimeStatisticRoot">
+					<Panel hittest="false" class="CategoryBox">
+						<Label class="CategoryBoxLabel" text="Lifetime Stats" />
+					</Panel>
+					<Panel id="RankingLabels" styles="width: 100%;">
+							<Panel class="RowDividerNEW"/>
+							<Panel class="RowDividerNEW2"/>
+							<Panel class="RowDividerNEW3"/>
+							<Panel class="RowDividerNEW4"/>
+							<Panel class="RowDividerNEW5"/>
+							<Panel class="RowDividerNEW6"/>
+							<Panel class="RowDividerNEW7"/>
+							<Panel class="RowDividerNEW8"/>
+							<Panel class="RowDividerNEW9"/>
+							
+							<Label text="Indicates Total Amounts" id="RankingAttributeLabel" class="RankingValue Headline"/>
+							
+							<Panel id="Stat1" class="history1">
+								<Label text="Time Played:" id="TIMEPlayed" class="LeftPanel"/>
+								<Label text="00:00" id="TIMEPlayedtime" class="RightPanel"/>
+							</Panel>
+							<Panel id="Stat2" class="history2">
+								<Label text="Level:" id="Level" class="LeftPanel"/>
+								<Label text="0" id="LevelLabel" class="RightPanel"/>
+							</Panel>
+							<Panel id="Stat3" class="history3">
+								<Label text="Experience:" id="Experience" class="LeftPanel"/>
+								<Label text="0" id="ExperienceLabel" class="RightPanel"/>
+							</Panel>
+							<Panel id="Stat4" class="history4">
+								<Label text="Games Won:" id="GamesWon" class="LeftPanel"/>
+								<Label text="0" id="GamesWonLabel" class="RightPanel"/>
+							</Panel>
+							<Panel id="Stat5" class="history5">
+								<Label text="Games Lost:" id="GamesLost" class="LeftPanel"/>
+								<Label text="0" id="GamesLostLabel" class="RightPanel"/>
+							</Panel>
+							<Panel id="Stat6" class="history6">
+								<Label text="Rounds Won:" id="WinRate" class="LeftPanel"/>
+								<Label text="0" id="RoundsWonLabel" class="RightPanel"/>
+							</Panel>
+							<Panel id="Stat7" class="history7">
+								<Label text="Rounds Lost:" id="GoldEarned" class="LeftPanel"/>
+								<Label text="0" id="RoundsLostLabel" class="RightPanel"/>
+							</Panel>
+							<Panel id="Stat8" class="history8">
+								<Label text="Win Rate:" id="WinRate" class="LeftPanel"/>
+								<Label text="0%" id="WinRateLabel" class="RightPanel"/>
+							</Panel>
+							<Panel id="Stat9" class="history9">
+								<Label text="Gold Earned:" id="GoldEarned" class="LeftPanel"/>
+								<Label text="0" id="GoldEarnedLabel" class="RightPanel"/>
+							</Panel>
+							<Panel id="Stat10" class="history10">
+								<Label text="Wave Units Killed:" id="FootmenTrained" class="LeftPanel"/>
+								<Label text="0" id="WaveUnitsKilledLabel" class="RightPanel"/>
+							</Panel>
+							<Panel id="Stat11" class="history11">
+								<Label text="Towers Built:" id="ArchersTrained" class="LeftPanel"/>
+								<Label text="0" id="TowersBuiltLabel" class="RightPanel"/>
+							</Panel>
+							<Panel id="Stat12" class="history12">
+								<Label text="Towers Upgraded:" id="SpearmenTrained" class="LeftPanel"/>
+								<Label text="0" id="TowersUpgradedLabel" class="RightPanel"/>
+							</Panel>
+							<Panel id="Stat13" class="history13">
+								<Label text="Shortest Game" id="ShortestGame" class="LeftPanel"/>
+								<Label text="13:22" id="ShortestGameLabel" class="RightPanel"/>
+							</Panel>
+							<Panel id="Stat14" class="history14">
+								<Label text="Longest Game" id="LongestGame" class="LeftPanel"/>
+								<Label text="32:22" id="LongestGameLabel" class="RightPanel"/>
+							</Panel>
+							<Panel id="Stat15" class="history15">
+								<Label text="TBD" id="TBD" class="LeftPanel"/>
+								<Label text="TBD" id="TBD2" class="RightPanel"/>
+							</Panel>
+							<Panel id="Stat16" class="history16">
+								<Label text="TBD" id="TBD" class="LeftPanel"/>
+								<Label text="TBD" id="TBD2" class="RightPanel"/>
+							</Panel>
+							<Panel id="Stat17" class="history17">
+								<Label text="TBD" id="TBD" class="LeftPanel"/>
+								<Label text="TBD" id="TBD2" class="RightPanel"/>
+							</Panel>
+					</Panel>		
+				</Panel>
+				
+				<Panel hittest="false" class="RankingRoot">
+					<Panel hittest="false" class="CategoryBox">
+						<Label class="CategoryBoxLabel" text="Ranking" />
+					</Panel>
+						<Panel id="RankingLabels" styles="width: 100%;">
+							<Label text="NO." class="RankingRank Headline"/>
+							<Label text="RATING" id="RankingAttributeLabel" class="RankingValue Headline"/>
+							<Label text="PLAYER" class="RankingName Headline"/>
+							
+							<Panel id="Row1" class="RowDivider"/>
+							<Panel id="Row2" class="RowDivider2"/>
+							<Panel id="Row3" class="RowDivider3"/>
+							<Panel id="Row4" class="RowDivider4"/>
+							<Panel id="Row5" class="RowDivider5"/>
+							<Panel id="Row6" class="RowDivider6"/>
+							<Panel id="Row7" class="RowDivider7"/>
+							<Panel id="Row8" class="RowDivider8"/>
+							<Panel id="Row9" class="RowDivider9"/>
+							
+							<Panel id="Ranking1" class="Ranking1">
+								<Label text="1" id="RankNo1" class="RankingRankTop10_1"/>
+								<Label text="5000" id="RankingValueNo1" class="RankingValueTOP10_1"/>
+								<Panel class="RankingName">
+									<Label text="Flam3s" id="Name1" class="AvatarText1"/>
+									<DOTAAvatarImage id="Avatar1" class="AvatarImage"/>
+								</Panel>
+							</Panel>				
+							
+							<Panel id="Ranking2" class="Ranking2">
+								<Label text="2" id="RankNo2" class="RankingRankTop10_2"/>
+								<Label text="4900" id="RankingValueNo2" class="RankingValueTOP10_2"/>
+								<Panel class="RankingName">
+									<Label text="Flam3s" id="Name2" class="AvatarText2"/>
+									<DOTAAvatarImage id="Avatar2" class="AvatarImage"/>
+								</Panel>
+							</Panel>
+							
+							<Panel id="Ranking3" class="Ranking3">
+								<Label text="3" id="RankNo3" class="RankingRankTop10_3"/>
+								<Label text="4800" id="RankingValueNo3" class="RankingValueTOP10_3"/>
+								<Panel class="RankingName">
+									<Label text="Flam3s" id="Name3" class="AvatarText3"/>
+									<DOTAAvatarImage id="Avatar3" class="AvatarImage"/>
+								</Panel>
+							</Panel>
+							
+							<Panel id="Ranking4" class="Ranking4">
+								<Label text="4" id="RankNo4" class="RankingRankTop10"/>
+								<Label text="4700" id="RankingValueNo4" class="RankingValueTOP10"/>
+								<Panel class="RankingName">
+									<Label text="Flam3s" id="Name4" class="AvatarText4"/>
+									<DOTAAvatarImage id="Avatar4" class="AvatarImage"/>
+								</Panel>
+							</Panel>
+							
+							<Panel id="Ranking5" class="Ranking5">
+								<Label text="5" id="RankNo5" class="RankingRankTop10"/>
+								<Label text="4600" id="RankingValueNo5" class="RankingValueTOP10"/>
+								<Panel class="RankingName">
+									<Label text="Flam3s" id="Name5" class="AvatarText"/>
+									<DOTAAvatarImage id="Avatar5" class="AvatarImage"/>
+								</Panel>
+							</Panel>
+							
+							<Panel id="Ranking6" class="Ranking6">
+								<Label text="6" id="RankNo6" class="RankingRankTop10"/>
+								<Label text="4500" id="RankingValueNo6" class="RankingValueTOP10"/>
+								<Panel class="RankingName">
+									<Label text="Flam3s" id="Name6" class="AvatarText"/>
+									<DOTAAvatarImage id="Avatar6" class="AvatarImage"/>
+								</Panel>
+							</Panel>
+							
+							<Panel id="Ranking7" class="Ranking7">
+								<Label text="7" id="RankNo7" class="RankingRankTop10"/>
+								<Label text="4400" id="RankingValueNo7" class="RankingValueTOP10"/>
+								<Panel class="RankingName">
+									<Label text="Flam3s" id="Name7" class="AvatarText"/>
+									<DOTAAvatarImage id="Avatar7" class="AvatarImage"/>
+								</Panel>
+							</Panel>
+							
+							<Panel id="Ranking8" class="Ranking8">
+								<Label text="8" id="RankNo8" class="RankingRankTop10"/>
+								<Label text="4300" id="RankingValueNo8" class="RankingValueTOP10"/>
+								<Panel class="RankingName">
+									<Label text="Flam3s" id="Name8" class="AvatarText"/>
+									<DOTAAvatarImage id="Avatar8" class="AvatarImage"/>
+								</Panel>
+							</Panel>
+							
+							<Panel id="Ranking9" class="Ranking9">
+								<Label text="9" id="RankNo9" class="RankingRankTop10"/>
+								<Label text="4200" id="RankingValueNo9" class="RankingValueTOP10"/>
+								<Panel class="RankingName">
+									<Label text="Flam3s" id="Name9" class="AvatarText"/>
+									<DOTAAvatarImage id="Avatar9" class="AvatarImage"/>
+								</Panel>
+							</Panel>
+							
+							<Panel id="Ranking10" class="Ranking10">
+								<Label text="10" id="RankNo10" class="RankingRankTop10"/>
+								<Label text="4000" id="RankingValueNo10" class="RankingValueTOP10"/>
+								<Panel class="RankingName">
+									<Label text="Flam3s" id="Name10" class="AvatarText"/>
+									<DOTAAvatarImage id="Avatar10" class="AvatarImage"/>
+								</Panel>
+							</Panel>
+							
+							<Panel id="Ranking11" class="Ranking11">
+								<Label text="11" id="RankNo11" class="RankingRankTop10"/>
+								<Label text="3900" id="RankingValueNo11" class="RankingValueTOP10"/>
+								<Panel class="RankingName">
+									<Label text="Flam3s" id="Name11" class="AvatarText"/>
+									<DOTAAvatarImage id="Avatar11" class="AvatarImage"/>
+								</Panel>
+							</Panel>
+							
+							<Panel id="Ranking12" class="Ranking12">
+								<Label text="12" id="RankNo12" class="RankingRankTop10"/>
+								<Label text="3800" id="RankingValueNo12" class="RankingValueTOP10"/>
+								<Panel class="RankingName">
+									<Label text="Flam3s" id="Name12" class="AvatarText"/>
+									<DOTAAvatarImage id="Avatar12" class="AvatarImage"/>
+								</Panel>
+							</Panel>
+							
+							<Panel id="Ranking13" class="Ranking13">
+								<Label text="13" id="RankNo13" class="RankingRankTop10"/>
+								<Label text="3700" id="RankingValueNo13" class="RankingValueTOP10"/>
+								<Panel class="RankingName">
+									<Label text="Flam3s" id="Name13" class="AvatarText"/>
+									<DOTAAvatarImage id="Avatar13" class="AvatarImage"/>
+								</Panel>
+							</Panel>
+							
+							<Panel id="Ranking14" class="Ranking14">
+								<Label text="14" id="RankNo14" class="RankingRankTop10"/>
+								<Label text="3600" id="RankingValueNo14" class="RankingValueTOP10"/>
+								<Panel class="RankingName">
+									<Label text="Flam3s" id="Name14" class="AvatarText"/>
+									<DOTAAvatarImage id="Avatar14" class="AvatarImage"/>
+								</Panel>
+							</Panel>
+							
+							<Panel id="Ranking15" class="Ranking15">
+								<Label text="15" id="RankNo15" class="RankingRankTop10"/>
+								<Label text="3500" id="RankingValueNo15" class="RankingValueTOP10"/>
+								<Panel class="RankingName">
+									<Label text="Flam3s" id="Name15" class="AvatarText"/>
+									<DOTAAvatarImage id="Avatar15" class="AvatarImage"/>
+								</Panel>
+							</Panel>
+							
+						</Panel>
+						<Panel id="RankingLocal">
+							<Label text="25" id="RankingLocalRank" class="RankingLocalRank"/>
+							<Label text="Rating" id="RankingLocalValue" class="RankingLocalValue"/>
+							<Panel class="RankingName">
+								<Label text="Flam3s" id="LocalName" class="LocalName"/>
+								<DOTAAvatarImage id="Avatar" steamid="local"/>
+							</Panel>
+						</Panel>
+				</Panel>
+				
+				<Panel hittest="false" class="MatchHistoryRoot">
+					<Panel hittest="false" class="CategoryBox">
+						<Label class="CategoryBoxLabel" text="Match History" />
+					</Panel>
+						<Panel id="RankingLabels" styles="width: 100%;">
+							<Label text="DATE" class="Date Headline"/>
+							<Label text="RESULT" class="Result Headline"/>
+							<Label text="DURATION" class="Duration Headline"/>
+							
+							<Panel id="Row1History" class="RowDividerHistory1"/>
+							<Panel id="Row2History" class="RowDividerHistory2"/>
+							<Panel id="Row3History" class="RowDividerHistory3"/>
+							<Panel id="Row4History" class="RowDividerHistory4"/>
+							
+							<Panel id="Match1" class="history1">
+								<Label text="26/04/2019" id="MatchDate1" class="RankingRankTop10"/>
+								<Label text="WIN" id="Result1" class="MatchWin"/>
+								<Label text="32:20" id="matchduration1"/>
+							</Panel>				
+							
+							<Panel id="Match2" class="history2">
+								<Label text="26/04/2019" id="MatchDate2" class="RankingRankTop10"/>
+								<Label text="LOSE" id="Result2" class="MatchLose"/>
+								<Label text="15:20" id="matchduration2"/>
+							</Panel>
+							
+							<Panel id="Match3" class="history3">
+								<Label text="25/04/2019" id="MatchDate3" class="RankingRankTop10"/>
+								<Label text="LOSE" id="Result3" class="MatchLose"/>
+								<Label text="44:10" id="matchduration3"/>
+							</Panel>
+							
+							<Panel id="Match4" class="history4">
+								<Label text="25/04/2019" id="MatchDate4" class="RankingRankTop10"/>
+								<Label text="WIN" id="Result4" class="MatchWin"/>
+								<Label text="37:20" id="matchduration4"/>
+							</Panel>
+							
+							<Panel id="Match5" class="history5">
+								<Label text="24/04/2019" id="MatchDate5" class="RankingRankTop10"/>
+								<Label text="WIN" id="Result5" class="MatchWin"/>
+								<Label text="22:10" id="matchduration5"/>
+							</Panel>
+							
+							<Panel id="Match6" class="history6">
+								<Label text="24/04/2019" id="MatchDate6" class="RankingRankTop10"/>
+								<Label text="WIN" id="Result6" class="MatchWin"/>
+								<Label text="12:33" id="matchduration6"/>
+							</Panel>
+							
+							<Panel id="Match7" class="history7">
+								<Label text="23/04/2019" id="MatchDate7" class="RankingRankTop10"/>
+								<Label text="LOSE" id="Result7" class="MatchLose"/>
+								<Label text="55:33" id="matchduration7"/>
+							</Panel>
+							
+							<Panel id="Match8" class="history8">
+								<Label text="23/04/2019" id="MatchDate8" class="RankingRankTop10"/>
+								<Label text="LOSE" id="Result8" class="MatchLose"/>
+								<Label text="26:44" id="matchduration8"/>
+							</Panel>
+						</Panel>
+				</Panel>
+				
+				<Panel hittest="false" class="LevelRoot">
+					<Panel hittest="false" class="CategoryBox">
+						<Label class="CategoryBoxLabel" text="Level" />
+					</Panel>
+					
+					<Panel id="RankingLabels" styles="width: 100%;">
+						<Panel id="LevelBadgeBG">
+							<Image id="BackgroundImage" tabindex="auto" src="file://{images}/profile_badges/bg_01.psd" defaultsrc="" scaling="stretch" />
+							<Image id="ItemImage" tabindex="auto" src="file://{images}/profile_badges/level_01.png" defaultsrc="" scaling="stretch" />
+							<Image id="ProfileLevel" tabindex="auto" hittest="false" src="file://{images}/profile_badges/bg_number_01.psd" defaultsrc="" scaling="stretch">
+								<Label tabindex="auto" hittest="false" text="01" />		
+							</Image>
+						</Panel>
+							<Panel id="LevelProgress" tabindex="auto">
+								<Panel id="LevelProgress_Left" class="ProgressBarLeft" tabindex="auto" />
+								<Panel id="LevelProgress_Right" class="ProgressBarRight" tabindex="auto" />
+								<Label tabindex="auto" text="00 / 100 XP" />
+							</Panel>
+					</Panel>
+				</Panel>
+			</Panel>	
+		</Panel>
+        
+		<Panel hittest="false" id="StoreRoot">
+			<Panel hittest="false" class="StoreHeader">
+				<Label class="StatisticsLabel" text="STORE" />
+				<Button id="CloseRoot" onactivate="OnStoreCloseButtonPressed()"/>
+			</Panel>
+			<Panel hittest="false" class="StoreMain">
+				<Panel hittest="false" class="CurrencyRoot">
+					<Label class="StoreLabel" text="Tokens"/>
+					<Panel id="TokenIcon" class="TokenIcon" hittest="false"/>
+					<Label id="TokenLabel" class="TokenLabel" text="x 300" />
+				</Panel>
+				
+				<Panel hittest="false" class="BuyTokens">
+				<Button class="BuyTokensButton" onactivate="">
+					<Label text="BUY TOKENS"/>
+				</Button>
+				</Panel>
+			
+				<Panel hittest="false" class="StoreRoot3">
+					<Panel hittest="false" class="CategoryBoxStore">
+						<Label class="CategoryBoxLabel" text="Your Items" />
+					</Panel>
+				</Panel>
+				
+				<Panel hittest="false" class="StoreSellRoot">
+					<Panel hittest="false" class="StoreRoot">
+						<Panel hittest="false" class="CategoryBoxStore">
+							<Label class="CategoryBoxLabel" text="Footman" />
+						</Panel>
+					</Panel>
+				
+					<Panel hittest="false" class="StoreRoot2">
+						<Panel hittest="false" class="CategoryBoxStore">
+							<Label class="CategoryBoxLabel" text="Archer" />
+						</Panel>
+					</Panel>	
+					
+					<Panel hittest="false" class="StoreRoot4">
+						<Panel hittest="false" class="CategoryBoxStore">
+							<Label class="CategoryBoxLabel" text="Knight" />
+						</Panel>
+					</Panel>
+
+					<Panel hittest="false" class="StoreRoot5">
+						<Panel hittest="false" class="CategoryBoxStore">
+							<Label class="CategoryBoxLabel" text="Rifleman" />
+						</Panel>
+					</Panel>	
+
+					<Panel hittest="false" class="StoreRoot6">
+						<Panel hittest="false" class="CategoryBoxStore">
+							<Label class="CategoryBoxLabel" text="Towers" />
+						</Panel>
+					</Panel>
+					
+					<Panel hittest="false" class="StoreRoot7">
+						<Panel hittest="false" class="CategoryBoxStore">
+							<Label class="CategoryBoxLabel" text="Castles" />
+						</Panel>
+					</Panel>
+				</Panel>
+			</Panel>
+		</Panel>
+    </Panel>
+</root>
