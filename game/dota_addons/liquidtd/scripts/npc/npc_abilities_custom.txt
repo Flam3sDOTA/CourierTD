@@ -123,7 +123,7 @@
 			"01"
 			{
 				"var_type"    					 "FIELD_INTEGER"
-				"ATTACK_DAMAGE_TOOLTIP"    		 "50"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "85"
 			}
 			"02"
 			{
@@ -213,7 +213,7 @@
 			"01"
 			{
 				"var_type"    					 "FIELD_INTEGER"
-				"ATTACK_DAMAGE_TOOLTIP"    		 "30"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "65"
 			}
 			"02"
 			{
@@ -263,7 +263,7 @@
 			"02"
 			{
 				"var_type"    					 "FIELD_FLOAT"
-				"GOLD PER TICK"     		 	 "5"
+				"GOLD PER TICK"     		 	 "25"
 			}
 		}
 	}		
@@ -303,7 +303,7 @@
 			"02"
 			{
 				"var_type"    					 "FIELD_FLOAT"
-				"GOLD PER TICK"     		 	 "7"
+				"GOLD PER TICK"     		 	 "50"
 			}
 		}
 	}	
@@ -343,7 +343,7 @@
 			"02"
 			{
 				"var_type"    					 "FIELD_FLOAT"
-				"GOLD PER TICK"     		 	 "9"
+				"GOLD PER TICK"     		 	 "75"
 			}
 		}
 	}	
@@ -383,7 +383,7 @@
 			"02"
 			{
 				"var_type"    					 "FIELD_FLOAT"
-				"GOLD PER TICK"     		 	 "11"
+				"GOLD PER TICK"     		 	 "100"
 			}
 		}
 	}	
@@ -423,7 +423,7 @@
 			"02"
 			{
 				"var_type"    					 "FIELD_FLOAT"
-				"GOLD PER TICK"     		 	 "13"
+				"GOLD PER TICK"     		 	 "125"
 			}
 		}
 	}	
@@ -463,7 +463,7 @@
 			"02"
 			{
 				"var_type"    					 "FIELD_FLOAT"
-				"GOLD PER TICK"     		 	 "15"
+				"GOLD PER TICK"     		 	 "150"
 			}
 		}
 	}	
@@ -1416,15 +1416,15 @@
 	}
 	
 	//============================================================
-	// Upgrade Ice Tower to Morphling 1
+	// Upgrade Ice Tower to Kotl 1
 	//============================================================
-	"upgrade_tower_morphling_1"
+	"upgrade_tower_kotl_1"
 	{
 		"BaseClass"                     "ability_datadriven"
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
-		"AbilityTextureName"            "upgradeToMorhpling"
+		"AbilityTextureName"            "upgradeToKotl"
 		"Building"                      "1"
 		"AbilityCastRange"              "260"
 		"Scale"                         "3"
@@ -1437,7 +1437,7 @@
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
-				"tower"			"tower_morphling_1"
+				"tower"			"tower_kotl_1"
 			}
 		}
 		"AbilitySpecial"
@@ -1461,15 +1461,15 @@
 	}
 	
 	//============================================================
-	// Upgrade Morphling 1 to Morphling 2
+	// Upgrade Kotl 1 to Kotl 2
 	//============================================================
-	"upgrade_tower_morphling_2"
+	"upgrade_tower_kotl_2"
 	{
 		"BaseClass"                     "ability_datadriven"
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
-		"AbilityTextureName"            "upgradeToMorhpling"
+		"AbilityTextureName"            "upgradeToKotl"
 		"Building"                      "1"
 		"AbilityCastRange"              "260"
 		"Scale"                         "3"
@@ -1482,7 +1482,7 @@
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
-				"tower"			"tower_morphling_2"
+				"tower"			"tower_kotl_2"
 			}
 		}
 		"AbilitySpecial"
@@ -1506,15 +1506,15 @@
 	}
 	
 	//============================================================
-	// Upgrade Morphling 2 to Morphling 3
+	// Upgrade Kotl 2 to Kotl 3
 	//============================================================
-	"upgrade_tower_morphling_3"
+	"upgrade_tower_kotl_3"
 	{
 		"BaseClass"                     "ability_datadriven"
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
-		"AbilityTextureName"            "upgradeToMorhpling"
+		"AbilityTextureName"            "upgradeToKotl"
 		"Building"                      "1"
 		"AbilityCastRange"              "260"
 		"Scale"                         "3"
@@ -1527,7 +1527,7 @@
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
-				"tower"			"tower_morphling_3"
+				"tower"			"tower_kotl_3"
 			}
 		}
 		"AbilitySpecial"
@@ -1706,7 +1706,7 @@
 			"01"
 			{ 
 				"var_type"  	"FIELD_INTEGER"
-				"Gold" 			"5 7 9 11 13 15"
+				"Gold" 			"25 50 75 100 125 150"
 			}
 			"02"
 			{ 
@@ -1761,17 +1761,12 @@
 			"01"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration"					"2"
+				"duration"					"4"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
 				"damage"					"15"
-			}
-			"03"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"movement_speed"			"-20"
 			}			
 		}
 
@@ -1818,10 +1813,6 @@
 						"Damage"	"%damage"
 					}
 				}	
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"		"%movement_speed"
-				}
 			}
 		}
 	}
@@ -1908,7 +1899,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"range"						"1100 1200 1300"
+				"range"						"800 850 900"
 			}
 			"02"
 			{
@@ -1922,5 +1913,778 @@
 			}
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}
+	
+	//=================================================================================================================
+	// Rewrite of the Windrunner Shackleshot ability
+	// Author: jacklarnes, Pizzalol
+	// Date: 02.10.2015
+	//=================================================================================================================
+	"windrunner_shackleshot_datadriven"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"				"1"
+		"AbilityTextureName"			"windrunner_shackleshot"
+		"MaxLevel"						"3"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+
+		// Precache
+		//-------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"soundfile"			"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
+			"particle"			"particles/units/heroes/hero_windrunner/windrunner_shackleshot.vpcf"
+			"particle"			"particles/units/heroes/hero_windrunner/windrunner_shackleshot_pair.vpcf"
+		}
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1100"
+		"AbilityCastPoint"				"0.15 0.15 0.15"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"12.0 11.0 10.0"
+		
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"100"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"fail_stun_duration"	"1.5 2.5 3.5"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"			"1.5 2.5 3.5"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"shackle_distance"		"575"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"arrow_speed"			"1515"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"shackle_count"			"1"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"FireSound"
+			{
+				"EffectName"	"Hero_Windrunner.ShackleshotCast"
+				"Target" 		"CASTER"
+			}
+
+			"TrackingProjectile"
+			{
+				"Target"           	"TARGET"
+				"EffectName"		"particles/units/heroes/hero_windrunner/windrunner_shackleshot.vpcf"
+				"Dodgeable"			"0"
+				"ProvidesVision"	"0"
+				"MoveSpeed"        	"%arrow_speed"
+				"SourceAttachment"	"DOTA_PROJECTILE_ATTACHMENT_ATTACK_1"
+			}
+		}
+
+		"OnProjectileHitUnit"
+		{
+			"DeleteOnHit"	"1"
+			"RunScript"
+			{
+				"ScriptFile"	"abilities/shackleshot.lua"
+				"Function"		"shackleshot_hit"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_shackle_stun_datadriven"
+			{
+				"IsDebuff"	"1"
+				"OverrideAnimation"	"ACT_DOTA_DISABLED"
+
+				"EffectName"			"particles/generic_gameplay/generic_stunned.vpcf"
+				"EffectAttachType"		"follow_overhead"
+
+				"States"
+				{
+					"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+		}
+	}
+	
+	//=================================================================================================================
+	// Rewrite of the Mirana Starfall ability
+	// Author: Pizzalol
+	// Date: 04.01.2015
+	//=================================================================================================================
+	"mirana_starfall_datadriven"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"				"1"
+		"AbilityTextureName"			"mirana_starfall"
+		"MaxLevel"						"3"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+
+		
+		// Precache
+		//-------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"soundfile"					"soundevents/game_sounds_heroes/game_sounds_mirana.vsndevts"
+			"particle"					"particles/econ/items/mirana/mirana_starstorm_bow/mirana_starstorm_starfall_attack.vpcf"
+			"particle"					"particles/units/heroes/hero_mirana/mirana_starfall_circle.vpcf"
+		}
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.5 0.5 0.5"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"12.0 11.0 10.0"
+		"AbilityDuration"				"10.0 10.0 10.0"
+
+		// Damage.
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDamage"					"150 250 500"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"100"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"starfall_radius"	"1100"		
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"starfall_secondary_radius"	"175"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"starfall_delay"	"0.57"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"starfall_secondary_damage_pct"	"0.75"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"starfall_secondary_targets"	"1"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"FireSound"
+			{
+				"EffectName"		"Ability.Starfall"
+				"Target"			"CASTER"
+			}
+
+			"FireEffect"
+			{
+				"EffectName"			"particles/units/heroes/hero_mirana/mirana_starfall_circle.vpcf"
+				"EffectAttachType"		"attach_origin"
+				"Target"				"CASTER"
+			}
+
+			"ActOnTargets"
+			{
+				"Target"
+				{
+					"Center" 		"CASTER"
+					"Radius" 		"%starfall_radius"
+					"Teams" 		"DOTA_UNIT_TARGET_TEAM_ENEMY" 
+					"Types" 		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+				}
+
+				"Action"
+				{
+					"FireEffect"
+					{
+						"EffectName"				"particles/econ/items/mirana/mirana_starstorm_bow/mirana_starstorm_starfall_attack.vpcf"
+						"EffectAttachType"			"follow_origin"
+						"Target"					"TARGET"
+					}
+
+					"DelayedAction"
+					{
+						"Delay"						"%starfall_delay"
+
+						"Action"
+						{
+
+							"FireSound"
+							{
+								"EffectName"			"Ability.StarfallImpact"
+								"Target"				"TARGET"
+							}
+
+							"Damage"
+							{
+								"Target"			"TARGET"
+								"Type"				"DAMAGE_TYPE_MAGICAL"
+								"Damage"			"%AbilityDamage"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	//=================================================================================================================
+	// Rewrite of the Furion Sprout ability
+	// Author: YOLOSPAGHETTI
+	// Date: March 22, 2016
+	//=================================================================================================================
+	"furion_sprout_datadriven"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_POINT"
+		"FightRecapLevel"				"1"
+		"AbilityTextureName"			"furion_sprout"
+		"MaxLevel"						"3"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+		
+		// Unit Targeting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_ANCIENTS"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1100"
+		"AbilityCastPoint"				"0.35"
+		"AbilityCooldown"				"12 11 10"
+		"AbilityManaCost"				"100"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"vision_range"			"1000"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"1.5 2.0 2.5"
+			}
+		}
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"			"abilities/sprout.lua"
+				"Function"				"CreateSprout"
+			}
+		}
+	}
+	
+	//=================================================================================================================
+	// Rewrite of the Venomancer Venomous Gale ability
+	// Author: Pizzalol
+	// Date: 30.09.2015.
+	//=================================================================================================================
+	"venomancer_venomous_gale_datadriven"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"				"1"
+		"AbilityTextureName"			"venomancer_venomous_gale"
+		"MaxLevel"						"1"
+
+		// Precache
+		//-------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"soundfile"			"soundevents/game_sounds_heroes/game_sounds_venomancer.vsndevts"
+			"particle"			"particles/units/heroes/hero_venomancer/venomancer_venomous_gale.vpcf"
+			"particle"			"particles/units/heroes/hero_venomancer/venomancer_gale_poison_debuff.vpcf"
+		}
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1100"
+		"AbilityCastPoint"				"0.0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"12 11 10"
+		
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"100"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"2 2.5 3"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"strike_damage"			"75 100 150"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"tick_damage"			"60 90 120"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"tick_interval"			"3.0"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"movement_slow"			"-20 -30 -40"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"300"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"speed"					"1200"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"distance"				"800"
+			}
+		}
+		"OnSpellStart"
+		{
+			"FireSound"
+			{
+				"EffectName"			"Hero_Venomancer.VenomousGale"
+				"Target"				"CASTER"
+			}
+
+			"LinearProjectile"
+			{
+				"Target"      		"POINT"
+				"EffectName"  		"particles/units/heroes/hero_venomancer/venomancer_venomous_gale.vpcf"
+				"MoveSpeed"   		"%speed"
+				"StartRadius"   	"%radius"
+				"StartPosition" 	"attach_origin"
+				"EndRadius"     	"%radius"
+				"FixedDistance" 	"%distance"
+				"TargetTeams"   	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+				"TargetTypes"   	"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+				"TargetFlags"   	"DOTA_UNIT_TARGET_FLAG_NONE"
+				"HasFrontalCone"    "0"
+				"ProvidesVision" 	"0"
+			}
+		}
+		"OnProjectileHitUnit"
+		{
+			"DeleteOnHit"	"0"
+
+			"FireSound"
+			{
+				"EffectName"	"Hero_Venomancer.VenomousGaleImpact"
+				"Target"		"TARGET"
+			}
+
+			"Damage"
+			{
+				"Target"		"TARGET"
+				"Type"			"DAMAGE_TYPE_MAGICAL"
+				"Damage"		"%strike_damage"
+			}		
+
+			"RunScript"
+			{
+				"ScriptFile"	"abilities/venomous_gale.lua"
+				"Function"		"VenomousGaleImpact"
+				"modifier"		"modifier_venomous_gale_debuff_datadriven"
+			}	
+		}
+
+		"Modifiers"
+		{
+			"modifier_venomous_gale_debuff_datadriven"
+			{
+				"IsDebuff"			"1"			
+
+				"EffectName"		"particles/units/heroes/hero_venomancer/venomancer_gale_poison_debuff.vpcf"
+				"EffectAttachType"	"follow_origin"
+
+				"ThinkInterval"		"%tick_interval"
+				"OnIntervalThink"
+				{
+					"Damage"
+					{
+						"Target"	"TARGET"
+						"Type"		"DAMAGE_TYPE_MAGICAL"
+						"Damage"	"%tick_damage"
+					}
+				}
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"-1"
+				}
+			}
+		}
+	}
+	
+	//=================================================================================================================
+	// Enchantress: Impetus
+	//=================================================================================================================
+	"enchantress_impetus"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5270"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_Enchantress.Impetus"
+
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1100"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0.0"
+		"AbilityDuration"				"1.5"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"100"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"distance_damage_pct"	"50 75 100"			
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"distance_cap"			"1750"
+			}
+		}
+	}
+	
+	//=================================================================================================================
+	// Rewrite of Crystal Maiden Arcane Aura
+	// Author: kritth
+	// Date: December 31, 2015
+	// Version: 6.86
+	// Type: Datadriven
+	//=================================================================================================================
+	"brilliance_aura_datadriven"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityTextureName"			"crystal_maiden_brilliance_aura"
+		"MaxLevel"						"3"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"mana_regen"		"1.0 1.5 2.0"
+			}
+			// Extra variables
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"global_radius"		"500 600 700"
+			}
+		}
+		
+		// Data driven
+		//-------------------------------------------------------------------------------------------------------------
+		"Modifiers"
+		{
+			"modifier_brilliance_aura_caster_datadriven"
+			{
+				"Passive"				"1"
+				"IsPurgable"			"0"
+				"IsHidden"				"1"
+				"Aura"					"modifier_brilliance_aura_effect_datadriven"
+				"Aura_Radius"			"%global_radius"
+				"Aura_Teams"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+				"Aura_Types"			"DOTA_UNIT_TARGET_ALL"
+				
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"		"%mana_regen"
+				}
+			}
+			
+			"modifier_brilliance_aura_effect_datadriven"
+			{
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"		"%mana_regen"
+				}
+			}
+		}
+	}
+	
+
+	//============================================================
+	// Rewrite of the Keeper of the Light Chakra Magic ability
+	// Author: Pizzalol
+	// Date: February 24, 2016
+	//============================================================
+	"chakra_magic_datadriven"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_YES"
+		"AbilityTextureName"			"keeper_of_the_light_chakra_magic"
+		"MaxLevel"						"1"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_3"
+
+		// Precache
+		//-------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"soundfile"			"soundevents/game_sounds_heroes/game_sounds_keeper_of_the_light.vsndevts"
+			"particle"			"particles/units/heroes/hero_keeper_of_the_light/keeper_chakra_magic.vpcf"
+		}
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1100"
+		"AbilityCastPoint"				"0.3"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"17.0 16.0 15.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"100"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityModifierSupportValue"	"3.0"	// Value much higher than cost.
+
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"mana_restore"			"20 30 40"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"FireSound"
+			{
+				"EffectName"			"Hero_KeeperOfTheLight.ChakraMagic.Target"
+				"Target"				"TARGET"
+			}
+
+			"FireEffect"
+			{
+				"EffectName"			"particles/units/heroes/hero_keeper_of_the_light/keeper_chakra_magic.vpcf"
+				"EffectAttachType"		"start_at_customorigin"
+
+				"ControlPointEntities"
+				{
+					"CASTER"			"follow_origin"
+					"TARGET"			"follow_origin"
+				}
+			}
+
+			"RunScript"
+			{
+				"ScriptFile"			"scripts/vscripts/abilities/chakra_magic.lua"
+				"Function"				"ChakraMagic"
+			}
+		}
+	}
+	
+	//============================================================
+	// Rewrite of the Vengeful Spirit Magic Missile ability
+	// Author: Pizzalol
+	// Date: 26.01.2015
+	//============================================================
+	"vengefulspirit_magic_missile_datadriven"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"				"1"
+		"AbilityTextureName"			"vengefulspirit_magic_missile"
+		"MaxLevel"						"3"
+
+		// Precache
+		//-------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"soundfile"			"soundevents/game_sounds_heroes/game_sounds_vengefulspirit.vsndevts"
+			"particle"			"particles/units/heroes/hero_vengeful/vengeful_magic_missle.vpcf"		
+		}
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1100"
+		"AbilityCastPoint"				"0.3"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"12 11 10"
+
+		// Damage.
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDamage"					"175 250 325"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"100"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"magic_missile_speed"	"2050"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"magic_missile_stun"	"1.55 1.65 1.75"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"FireSound"
+			{
+				"EffectName"			"Hero_VengefulSpirit.MagicMissile"
+				"Target" 				"CASTER"
+			}
+			
+			"TrackingProjectile"
+			{
+				"Target"           			"TARGET"
+				"EffectName"				"particles/units/heroes/hero_vengeful/vengeful_magic_missle.vpcf"
+				"Dodgeable"					"1"
+				"ProvidesVision"			"0"
+				"MoveSpeed"        			"%magic_missile_speed"
+				"SourceAttachment"			"DOTA_PROJECTILE_ATTACHMENT_ATTACK_1"
+			}		
+		}
+
+		"OnProjectileHitUnit"
+		{
+			"DeleteOnHit"	"1"
+			"FireSound"
+			{
+				"EffectName"	"Hero_VengefulSpirit.MagicMissileImpact"
+				"Target" 		"TARGET"
+			}
+			
+			"Stun"
+			{
+				"Duration"   "%magic_missile_stun"
+				"Target" 	 "TARGET"
+			}
+
+			"Damage"
+			{
+				"Target"		"TARGET"
+				"Type"			"DAMAGE_TYPE_MAGICAL"
+				"Damage"		"%AbilityDamage"
+			}						
+		}	
 	}
 }

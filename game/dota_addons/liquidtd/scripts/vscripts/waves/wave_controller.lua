@@ -101,6 +101,7 @@ function SpawnWave(hero, waveData)
     if spawned >= numToSpawn then return end
 
     local creep = CreateUnitByName(creepName, spawnPoint, true, nil, nil, DOTA_TEAM_NEUTRALS)
+	creep:RemoveGesture(ACT_DOTA_SPAWN)
     creep:AddNewModifier(nil, nil, "modifier_phased", {})
     creep.map = map
     creep.heroToDamage = hero

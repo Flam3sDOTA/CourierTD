@@ -105,18 +105,27 @@ return {
     level = 1,
     tier = 1,
     spawn_sound = "frostivus_ui_select",  
+	abilities = {
+      windrunner_shackleshot_datadriven = 1
+    },
   },
   
   tower_windranger_2 = {
     level = 2,
     tier = 1,
     spawn_sound = "frostivus_ui_select",  
+	abilities = {
+      windrunner_shackleshot_datadriven = 2
+    },
   },
   
   tower_windranger_3 = {
     level = 3,
     tier = 1,
     spawn_sound = "frostivus_ui_select",  
+	abilities = {
+      windrunner_shackleshot_datadriven = 3
+    },
   },
   
   tower_luna_1 = {
@@ -150,126 +159,189 @@ return {
     level = 1,
     tier = 1,
     spawn_sound = "frostivus_ui_select",  
+	abilities = {
+      mirana_starfall_datadriven = 1
+    },
   },
   
   tower_mirana_2 = {
     level = 2,
     tier = 1,
     spawn_sound = "frostivus_ui_select",  
+	abilities = {
+      mirana_starfall_datadriven = 2
+    },
   },
   
   tower_mirana_3 = {
     level = 3,
     tier = 1,
-    spawn_sound = "frostivus_ui_select",  
+    spawn_sound = "frostivus_ui_select", 
+	abilities = {
+      mirana_starfall_datadriven = 3
+    },	
   },
   
   tower_furion_1 = {
     level = 1,
     tier = 1,
     spawn_sound = "frostivus_ui_select",
+	abilities = {
+      furion_sprout_datadriven = 1
+    },
   },
   
   tower_furion_2 = {
     level = 2,
     tier = 1,
     spawn_sound = "frostivus_ui_select",
+	abilities = {
+      furion_sprout_datadriven = 2
+    },
   },
   
   tower_furion_3 = {
     level = 3,
     tier = 1,
     spawn_sound = "frostivus_ui_select",
+	abilities = {
+      furion_sprout_datadriven = 3
+    },
   },
   
   tower_venomancer_1 = {
     level = 1,
     tier = 1,
     spawn_sound = "frostivus_ui_select",
+	abilities = {
+      venomancer_venomous_gale_datadriven = 1
+    },
   },
   
   tower_venomancer_2 = {
     level = 2,
     tier = 1,
     spawn_sound = "frostivus_ui_select",
+	abilities = {
+      venomancer_venomous_gale_datadriven = 2
+    },
   },
   
   tower_venomancer_3 = {
     level = 3,
     tier = 1,
     spawn_sound = "frostivus_ui_select",
+	abilities = {
+      venomancer_venomous_gale_datadriven = 3
+    },
   },
   
   tower_enchantress_1 = {
     level = 1,
     tier = 1,
     spawn_sound = "frostivus_ui_select",
+	abilities = {
+      enchantress_impetus = 1
+    },
   },
   
   tower_enchantress_2 = {
     level = 2,
     tier = 1,
     spawn_sound = "frostivus_ui_select",
+	abilities = {
+      enchantress_impetus = 2
+    },
   },
   
   tower_enchantress_3 = {
     level = 3,
     tier = 1,
     spawn_sound = "frostivus_ui_select",
+	abilities = {
+      enchantress_impetus = 3
+    },
   },
   
   tower_cm_1 = {
     level = 1,
     tier = 1,
-    spawn_sound = "frostivus_ui_select",  
+    spawn_sound = "frostivus_ui_select",
+	abilities = {
+      brilliance_aura_datadriven = 1
+    },	
   },
 
   tower_cm_2 = {
     level = 2,
     tier = 1,
-    spawn_sound = "frostivus_ui_select",  
+    spawn_sound = "frostivus_ui_select",
+	abilities = {
+      brilliance_aura_datadriven = 2
+    },
   },
 
   tower_cm_3 = {
     level = 3,
     tier = 1,
-    spawn_sound = "frostivus_ui_select",  
+    spawn_sound = "frostivus_ui_select",
+	abilities = {
+      brilliance_aura_datadriven = 3
+    },
   },
   
-  tower_morphling_1 = {
+  tower_kotl_1 = {
     level = 1,
     tier = 1,
     spawn_sound = "frostivus_ui_select",  
+	abilities = {
+      chakra_magic_datadriven = 1
+    },
   },
   
-  tower_morphling_2 = {
+  tower_kotl_2 = {
     level = 2,
     tier = 1,
     spawn_sound = "frostivus_ui_select",  
+	abilities = {
+      chakra_magic_datadriven = 2
+    },
   },
   
-  tower_morphling_3 = {
+  tower_kotl_3 = {
     level = 3,
     tier = 1,
     spawn_sound = "frostivus_ui_select",  
+	abilities = {
+      chakra_magic_datadriven = 3
+    },
   },
 
   tower_venge_1 = {
     level = 1,
     tier = 1,
     spawn_sound = "frostivus_ui_select",  
+	abilities = {
+      vengefulspirit_magic_missile_datadriven = 1
+    },
   },
   
   tower_venge_2 = {
     level = 2,
     tier = 1,
-    spawn_sound = "frostivus_ui_select",  
+    spawn_sound = "frostivus_ui_select", 
+	abilities = {
+      vengefulspirit_magic_missile_datadriven = 2
+    },	
   },
   
   tower_venge_3 = {
     level = 3,
     tier = 1,
     spawn_sound = "frostivus_ui_select",
+	abilities = {
+      vengefulspirit_magic_missile_datadriven = 3
+    },
   },
   
   tower_drow_1 = {

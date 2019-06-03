@@ -171,12 +171,6 @@ end
 function Activate()
 	GameRules.LiquidTD = LiquidTD()
 	GameRules.LiquidTD:InitGameMode()
-	
-	if IsInToolsMode() then
-		Timers:CreateTimer(2, function()
-		  Tutorial:AddBot("npc_dota_hero_ursa", "", "", false)
-		end)
-	end
 end
 
 function LiquidTD:InitGameMode()

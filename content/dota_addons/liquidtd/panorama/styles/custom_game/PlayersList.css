@@ -32,7 +32,7 @@
 	height: 109px;
 	background-color: gray;
 	background-image: url("file://{images}/custom_game/TopUIcenter.png");
-	opacity: 0.8;
+	opacity: 0.9;
 	transition-duration: .05s;
 	transition-property: background-image;
 	transition-timing-function: ease-in-out;

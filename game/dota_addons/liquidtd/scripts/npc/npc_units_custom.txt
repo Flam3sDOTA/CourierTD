@@ -267,7 +267,7 @@
 		"vscripts"         				"ai/wave_creep.lua"
 		
 		"Model"                 		"models/items/furion/treant/fungal_lord_shroomthing/fungal_lord_shroomthing.vmdl"
-		"ModelScale"               		"1.5"
+		"ModelScale"               		"1.1"
 		"SoundSet"              		"Creep_Good_Melee"
 		"ArmorPhysical"         		"0"
 		"MagicalResistance"     		"0"
@@ -1694,7 +1694,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"5000"
 		"BountyGoldMax"         		"5000"
-		"StatusHealth"          		"100000"
+		"StatusHealth"          		"50000"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -1733,9 +1733,9 @@
 
 		// Stats
 		//----------------------------- 
-		"AttackDamageMin"           "50"
-		"AttackDamageMax"           "50"
-		"Damage"                    "50"  
+		"AttackDamageMin"           "85"
+		"AttackDamageMax"           "85"
+		"Damage"                    "85" 
 		"AttackRange"               "800"
 		"AttackAcquisitionRange"    "800"
 		"AttackRate"                "1"
@@ -1811,9 +1811,9 @@
 
 		// Stats
 		//----------------------------- 
-		"AttackDamageMin"           "20"
-		"AttackDamageMax"           "20"
-		"Damage"                    "20"  
+		"AttackDamageMin"           "50"
+		"AttackDamageMax"           "50"
+		"Damage"                    "50"  
 		"AttackRange"               "800"
 		"AttackAcquisitionRange"    "800"
 		"AttackRate"                "1"
@@ -1887,9 +1887,9 @@
 
 		// Stats
 		//----------------------------- 
-		"AttackDamageMin"           "30"
-		"AttackDamageMax"           "30"
-		"Damage"                    "30"  
+		"AttackDamageMin"           "65"
+		"AttackDamageMax"           "65"
+		"Damage"                    "65" 
 		"AttackRange"               "800"
 		"AttackAcquisitionRange"    "800"
 		"AttackRate"                "1"
@@ -1933,7 +1933,7 @@
 		"ConsideredHero"			"1"
 		
 		"Ability1"					"upgrade_tower_cm_1"
-		"Ability2"					"upgrade_tower_morphling_1"
+		"Ability2"					"upgrade_tower_kotl_1"
 		"Ability3"					"upgrade_tower_venge_1"
 		"Ability4"					"sell_tower"
 		"Ability5"					"tower_ice_slow"
@@ -2422,6 +2422,7 @@
 		"SoundSet"                  "Hero_Windrunner"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
+		"vscripts"                  "ai/windranger.lua"
 
 		// Stats
 		//----------------------------- 
@@ -2471,7 +2472,8 @@
 		"ConsideredHero"			"1"
 		
 		"Ability1"					"upgrade_tower_wind_2"
-		"Ability4"					"sell_tower"
+		"Ability2"					"sell_tower"
+		"Ability3"					"windrunner_shackleshot_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -2479,6 +2481,17 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "6835" } // Weapon
@@ -2508,6 +2521,7 @@
 		"SoundSet"                  "Hero_Windrunner"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
+		"vscripts"                  "ai/windranger.lua"
 		
 
 		// Stats
@@ -2558,7 +2572,8 @@
 		"ConsideredHero"			"1"
 		
 		"Ability1"					"upgrade_tower_wind_3"
-		"Ability4"					"sell_tower"
+		"Ability2"					"sell_tower"
+		"Ability3"					"windrunner_shackleshot_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -2566,6 +2581,17 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "8966" } // Weapon
@@ -2595,6 +2621,7 @@
 		"SoundSet"                  "Hero_Windrunner"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
+		"vscripts"                  "ai/windranger.lua"
 		
 
 		// Stats
@@ -2644,7 +2671,8 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability4"					"sell_tower"
+		"Ability2"					"sell_tower"
+		"Ability3"					"windrunner_shackleshot_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -2652,6 +2680,17 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "7978" } // Weapon
@@ -2738,6 +2777,17 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "12872" } // Mount
@@ -2823,6 +2873,17 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "8856" } // Mount
@@ -2908,6 +2969,17 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "5947" }   // Mount
@@ -2937,6 +3009,7 @@
 		"SoundSet"					"Hero_Mirana"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_mirana.vsndevts"
+		"vscripts"         			"ai/mirana.lua"
 		
 		
 
@@ -2988,7 +3061,8 @@
 		"ConsideredHero"			"1"
 		
 		"Ability1"					"upgrade_tower_mirana_2"
-		"Ability4"					"sell_tower"
+		"Ability2"					"sell_tower"
+		"Ability3"					"mirana_starfall_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -2996,6 +3070,17 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "17100" } // Mount
@@ -3027,6 +3112,7 @@
 		"SoundSet"                  "Hero_Mirana"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_mirana.vsndevts"
+		"vscripts"         			"ai/mirana.lua"
 		
 		
 
@@ -3078,7 +3164,8 @@
 		"ConsideredHero"			"1"
 		
 		"Ability1"					"upgrade_tower_mirana_3"
-		"Ability4"					"sell_tower"
+		"Ability2"					"sell_tower"
+		"Ability3"					"mirana_starfall_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -3086,6 +3173,17 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "7398" } // Mount
@@ -3117,6 +3215,7 @@
 		"SoundSet"                  "Hero_Mirana"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_mirana.vsndevts"
+		"vscripts"         			"ai/mirana.lua"
 		
 		
 
@@ -3167,7 +3266,8 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability4"					"sell_tower"
+		"Ability2"					"sell_tower"
+		"Ability3"					"mirana_starfall_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -3175,12 +3275,23 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "9247" } // Mount
-				"2"  { "ItemDef" "7936" }  // Weapon
+				"2"  { "ItemDef" "7936" } // Weapon
 				"3"  { "ItemDef" "6937" } // Quiver
-				"4"  { "ItemDef" "6936" }  // Head
+				"4"  { "ItemDef" "6936" } // Head
 				"5"  { "ItemDef" "9272" } // Shoulder
 				"6"  { "ItemDef" "8538" } // Back
 				"7"  { "ItemDef" "8541" } // Arms
@@ -3209,6 +3320,7 @@
 		"SoundSet"                  "Hero_Furion"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_furion.vsndevts"
+		"vscripts"         			"ai/furion.lua"
 		
 		
 
@@ -3260,8 +3372,8 @@
 		"ConsideredHero"			"1"
 		
 		"Ability1"					"upgrade_tower_furion_2"
-		"Ability4"					"sell_tower"
-		"Ability5"					""
+		"Ability2"					"sell_tower"
+		"Ability3"					"furion_sprout_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -3269,6 +3381,17 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "8971" } // Weapon
@@ -3300,7 +3423,7 @@
 		"SoundSet"                  "Hero_Furion"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_furion.vsndevts"
-		
+		"vscripts"         			"ai/furion.lua"
 		
 
 		// Stats
@@ -3351,8 +3474,8 @@
 		"ConsideredHero"			"1"
 		
 		"Ability1"					"upgrade_tower_furion_3"
-		"Ability4"					"sell_tower"
-		"Ability5"					""
+		"Ability2"					"sell_tower"
+		"Ability3"					"furion_sprout_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -3360,6 +3483,17 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "7213" } // Weapon
@@ -3390,7 +3524,7 @@
 		"SoundSet"                  "Hero_Furion"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_furion.vsndevts"
-		
+		"vscripts"         			"ai/furion.lua"
 		
 
 		// Stats
@@ -3440,9 +3574,8 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					""
-		"Ability4"					"sell_tower"
-		"Ability5"					""
+		"Ability1"					"sell_tower"
+		"Ability2"					"furion_sprout_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -3450,6 +3583,17 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "4566" } // Weapon
@@ -3480,6 +3624,7 @@
 		"SoundSet"                  "Hero_Venomancer"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_venomancer.vsndevts"
+		"vscripts"         			"ai/venomancer.lua"
 		
 		
 
@@ -3531,8 +3676,8 @@
 		"ConsideredHero"			"1"
 		
 		"Ability1"					"upgrade_tower_venomancer_2"
-		"Ability4"					"sell_tower"
-		"Ability5"					""
+		"Ability2"					"sell_tower"
+		"Ability3"					"venomancer_venomous_gale_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -3540,6 +3685,17 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "9917" } // Stinger Limbs
@@ -3568,6 +3724,7 @@
 		"SoundSet"                  "Hero_Venomancer"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_venomancer.vsndevts"
+		"vscripts"         			"ai/venomancer.lua"
 		
 		
 
@@ -3619,8 +3776,8 @@
 		"ConsideredHero"			"1"
 		
 		"Ability1"					"upgrade_tower_venomancer_3"
-		"Ability4"					"sell_tower"
-		"Ability5"					""
+		"Ability2"					"sell_tower"
+		"Ability3"					"venomancer_venomous_gale_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -3628,6 +3785,17 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "9896" } // Stinger Limbs
@@ -3656,7 +3824,7 @@
 		"SoundSet"                  "Hero_Venomancer"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_venomancer.vsndevts"
-		
+		"vscripts"         			"ai/venomancer.lua"
 		
 
 		// Stats
@@ -3706,9 +3874,8 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					""
-		"Ability4"					"sell_tower"
-		"Ability5"					""
+		"Ability1"					"sell_tower"
+		"Ability2"					"venomancer_venomous_gale_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -3716,6 +3883,17 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "9334" } // Stinger Limbs
@@ -3744,7 +3922,7 @@
 		"SoundSet"                  "Hero_Enchantress"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_enchantress.vsndevts"
-		
+		"vscripts"         			"ai/enchantress.lua"
 		
 
 		// Stats
@@ -3795,8 +3973,8 @@
 		"ConsideredHero"			"1"
 		
 		"Ability1"					"upgrade_tower_enchantress_2"
-		"Ability4"					"sell_tower"
-		"Ability5"					""
+		"Ability2"					"sell_tower"
+		"Ability3"					"enchantress_impetus"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -3804,6 +3982,17 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "12748" } // Weapon
@@ -3833,7 +4022,7 @@
 		"SoundSet"                  "Hero_Enchantress"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_enchantress.vsndevts"
-		
+		"vscripts"         			"ai/enchantress.lua"
 		
 
 		// Stats
@@ -3884,8 +4073,8 @@
 		"ConsideredHero"			"1"
 		
 		"Ability1"					"upgrade_tower_enchantress_3"
-		"Ability4"					"sell_tower"
-		"Ability5"					""
+		"Ability2"					"sell_tower"
+		"Ability3"					"enchantress_impetus"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -3893,6 +4082,17 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "12689" } // Weapon
@@ -3922,7 +4122,7 @@
 		"SoundSet"                  "Hero_Enchantress"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_enchantress.vsndevts"
-		
+		"vscripts"         			"ai/enchantress.lua"
 		
 
 		// Stats
@@ -3972,9 +4172,8 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					""
-		"Ability4"					"sell_tower"
-		"Ability5"					""
+		"Ability1"					"sell_tower"
+		"Ability2"					"enchantress_impetus"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -3982,6 +4181,17 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "7459" } // Weapon
@@ -4008,10 +4218,9 @@
 		"PedestalModelScale"        "0.3"
 		"PedestalOffset"            "5"
 		"ProjectileModel"           "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
-		"SoundSet"                  "Hero_KeeperOfTheLight"
+		"SoundSet"                  "hero_Crystal"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
-		
 		
 
 		// Stats
@@ -4061,7 +4270,8 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		"Ability1"					"upgrade_tower_cm_2"
-		"Ability4"					"sell_tower"
+		"Ability2"					"sell_tower"
+		"Ability3"					"brilliance_aura_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -4069,6 +4279,17 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "5737" } 	// Weapon
@@ -4095,10 +4316,9 @@
 		"PedestalModelScale"        "1.5"
 		"PedestalOffset"            "4"
 		"ProjectileModel"           "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
-		"SoundSet"                  "Hero_KeeperOfTheLight"
+		"SoundSet"                  "hero_Crystal"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
-		
 		
 
 		// Stats
@@ -4148,7 +4368,8 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		"Ability1"					"upgrade_tower_cm_3"
-		"Ability4"					"sell_tower"
+		"Ability2"					"sell_tower"
+		"Ability3"					"brilliance_aura_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -4156,6 +4377,17 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "6573" } 	// Weapon
@@ -4182,10 +4414,9 @@
 		"PedestalModelScale"        "1.5"
 		"PedestalOffset"            "4"
 		"ProjectileModel"           "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
-		"SoundSet"                  "Hero_KeeperOfTheLight"
+		"SoundSet"                  "hero_Crystal"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
-		
 		
 
 		// Stats
@@ -4234,8 +4465,8 @@
 		"HealthBarOffset"       	"200"
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
-		"Ability1"					""
-		"Ability4"					"sell_tower"
+		"Ability1"					"sell_tower"
+		"Ability2"					"brilliance_aura_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -4243,6 +4474,17 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "6784" } 	// Weapon
@@ -4255,13 +4497,13 @@
 	}
 	
 	//============================================================
-	// Tower: Morphling - 1
+	// Tower: Kotl - 1
 	//============================================================
-	"tower_morphling_1"
+	"tower_kotl_1"
 	{
 		// Visual
 		//-----------------------------
-		"Model"                     "models/heroes/morphling/morphling.vmdl"
+		"Model"                     "models/heroes/keeper_of_the_light/keeper_of_the_light.vmdl"
 		"ModelScale"                "1"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
@@ -4269,9 +4511,10 @@
 		"PedestalModelScale"        "0.3"
 		"PedestalOffset"            "5"
 		"ProjectileModel"           "particles/units/heroes/hero_keeper_of_the_light/keeper_base_attack.vpcf"
-		"SoundSet"                  "Hero_Morphling"
+		"SoundSet"                  "Hero_KeeperOfTheLight"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_morphling.vsndevts"
+		"vscripts"         			"ai/kotl.lua"
 		
 		
 
@@ -4283,7 +4526,7 @@
 		"AttackRange"               "1000"
 		"AttackAcquisitionRange"    "1000"
 		"AttackRate"                "1"
-		"AttackAnimationPoint"		"0.500000"
+		"AttackAnimationPoint"		"0.300000"
 		"ProjectileSpeed"           "2500"
 
 		"Level"                     "225"
@@ -4322,8 +4565,9 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"upgrade_tower_morphling_2"
-		"Ability4"					"sell_tower"
+		"Ability1"					"upgrade_tower_kotl_2"
+		"Ability2"					"sell_tower"
+		"Ability3"					"chakra_magic_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -4331,35 +4575,46 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "4537" } 	 // Head
-				"2"  { "ItemDef" "4429" }  	 // Shoulder
-				"3"  { "ItemDef" "5363" } 	 // Back
-				"4"  { "ItemDef" "4433" }  	 // Arms
+				"1"  { "ItemDef" "9564" } 	 // Mount
+				"2"  { "ItemDef" "4865" }  	 // Weapon
+				"3"  { "ItemDef" "4868" } 	 // Head
+				"4"  { "ItemDef" "4866" }  	 // Belt
 			}
 		}
 	}
 	
 	//============================================================
-	// Tower: Morphling - 2
+	// Tower: Kotl - 2
 	//============================================================
-	"tower_morphling_2"
+	"tower_kotl_2"
 	{
 		// Visual
 		//-----------------------------
-		"Model"                     "models/heroes/morphling/morphling.vmdl"
+		"Model"                     "models/heroes/keeper_of_the_light/keeper_of_the_light.vmdl"
 		"ModelScale"                "1"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
-		"PedestalModelScale"        "1.5"
-		"PedestalOffset"            "4"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.3"
+		"PedestalOffset"            "5"
 		"ProjectileModel"           "particles/units/heroes/hero_keeper_of_the_light/keeper_base_attack.vpcf"
-		"SoundSet"                  "Hero_Morphling"
+		"SoundSet"                  "Hero_KeeperOfTheLight"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_morphling.vsndevts"
-		
+		"vscripts"         			"ai/kotl.lua"
 		
 
 		// Stats
@@ -4370,7 +4625,7 @@
 		"AttackRange"               "1000"
 		"AttackAcquisitionRange"    "1000"
 		"AttackRate"                "0.8"
-		"AttackAnimationPoint"		"0.500000"
+		"AttackAnimationPoint"		"0.300000"
 		"ProjectileSpeed"           "2500"
 
 		"Level"                     "475"
@@ -4409,8 +4664,9 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"upgrade_tower_morphling_3"
-		"Ability4"					"sell_tower"
+		"Ability1"					"upgrade_tower_kotl_3"
+		"Ability2"					"sell_tower"
+		"Ability3"					"chakra_magic_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -4418,35 +4674,46 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "8806" } 	 // Head
-				"2"  { "ItemDef" "8808" }  	 // Shoulder
-				"3"  { "ItemDef" "8810" } 	 // Back
-				"4"  { "ItemDef" "8809" }  	 // Arms
+				"1"  { "ItemDef" "12775" } 	 // Mount
+				"2"  { "ItemDef" "4803" }  	 // Weapon
+				"3"  { "ItemDef" "9565" } 	 // Head
+				"4"  { "ItemDef" "9566" }  	 // Belt
 			}
 		}
 	}
 	
 	//============================================================
-	// Tower: Morphling - 3
+	// Tower: Kotl - 3
 	//============================================================
-	"tower_morphling_3"
+	"tower_kotl_3"
 	{
 		// Visual
 		//-----------------------------
-		"Model"                     "models/heroes/morphling/morphling.vmdl"
+		"Model"                     "models/heroes/keeper_of_the_light/keeper_of_the_light.vmdl"
 		"ModelScale"                "1"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
-		"PedestalModelScale"        "1.5"
-		"PedestalOffset"            "4"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.3"
+		"PedestalOffset"            "5"
 		"ProjectileModel"           "particles/units/heroes/hero_keeper_of_the_light/keeper_base_attack.vpcf"
-		"SoundSet"                  "Hero_Morphling"
+		"SoundSet"                  "Hero_KeeperOfTheLight"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_morphling.vsndevts"
-		
+		"vscripts"         			"ai/kotl.lua"
 		
 
 		// Stats
@@ -4457,7 +4724,7 @@
 		"AttackRange"               "1000"
 		"AttackAcquisitionRange"    "1000"
 		"AttackRate"                "0.7"
-		"AttackAnimationPoint"		"0.500000"
+		"AttackAnimationPoint"		"0.300000"
 		"ProjectileSpeed"           "2500"
 
 		"Level"                     "1000"
@@ -4496,8 +4763,8 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					""
-		"Ability4"					"sell_tower"
+		"Ability1"					"sell_tower"
+		"Ability2"					"chakra_magic_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -4505,12 +4772,23 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "7603" } 	 // Head
-				"2"  { "ItemDef" "7561" }  	 // Shoulder
-				"3"  { "ItemDef" "7559" } 	 // Back
-				"4"  { "ItemDef" "6833" }  	 // Arms
+				"1"  { "ItemDef" "9198" } 	 // Mount
+				"2"  { "ItemDef" "12772" }   // Weapon
+				"3"  { "ItemDef" "12774" } 	 // Head
+				"4"  { "ItemDef" "12773" }   // Belt
 			}
 		}
 	}
@@ -4533,6 +4811,7 @@
 		"SoundSet"                  "Hero_VengefulSpirit"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_vengefulspirit.vsndevts"
+		"vscripts"					"ai/venge"
 		
 		
 
@@ -4584,7 +4863,8 @@
 		"ConsideredHero"			"1"
 		
 		"Ability1"					"upgrade_tower_venge_2"
-		"Ability4"					"sell_tower"
+		"Ability2"					"sell_tower"
+		"Ability3"					"vengefulspirit_magic_missile_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -4592,6 +4872,17 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "8618" }   // Weapon
@@ -4620,6 +4911,7 @@
 		"SoundSet"                  "Hero_VengefulSpirit"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_vengefulspirit.vsndevts"
+		"vscripts"					"ai/venge"
 		
 		
 
@@ -4671,7 +4963,8 @@
 		"ConsideredHero"			"1"
 		
 		"Ability1"					"upgrade_tower_venge_3"
-		"Ability4"					"sell_tower"
+		"Ability2"					"sell_tower"
+		"Ability3"					"vengefulspirit_magic_missile_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -4679,6 +4972,17 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "8994" }  // Weapon
@@ -4707,7 +5011,7 @@
 		"SoundSet"                  "Hero_VengefulSpirit"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_vengefulspirit.vsndevts"
-		
+		"vscripts"					"ai/venge"
 		
 
 		// Stats
@@ -4757,8 +5061,8 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					""
-		"Ability4"					"sell_tower"
+		"Ability1"					"sell_tower"
+		"Ability2"					"vengefulspirit_magic_missile_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -4766,6 +5070,17 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "9891" }   // Weapon
@@ -4857,6 +5172,17 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "5883" } // Weapon
@@ -4945,6 +5271,17 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "6913" } // Weapon
@@ -5033,6 +5370,17 @@
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "12616" } // Weapon
