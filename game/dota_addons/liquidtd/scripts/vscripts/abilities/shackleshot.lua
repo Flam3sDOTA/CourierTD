@@ -10,6 +10,10 @@ function shackleshot_hit( keys )
     local target = keys.target
     local ability = keys.ability
     local ability_level = ability:GetLevel() - 1
+	
+	if caster:IsHero() then
+        return
+    end
 
     -- Ability variables
     local stun_duration_long = ability:GetLevelSpecialValueFor("stun_duration", ability_level)

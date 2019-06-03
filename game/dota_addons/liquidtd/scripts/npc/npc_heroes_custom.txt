@@ -21,7 +21,7 @@
         "Ability2"                    	"build_tower_poison"
         "Ability3"                    	"build_tower_ice"
         "Ability4"                    	"build_tower_utility"
-        "Ability5"                    	"build_tower_farm"
+        "Ability5"                    	""
         "Ability6"                    	""
 		"Ability7"        				""
 		"Ability8"        				""

@@ -633,7 +633,7 @@
 			"01"
 			{
 				"var_type"    					 "FIELD_INTEGER"
-				"ATTACK_DAMAGE_TOOLTIP"    		 "65"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "60"
 			}
 			"02"
 			{
@@ -678,7 +678,7 @@
 			"01"
 			{
 				"var_type"    					 "FIELD_INTEGER"
-				"ATTACK_DAMAGE_TOOLTIP"    		 "165"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "150"
 			}
 			"02"
 			{
@@ -723,7 +723,7 @@
 			"01"
 			{
 				"var_type"    					 "FIELD_INTEGER"
-				"ATTACK_DAMAGE_TOOLTIP"    		 "265"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "240"
 			}
 			"02"
 			{
@@ -1360,7 +1360,7 @@
 			"02"
 			{
 				"var_type"    					 "FIELD_FLOAT"
-				"ATTACK_SPEED_TOOLTIP"     		 "0.8"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.9"
 			}
 			"03"
 			{
@@ -1405,7 +1405,7 @@
 			"02"
 			{
 				"var_type"    					 "FIELD_FLOAT"
-				"ATTACK_SPEED_TOOLTIP"     		 "0.7"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.85"
 			}
 			"03"
 			{
@@ -1899,7 +1899,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"range"						"800 850 900"
+				"range"						"750"
 			}
 			"02"
 			{
@@ -1909,7 +1909,7 @@
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage_reduction_percent"	"40 35 30"
+				"damage_reduction_percent"	"70 65 60"
 			}
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
@@ -2196,7 +2196,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"1100"
 		"AbilityCastPoint"				"0.35"
-		"AbilityCooldown"				"12 11 10"
+		"AbilityCooldown"				"20 19 18"
 		"AbilityManaCost"				"100"
 		
 		// Special
@@ -2211,7 +2211,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"				"1.5 2.0 2.5"
+				"duration"				"1.0 1.5 2.0"
 			}
 		}
 		
@@ -2291,7 +2291,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"movement_slow"			"-20 -30 -40"
+				"movement_slow"			"-25 -35 -45"
 			}
 			"06"
 			{
@@ -2306,7 +2306,7 @@
 			"08"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"distance"				"800"
+				"distance"				"950"
 			}
 		}
 		"OnSpellStart"
@@ -2438,21 +2438,35 @@
 	}
 	
 	//=================================================================================================================
-	// Rewrite of Crystal Maiden Arcane Aura
-	// Author: kritth
-	// Date: December 31, 2015
-	// Version: 6.86
-	// Type: Datadriven
+	// Ability: Crystal Maiden's Crystal Nova
 	//=================================================================================================================
-	"brilliance_aura_datadriven"
+	"crystal_maiden_crystal_nova"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"						"ability_datadriven"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"AbilityTextureName"			"crystal_maiden_brilliance_aura"
+		"ID"							"5126"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_Crystal.CrystalNova"
 		"MaxLevel"						"3"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1100"
+		"AbilityCastPoint"				"0.3"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"12 11 10"
+		
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"100"
 		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -2460,46 +2474,38 @@
 		{
 			"01"
 			{
-				"var_type"			"FIELD_FLOAT"
-				"mana_regen"		"1.0 1.5 2.0"
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"500"
 			}
-			// Extra variables
 			"02"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"global_radius"		"500 600 700"
+				"movespeed_slow"	"-30 -40 -50"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"attackspeed_slow"	"-30 -40 -50"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"duration"			"4.5"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"vision_duration"	"6.0"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"nova_damage"			"130 170 210 260"
+				"LinkedSpecialBonus"	"special_bonus_unique_crystal_maiden_2"
 			}
 		}
-		
-		// Data driven
-		//-------------------------------------------------------------------------------------------------------------
-		"Modifiers"
-		{
-			"modifier_brilliance_aura_caster_datadriven"
-			{
-				"Passive"				"1"
-				"IsPurgable"			"0"
-				"IsHidden"				"1"
-				"Aura"					"modifier_brilliance_aura_effect_datadriven"
-				"Aura_Radius"			"%global_radius"
-				"Aura_Teams"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-				"Aura_Types"			"DOTA_UNIT_TARGET_ALL"
-				
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"		"%mana_regen"
-				}
-			}
-			
-			"modifier_brilliance_aura_effect_datadriven"
-			{
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"		"%mana_regen"
-				}
-			}
-		}
-	}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}	
 	
 
 	//============================================================

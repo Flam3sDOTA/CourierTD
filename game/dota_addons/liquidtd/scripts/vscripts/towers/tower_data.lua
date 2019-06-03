@@ -268,7 +268,7 @@ return {
     tier = 1,
     spawn_sound = "frostivus_ui_select",
 	abilities = {
-      brilliance_aura_datadriven = 1
+      crystal_maiden_crystal_nova = 1
     },	
   },
 
@@ -277,7 +277,7 @@ return {
     tier = 1,
     spawn_sound = "frostivus_ui_select",
 	abilities = {
-      brilliance_aura_datadriven = 2
+      crystal_maiden_crystal_nova = 2
     },
   },
 
@@ -286,7 +286,7 @@ return {
     tier = 1,
     spawn_sound = "frostivus_ui_select",
 	abilities = {
-      brilliance_aura_datadriven = 3
+      crystal_maiden_crystal_nova = 3
     },
   },
   

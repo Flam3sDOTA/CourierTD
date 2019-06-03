@@ -26,9 +26,9 @@ function CastChakraMagic()
     local friends = FindUnitsInRadius( thisEntity:GetTeamNumber(), thisEntity:GetOrigin(), thisEntity, 800, DOTA_UNIT_TARGET_TEAM_FRIENDLY, DOTA_UNIT_TARGET_ALL, DOTA_UNIT_TARGET_FLAG_MANA_ONLY, FIND_ANY_ORDER, false )
     local target
     for i=1, #friends do
-    if not target and friends[i] ~= thisEntity and not friends[i]:IsHero() then
-        target = friends[i]
-    end
+		if not target and friends[i] ~= thisEntity and not friends[i]:IsHero() and friends[i]:GetMana() < 90 then
+			target = friends[i]
+		end
     end
     if target then
         ExecuteOrderFromTable({

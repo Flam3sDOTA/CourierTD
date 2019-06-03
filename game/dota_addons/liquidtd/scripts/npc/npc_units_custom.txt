@@ -2726,9 +2726,9 @@
 
 		// Stats
 		//----------------------------- 
-		"AttackDamageMin"           "65"
-		"AttackDamageMax"          	"65"
-		"Damage"                    "65"  
+		"AttackDamageMin"           "60"
+		"AttackDamageMax"          	"60"
+		"Damage"                    "60"  
 		"AttackRange"               "800"
 		"AttackAcquisitionRange"    "800"
 		"AttackRate"                "0.8"
@@ -2822,9 +2822,9 @@
 
 		// Stats
 		//----------------------------- 
-		"AttackDamageMin"           "165"
-		"AttackDamageMax"          	"165"
-		"Damage"                    "165"  
+		"AttackDamageMin"           "150"
+		"AttackDamageMax"          	"150"
+		"Damage"                    "150"  
 		"AttackRange"               "800"
 		"AttackAcquisitionRange"    "800"
 		"AttackRate"                "0.7"
@@ -2919,9 +2919,9 @@
 
 		// Stats
 		//----------------------------- 
-		"AttackDamageMin"           "265"
-		"AttackDamageMax"          	"265"
-		"Damage"                    "265"  
+		"AttackDamageMin"           "240"
+		"AttackDamageMax"          	"240"
+		"Damage"                    "240"  
 		"AttackRange"               "800"
 		"AttackAcquisitionRange"    "800"
 		"AttackRate"                "0.6"
@@ -4221,7 +4221,7 @@
 		"SoundSet"                  "hero_Crystal"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
-		
+		"vscripts"					"ai/cm"
 
 		// Stats
 		//----------------------------- 
@@ -4271,7 +4271,7 @@
 		"ConsideredHero"			"1"
 		"Ability1"					"upgrade_tower_cm_2"
 		"Ability2"					"sell_tower"
-		"Ability3"					"brilliance_aura_datadriven"
+		"Ability3"					"crystal_maiden_crystal_nova"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -4319,7 +4319,7 @@
 		"SoundSet"                  "hero_Crystal"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
-		
+		"vscripts"					"ai/cm"
 
 		// Stats
 		//----------------------------- 
@@ -4328,7 +4328,7 @@
 		"Damage"                    "180"  
 		"AttackRange"               "1000"
 		"AttackAcquisitionRange"    "1000"
-		"AttackRate"                "0.8"
+		"AttackRate"                "0.9"
 		"AttackAnimationPoint"		"0.450000"
 		"ProjectileSpeed"           "2500"
 
@@ -4369,7 +4369,7 @@
 		"ConsideredHero"			"1"
 		"Ability1"					"upgrade_tower_cm_3"
 		"Ability2"					"sell_tower"
-		"Ability3"					"brilliance_aura_datadriven"
+		"Ability3"					"crystal_maiden_crystal_nova"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -4417,7 +4417,7 @@
 		"SoundSet"                  "hero_Crystal"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
-		
+		"vscripts"					"ai/cm"
 
 		// Stats
 		//----------------------------- 
@@ -4426,7 +4426,7 @@
 		"Damage"                    "280"  
 		"AttackRange"               "1000"
 		"AttackAcquisitionRange"    "1000"
-		"AttackRate"                "0.7"
+		"AttackRate"                "0.85"
 		"AttackAnimationPoint"		"0.450000"
 		"ProjectileSpeed"           "2500"
 
@@ -4466,7 +4466,7 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		"Ability1"					"sell_tower"
-		"Ability2"					"brilliance_aura_datadriven"
+		"Ability2"					"crystal_maiden_crystal_nova"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
