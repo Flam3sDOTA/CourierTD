@@ -50,7 +50,7 @@ function SpawnNextWave()
       unit_count = waveData.wave_count,
     }
   )
-
+  
   local waveDuration = waveData.wave_count * waveData.spawn_interval
   local timeToNextRound = waveDuration + TIME_BETWEEN_ROUNDS
 

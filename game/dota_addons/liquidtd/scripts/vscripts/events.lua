@@ -115,7 +115,7 @@ function LiquidTD:OnEntityKilled(event)
     end
 	
 	--if killed:GetUnitName() == "unit_wave50" then
-	--	print( "Boss 50 Unit is Dead, Teams Who Killed Boss 50 Unit declared as winner." )	
+	--
 	--end
 end
 
