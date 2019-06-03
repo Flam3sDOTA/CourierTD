@@ -1,0 +1,42 @@
+"addon" {
+	"game_mode_15"							"Courier TD"
+	"addon_game_name"						"Courier TD"
+	
+	"Unassigned"      						"Unassigned Team"
+	"Spectator"       						"Spectator Team"
+	"Neutrals"        						"Neutral Team"
+	"NoTeam"          						"No Team"
+	
+	//------------------------
+	// Teams
+	//------------------------
+		"DOTA_GoodGuys"						"Board 1"
+		"DOTA_BadGuys"						"Board 2"
+		"DOTA_CUSTOM1"						"Board 3"
+		"DOTA_CUSTOM2"						"Board 4"
+		"DOTA_CUSTOM3"						"Board 5"
+		"DOTA_CUSTOM4"						"Board 6"
+		"DOTA_CUSTOM5"						"Not Active"
+		"DOTA_CUSTOM6"						"Not Active"
+		"DOTA_CUSTOM7"						"Not Active"
+		"DOTA_CUSTOM8"						"Not Active"
+
+		"VictoryMessage_GoodGuys"			"Board 1 Victory"
+		"VictoryMessage_BadGuys"			"Board 2 Victory"
+		"VictoryMessage_Custom1"			"Board 3 Victory"
+		"VictoryMessage_Custom2"			"Board 4 Victory"
+		"VictoryMessage_Custom3"			"Board 5 Victory"
+		"VictoryMessage_Custom4"			"Board 6 Victory"
+		"VictoryMessage_Custom5"			"Not Active"
+		"VictoryMessage_Custom6"			"Not Active"
+		"VictoryMessage_Custom7"			"Not Active"
+		"VictoryMessage_Custom8"			"Not Active"
+	
+		//------------------------
+		// UI Related
+		//------------------------
+		"HowToPlay"							"How to Play"
+		"News_Title"						"Latest News"
+		"empty_slot"						"Empty Board"
+		"error_invalid_build_position"		"Invalid Build Position"
+}

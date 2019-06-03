@@ -1,0 +1,834 @@
+"DOTAAbilities"
+{
+	"item_building_cancel"
+	{
+		"BaseClass"             		"item_datadriven"
+		"AbilityTextureName"			"item_cancel"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE"
+		"AbilityCastPoint"				"0"
+
+		"ItemDroppable" 				"0"
+		"ItemPurchasable" 				"0"
+		"ItemSellable"					"0"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"			"builder.lua"
+				"Function"				"CancelBuilding"
+			}
+		}
+	}
+	
+	//============================================================
+	// Blades of Attack - Tier 1
+	//============================================================
+	"item_custom_blades_of_attack"
+	{
+		"ID" 							"3100"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_1_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_blades_of_attack"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1" 
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemRequiresCharges"			"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"9"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_blades_of_attack_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"			"%bonus_damage"
+				}
+			}
+		}			
+	}
+	
+	//============================================================
+	// Band of Elvenskin - Tier 1
+	//============================================================
+	"item_custom_band_of_elvenskin"
+	{
+		"ID" 							"3101"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_1_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_band_of_elvenskin"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1" 
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemRequiresCharges"			"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"10"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_band_of_elvenskin_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"			"%bonus_attack_speed"
+				}
+			}
+		}			
+	}
+	
+	//============================================================
+	// Belt of Strength - Tier 1
+	//============================================================
+	"item_custom_belt_of_strength"
+	{
+		"ID" 							"3102"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_1_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_belt_of_strength"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1" 
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemRequiresCharges"			"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"10"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_belt_of_strength_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"			"%bonus_damage"
+				}
+			}
+		}			
+	}
+	
+	//============================================================
+	// Robe of the Magi - Tier 1
+	//============================================================
+	"item_custom_robe_of_the_magi"
+	{
+		"ID" 							"3103"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_1_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_robe_of_the_magi"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1" 
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemRequiresCharges"			"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"magic_resistance_reduced"	"-20"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"duration"					"5"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_robe_of_the_magi_modifier"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"OnAttackLanded"
+				{
+					"ApplyModifier"
+					{
+						"ModifierName"	"item_custom_robe_of_the_magi_debuff"
+						"Duration"		"%duration"
+						"Target"		"TARGET"
+					}
+				}
+			}
+		
+			"item_custom_robe_of_the_magi_debuff"
+			{
+				"IsHidden"			"0"
+				"IsBuff"			"0"
+				"IsDebuff"			"1"
+				"EffectName"		"particles/units/heroes/hero_monkey_king/monkey_king_jump_armor_debuff_model.vpcf"
+				"EffectAttachType"	"follow_overhead"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"%magic_resistance_reduced"
+				}
+			
+			}
+		}			
+	}
+	
+	//============================================================
+	// Crown - Tier 1
+	//============================================================
+	"item_custom_crown"
+	{
+		"ID" 							"3104"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_1_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_crown"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1" 
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemRequiresCharges"			"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_mana_regen"			"1"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_crown_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT_UNIQUE"			"%bonus_mana_regen"
+				}
+			}
+		}			
+	}
+	
+	//============================================================
+	// Blight Stone - Tier 1
+	//============================================================
+	"item_custom_blight_stone"
+	{
+		"ID" 							"3105"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_1_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_blight_stone"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1" 
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemRequiresCharges"			"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"armor_reduction"			"-3"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"duration"					"5"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_blight_stone_modifier"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"OnAttackLanded"
+				{
+					"ApplyModifier"
+					{
+						"ModifierName"	"item_custom_blight_stone_modifier_debuff"
+						"Duration"		"%duration"
+						"Target"		"TARGET"
+					}
+				}
+			}
+		
+			"item_custom_blight_stone_modifier_debuff"
+			{
+				"IsHidden"			"0"
+				"IsBuff"			"0"
+				"IsDebuff"			"1"
+				"EffectName"		"particles/units/heroes/hero_monkey_king/monkey_king_jump_armor_debuff_model.vpcf"
+				"EffectAttachType"	"follow_overhead"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%armor_reduction"
+				}
+			
+			}
+		}			
+	}
+	
+	//============================================================
+	// Space Stone - Tier 1
+	//============================================================
+	"item_custom_space_stone"
+	{
+		"ID" 							"3106"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_1_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_space_stone"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1" 
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemRequiresCharges"			"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_mana_regen"			"1"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_space_stone_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"			"%bonus_mana_regen"
+				}
+			}
+		}			
+	}
+	
+	//============================================================
+	// Soul Stone - Tier 1
+	//============================================================
+	"item_custom_soul_stone"
+	{
+		"ID" 							"3107"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_1_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_soul_stone"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1" 
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemRequiresCharges"			"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_mana_regen"			"1"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_soul_stone_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"			"%bonus_mana_regen"
+				}
+			}
+		}			
+	}
+	
+	//============================================================
+	// Reality Stone - Tier 1
+	//============================================================
+	"item_custom_reality_stone"
+	{
+		"ID" 							"3108"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_1_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_reality_stone"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1" 
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemRequiresCharges"			"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_mana_regen"			"1"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_reality_stone_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"			"%bonus_mana_regen"
+				}
+			}
+		}			
+	}
+	
+	//============================================================
+	// Power Stone - Tier 1
+	//============================================================
+	"item_custom_power_stone"
+	{
+		"ID" 							"3109"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_1_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_power_stone"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1" 
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemRequiresCharges"			"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_mana_regen"			"1"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_power_stone_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"			"%bonus_mana_regen"
+				}
+			}
+		}			
+	}
+	
+	//============================================================
+	// Time Stone - Tier 1
+	//============================================================
+	"item_custom_time_stone"
+	{
+		"ID" 							"3110"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_1_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_time_stone"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1" 
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemRequiresCharges"			"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_mana_regen"			"1"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_time_stone_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"			"%bonus_mana_regen"
+				}
+			}
+		}			
+	}
+	
+	//============================================================
+	// Mind Stone - Tier 1
+	//============================================================
+	"item_custom_mind_stone"
+	{
+		"ID" 							"3110"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_1_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_mind_stone"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1" 
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemRequiresCharges"			"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_mana_regen"			"1"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_mind_stone_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"			"%bonus_mana_regen"
+				}
+			}
+		}			
+	}
+	
+	
+	//============================================================
+	// TIER 2 ITEMS
+	//============================================================
+	//============================================================
+	// Broadsword - Tier 2
+	//============================================================
+	"item_custom_broadsword"
+	{
+		"ID" 							"3200"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_2_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_broadsword"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1" 
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemRequiresCharges"			"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"18"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_broadsword_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"			"%bonus_damage"
+				}
+			}
+		}
+	}
+	
+	//============================================================
+	// TIER 3 ITEMS
+	//============================================================
+	// Crystalys - Tier 3
+	//============================================================
+	"item_custom_crystalys"
+	{
+		"ID" 							"3300"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl"
+		"Effect"						"particles/item_effects/item_tier_3_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_crystalys"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1"
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemDisassembleRule" 			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"0"
+		"ItemStackable" 				"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"38"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"crit_damage"			"175"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"crit_chance"			"20"
+			}			
+		}
+		"Modifiers"
+		{
+			"item_custom_crystalys_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"			"%bonus_damage"
+				}
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"			"items/item_crystalys.lua"
+						"Function"				"modifier_item_custom_crystalys_recalculate_crit_chance"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"			"items/item_crystalys.lua"
+						"Function"				"modifier_item_custom_crystalys_recalculate_crit_chance"
+					}
+				}
+			}
+			//Crit chance does not stack, so attach it to a non-MULTIPLE modifier.
+			"modifier_item_custom_crystalys_crit_chance"
+			{
+				"Passive"						"1"
+				"IsHidden"						"1"
+				"OnAttackLanded"
+				{
+					"RunScript"
+					{
+						"ScriptFile"			"items/item_crystalys.lua"
+						"Function"				"modifier_item_custom_crystalys_crit_chance_on_attack_landed"
+						"crit_chance"			"%crit_chance"
+						"crit_damage"			"%crit_damage"
+					}
+				}
+			}
+			"modifier_item_custom_crystalys_crit"
+			{
+				"Passive"						"0"
+				"IsHidden"						"0"
+				"IsBuff"						"0"
+				"IsDebuff"						"1"
+				"IsPurgable"					"0"
+				"EffectName"            		"particles/units/heroes/hero_sandking/sandking_caustic_finale_explode.vpcf"
+				"EffectAttachType"      		"follow_overhead"
+			}
+		}
+	}
+	
+	//============================================================
+	// RECIPES
+	//============================================================
+	//============================================================
+	// Crystalys Recipe
+	//============================================================
+	"item_recipe_custom_crystalys" 
+	{
+		"ID" 				  			"4000"
+		"BaseClass"           			"item_datadriven"
+		"ItemRecipe"          			"1"
+		"ItemCost"            			"0"
+		"ItemResult"          			"item_custom_crystalys"
+		"ItemRequirements"
+		{
+			"01" 			 			"item_custom_blades_of_attack;item_custom_broadsword"
+		}
+	}
+}

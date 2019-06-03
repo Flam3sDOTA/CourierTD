@@ -1,0 +1,1926 @@
+"DOTAAbilities"
+{
+	"Version"		"1"
+	//============================================================
+	// Tower: Invulnerable (No Health Bar)
+	//============================================================
+	"tower_invulnerable"
+	{
+		"BaseClass"             	"ability_datadriven"
+		"AbilityBehavior"         	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"MaxLevel"                	"1"
+		"AbilityTextureName"   	  	"invulnerable"
+		"Modifiers"
+		{
+			"builder_invulnerable_modifier"
+			{
+				"Passive"    "1"
+				"IsHidden"	 "1"
+				"States"
+				{
+					"MODIFIER_STATE_NO_UNIT_COLLISION"    	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_ATTACK_IMMUNE"        	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_MAGIC_IMMUNE"        	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_NO_HEALTH_BAR"			"MODIFIER_STATE_VALUE_ENABLED"
+				}
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PHYSICAL" 	"1"
+					"MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_MAGICAL" 		"1"
+					"MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PURE" 		"1"
+				}
+			}
+		}
+	}
+	
+	//============================================================
+	// Units: Phase
+	//============================================================
+	"ability_phased"
+	{
+		"BaseClass"                     	"ability_datadriven"
+		"AbilityBehavior"                	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"            	"Phase"
+		"MaxLevel"                         	"1"
+
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"Target"            		"CASTER"
+				"ModifierName"        		"modifier_phased"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_phased"
+			{
+				"Passive"            		"1"
+				"IsHidden"            		"1"
+				"States"
+				{
+					"MODIFIER_STATE_NO_UNIT_COLLISION"        "MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+		}        
+	}
+	
+	//============================================================
+	// Sell Tower - Half Price
+	//============================================================
+	"sell_tower"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"					"ability_datadriven"
+		"AbilityTextureName"		"alchemist_goblins_greed"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"					"1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityChannelTime"		"0.5"
+
+		"OnChannelSucceeded"
+		{
+			"RunScript"
+			{
+				"Caster"			"CASTER"
+				"ScriptFile"		"mechanics/sell.lua"
+				"Function"			"SellTower"
+			}
+		}
+	}
+	
+	//============================================================
+	// Build Tower: Arrow
+	//============================================================
+	"build_tower_arrow"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "tower_arrow"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "1"
+		"PlayerCanControl"              "1"
+		"UnitName"                      "tower_arrow"
+		"OverrideBuildingGhost"         "tower_arrow"
+		"AbilityGoldCost"               "100"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"        "mechanics/builder.lua"
+				"Function"          "Build"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "50"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"800"
+			}
+		}
+	}	
+	
+	//============================================================
+	// Build Tower: Poison
+	//============================================================
+	"build_tower_poison"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "tower_poison"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "1"
+		"PlayerCanControl"              "1"
+		"UnitName"                      "tower_poison"
+		"OverrideBuildingGhost"         "tower_poison"
+		"AbilityGoldCost"               "75"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"        "mechanics/builder.lua"
+				"Function"          "Build"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "20"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"800"
+			}
+		}
+	}	
+	
+	//============================================================
+	// Build Tower: Ice
+	//============================================================
+	"build_tower_ice"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "tower_ice"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"UnitName"                      "tower_ice"
+		"OverrideBuildingGhost"         "tower_ice"
+		"AbilityGoldCost"               "50"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"        "mechanics/builder.lua"
+				"Function"          "Build"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "30"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"800"
+			}
+		}
+	}		
+	
+	//============================================================
+	// Build Tower: Farm
+	//============================================================
+	"build_tower_farm"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "TowerFarm"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "2"
+		"PlayerCanControl"              "1"
+		"UnitName"                      "tower_farm_1"
+		"OverrideBuildingGhost"         "tower_farm_1"
+		"AbilityGoldCost"               "500"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"        "mechanics/builder.lua"
+				"Function"          "Build"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"GOLD TICK TIME"    		 	 "10"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"GOLD PER TICK"     		 	 "5"
+			}
+		}
+	}		
+	
+	//============================================================
+	// Upgrade Farm 1 to Farm 2
+	//============================================================
+	"upgrade_tower_farm_2"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "TowerFarm"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "1000"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_farm_2"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"GOLD TICK TIME"    		 	 "9"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"GOLD PER TICK"     		 	 "7"
+			}
+		}
+	}	
+	
+	//============================================================
+	// Upgrade Farm 2 to Farm 3
+	//============================================================
+	"upgrade_tower_farm_3"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "TowerFarm"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "1500"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_farm_3"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"GOLD TICK TIME"    		 	 "8"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"GOLD PER TICK"     		 	 "9"
+			}
+		}
+	}	
+	
+	//============================================================
+	// Upgrade Farm 3 to Farm 4
+	//============================================================
+	"upgrade_tower_farm_4"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "TowerFarm"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "2000"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_farm_4"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"GOLD TICK TIME"    		 	 "7"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"GOLD PER TICK"     		 	 "11"
+			}
+		}
+	}	
+	
+	//============================================================
+	// Upgrade Farm 4 to Farm 5
+	//============================================================
+	"upgrade_tower_farm_5"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "TowerFarm"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "2500"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_farm_5"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"GOLD TICK TIME"    		 	 "6"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"GOLD PER TICK"     		 	 "13"
+			}
+		}
+	}	
+	
+	//============================================================
+	// Upgrade Farm 5 to Farm 6
+	//============================================================
+	"upgrade_tower_farm_6"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "TowerFarm"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "3000"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_farm_6"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"GOLD TICK TIME"    		 	 "5"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"GOLD PER TICK"     		 	 "15"
+			}
+		}
+	}	
+	
+	//============================================================
+	// Upgrade Arrow Tower to Windranger 1
+	//============================================================
+	"upgrade_tower_wind_1"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToWindranger"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "250"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_windranger_1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "100"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"800"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade Windranger 1 to Windranger 2
+	//============================================================
+	"upgrade_tower_wind_2"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToWindranger"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "500"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_windranger_2"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "200"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.8"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"800"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade Windranger 2 to Windranger 3
+	//============================================================
+	"upgrade_tower_wind_3"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToWindranger"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "1000"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_windranger_3"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "300"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.7"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"800"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade Arrow Tower to Luna 1
+	//============================================================
+	"upgrade_tower_luna_1"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToLuna"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "210"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_luna_1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "65"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.8"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"800"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade Luna 1 to Luna 2
+	//============================================================
+	"upgrade_tower_luna_2"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToLuna"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "450"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_luna_2"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "165"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.7"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"800"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade Luna 2 to Luna 3
+	//============================================================
+	"upgrade_tower_luna_3"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToLuna"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "1000"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_luna_3"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "265"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.6"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"800"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade Arrow Tower to Mirana 1
+	//============================================================
+	"upgrade_tower_mirana_1"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToMirana"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "225"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_mirana_1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "85"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"800"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade Mirana 1 to Mirana 2
+	//============================================================
+	"upgrade_tower_mirana_2"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToMirana"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "475"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_mirana_2"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "185"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.8"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"800"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade Mirana 2 to Mirana 3
+	//============================================================
+	"upgrade_tower_mirana_3"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToMirana"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "1000"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_mirana_3"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "285"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.7"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"800"
+			}
+		}
+	}
+	
+	
+	//============================================================
+	// Upgrade Poison Tower to Furion 1
+	//============================================================
+	"upgrade_tower_furion_1"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToFurion"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "250"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_furion_1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "65"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade Furion 1 to Furion 2
+	//============================================================
+	"upgrade_tower_furion_2"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToFurion"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "500"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_furion_2"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "165"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.9"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade Furion 2 to Furion 3
+	//============================================================
+	"upgrade_tower_furion_3"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToFurion"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "1000"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_furion_3"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "265"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.8"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade Poison Tower to Venomancer 1
+	//============================================================
+	"upgrade_tower_venomancer_1"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToVenomancer"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "225"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_venomancer_1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "65"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade Venomancer 1 to Venomancer 2
+	//============================================================
+	"upgrade_tower_venomancer_2"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToVenomancer"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "475"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_venomancer_2"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "165"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.9"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade Venomancer 2 to Venomancer 3
+	//============================================================
+	"upgrade_tower_venomancer_3"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToVenomancer"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "1000"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_venomancer_3"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "265"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.8"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade Poison Tower to Enchantress 1
+	//============================================================
+	"upgrade_tower_enchantress_1"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToEnchantress"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "210"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_enchantress_1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "65"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade Enchantress 1 to Enchantress 2
+	//============================================================
+	"upgrade_tower_enchantress_2"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToEnchantress"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "450"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_enchantress_2"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "165"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.9"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade Enchantress 2 to Enchantress 3
+	//============================================================
+	"upgrade_tower_enchantress_3"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToEnchantress"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "1000"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_enchantress_3"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "265"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.8"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	
+	//============================================================
+	// Upgrade Ice Tower to Crystal Maiden 1
+	//============================================================
+	"upgrade_tower_cm_1"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "upgradeToCM"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "250"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_cm_1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "80"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade Crystal Maiden 1 to Crystal Maiden 2
+	//============================================================
+	"upgrade_tower_cm_2"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "upgradeToCM"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "500"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_cm_2"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "180"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.8"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade Crystal Maiden 2 to Crystal Maiden 3
+	//============================================================
+	"upgrade_tower_cm_3"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "upgradeToCM"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "1000"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_cm_3"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "280"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.7"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade Ice Tower to Morphling 1
+	//============================================================
+	"upgrade_tower_morphling_1"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "upgradeToMorhpling"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "225"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_morphling_1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "80"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade Morphling 1 to Morphling 2
+	//============================================================
+	"upgrade_tower_morphling_2"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "upgradeToMorhpling"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "475"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_morphling_2"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "180"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.8"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade Morphling 2 to Morphling 3
+	//============================================================
+	"upgrade_tower_morphling_3"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "upgradeToMorhpling"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "1000"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_morphling_3"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "280"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.7"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	
+	
+	//============================================================
+	// Upgrade Ice Tower to Vengeful 1
+	//============================================================
+	"upgrade_tower_venge_1"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToVenge"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "210"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_venge_1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "80"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade Vengeful 1 to Vengeful 2
+	//============================================================
+	"upgrade_tower_venge_2"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToVenge"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "450"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_venge_2"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "180"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.8"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade Vengeful 2 to Vengeful 3
+	//============================================================
+	"upgrade_tower_venge_3"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToVenge"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "1000"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_venge_3"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "280"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.7"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Tower Abilities
+	//============================================================
+	
+	//============================================================
+	// Farm Tower - Gold
+	//============================================================	
+	"farm_tower_gold"
+	{
+		"BaseClass"						"ability_datadriven"
+		"AbilityTextureName"			""
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"MaxLevel"						"6"
+		"AbilitySpecial"
+		{
+			"01"
+			{ 
+				"var_type"  	"FIELD_INTEGER"
+				"Gold" 			"5 7 9 11 13 15"
+			}
+			"02"
+			{ 
+				"var_type"  	"FIELD_INTEGER"
+				"Time" 			"10 9 8 7 6 5"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_farm_tower_gold"
+			{
+				"TextureName"	""
+				"IsDebuff"		"0"
+				"IsBuff"		"1"
+				"IsHidden"		"1"
+				"Passive"		"1"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"Target"		"CASTER"
+						"ScriptFile"	"scripts/vscripts/abilities/farm_tower.lua"
+						"Function"		"Farm_Tower"
+					}
+				}
+			}
+		}
+	}
+	
+	// Rewrite of the Venomancer Poison Sting ability
+	// Author: Pizzalol and Rook
+	// Date: 22.12.2014.
+	//============================================================
+	// Poison Tower - Poison
+	//============================================================
+	"tower_poison_poison"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_datadriven"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityTextureName"			"venomancer_poison_sting"
+		"MaxLevel"						"1"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"2"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage"					"15"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"movement_speed"			"-20"
+			}			
+		}
+
+		"Modifiers"
+		{
+			"modifier_tower_poison_poison"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+
+				"OnAttackLanded"
+				{
+					"ApplyModifier"
+					{
+						"ModifierName"	"modifier_tower_poison_poison_debuff"
+						"Target"		"TARGET"
+					}
+				}
+			}
+
+			"modifier_tower_poison_poison_debuff"
+			{
+				"IsDebuff"				"1"
+				"Duration"				"%duration"
+				"EffectName"			"particles/econ/items/viper/viper_ti7_immortal/viper_poison_debuff_ti7.vpcf"
+				"Target"				"TARGET"
+				"EffectAttachType"		"follow_origin"
+				"ThinkInterval"			"1.0"
+				"OnIntervalThink"
+				{
+					"Damage"
+					{
+						"Target"	"TARGET"
+						"Type"		"DAMAGE_TYPE_MAGICAL"
+						"Damage"	"%damage"
+					}
+				}
+				"OnCreated"
+				{
+					"Damage"
+					{
+						"Target"	"TARGET"
+						"Type"		"DAMAGE_TYPE_MAGICAL"
+						"Damage"	"%damage"
+					}
+				}	
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"		"%movement_speed"
+				}
+			}
+		}
+	}
+	
+	//============================================================
+	// Ice Tower - Slow
+	//============================================================
+	"tower_ice_slow"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_datadriven"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityTextureName"			"IceTowerSlow"
+		"MaxLevel"						"1"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"2"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"movement_speed"			"-35"
+			}			
+		}
+
+		"Modifiers"
+		{
+			"modifier_tower_ice_slow"
+			{
+				"Passive"				"1"
+				"IsHidden"				"1"
+				"OnAttackLanded"
+				{
+					"ApplyModifier"
+					{
+						"ModifierName"	"modifier_tower_ice_slow_debuff"
+						"Target"		"TARGET"
+					}
+				}
+			}
+
+			"modifier_tower_ice_slow_debuff"
+			{
+				"IsDebuff"				"1"
+				"Duration"				"%duration"
+				"EffectName"			"particles/units/heroes/hero_winter_wyvern/wyvern_arctic_burn_slow.vpcf"
+				"Target"				"TARGET"
+				"EffectAttachType"		"follow_origin"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"		"%movement_speed"
+				}
+			}
+		}
+	}
+	
+	//=================================================================================================================
+	// Luna: Moon Glaives
+	//=================================================================================================================
+	"luna_moon_glaive"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5223"												// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilitySound"					"Hero_Luna.MoonGlaive.Impact"
+		"MaxLevel"						"3"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"range"						"1100 1200 1300"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bounces"					"1 2 3"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage_reduction_percent"	"40 35 30"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}
+}

@@ -1,0 +1,114 @@
+"liquidtd_default"
+{
+  "FirstPrepTime"           "60"
+  "PrepTimeBetweenRounds"   "30"
+  "Lanes"
+  {
+    "1"
+    {
+      "SpawnerName"         "radiant_right_units_spawn"
+      "WaypointStart"       "radiant_right_path_start"
+      "Waypoint1"       	"radiant_right_path_1"
+      "Waypoint2"         	"radiant_right_path_2"
+	  "Waypoint3"         	"radiant_right_path_3"
+	  "Waypoint4"         	"radiant_right_path_4"
+	  "Waypoint5"         	"radiant_right_path_5"
+	  "Waypoint6"         	"radiant_right_path_6"
+      "LastWaypoint"        "radiant_right_path_7"
+    }
+    "2"
+    {
+      "SpawnerName"         "radiant_left_units_spawn"
+      "WaypointStart"       "radiant_left_path_start"
+      "Waypoint1"       	"radiant_left_path_1"
+      "Waypoint2"         	"radiant_left_path_2"
+	  "Waypoint3"         	"radiant_left_path_3"
+	  "Waypoint4"         	"radiant_left_path_4"
+	  "Waypoint5"         	"radiant_left_path_5"
+	  "Waypoint6"         	"radiant_left_path_6"
+      "LastWaypoint"        "radiant_left_path_7"
+    }
+    "3"
+    {
+	  "SpawnerName"         "dire_right_units_spawn"
+      "WaypointStart"       "dire_right_path_start"
+      "Waypoint1"       	"dire_right_path_1"
+      "Waypoint2"         	"dire_right_path_2"
+	  "Waypoint3"         	"dire_right_path_3"
+	  "Waypoint4"         	"dire_right_path_4"
+	  "Waypoint5"         	"dire_right_path_5"
+	  "Waypoint6"         	"dire_right_path_6"
+      "LastWaypoint"        "dire_right_path_7"
+    }
+    "4"
+    {
+	  "SpawnerName"         "dire_left_units_spawn"
+      "WaypointStart"       "dire_left_path_start"
+      "Waypoint1"       	"dire_left_path_1"
+      "Waypoint2"         	"dire_left_path_2"
+	  "Waypoint3"         	"dire_left_path_3"
+	  "Waypoint4"         	"dire_left_path_4"
+	  "Waypoint5"         	"dire_left_path_5"
+	  "Waypoint6"         	"dire_left_path_6"
+      "LastWaypoint"        "dire_left_path_7"
+    }
+  }
+
+  "Rounds"
+  {
+    "1"                       // Wave 1
+    {
+      "round_type"            "wave"
+      "bounty"                "15"
+      "Unit"
+      {
+        "NPCName"             "unit_ancient_dire"
+        "UnitCount"           "15"
+      }
+    }
+
+    "2"                       // Wave 2
+    {
+      "round_type"            "wave"
+      "bounty"                "16"
+      "Unit"
+      {
+        "NPCName"             "unit_ancient_dire"
+        "UnitCount"           "15"
+      }
+    }
+
+    "3"                       // Wave 3
+    {
+      "round_type"            "wave"
+      "bounty"                "17"
+      "Unit"
+      {
+        "NPCName"             "unit_ancient_dire"
+        "UnitCount"           "15"
+      }
+    }
+
+    "4"                       // Wave 4
+    {
+      "round_type"            "wave"
+      "bounty"                "15"
+      "Unit"
+      {
+        "NPCName"             "unit_ancient_dire"
+        "UnitCount"           "15"
+      }
+    }
+
+    "5"                       // Wave 5
+    {
+      "round_type"            "wave"
+      "bounty"                "20"
+      "Unit"
+      {
+        "NPCName"             "unit_ancient_dire"
+        "UnitCount"           "1"
+      }
+    }
+  }
+}
