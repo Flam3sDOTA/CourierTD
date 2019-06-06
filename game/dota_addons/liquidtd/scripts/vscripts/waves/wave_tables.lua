@@ -41,7 +41,7 @@ return {
 		round_type = "Boss",
 		unit_name = "unit_wave5",
 		wave_count = 1,
-		spawn_interval = 60,
+		spawn_interval = 30,
 	},
 
 	wave6 = {
@@ -86,7 +86,7 @@ return {
 		round_type = "Boss",
 		unit_name = "unit_wave10",
 		wave_count = 1,
-		spawn_interval = 60,
+		spawn_interval = 30,
 	},
 
 	wave11 = {
@@ -131,7 +131,7 @@ return {
 		round_type = "Boss",
 		unit_name = "unit_wave15",
 		wave_count = 1,
-		spawn_interval = 60,
+		spawn_interval = 30,
 	},
 	
 	wave16 = {
@@ -176,7 +176,7 @@ return {
 		round_type = "Boss",
 		unit_name = "unit_wave20",
 		wave_count = 1,
-		spawn_interval = 60,
+		spawn_interval = 30,
 	},
 	
 	wave21 = {
@@ -221,7 +221,7 @@ return {
 		round_type = "Boss",
 		unit_name = "unit_wave25",
 		wave_count = 1,
-		spawn_interval = 60,
+		spawn_interval = 30,
 	},
 	
 	wave26 = {
@@ -266,7 +266,7 @@ return {
 		round_type = "Boss",
 		unit_name = "unit_wave30",
 		wave_count = 1,
-		spawn_interval = 60,
+		spawn_interval = 30,
 	},
 	
 	wave31 = {
@@ -311,7 +311,7 @@ return {
 		round_type = "Boss",
 		unit_name = "unit_wave35",
 		wave_count = 1,
-		spawn_interval = 60,
+		spawn_interval = 30,
 	},
 	
 	wave36 = {
@@ -356,7 +356,7 @@ return {
 		round_type = "Boss",
 		unit_name = "unit_wave40",
 		wave_count = 1,
-		spawn_interval = 60,
+		spawn_interval = 30,
 	},
 	
 	wave41 = {
@@ -401,7 +401,7 @@ return {
 		round_type = "Boss",
 		unit_name = "unit_wave45",
 		wave_count = 1,
-		spawn_interval = 60,
+		spawn_interval = 30,
 	},
 	
 	wave46 = {
@@ -446,6 +446,6 @@ return {
 		round_type = "Boss",
 		unit_name = "unit_wave50",
 		wave_count = 1,
-		spawn_interval = 60,
+		spawn_interval = 30,
 	},
 }

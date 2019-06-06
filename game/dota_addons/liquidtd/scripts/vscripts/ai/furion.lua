@@ -7,7 +7,7 @@ function Spawn( entityKeyValues )
         return
     end
     Sprout = thisEntity:FindAbilityByName("furion_sprout_datadriven")
-    thisEntity:SetContextThink( "FurionThink", FurionThink, 1 )
+    thisEntity:SetContextThink( "FurionThink", FurionThink, .1 )
 end
 
 function FurionThink()
@@ -32,5 +32,4 @@ function CastSprout()
 			TargetIndex = enemies[1]:entindex(),
 		})
 	end
-    return 1
 end

@@ -7,7 +7,7 @@ function Spawn( entityKeyValues )
         return
     end
     MagicMissile = thisEntity:FindAbilityByName("vengefulspirit_magic_missile_datadriven")
-    thisEntity:SetContextThink( "VengeThink", VengeThink, 1 )
+    thisEntity:SetContextThink( "VengeThink", VengeThink, .1 )
 end
 
 function VengeThink()
@@ -32,5 +32,4 @@ function CastMagicMissile()
 			TargetIndex = enemies[1]:entindex(),
 		})
 	end
-    return 1
 end

@@ -7,7 +7,7 @@ function Spawn( entityKeyValues )
         return
     end
     shackle = thisEntity:FindAbilityByName("windrunner_shackleshot_datadriven")
-    thisEntity:SetContextThink( "WindrangerThink", WindrangerThink, 1 )
+    thisEntity:SetContextThink( "WindrangerThink", WindrangerThink, .1 )
 end
 
 function WindrangerThink()
@@ -32,5 +32,4 @@ function CastShackle()
 			TargetIndex = enemies[1]:entindex(),
 		})
 	end
-    return 1
 end

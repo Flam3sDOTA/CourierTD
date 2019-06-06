@@ -148,8 +148,9 @@ function LiquidTD:OnGameRulesStateChange()
 end
 
 function LiquidTD:OnGameInProgress()
+	EmitGlobalSound("MegaCreeps.Dire")
   -- Give these players a custom builder model
-  Timers:CreateTimer(2, function()
+	Timers:CreateTimer(2, function()
     local maxPlayerID = PlayerResource:GetTeamPlayerCount()
     for playerID=0,(maxPlayerID-1) do
     local sID = PlayerResource:GetSteamAccountID(playerID)

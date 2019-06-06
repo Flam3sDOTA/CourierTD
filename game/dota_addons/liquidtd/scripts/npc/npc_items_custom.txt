@@ -101,7 +101,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_attack_speed"	"10"
+				"bonus_attack_speed"	"5"
 			}
 		}
 		"Modifiers"
@@ -364,207 +364,11 @@
 	}
 	
 	//============================================================
-	// Space Stone - Tier 1
-	//============================================================
-	"item_custom_space_stone"
-	{
-		"ID" 							"3106"
-		"BaseClass" 					"item_datadriven"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"Model"							"models/props_winter/present.vmdl" 
-		"Effect"						"particles/item_effects/item_tier_1_circle.vpcf"
-		"AbilityTextureName" 			"item_custom_space_stone"
-		"ItemDroppable" 				"1"
-		"ItemKillable" 					"1" 
-		"ItemAlertable"					"0"
-		"ItemPermanent"					"1"
-		"ItemRequiresCharges"			"0"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"ItemCost" 						"0"
-		"ItemSellable" 					"0"
-		"ItemPurchasable" 				"1"
-		"ItemStackable" 				"0"
-		"ItemRequiresCharges"			"0"
-		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
-		"UIPickupSound" 				"Item.DropGemShop"
-		"UIDropSound" 					"Item.DropGemShop"
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"bonus_mana_regen"			"1"
-			}
-		}
-		"Modifiers"
-		{
-			"item_custom_space_stone_modifier"
-			{
-				"Passive" 				"1" 
-				"IsHidden" 				"1"
-				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"			"%bonus_mana_regen"
-				}
-			}
-		}			
-	}
-	
-	//============================================================
-	// Soul Stone - Tier 1
-	//============================================================
-	"item_custom_soul_stone"
-	{
-		"ID" 							"3107"
-		"BaseClass" 					"item_datadriven"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"Model"							"models/props_winter/present.vmdl" 
-		"Effect"						"particles/item_effects/item_tier_1_circle.vpcf"
-		"AbilityTextureName" 			"item_custom_soul_stone"
-		"ItemDroppable" 				"1"
-		"ItemKillable" 					"1" 
-		"ItemAlertable"					"0"
-		"ItemPermanent"					"1"
-		"ItemRequiresCharges"			"0"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"ItemCost" 						"0"
-		"ItemSellable" 					"0"
-		"ItemPurchasable" 				"1"
-		"ItemStackable" 				"0"
-		"ItemRequiresCharges"			"0"
-		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
-		"UIPickupSound" 				"Item.DropGemShop"
-		"UIDropSound" 					"Item.DropGemShop"
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"bonus_mana_regen"			"1"
-			}
-		}
-		"Modifiers"
-		{
-			"item_custom_soul_stone_modifier"
-			{
-				"Passive" 				"1" 
-				"IsHidden" 				"1"
-				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"			"%bonus_mana_regen"
-				}
-			}
-		}			
-	}
-	
-	//============================================================
-	// Reality Stone - Tier 1
-	//============================================================
-	"item_custom_reality_stone"
-	{
-		"ID" 							"3108"
-		"BaseClass" 					"item_datadriven"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"Model"							"models/props_winter/present.vmdl" 
-		"Effect"						"particles/item_effects/item_tier_1_circle.vpcf"
-		"AbilityTextureName" 			"item_custom_reality_stone"
-		"ItemDroppable" 				"1"
-		"ItemKillable" 					"1" 
-		"ItemAlertable"					"0"
-		"ItemPermanent"					"1"
-		"ItemRequiresCharges"			"0"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"ItemCost" 						"0"
-		"ItemSellable" 					"0"
-		"ItemPurchasable" 				"1"
-		"ItemStackable" 				"0"
-		"ItemRequiresCharges"			"0"
-		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
-		"UIPickupSound" 				"Item.DropGemShop"
-		"UIDropSound" 					"Item.DropGemShop"
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"bonus_mana_regen"			"1"
-			}
-		}
-		"Modifiers"
-		{
-			"item_custom_reality_stone_modifier"
-			{
-				"Passive" 				"1" 
-				"IsHidden" 				"1"
-				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"			"%bonus_mana_regen"
-				}
-			}
-		}			
-	}
-	
-	//============================================================
-	// Power Stone - Tier 1
-	//============================================================
-	"item_custom_power_stone"
-	{
-		"ID" 							"3109"
-		"BaseClass" 					"item_datadriven"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"Model"							"models/props_winter/present.vmdl" 
-		"Effect"						"particles/item_effects/item_tier_1_circle.vpcf"
-		"AbilityTextureName" 			"item_custom_power_stone"
-		"ItemDroppable" 				"1"
-		"ItemKillable" 					"1" 
-		"ItemAlertable"					"0"
-		"ItemPermanent"					"1"
-		"ItemRequiresCharges"			"0"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"ItemCost" 						"0"
-		"ItemSellable" 					"0"
-		"ItemPurchasable" 				"1"
-		"ItemStackable" 				"0"
-		"ItemRequiresCharges"			"0"
-		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
-		"UIPickupSound" 				"Item.DropGemShop"
-		"UIDropSound" 					"Item.DropGemShop"
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"bonus_mana_regen"			"1"
-			}
-		}
-		"Modifiers"
-		{
-			"item_custom_power_stone_modifier"
-			{
-				"Passive" 				"1" 
-				"IsHidden" 				"1"
-				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"			"%bonus_mana_regen"
-				}
-			}
-		}			
-	}
-	
-	//============================================================
 	// Time Stone - Tier 1
 	//============================================================
 	"item_custom_time_stone"
 	{
-		"ID" 							"3110"
+		"ID" 							"3106"
 		"BaseClass" 					"item_datadriven"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"Model"							"models/props_winter/present.vmdl" 
@@ -613,7 +417,7 @@
 	//============================================================
 	"item_custom_mind_stone"
 	{
-		"ID" 							"3110"
+		"ID" 							"3107"
 		"BaseClass" 					"item_datadriven"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"Model"							"models/props_winter/present.vmdl" 

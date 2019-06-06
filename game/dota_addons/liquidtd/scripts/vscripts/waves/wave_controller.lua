@@ -1,7 +1,7 @@
 local wave_table = require("waves/wave_tables")
 
 local CURRENT_WAVE = 0
-local TIME_BETWEEN_ROUNDS = 30
+local TIME_BETWEEN_ROUNDS = 20
 local TIME_BEFORE_FIRST_ROUND = 60
 
 function StartSpawning()

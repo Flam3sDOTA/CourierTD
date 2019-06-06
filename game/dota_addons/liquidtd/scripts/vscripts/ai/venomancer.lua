@@ -7,7 +7,7 @@ function Spawn( entityKeyValues )
         return
     end
     VenomousGale = thisEntity:FindAbilityByName("venomancer_venomous_gale_datadriven")
-    thisEntity:SetContextThink( "VenomancerThink", VenomancerThink, 1 )
+    thisEntity:SetContextThink( "VenomancerThink", VenomancerThink, .1 )
 end
 
 function VenomancerThink()
@@ -32,5 +32,4 @@ function CastVenomousGale()
 			AbilityIndex = VenomousGale:entindex(),
 		})
 	end
-    return 1
 end

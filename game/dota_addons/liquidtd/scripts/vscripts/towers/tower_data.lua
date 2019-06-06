@@ -128,30 +128,30 @@ return {
     },
   },
   
-  tower_luna_1 = {
+  tower_drow_1 = {
     level = 1,
     tier = 1,
     spawn_sound = "frostivus_ui_select",
 	abilities = {
-      luna_moon_glaive = 1
+      drow_ranger_marksmanship = 1
     },
   },
   
-  tower_luna_2 = {
+  tower_drow_2 = {
     level = 2,
     tier = 1,
     spawn_sound = "frostivus_ui_select",
 	abilities = {
-      luna_moon_glaive = 2
+      drow_ranger_marksmanship = 2
     },
   },
   
-  tower_luna_3 = {
+  tower_drow_3 = {
     level = 3,
     tier = 1,
     spawn_sound = "frostivus_ui_select", 
 	abilities = {
-      luna_moon_glaive = 3
+      drow_ranger_marksmanship = 3
     },
   },
   
@@ -236,30 +236,30 @@ return {
     },
   },
   
-  tower_enchantress_1 = {
+  tower_viper_1 = {
     level = 1,
     tier = 1,
     spawn_sound = "frostivus_ui_select",
 	abilities = {
-      enchantress_impetus = 1
+      viper_viper_strike_datadriven = 1
     },
   },
   
-  tower_enchantress_2 = {
+  tower_viper_2 = {
     level = 2,
     tier = 1,
     spawn_sound = "frostivus_ui_select",
 	abilities = {
-      enchantress_impetus = 2
+      viper_viper_strike_datadriven = 2
     },
   },
   
-  tower_enchantress_3 = {
+  tower_viper_3 = {
     level = 3,
     tier = 1,
     spawn_sound = "frostivus_ui_select",
 	abilities = {
-      enchantress_impetus = 3
+      viper_viper_strike_datadriven = 3
     },
   },
   
@@ -344,24 +344,6 @@ return {
     },
   },
   
-  tower_drow_1 = {
-    level = 1,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",  
-  },
-
-  tower_drow_2 = {
-    level = 2,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",  
-  },
-
-  tower_drow_3 = {
-    level = 3,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",  
-  },
-
   tower_medusa_1 = {
     level = 1,
     tier = 1,
@@ -411,24 +393,6 @@ return {
   },
 
   tower_troll_3 = {
-    level = 3,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",
-  },
-
-  tower_viper_1 = {
-    level = 1,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",
-  },
-
-  tower_viper_2 = {
-    level = 2,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",
-  },
-
-  tower_viper_3 = {
     level = 3,
     tier = 1,
     spawn_sound = "frostivus_ui_select",

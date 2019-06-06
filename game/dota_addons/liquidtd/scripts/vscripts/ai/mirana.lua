@@ -7,7 +7,7 @@ function Spawn( entityKeyValues )
         return
     end
     Starfall = thisEntity:FindAbilityByName("mirana_starfall_datadriven")
-    thisEntity:SetContextThink( "MiranaThink", MiranaThink, 1 )
+    thisEntity:SetContextThink( "MiranaThink", MiranaThink, .1 )
 end
 
 function MiranaThink()
@@ -18,7 +18,7 @@ function MiranaThink()
     if Starfall ~= nil and Starfall:IsFullyCastable() then
         CastStarfall()
     end
-    return .1
+	return .1
 end
 
 function CastStarfall()
@@ -30,5 +30,4 @@ function CastStarfall()
 			AbilityIndex = Starfall:entindex()
 		})
 	end
-    return 1
 end

@@ -7,7 +7,7 @@ function Spawn( entityKeyValues )
         return
     end
     CrystalNova = thisEntity:FindAbilityByName("crystal_maiden_crystal_nova")
-    thisEntity:SetContextThink( "CMThink", CMThink, 1 )
+    thisEntity:SetContextThink( "CMThink", CMThink, .1 )
 end
 
 function CMThink()
@@ -18,7 +18,6 @@ function CMThink()
     if CrystalNova ~= nil and CrystalNova:IsFullyCastable() then
         CastCrystalNova()
     end
-
     return .1
 end
 
@@ -32,5 +31,4 @@ function CastCrystalNova()
 			AbilityIndex = CrystalNova:entindex(),
 		})
 	end
-    return 1
 end

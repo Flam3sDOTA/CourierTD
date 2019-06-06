@@ -74,8 +74,8 @@
 		"ArmorPhysical"         		"0"
 		"MagicalResistance"     		"0"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"5"
-		"BountyGoldMax"         		"6"
+		"BountyGoldMin"         		"1"
+		"BountyGoldMax"         		"2"
 		"StatusHealth"          		"100"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -107,8 +107,8 @@
 		"ArmorPhysical"         		"0"
 		"MagicalResistance"     		"0"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"6"
-		"BountyGoldMax"         		"7"
+		"BountyGoldMin"         		"2"
+		"BountyGoldMax"         		"3"
 		"StatusHealth"          		"150"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -140,8 +140,8 @@
 		"ArmorPhysical"         		"0"
 		"MagicalResistance"     		"0"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"7"
-		"BountyGoldMax"         		"8"
+		"BountyGoldMin"         		"3"
+		"BountyGoldMax"         		"4"
 		"StatusHealth"          		"300"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -173,8 +173,8 @@
 		"ArmorPhysical"         		"0"
 		"MagicalResistance"     		"0"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"8"
-		"BountyGoldMax"         		"9"
+		"BountyGoldMin"         		"4"
+		"BountyGoldMax"         		"5"
 		"StatusHealth"          		"300"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -239,8 +239,8 @@
 		"ArmorPhysical"         		"0"
 		"MagicalResistance"     		"0"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"9"
-		"BountyGoldMax"         		"10"
+		"BountyGoldMin"         		"5"
+		"BountyGoldMax"         		"6"
 		"StatusHealth"          		"400"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -272,8 +272,8 @@
 		"ArmorPhysical"         		"0"
 		"MagicalResistance"     		"0"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"10"
-		"BountyGoldMax"         		"11"
+		"BountyGoldMin"         		"6"
+		"BountyGoldMax"         		"7"
 		"StatusHealth"          		"500"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -305,8 +305,8 @@
 		"ArmorPhysical"         		"0"
 		"MagicalResistance"     		"0"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"10"
-		"BountyGoldMax"         		"11"
+		"BountyGoldMin"         		"7"
+		"BountyGoldMax"         		"8"
 		"StatusHealth"          		"600"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -338,8 +338,8 @@
 		"ArmorPhysical"         		"0"
 		"MagicalResistance"     		"0"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"11"
-		"BountyGoldMax"         		"12"
+		"BountyGoldMin"         		"8"
+		"BountyGoldMax"         		"9"
 		"StatusHealth"          		"700"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -404,8 +404,8 @@
 		"ArmorPhysical"         		"1"
 		"MagicalResistance"     		"0"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"12"
-		"BountyGoldMax"         		"13"
+		"BountyGoldMin"         		"10"
+		"BountyGoldMax"         		"11"
 		"StatusHealth"          		"900"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -437,8 +437,8 @@
 		"ArmorPhysical"         		"1"
 		"MagicalResistance"     		"0"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"13"
-		"BountyGoldMax"         		"14"
+		"BountyGoldMin"         		"11"
+		"BountyGoldMax"         		"12"
 		"StatusHealth"          		"1000"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -470,8 +470,8 @@
 		"ArmorPhysical"         		"1"
 		"MagicalResistance"     		"0"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"14"
-		"BountyGoldMax"         		"15"
+		"BountyGoldMin"         		"12"
+		"BountyGoldMax"         		"13"
 		"StatusHealth"          		"1100"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -503,8 +503,8 @@
 		"ArmorPhysical"         		"1"
 		"MagicalResistance"     		"0"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"15"
-		"BountyGoldMax"         		"16"
+		"BountyGoldMin"         		"13"
+		"BountyGoldMax"         		"14"
 		"StatusHealth"          		"1200"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -569,8 +569,8 @@
 		"ArmorPhysical"         		"1"
 		"MagicalResistance"     		"1"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"16"
-		"BountyGoldMax"         		"17"
+		"BountyGoldMin"         		"14"
+		"BountyGoldMax"         		"15"
 		"StatusHealth"          		"1300"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -602,8 +602,8 @@
 		"ArmorPhysical"         		"1"
 		"MagicalResistance"     		"1"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"17"
-		"BountyGoldMax"         		"18"
+		"BountyGoldMin"         		"15"
+		"BountyGoldMax"         		"16"
 		"StatusHealth"          		"1400"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -635,8 +635,8 @@
 		"ArmorPhysical"         		"1"
 		"MagicalResistance"     		"1"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"18"
-		"BountyGoldMax"         		"19"
+		"BountyGoldMin"         		"16"
+		"BountyGoldMax"         		"17"
 		"StatusHealth"          		"1500"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -668,8 +668,8 @@
 		"ArmorPhysical"         		"1"
 		"MagicalResistance"     		"1"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"19"
-		"BountyGoldMax"         		"20"
+		"BountyGoldMin"         		"17"
+		"BountyGoldMax"         		"18"
 		"StatusHealth"          		"1600"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -734,8 +734,8 @@
 		"ArmorPhysical"         		"2"
 		"MagicalResistance"     		"2"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"20"
-		"BountyGoldMax"         		"21"
+		"BountyGoldMin"         		"18"
+		"BountyGoldMax"         		"19"
 		"StatusHealth"          		"1700"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -767,8 +767,8 @@
 		"ArmorPhysical"         		"2"
 		"MagicalResistance"     		"2"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"21"
-		"BountyGoldMax"         		"22"
+		"BountyGoldMin"         		"18"
+		"BountyGoldMax"         		"19"
 		"StatusHealth"          		"1800"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -800,8 +800,8 @@
 		"ArmorPhysical"         		"2"
 		"MagicalResistance"     		"2"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"22"
-		"BountyGoldMax"         		"23"
+		"BountyGoldMin"         		"20"
+		"BountyGoldMax"         		"21"
 		"StatusHealth"          		"1900"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -833,8 +833,8 @@
 		"ArmorPhysical"         		"2"
 		"MagicalResistance"     		"2"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"23"
-		"BountyGoldMax"         		"24"
+		"BountyGoldMin"         		"21"
+		"BountyGoldMax"         		"22"
 		"StatusHealth"          		"2000"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -900,8 +900,8 @@
 		"ArmorPhysical"         		"2"
 		"MagicalResistance"     		"2"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"24"
-		"BountyGoldMax"         		"25"
+		"BountyGoldMin"         		"22"
+		"BountyGoldMax"         		"23"
 		"StatusHealth"          		"2200"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -933,8 +933,8 @@
 		"ArmorPhysical"         		"2"
 		"MagicalResistance"     		"2"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"25"
-		"BountyGoldMax"         		"26"
+		"BountyGoldMin"         		"23"
+		"BountyGoldMax"         		"24"
 		"StatusHealth"          		"2300"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -966,8 +966,8 @@
 		"ArmorPhysical"         		"2"
 		"MagicalResistance"     		"2"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"26"
-		"BountyGoldMax"         		"27"
+		"BountyGoldMin"         		"24"
+		"BountyGoldMax"         		"25"
 		"StatusHealth"          		"2400"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -999,8 +999,8 @@
 		"ArmorPhysical"         		"2"
 		"MagicalResistance"     		"2"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"27"
-		"BountyGoldMax"         		"28"
+		"BountyGoldMin"         		"25"
+		"BountyGoldMax"         		"26"
 		"StatusHealth"          		"2500"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -1065,8 +1065,8 @@
 		"ArmorPhysical"         		"3"
 		"MagicalResistance"     		"3"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"28"
-		"BountyGoldMax"         		"29"
+		"BountyGoldMin"         		"26"
+		"BountyGoldMax"         		"27"
 		"StatusHealth"          		"2700"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -1098,8 +1098,8 @@
 		"ArmorPhysical"         		"3"
 		"MagicalResistance"     		"3"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"29"
-		"BountyGoldMax"         		"30"
+		"BountyGoldMin"         		"27"
+		"BountyGoldMax"         		"28"
 		"StatusHealth"          		"2900"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -1131,8 +1131,8 @@
 		"ArmorPhysical"         		"3"
 		"MagicalResistance"     		"3"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"30"
-		"BountyGoldMax"         		"50"
+		"BountyGoldMin"         		"28"
+		"BountyGoldMax"         		"29"
 		"StatusHealth"          		"3100"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -1164,8 +1164,8 @@
 		"ArmorPhysical"         		"3"
 		"MagicalResistance"     		"3"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"30"
-		"BountyGoldMax"         		"50"
+		"BountyGoldMin"         		"29"
+		"BountyGoldMax"         		"30"
 		"StatusHealth"          		"3200"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -1231,7 +1231,7 @@
 		"MagicalResistance"     		"3"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"30"
-		"BountyGoldMax"         		"50"
+		"BountyGoldMax"         		"31"
 		"StatusHealth"          		"3400"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -1263,8 +1263,8 @@
 		"ArmorPhysical"         		"3"
 		"MagicalResistance"     		"3"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"30"
-		"BountyGoldMax"         		"50"
+		"BountyGoldMin"         		"31"
+		"BountyGoldMax"         		"32"
 		"StatusHealth"          		"3600"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -1296,8 +1296,8 @@
 		"ArmorPhysical"         		"3"
 		"MagicalResistance"     		"3"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"30"
-		"BountyGoldMax"         		"50"
+		"BountyGoldMin"         		"32"
+		"BountyGoldMax"         		"33"
 		"StatusHealth"          		"3800"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -1329,8 +1329,8 @@
 		"ArmorPhysical"         		"3"
 		"MagicalResistance"     		"3"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"30"
-		"BountyGoldMax"         		"50"
+		"BountyGoldMin"         		"33"
+		"BountyGoldMax"         		"34"
 		"StatusHealth"          		"4000"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -1395,8 +1395,8 @@
 		"ArmorPhysical"         		"4"
 		"MagicalResistance"     		"4"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"30"
-		"BountyGoldMax"         		"50"
+		"BountyGoldMin"         		"34"
+		"BountyGoldMax"         		"35"
 		"StatusHealth"          		"4200"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -1428,8 +1428,8 @@
 		"ArmorPhysical"         		"4"
 		"MagicalResistance"     		"4"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"30"
-		"BountyGoldMax"         		"50"
+		"BountyGoldMin"         		"35"
+		"BountyGoldMax"         		"36"
 		"StatusHealth"          		"4400"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -1461,8 +1461,8 @@
 		"ArmorPhysical"         		"4"
 		"MagicalResistance"     		"4"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"30"
-		"BountyGoldMax"         		"50"
+		"BountyGoldMin"         		"36"
+		"BountyGoldMax"         		"37"
 		"StatusHealth"          		"4600"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -1494,8 +1494,8 @@
 		"ArmorPhysical"         		"4"
 		"MagicalResistance"     		"4"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"30"
-		"BountyGoldMax"         		"50"
+		"BountyGoldMin"         		"37"
+		"BountyGoldMax"         		"38"
 		"StatusHealth"          		"4800"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -1524,8 +1524,8 @@
 		"Model"                 		"models/courier/otter_dragon/otter_dragon.vmdl"
 		"ModelScale"               		"2.5"
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"4"
-		"MagicalResistance"     		"4"
+		"ArmorPhysical"         		"30"
+		"MagicalResistance"     		"30"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"4500"
 		"BountyGoldMax"         		"4500"
@@ -1560,8 +1560,8 @@
 		"ArmorPhysical"         		"4"
 		"MagicalResistance"     		"4"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"30"
-		"BountyGoldMax"         		"50"
+		"BountyGoldMin"         		"38"
+		"BountyGoldMax"         		"39"
 		"StatusHealth"          		"5000"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -1593,8 +1593,8 @@
 		"ArmorPhysical"         		"4"
 		"MagicalResistance"     		"4"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"30"
-		"BountyGoldMax"         		"50"
+		"BountyGoldMin"         		"39"
+		"BountyGoldMax"         		"40"
 		"StatusHealth"          		"5200"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -1626,8 +1626,8 @@
 		"ArmorPhysical"         		"5"
 		"MagicalResistance"     		"5"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"30"
-		"BountyGoldMax"         		"50"
+		"BountyGoldMin"         		"40"
+		"BountyGoldMax"         		"41"
 		"StatusHealth"          		"5500"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -1659,8 +1659,8 @@
 		"ArmorPhysical"         		"5"
 		"MagicalResistance"     		"5"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"30"
-		"BountyGoldMax"         		"50"
+		"BountyGoldMin"         		"41"
+		"BountyGoldMax"         		"42"
 		"StatusHealth"          		"7000"
 		"StatusMana"            		"0"
 		//==================================================================
@@ -1689,8 +1689,8 @@
 		"Model"                 		"models/items/courier/hermit_crab/hermit_crab_aegis.vmdl"
 		"ModelScale"               		"2.5"
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"50"
-		"MagicalResistance"     		"50"
+		"ArmorPhysical"         		"30"
+		"MagicalResistance"     		"30"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"5000"
 		"BountyGoldMax"         		"5000"
@@ -1745,7 +1745,7 @@
 		"Level"                     "100"
 		"Cost"                      "100"
 		"TotalCost"                 "100"
-		"BuildTime"                 "0.3"
+		"BuildTime"                 "0"
 		"ScriptClass"               "BasicTower"
 		"TowerType"                 "Normal"
 		"BuffPriority"              "11"
@@ -1779,7 +1779,7 @@
 		
 		"Ability1"					"upgrade_tower_wind_1"
 		"Ability2"					"upgrade_tower_mirana_1"
-		"Ability3"					"upgrade_tower_luna_1"
+		"Ability3"					"upgrade_tower_drow_1"
 		"Ability4"					"sell_tower"
 		"Ability5"					"tower_invulnerable"
 
@@ -1823,7 +1823,7 @@
 		"Level"                     "75"
 		"Cost"                      "75"
 		"TotalCost"                 "75"
-		"BuildTime"                 "0.3"
+		"BuildTime"                 "0"
 		"ScriptClass"               "BasicTower"
 		"TowerType"                 "Normal"
 		"BuffPriority"              "11"
@@ -1857,7 +1857,7 @@
 		
 		"Ability1"					"upgrade_tower_furion_1"
 		"Ability2"					"upgrade_tower_venomancer_1"
-		"Ability3"					"upgrade_tower_enchantress_1"
+		"Ability3"					"upgrade_tower_viper_1"
 		"Ability4"					"sell_tower"
 		"Ability5"					"tower_poison_poison"
 		"Ability6"					"tower_invulnerable"
@@ -1900,7 +1900,7 @@
 		"Level"                     "50"
 		"Cost"                      "50"
 		"TotalCost"                 "50"
-		"BuildTime"                 "0.3"
+		"BuildTime"                 "0"
 		"ScriptClass"               "BasicTower"
 		"TowerType"                 "Normal"
 		"BuffPriority"              "11"
@@ -2418,7 +2418,7 @@
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
 		"PedestalModelScale"        "0.3"
 		"PedestalOffset"            "5"
-		"ProjectileModel"           "particles/tower_effects/tower_windrunner_base_attack.vpcf"
+		"ProjectileModel"           "particles/tower_effects/tower_windranger_1_base_attack.vpcf"
 		"SoundSet"                  "Hero_Windrunner"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
@@ -2517,7 +2517,7 @@
 		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
 		"PedestalModelScale"        "1.5"
 		"PedestalOffset"            "4"
-		"ProjectileModel"           "particles/tower_effects/tower_windrunner_base_attack.vpcf"
+		"ProjectileModel"           "particles/tower_effects/tower_windranger_2_base_attack.vpcf"
 		"SoundSet"                  "Hero_Windrunner"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
@@ -2617,7 +2617,7 @@
 		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
 		"PedestalModelScale"        "1.5"
 		"PedestalOffset"            "4"
-		"ProjectileModel"           "particles/tower_effects/tower_windrunner_base_attack.vpcf"
+		"ProjectileModel"           "particles/tower_effects/tower_windranger_3_base_attack.vpcf"
 		"SoundSet"                  "Hero_Windrunner"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
@@ -2704,24 +2704,24 @@
 	
 	
 	//============================================================
-	// Tower: Luna - 1
+	// Tower: Drow - 1
 	//============================================================
-	"tower_luna_1"
-	{
+	"tower_drow_1"
+	{	
 		// Visual
 		//-----------------------------
-		"Model"                     "models/heroes/luna/luna.vmdl"
-		"ModelScale"                "1.1"
+		"Model"                     "models/heroes/drow/drow_base.vmdl"
+		"ModelScale"                "1.4"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
 		"PedestalModelScale"        "0.3"
 		"PedestalOffset"            "5"
-		"ProjectileModel"           "particles/tower_effects/tower_luna_1_base_attack.vpcf"
-		"ProjectileSpeed"           "2000"
-		"SoundSet"                  "Hero_Luna"
+		"ProjectileModel"           "particles/units/heroes/hero_drow/drow_base_attack.vpcf"
+		"ProjectileSpeed"           "2500"
+		"SoundSet"                  "Hero_DrowRanger"
 		"MinimapIconSize"           "10"
-		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_luna.vsndevts"
+		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_drowranger.vsndevts"
 		
 
 		// Stats
@@ -2731,8 +2731,8 @@
 		"Damage"                    "60"  
 		"AttackRange"               "800"
 		"AttackAcquisitionRange"    "800"
-		"AttackRate"                "0.8"
-		"AttackAnimationPoint"      "0.460000"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.65"
 
 		"Level"                     "210"
 		"Cost"                      "210"
@@ -2767,9 +2767,9 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"upgrade_tower_luna_2"
+		"Ability1"					"upgrade_tower_drow_2"
 		"Ability2"					"sell_tower"
-		"Ability4"					"luna_moon_glaive"
+		"Ability3"					"drow_ranger_marksmanship"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -2790,36 +2790,37 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "12872" } // Mount
-				"2"  { "ItemDef" "8853" }  // Weapon
-				"3"  { "ItemDef" "12871" } // Shield
-				"4"  { "ItemDef" "7269" }  // Head
-				"5"  { "ItemDef" "12870" } // Shoulder
+				"1"  { "ItemDef" "5883" } // Weapon
+				"2"  { "ItemDef" "5979" } // Quiver
+				"3"  { "ItemDef" "5673" } // Head
+				"4"  { "ItemDef" "5989" } // Back
+				"5"  { "ItemDef" "5985" } // Shoulder
+				"6"  { "ItemDef" "5975" } // Legs
+				"7"  { "ItemDef" "5986" } // Arms
 			}
 		}
 	}
 	
 	//============================================================
-	// Tower: Luna - 2
+	// Tower: Drow - 2
 	//============================================================
-	"tower_luna_2"
+	"tower_drow_2"
 	{
 		// Visual
 		//-----------------------------
-		"Model"                     "models/heroes/luna/luna.vmdl"
-		"ModelScale"                "1.1"
+		"Model"                     "models/heroes/drow/drow_base.vmdl"
+		"ModelScale"                "1.4"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
 		"PedestalModelScale"        "1.5"
 		"PedestalOffset"            "4"
-		"ProjectileModel"           "particles/tower_effects/tower_luna_2_base_attack.vpcf"
-		"ProjectileSpeed"           "2000"
-		"SoundSet"                  "Hero_Luna"
+		"ProjectileModel"           "particles/units/heroes/hero_drow/drow_base_attack.vpcf"
+		"ProjectileSpeed"           "2500"
+		"SoundSet"                  "Hero_DrowRanger"
 		"MinimapIconSize"           "10"
-		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_luna.vsndevts"
+		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_drowranger.vsndevts"
 		
-
 		// Stats
 		//----------------------------- 
 		"AttackDamageMin"           "150"
@@ -2827,17 +2828,10 @@
 		"Damage"                    "150"  
 		"AttackRange"               "800"
 		"AttackAcquisitionRange"    "800"
-		"AttackRate"                "0.7"
-		"AttackAnimationPoint"      "0.460000"
-
-		"Level"                     "450"
-		"Cost"                      "450"
-		"TotalCost"                 "450"
-		"BuildTime"                 "1"
-		"ScriptClass"               "BasicTower"
-		"TowerType"                 "Normal"
-		"BuffPriority"              "11"
+		"AttackRate"                "0.9"
+		"AttackAnimationPoint"		"0.65"
 		
+
 		// General
 		//-----------------------------
 		"BaseClass"                 "npc_dota_creature"
@@ -2863,9 +2857,9 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"upgrade_tower_luna_3"
+		"Ability1"					"upgrade_tower_drow_3"
 		"Ability2"					"sell_tower"
-		"Ability4"					"luna_moon_glaive"
+		"Ability3"					"drow_ranger_marksmanship"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -2886,35 +2880,36 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "8856" } // Mount
-				"2"  { "ItemDef" "7696" }  // Weapon
-				"3"  { "ItemDef" "8301" } // Shield
-				"4"  { "ItemDef" "6640" }  // Head
-				"5"  { "ItemDef" "7695" } // Shoulder
+				"1"  { "ItemDef" "6913" } // Weapon
+				"2"  { "ItemDef" "12619" } // Quiver
+				"3"  { "ItemDef" "12906" } // Head
+				"4"  { "ItemDef" "8006" } // Back
+				"5"  { "ItemDef" "12618" } // Shoulder
+				"6"  { "ItemDef" "6555" } // Legs
+				"7"  { "ItemDef" "9871" } // Arms
 			}
 		}
 	}
 	
 	//============================================================
-	// Tower: Luna - 3
+	// Tower: Drow - 3
 	//============================================================
-	"tower_luna_3"
+	"tower_drow_3"
 	{
 		// Visual
 		//-----------------------------
-		"Model"                     "models/heroes/luna/luna.vmdl"
-		"ModelScale"                "1.1"
+		"Model"                     "models/heroes/drow/drow_base.vmdl"
+		"ModelScale"                "1.4"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
 		"PedestalModelScale"        "1.5"
 		"PedestalOffset"            "4"
-		"ProjectileModel"           "particles/tower_effects/tower_luna_3_base_attack.vpcf"
-		"ProjectileSpeed"           "2000"
-		"SoundSet"                  "Hero_Luna"
+		"ProjectileModel"           "particles/units/heroes/hero_drow/drow_base_attack.vpcf"
+		"ProjectileSpeed"           "2500"
+		"SoundSet"                  "Hero_DrowRanger"
 		"MinimapIconSize"           "10"
-		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_luna.vsndevts"
-		
+		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_drowranger.vsndevts"
 		
 
 		// Stats
@@ -2924,8 +2919,8 @@
 		"Damage"                    "240"  
 		"AttackRange"               "800"
 		"AttackAcquisitionRange"    "800"
-		"AttackRate"                "0.6"
-		"AttackAnimationPoint"      "0.460000"
+		"AttackRate"                "0.8"
+		"AttackAnimationPoint"		"0.65"
 
 		"Level"                     "1000"
 		"Cost"                      "1000"
@@ -2960,8 +2955,8 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability2"					"sell_tower"
-		"Ability4"					"luna_moon_glaive"
+		"Ability1"					"sell_tower"
+		"Ability2"					"drow_ranger_marksmanship"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -2982,11 +2977,13 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "5947" }   // Mount
-				"2"  { "ItemDef" "9218" }   // Weapon
-				"3"  { "ItemDef" "8327" }   // Shield
-				"4"  { "ItemDef" "5441" }   // Head
-				"5"  { "ItemDef" "7702" }   // Shoulder
+				"1"  { "ItemDef" "12616" } // Weapon
+				"2"  { "ItemDef" "6557" } // Quiver
+				"3"  { "ItemDef" "6785" } // Head
+				"4"  { "ItemDef" "8037" } // Back
+				"5"  { "ItemDef" "12903" } // Shoulder
+				"6"  { "ItemDef" "12905" } // Legs
+				"7"  { "ItemDef" "12908" } // Arms
 			}
 		}
 	}
@@ -3005,7 +3002,7 @@
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
 		"PedestalModelScale"        "0.3"
 		"PedestalOffset"            "5"
-		"ProjectileModel"           "particles/tower_effects/tower_mirana_base_attack.vpcf"
+		"ProjectileModel"           "particles/tower_effects/tower_mirana_1_base_attack.vpcf"
 		"SoundSet"					"Hero_Mirana"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_mirana.vsndevts"
@@ -3108,7 +3105,7 @@
 		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
 		"PedestalModelScale"        "1.5"
 		"PedestalOffset"            "4"
-		"ProjectileModel"           "particles/tower_effects/tower_mirana_base_attack.vpcf"
+		"ProjectileModel"           "particles/tower_effects/tower_mirana_2_base_attack.vpcf"
 		"SoundSet"                  "Hero_Mirana"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_mirana.vsndevts"
@@ -3211,7 +3208,7 @@
 		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
 		"PedestalModelScale"        "1.5"
 		"PedestalOffset"            "4"
-		"ProjectileModel"           "particles/tower_effects/tower_mirana_base_attack.vpcf"
+		"ProjectileModel"           "particles/tower_effects/tower_mirana_3_base_attack.vpcf"
 		"SoundSet"                  "Hero_Mirana"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_mirana.vsndevts"
@@ -3905,24 +3902,24 @@
 	}
 	
 	//============================================================
-	// Tower: Enchantress - 1
+	// Tower: Viper - 1
 	//============================================================
-	"tower_enchantress_1"
+	"tower_viper_1"
 	{
 		// Visual
 		//-----------------------------
-		"Model"                     "models/heroes/enchantress/enchantress.vmdl"
-		"ModelScale"                "1"
+		"Model"                     "models/heroes/viper/viper.vmdl"
+		"ModelScale"                "0.8"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
 		"PedestalModelScale"        "0.3"
 		"PedestalOffset"            "5"
-		"ProjectileModel"           "particles/units/heroes/hero_enchantress/enchantress_base_attack.vpcf"
-		"SoundSet"                  "Hero_Enchantress"
+		"ProjectileModel"           "particles/units/heroes/hero_viper/viper_base_attack.vpcf"
+		"SoundSet"                  "Hero_Viper"
 		"MinimapIconSize"           "10"
-		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_enchantress.vsndevts"
-		"vscripts"         			"ai/enchantress.lua"
+		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_viper.vsndevts"
+		"vscripts"         			"ai/viper.lua"
 		
 
 		// Stats
@@ -3972,9 +3969,9 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"upgrade_tower_enchantress_2"
+		"Ability1"					"upgrade_tower_viper_2"
 		"Ability2"					"sell_tower"
-		"Ability3"					"enchantress_impetus"
+		"Ability3"					"viper_viper_strike_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -3995,34 +3992,32 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "12748" } // Weapon
-				"2"  { "ItemDef" "6346" } // Head
-				"3"  { "ItemDef" "6348" } // Belt
-				"4"  { "ItemDef" "6350" } // Neck
-				"5"  { "ItemDef" "6347" } // Arms
+				"1"  { "ItemDef" "9230" } // Head
+				"2"  { "ItemDef" "9233" } // Back
+				"3"  { "ItemDef" "9670" } // Tail
 			}
 		}
 	}
 	
 	//============================================================
-	// Tower: Enchantress - 2
+	// Tower: Viper - 2
 	//============================================================
-	"tower_enchantress_2"
+	"tower_viper_2"
 	{
 		// Visual
 		//-----------------------------
-		"Model"                     "models/heroes/enchantress/enchantress.vmdl"
-		"ModelScale"                "1"
+		"Model"                     "models/heroes/viper/viper.vmdl"
+		"ModelScale"                "0.8"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
 		"PedestalModelScale"        "1.5"
 		"PedestalOffset"            "4"
-		"ProjectileModel"           "particles/units/heroes/hero_enchantress/enchantress_base_attack.vpcf"
-		"SoundSet"                  "Hero_Enchantress"
+		"ProjectileModel"           "particles/econ/items/viper/viper_ti7_immortal/viper_poison_attack_ti7.vpcf"
+		"SoundSet"                  "Hero_Viper"
 		"MinimapIconSize"           "10"
-		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_enchantress.vsndevts"
-		"vscripts"         			"ai/enchantress.lua"
+		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_viper.vsndevts"
+		"vscripts"         			"ai/viper.lua"
 		
 
 		// Stats
@@ -4072,9 +4067,9 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"upgrade_tower_enchantress_3"
+		"Ability1"					"upgrade_tower_viper_3"
 		"Ability2"					"sell_tower"
-		"Ability3"					"enchantress_impetus"
+		"Ability3"					"viper_viper_strike_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -4095,34 +4090,32 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "12689" } // Weapon
-				"2"  { "ItemDef" "12687" } // Head
-				"3"  { "ItemDef" "12690" } // Belt
-				"4"  { "ItemDef" "12686" } // Neck
-				"5"  { "ItemDef" "12688" } // Arms
+				"1"  { "ItemDef" "7811" } // Head
+				"2"  { "ItemDef" "9630" } // Back
+				"3"  { "ItemDef" "9669" } // Tail
 			}
 		}
 	}
 	
 	//============================================================
-	// Tower: Enchantress - 3
+	// Tower: Viper - 3
 	//============================================================
-	"tower_enchantress_3"
+	"tower_viper_3"
 	{
 		// Visual
 		//-----------------------------
-		"Model"                     "models/heroes/enchantress/enchantress.vmdl"
-		"ModelScale"                "1"
+		"Model"                     "models/heroes/viper/viper.vmdl"
+		"ModelScale"                "0.8"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
 		"PedestalModelScale"        "1.5"
 		"PedestalOffset"            "4"
-		"ProjectileModel"           "particles/units/heroes/hero_enchantress/enchantress_base_attack.vpcf"
-		"SoundSet"                  "Hero_Enchantress"
+		"ProjectileModel"           "particles/econ/items/viper/viper_ti7_immortal/viper_poison_crimson_attack_ti7.vpcf"
+		"SoundSet"                  "Hero_Viper"
 		"MinimapIconSize"           "10"
-		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_enchantress.vsndevts"
-		"vscripts"         			"ai/enchantress.lua"
+		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_Viper.vsndevts"
+		"vscripts"         			"ai/viper.lua"
 		
 
 		// Stats
@@ -4173,7 +4166,7 @@
 		"ConsideredHero"			"1"
 		
 		"Ability1"					"sell_tower"
-		"Ability2"					"enchantress_impetus"
+		"Ability2"					"viper_viper_strike_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -4194,11 +4187,9 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "7459" } // Weapon
-				"2"  { "ItemDef" "6857" } // Head
-				"3"  { "ItemDef" "12750" } // Belt
-				"4"  { "ItemDef" "12749" } // Neck
-				"5"  { "ItemDef" "12751" } // Arms
+				"1"  { "ItemDef" "7995" } // Head
+				"2"  { "ItemDef" "9630" } // Back
+				"3"  { "ItemDef" "9758" } // Tail
 			}
 		}
 	}
@@ -5093,304 +5084,5 @@
 	//========================================================================================================================
 	// TIER 1 TOWERS END
 	//========================================================================================================================
-	//========================================================================================================================
-	// TIER 2 TOWERS START
-	//========================================================================================================================
 	
-	//============================================================
-	// Tower: Drow - 1
-	//============================================================
-	"tower_drow_1"
-	{
-		// Visual
-		//-----------------------------
-		"Model"                     "models/heroes/drow/drow_base.vmdl"
-		"ModelScale"                "1.2"
-		"ModelRotation"             "180"
-		"ModelOffset"               "1"
-		"PedestalModel"             "models/props_structures/dungeon_temple_portal001.vmdl"
-		"PedestalModelScale"        "1.5"
-		"PedestalOffset"            "4"
-		"ProjectileModel"           "particles/units/heroes/hero_drow/drow_base_attack.vpcf"
-		"SoundSet"                  "Hero_DrowRanger"
-		"MinimapIconSize"           "10"
-		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_drowranger.vsndevts"
-		
-
-		// Stats
-		//----------------------------- 
-		"AttackDamageMin"           "100"
-		"AttackDamageMax"           "100"
-		"Damage"                    "100"  
-		"AttackRange"               "1250"
-		"AttackAcquisitionRange"    "1250"
-		"AttackRate"                "1"
-		"AttackAnimationPoint"      "0.65"
-		"ProjectileSpeed"           "2200"
-
-		"Level"                     "150"
-		"Cost"                      "150"
-		"TotalCost"                 "150"
-		"BuildTime"                 "150"
-		"ScriptClass"               "drow_1"
-		"TowerType"                 "Normal"
-		"BuffPriority"              "11"
-		
-		// General
-		//-----------------------------
-		"BaseClass"                 "npc_dota_creature"
-		"ArmorPhysical"             "0"
-		"MagicalResistance"         "0"
-		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
-		"TeamName"                  "DOTA_TEAM_GOODGUYS"
-		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-		"VisionDaytimeRange"        "1900"
-		"VisionNighttimeRange"      "1900"  
-		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
-		"ProjectileCollisionSize"   "50"
-		"RingRadius"                "80"
-		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
-		"MovementSpeed"             "0"
-		"MovementTurnRate"          "1.0"
-		"StatusHealth"              "175"
-		"StatusHealthRegen"         "0"
-		"StatusMana"                "100"
-		"StatusManaRegen"           "0"
-		"StatusStartingMana"	    "0"
-		"HealthBarOffset"       	"200"
-		"HasInventory"				"1"
-		"ConsideredHero"			"1"
-		
-		"Ability4"					"sell_tower"
-		"Ability6"					"tower_invulnerable"
-
-		// Building Size
-		"ConstructionSize"          "4"
-		"BlockPathingSize"          "0"
-		"Creature"
-		{
-			"DefaultState"  "Invade"
-			"States"
-			{
-				"Invade"
-				{
-					"Name"  		"Invade"
-					"Aggression"    "100.0"
-					"Avoidance" 	"0.0"
-					"Support"   	"0.0"
-				}
-			}
-			"AttachWearables"
-			{
-				"1"  { "ItemDef" "5883" } // Weapon
-				"2"  { "ItemDef" "5979" } // Quiver
-				"3"  { "ItemDef" "5673" } // Head
-				"4"  { "ItemDef" "5989" } // Back
-				"5"  { "ItemDef" "5985" } // Shoulder
-				"6"  { "ItemDef" "5975" } // Legs
-				"7"  { "ItemDef" "5986" } // Arms
-			}
-		}
-	}
-	
-	//============================================================
-	// Tower: Drow - 2
-	//============================================================
-	"tower_drow_2"
-	{
-		// Visual
-		//-----------------------------
-		"Model"                     "models/heroes/drow/drow_base.vmdl"
-		"ModelScale"                "1.2"
-		"ModelRotation"             "180"
-		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
-		"PedestalModelScale"        "1.5"
-		"PedestalOffset"            "4"
-		"ProjectileModel"           "particles/units/heroes/hero_drow/drow_base_attack.vpcf"
-		"SoundSet"                  "Hero_DrowRanger"
-		"MinimapIconSize"           "10"
-		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_drowranger.vsndevts"
-		
-
-		// Stats
-		//----------------------------- 
-		"AttackDamageMin"           "250"
-		"AttackDamageMax"           "250"
-		"Damage"                    "250"  
-		"AttackRange"               "1250"
-		"AttackAcquisitionRange"    "1250"
-		"AttackRate"                "1"
-		"AttackAnimationPoint"      "0.65"
-		"ProjectileSpeed"           "2200"
-
-		"Level"                     "350"
-		"Cost"                      "350"
-		"TotalCost"                 "350"
-		"BuildTime"                 "1"
-		"ScriptClass"               "drow_2"
-		"TowerType"                 "Normal"
-		"BuffPriority"              "11"
-		
-		// General
-		//-----------------------------
-		"BaseClass"                 "npc_dota_creature"
-		"ArmorPhysical"             "0"
-		"MagicalResistance"         "0"
-		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
-		"TeamName"                  "DOTA_TEAM_GOODGUYS"
-		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-		"VisionDaytimeRange"        "1900"
-		"VisionNighttimeRange"      "1900"  
-		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
-		"ProjectileCollisionSize"   "50"
-		"RingRadius"                "80"
-		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
-		"MovementSpeed"             "0"
-		"MovementTurnRate"          "1.0"
-		"StatusHealth"              "175"
-		"StatusHealthRegen"         "0"
-		"StatusMana"                "100"
-		"StatusManaRegen"           "0"
-		"StatusStartingMana"	    "0"
-		"HealthBarOffset"       	"200"
-		"HasInventory"				"1"
-		"ConsideredHero"			"1"
-		
-		"Ability4"					"sell_tower"
-		"Ability6"					"tower_invulnerable"
-
-		// Building Size
-		"ConstructionSize"          "4"
-		"BlockPathingSize"          "0"
-		"Creature"
-		{
-			"DefaultState"  "Invade"
-			"States"
-			{
-				"Invade"
-				{
-					"Name"  		"Invade"
-					"Aggression"    "100.0"
-					"Avoidance" 	"0.0"
-					"Support"   	"0.0"
-				}
-			}
-			"AttachWearables"
-			{
-				"1"  { "ItemDef" "6913" } // Weapon
-				"2"  { "ItemDef" "12619" } // Quiver
-				"3"  { "ItemDef" "12906" } // Head
-				"4"  { "ItemDef" "8006" } // Back
-				"5"  { "ItemDef" "12618" } // Shoulder
-				"6"  { "ItemDef" "6555" } // Legs
-				"7"  { "ItemDef" "9871" } // Arms
-			}
-		}
-	}
-	
-	//============================================================
-	// Tower: Drow - 3
-	//============================================================
-	"tower_drow_3"
-	{
-		// Visual
-		//-----------------------------
-		"Model"                     "models/heroes/drow/drow_base.vmdl"
-		"ModelScale"                "1.2"
-		"ModelRotation"             "180"
-		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
-		"PedestalModelScale"        "1.5"
-		"PedestalOffset"            "4"
-		"ProjectileModel"           "particles/units/heroes/hero_drow/drow_base_attack.vpcf"
-		"SoundSet"                  "Hero_DrowRanger"
-		"MinimapIconSize"           "10"
-		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_drowranger.vsndevts"
-		
-
-		// Stats
-		//----------------------------- 
-		"AttackDamageMin"           "500"
-		"AttackDamageMax"           "500"
-		"Damage"                    "500"  
-		"AttackRange"               "1250"
-		"AttackAcquisitionRange"    "1250"
-		"AttackRate"                "1"
-		"AttackAnimationPoint"      "0.65"
-		"ProjectileSpeed"           "2200"
-
-		"Level"                     "700"
-		"Cost"                      "700"
-		"TotalCost"                 "700"
-		"BuildTime"                 "1"
-		"ScriptClass"               "drow_3"
-		"TowerType"                 "Normal"
-		"BuffPriority"              "11"
-		
-		// General
-		//-----------------------------
-		"BaseClass"                 "npc_dota_creature"
-		"ArmorPhysical"             "0"
-		"MagicalResistance"         "0"
-		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
-		"TeamName"                  "DOTA_TEAM_GOODGUYS"
-		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-		"VisionDaytimeRange"        "1900"
-		"VisionNighttimeRange"      "1900"  
-		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
-		"ProjectileCollisionSize"   "50"
-		"RingRadius"                "80"
-		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
-		"MovementSpeed"             "0"
-		"MovementTurnRate"          "1.0"
-		"StatusHealth"              "175"
-		"StatusHealthRegen"         "0"
-		"StatusMana"                "100"
-		"StatusManaRegen"           "0"
-		"StatusStartingMana"	    "0"
-		"HealthBarOffset"       	"200"
-		"HasInventory"				"1"
-		"ConsideredHero"			"1"
-		
-		"Ability4"					"sell_tower"
-		"Ability6"					"tower_invulnerable"
-
-		// Building Size
-		"ConstructionSize"          "4"
-		"BlockPathingSize"          "0"
-		"Creature"
-		{
-			"DefaultState"  "Invade"
-			"States"
-			{
-				"Invade"
-				{
-					"Name"  		"Invade"
-					"Aggression"    "100.0"
-					"Avoidance" 	"0.0"
-					"Support"   	"0.0"
-				}
-			}
-			"AttachWearables"
-			{
-				"1"  { "ItemDef" "12616" } // Weapon
-				"2"  { "ItemDef" "6557" } // Quiver
-				"3"  { "ItemDef" "6785" } // Head
-				"4"  { "ItemDef" "8037" } // Back
-				"5"  { "ItemDef" "12903" } // Shoulder
-				"6"  { "ItemDef" "12905" } // Legs
-				"7"  { "ItemDef" "12908" } // Arms
-			}
-		}
-	}
 }

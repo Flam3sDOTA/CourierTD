@@ -604,15 +604,15 @@
 	}
 	
 	//============================================================
-	// Upgrade Arrow Tower to Luna 1
+	// Upgrade Arrow Tower to Drow 1
 	//============================================================
-	"upgrade_tower_luna_1"
+	"upgrade_tower_drow_1"
 	{
 		"BaseClass"                     "ability_datadriven"
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
-		"AbilityTextureName"            "UpgradeToLuna"
+		"AbilityTextureName"            "UpgradeToDrow"
 		"Building"                      "1"
 		"AbilityCastRange"              "260"
 		"Scale"                         "3"
@@ -625,7 +625,7 @@
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
-				"tower"			"tower_luna_1"
+				"tower"			"tower_drow_1"
 			}
 		}
 		"AbilitySpecial"
@@ -638,7 +638,7 @@
 			"02"
 			{
 				"var_type"    					 "FIELD_FLOAT"
-				"ATTACK_SPEED_TOOLTIP"     		 "0.8"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
 			}
 			"03"
 			{
@@ -649,15 +649,15 @@
 	}
 	
 	//============================================================
-	// Upgrade Luna 1 to Luna 2
+	// Upgrade Drow 1 to Drow 2
 	//============================================================
-	"upgrade_tower_luna_2"
+	"upgrade_tower_drow_2"
 	{
 		"BaseClass"                     "ability_datadriven"
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
-		"AbilityTextureName"            "UpgradeToLuna"
+		"AbilityTextureName"            "UpgradeToDrow"
 		"Building"                      "1"
 		"AbilityCastRange"              "260"
 		"Scale"                         "3"
@@ -670,7 +670,7 @@
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
-				"tower"			"tower_luna_2"
+				"tower"			"tower_drow_2"
 			}
 		}
 		"AbilitySpecial"
@@ -683,7 +683,7 @@
 			"02"
 			{
 				"var_type"    					 "FIELD_FLOAT"
-				"ATTACK_SPEED_TOOLTIP"     		 "0.7"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.9"
 			}
 			"03"
 			{
@@ -694,15 +694,15 @@
 	}
 	
 	//============================================================
-	// Upgrade Luna 2 to Luna 3
+	// Upgrade Drow 2 to Drow 3
 	//============================================================
-	"upgrade_tower_luna_3"
+	"upgrade_tower_drow_3"
 	{
 		"BaseClass"                     "ability_datadriven"
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
-		"AbilityTextureName"            "UpgradeToLuna"
+		"AbilityTextureName"            "UpgradeToDrow"
 		"Building"                      "1"
 		"AbilityCastRange"              "260"
 		"Scale"                         "3"
@@ -715,7 +715,7 @@
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
-				"tower"			"tower_luna_3"
+				"tower"			"tower_drow_3"
 			}
 		}
 		"AbilitySpecial"
@@ -728,7 +728,7 @@
 			"02"
 			{
 				"var_type"    					 "FIELD_FLOAT"
-				"ATTACK_SPEED_TOOLTIP"     		 "0.6"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.8"
 			}
 			"03"
 			{
@@ -1145,15 +1145,15 @@
 	}
 	
 	//============================================================
-	// Upgrade Poison Tower to Enchantress 1
+	// Upgrade Poison Tower to Viper 1
 	//============================================================
-	"upgrade_tower_enchantress_1"
+	"upgrade_tower_viper_1"
 	{
 		"BaseClass"                     "ability_datadriven"
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
-		"AbilityTextureName"            "UpgradeToEnchantress"
+		"AbilityTextureName"            "UpgradeToViper"
 		"Building"                      "1"
 		"AbilityCastRange"              "260"
 		"Scale"                         "3"
@@ -1166,7 +1166,7 @@
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
-				"tower"			"tower_enchantress_1"
+				"tower"			"tower_viper_1"
 			}
 		}
 		"AbilitySpecial"
@@ -1190,15 +1190,15 @@
 	}
 	
 	//============================================================
-	// Upgrade Enchantress 1 to Enchantress 2
+	// Upgrade Viper 1 to Viper 2
 	//============================================================
-	"upgrade_tower_enchantress_2"
+	"upgrade_tower_viper_2"
 	{
 		"BaseClass"                     "ability_datadriven"
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
-		"AbilityTextureName"            "UpgradeToEnchantress"
+		"AbilityTextureName"            "UpgradeToViper"
 		"Building"                      "1"
 		"AbilityCastRange"              "260"
 		"Scale"                         "3"
@@ -1211,7 +1211,7 @@
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
-				"tower"			"tower_enchantress_2"
+				"tower"			"tower_viper_2"
 			}
 		}
 		"AbilitySpecial"
@@ -1235,15 +1235,15 @@
 	}
 	
 	//============================================================
-	// Upgrade Enchantress 2 to Enchantress 3
+	// Upgrade Viper 2 to Viper 3
 	//============================================================
-	"upgrade_tower_enchantress_3"
+	"upgrade_tower_viper_3"
 	{
 		"BaseClass"                     "ability_datadriven"
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
-		"AbilityTextureName"            "UpgradeToEnchantress"
+		"AbilityTextureName"            "UpgradeToViper"
 		"Building"                      "1"
 		"AbilityCastRange"              "260"
 		"Scale"                         "3"
@@ -1256,7 +1256,7 @@
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
-				"tower"			"tower_enchantress_3"
+				"tower"			"tower_viper_3"
 			}
 		}
 		"AbilitySpecial"
@@ -1879,41 +1879,6 @@
 		}
 	}
 	
-	//=================================================================================================================
-	// Luna: Moon Glaives
-	//=================================================================================================================
-	"luna_moon_glaive"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"5223"												// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-		"AbilitySound"					"Hero_Luna.MoonGlaive.Impact"
-		"MaxLevel"						"3"
-
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"range"						"750"
-			}
-			"02"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"bounces"					"1 2 3"
-			}
-			"03"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"damage_reduction_percent"	"70 65 60"
-			}
-		}
-		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
-	}
 	
 	//=================================================================================================================
 	// Rewrite of the Windrunner Shackleshot ability
@@ -2073,7 +2038,7 @@
 
 		// Damage.
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"150 250 500"
+		"AbilityDamage"					"100 200 450"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -2386,53 +2351,206 @@
 		}
 	}
 	
-	//=================================================================================================================
-	// Enchantress: Impetus
-	//=================================================================================================================
-	"enchantress_impetus"
+	// Rewrite of the Viper Viper Strike ability
+	// Author: Pizzalol
+	// Date: 19.12.2014.
+	// Changed: 15.01.2015.
+	// NOTE: Wonky projectile particle
+	// NOTE2: Edit the warmup particle and delete 3 out of 4 children for it to work properly (thanks to Noya for the info)
+	"viper_viper_strike_datadriven"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"5270"
-		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_ATTACK"
+		"BaseClass"						"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
-		"FightRecapLevel"				"1"
-		"AbilitySound"					"Hero_Enchantress.Impetus"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"FightRecapLevel"				"2"
+		"AbilityTextureName"			"viper_viper_strike"
+		"MaxLevel"						"3"
 
-		
+		// Precache
+		//-------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"particle"		"particles/units/heroes/hero_viper/viper_viper_strike.vpcf" // Wonky projectile
+			"particle"		"particles/units/heroes/hero_viper/viper_viper_strike_debuff.vpcf" // ?
+			"particle"		"particles/units/heroes/hero_viper/viper_viper_strike_warmup.vpcf" //- Seems to be like a "link" meaning it needs the caster #0 and target #1
+			"particle"		"particles/status_fx/status_effect_poison_viper.vpcf"
+			"soundfile"		"soundevents/game_sounds_heroes/game_sounds_viper.vsndevts"
+		}
+
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"1100"
-		"AbilityCastPoint"				"0.0"
-		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
-
+		"AbilityCastPoint"				"0.3"
+		
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"0.0"
-		"AbilityDuration"				"1.5"
+		"AbilityCooldown"				"19 17 15"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"				"100"
-
-		// Special
+		
+		// Special	
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
 		{
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"distance_damage_pct"	"50 75 100"			
+				"duration"				"5.1"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"distance_cap"			"1750"
+				"damage"				"20 45 90"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movement_speed"	"-40 -60 -80"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"projectile_speed"		"1200"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_movement_speed_small"	"-8 -12 -16"
+			}
+		}
+
+		"OnAbilityPhaseStart"
+		{
+			"FireEffect"
+			{
+				"ControlPointEntities"
+				{
+					"CASTER"	"attach_attack1"
+					"CASTER"	"attach_attack1"
+				}
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"TrackingProjectile"
+			{
+				"Target"           	"TARGET"
+				"EffectName"       	"particles/units/heroes/hero_viper/viper_poison_attack.vpcf"
+				"Dodgeable"        	"1"
+				"ProvidesVision"   	"0"
+				"MoveSpeed"        	"%projectile_speed"
+				"SourceAttachment"  "DOTA_PROJECTILE_ATTACHMENT_ATTACK_1"
+			}
+
+			"FireSound"
+			{
+				"EffectName"	"Hero_Viper.viperStrike"
+				"Target"		"CASTER"
+			}
+
+		}
+
+		"OnProjectileHitUnit"
+		{
+			"FireSound"
+			{
+				"EffectName"	"Hero_Viper.viperStrikeImpact"
+				"Target"		"TARGET"
+			}
+
+			"ApplyModifier"
+			{
+				"ModifierName"	"modifier_viper_strike_debuff_datadriven"
+				"Target"		"TARGET"
+			}
+
+			// Slow Part
+			"ApplyModifier"
+			{
+				"ModifierName"	"modifier_viper_strike_slow_datadriven"
+				"Target"		"TARGET"
+			}
+			"ApplyModifier"
+			{
+				"ModifierName"	"modifier_viper_strike_slow_datadriven"
+				"Target"		"TARGET"
+			}
+			"ApplyModifier"
+			{
+				"ModifierName"	"modifier_viper_strike_slow_datadriven"
+				"Target"		"TARGET"
+			}
+			"ApplyModifier"
+			{
+				"ModifierName"	"modifier_viper_strike_slow_datadriven"
+				"Target"		"TARGET"
+			}
+			"ApplyModifier"
+			{
+				"ModifierName"	"modifier_viper_strike_slow_datadriven"
+				"Target"		"TARGET"
+			}
+
+		}
+
+		"Modifiers"
+		{
+			"modifier_viper_strike_debuff_datadriven"
+			{
+				"IsDebuff"	"1"
+				"Duration"	"%duration"
+
+				"StatusEffectName"		"particles/status_fx/status_effect_poison_viper.vpcf"
+				"StatusEffectPriority"	"15"
+
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"EffectName"		"particles/units/heroes/hero_viper/viper_viper_strike_debuff.vpcf"
+						"EffectAttachType"	"attach_hitloc"	
+						"Target"			"TARGET"
+					}
+				}		
+
+				"ThinkInterval"	"1.0"
+				"OnIntervalThink"
+				{
+					"RemoveModifier"
+					{
+						"ModifierName"	"modifier_viper_strike_slow_datadriven"
+						"Target"		"TARGET"
+					}
+					"Damage"
+					{
+						"Target"		"TARGET"
+						"Type"			"DAMAGE_TYPE_MAGICAL"
+						"Damage"		"%damage"
+					}
+				}
+			}
+
+			"modifier_viper_strike_slow_datadriven"
+			{
+				"IsHidden"	"1"
+				"IsPurgable"	"0"
+
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"		"%bonus_movement_speed_small"
+				}
 			}
 		}
 	}
@@ -2692,5 +2810,59 @@
 				"Damage"		"%AbilityDamage"
 			}						
 		}	
+	}
+	
+	//=================================================================================================================
+	// Ability: Drow Ranger's Marksmanship
+	//=================================================================================================================
+	"drow_ranger_marksmanship"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5022"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityCastRange"				"400"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+		"MaxLevel"						"3"
+		"AbilityTextureName"			"drow_ranger_marksmanship"
+
+		"HasScepterUpgrade"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"10 15 20"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_damage"					"50 100 150"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"split_count_scepter"			"2"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"scepter_range"					"375"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_reduction_scepter"		"50"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"disable_range"					"400"
+			}
+		}
 	}
 }

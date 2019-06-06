@@ -7,7 +7,7 @@ function Spawn( entityKeyValues )
         return
     end
     ChakraMagic = thisEntity:FindAbilityByName("chakra_magic_datadriven")
-    thisEntity:SetContextThink( "KotlThink", KotlThink, 1 )
+    thisEntity:SetContextThink( "KotlThink", KotlThink, .1 )
 end
 
 function KotlThink()
