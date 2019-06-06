@@ -6,6 +6,7 @@
     
     <scripts>
         <include src="file://{resources}/scripts/custom_game/mainhud.js" />
+		 <include src="file://{resources}/scripts/custom_game/resources.js" />  
     </scripts>
 	
 	 <script>
@@ -25,7 +26,7 @@
 			<Panel hittest="false" id="Divider2" class="Divider" />
 			<Label class="Discord" text="Discord" onactivate="ExternalBrowserGoToURL('https://discord.gg/vSYcJRd');" onmouseover="UIShowTextTooltip(Join the Community at Discord)"  onmouseout="UIHideTextTooltip()"/>	
 			<Label class="Reddit" text="Reddit" onactivate="ExternalBrowserGoToURL('');" onmouseover="UIShowTextTooltip(Join the Community at Reddit)"  onmouseout="UIHideTextTooltip()"/>	
-			<Label class="Steam" text="Patch Notes" onactivate="ExternalBrowserGoToURL('https://steamcommunity.com/sharedfiles/filedetails/changelog/1757498918');" onmouseover="UIShowTextTooltip(Click here for the Patch Notes!)"  onmouseout="UIHideTextTooltip()"/>	
+			<Label class="Steam" text="Patch Notes" onactivate="ExternalBrowserGoToURL('https://steamcommunity.com/sharedfiles/filedetails/changelog/1759829094');" onmouseover="UIShowTextTooltip(Click here for the Patch Notes!)"  onmouseout="UIHideTextTooltip()"/>	
 		</Panel>
 		
 		<Panel hittest="false" class="MainCenter">
@@ -453,5 +454,28 @@
 				</Panel>
 			</Panel>
 		</Panel>
+		
+		<Panel hittest="false" id='ResourcePanel'>
+		  <Label hittest="false" id="ResourcesLabel" text="RESOURCES" html="true" class="TitleFont" />
+		  <Panel hittest="false" id='GoldIconPanel'>
+			<Image id="GoldIcon" src="file://{images}/custom_game/gold_icon.png" onmouseover="UIShowTextTooltip(Gold)"  onmouseout="UIHideTextTooltip()" />
+		  </Panel>
+		  <Panel hittest="false" id='GoldLabelPanel'>
+			<Label hittest="false" id="GoldText" text="0" html="true" class="TitleFont" />
+		  </Panel>
+		  <Panel hittest="false" id='LumberIconPanel'>
+			<Image id="LumberIcon" src="file://{images}/custom_game/lumber_icon.png" onmouseover="UIShowTextTooltip(Coming Soon)"  onmouseout="UIHideTextTooltip()"/>
+		  </Panel>
+		  <Panel hittest="false" id='LumberLabelPanel'>
+			<Label hittest="false" id="LumberText" text="Coming Soon" class="TitleFont" />
+		  </Panel>
+		   <Panel hittest="false" id='FoodIconPanel'>
+			<Image id="FoodIcon" src="file://{images}/custom_game/food_icon.png" onmouseover="UIShowTextTooltip(Comig Soon)"  onmouseout="UIHideTextTooltip()" />
+		  </Panel>
+		  <Panel hittest="false" id='FoodLabelPanel'>
+			<Label hittest="false" id="FoodText" text="Coming Soon" html="true" class="TitleFont" />
+		  </Panel>
+		</Panel>
+		
     </Panel>
 </root>

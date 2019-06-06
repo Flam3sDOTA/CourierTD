@@ -30,7 +30,6 @@ function createPlayerPanel(id, steam_id){
     false
   );
 
-  
   var usernamePanel = $.CreatePanel("DOTAUserName", playerPanel, "username_player_" + id);
   usernamePanel.AddClass("Username");
   usernamePanel.steamid = steam_id;
