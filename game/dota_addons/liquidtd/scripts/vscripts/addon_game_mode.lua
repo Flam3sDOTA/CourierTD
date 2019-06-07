@@ -335,4 +335,8 @@ function LiquidTD:InitGameMode()
 		[DOTA_TEAM_CUSTOM_3] = "map5",
 		[DOTA_TEAM_CUSTOM_4] = "map6",
 	}
+	
+	if IsInToolsMode() then
+		 GameRules:SetStartingGold(99999)
+	end
 end

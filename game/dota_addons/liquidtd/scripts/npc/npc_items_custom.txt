@@ -43,7 +43,6 @@
 		"ItemSellable" 					"0"
 		"ItemPurchasable" 				"1"
 		"ItemStackable" 				"0"
-		"ItemRequiresCharges"			"0"
 		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
 		"UIPickupSound" 				"Item.DropGemShop"
 		"UIDropSound" 					"Item.DropGemShop"
@@ -92,7 +91,6 @@
 		"ItemSellable" 					"0"
 		"ItemPurchasable" 				"1"
 		"ItemStackable" 				"0"
-		"ItemRequiresCharges"			"0"
 		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
 		"UIPickupSound" 				"Item.DropGemShop"
 		"UIDropSound" 					"Item.DropGemShop"
@@ -101,7 +99,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_attack_speed"	"5"
+				"bonus_attack_speed"	"4"
 			}
 		}
 		"Modifiers"
@@ -141,7 +139,6 @@
 		"ItemSellable" 					"0"
 		"ItemPurchasable" 				"1"
 		"ItemStackable" 				"0"
-		"ItemRequiresCharges"			"0"
 		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
 		"UIPickupSound" 				"Item.DropGemShop"
 		"UIDropSound" 					"Item.DropGemShop"
@@ -190,7 +187,6 @@
 		"ItemSellable" 					"0"
 		"ItemPurchasable" 				"1"
 		"ItemStackable" 				"0"
-		"ItemRequiresCharges"			"0"
 		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
 		"UIPickupSound" 				"Item.DropGemShop"
 		"UIDropSound" 					"Item.DropGemShop"
@@ -263,7 +259,6 @@
 		"ItemSellable" 					"0"
 		"ItemPurchasable" 				"1"
 		"ItemStackable" 				"0"
-		"ItemRequiresCharges"			"0"
 		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
 		"UIPickupSound" 				"Item.DropGemShop"
 		"UIDropSound" 					"Item.DropGemShop"
@@ -312,7 +307,6 @@
 		"ItemSellable" 					"0"
 		"ItemPurchasable" 				"1"
 		"ItemStackable" 				"0"
-		"ItemRequiresCharges"			"0"
 		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
 		"UIPickupSound" 				"Item.DropGemShop"
 		"UIDropSound" 					"Item.DropGemShop"
@@ -385,7 +379,6 @@
 		"ItemSellable" 					"0"
 		"ItemPurchasable" 				"1"
 		"ItemStackable" 				"0"
-		"ItemRequiresCharges"			"0"
 		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
 		"UIPickupSound" 				"Item.DropGemShop"
 		"UIDropSound" 					"Item.DropGemShop"
@@ -434,7 +427,6 @@
 		"ItemSellable" 					"0"
 		"ItemPurchasable" 				"1"
 		"ItemStackable" 				"0"
-		"ItemRequiresCharges"			"0"
 		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
 		"UIPickupSound" 				"Item.DropGemShop"
 		"UIDropSound" 					"Item.DropGemShop"
@@ -487,7 +479,6 @@
 		"ItemSellable" 					"0"
 		"ItemPurchasable" 				"1"
 		"ItemStackable" 				"0"
-		"ItemRequiresCharges"			"0"
 		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
 		"UIPickupSound" 				"Item.DropGemShop"
 		"UIDropSound" 					"Item.DropGemShop"
@@ -512,6 +503,150 @@
 				}
 			}
 		}
+	}
+	
+	//============================================================
+	// Blade of Alacrity - Tier 2
+	//============================================================
+	"item_custom_blade_of_alacrity"
+	{
+		"ID" 							"3201"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_2_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_blade_of_alacrity"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1" 
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"7"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_blade_of_alacrity_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"			"%bonus_attack_speed"
+				}
+			}
+		}		
+	}
+	
+	//============================================================
+	// Ogre Axe - Tier 2
+	//============================================================
+	"item_custom_ogre_axe"
+	{
+		"ID" 							"3202"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_1_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_ogre_axe"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1" 
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"15"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_ogre_axe_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"			"%bonus_damage"
+				}
+			}
+		}			
+	}
+	
+	//============================================================
+	// Mithril Hammer - Tier 2
+	//============================================================
+	"item_custom_mithril_hammer"
+	{
+		"ID" 							"3203"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_1_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_mithril_hammer"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1" 
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"24"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_mithril_hammer_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"			"%bonus_damage"
+				}
+			}
+		}			
 	}
 	
 	//============================================================
@@ -618,6 +753,331 @@
 	}
 	
 	//============================================================
+	// Yasha - Tier 3
+	//============================================================
+	"item_custom_yasha"
+	{
+		"ID" 							"3301"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_2_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_yasha"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1" 
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemDisassembleRule" 			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"15"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_yasha_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"			"%bonus_attack_speed"
+				}
+			}
+		}		
+	}
+	
+	//============================================================
+	// Sange - Tier 3
+	//============================================================
+	"item_custom_sange"
+	{
+		"ID" 							"3302"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_1_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_sange"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1" 
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemDisassembleRule" 			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"30"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_sange_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"			"%bonus_damage"
+				}
+			}
+		}			
+	}
+	
+	// Rewrite of Skull Basher
+	// Author: Rook
+	// Date: February 1, 2015
+	"item_custom_skull_basher"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"
+		"ID"							"3303"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_1_circle.vpcf"
+		"AbilityTextureName"			"item_custom_skull_basher"
+		
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"2.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemRequiresCharges"			"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"ItemDisassembleRule" 			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1" 
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"40"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bash_chance_melee"		"20"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bash_chance_ranged"	"20"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bash_duration"			"1.4"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bash_cooldown"			"2.0"
+			}
+		}
+		
+		"Modifiers"
+		{
+			"modifier_item_basher_datadriven"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+				
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"		"%bonus_damage"
+				}
+				
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"			"items/item_basher.lua"
+						"Function"				"modifier_item_basher_datadriven_recalculate_bash_chance"
+					}
+				}
+				
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"			"items/item_basher.lua"
+						"Function"				"modifier_item_basher_datadriven_recalculate_bash_chance"
+					}
+				}
+			}
+			//Bash chance does not stack, so attach it to a non-MULTIPLE modifier.
+			"modifier_item_basher_datadriven_bash_chance"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				
+				"OnAttackLanded"
+				{
+					"RunScript"
+					{
+						"ScriptFile"			"items/item_basher.lua"
+						"Function"				"modifier_item_basher_datadriven_bash_chance_on_attack_landed"
+						"BashChanceMelee"		"%bash_chance_melee"
+						"BashChanceRanged"		"%bash_chance_ranged"
+					}
+				}
+			}
+			"modifier_item_basher_datadriven_bash"
+			{
+				"Duration"              "%bash_duration"
+				"Passive"				"0"
+				"IsHidden"				"0"
+				"IsBuff"				"0"
+				"IsDebuff"				"1"
+				"IsPurgable"			"1"
+				
+				"EffectName"            "particles/generic_gameplay/generic_stunned.vpcf"
+				"EffectAttachType"      "follow_overhead"
+				"OverrideAnimation"     "ACT_DOTA_DISABLED"
+				
+				"States"
+				{
+					"MODIFIER_STATE_STUNNED" 		"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+			//A sort of dummy modifier that is placed on the caster when they bash a target.  While a unit has this modifier on them, 
+			//they cannot bash, so this modifier acts as an internal bash cooldown for Skull Basher and Abyssal Blade.
+			"bash_cooldown_modifier"
+			{
+				"Duration"              "%bash_cooldown"
+				"Passive"				"0"
+				"IsHidden"				"1"
+			}
+		}
+	}
+	
+	
+	//============================================================
+	// Desolator - Tier 3
+	//============================================================
+	"item_custom_desolator"
+	{
+		"ID" 							"3304"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_3_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_desolator"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1" 
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemDisassembleRule" 			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"armor_reduction"			"-7"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"duration"					"5"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_damage"				"50"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_desolator_modifier"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"		"%bonus_damage"
+				}
+				"OnAttackLanded"
+				{
+					"ApplyModifier"
+					{
+						"ModifierName"	"item_custom_desolator_modifier_debuff"
+						"Duration"		"%duration"
+						"Target"		"TARGET"
+					}
+					"FireSound"
+					{
+						"EffectName"		"Item_Desolator.Target"
+						"Target"			"TARGET"
+					}
+				}
+			}
+		
+			"item_custom_desolator_modifier_debuff"
+			{
+				"IsHidden"			"0"
+				"IsBuff"			"0"
+				"IsDebuff"			"1"
+				"EffectName"		"particles/units/heroes/hero_monkey_king/monkey_king_jump_armor_debuff_model.vpcf"
+				"EffectAttachType"	"follow_overhead"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%armor_reduction"
+				}
+			
+			}
+		}			
+	}
+	//============================================================
 	// RECIPES
 	//============================================================
 	//============================================================
@@ -633,6 +1093,70 @@
 		"ItemRequirements"
 		{
 			"01" 			 			"item_custom_blades_of_attack;item_custom_broadsword"
+		}
+	}
+	
+	//============================================================
+	// Yasha Recipe
+	//============================================================
+	"item_recipe_custom_yasha" 
+	{
+		"ID" 				  			"4001"
+		"BaseClass"           			"item_datadriven"
+		"ItemRecipe"          			"1"
+		"ItemCost"            			"0"
+		"ItemResult"          			"item_custom_yasha"
+		"ItemRequirements"
+		{
+			"01" 			 			"item_custom_band_of_elvenskin;item_custom_blade_of_alacrity"
+		}
+	}
+	
+	//============================================================
+	// Sange Recipe
+	//============================================================
+	"item_recipe_custom_sange" 
+	{
+		"ID" 				  			"4002"
+		"BaseClass"           			"item_datadriven"
+		"ItemRecipe"          			"1"
+		"ItemCost"            			"0"
+		"ItemResult"          			"item_custom_sange"
+		"ItemRequirements"
+		{
+			"01" 			 			"item_custom_belt_of_strength;item_custom_ogre_axe"
+		}
+	}
+	
+	//============================================================
+	// Skull Basher Recipe
+	//============================================================
+	"item_recipe_custom_skull_basher" 
+	{
+		"ID" 				  			"4003"
+		"BaseClass"           			"item_datadriven"
+		"ItemRecipe"          			"1"
+		"ItemCost"            			"0"
+		"ItemResult"          			"item_custom_skull_basher"
+		"ItemRequirements"
+		{
+			"01" 			 			"item_custom_belt_of_strength;item_custom_mithril_hammer"
+		}
+	}
+	
+	//============================================================
+	// Desolator Recipe
+	//============================================================
+	"item_recipe_custom_desolator" 
+	{
+		"ID" 				  			"4004"
+		"BaseClass"           			"item_datadriven"
+		"ItemRecipe"          			"1"
+		"ItemCost"            			"0"
+		"ItemResult"          			"item_custom_desolator"
+		"ItemRequirements"
+		{
+			"01" 			 			"item_custom_blight_stone;item_custom_mithril_hammer;item_custom_mithril_hammer"
 		}
 	}
 }

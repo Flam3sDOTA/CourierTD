@@ -34,7 +34,6 @@
 		var NoStash = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("shop_launcher_block");
 		var NoXPContainer = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("center_with_stats").FindChildTraverse("center_block");
 		
-		
 		NoTalents.FindChildTraverse("StatBranch").style.visibility = "collapse";
         NoTalentGlow.FindChildTraverse("level_stats_frame").style.visibility = "collapse";
         NoGlyphAndRadar.FindChildTraverse("GlyphScanContainer").style.visibility = "collapse";
@@ -50,6 +49,7 @@
 		NoQuickBuy.FindChildTraverse("QuickBuyRows").style.visibility = "collapse";
 		NoStash.FindChildTraverse("stash").style.visibility = "collapse";
 		NoXPContainer.FindChildTraverse("xp").style.visibility = "collapse";
+		
 		
 		GameUI.CustomUIConfig().team_colors = {}
 		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_GOODGUYS] = "#3dd296;"; // { 61, 210, 150 }	--		Teal
