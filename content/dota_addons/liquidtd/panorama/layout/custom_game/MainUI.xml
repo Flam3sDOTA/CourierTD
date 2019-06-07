@@ -21,11 +21,11 @@
 			<Button id="NewDashboardButton" class="TopLeftMenuButton" onactivate="DOTAHUDShowDashboard();" onmouseover="UIShowTextTooltip(DOTA_HUD_BackToDashboard)"  onmouseout="UIHideTextTooltip()" />
 			<Button id="NewScoreboardButton" class="TopLeftMenuButton" onactivate="DOTAHUDToggleScoreboard();" onmouseover="UIShowTextTooltip(DOTA_HUD_Scoreboard)"  onmouseout="UIHideTextTooltip()" />
 			<Button id="LeaderboardButton" class="TopLeftMenuButton" onactivate="OnLeaderboardOpenButtonPressed();" onmouseover="UIShowTextTooltip(Statistics - Coming Soon)"  onmouseout="UIHideTextTooltip()" />
-			<Button id="StoreButton" class="TopLeftMenuButton" onactivate="OnStoreOpenButtonPressed();" onmouseover="UIShowTextTooltip(Store - Coming Soon)"  onmouseout="UIHideTextTooltip()" />
+			<Button id="StoreButton" class="TopLeftMenuButton" onactivate="ExternalBrowserGoToURL('https://www.patreon.com/Flam3s');" onmouseover="UIShowTextTooltip(Become a Patron and Get Rewards!)"  onmouseout="UIHideTextTooltip()"/>
 			<Button id="NewSettingsButton" class="TopLeftMenuButton" onactivate="DOTAShowSettingsPopup();" onmouseover="UIShowTextTooltip(DOTA_HUD_Settings)"  onmouseout="UIHideTextTooltip()" />
 			<Panel hittest="false" id="Divider2" class="Divider" />
 			<Label class="Discord" text="Discord" onactivate="ExternalBrowserGoToURL('https://discord.gg/vSYcJRd');" onmouseover="UIShowTextTooltip(Join the Community at Discord)"  onmouseout="UIHideTextTooltip()"/>	
-			<Label class="Reddit" text="Reddit" onactivate="ExternalBrowserGoToURL('');" onmouseover="UIShowTextTooltip(Join the Community at Reddit)"  onmouseout="UIHideTextTooltip()"/>	
+			<Label class="Reddit" text="Reddit" onactivate="ExternalBrowserGoToURL('https://www.reddit.com/r/CourierTD/');" onmouseover="UIShowTextTooltip(Join the Community at Reddit)"  onmouseout="UIHideTextTooltip()"/>	
 			<Label class="Steam" text="Patch Notes" onactivate="ExternalBrowserGoToURL('https://steamcommunity.com/sharedfiles/filedetails/changelog/1759829094');" onmouseover="UIShowTextTooltip(Click here for the Patch Notes!)"  onmouseout="UIHideTextTooltip()"/>	
 		</Panel>
 		
