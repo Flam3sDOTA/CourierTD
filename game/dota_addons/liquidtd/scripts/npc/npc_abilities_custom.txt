@@ -168,7 +168,7 @@
 			"01"
 			{
 				"var_type"    					 "FIELD_INTEGER"
-				"ATTACK_DAMAGE_TOOLTIP"    		 "20"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "50"
 			}
 			"02"
 			{
@@ -229,22 +229,22 @@
 	}		
 	
 	//============================================================
-	// Build Tower: Farm
+	// Build Tower: Utility
 	//============================================================
-	"build_tower_farm"
+	"build_tower_utility"
 	{
 		"BaseClass"                     "ability_datadriven"
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
-		"AbilityTextureName"            "TowerFarm"
+		"AbilityTextureName"            "tower_utility"
 		"Building"                      "1"
 		"AbilityCastRange"              "260"
-		"Scale"                         "2"
+		"Scale"                         "3"
 		"PlayerCanControl"              "1"
-		"UnitName"                      "tower_farm_1"
-		"OverrideBuildingGhost"         "tower_farm_1"
-		"AbilityGoldCost"               "500"
+		"UnitName"                      "tower_utility"
+		"OverrideBuildingGhost"         "tower_utility"
+		"AbilityGoldCost"               "250"
 		"OnSpellStart"
 		{
 			"RunScript"
@@ -258,26 +258,391 @@
 			"01"
 			{
 				"var_type"    					 "FIELD_INTEGER"
-				"GOLD TICK TIME"    		 	 "10"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "200"
 			}
 			"02"
 			{
 				"var_type"    					 "FIELD_FLOAT"
-				"GOLD PER TICK"     		 	 "25"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
 			}
 		}
-	}		
+	}
 	
 	//============================================================
-	// Upgrade Farm 1 to Farm 2
+	// Upgrade to Lion 1
 	//============================================================
-	"upgrade_tower_farm_2"
+	"tower_upgrade_utility_lion_1"
 	{
 		"BaseClass"                     "ability_datadriven"
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
-		"AbilityTextureName"            "TowerFarm"
+		"AbilityTextureName"            "UpgradeToLion"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "250"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_lion_1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "200"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade to Lion 2
+	//============================================================
+	"tower_upgrade_utility_lion_2"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToLion"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "500"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_lion_2"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "250"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade to Lion 3
+	//============================================================
+	"tower_upgrade_utility_lion_3"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToLion"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "750"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_lion_3"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "300"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade to Shaman 1
+	//============================================================
+	"tower_upgrade_utility_shaman_1"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToShaman"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "450"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_shaman_1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "200"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade to Shaman 2
+	//============================================================
+	"tower_upgrade_utility_shaman_2"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToShaman"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "700"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_shaman_2"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "250"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade to Shaman 3
+	//============================================================
+	"tower_upgrade_utility_shaman_3"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToShaman"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "950"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_shaman_3"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "300"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade to Meepo 1
+	//============================================================
+	"tower_upgrade_utility_meepo_1"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToMeepo"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "500"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_meepo_1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "200"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade to Meepo 2
+	//============================================================
+	"tower_upgrade_utility_meepo_2"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToMeepo"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "750"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_meepo_2"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "250"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade to Meepo 3
+	//============================================================
+	"tower_upgrade_utility_meepo_3"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToMeepo"
 		"Building"                      "1"
 		"AbilityCastRange"              "260"
 		"Scale"                         "3"
@@ -290,7 +655,7 @@
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
-				"tower"			"tower_farm_2"
+				"tower"			"tower_utility_meepo_3"
 			}
 		}
 		"AbilitySpecial"
@@ -298,31 +663,36 @@
 			"01"
 			{
 				"var_type"    					 "FIELD_INTEGER"
-				"GOLD TICK TIME"    		 	 "9"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "300"
 			}
 			"02"
 			{
 				"var_type"    					 "FIELD_FLOAT"
-				"GOLD PER TICK"     		 	 "50"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
 			}
 		}
-	}	
+	}
 	
 	//============================================================
-	// Upgrade Farm 2 to Farm 3
+	// Upgrade to Gyro 1
 	//============================================================
-	"upgrade_tower_farm_3"
+	"tower_upgrade_utility_gyro_1"
 	{
 		"BaseClass"                     "ability_datadriven"
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
-		"AbilityTextureName"            "TowerFarm"
+		"AbilityTextureName"            "UpgradeToGyro"
 		"Building"                      "1"
 		"AbilityCastRange"              "260"
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
-		"AbilityGoldCost"               "1500"
+		"AbilityGoldCost"               "650"
 		"OnSpellStart"
 		{
 			"RunScript"
@@ -330,7 +700,7 @@
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
-				"tower"			"tower_farm_3"
+				"tower"			"tower_utility_gyro_1"
 			}
 		}
 		"AbilitySpecial"
@@ -338,31 +708,36 @@
 			"01"
 			{
 				"var_type"    					 "FIELD_INTEGER"
-				"GOLD TICK TIME"    		 	 "8"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "200"
 			}
 			"02"
 			{
 				"var_type"    					 "FIELD_FLOAT"
-				"GOLD PER TICK"     		 	 "75"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
 			}
 		}
-	}	
+	}
 	
 	//============================================================
-	// Upgrade Farm 3 to Farm 4
+	// Upgrade to Gyro 2
 	//============================================================
-	"upgrade_tower_farm_4"
+	"tower_upgrade_utility_gyro_2"
 	{
 		"BaseClass"                     "ability_datadriven"
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
-		"AbilityTextureName"            "TowerFarm"
+		"AbilityTextureName"            "UpgradeToGyro"
 		"Building"                      "1"
 		"AbilityCastRange"              "260"
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
-		"AbilityGoldCost"               "2000"
+		"AbilityGoldCost"               "900"
 		"OnSpellStart"
 		{
 			"RunScript"
@@ -370,7 +745,7 @@
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
-				"tower"			"tower_farm_4"
+				"tower"			"tower_utility_gyro_2"
 			}
 		}
 		"AbilitySpecial"
@@ -378,31 +753,36 @@
 			"01"
 			{
 				"var_type"    					 "FIELD_INTEGER"
-				"GOLD TICK TIME"    		 	 "7"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "250"
 			}
 			"02"
 			{
 				"var_type"    					 "FIELD_FLOAT"
-				"GOLD PER TICK"     		 	 "100"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
 			}
 		}
-	}	
+	}
 	
 	//============================================================
-	// Upgrade Farm 4 to Farm 5
+	// Upgrade to Gyro 3
 	//============================================================
-	"upgrade_tower_farm_5"
+	"tower_upgrade_utility_gyro_3"
 	{
 		"BaseClass"                     "ability_datadriven"
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
-		"AbilityTextureName"            "TowerFarm"
+		"AbilityTextureName"            "UpgradeToGyro"
 		"Building"                      "1"
 		"AbilityCastRange"              "260"
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
-		"AbilityGoldCost"               "2500"
+		"AbilityGoldCost"               "1150"
 		"OnSpellStart"
 		{
 			"RunScript"
@@ -410,7 +790,7 @@
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
-				"tower"			"tower_farm_5"
+				"tower"			"tower_utility_gyro_3"
 			}
 		}
 		"AbilitySpecial"
@@ -418,31 +798,37 @@
 			"01"
 			{
 				"var_type"    					 "FIELD_INTEGER"
-				"GOLD TICK TIME"    		 	 "6"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "300"
 			}
 			"02"
 			{
 				"var_type"    					 "FIELD_FLOAT"
-				"GOLD PER TICK"     		 	 "125"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
 			}
 		}
-	}	
+	}
+	
 	
 	//============================================================
-	// Upgrade Farm 5 to Farm 6
+	// Upgrade to Sven 1
 	//============================================================
-	"upgrade_tower_farm_6"
+	"tower_upgrade_utility_sven_1"
 	{
 		"BaseClass"                     "ability_datadriven"
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
-		"AbilityTextureName"            "TowerFarm"
+		"AbilityTextureName"            "UpgradeToSven"
 		"Building"                      "1"
 		"AbilityCastRange"              "260"
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
-		"AbilityGoldCost"               "3000"
+		"AbilityGoldCost"               "700"
 		"OnSpellStart"
 		{
 			"RunScript"
@@ -450,7 +836,7 @@
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
-				"tower"			"tower_farm_6"
+				"tower"			"tower_utility_sven_1"
 			}
 		}
 		"AbilitySpecial"
@@ -458,15 +844,568 @@
 			"01"
 			{
 				"var_type"    					 "FIELD_INTEGER"
-				"GOLD TICK TIME"    		 	 "5"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "200"
 			}
 			"02"
 			{
 				"var_type"    					 "FIELD_FLOAT"
-				"GOLD PER TICK"     		 	 "150"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
 			}
 		}
-	}	
+	}
+	
+	//============================================================
+	// Upgrade to Sven 2
+	//============================================================
+	"tower_upgrade_utility_sven_2"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToSven"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "950"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_sven_2"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "250"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade to Sven 3
+	//============================================================
+	"tower_upgrade_utility_sven_3"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToSven"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "1200"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_sven_3"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "300"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade to Underlord 1
+	//============================================================
+	"tower_upgrade_utility_underlord_1"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToUnderlord"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "750"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_underlord_1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "200"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade to Underlord 2
+	//============================================================
+	"tower_upgrade_utility_underlord_2"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToUnderlord"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "1000"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_underlord_2"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "250"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade to Underlord 3
+	//============================================================
+	"tower_upgrade_utility_underlord_3"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToUnderlord"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "1250"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_underlord_3"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "300"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade to Void 1
+	//============================================================
+	"tower_upgrade_utility_void_1"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToVoid"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "800"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_void_1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "200"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade to Void 2
+	//============================================================
+	"tower_upgrade_utility_void_2"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToVoid"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "1050"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_void_2"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "250"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade to Void 3
+	//============================================================
+	"tower_upgrade_utility_void_3"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToVoid"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "1300"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_void_3"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "300"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade to Enigma 1
+	//============================================================
+	"tower_upgrade_utility_enigma_1"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToEnigma"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "850"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_enigma_1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "200"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade to Enigma 2
+	//============================================================
+	"tower_upgrade_utility_enigma_2"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToEnigma"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "1100"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_enigma_2"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "250"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Upgrade to Enigma 3
+	//============================================================
+	"tower_upgrade_utility_enigma_3"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToEnigma"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "1350"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_enigma_3"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "300"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"1000"
+			}
+		}
+	}
+	
+	//============================================================
+	// Next Page
+	//============================================================
+	"next_page"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "NextPage"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/page.lua"
+				"Function"		"ChangePage"
+				"tower"			"tower_utility_2"
+			}
+		}
+	}
+	
+	//============================================================
+	// Previous Page
+	//============================================================
+	"previous_page"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "PreviousPage"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/page.lua"
+				"Function"		"ChangePage"
+				"tower"			"tower_utility"
+			}
+		}
+	}
+	
 	
 	//============================================================
 	// Upgrade Arrow Tower to Windranger 1
@@ -2865,4 +3804,730 @@
 			}
 		}
 	}
+	
+	//=================================================================================================================
+	// Lina: Light Strike Array - Credits: Elfansoer
+	//=================================================================================================================
+	"lina_light_strike_array_lua"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/lina_light_strike_array"
+		"AbilityTextureName"			"lina_light_strike_array"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		"precache"
+		{
+			"soundfile"					"soundevents/game_sounds_heroes/game_sounds_lina.vsndevts"
+			"particle"					"particles/units/heroes/hero_lina/lina_spell_light_strike_array_ray_team.vpcf"
+			"particle"					"particles/units/heroes/hero_lina/lina_spell_light_strike_array.vpcf"
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1100"
+		"AbilityCastPoint"				"0.45"
+		"AbilityDuration"				"2.5"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"15.0"
+		"AbilityManaCost"				"100"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"light_strike_array_aoe"			"300"
+			}
+			
+			"02"
+			{
+				"var_type"							"FIELD_FLOAT"
+				"light_strike_array_delay_time"		"0.3"
+			}
+						
+			"03"
+			{
+				"var_type"							"FIELD_FLOAT"
+				"light_strike_array_stun_duration"	"2"
+			}
+			"04"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"light_strike_array_damage"			"0"
+			}
+		}
+	}
+	
+	//=================================================================================================================
+	// Lion: Hex (Lua version)
+	//=================================================================================================================
+	"lion_hex_lua"
+	{
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/lion_hex_lua"
+		"AbilityTextureName"			"lion_hex"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"3"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_2"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_lion.vsndevts"
+			"particle"	"particles/units/heroes/hero_lion/lion_spell_voodoo.vpcf"
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1100"
+		"AbilityCastPoint"				"0"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"15"
+		"AbilityManaCost"				"50 75 100"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"2.5 3 3.5"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"movespeed"					"140"
+			}
+		}
+	}
+	
+	// Rewrite of the Shadow Shaman Shackles ability
+	// Author: Noya
+	// Date: April 4, 2015.
+	"shadow_shaman_shackles_datadriven"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"				"1"
+		"AbilityTextureName"			"shadow_shaman_shackles"
+		"MaxLevel"						"3"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1100"
+		"AbilityCastPoint"				"0.3"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityChannelTime"			"2.75 3.5 4.25"
+		"AbilityCooldown"				"15"
+
+		// Damage.
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDamage"					"40 50 60"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"50 75 100"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"tick_interval"		"0.1 0.1 0.1"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"channel_time"		"2.75 3.5 4.25"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"total_damage"		"120 160 180"
+			}
+			// Extra, calculated as total_damage / channel_time * tick_interval
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"damage_per_tick"	"4.3 4.6 3.8 4"
+			}
+		}
+
+		"precache"
+		{
+			"particle"  "particles/status_fx/status_effect_shaman_shackle.vpcf" 	
+			"particle"	"particles/units/heroes/hero_shadowshaman/shadowshaman_shackle.vpcf"
+			"soundfile" "soundevents/game_sounds_heroes/game_sounds_shadowshaman.vsndevts"
+		}
+
+		"OnSpellStart"
+		{
+			"FireSound"
+			{
+				"EffectName"	"Hero_ShadowShaman.Shackles.Cast"
+				"Target" 		"CASTER"
+			}
+
+			"ApplyModifier"
+			{
+				"ModifierName"	"modifier_shackles"
+				"Target" 		"TARGET"
+				"Duration"		"%channel_time"
+			}
+		}
+
+		"OnChannelFinish"
+		{
+			"RemoveModifier"
+			{
+				"ModifierName"	"modifier_shackles"
+				"Target" 		"TARGET"
+			}
+
+			"RunScript"
+			{
+				"ScriptFile"	"abilities/shackles.lua"
+				"Function"		"StopSound"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_shackles"
+			{
+				"IsDebuff"			"1"
+		
+				"States"
+				{
+					"MODIFIER_STATE_STUNNED"		"MODIFIER_STATE_VALUE_ENABLED"
+				}
+
+				"StatusEffectName" 		"particles/status_fx/status_effect_shaman_shackle.vpcf" 	   
+				"StatusEffectPriority"  "10"
+
+				"OverrideAnimation"     "ACT_DOTA_DISABLED"
+
+				"ThinkInterval"  "%tick_interval"
+				"OnIntervalThink"
+				{
+					"Damage"
+					{
+						"Target"		"TARGET"
+						"Type"			"DAMAGE_TYPE_MAGICAL"
+						"Damage"		"%damage_per_tick"
+					}
+				}
+
+				"OnCreated"
+				{
+					"FireSound"
+					{
+						"EffectName"	"Hero_ShadowShaman.Shackles"
+						"Target" 		"TARGET"
+					}
+					
+					"AttachEffect"
+					{
+						"EffectName"			"particles/units/heroes/hero_shadowshaman/shadowshaman_shackle.vpcf"
+						"EffectAttachType"		"follow_origin"
+						"Target"				"TARGET"
+						"ControlPointEntities"
+						{
+							"TARGET"	"attach_hitloc"
+							"TARGET"	"attach_hitloc"
+							"TARGET"	"attach_hitloc"
+							"TARGET"	"attach_hitloc"
+							"TARGET"	"attach_hitloc"
+							"CASTER"	"attach_hitloc" //Attach to the hands or any desired attach point of the hero
+							"CASTER"	"attach_hitloc"
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	//=================================================================================================================
+	// Meepo: Earthbind
+	//=================================================================================================================
+	"meepo_earthbind"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5430"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_Meepo.Earthbind.Cast"
+		"MaxLevel"						"3"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1200"
+		"AbilityCastPoint"				"0.3"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"20"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"100"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"2.0 2.5 3.0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"300"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"speed"					"1200"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"tooltip_range"			"1200"
+				"LinkedSpecialBonus"		"special_bonus_unique_meepo_4"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+
+	//=================================================================================================================
+	// Gyrocopter: Call Down
+	//=================================================================================================================
+	"gyrocopter_call_down"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5364"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"FightRecapLevel"				"2"
+		"AbilitySound"					"Hero_Gyrocopter.CallDown.Fire"
+		"MaxLevel"						"3"
+
+		"HasScepterUpgrade"				"1"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1000"
+		"AbilityCastPoint"				"0.3"
+		"AbilityCastAnimation"			"ACT_INVALID"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"30 25 20"
+		
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"100"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"slow_duration_first"		"2"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"slow_duration_second"		"4"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage_first"				"150 250 350"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage_second"				"100 150 200"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"slow_first"				"30"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"slow_second"				"60"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"300"
+			}			
+			"08"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"range_scepter"				"0"
+			}
+			"09"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage_second_scepter"		"175 225 275"
+			}
+		}
+	}
+	
+	//=================================================================================================================
+	// Enigma: Black Hole - Credits: Elfansoer
+	//=================================================================================================================
+	"enigma_black_hole_lua"
+	{
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/enigma_black_hole_lua"
+		"AbilityTextureName"			"enigma_black_hole"
+		"FightRecapLevel"				"2"
+		"MaxLevel"						"3"
+		"HasScepterUpgrade"				"1"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_enigma.vsndevts"
+			"particle"	"particles/units/heroes/hero_enigma/enigma_blackhole.vpcf"
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1000"
+		"AbilityCastPoint"				"0.2"
+		"AbilityChannelTime"			"4.0"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"40 35 30"
+		"AbilityManaCost"				"100"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"far_damage"			"50 100 150"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"far_radius"			"300"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"pull_radius"			"300"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"pull_speed"			"40"
+			}			
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"near_radius"			"200"
+			}			
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"near_damage"			"50 100 150"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"tick_rate"				"0.1 0.1 0.1"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"4.0 4.0 4.0"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"vision_radius"			"800 800 800"
+			}
+			"10"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"pull_rotate_speed"		"0.25"
+			}
+			"11"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"animation_rate"		"0.2"
+			}
+		}
+	}
+	
+	//=================================================================================================================
+	// Faceless Void: Chronosphere - Credits: Elfansoer
+	//=================================================================================================================
+	"faceless_void_chronosphere_lua"
+	{
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/faceless_void_chronosphere_lua"
+		"AbilityTextureName"			"faceless_void_chronosphere"
+		"FightRecapLevel"				"2"
+		"MaxLevel"						"3"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_faceless_void.vsndevts"
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1000"
+		"AbilityCastPoint"				"0.6"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"40 35 30"
+		"AbilityManaCost"				"100"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"300"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"3.0 3.5 4.0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration_scepter"		"4.0 4.5 5.0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"cooldown_scepter"		"60"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"vision_radius"			"475"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"0"
+			}
+		}
+	}
+	
+	//=================================================================================================================
+	// Abyssal Underlord: Pit of Malice
+	//=================================================================================================================
+	"abyssal_underlord_pit_of_malice"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5614"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilitySound"					"Hero_AbyssalUnderlord.PitOfMalice"
+		"MaxLevel"						"3"
+
+		"AbilityCastRange"				"1000"
+		"AbilityCastPoint"				"0.35"
+		"FightRecapLevel"				"1"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"25 20 15"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"100"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"300"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"pit_duration"					"5.0"
+			}		
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"pit_interval"					"2"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"pit_damage"					"0"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"ensnare_duration"				"1.5 2 2.5"
+				"LinkedSpecialBonus"			"special_bonus_unique_underlord"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}
+	
+	//=================================================================================================================
+	// Ability: Storm Bolt
+	//=================================================================================================================
+	"sven_storm_bolt"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5094"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_Sven.StormBoltImpact"
+		"MaxLevel"						"3"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1000"
+		"AbilityCastPoint"				"0.3 0.3"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"25 20 15"
+
+		// Damage.
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDamage"					"160 240 320"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"100"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bolt_speed"			"2000"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bolt_stun_duration"	"1.5 1.8 2.0 2.3"
+				"LinkedSpecialBonus"		"special_bonus_unique_sven_4"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bolt_aoe"			"300"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"vision_radius"		"300"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+	
 }

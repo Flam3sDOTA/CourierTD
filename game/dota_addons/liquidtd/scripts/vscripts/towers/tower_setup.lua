@@ -4,7 +4,7 @@ function AddTowerParticle(tower, level, tier)
   -- "particles/arrow/4/star1.vpcf"
   local baseParticle = "particles/arrow/star"
   if tier == 2 then
-    baseParticle = "particles/arrow/4/star1.vpcf"
+    baseParticle = "particles/arrow/5/star"
   end
 
   local particle = ParticleManager:CreateParticle( baseParticle .. "1.vpcf", PATTACH_OVERHEAD_FOLLOW, tower)

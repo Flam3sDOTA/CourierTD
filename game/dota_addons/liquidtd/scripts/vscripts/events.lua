@@ -26,7 +26,7 @@ function LiquidTD:OnHeroInGame(hero)
     "build_tower_arrow",
     "build_tower_poison",
     "build_tower_ice",
-    "build_tower_farm"
+    "build_tower_utility"
   }
 
   for i = 1, #abilities do
@@ -53,8 +53,7 @@ function LiquidTD:OnEntityHurt(event)
   if attacker:GetTeam() ~= DOTA_TEAM_NEUTRALS and not inflictor then
     local maxMana = attacker:GetMaxMana()
     if maxMana > 0 and attacker:GetMana() < maxMana then
-      -- Gain 5% mana per attack or something
-      local manaGained = damage * 0.05
+      local manaGained = damage * 0.03
       attacker:GiveMana(manaGained)
     end
   end

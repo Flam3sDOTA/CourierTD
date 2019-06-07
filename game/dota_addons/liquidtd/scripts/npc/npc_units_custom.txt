@@ -1943,38 +1943,39 @@
 	}
 	
 	//============================================================
-	// Tower: Farm
+	// Tower: Utility
 	//============================================================
-	"tower_farm_1"
+	"tower_utility"
 	{
 		// Visual
 		//-----------------------------
-		"Model"                     "models/props_structures/tower_upgrade/tower_upgrade.vmdl"
-		"ModelScale"                "0.8"
+		"Model"                     "models/heroes/lina/lina.vmdl"
+		"ModelScale"                "1"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/enchantress/enchantress_flower.vmdl"
-		"PedestalModelScale"        "0.8"
-		"PedestalOffset"            "4"
-		"ProjectileModel"           ""
-		"SoundSet"                  ""
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.3"
+		"PedestalOffset"            "5"
+		"SoundSet"                  "Hero_Lina"
 		"MinimapIconSize"           ""
-		"GameSoundsFile"    		""
+		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_lina.vsndevts"
+		"vscripts"                  "ai/lina.lua"
 
 		// Stats
 		//----------------------------- 
-		"AttackDamageMin"           "30"
-		"AttackDamageMax"           "30"
-		"Damage"                    "30"  
+		"AttackDamageMin"           "200"
+		"AttackDamageMax"           "200"
+		"Damage"                    "200" 
 		"AttackRange"               "1000"
 		"AttackAcquisitionRange"    "1000"
-		"AttackRate"                "0.8"
-		"AttackAnimationPoint"      "0.5"
-		"ProjectileSpeed"           "2200"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.750000"
+		"ProjectileSpeed"           "2000"
+		"ProjectileModel"           "particles/units/heroes/hero_lina/lina_base_attack.vpcf"
 
-		"Level"                     "500"
-		"Cost"                      "500"
-		"TotalCost"                 "500"
+		"Level"                     "250"
+		"Cost"                      "250"
+		"TotalCost"                 "250"
 		"BuildTime"                 "0.3"
 		"ScriptClass"               "BasicTower"
 		"TowerType"                 "Normal"
@@ -1992,7 +1993,7 @@
 		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 		"VisionDaytimeRange"        "1900"
 		"VisionNighttimeRange"      "1900"  
-		"AttackCapabilities"        "DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
 		"ProjectileCollisionSize"   "50"
 		"RingRadius"                "80"
@@ -2001,57 +2002,867 @@
 		"MovementTurnRate"          "1.0"
 		"StatusHealth"              "175"
 		"StatusHealthRegen"         "0"
-		"StatusMana"                "0"
+		"StatusMana"                "100"
 		"StatusManaRegen"           "0"
-		"HealthBarOffset"       	"250"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"upgrade_tower_farm_2"
-		"Ability2"					"farm_tower_gold"
-		"Ability3"					""
-		"Ability4"					"sell_tower"
-		"Ability5"					"tower_invulnerable"
+		"Ability1"					"next_page"
+		"Ability2"					"tower_upgrade_utility_lion_1"
+		"Ability3"					"tower_upgrade_utility_shaman_1"
+		"Ability4"					"tower_upgrade_utility_meepo_1"
+		"Ability5"					"tower_upgrade_utility_gyro_1"
+		"Ability6"					"sell_tower"
+		"Ability7"					"lina_light_strike_array_lua"
+		"Ability8"					"tower_invulnerable"
 
 		// Building Size
 		"ConstructionSize"          "4"
 		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "8990" } // Head
+				"2"  { "ItemDef" "8003" } // Neck
+				"3"  { "ItemDef" "9243" } // Belt
+				"4"  { "ItemDef" "9071" } // Arms
+			}
+		}
 	}
 	
 	//============================================================
-	// Tower: Farm
+	// Tower: Utility 2
 	//============================================================
-	"tower_farm_2"
+	"tower_utility_2"
 	{
 		// Visual
 		//-----------------------------
-		"Model"                     "models/props_structures/tower_upgrade/tower_upgrade.vmdl"
-		"ModelScale"                "1.1"
+		"Model"                     "models/heroes/lina/lina.vmdl"
+		"ModelScale"                "1"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/enchantress/enchantress_flower.vmdl"
-		"PedestalModelScale"        "1"
-		"PedestalOffset"            "4"
-		"ProjectileModel"           ""
-		"SoundSet"                  ""
-		"MinimapIconSize"           "10"
-		"GameSoundsFile"    		""
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.3"
+		"PedestalOffset"            "5"
+		"SoundSet"                  "Hero_Lina"
+		"MinimapIconSize"           ""
+		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_lina.vsndevts"
+		"vscripts"                  "ai/lina.lua"
 
 		// Stats
 		//----------------------------- 
-		"AttackDamageMin"           "30"
-		"AttackDamageMax"           "30"
-		"Damage"                    "30"  
+		"AttackDamageMin"           "200"
+		"AttackDamageMax"           "200"
+		"Damage"                    "200" 
 		"AttackRange"               "1000"
 		"AttackAcquisitionRange"    "1000"
-		"AttackRate"                "0.8"
-		"AttackAnimationPoint"      "0.5"
-		"ProjectileSpeed"           "2200"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.750000"
+		"ProjectileSpeed"           "2000"
+		"ProjectileModel"           "particles/units/heroes/hero_lina/lina_base_attack.vpcf"
+
+		"Level"                     "250"
+		"Cost"                      "250"
+		"TotalCost"                 "250"
+		"BuildTime"                 "0.3"
+		"ScriptClass"               "BasicTower"
+		"TowerType"                 "Normal"
+		"BuffPriority"              "11"
+		
+		// General
+		//-----------------------------
+		"BaseClass"                 "npc_dota_creature"
+		"ArmorPhysical"             "0"
+		"MagicalResistance"         "0"
+		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
+		"TeamName"                  "DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"VisionDaytimeRange"        "1900"
+		"VisionNighttimeRange"      "1900"  
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+		"ProjectileCollisionSize"   "50"
+		"RingRadius"                "80"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"             "0"
+		"MovementTurnRate"          "1.0"
+		"StatusHealth"              "175"
+		"StatusHealthRegen"         "0"
+		"StatusMana"                "100"
+		"StatusManaRegen"           "0"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		
+		"Ability1"					"previous_page"
+		"Ability2"					"tower_upgrade_utility_sven_1"
+		"Ability3"					"tower_upgrade_utility_underlord_1"
+		"Ability4"					"tower_upgrade_utility_void_1"
+		"Ability5"					"tower_upgrade_utility_enigma_1"
+		"Ability6"					"sell_tower"
+		"Ability7"					"lina_light_strike_array_lua"
+		"Ability8"					"tower_invulnerable"
+
+		// Building Size
+		"ConstructionSize"          "4"
+		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "8990" } // Head
+				"2"  { "ItemDef" "8003" } // Neck
+				"3"  { "ItemDef" "9243" } // Belt
+				"4"  { "ItemDef" "9071" } // Arms
+			}
+		}
+	}
+	
+	//============================================================
+	// Tower: Utility - Lion 1
+	//============================================================
+	"tower_utility_lion_1"
+	{
+		// Visual
+		//-----------------------------
+		"Model"                     "models/heroes/lion/lion.vmdl"
+		"ModelScale"                "1"
+		"ModelRotation"             "180"
+		"ModelOffset"               "1"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.3"
+		"PedestalOffset"            "5"
+		"SoundSet"                  "Hero_Lion"
+		"MinimapIconSize"           ""
+		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_lion.vsndevts"
+		"vscripts"                  "ai/lion.lua"
+
+		// Stats
+		//----------------------------- 
+		"AttackDamageMin"           "200"
+		"AttackDamageMax"           "200"
+		"Damage"                    "200" 
+		"AttackRange"               "1000"
+		"AttackAcquisitionRange"    "1000"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.430000"
+		"ProjectileSpeed"           "2000"
+		"ProjectileModel"           "particles/units/heroes/hero_lion/lion_base_attack.vpcf"
+
+		"Level"                     "250"
+		"Cost"                      "250"
+		"TotalCost"                 "250"
+		"BuildTime"                 "0"
+		"ScriptClass"               "BasicTower"
+		"TowerType"                 "Normal"
+		"BuffPriority"              "11"
+		
+		// General
+		//-----------------------------
+		"BaseClass"                 "npc_dota_creature"
+		"ArmorPhysical"             "0"
+		"MagicalResistance"         "0"
+		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
+		"TeamName"                  "DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"VisionDaytimeRange"        "1900"
+		"VisionNighttimeRange"      "1900"  
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+		"ProjectileCollisionSize"   "50"
+		"RingRadius"                "80"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"             "0"
+		"MovementTurnRate"          "1.0"
+		"StatusHealth"              "175"
+		"StatusHealthRegen"         "0"
+		"StatusMana"                "100"
+		"StatusManaRegen"           "0"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		
+		"Ability1"					"tower_upgrade_utility_lion_2"
+		"Ability2"					"sell_tower"
+		"Ability3"					"lion_hex_lua"
+		"Ability4"					"tower_invulnerable"
+
+		// Building Size
+		"ConstructionSize"          "4"
+		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "6944" } // Weapon
+				"2"  { "ItemDef" "5818" } // Left Arm
+				"3"  { "ItemDef" "7073" } // Head
+				"4"  { "ItemDef" "9043" } // Shoulder
+				"5"  { "ItemDef" "5460" } // Armor
+			}
+		}
+	}
+	
+	//============================================================
+	// Tower: Utility - Lion 2
+	//============================================================
+	"tower_utility_lion_2"
+	{
+		// Visual
+		//-----------------------------
+		"Model"                     "models/heroes/lion/lion.vmdl"
+		"ModelScale"                "1"
+		"ModelRotation"             "180"
+		"ModelOffset"               "1"
+		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
+		"PedestalModelScale"        "1.5"
+		"PedestalOffset"            "4"
+		"SoundSet"                  "Hero_Lion"
+		"MinimapIconSize"           ""
+		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_lion.vsndevts"
+		"vscripts"                  "ai/lion.lua"
+
+		// Stats
+		//----------------------------- 
+		"AttackDamageMin"           "250"
+		"AttackDamageMax"           "250"
+		"Damage"                    "250" 
+		"AttackRange"               "1000"
+		"AttackAcquisitionRange"    "1000"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.430000"
+		"ProjectileSpeed"           "2000"
+		"ProjectileModel"           "particles/units/heroes/hero_lion/lion_base_attack.vpcf"
+
+		"Level"                     "500"
+		"Cost"                      "500"
+		"TotalCost"                 "500"
+		"BuildTime"                 "0"
+		"ScriptClass"               "BasicTower"
+		"TowerType"                 "Normal"
+		"BuffPriority"              "11"
+		
+		// General
+		//-----------------------------
+		"BaseClass"                 "npc_dota_creature"
+		"ArmorPhysical"             "0"
+		"MagicalResistance"         "0"
+		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
+		"TeamName"                  "DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"VisionDaytimeRange"        "1900"
+		"VisionNighttimeRange"      "1900"  
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+		"ProjectileCollisionSize"   "50"
+		"RingRadius"                "80"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"             "0"
+		"MovementTurnRate"          "1.0"
+		"StatusHealth"              "175"
+		"StatusHealthRegen"         "0"
+		"StatusMana"                "100"
+		"StatusManaRegen"           "0"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		
+		"Ability1"					"tower_upgrade_utility_lion_3"
+		"Ability2"					"sell_tower"
+		"Ability3"					"lion_hex_lua"
+		"Ability4"					"tower_invulnerable"
+
+		// Building Size
+		"ConstructionSize"          "4"
+		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "6561" } // Weapon
+				"2"  { "ItemDef" "6024" } // Left Arm
+				"3"  { "ItemDef" "9442" } // Head
+				"4"  { "ItemDef" "9444" } // Shoulder
+				"5"  { "ItemDef" "8269" } // Armor
+			}
+		}
+	}
+	
+	//============================================================
+	// Tower: Utility - Lion 3
+	//============================================================
+	"tower_utility_lion_3"
+	{
+		// Visual
+		//-----------------------------
+		"Model"                     "models/heroes/lion/lion.vmdl"
+		"ModelScale"                "1"
+		"ModelRotation"             "180"
+		"ModelOffset"               "1"
+		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
+		"PedestalModelScale"        "1.5"
+		"PedestalOffset"            "4"
+		"SoundSet"                  "Hero_Lion"
+		"MinimapIconSize"           ""
+		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_lion.vsndevts"
+		"vscripts"                  "ai/lion.lua"
+
+		// Stats
+		//----------------------------- 
+		"AttackDamageMin"           "300"
+		"AttackDamageMax"           "300"
+		"Damage"                    "300" 
+		"AttackRange"               "1000"
+		"AttackAcquisitionRange"    "1000"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.430000"
+		"ProjectileSpeed"           "2000"
+		"ProjectileModel"           "particles/units/heroes/hero_lion/lion_base_attack.vpcf"
+
+		"Level"                     "750"
+		"Cost"                      "750"
+		"TotalCost"                 "750"
+		"BuildTime"                 "0"
+		"ScriptClass"               "BasicTower"
+		"TowerType"                 "Normal"
+		"BuffPriority"              "11"
+		
+		// General
+		//-----------------------------
+		"BaseClass"                 "npc_dota_creature"
+		"ArmorPhysical"             "0"
+		"MagicalResistance"         "0"
+		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
+		"TeamName"                  "DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"VisionDaytimeRange"        "1900"
+		"VisionNighttimeRange"      "1900"  
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+		"ProjectileCollisionSize"   "50"
+		"RingRadius"                "80"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"             "0"
+		"MovementTurnRate"          "1.0"
+		"StatusHealth"              "175"
+		"StatusHealthRegen"         "0"
+		"StatusMana"                "100"
+		"StatusManaRegen"           "0"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		
+		"Ability1"					"sell_tower"
+		"Ability2"					"lion_hex_lua"
+		"Ability3"					"tower_invulnerable"
+
+		// Building Size
+		"ConstructionSize"          "4"
+		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "12307" } // Weapon
+				"2"  { "ItemDef" "9746" } // Left Arm
+				"3"  { "ItemDef" "9042" } // Head
+				"4"  { "ItemDef" "4582" } // Shoulder
+				"5"  { "ItemDef" "8007" } // Armor
+			}
+		}
+	}
+	
+	//============================================================
+	// Tower: Utility - Shaman 1
+	//============================================================
+	"tower_utility_shaman_1"
+	{
+		// Visual
+		//-----------------------------
+		"Model"                     "models/heroes/shadowshaman/shadowshaman.vmdl"
+		"ModelScale"                "1"
+		"ModelRotation"             "180"
+		"ModelOffset"               "1"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.3"
+		"PedestalOffset"            "5"
+		"SoundSet"                  "Hero_ShadowShaman"
+		"MinimapIconSize"           ""
+		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_shadowshaman.vsndevts"
+		"vscripts"                  "ai/shaman.lua"
+
+		// Stats
+		//----------------------------- 
+		"AttackDamageMin"           "200"
+		"AttackDamageMax"           "200"
+		"Damage"                    "200" 
+		"AttackRange"               "1000"
+		"AttackAcquisitionRange"    "1000"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.300000"
+		"ProjectileSpeed"           "2000"
+		"ProjectileModel"           "particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+
+		"Level"                     "450"
+		"Cost"                      "450"
+		"TotalCost"                 "450"
+		"BuildTime"                 "0"
+		"ScriptClass"               "BasicTower"
+		"TowerType"                 "Normal"
+		"BuffPriority"              "11"
+		
+		// General
+		//-----------------------------
+		"BaseClass"                 "npc_dota_creature"
+		"ArmorPhysical"             "0"
+		"MagicalResistance"         "0"
+		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
+		"TeamName"                  "DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"VisionDaytimeRange"        "1900"
+		"VisionNighttimeRange"      "1900"  
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+		"ProjectileCollisionSize"   "50"
+		"RingRadius"                "80"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"             "0"
+		"MovementTurnRate"          "1.0"
+		"StatusHealth"              "175"
+		"StatusHealthRegen"         "0"
+		"StatusMana"                "100"
+		"StatusManaRegen"           "0"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		
+		"Ability1"					"tower_upgrade_utility_shaman_2"
+		"Ability2"					"sell_tower"
+		"Ability3"					"shadow_shaman_shackles_datadriven"
+		"Ability4"					"tower_invulnerable"
+
+		// Building Size
+		"ConstructionSize"          "4"
+		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "9904" } // Weapon
+				"2"  { "ItemDef" "9906" } // Off-Hand
+				"3"  { "ItemDef" "4417" } // Head
+				"4"  { "ItemDef" "5500" } // Arms
+				"5"  { "ItemDef" "5501" } // Belt
+			}
+		}
+	}
+	
+	//============================================================
+	// Tower: Utility - Shaman 2
+	//============================================================
+	"tower_utility_shaman_2"
+	{
+		// Visual
+		//-----------------------------
+		"Model"                     "models/heroes/shadowshaman/shadowshaman.vmdl"
+		"ModelScale"                "1"
+		"ModelRotation"             "180"
+		"ModelOffset"               "1"
+		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
+		"PedestalModelScale"        "1.5"
+		"PedestalOffset"            "4"
+		"SoundSet"                  "Hero_ShadowShaman"
+		"MinimapIconSize"           ""
+		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_shadowshaman.vsndevts"
+		"vscripts"                  "ai/shaman.lua"
+
+		// Stats
+		//----------------------------- 
+		"AttackDamageMin"           "250"
+		"AttackDamageMax"           "250"
+		"Damage"                    "250" 
+		"AttackRange"               "1000"
+		"AttackAcquisitionRange"    "1000"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.300000"
+		"ProjectileSpeed"           "2000"
+		"ProjectileModel"           "particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+
+		"Level"                     "700"
+		"Cost"                      "700"
+		"TotalCost"                 "700"
+		"BuildTime"                 "0"
+		"ScriptClass"               "BasicTower"
+		"TowerType"                 "Normal"
+		"BuffPriority"              "11"
+		
+		// General
+		//-----------------------------
+		"BaseClass"                 "npc_dota_creature"
+		"ArmorPhysical"             "0"
+		"MagicalResistance"         "0"
+		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
+		"TeamName"                  "DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"VisionDaytimeRange"        "1900"
+		"VisionNighttimeRange"      "1900"  
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+		"ProjectileCollisionSize"   "50"
+		"RingRadius"                "80"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"             "0"
+		"MovementTurnRate"          "1.0"
+		"StatusHealth"              "175"
+		"StatusHealthRegen"         "0"
+		"StatusMana"                "100"
+		"StatusManaRegen"           "0"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		
+		"Ability1"					"tower_upgrade_utility_shaman_3"
+		"Ability2"					"sell_tower"
+		"Ability3"					"shadow_shaman_shackles_datadriven"
+		"Ability4"					"tower_invulnerable"
+
+		// Building Size
+		"ConstructionSize"          "4"
+		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "6647" } // Weapon
+				"2"  { "ItemDef" "9794" } // Off-Hand
+				"3"  { "ItemDef" "8341" } // Head
+				"4"  { "ItemDef" "9885" } // Arms
+				"5"  { "ItemDef" "9886" } // Belt
+			}
+		}
+	}
+	
+	//============================================================
+	// Tower: Utility - Shaman 3
+	//============================================================
+	"tower_utility_shaman_3"
+	{
+		// Visual
+		//-----------------------------
+		"Model"                     "models/heroes/shadowshaman/shadowshaman.vmdl"
+		"ModelScale"                "1"
+		"ModelRotation"             "180"
+		"ModelOffset"               "1"
+		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
+		"PedestalModelScale"        "1.5"
+		"PedestalOffset"            "4"
+		"SoundSet"                  "Hero_ShadowShaman"
+		"MinimapIconSize"           ""
+		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_shadowshaman.vsndevts"
+		"vscripts"                  "ai/shaman.lua"
+
+		// Stats
+		//----------------------------- 
+		"AttackDamageMin"           "300"
+		"AttackDamageMax"           "300"
+		"Damage"                    "300" 
+		"AttackRange"               "1000"
+		"AttackAcquisitionRange"    "1000"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.300000"
+		"ProjectileSpeed"           "2000"
+		"ProjectileModel"           "particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+
+		"Level"                     "950"
+		"Cost"                      "950"
+		"TotalCost"                 "950"
+		"BuildTime"                 "0"
+		"ScriptClass"               "BasicTower"
+		"TowerType"                 "Normal"
+		"BuffPriority"              "11"
+		
+		// General
+		//-----------------------------
+		"BaseClass"                 "npc_dota_creature"
+		"ArmorPhysical"             "0"
+		"MagicalResistance"         "0"
+		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
+		"TeamName"                  "DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"VisionDaytimeRange"        "1900"
+		"VisionNighttimeRange"      "1900"  
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+		"ProjectileCollisionSize"   "50"
+		"RingRadius"                "80"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"             "0"
+		"MovementTurnRate"          "1.0"
+		"StatusHealth"              "175"
+		"StatusHealthRegen"         "0"
+		"StatusMana"                "100"
+		"StatusManaRegen"           "0"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		
+		"Ability1"					"sell_tower"
+		"Ability2"					"shadow_shaman_shackles_datadriven"
+		"Ability3"					"tower_invulnerable"
+
+		// Building Size
+		"ConstructionSize"          "4"
+		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "6915" } // Weapon
+				"2"  { "ItemDef" "12419" } // Off-Hand
+				"3"  { "ItemDef" "9907" } // Head
+				"4"  { "ItemDef" "9909" } // Arms
+				"5"  { "ItemDef" "9908" } // Belt
+			}
+		}
+	}
+
+	//============================================================
+	// Tower: Utility - Meepo 1
+	//============================================================
+	"tower_utility_meepo_1"
+	{
+		// Visual
+		//-----------------------------
+		"Model"                     "models/heroes/meepo/meepo.vmdl"
+		"ModelScale"                "1"
+		"ModelRotation"             "180"
+		"ModelOffset"               "1"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.3"
+		"PedestalOffset"            "5"
+		"SoundSet"                  ""
+		"MinimapIconSize"           ""
+		"GameSoundsFile"    		""
+		"vscripts"                  "ai/meepo.lua"
+
+		// Stats
+		//----------------------------- 
+		"AttackDamageMin"           "200"
+		"AttackDamageMax"           "200"
+		"Damage"                    "200" 
+		"AttackRange"               "1000"
+		"AttackAcquisitionRange"    "1000"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.380000"
+		"ProjectileSpeed"           "2000"
+		"ProjectileModel"           "particles/base_attacks/ranged_tower_good.vpcf"
+
+		"Level"                     "500"
+		"Cost"                      "500"
+		"TotalCost"                 "500"
+		"BuildTime"                 "0"
+		"ScriptClass"               "BasicTower"
+		"TowerType"                 "Normal"
+		"BuffPriority"              "11"
+		
+		// General
+		//-----------------------------
+		"BaseClass"                 "npc_dota_creature"
+		"ArmorPhysical"             "0"
+		"MagicalResistance"         "0"
+		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
+		"TeamName"                  "DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"VisionDaytimeRange"        "1900"
+		"VisionNighttimeRange"      "1900"  
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+		"ProjectileCollisionSize"   "50"
+		"RingRadius"                "80"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"             "0"
+		"MovementTurnRate"          "1.0"
+		"StatusHealth"              "175"
+		"StatusHealthRegen"         "0"
+		"StatusMana"                "100"
+		"StatusManaRegen"           "0"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		
+		"Ability1"					"tower_upgrade_utility_meepo_2"
+		"Ability2"					"sell_tower"
+		"Ability3"					"meepo_earthbind"
+		"Ability4"					"tower_invulnerable"
+
+		// Building Size
+		"ConstructionSize"          "4"
+		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "7684" } // Weapon
+				"2"  { "ItemDef" "4427" } // Head
+				"3"  { "ItemDef" "4421" } // Shoulder
+				"4"  { "ItemDef" "6562" } // Back
+				"5"  { "ItemDef" "6342" } // Arms
+				"6"  { "ItemDef" "7202" } // Tail
+			}
+		}
+	}
+	
+	//============================================================
+	// Tower: Utility - Meepo 2
+	//============================================================
+	"tower_utility_meepo_2"
+	{
+		// Visual
+		//-----------------------------
+		"Model"                     "models/heroes/meepo/meepo.vmdl"
+		"ModelScale"                "1"
+		"ModelRotation"             "180"
+		"ModelOffset"               "1"
+		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
+		"PedestalModelScale"        "1.5"
+		"PedestalOffset"            "4"
+		"SoundSet"                  ""
+		"MinimapIconSize"           ""
+		"GameSoundsFile"    		""
+		"vscripts"                  "ai/meepo.lua"
+
+		// Stats
+		//----------------------------- 
+		"AttackDamageMin"           "250"
+		"AttackDamageMax"           "250"
+		"Damage"                    "250" 
+		"AttackRange"               "1000"
+		"AttackAcquisitionRange"    "1000"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.380000"
+		"ProjectileSpeed"           "2000"
+		"ProjectileModel"           "particles/base_attacks/ranged_tower_good.vpcf"
+
+		"Level"                     "750"
+		"Cost"                      "750"
+		"TotalCost"                 "750"
+		"BuildTime"                 "0"
+		"ScriptClass"               "BasicTower"
+		"TowerType"                 "Normal"
+		"BuffPriority"              "11"
+		
+		// General
+		//-----------------------------
+		"BaseClass"                 "npc_dota_creature"
+		"ArmorPhysical"             "0"
+		"MagicalResistance"         "0"
+		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
+		"TeamName"                  "DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"VisionDaytimeRange"        "1900"
+		"VisionNighttimeRange"      "1900"  
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+		"ProjectileCollisionSize"   "50"
+		"RingRadius"                "80"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"             "0"
+		"MovementTurnRate"          "1.0"
+		"StatusHealth"              "175"
+		"StatusHealthRegen"         "0"
+		"StatusMana"                "100"
+		"StatusManaRegen"           "0"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		
+		"Ability1"					"tower_upgrade_utility_meepo_3"
+		"Ability2"					"sell_tower"
+		"Ability3"					"meepo_earthbind"
+		"Ability4"					"tower_invulnerable"
+
+		// Building Size
+		"ConstructionSize"          "4"
+		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "4912" } // Weapon
+				"2"  { "ItemDef" "9836" } // Head
+				"3"  { "ItemDef" "9835" } // Shoulder
+				"4"  { "ItemDef" "9837" } // Back
+				"5"  { "ItemDef" "9832" } // Arms
+				"6"  { "ItemDef" "6229" } // Tail
+			}
+		}
+	}
+	
+	//============================================================
+	// Tower: Utility - Meepo 3
+	//============================================================
+	"tower_utility_meepo_3"
+	{
+		// Visual
+		//-----------------------------
+		"Model"                     "models/heroes/meepo/meepo.vmdl"
+		"ModelScale"                "1"
+		"ModelRotation"             "180"
+		"ModelOffset"               "1"
+		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
+		"PedestalModelScale"        "1.5"
+		"PedestalOffset"            "4"
+		"SoundSet"                  ""
+		"MinimapIconSize"           ""
+		"GameSoundsFile"    		""
+		"vscripts"                  "ai/meepo.lua"
+
+		// Stats
+		//----------------------------- 
+		"AttackDamageMin"           "300"
+		"AttackDamageMax"           "300"
+		"Damage"                    "300" 
+		"AttackRange"               "1000"
+		"AttackAcquisitionRange"    "1000"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.380000"
+		"ProjectileSpeed"           "2000"
+		"ProjectileModel"           "particles/base_attacks/ranged_tower_good.vpcf"
 
 		"Level"                     "1000"
 		"Cost"                      "1000"
 		"TotalCost"                 "1000"
-		"BuildTime"                 "1"
+		"BuildTime"                 "0"
 		"ScriptClass"               "BasicTower"
 		"TowerType"                 "Normal"
 		"BuffPriority"              "11"
@@ -2068,7 +2879,7 @@
 		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 		"VisionDaytimeRange"        "1900"
 		"VisionNighttimeRange"      "1900"  
-		"AttackCapabilities"        "DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
 		"ProjectileCollisionSize"   "50"
 		"RingRadius"                "80"
@@ -2077,57 +2888,69 @@
 		"MovementTurnRate"          "1.0"
 		"StatusHealth"              "175"
 		"StatusHealthRegen"         "0"
-		"StatusMana"                "0"
+		"StatusMana"                "100"
 		"StatusManaRegen"           "0"
-		"HealthBarOffset"       	"310"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"upgrade_tower_farm_3"
-		"Ability2"					"farm_tower_gold"
-		"Ability3"					""
-		"Ability4"					"sell_tower"
-		"Ability5"					"tower_invulnerable"
+		"Ability1"					"sell_tower"
+		"Ability2"					"meepo_earthbind"
+		"Ability3"					"tower_invulnerable"
 
 		// Building Size
 		"ConstructionSize"          "4"
 		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "9833" } // Weapon
+				"2"  { "ItemDef" "7683" } // Head
+				"3"  { "ItemDef" "7670" } // Shoulder
+				"4"  { "ItemDef" "9075" } // Back
+				"5"  { "ItemDef" "7686" } // Arms
+				"6"  { "ItemDef" "9834" } // Tail
+			}
+		}
 	}
 	
 	//============================================================
-	// Tower: Farm
+	// Tower: Utility - Gyro 1
 	//============================================================
-	"tower_farm_3"
+	"tower_utility_gyro_1"
 	{
 		// Visual
 		//-----------------------------
-		"Model"                     "models/props_structures/tower_upgrade/tower_upgrade.vmdl"
-		"ModelScale"                "1.1"
+		"Model"                     "models/heroes/gyro/gyro.vmdl"
+		"ModelScale"                "1"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/enchantress/enchantress_flower.vmdl"
-		"PedestalModelScale"        "1"
-		"PedestalOffset"            "4"
-		"ProjectileModel"           ""
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.3"
+		"PedestalOffset"            "5"
 		"SoundSet"                  ""
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           ""
 		"GameSoundsFile"    		""
+		"vscripts"                  "ai/gyro.lua"
 
 		// Stats
 		//----------------------------- 
-		"AttackDamageMin"           "30"
-		"AttackDamageMax"           "30"
-		"Damage"                    "30"  
+		"AttackDamageMin"           "200"
+		"AttackDamageMax"           "200"
+		"Damage"                    "200" 
 		"AttackRange"               "1000"
 		"AttackAcquisitionRange"    "1000"
-		"AttackRate"                "0.8"
-		"AttackAnimationPoint"      "0.5"
-		"ProjectileSpeed"           "2200"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.200000"
+		"ProjectileSpeed"           "2000"
+		"ProjectileModel"           "particles/econ/items/gyrocopter/hero_gyrocopter_gyrotechnics/gyro_base_attack.vpcf"
 
-		"Level"                     "1500"
-		"Cost"                      "1500"
-		"TotalCost"                 "1500"
-		"BuildTime"                 "1"
+		"Level"                     "650"
+		"Cost"                      "650"
+		"TotalCost"                 "650"
+		"BuildTime"                 "0"
 		"ScriptClass"               "BasicTower"
 		"TowerType"                 "Normal"
 		"BuffPriority"              "11"
@@ -2144,7 +2967,7 @@
 		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 		"VisionDaytimeRange"        "1900"
 		"VisionNighttimeRange"      "1900"  
-		"AttackCapabilities"        "DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
 		"ProjectileCollisionSize"   "50"
 		"RingRadius"                "80"
@@ -2153,57 +2976,69 @@
 		"MovementTurnRate"          "1.0"
 		"StatusHealth"              "175"
 		"StatusHealthRegen"         "0"
-		"StatusMana"                "0"
+		"StatusMana"                "100"
 		"StatusManaRegen"           "0"
-		"HealthBarOffset"       	"250"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"upgrade_tower_farm_4"
-		"Ability2"					"farm_tower_gold"
-		"Ability3"					""
-		"Ability4"					"sell_tower"
-		"Ability5"					"tower_invulnerable"
+		"Ability1"					"tower_upgrade_utility_gyro_2"
+		"Ability2"					"sell_tower"
+		"Ability3"					"gyrocopter_call_down"
+		"Ability4"					"tower_invulnerable"
 
 		// Building Size
 		"ConstructionSize"          "4"
 		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "9137" } // Guns
+				"2"  { "ItemDef" "9140" } // Head
+				"3"  { "ItemDef" "9141" } // Back
+				"4"  { "ItemDef" "9139" } // Propeller
+				"5"  { "ItemDef" "9138" } // Missile
+			}
+		}
 	}
 	
 	//============================================================
-	// Tower: Farm
+	// Tower: Utility - Gyro 2
 	//============================================================
-	"tower_farm_4"
+	"tower_utility_gyro_2"
 	{
 		// Visual
 		//-----------------------------
-		"Model"                     "models/props_structures/tower_upgrade/tower_upgrade.vmdl"
-		"ModelScale"                "1.1"
+		"Model"                     "models/heroes/gyro/gyro.vmdl"
+		"ModelScale"                "1"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/enchantress/enchantress_flower.vmdl"
-		"PedestalModelScale"        "1"
+		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
+		"PedestalModelScale"        "1.5"
 		"PedestalOffset"            "4"
-		"ProjectileModel"           ""
 		"SoundSet"                  ""
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           ""
 		"GameSoundsFile"    		""
+		"vscripts"                  "ai/gyro.lua"
 
 		// Stats
 		//----------------------------- 
-		"AttackDamageMin"           "30"
-		"AttackDamageMax"           "30"
-		"Damage"                    "30"  
+		"AttackDamageMin"           "250"
+		"AttackDamageMax"           "250"
+		"Damage"                    "250" 
 		"AttackRange"               "1000"
 		"AttackAcquisitionRange"    "1000"
-		"AttackRate"                "0.8"
-		"AttackAnimationPoint"      "0.5"
-		"ProjectileSpeed"           "2200"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.200000"
+		"ProjectileSpeed"           "2000"
+		"ProjectileModel"           "particles/econ/items/gyrocopter/hero_gyrocopter_gyrotechnics/gyro_base_attack.vpcf"
 
-		"Level"                     "2000"
-		"Cost"                      "2000"
-		"TotalCost"                 "2000"
-		"BuildTime"                 "1"
+		"Level"                     "900"
+		"Cost"                      "900"
+		"TotalCost"                 "900"
+		"BuildTime"                 "0"
 		"ScriptClass"               "BasicTower"
 		"TowerType"                 "Normal"
 		"BuffPriority"              "11"
@@ -2220,7 +3055,7 @@
 		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 		"VisionDaytimeRange"        "1900"
 		"VisionNighttimeRange"      "1900"  
-		"AttackCapabilities"        "DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
 		"ProjectileCollisionSize"   "50"
 		"RingRadius"                "80"
@@ -2229,57 +3064,69 @@
 		"MovementTurnRate"          "1.0"
 		"StatusHealth"              "175"
 		"StatusHealthRegen"         "0"
-		"StatusMana"                "0"
+		"StatusMana"                "100"
 		"StatusManaRegen"           "0"
-		"HealthBarOffset"       	"250"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"upgrade_tower_farm_5"
-		"Ability2"					"farm_tower_gold"
-		"Ability3"					""
-		"Ability4"					"sell_tower"
-		"Ability5"					"tower_invulnerable"
+		"Ability1"					"tower_upgrade_utility_gyro_3"
+		"Ability2"					"sell_tower"
+		"Ability3"					"gyrocopter_call_down"
+		"Ability4"					"tower_invulnerable"
 
 		// Building Size
 		"ConstructionSize"          "4"
 		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "9261" } // Guns
+				"2"  { "ItemDef" "8434" } // Head
+				"3"  { "ItemDef" "8437" } // Back
+				"4"  { "ItemDef" "8457" } // Propeller
+				"5"  { "ItemDef" "8459" } // Missile
+			}
+		}
 	}
 	
 	//============================================================
-	// Tower: Farm
+	// Tower: Utility - Gyro 3
 	//============================================================
-	"tower_farm_5"
+	"tower_utility_gyro_3"
 	{
 		// Visual
 		//-----------------------------
-		"Model"                     "models/props_structures/tower_upgrade/tower_upgrade.vmdl"
-		"ModelScale"                "1.1"
+		"Model"                     "models/heroes/gyro/gyro.vmdl"
+		"ModelScale"                "1"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/enchantress/enchantress_flower.vmdl"
-		"PedestalModelScale"        "1"
+		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
+		"PedestalModelScale"        "1.5"
 		"PedestalOffset"            "4"
-		"ProjectileModel"           ""
 		"SoundSet"                  ""
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           ""
 		"GameSoundsFile"    		""
+		"vscripts"                  "ai/gyro.lua"
 
 		// Stats
 		//----------------------------- 
-		"AttackDamageMin"           "30"
-		"AttackDamageMax"           "30"
-		"Damage"                    "30"  
+		"AttackDamageMin"           "300"
+		"AttackDamageMax"           "300"
+		"Damage"                    "300" 
 		"AttackRange"               "1000"
 		"AttackAcquisitionRange"    "1000"
-		"AttackRate"                "0.8"
-		"AttackAnimationPoint"      "0.5"
-		"ProjectileSpeed"           "2200"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.200000"
+		"ProjectileSpeed"           "2000"
+		"ProjectileModel"           "particles/econ/items/gyrocopter/hero_gyrocopter_gyrotechnics/gyro_base_attack.vpcf"
 
-		"Level"                     "2500"
-		"Cost"                      "2500"
-		"TotalCost"                 "2500"
-		"BuildTime"                 "1"
+		"Level"                     "1150"
+		"Cost"                      "1150"
+		"TotalCost"                 "1150"
+		"BuildTime"                 "0"
 		"ScriptClass"               "BasicTower"
 		"TowerType"                 "Normal"
 		"BuffPriority"              "11"
@@ -2296,7 +3143,7 @@
 		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 		"VisionDaytimeRange"        "1900"
 		"VisionNighttimeRange"      "1900"  
-		"AttackCapabilities"        "DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
 		"ProjectileCollisionSize"   "50"
 		"RingRadius"                "80"
@@ -2305,57 +3152,68 @@
 		"MovementTurnRate"          "1.0"
 		"StatusHealth"              "175"
 		"StatusHealthRegen"         "0"
-		"StatusMana"                "0"
+		"StatusMana"                "100"
 		"StatusManaRegen"           "0"
-		"HealthBarOffset"       	"250"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"upgrade_tower_farm_6"
-		"Ability2"					"farm_tower_gold"
-		"Ability3"					""
-		"Ability4"					"sell_tower"
-		"Ability5"					"tower_invulnerable"
+		"Ability1"					"sell_tower"
+		"Ability2"					"gyrocopter_call_down"
+		"Ability3"					"tower_invulnerable"
 
 		// Building Size
 		"ConstructionSize"          "4"
 		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "9428" } // Guns
+				"2"  { "ItemDef" "8381" } // Head
+				"3"  { "ItemDef" "9398" } // Back
+				"4"  { "ItemDef" "8383" } // Propeller
+				"5"  { "ItemDef" "6965" } // Missile
+			}
+		}
 	}
 	
 	//============================================================
-	// Tower: Farm
+	// Tower: Utility - Sven 1
 	//============================================================
-	"tower_farm_6"
+	"tower_utility_sven_1"
 	{
 		// Visual
 		//-----------------------------
-		"Model"                     "models/props_structures/tower_upgrade/tower_upgrade.vmdl"
-		"ModelScale"                "1.1"
+		"Model"                     "models/heroes/sven/sven.vmdl"
+		"ModelScale"                "1"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/enchantress/enchantress_flower.vmdl"
-		"PedestalModelScale"        "1"
-		"PedestalOffset"            "4"
-		"ProjectileModel"           ""
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.3"
+		"PedestalOffset"            "5"
 		"SoundSet"                  ""
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           ""
 		"GameSoundsFile"    		""
+		"vscripts"                  "ai/sven.lua"
 
 		// Stats
 		//----------------------------- 
-		"AttackDamageMin"           "30"
-		"AttackDamageMax"           "30"
-		"Damage"                    "30"  
+		"AttackDamageMin"           "200"
+		"AttackDamageMax"           "200"
+		"Damage"                    "200" 
 		"AttackRange"               "1000"
 		"AttackAcquisitionRange"    "1000"
-		"AttackRate"                "0.8"
-		"AttackAnimationPoint"      "0.5"
-		"ProjectileSpeed"           "2200"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.400000"
+		"ProjectileSpeed"           "2000"
+		"ProjectileModel"           "particles/units/heroes/hero_ancient_apparition/ancient_apparition_base_attack.vpcf"
 
-		"Level"                     "3000"
-		"Cost"                      "3000"
-		"TotalCost"                 "3000"
-		"BuildTime"                 "1"
+		"Level"                     "700"
+		"Cost"                      "700"
+		"TotalCost"                 "700"
+		"BuildTime"                 "0"
 		"ScriptClass"               "BasicTower"
 		"TowerType"                 "Normal"
 		"BuffPriority"              "11"
@@ -2372,7 +3230,7 @@
 		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 		"VisionDaytimeRange"        "1900"
 		"VisionNighttimeRange"      "1900"  
-		"AttackCapabilities"        "DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
 		"ProjectileCollisionSize"   "50"
 		"RingRadius"                "80"
@@ -2381,23 +3239,996 @@
 		"MovementTurnRate"          "1.0"
 		"StatusHealth"              "175"
 		"StatusHealthRegen"         "0"
-		"StatusMana"                "0"
+		"StatusMana"                "100"
 		"StatusManaRegen"           "0"
-		"HealthBarOffset"       	"250"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"farm_tower_gold"
-		"Ability2"					""
-		"Ability3"					""
-		"Ability4"					"sell_tower"
-		"Ability5"					"tower_invulnerable"
+		"Ability1"					"tower_upgrade_utility_sven_2"
+		"Ability2"					"sell_tower"
+		"Ability3"					"sven_storm_bolt"
+		"Ability4"					"tower_invulnerable"
 
 		// Building Size
 		"ConstructionSize"          "4"
 		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "8353" } // Weapon
+				"2"  { "ItemDef" "4210" } // Head
+				"3"  { "ItemDef" "4207" } // Shoulder
+				"4"  { "ItemDef" "4238" } // Back
+				"5"  { "ItemDef" "4239" } // Belt
+				"6"  { "ItemDef" "4211" } // Arms
+			}
+		}
 	}
 	
+	//============================================================
+	// Tower: Utility - Sven 2
+	//============================================================
+	"tower_utility_sven_2"
+	{
+		// Visual
+		//-----------------------------
+		"Model"                     "models/heroes/sven/sven.vmdl"
+		"ModelScale"                "1"
+		"ModelRotation"             "180"
+		"ModelOffset"               "1"
+		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
+		"PedestalModelScale"        "1.5"
+		"PedestalOffset"            "4"
+		"SoundSet"                  ""
+		"MinimapIconSize"           ""
+		"GameSoundsFile"    		""
+		"vscripts"                  "ai/sven.lua"
+
+		// Stats
+		//----------------------------- 
+		"AttackDamageMin"           "250"
+		"AttackDamageMax"           "250"
+		"Damage"                    "250" 
+		"AttackRange"               "1000"
+		"AttackAcquisitionRange"    "1000"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.400000"
+		"ProjectileSpeed"           "2000"
+		"ProjectileModel"           "particles/units/heroes/hero_ancient_apparition/ancient_apparition_base_attack.vpcf"
+
+		"Level"                     "950"
+		"Cost"                      "950"
+		"TotalCost"                 "950"
+		"BuildTime"                 "0"
+		"ScriptClass"               "BasicTower"
+		"TowerType"                 "Normal"
+		"BuffPriority"              "11"
+		
+		// General
+		//-----------------------------
+		"BaseClass"                 "npc_dota_creature"
+		"ArmorPhysical"             "0"
+		"MagicalResistance"         "0"
+		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
+		"TeamName"                  "DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"VisionDaytimeRange"        "1900"
+		"VisionNighttimeRange"      "1900"  
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+		"ProjectileCollisionSize"   "50"
+		"RingRadius"                "80"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"             "0"
+		"MovementTurnRate"          "1.0"
+		"StatusHealth"              "175"
+		"StatusHealthRegen"         "0"
+		"StatusMana"                "100"
+		"StatusManaRegen"           "0"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		
+		"Ability1"					"tower_upgrade_utility_sven_3"
+		"Ability2"					"sell_tower"
+		"Ability3"					"sven_storm_bolt"
+		"Ability4"					"tower_invulnerable"
+
+		// Building Size
+		"ConstructionSize"          "4"
+		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "7876" } // Weapon
+				"2"  { "ItemDef" "8847" } // Head
+				"3"  { "ItemDef" "8851" } // Shoulder
+				"4"  { "ItemDef" "8846" } // Back
+				"5"  { "ItemDef" "8849" } // Belt
+				"6"  { "ItemDef" "8848" } // Arms
+			}
+		}
+	}
+	
+	//============================================================
+	// Tower: Utility - Sven 3
+	//============================================================
+	"tower_utility_sven_3"
+	{
+		// Visual
+		//-----------------------------
+		"Model"                     "models/heroes/sven/sven.vmdl"
+		"ModelScale"                "1"
+		"ModelRotation"             "180"
+		"ModelOffset"               "1"
+		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
+		"PedestalModelScale"        "1.5"
+		"PedestalOffset"            "4"
+		"SoundSet"                  ""
+		"MinimapIconSize"           ""
+		"GameSoundsFile"    		""
+		"vscripts"                  "ai/sven.lua"
+
+		// Stats
+		//----------------------------- 
+		"AttackDamageMin"           "300"
+		"AttackDamageMax"           "300"
+		"Damage"                    "300" 
+		"AttackRange"               "1000"
+		"AttackAcquisitionRange"    "1000"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.400000"
+		"ProjectileSpeed"           "2000"
+		"ProjectileModel"           "particles/units/heroes/hero_ancient_apparition/ancient_apparition_base_attack.vpcf"
+
+		"Level"                     "1200"
+		"Cost"                      "1200"
+		"TotalCost"                 "1200"
+		"BuildTime"                 "0"
+		"ScriptClass"               "BasicTower"
+		"TowerType"                 "Normal"
+		"BuffPriority"              "11"
+		
+		// General
+		//-----------------------------
+		"BaseClass"                 "npc_dota_creature"
+		"ArmorPhysical"             "0"
+		"MagicalResistance"         "0"
+		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
+		"TeamName"                  "DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"VisionDaytimeRange"        "1900"
+		"VisionNighttimeRange"      "1900"  
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+		"ProjectileCollisionSize"   "50"
+		"RingRadius"                "80"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"             "0"
+		"MovementTurnRate"          "1.0"
+		"StatusHealth"              "175"
+		"StatusHealthRegen"         "0"
+		"StatusMana"                "100"
+		"StatusManaRegen"           "0"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		
+		"Ability1"					"sell_tower"
+		"Ability2"					"sven_storm_bolt"
+		"Ability3"					"tower_invulnerable"
+
+		// Building Size
+		"ConstructionSize"          "4"
+		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "9449" } // Weapon
+				"2"  { "ItemDef" "12991" } // Head
+				"3"  { "ItemDef" "12992" } // Shoulder
+				"4"  { "ItemDef" "12990" } // Back
+				"5"  { "ItemDef" "12989" } // Belt
+				"6"  { "ItemDef" "8189" } // Arms
+			}
+		}
+	}
+	
+	
+	//============================================================
+	// Tower: Utility - Underlord 1
+	//============================================================
+	"tower_utility_underlord_1"
+	{
+		// Visual
+		//-----------------------------
+		"Model"                     "models/heroes/abyssal_underlord/abyssal_underlord_v2.vmdl"
+		"ModelScale"                "0.7"
+		"ModelRotation"             "180"
+		"ModelOffset"               "1"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.3"
+		"PedestalOffset"            "5"
+		"SoundSet"                  ""
+		"MinimapIconSize"           ""
+		"GameSoundsFile"    		""
+		"vscripts"                  "ai/underlord.lua"
+
+		// Stats
+		//----------------------------- 
+		"AttackDamageMin"           "200"
+		"AttackDamageMax"           "200"
+		"Damage"                    "200" 
+		"AttackRange"               "1000"
+		"AttackAcquisitionRange"    "1000"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.450000"
+		"ProjectileSpeed"           "2000"
+		"ProjectileModel"           "particles/units/heroes/hero_rubick/rubick_base_attack.vpcf"
+
+		"Level"                     "750"
+		"Cost"                      "750"
+		"TotalCost"                 "750"
+		"BuildTime"                 "0"
+		"ScriptClass"               "BasicTower"
+		"TowerType"                 "Normal"
+		"BuffPriority"              "11"
+		
+		// General
+		//-----------------------------
+		"BaseClass"                 "npc_dota_creature"
+		"ArmorPhysical"             "0"
+		"MagicalResistance"         "0"
+		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
+		"TeamName"                  "DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"VisionDaytimeRange"        "1900"
+		"VisionNighttimeRange"      "1900"  
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+		"ProjectileCollisionSize"   "50"
+		"RingRadius"                "80"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"             "0"
+		"MovementTurnRate"          "1.0"
+		"StatusHealth"              "175"
+		"StatusHealthRegen"         "0"
+		"StatusMana"                "100"
+		"StatusManaRegen"           "0"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		
+		"Ability1"					"tower_upgrade_utility_underlord_2"
+		"Ability2"					"sell_tower"
+		"Ability3"					"abyssal_underlord_pit_of_malice"
+		"Ability4"					"tower_invulnerable"
+
+		// Building Size
+		"ConstructionSize"          "4"
+		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "621" } // Weapon
+				"2"  { "ItemDef" "620" } // Head Armor
+				"3"  { "ItemDef" "619" } // Armor
+				"4"	 { "ItemDef" "617" } // Ambient Effects
+				"5"  { "ItemDef" "622" } // Head 
+			}
+		}
+	}
+	
+	//============================================================
+	// Tower: Utility - Underlord 2
+	//============================================================
+	"tower_utility_underlord_2"
+	{
+		// Visual
+		//-----------------------------
+		"Model"                     "models/heroes/abyssal_underlord/abyssal_underlord_v2.vmdl"
+		"ModelScale"                "0.7"
+		"ModelRotation"             "180"
+		"ModelOffset"               "1"
+		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
+		"PedestalModelScale"        "1.5"
+		"PedestalOffset"            "4"
+		"SoundSet"                  ""
+		"MinimapIconSize"           ""
+		"GameSoundsFile"    		""
+		"vscripts"                  "ai/underlord.lua"
+
+		// Stats
+		//----------------------------- 
+		"AttackDamageMin"           "250"
+		"AttackDamageMax"           "250"
+		"Damage"                    "250" 
+		"AttackRange"               "1000"
+		"AttackAcquisitionRange"    "1000"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.450000"
+		"ProjectileSpeed"           "2000"
+		"ProjectileModel"           "particles/units/heroes/hero_rubick/rubick_base_attack.vpcf"
+
+		"Level"                     "1000"
+		"Cost"                      "1000"
+		"TotalCost"                 "1000"
+		"BuildTime"                 "0"
+		"ScriptClass"               "BasicTower"
+		"TowerType"                 "Normal"
+		"BuffPriority"              "11"
+		
+		// General
+		//-----------------------------
+		"BaseClass"                 "npc_dota_creature"
+		"ArmorPhysical"             "0"
+		"MagicalResistance"         "0"
+		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
+		"TeamName"                  "DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"VisionDaytimeRange"        "1900"
+		"VisionNighttimeRange"      "1900"  
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+		"ProjectileCollisionSize"   "50"
+		"RingRadius"                "80"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"             "0"
+		"MovementTurnRate"          "1.0"
+		"StatusHealth"              "175"
+		"StatusHealthRegen"         "0"
+		"StatusMana"                "100"
+		"StatusManaRegen"           "0"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		
+		"Ability1"					"tower_upgrade_utility_underlord_3"
+		"Ability2"					"sell_tower"
+		"Ability3"					"abyssal_underlord_pit_of_malice"
+		"Ability4"					"tower_invulnerable"
+
+		// Building Size
+		"ConstructionSize"          "4"
+		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "9742" } // Weapon
+				"2"  { "ItemDef" "9078" } // Head
+				"3"  { "ItemDef" "9077" } // Armor
+				"4"  { "ItemDef" "622" } // Head
+				"5"	 { "ItemDef" "617" } // Ambient Effects
+			}
+		}
+	}
+	
+	//============================================================
+	// Tower: Utility - Underlord 3
+	//============================================================
+	"tower_utility_underlord_3"
+	{
+		// Visual
+		//-----------------------------
+		"Model"                     "models/heroes/abyssal_underlord/abyssal_underlord_v2.vmdl"
+		"ModelScale"                "0.7"
+		"ModelRotation"             "180"
+		"ModelOffset"               "1"
+		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
+		"PedestalModelScale"        "1.5"
+		"PedestalOffset"            "4"
+		"SoundSet"                  ""
+		"MinimapIconSize"           ""
+		"GameSoundsFile"    		""
+		"vscripts"                  "ai/underlord.lua"
+
+		// Stats
+		//----------------------------- 
+		"AttackDamageMin"           "300"
+		"AttackDamageMax"           "300"
+		"Damage"                    "300" 
+		"AttackRange"               "1000"
+		"AttackAcquisitionRange"    "1000"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.450000"
+		"ProjectileSpeed"           "2000"
+		"ProjectileModel"           "particles/units/heroes/hero_rubick/rubick_base_attack.vpcf"
+
+		"Level"                     "1250"
+		"Cost"                      "1250"
+		"TotalCost"                 "1250"
+		"BuildTime"                 "0"
+		"ScriptClass"               "BasicTower"
+		"TowerType"                 "Normal"
+		"BuffPriority"              "11"
+		
+		// General
+		//-----------------------------
+		"BaseClass"                 "npc_dota_creature"
+		"ArmorPhysical"             "0"
+		"MagicalResistance"         "0"
+		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
+		"TeamName"                  "DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"VisionDaytimeRange"        "1900"
+		"VisionNighttimeRange"      "1900"  
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+		"ProjectileCollisionSize"   "50"
+		"RingRadius"                "80"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"             "0"
+		"MovementTurnRate"          "1.0"
+		"StatusHealth"              "175"
+		"StatusHealthRegen"         "0"
+		"StatusMana"                "100"
+		"StatusManaRegen"           "0"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		
+		"Ability1"					"sell_tower"
+		"Ability2"					"abyssal_underlord_pit_of_malice"
+		"Ability3"					"tower_invulnerable"
+
+		// Building Size
+		"ConstructionSize"          "4"
+		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "12421" } // Weapon
+				"2"  { "ItemDef" "12293" } // Head
+				"3"  { "ItemDef" "12294" } // Armor
+				"4"  { "ItemDef" "622" } // Head
+				"5"	 { "ItemDef" "617" } // Ambient Effects
+			}
+		}
+	}
+	
+	
+	//============================================================
+	// Tower: Utility - Void 1
+	//============================================================
+	"tower_utility_void_1"
+	{
+		// Visual
+		//-----------------------------
+		"Model"                     "models/heroes/faceless_void/faceless_void.vmdl"
+		"ModelScale"                "1"
+		"ModelRotation"             "180"
+		"ModelOffset"               "1"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.3"
+		"PedestalOffset"            "5"
+		"SoundSet"                  ""
+		"MinimapIconSize"           ""
+		"GameSoundsFile"    		""
+		"vscripts"                  "ai/void.lua"
+
+		// Stats
+		//----------------------------- 
+		"AttackDamageMin"           "200"
+		"AttackDamageMax"           "200"
+		"Damage"                    "200" 
+		"AttackRange"               "1000"
+		"AttackAcquisitionRange"    "1000"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.500000"
+		"ProjectileSpeed"           "2000"
+		"ProjectileModel"           "particles/units/heroes/hero_leshrac/leshrac_base_attack.vpcf"
+
+		"Level"                     "800"
+		"Cost"                      "800"
+		"TotalCost"                 "800"
+		"BuildTime"                 "0"
+		"ScriptClass"               "BasicTower"
+		"TowerType"                 "Normal"
+		"BuffPriority"              "11"
+		
+		// General
+		//-----------------------------
+		"BaseClass"                 "npc_dota_creature"
+		"ArmorPhysical"             "0"
+		"MagicalResistance"         "0"
+		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
+		"TeamName"                  "DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"VisionDaytimeRange"        "1900"
+		"VisionNighttimeRange"      "1900"  
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+		"ProjectileCollisionSize"   "50"
+		"RingRadius"                "80"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"             "0"
+		"MovementTurnRate"          "1.0"
+		"StatusHealth"              "175"
+		"StatusHealthRegen"         "0"
+		"StatusMana"                "100"
+		"StatusManaRegen"           "0"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		
+		"Ability1"					"tower_upgrade_utility_void_2"
+		"Ability2"					"sell_tower"
+		"Ability3"					"faceless_void_chronosphere_lua"
+		"Ability4"					"tower_invulnerable"
+
+		// Building Size
+		"ConstructionSize"          "4"
+		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "4020" } // Weapon
+				"2"  { "ItemDef" "6284" } // Head
+				"3"  { "ItemDef" "12655" } // Shoulder
+				"4"	 { "ItemDef" "6282" } // Belt
+				"5"  { "ItemDef" "6281" } // Arms
+			}
+		}
+	}
+	
+	//============================================================
+	// Tower: Utility - Void 2
+	//============================================================
+	"tower_utility_void_2"
+	{
+		// Visual
+		//-----------------------------
+		"Model"                     "models/heroes/faceless_void/faceless_void.vmdl"
+		"ModelScale"                "1"
+		"ModelRotation"             "180"
+		"ModelOffset"               "1"
+		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
+		"PedestalModelScale"        "1.5"
+		"PedestalOffset"            "4"
+		"SoundSet"                  ""
+		"MinimapIconSize"           ""
+		"GameSoundsFile"    		""
+		"vscripts"                  "ai/void.lua"
+
+		// Stats
+		//----------------------------- 
+		"AttackDamageMin"           "250"
+		"AttackDamageMax"           "250"
+		"Damage"                    "250" 
+		"AttackRange"               "1000"
+		"AttackAcquisitionRange"    "1000"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.500000"
+		"ProjectileSpeed"           "2000"
+		"ProjectileModel"           "particles/units/heroes/hero_leshrac/leshrac_base_attack.vpcf"
+
+		"Level"                     "1050"
+		"Cost"                      "1050"
+		"TotalCost"                 "1050"
+		"BuildTime"                 "0"
+		"ScriptClass"               "BasicTower"
+		"TowerType"                 "Normal"
+		"BuffPriority"              "11"
+		
+		// General
+		//-----------------------------
+		"BaseClass"                 "npc_dota_creature"
+		"ArmorPhysical"             "0"
+		"MagicalResistance"         "0"
+		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
+		"TeamName"                  "DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"VisionDaytimeRange"        "1900"
+		"VisionNighttimeRange"      "1900"  
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+		"ProjectileCollisionSize"   "50"
+		"RingRadius"                "80"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"             "0"
+		"MovementTurnRate"          "1.0"
+		"StatusHealth"              "175"
+		"StatusHealthRegen"         "0"
+		"StatusMana"                "100"
+		"StatusManaRegen"           "0"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		
+		"Ability1"					"tower_upgrade_utility_void_3"
+		"Ability2"					"sell_tower"
+		"Ability3"					"faceless_void_chronosphere_lua"
+		"Ability4"					"tower_invulnerable"
+
+		// Building Size
+		"ConstructionSize"          "4"
+		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "6921" } // Weapon
+				"2"  { "ItemDef" "12659" } // Head
+				"3"  { "ItemDef" "7378" } // Shoulder
+				"4"	 { "ItemDef" "4596" } // Belt
+				"5"  { "ItemDef" "7816" } // Arms
+			}
+		}
+	}
+	
+	//============================================================
+	// Tower: Utility - Void 3
+	//============================================================
+	"tower_utility_void_3"
+	{
+		// Visual
+		//-----------------------------
+		"Model"                     "models/heroes/faceless_void/faceless_void.vmdl"
+		"ModelScale"                "1"
+		"ModelRotation"             "180"
+		"ModelOffset"               "1"
+		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
+		"PedestalModelScale"        "1.5"
+		"PedestalOffset"            "4"
+		"SoundSet"                  ""
+		"MinimapIconSize"           ""
+		"GameSoundsFile"    		""
+		"vscripts"                  "ai/void.lua"
+
+		// Stats
+		//----------------------------- 
+		"AttackDamageMin"           "300"
+		"AttackDamageMax"           "300"
+		"Damage"                    "300" 
+		"AttackRange"               "1000"
+		"AttackAcquisitionRange"    "1000"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.500000"
+		"ProjectileSpeed"           "2000"
+		"ProjectileModel"           "particles/units/heroes/hero_leshrac/leshrac_base_attack.vpcf"
+
+		"Level"                     "1300"
+		"Cost"                      "1300"
+		"TotalCost"                 "1300"
+		"BuildTime"                 "0"
+		"ScriptClass"               "BasicTower"
+		"TowerType"                 "Normal"
+		"BuffPriority"              "11"
+		
+		// General
+		//-----------------------------
+		"BaseClass"                 "npc_dota_creature"
+		"ArmorPhysical"             "0"
+		"MagicalResistance"         "0"
+		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
+		"TeamName"                  "DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"VisionDaytimeRange"        "1900"
+		"VisionNighttimeRange"      "1900"  
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+		"ProjectileCollisionSize"   "50"
+		"RingRadius"                "80"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"             "0"
+		"MovementTurnRate"          "1.0"
+		"StatusHealth"              "175"
+		"StatusHealthRegen"         "0"
+		"StatusMana"                "100"
+		"StatusManaRegen"           "0"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		
+		"Ability1"					"sell_tower"
+		"Ability2"					"faceless_void_chronosphere_lua"
+		"Ability3"					"tower_invulnerable"
+
+		// Building Size
+		"ConstructionSize"          "4"
+		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "7571" } // Weapon
+				"2"  { "ItemDef" "6576" } // Head
+				"3"  { "ItemDef" "8268" } // Shoulder
+				"4"	 { "ItemDef" "12657" } // Belt
+				"5"  { "ItemDef" "7996" } // Arms
+			}
+		}
+	}
+	
+	//============================================================
+	// Tower: Utility - Enigma 1
+	//============================================================
+	"tower_utility_enigma_1"
+	{
+		// Visual
+		//-----------------------------
+		"Model"                     "models/heroes/enigma/enigma.vmdl"
+		"ModelScale"                "0.8"
+		"ModelRotation"             "180"
+		"ModelOffset"               "1"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.3"
+		"PedestalOffset"            "5"
+		"SoundSet"                  ""
+		"MinimapIconSize"           ""
+		"GameSoundsFile"    		""
+		"vscripts"                  "ai/enigma.lua"
+
+		// Stats
+		//----------------------------- 
+		"AttackDamageMin"           "200"
+		"AttackDamageMax"           "200"
+		"Damage"                    "200" 
+		"AttackRange"               "1000"
+		"AttackAcquisitionRange"    "1000"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.400000"
+		"ProjectileSpeed"           "2000"
+		"ProjectileModel"           "particles/econ/items/enigma/enigma_geodesic/enigma_base_attack_eidolon_geodesic.vpcf"
+
+		"Level"                     "850"
+		"Cost"                      "850"
+		"TotalCost"                 "850"
+		"BuildTime"                 "0"
+		"ScriptClass"               "BasicTower"
+		"TowerType"                 "Normal"
+		"BuffPriority"              "11"
+		
+		// General
+		//-----------------------------
+		"BaseClass"                 "npc_dota_creature"
+		"ArmorPhysical"             "0"
+		"MagicalResistance"         "0"
+		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
+		"TeamName"                  "DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"VisionDaytimeRange"        "1900"
+		"VisionNighttimeRange"      "1900"  
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+		"ProjectileCollisionSize"   "50"
+		"RingRadius"                "80"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"             "0"
+		"MovementTurnRate"          "1.0"
+		"StatusHealth"              "175"
+		"StatusHealthRegen"         "0"
+		"StatusMana"                "100"
+		"StatusManaRegen"           "0"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		
+		"Ability1"					"tower_upgrade_utility_enigma_2"
+		"Ability2"					"sell_tower"
+		"Ability3"					"enigma_black_hole_lua"
+		"Ability4"					"tower_invulnerable"
+
+		// Building Size
+		"ConstructionSize"          "4"
+		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "9289" } // Head
+				"2"  { "ItemDef" "9290" } // Armor
+				"3"  { "ItemDef" "9288" } // Arms
+			}
+		}
+	}
+	
+	//============================================================
+	// Tower: Utility - Enigma 2
+	//============================================================
+	"tower_utility_enigma_2"
+	{
+		// Visual
+		//-----------------------------
+		"Model"                     "models/heroes/enigma/enigma.vmdl"
+		"ModelScale"                "0.8"
+		"ModelRotation"             "180"
+		"ModelOffset"               "1"
+		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
+		"PedestalModelScale"        "1.5"
+		"PedestalOffset"            "4"
+		"SoundSet"                  ""
+		"MinimapIconSize"           ""
+		"GameSoundsFile"    		""
+		"vscripts"                  "ai/enigma.lua"
+
+		// Stats
+		//----------------------------- 
+		"AttackDamageMin"           "250"
+		"AttackDamageMax"           "250"
+		"Damage"                    "250" 
+		"AttackRange"               "1000"
+		"AttackAcquisitionRange"    "1000"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.400000"
+		"ProjectileSpeed"           "2000"
+		"ProjectileModel"           "particles/econ/items/enigma/enigma_geodesic/enigma_base_attack_eidolon_geodesic.vpcf"
+
+		"Level"                     "1100"
+		"Cost"                      "1100"
+		"TotalCost"                 "1100"
+		"BuildTime"                 "0"
+		"ScriptClass"               "BasicTower"
+		"TowerType"                 "Normal"
+		"BuffPriority"              "11"
+		
+		// General
+		//-----------------------------
+		"BaseClass"                 "npc_dota_creature"
+		"ArmorPhysical"             "0"
+		"MagicalResistance"         "0"
+		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
+		"TeamName"                  "DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"VisionDaytimeRange"        "1900"
+		"VisionNighttimeRange"      "1900"  
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+		"ProjectileCollisionSize"   "50"
+		"RingRadius"                "80"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"             "0"
+		"MovementTurnRate"          "1.0"
+		"StatusHealth"              "175"
+		"StatusHealthRegen"         "0"
+		"StatusMana"                "100"
+		"StatusManaRegen"           "0"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		
+		"Ability1"					"tower_upgrade_utility_enigma_3"
+		"Ability2"					"sell_tower"
+		"Ability3"					"enigma_black_hole_lua"
+		"Ability4"					"tower_invulnerable"
+
+		// Building Size
+		"ConstructionSize"          "4"
+		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "9471" } // Head
+				"2"  { "ItemDef" "9476" } // Armor
+				"3"  { "ItemDef" "9474" } // Arms
+			}
+		}
+	}
+	
+	//============================================================
+	// Tower: Utility - Enigma 3
+	//============================================================
+	"tower_utility_enigma_3"
+	{
+		// Visual
+		//-----------------------------
+		"Model"                     "models/heroes/enigma/enigma.vmdl"
+		"ModelScale"                "0.8"
+		"ModelRotation"             "180"
+		"ModelOffset"               "1"
+		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
+		"PedestalModelScale"        "1.5"
+		"PedestalOffset"            "4"
+		"SoundSet"                  ""
+		"MinimapIconSize"           ""
+		"GameSoundsFile"    		""
+		"vscripts"                  "ai/enigma.lua"
+
+		// Stats
+		//----------------------------- 
+		"AttackDamageMin"           "300"
+		"AttackDamageMax"           "300"
+		"Damage"                    "300" 
+		"AttackRange"               "1000"
+		"AttackAcquisitionRange"    "1000"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.400000"
+		"ProjectileSpeed"           "2000"
+		"ProjectileModel"           "particles/econ/items/enigma/enigma_geodesic/enigma_base_attack_eidolon_geodesic.vpcf"
+
+		"Level"                     "1350"
+		"Cost"                      "1350"
+		"TotalCost"                 "1350"
+		"BuildTime"                 "0"
+		"ScriptClass"               "BasicTower"
+		"TowerType"                 "Normal"
+		"BuffPriority"              "11"
+		
+		// General
+		//-----------------------------
+		"BaseClass"                 "npc_dota_creature"
+		"ArmorPhysical"             "0"
+		"MagicalResistance"         "0"
+		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
+		"TeamName"                  "DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"VisionDaytimeRange"        "1900"
+		"VisionNighttimeRange"      "1900"  
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+		"ProjectileCollisionSize"   "50"
+		"RingRadius"                "80"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"             "0"
+		"MovementTurnRate"          "1.0"
+		"StatusHealth"              "175"
+		"StatusHealthRegen"         "0"
+		"StatusMana"                "100"
+		"StatusManaRegen"           "0"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		
+		"Ability1"					"sell_tower"
+		"Ability2"					"enigma_black_hole_lua"
+		"Ability3"					"tower_invulnerable"
+
+		// Building Size
+		"ConstructionSize"          "4"
+		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "12332" } // Head
+				"2"  { "ItemDef" "12330" } // Armor
+				"3"  { "ItemDef" "8326" } // Arms
+			}
+		}
+	}
 	
 	//========================================================================================================================
 	// TIER 1 TOWERS START
@@ -3293,9 +5124,6 @@
 			}
 		}
 	}
-	
-	
-	
 	
 	//============================================================
 	// Tower: Furion - 1

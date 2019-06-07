@@ -21,83 +21,6 @@ return {
   -- },
 
   ----------------------------------------------------------
-  -- Farm Towers 
-  ----------------------------------------------------------
-  tower_farm_1 = {
-    is_farm = true,
-    level = 1,
-    tier = 1,
-    death_model = "models/props_structures/tower_upgrade/tower_upgrade_dest.vmdl",
-    destruction_particle = "particles/world_tower/tower_upgrade/ti7_radiant_tower_lvl1_dest.vpcf",
-    material_group = "radiant_level1",
-  },
-  
-  tower_farm_2 = {
-    is_farm = true,
-    level = 2,
-    tier = 1,
-    death_model = "models/props_structures/tower_upgrade/tower_upgrade_dest.vmdl",
-    destruction_particle = "particles/world_tower/tower_upgrade/ti7_radiant_tower_lvl3_dest.vpcf",
-    material_group = "radiant_level2",
-    spawn_sound = "frostivus_ui_select",
-    abilities = {
-      farm_tower_gold = 2
-    },
-  },
-  
-  tower_farm_3 = {
-    is_farm = true,
-    level = 3,
-    tier = 1,
-    death_model = "models/props_structures/tower_upgrade/tower_upgrade_dest.vmdl",
-    destruction_particle = "particles/world_tower/tower_upgrade/ti7_radiant_tower_lvl5_dest.vpcf",
-    material_group = "radiant_level3",
-    spawn_sound = "frostivus_ui_select",
-    abilities = {
-      farm_tower_gold = 3
-    },
-  },
-  
-  tower_farm_4 = {
-    is_farm = true,
-    level = 4,
-    tier = 1,
-    death_model = "models/props_structures/tower_upgrade/tower_upgrade_dest.vmdl",
-    destruction_particle = "particles/world_tower/tower_upgrade/ti7_radiant_tower_lvl7_dest.vpcf",
-    material_group = "radiant_level4",
-    spawn_sound = "frostivus_ui_select",
-    abilities = {
-      farm_tower_gold = 4
-    },
-  },
-  
-  tower_farm_5 = {
-    is_farm = true,
-    level = 5,
-    tier = 1,
-    death_model = "models/props_structures/tower_upgrade/tower_upgrade_dest.vmdl",
-    destruction_particle = "particles/world_tower/tower_upgrade/ti7_radiant_tower_lvl9_dest.vpcf",
-    material_group = "radiant_level5",
-    spawn_sound = "frostivus_ui_select",
-    abilities = {
-      farm_tower_gold = 5
-    },
-  },
-  
-  tower_farm_6 = {
-    is_farm = true,
-    level = 6,
-    tier = 1,
-    death_model = "models/props_structures/tower_upgrade/tower_upgrade_dest.vmdl",
-    destruction_particle = "particles/world_tower/tower_upgrade/ti7_radiant_tower_lvl11_dest.vpcf",
-    material_group = "radiant_level6",
-    spawn_sound = "frostivus_ui_select",
-    abilities = {
-      farm_tower_gold = 6
-    },
-  },
-
-  ----------------------------------------------------------
   -- Regular Towers
   ----------------------------------------------------------
 
@@ -470,6 +393,222 @@ return {
     spawn_sound = "frostivus_ui_select",  
   },
   
+  tower_utility_lion_1 = {
+    level = 1,
+    tier = 2,
+    spawn_sound = "frostivus_ui_select", 
+	abilities = {
+      lion_hex_lua = 1
+    },	
+  },
+  
+  tower_utility_lion_2 = {
+    level = 2,
+    tier = 2,
+    spawn_sound = "frostivus_ui_select", 
+	abilities = {
+      lion_hex_lua = 2
+    },	
+  },
+  
+  tower_utility_lion_3 = {
+    level = 3,
+    tier = 2,
+    spawn_sound = "frostivus_ui_select",  
+	abilities = {
+      lion_hex_lua = 3
+    },	
+  },
+  
+  tower_utility_shaman_1 = {
+    level = 1,
+    tier = 2,
+    spawn_sound = "frostivus_ui_select",  
+	abilities = {
+      shadow_shaman_shackles_datadriven = 1
+    },
+  },
+  
+  tower_utility_shaman_2 = {
+    level = 2,
+    tier = 2,
+    spawn_sound = "frostivus_ui_select",
+	abilities = {
+      shadow_shaman_shackles_datadriven = 2
+    },	
+  },
+  
+  tower_utility_shaman_3 = {
+    level = 3,
+    tier = 2,
+    spawn_sound = "frostivus_ui_select",  
+	abilities = {
+      shadow_shaman_shackles_datadriven = 3
+    },
+  },
+  
+   tower_utility_meepo_1 = {
+    level = 1,
+    tier = 2,
+    spawn_sound = "frostivus_ui_select",
+	abilities = {
+      meepo_earthbind = 1
+    },	
+  },
+  
+  tower_utility_meepo_2 = {
+    level = 2,
+    tier = 2,
+    spawn_sound = "frostivus_ui_select",
+	abilities = {
+      meepo_earthbind = 2
+    },	
+  },
+  
+  tower_utility_meepo_3 = {
+    level = 3,
+    tier = 2,
+    spawn_sound = "frostivus_ui_select",
+	abilities = {
+      meepo_earthbind = 3
+    },	
+  },
+  
+  tower_utility_gyro_1 = {
+    level = 1,
+    tier = 2,
+    spawn_sound = "frostivus_ui_select",
+	abilities = {
+      gyrocopter_call_down = 1
+    },	
+  },
+  
+  tower_utility_gyro_2 = {
+    level = 2,
+    tier = 2,
+    spawn_sound = "frostivus_ui_select",
+	abilities = {
+      gyrocopter_call_down = 2
+    },	
+  },
+  
+  tower_utility_gyro_3 = {
+    level = 3,
+    tier = 2,
+    spawn_sound = "frostivus_ui_select",
+	abilities = {
+      gyrocopter_call_down = 3
+    },	
+  },
+  
+   tower_utility_sven_1 = {
+    level = 1,
+    tier = 2,
+    spawn_sound = "frostivus_ui_select",  
+	abilities = {
+      sven_storm_bolt = 1
+    },
+  },
+  
+  tower_utility_sven_2 = {
+    level = 2,
+    tier = 2,
+    spawn_sound = "frostivus_ui_select",  
+	abilities = {
+      sven_storm_bolt = 2
+    },
+  },
+  
+  tower_utility_sven_3 = {
+    level = 3,
+    tier = 2,
+    spawn_sound = "frostivus_ui_select", 
+	abilities = {
+      sven_storm_bolt = 3
+    },	
+  },
+  
+  tower_utility_underlord_1 = {
+    level = 1,
+    tier = 2,
+    spawn_sound = "frostivus_ui_select",
+	abilities = {
+      abyssal_underlord_pit_of_malice = 1
+    },	
+  },
+  
+  tower_utility_underlord_2 = {
+    level = 2,
+    tier = 2,
+    spawn_sound = "frostivus_ui_select",
+	abilities = {
+      abyssal_underlord_pit_of_malice = 2
+    },	
+  },
+  
+  tower_utility_underlord_3 = {
+    level = 3,
+    tier = 2,
+    spawn_sound = "frostivus_ui_select",
+	abilities = {
+      abyssal_underlord_pit_of_malice = 3
+    },	
+  },
+  
+  tower_utility_void_1 = {
+    level = 1,
+    tier = 2,
+    spawn_sound = "frostivus_ui_select",
+	abilities = {
+      faceless_void_chronosphere_lua = 1
+    },
+  },
+  
+  tower_utility_void_2 = {
+    level = 2,
+    tier = 2,
+    spawn_sound = "frostivus_ui_select", 
+	abilities = {
+      faceless_void_chronosphere_lua = 2
+    },	
+  },
+  
+  tower_utility_void_3 = {
+    level = 3,
+    tier = 2,
+    spawn_sound = "frostivus_ui_select", 
+	abilities = {
+      faceless_void_chronosphere_lua = 3
+    },	
+  },
+  
+  tower_utility_enigma_1 = {
+    level = 1,
+    tier = 2,
+    spawn_sound = "frostivus_ui_select",
+	abilities = {
+      enigma_black_hole_lua = 1
+    },	
+  },
+  
+  tower_utility_enigma_2 = {
+    level = 2,
+    tier = 2,
+    spawn_sound = "frostivus_ui_select",  
+	abilities = {
+      enigma_black_hole_lua = 2
+    },
+  },
+  
+  tower_utility_enigma_3 = {
+    level = 3,
+    tier = 2,
+    spawn_sound = "frostivus_ui_select",
+	abilities = {
+      enigma_black_hole_lua = 3
+    },	
+  },
+  
   tower_arrow = {
     is_farm = true,
     level = 1,
@@ -496,6 +635,15 @@ return {
     destruction_particle = "particles/radiant_fx/radiant_tower002_destruction.vpcf",
 	abilities = {
       tower_ice_slow = 1
+    },
+  },
+  
+  tower_utility = {
+    is_farm = true,
+    level = 1,
+    tier = 1,  
+	abilities = {
+      lina_light_strike_array_lua = 1
     },
   },
 }
