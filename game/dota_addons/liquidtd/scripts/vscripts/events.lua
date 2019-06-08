@@ -177,7 +177,6 @@ function LiquidTD:OnGameInProgress()
         local model = "models/courier/greevil/gold_greevil.vmdl"
         hero:SetOriginalModel(model)
         hero:SetModel(model)
-	  
       end
     end
     return
