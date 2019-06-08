@@ -33,19 +33,6 @@ function OnLeaderboardCloseButtonPressed() {
 	Game.EmitSound("ui.profile_close")*/
 }
 
-/* STORE */
-function OnStoreOpenButtonPressed() {
-	/*var panel = $("#StoreRoot");
-	panel.visible = !panel.visible;
-	Game.EmitSound("ui_chat_slide_out")*/
-}
-
-function OnStoreCloseButtonPressed() {
-	/*var panel = $("#StoreRoot");
-	panel.visible = !panel.visible;
-	Game.EmitSound("ui.profile_close")*/
-}
-
 function SecondsToClock(seconds) {
   var sec_num = parseInt(seconds, 10);
   var hours   = Math.floor(sec_num / 3600);

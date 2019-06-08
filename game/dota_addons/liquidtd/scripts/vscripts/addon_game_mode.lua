@@ -167,19 +167,42 @@ function Precache( context )
 	PrecacheResource( "model", "models/heroes/medusa/medusa.vmdl", context )
 	PrecacheResource( "model", "models/heroes/windrunner/windrunner.vmdl", context )
 	-- Couriers
-		-- Developers
+		-- Rare
+	PrecacheResource( "model", "models/items/courier/basim/basim.vmdl", context )
+	PrecacheResource( "model", "models/items/courier/blue_lightning_horse/blue_lightning_horse.vmdl", context )
+	PrecacheResource( "model", "models/items/courier/boooofus_courier/boooofus_courier.vmdl", context )
+	PrecacheResource( "model", "models/items/courier/duskie/duskie.vmdl", context )
+	PrecacheResource( "model", "models/items/courier/jumo/jumo.vmdl", context )
+	PrecacheResource( "model", "models/items/courier/beaverknight_s1/beaverknight_s1.vmdl", context )
+	PrecacheResource( "model", "models/items/courier/beaverknight_s2/beaverknight_s2.vmdl", context )
+	PrecacheResource( "model", "models/items/courier/butch_pudge_dog/butch_pudge_dog.vmdl", context )
+	PrecacheResource( "model", "models/courier/seekling/seekling.vmdl,", context )
 	PrecacheResource( "model", "models/courier/doom_demihero_courier/doom_demihero_courier.vmdl", context )
+	PrecacheResource( "model", "models/courier/huntling/huntling.vmdl", context )
+	PrecacheResource( "model", "models/items/courier/krobeling/krobeling.vmdl", context )
+	PrecacheResource( "model", "models/courier/venoling/venoling.vmdl", context )
+	PrecacheResource( "model", "models/items/courier/devourling/devourling.vmdl", context )
+	PrecacheResource( "model", "models/courier/baby_winter_wyvern/baby_winter_wyvern.vmdl", context )
+		-- Mythical
+	PrecacheResource( "model", "models/courier/donkey_crummy_wizard_2014/donkey_crummy_wizard_2014.vmdll", context )
+	PrecacheResource( "model", "models/courier/donkey_unicorn/donkey_unicorn.vmdl", context )
+	PrecacheResource( "model", "models/courier/donkey_ti7/donkey_ti7.vmdl", context )
+	PrecacheResource( "model", "models/courier/greevil/gold_greevil.vmdl", context )
+	PrecacheResource( "model", "models/courier/trapjaw/trapjaw.vmdl", context )
+	PrecacheResource( "model", "models/items/courier/carty/carty.vmdl", context )
+	PrecacheResource( "model", "models/items/courier/faceless_rex/faceless_rex.vmdl", context )
+	PrecacheResource( "model", "models/courier/drodo/drodo.vmdl", context )
+	PrecacheResource( "model", "models/courier/otter_dragon/otter_dragon.vmdl", context )
+	PrecacheResource( "model", "models/items/courier/mole_messenger/mole_messenger_lvl7.vmdl", context )
+		-- Legendary
 	PrecacheResource( "model", "models/courier/baby_rosh/babyroshan.vmdl", context )
-	PrecacheResource( "model", "models/courier/baby_rosh/babyroshan_alt.vmdl", context )
 	PrecacheResource( "model", "models/courier/baby_rosh/babyroshan_elemental.vmdl", context )
+	PrecacheResource( "model", "models/courier/baby_rosh/babyroshan_alt.vmdl", context )
 	PrecacheResource( "model", "models/courier/baby_rosh/babyroshan_ti9.vmdl", context )
 	PrecacheResource( "model", "models/courier/baby_rosh/babyroshan_winter18.vmdl", context )
-		-- Normal
-	PrecacheResource( "model", "models/props_gameplay/donkey.vmdl", context )
-	PrecacheResource( "model", "models/props_gameplay/donkey_dire.vmdl", context )
-	PrecacheResource( "model", "models/items/courier/bucktooth_jerry/bucktooth_jerry.vmdl", context )
-	PrecacheResource( "model", "models/items/courier/captain_bamboo/captain_bamboo.vmdl", context )
-	PrecacheResource( "model", "models/items/courier/lgd_golden_skipper/lgd_golden_skipper.vmdl", context )
+	
+		-- Developer
+	PrecacheResource( "model", "models/items/courier/shagbark/shagbark.vmdl", context )
 end
 
 function Activate()

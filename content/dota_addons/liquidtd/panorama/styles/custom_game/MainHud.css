@@ -92,13 +92,26 @@
 	margin-top: 43px;
 	margin-left: 345px;
 }
+
+@keyframes 'blinker' {
+    50% {
+        opacity: 0.3;
+    }
+}
+
 #StoreButton {
 	background-image: url("s2r://panorama/images/hud/reborn/icon_courier_dead_psd.vtex");
 	background-size: 26px;
 	margin-top: 43px;
 	margin-left: 385px;
 	wash-color: white;
+	animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 10;
+	opacity: 2;
 }
+
 #NewSettingsButton {
 	background-image: url("s2r://panorama/images/control_icons/gear_png.vtex");
 	background-size: 25px;
@@ -131,8 +144,9 @@
 #NewDashboardButton:hover,
 #LeaderboardButton:hover,
 #NewScoreboardButton:hover,
-#NewSettingsButton:hover,
-#StoreButton:hover { opacity: 1.0; }
+#NewSettingsButton:hover { opacity: 1; }
+
+#StoreButton:hover { opacity: 1; }
 
 #NewDashboardButton:active,
 #LeaderboardButton:active,
