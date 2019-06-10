@@ -154,16 +154,16 @@ function LiquidTD:OnGameInProgress()
     for playerID=0,(maxPlayerID-1) do
     local sID = PlayerResource:GetSteamAccountID(playerID)
       if sID == 289101818 then 
-        local player = PlayerResource:GetPlayer(playerID)
+local player = PlayerResource:GetPlayer(playerID)
         local hero = player:GetAssignedHero()
-        local model = "models/items/courier/shagbark/shagbark.vmdl"
-        --local particleName = "particles/courier_effects/trail_baby_roshan_platinum.vpcf"
-        --local particle = ParticleManager:CreateParticle( particleName, PATTACH_ABSORIGIN_FOLLOW, hero)
+        local model = "models/courier/baby_rosh/babyroshan.vmdl"
+		local particleName = "particles/econ/courier/courier_roshan_ti8/courier_roshan_ti8.vpcf"
+        local particle = ParticleManager:CreateParticle( particleName, PATTACH_ABSORIGIN_FOLLOW, hero)
         hero:SetOriginalModel(model)
         hero:SetModel(model)
-        --hero:SetMaterialGroup("2")
-        --ParticleManager:SetParticleControl(particle, 0, hero:GetOrigin())
-        --ParticleManager:SetParticleControl(particle, 3, hero:GetOrigin())
+		hero:SetMaterialGroup("5")
+		ParticleManager:SetParticleControl(particle, 0, hero:GetOrigin())
+        ParticleManager:SetParticleControl(particle, 3, hero:GetOrigin())
       elseif sID == 160261868 then 
         local player = PlayerResource:GetPlayer(playerID)
         local hero = player:GetAssignedHero()
@@ -174,9 +174,14 @@ function LiquidTD:OnGameInProgress()
 	  elseif sID == 175156710 then 
 	    local player = PlayerResource:GetPlayer(playerID)
         local hero = player:GetAssignedHero()
-        local model = "models/courier/greevil/gold_greevil.vmdl"
+        local model = "models/courier/baby_rosh/babyroshan.vmdl"
+		local particleName = "particles/econ/courier/courier_roshan_ti8/courier_roshan_ti8.vpcf"
+        local particle = ParticleManager:CreateParticle( particleName, PATTACH_ABSORIGIN_FOLLOW, hero)
         hero:SetOriginalModel(model)
         hero:SetModel(model)
+		hero:SetMaterialGroup("5")
+		ParticleManager:SetParticleControl(particle, 0, hero:GetOrigin())
+        ParticleManager:SetParticleControl(particle, 3, hero:GetOrigin())
       end
     end
     return
