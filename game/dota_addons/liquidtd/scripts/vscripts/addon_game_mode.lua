@@ -105,6 +105,8 @@ function Precache( context )
 	PrecacheResource( "particle", "particles/econ/items/viper/viper_ti7_immortal/viper_poison_debuff_ti7.vpcf", context )
 	PrecacheResource( "particle", "particles/units/heroes/hero_winter_wyvern/wyvern_arctic_burn_slow.vpcf", context )
 	PrecacheResource( "particle", "particles/units/heroes/hero_lina/lina_base_attack.vpcf", context )
+	PrecacheResource( "particle", "particles/creep_effects/spawn_effect.vpcf", context )
+	PrecacheResource( "particle", "particles/creep_effects/leak_effect.vpcf", context )
 	-- Tower Stars
 	PrecacheResource( "particle", "particles/arrow/star1.vpcf", context )
 	PrecacheResource( "particle", "particles/arrow/star2_1.vpcf", context )
@@ -131,6 +133,7 @@ function Precache( context )
 	PrecacheResource( "particle", "particles/tower_effects/tower_luna_3_base_attack.vpcf", context )
 	-- Courier Particles
 	PrecacheResource( "particle", "particles/courier_effects/trail_baby_roshan_platinum.vpcf", context )
+	PrecacheResource( "particle", "particles/econ/courier/courier_roshan_ti8/courier_roshan_ti8.vpcf", context )
 	
 	
 -- Models

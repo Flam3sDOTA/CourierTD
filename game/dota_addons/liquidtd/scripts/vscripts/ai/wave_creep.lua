@@ -5,9 +5,12 @@ function Spawn(keys)
 	destination_reached = false
     local map = thisEntity.map
     local waypoints = {}
+	local particleName = "particles/creep_effects/spawn_effect.vpcf"
+    local particle = ParticleManager:CreateParticle( particleName, PATTACH_ABSORIGIN_FOLLOW, thisEntity)
+	ParticleManager:SetParticleControl(particle, 0, thisEntity:GetOrigin())
+    ParticleManager:SetParticleControl(particle, 3, thisEntity:GetOrigin())
 	
-    for i=1,6 do
-      -- map1_goal2
+    for i=1,7 do
       local waypointName = map .. "_goal" .. i
       local waypoint = Entities:FindByName(nil, waypointName)
 	  table.insert(waypoints, waypoint)

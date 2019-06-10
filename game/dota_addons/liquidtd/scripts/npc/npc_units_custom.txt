@@ -401,12 +401,12 @@
 		"Model"                 		"models/items/courier/captain_bamboo/captain_bamboo.vmdl"
 		"ModelScale"               		"1.5"
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"1"
-		"MagicalResistance"     		"0"
+		"ArmorPhysical"         		"2"
+		"MagicalResistance"     		"1"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"10"
 		"BountyGoldMax"         		"11"
-		"StatusHealth"          		"900"
+		"StatusHealth"          		"1000"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -434,12 +434,12 @@
 		"Model"                 		"models/items/courier/d2l_steambear/d2l_steambear.vmdl"
 		"ModelScale"               		"1.5"
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"1"
-		"MagicalResistance"     		"0"
+		"ArmorPhysical"         		"2"
+		"MagicalResistance"     		"1"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"11"
 		"BountyGoldMax"         		"12"
-		"StatusHealth"          		"1000"
+		"StatusHealth"          		"1100"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -467,12 +467,12 @@
 		"Model"                 		"models/items/courier/flightless_dod/flightless_dod.vmdl"
 		"ModelScale"               		"1.5"
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"1"
-		"MagicalResistance"     		"0"
+		"ArmorPhysical"         		"2"
+		"MagicalResistance"     		"1"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"12"
 		"BountyGoldMax"         		"13"
-		"StatusHealth"          		"1100"
+		"StatusHealth"          		"1200"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -500,12 +500,12 @@
 		"Model"                 		"models/items/courier/shroomy/shroomy.vmdl"
 		"ModelScale"               		"1.5"
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"1"
-		"MagicalResistance"     		"0"
+		"ArmorPhysical"         		"2"
+		"MagicalResistance"     		"1"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"13"
 		"BountyGoldMax"         		"14"
-		"StatusHealth"          		"1200"
+		"StatusHealth"          		"1300"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -566,12 +566,12 @@
 		"Model"                 		"models/courier/baby_winter_wyvern/baby_winter_wyvern.vmdl"
 		"ModelScale"               		"1.5"
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"1"
-		"MagicalResistance"     		"1"
+		"ArmorPhysical"         		"2"
+		"MagicalResistance"     		"5"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"14"
 		"BountyGoldMax"         		"15"
-		"StatusHealth"          		"1300"
+		"StatusHealth"          		"1400"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -599,12 +599,12 @@
 		"Model"                 		"models/courier/doom_demihero_courier/doom_demihero_courier.vmdl"
 		"ModelScale"               		"1.5"
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"1"
-		"MagicalResistance"     		"1"
+		"ArmorPhysical"         		"2"
+		"MagicalResistance"     		"5"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"15"
 		"BountyGoldMax"         		"16"
-		"StatusHealth"          		"1400"
+		"StatusHealth"          		"1500"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -632,12 +632,12 @@
 		"Model"                 		"models/courier/mega_greevil_courier/mega_greevil_courier.vmdl"
 		"ModelScale"               		"1.5"
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"1"
-		"MagicalResistance"     		"1"
+		"ArmorPhysical"         		"2"
+		"MagicalResistance"     		"5"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"16"
 		"BountyGoldMax"         		"17"
-		"StatusHealth"          		"1500"
+		"StatusHealth"          		"1600"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -665,12 +665,12 @@
 		"Model"                 		"models/courier/huntling/huntling.vmdl"
 		"ModelScale"               		"1.5"
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"1"
-		"MagicalResistance"     		"1"
+		"ArmorPhysical"         		"2"
+		"MagicalResistance"     		"5"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"17"
 		"BountyGoldMax"         		"18"
-		"StatusHealth"          		"1600"
+		"StatusHealth"          		"1700"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -731,12 +731,12 @@
 		"Model"                 		"models/courier/minipudge/minipudge.vmdl"
 		"ModelScale"               		"1.5"
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"2"
-		"MagicalResistance"     		"2"
+		"ArmorPhysical"         		"3"
+		"MagicalResistance"     		"10"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"18"
 		"BountyGoldMax"         		"19"
-		"StatusHealth"          		"1700"
+		"StatusHealth"          		"1800"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -764,12 +764,12 @@
 		"Model"                 		"models/courier/smeevil_bird/smeevil_bird.vmdl"
 		"ModelScale"               		"1.5"
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"2"
-		"MagicalResistance"     		"2"
+		"ArmorPhysical"         		"3"
+		"MagicalResistance"     		"10"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"18"
 		"BountyGoldMax"         		"19"
-		"StatusHealth"          		"1800"
+		"StatusHealth"          		"1900"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -797,12 +797,12 @@
 		"Model"                 		"models/courier/venoling/venoling.vmdl"
 		"ModelScale"               		"1.5"
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"2"
-		"MagicalResistance"     		"2"
+		"ArmorPhysical"         		"3"
+		"MagicalResistance"     		"10"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"20"
 		"BountyGoldMax"         		"21"
-		"StatusHealth"          		"1900"
+		"StatusHealth"          		"2000"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -830,12 +830,12 @@
 		"Model"                 		"models/items/courier/deathbringer/deathbringer.vmdl"
 		"ModelScale"               		"1.5"
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"2"
-		"MagicalResistance"     		"2"
+		"ArmorPhysical"         		"3"
+		"MagicalResistance"     		"10"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"21"
 		"BountyGoldMax"         		"22"
-		"StatusHealth"          		"2000"
+		"StatusHealth"          		"2100"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -897,12 +897,12 @@
 		"Model"                 		"models/items/courier/dokkaebi_nexon_courier/dokkaebi_nexon_courier.vmdl"
 		"ModelScale"               		"1.5"
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"2"
-		"MagicalResistance"     		"2"
+		"ArmorPhysical"         		"3"
+		"MagicalResistance"     		"15"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"22"
 		"BountyGoldMax"         		"23"
-		"StatusHealth"          		"2200"
+		"StatusHealth"          		"2300"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -930,12 +930,12 @@
 		"Model"                 		"models/items/courier/jin_yin_white_fox/jin_yin_white_fox.vmdl"
 		"ModelScale"               		"1.5"
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"2"
-		"MagicalResistance"     		"2"
+		"ArmorPhysical"         		"3"
+		"MagicalResistance"     		"15"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"23"
 		"BountyGoldMax"         		"24"
-		"StatusHealth"          		"2300"
+		"StatusHealth"          		"2400"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -963,12 +963,12 @@
 		"Model"                 		"models/items/courier/little_fraid_the_courier_of_simons_retribution/little_fraid_the_courier_of_simons_retribution.vmdl"
 		"ModelScale"               		"1.5"
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"2"
-		"MagicalResistance"     		"2"
+		"ArmorPhysical"         		"3"
+		"MagicalResistance"     		"15"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"24"
 		"BountyGoldMax"         		"25"
-		"StatusHealth"          		"2400"
+		"StatusHealth"          		"2500"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -996,12 +996,12 @@
 		"Model"                 		"models/items/courier/mole_messenger/mole_messenger_lvl3.vmdl"
 		"ModelScale"               		"1.5"
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"2"
-		"MagicalResistance"     		"2"
+		"ArmorPhysical"         		"3"
+		"MagicalResistance"     		"15"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"25"
 		"BountyGoldMax"         		"26"
-		"StatusHealth"          		"2500"
+		"StatusHealth"          		"2600"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -2367,9 +2367,10 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"sell_tower"
-		"Ability2"					"lion_hex_lua"
-		"Ability3"					"tower_invulnerable"
+		"Ability1"					"empty"					
+		"Ability2"					"sell_tower"
+		"Ability3"					"lion_hex_lua"
+		"Ability4"					"tower_invulnerable"
 
 		// Building Size
 		"ConstructionSize"          "4"
@@ -2395,7 +2396,7 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/shadowshaman/shadowshaman.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "1.2"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
@@ -2483,7 +2484,7 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/shadowshaman/shadowshaman.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "1.2"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
@@ -2571,7 +2572,7 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/shadowshaman/shadowshaman.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "1.2"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
@@ -2630,9 +2631,10 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"sell_tower"
-		"Ability2"					"shadow_shaman_shackles_datadriven"
-		"Ability3"					"tower_invulnerable"
+		"Ability1"					"empty"
+		"Ability2"					"sell_tower"
+		"Ability3"					"shadow_shaman_shackles_datadriven"
+		"Ability4"					"tower_invulnerable"
 
 		// Building Size
 		"ConstructionSize"          "4"
@@ -2658,7 +2660,7 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/meepo/meepo.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "1.2"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
@@ -2747,7 +2749,7 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/meepo/meepo.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "1.2"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
@@ -2836,7 +2838,7 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/meepo/meepo.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "1.2"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
@@ -2895,9 +2897,10 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"sell_tower"
-		"Ability2"					"meepo_earthbind"
-		"Ability3"					"tower_invulnerable"
+		"Ability1"					"empty"
+		"Ability2"					"sell_tower"
+		"Ability3"					"meepo_earthbind"
+		"Ability4"					"tower_invulnerable"
 
 		// Building Size
 		"ConstructionSize"          "4"
@@ -3159,9 +3162,10 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"sell_tower"
-		"Ability2"					"gyrocopter_call_down"
-		"Ability3"					"tower_invulnerable"
+		"Ability1"					"empty"
+		"Ability2"					"sell_tower"
+		"Ability3"					"gyrocopter_call_down"
+		"Ability4"					"tower_invulnerable"
 
 		// Building Size
 		"ConstructionSize"          "4"
@@ -3424,9 +3428,10 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"sell_tower"
-		"Ability2"					"sven_storm_bolt"
-		"Ability3"					"tower_invulnerable"
+		"Ability1"					"empty"
+		"Ability2"					"sell_tower"
+		"Ability3"					"sven_storm_bolt"
+		"Ability4"					"tower_invulnerable"
 
 		// Building Size
 		"ConstructionSize"          "4"
@@ -3689,9 +3694,10 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"sell_tower"
-		"Ability2"					"abyssal_underlord_pit_of_malice"
-		"Ability3"					"tower_invulnerable"
+		"Ability1"					"empty"
+		"Ability2"					"sell_tower"
+		"Ability3"					"abyssal_underlord_pit_of_malice"
+		"Ability4"					"tower_invulnerable"
 
 		// Building Size
 		"ConstructionSize"          "4"
@@ -3718,7 +3724,7 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/faceless_void/faceless_void.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "1.1"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
@@ -3806,7 +3812,7 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/faceless_void/faceless_void.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "1.1"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
@@ -3894,7 +3900,7 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/faceless_void/faceless_void.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "1.1"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
@@ -3953,9 +3959,10 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"sell_tower"
-		"Ability2"					"faceless_void_chronosphere_lua"
-		"Ability3"					"tower_invulnerable"
+		"Ability1"					"empty"
+		"Ability2"					"sell_tower"
+		"Ability3"					"faceless_void_chronosphere_lua"
+		"Ability4"					"tower_invulnerable"
 
 		// Building Size
 		"ConstructionSize"          "4"
@@ -3981,7 +3988,7 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/enigma/enigma.vmdl"
-		"ModelScale"                "0.8"
+		"ModelScale"                "1"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
@@ -4052,9 +4059,9 @@
 		{
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "9289" } // Head
-				"2"  { "ItemDef" "9290" } // Armor
-				"3"  { "ItemDef" "9288" } // Arms
+				"1"  { "ItemDef" "9471" } // Head
+				"2"  { "ItemDef" "9476" } // Armor
+				"3"  { "ItemDef" "9474" } // Arms
 			}
 		}
 	}
@@ -4067,7 +4074,7 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/enigma/enigma.vmdl"
-		"ModelScale"                "0.8"
+		"ModelScale"                "1"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
@@ -4138,9 +4145,9 @@
 		{
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "9471" } // Head
-				"2"  { "ItemDef" "9476" } // Armor
-				"3"  { "ItemDef" "9474" } // Arms
+				"1"  { "ItemDef" "13021" } // Head
+				"2"  { "ItemDef" "13023" } // Armor
+				"3"  { "ItemDef" "13022" } // Arms
 			}
 		}
 	}
@@ -4153,7 +4160,7 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/enigma/enigma.vmdl"
-		"ModelScale"                "0.8"
+		"ModelScale"                "1"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
@@ -4212,9 +4219,10 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"sell_tower"
-		"Ability2"					"enigma_black_hole_lua"
-		"Ability3"					"tower_invulnerable"
+		"Ability1"					"empty"
+		"Ability2"					"sell_tower"
+		"Ability3"					"enigma_black_hole_lua"
+		"Ability4"					"tower_invulnerable"
 
 		// Building Size
 		"ConstructionSize"          "4"
@@ -4500,6 +4508,7 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
+		"Ability1"					"empty"
 		"Ability2"					"sell_tower"
 		"Ability3"					"windrunner_shackleshot_datadriven"
 		"Ability6"					"tower_invulnerable"
@@ -4619,13 +4628,13 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "5883" } // Weapon
-				"2"  { "ItemDef" "5979" } // Quiver
-				"3"  { "ItemDef" "5673" } // Head
-				"4"  { "ItemDef" "5989" } // Back
-				"5"  { "ItemDef" "5985" } // Shoulder
-				"6"  { "ItemDef" "5975" } // Legs
-				"7"  { "ItemDef" "5986" } // Arms
+				"1"  { "ItemDef" "13070" } // Weapon
+				"2"  { "ItemDef" "13072" } // Quiver
+				"3"  { "ItemDef" "13074" } // Head
+				"4"  { "ItemDef" "13075" } // Back
+				"5"  { "ItemDef" "13071" } // Shoulder
+				"6"  { "ItemDef" "13073" } // Legs
+				"7"  { "ItemDef" "13076" } // Arms
 			}
 		}
 	}
@@ -4709,7 +4718,7 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "6913" } // Weapon
+				"1"  { "ItemDef" "12616" } // Weapon
 				"2"  { "ItemDef" "12619" } // Quiver
 				"3"  { "ItemDef" "12906" } // Head
 				"4"  { "ItemDef" "8006" } // Back
@@ -4784,8 +4793,9 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"sell_tower"
-		"Ability2"					"drow_ranger_marksmanship"
+		"Ability1"					"empty"
+		"Ability2"					"sell_tower"
+		"Ability3"					"drow_ranger_marksmanship"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -4806,7 +4816,7 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "12616" } // Weapon
+				"1"  { "ItemDef" "12946" } // Weapon
 				"2"  { "ItemDef" "6557" } // Quiver
 				"3"  { "ItemDef" "6785" } // Head
 				"4"  { "ItemDef" "8037" } // Back
@@ -5092,6 +5102,7 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
+		"Ability1"					"empty"
 		"Ability2"					"sell_tower"
 		"Ability3"					"mirana_starfall_datadriven"
 		"Ability6"					"tower_invulnerable"
@@ -5397,8 +5408,9 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"sell_tower"
-		"Ability2"					"furion_sprout_datadriven"
+		"Ability1"					"empty"
+		"Ability2"					"sell_tower"
+		"Ability3"					"furion_sprout_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -5697,8 +5709,9 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"sell_tower"
-		"Ability2"					"venomancer_venomous_gale_datadriven"
+		"Ability1"					"empty"
+		"Ability2"					"sell_tower"
+		"Ability3"					"venomancer_venomous_gale_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -5991,8 +6004,9 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"sell_tower"
-		"Ability2"					"viper_viper_strike_datadriven"
+		"Ability1"					"empty"
+		"Ability2"					"sell_tower"
+		"Ability3"					"viper_viper_strike_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -6282,8 +6296,10 @@
 		"HealthBarOffset"       	"200"
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
-		"Ability1"					"sell_tower"
-		"Ability2"					"crystal_maiden_crystal_nova"
+		
+		"Ability1"					"empty"
+		"Ability2"					"sell_tower"
+		"Ability3"					"crystal_maiden_crystal_nova"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -6580,8 +6596,9 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"sell_tower"
-		"Ability2"					"chakra_magic_datadriven"
+		"Ability1"					"empty"
+		"Ability2"					"sell_tower"
+		"Ability3"					"chakra_magic_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -6878,8 +6895,9 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"sell_tower"
-		"Ability2"					"vengefulspirit_magic_missile_datadriven"
+		"Ability1"					"empty"
+		"Ability2"					"sell_tower"
+		"Ability3"					"vengefulspirit_magic_missile_datadriven"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size

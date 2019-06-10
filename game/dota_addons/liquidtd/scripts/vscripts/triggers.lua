@@ -2,7 +2,7 @@ function OnStartTouch(trigger)
 	local activator = trigger.activator
 	if not activator:IsRealHero() then
 		activator.destination_reached = true
-		-- Kill the creep
+	-- Kill the creep
 		activator:ForceKill(false)
 		activator:AddNoDraw()
 		-- Damage the player
@@ -39,6 +39,6 @@ function OnStartTouch(trigger)
 					hero:AddNoDraw()
 				end)
 			end
-		end
+		end	
 	end
 end
