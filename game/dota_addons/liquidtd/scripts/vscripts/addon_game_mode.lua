@@ -107,6 +107,7 @@ function Precache( context )
 	PrecacheResource( "particle", "particles/units/heroes/hero_lina/lina_base_attack.vpcf", context )
 	PrecacheResource( "particle", "particles/creep_effects/spawn_effect.vpcf", context )
 	PrecacheResource( "particle", "particles/creep_effects/leak_effect.vpcf", context )
+	PrecacheResource( "particle", "particles/econ/events/ti8/hero_levelup_ti8.vpcf", contetxt )
 	-- Tower Stars
 	PrecacheResource( "particle", "particles/arrow/star1.vpcf", context )
 	PrecacheResource( "particle", "particles/arrow/star2_1.vpcf", context )

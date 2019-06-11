@@ -26,6 +26,12 @@ function UpgradeTower(keys)
 		new_building:AddItem(v)
 	end
 	
+	-- Add Level Up Particle as Upgrade Effect.
+	local particleName = "particles/econ/events/ti8/hero_levelup_ti8.vpcf"
+    local particle = ParticleManager:CreateParticle( particleName, PATTACH_ABSORIGIN_FOLLOW, new_building)
+	ParticleManager:SetParticleControl(particle, 0, new_building:GetOrigin())
+    ParticleManager:SetParticleControl(particle, 3, new_building:GetOrigin())
+	
 	-- If the building to ugprade is selected, change the selection to the new one
 	if PlayerResource:IsUnitSelected(playerID, tower) then
       PlayerResource:AddToSelection(playerID, new_building)
