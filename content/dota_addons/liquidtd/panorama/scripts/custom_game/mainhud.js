@@ -71,7 +71,7 @@ function OnRoundStart(data){
 
 (function () {
 	GameEvents.Subscribe("game_time_changed", UpdateGameTime);
-  GameEvents.Subscribe("next_round_time_changed", UpdateNextRoundTime);
+    GameEvents.Subscribe("next_round_time_changed", UpdateNextRoundTime);
 	GameEvents.Subscribe("error", ErrorMessage);
 	GameEvents.Subscribe("round_started", OnRoundStart);
 	$.GetContextPanel().ToggleClass("Minimized");
