@@ -6,5 +6,6 @@
         "selection",
         "construction_size",
         "building_settings",
+		"tango",
     ]
 } 

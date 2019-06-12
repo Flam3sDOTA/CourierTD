@@ -436,7 +436,7 @@
 									<Image class="TierImageTower" id="TierImageTower" src="file://{images}/custom_game/buff_outline_psd_mip0.tga" />
 									<Image class="TierImageTower2" id="TierImageTower2" src="file://{images}/custom_game/icon_kill_ally_psd_mip0.tga" />
 								</Panel>
-								<Button class="DemoButton" onactivate="" onmouseover="UIShowTextTooltip(+20 Attack Damage for ★ classic towers)"  onmouseout="UIHideTextTooltip()">
+								<Button class="DemoButton" onactivate="DamagePressed20Classic();" onmouseover="UIShowTextTooltip(+20 Attack Damage for ★ classic towers)"  onmouseout="UIHideTextTooltip()">
 									<Image id="LumberIconShop" src="file://{images}/custom_game/lumber_icon.png" />
 									<Label id="LumberCost" text="50"/>
 								</Button>
@@ -444,7 +444,7 @@
 									<Image class="TierImageTower" id="TierImageTower" src="file://{images}/custom_game/buff_outline_psd_mip0.tga" />
 									<Image class="TierImageTower4" id="TierImageTower4" src="file://{images}/custom_game/ability_manacost_icon_psd_mip0.tga" />
 								</Panel>
-								<Button class="DemoButton" onactivate="" onmouseover="UIShowTextTooltip(-20 Ability Manacost for ★ classic towers)"  onmouseout="UIHideTextTooltip()">
+								<Button class="DemoButton" onactivate="ManaCost20Classic()" onmouseover="UIShowTextTooltip(-20 Ability Manacost for ★ classic towers)"  onmouseout="UIHideTextTooltip()">
 									<Image id="LumberIconShop" src="file://{images}/custom_game/lumber_icon.png" />
 									<Label id="LumberCost" text="50"/>
 								</Button>
@@ -452,7 +452,7 @@
 									<Image class="TierImageTower" id="TierImageTower" src="file://{images}/custom_game/buff_outline_psd_mip0.tga" />
 									<Image class="TierImageTower2" id="TierImageTower3" src="file://{images}/custom_game/cooldown_png_mip0.tga" />
 								</Panel>
-								<Button class="DemoButton" onactivate="" onmouseover="UIShowTextTooltip(-1 second ability cd for ★ classic towers)"  onmouseout="UIHideTextTooltip()">
+								<Button class="DemoButton" onactivate="CD1Classic()" onmouseover="UIShowTextTooltip(-1 second ability cd for ★ classic towers)"  onmouseout="UIHideTextTooltip()">
 									<Image id="LumberIconShop" src="file://{images}/custom_game/lumber_icon.png" />
 									<Label id="LumberCost" text="50"/>
 								</Button>
@@ -462,7 +462,7 @@
 									<Image class="TierImageTower" id="TierImageTower" src="file://{images}/custom_game/buff_outline_psd_mip0.tga" />
 									<Image class="TierImageTower2" id="TierImageTower2" src="file://{images}/custom_game/icon_kill_ally_psd_mip0.tga" />
 								</Panel>
-								<Button class="DemoButton" onactivate="" onmouseover="UIShowTextTooltip(+50 Attack Damage for ★★ classic towers)"  onmouseout="UIHideTextTooltip()">
+								<Button class="DemoButton" onactivate="DamagePressed50Classic()" onmouseover="UIShowTextTooltip(+50 Attack Damage for ★★ classic towers)"  onmouseout="UIHideTextTooltip()">
 									<Image id="LumberIconShop" src="file://{images}/custom_game/lumber_icon.png" />
 									<Label id="LumberCost" text="250"/>
 								</Button>
@@ -470,7 +470,7 @@
 									<Image class="TierImageTower" id="TierImageTower" src="file://{images}/custom_game/buff_outline_psd_mip0.tga" />
 									<Image class="TierImageTower4" id="TierImageTower4" src="file://{images}/custom_game/ability_manacost_icon_psd_mip0.tga" />
 								</Panel>
-								<Button class="DemoButton" onactivate="" onmouseover="UIShowTextTooltip(-30 Ability Manacost for ★★ classic towers)"  onmouseout="UIHideTextTooltip()">
+								<Button class="DemoButton" onactivate="ManaCost30Classic()" onmouseover="UIShowTextTooltip(-30 Ability Manacost for ★★ classic towers)"  onmouseout="UIHideTextTooltip()">
 									<Image id="LumberIconShop" src="file://{images}/custom_game/lumber_icon.png" />
 									<Label id="LumberCost" text="250"/>
 								</Button>
@@ -478,7 +478,7 @@
 									<Image class="TierImageTower" id="TierImageTower" src="file://{images}/custom_game/buff_outline_psd_mip0.tga" />
 									<Image class="TierImageTower2" id="TierImageTower3" src="file://{images}/custom_game/cooldown_png_mip0.tga" />
 								</Panel>
-								<Button class="DemoButton" onactivate="" onmouseover="UIShowTextTooltip(-2 seconds ability cd for ★★ classic towers)"  onmouseout="UIHideTextTooltip()">
+								<Button class="DemoButton" onactivate="CD2Classic()" onmouseover="UIShowTextTooltip(-2 seconds ability cd for ★★ classic towers)"  onmouseout="UIHideTextTooltip()">
 									<Image id="LumberIconShop" src="file://{images}/custom_game/lumber_icon.png" />
 									<Label id="LumberCost" text="250"/>
 								</Button>
@@ -488,7 +488,7 @@
 									<Image class="TierImageTower" id="TierImageTower" src="file://{images}/custom_game/buff_outline_psd_mip0.tga" />
 									<Image class="TierImageTower2" id="TierImageTower2" src="file://{images}/custom_game/icon_kill_ally_psd_mip0.tga" />
 								</Panel>
-								<Button class="DemoButton" onactivate="" onmouseover="UIShowTextTooltip(+100 Attack Damage for ★★★ classic towers)"  onmouseout="UIHideTextTooltip()">
+								<Button class="DemoButton" onactivate="DamagePressed100Classic()" onmouseover="UIShowTextTooltip(+100 Attack Damage for ★★★ classic towers)"  onmouseout="UIHideTextTooltip()">
 									<Image id="LumberIconShop" src="file://{images}/custom_game/lumber_icon.png" />
 									<Label id="LumberCost" text="750"/>
 								</Button>
@@ -496,7 +496,7 @@
 									<Image class="TierImageTower" id="TierImageTower" src="file://{images}/custom_game/buff_outline_psd_mip0.tga" />
 									<Image class="TierImageTower4" id="TierImageTower4" src="file://{images}/custom_game/ability_manacost_icon_psd_mip0.tga" />
 								</Panel>
-								<Button class="DemoButton" onactivate="" onmouseover="UIShowTextTooltip(-50 Ability Manacost for ★★★ classic towers)"  onmouseout="UIHideTextTooltip()">
+								<Button class="DemoButton" onactivate="ManaCost50Classic()" onmouseover="UIShowTextTooltip(-50 Ability Manacost for ★★★ classic towers)"  onmouseout="UIHideTextTooltip()">
 									<Image id="LumberIconShop" src="file://{images}/custom_game/lumber_icon.png" />
 									<Label id="LumberCost" text="750"/>
 								</Button>
@@ -504,7 +504,7 @@
 									<Image class="TierImageTower" id="TierImageTower" src="file://{images}/custom_game/buff_outline_psd_mip0.tga" />
 									<Image class="TierImageTower2" id="TierImageTower3" src="file://{images}/custom_game/cooldown_png_mip0.tga" />
 								</Panel>
-								<Button class="DemoButton" onactivate="" onmouseover="UIShowTextTooltip(-3 seconds ability cd for ★★★ classic towers)"  onmouseout="UIHideTextTooltip()">
+								<Button class="DemoButton" onactivate="CD3Classic()" onmouseover="UIShowTextTooltip(-3 seconds ability cd for ★★★ classic towers)"  onmouseout="UIHideTextTooltip()">
 									<Image id="LumberIconShop" src="file://{images}/custom_game/lumber_icon.png" />
 									<Label id="LumberCost" text="750"/>
 								</Button>
@@ -514,7 +514,7 @@
 									<Image class="TierImageUtility" id="TierImageUtility" src="file://{images}/custom_game/buff_outline_psd_mip0.tga" />
 									<Image class="TierImageUtility2" id="TierImageUtility2" src="file://{images}/custom_game/icon_kill_ally_psd_mip0.tga" />
 								</Panel>
-								<Button class="DemoButton2" onactivate="" onmouseover="UIShowTextTooltip(+20 Attack Damage for ★ utility towers)"  onmouseout="UIHideTextTooltip()">
+								<Button class="DemoButton2" onactivate="DamagePressed20Utility()" onmouseover="UIShowTextTooltip(+20 Attack Damage for ★ utility towers)"  onmouseout="UIHideTextTooltip()">
 									<Image id="LumberIconShop" src="file://{images}/custom_game/lumber_icon.png" />
 									<Label id="LumberCost" text="50"/>
 								</Button>
@@ -522,7 +522,7 @@
 									<Image class="TierImageUtility" id="TierImageUtility" src="file://{images}/custom_game/buff_outline_psd_mip0.tga" />
 									<Image class="TierImageTower4" id="TierImageTower4" src="file://{images}/custom_game/ability_manacost_icon_psd_mip0.tga" />
 								</Panel>
-								<Button class="DemoButton2" onactivate="" onmouseover="UIShowTextTooltip(-20 Ability Manacost for ★ utility towers)"  onmouseout="UIHideTextTooltip()">
+								<Button class="DemoButton2" onactivate="ManaCost20Utility()" onmouseover="UIShowTextTooltip(-20 Ability Manacost for ★ utility towers)"  onmouseout="UIHideTextTooltip()">
 									<Image id="LumberIconShop" src="file://{images}/custom_game/lumber_icon.png" />
 									<Label id="LumberCost" text="50"/>
 								</Button>
@@ -530,7 +530,7 @@
 									<Image class="TierImageUtility" id="TierImageUtility" src="file://{images}/custom_game/buff_outline_psd_mip0.tga" />
 									<Image class="TierImageTower2" id="TierImageTower3" src="file://{images}/custom_game/cooldown_png_mip0.tga" />
 								</Panel>
-								<Button class="DemoButton2" onactivate="" onmouseover="UIShowTextTooltip(-1 second ability cd for ★ utility towers)"  onmouseout="UIHideTextTooltip()">
+								<Button class="DemoButton2" onactivate="CD1Utility()" onmouseover="UIShowTextTooltip(-1 second ability cd for ★ utility towers)"  onmouseout="UIHideTextTooltip()">
 									<Image id="LumberIconShop" src="file://{images}/custom_game/lumber_icon.png" />
 									<Label id="LumberCost" text="50"/>
 								</Button>
@@ -540,7 +540,7 @@
 									<Image class="TierImageUtility" id="TierImageUtility" src="file://{images}/custom_game/buff_outline_psd_mip0.tga" />
 									<Image class="TierImageUtility2" id="TierImageUtility2" src="file://{images}/custom_game/icon_kill_ally_psd_mip0.tga" />
 								</Panel>
-								<Button class="DemoButton2" onactivate="" onmouseover="UIShowTextTooltip(+50 Attack Damage for ★★ utility towers)"  onmouseout="UIHideTextTooltip()">
+								<Button class="DemoButton2" onactivate="DamagePressed50Utility()" onmouseover="UIShowTextTooltip(+50 Attack Damage for ★★ utility towers)"  onmouseout="UIHideTextTooltip()">
 									<Image id="LumberIconShop" src="file://{images}/custom_game/lumber_icon.png" />
 									<Label id="LumberCost" text="250"/>
 								</Button>
@@ -548,7 +548,7 @@
 									<Image class="TierImageUtility" id="TierImageUtility" src="file://{images}/custom_game/buff_outline_psd_mip0.tga" />
 									<Image class="TierImageTower4" id="TierImageTower4" src="file://{images}/custom_game/ability_manacost_icon_psd_mip0.tga" />
 								</Panel>
-								<Button class="DemoButton2" onactivate="" onmouseover="UIShowTextTooltip(-30 Ability Manacost for ★★ utility towers)"  onmouseout="UIHideTextTooltip()">
+								<Button class="DemoButton2" onactivate="ManaCost30Utility()" onmouseover="UIShowTextTooltip(-30 Ability Manacost for ★★ utility towers)"  onmouseout="UIHideTextTooltip()">
 									<Image id="LumberIconShop" src="file://{images}/custom_game/lumber_icon.png" />
 									<Label id="LumberCost" text="250"/>
 								</Button>
@@ -556,7 +556,7 @@
 									<Image class="TierImageUtility" id="TierImageUtility" src="file://{images}/custom_game/buff_outline_psd_mip0.tga" />
 									<Image class="TierImageTower2" id="TierImageTower3" src="file://{images}/custom_game/cooldown_png_mip0.tga" />
 								</Panel>
-								<Button class="DemoButton2" onactivate="" onmouseover="UIShowTextTooltip(-2 seconds ability cd for ★★ utility towers)"  onmouseout="UIHideTextTooltip()">
+								<Button class="DemoButton2" onactivate="CD2Utility()" onmouseover="UIShowTextTooltip(-2 seconds ability cd for ★★ utility towers)"  onmouseout="UIHideTextTooltip()">
 									<Image id="LumberIconShop" src="file://{images}/custom_game/lumber_icon.png" />
 									<Label id="LumberCost" text="250"/>
 								</Button>
@@ -566,7 +566,7 @@
 									<Image class="TierImageUtility" id="TierImageUtility" src="file://{images}/custom_game/buff_outline_psd_mip0.tga" />
 									<Image class="TierImageUtility2" id="TierImageUtility2" src="file://{images}/custom_game/icon_kill_ally_psd_mip0.tga" />
 								</Panel>
-								<Button class="DemoButton2" onactivate="" onmouseover="UIShowTextTooltip(+100 Attack Damage for ★★★ utility towers)"  onmouseout="UIHideTextTooltip()">
+								<Button class="DemoButton2" onactivate="DamagePressed100Utility()" onmouseover="UIShowTextTooltip(+100 Attack Damage for ★★★ utility towers)"  onmouseout="UIHideTextTooltip()">
 									<Image id="LumberIconShop" src="file://{images}/custom_game/lumber_icon.png" />
 									<Label id="LumberCost" text="750"/>
 								</Button>
@@ -574,7 +574,7 @@
 									<Image class="TierImageUtility" id="TierImageUtility" src="file://{images}/custom_game/buff_outline_psd_mip0.tga" />
 									<Image class="TierImageTower4" id="TierImageTower4" src="file://{images}/custom_game/ability_manacost_icon_psd_mip0.tga" />
 								</Panel>
-								<Button class="DemoButton2" onactivate="" onmouseover="UIShowTextTooltip(-50 Ability Manacost for ★★★ utility towers)"  onmouseout="UIHideTextTooltip()">
+								<Button class="DemoButton2" onactivate="ManaCost50Utility()" onmouseover="UIShowTextTooltip(-50 Ability Manacost for ★★★ utility towers)"  onmouseout="UIHideTextTooltip()">
 									<Image id="LumberIconShop" src="file://{images}/custom_game/lumber_icon.png" />
 									<Label id="LumberCost" text="750"/>
 								</Button>
@@ -582,7 +582,7 @@
 									<Image class="TierImageUtility" id="TierImageUtility" src="file://{images}/custom_game/buff_outline_psd_mip0.tga" />
 									<Image class="TierImageTower4" id="TierImageTower3" src="file://{images}/custom_game/cooldown_png_mip0.tga" />
 								</Panel>
-								<Button class="DemoButton2" onactivate="" onmouseover="UIShowTextTooltip(-3 seconds ability cd for ★★★ utility towers)"  onmouseout="UIHideTextTooltip()">
+								<Button class="DemoButton2" onactivate="CD3Utility()" onmouseover="UIShowTextTooltip(-3 seconds ability cd for ★★★ utility towers)"  onmouseout="UIHideTextTooltip()">
 									<Image id="LumberIconShop" src="file://{images}/custom_game/lumber_icon.png" />
 									<Label id="LumberCost" text="750"/>
 								</Button>
