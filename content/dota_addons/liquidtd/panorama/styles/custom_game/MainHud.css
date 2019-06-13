@@ -1838,7 +1838,7 @@ DOTAAvatarImage {
 
 .DemoButton
 {
-	background-color: gradient( linear, 0% 0%, 0% 100%, from( #60862d ), to( #3d5f1c ) );
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #307663 ), to( #245a4b ) );
 
 	height: 32px;
 	width: 140px;
@@ -1863,9 +1863,9 @@ DOTAAvatarImage {
 	tooltip-position: bottom;
 }
 
-.DemoButton2
+#DemoButton
 {
-	background-color: gradient( linear, 0% 0%, 0% 100%, from( #BF6819 ), to( #BF6819 ) );
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #307663 ), to( #245a4b ) );
 
 	height: 32px;
 	width: 140px;
@@ -1887,6 +1887,72 @@ DOTAAvatarImage {
     transition-duration: 0.15s;
     transition-timing-function: linear;
 	
+	tooltip-position: bottom;
+}
+
+.DemoButton:hover
+{
+	background-color: gray;
+}
+
+#DemoButton:hover,
+#DemoButton2:hover,
+#DemoButton3:hover,
+#DemoButton4:hover,
+#DemoButton5:hover,
+#DemoButton6:hover,
+#DemoButton7:hover,
+#DemoButton8:hover,
+#DemoButton9:hover
+{
+	background-color: gray;
+}
+
+.DemoButton2
+{
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #c28000 ), to( #744c00 ) );
+
+	height: 32px;
+	width: 140px;
+
+	margin-top: 70px;
+	margin-bottom: 3px;
+	margin-left: -143px;
+	margin-right: 3px;
+
+    border-style: solid;
+    border-width: 1px;
+
+    border-top: 1px solid #ffffff22;
+	border-left: 1px solid #ffffff11;
+	border-right: 1px solid #00000044;
+	border-bottom: 1px solid #00000088;
+
+    transition-property: background-color;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+	
+	tooltip-position: bottom;
+}
+
+.DemoButtonPurchased
+{
+	background-color: green;
+	height: 32px;
+	width: 140px;
+	margin-top: 70px;
+	margin-bottom: 3px;
+	margin-left: -143px;
+	margin-right: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-top: 1px solid #ffffff22;
+	border-left: 1px solid #ffffff11;
+	border-right: 1px solid #00000044;
+	border-bottom: 1px solid #00000088;
+    transition-property: background-color;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
 	tooltip-position: bottom;
 }
 
