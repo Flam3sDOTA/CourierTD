@@ -1,7 +1,5 @@
 "use strict"
 
-var TangoAmount = 0;
-
 function UpdateGold() {
 	var playerID = Players.GetLocalPlayer();
 	var gold = Players.GetGold(playerID);
@@ -53,7 +51,6 @@ function DamagePressed100Classic() {
 	Game.EmitSound("ui_select_blue");
 	}
 }
-
 
 function ManaCost20Classic() {
 	if(Tango < 50){

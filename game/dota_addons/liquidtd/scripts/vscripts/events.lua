@@ -199,27 +199,4 @@ local player = PlayerResource:GetPlayer(playerID)
   StartSpawning() 
 end
 
-
-function CDOTA_BaseNPC:GetTango()
-  if not self.tango then self.tango = 0 end
-  return self.tango
-end
- 
-function CDOTA_BaseNPC:SetTango(tango)
-  if not self.tango then self.tango = 0 end
-  self.tango = tango
-  CustomNetTables:SetTableValue("tango",
-    tostring(self:GetPlayerOwnerID()),
-    {value = 1})
-end
- 
-function CDOTA_BaseNPC:ModifyTango(value)
-  self:SetTango(math.max(0, self.tango + value))
-end
- 
-function CDOTA_BaseNPC:GiveTango(value)
-  if not self.tango then self.tango = 0 end
-  self:SetTango(self.tango + value)
-end
-
 	
