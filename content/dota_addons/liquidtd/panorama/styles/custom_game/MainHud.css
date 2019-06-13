@@ -2229,6 +2229,11 @@ DOTAAvatarImage {
 	background-color: gradient( linear, 0% 0%, 0% 100%, from( #307663 ), to( #245a4b ) );
 }
 
+.LumberLabelPanelExchange:active
+{
+	pre-transform-scale2d: 1.05;
+}
+
 #TangoText1
 {
   color: gold;

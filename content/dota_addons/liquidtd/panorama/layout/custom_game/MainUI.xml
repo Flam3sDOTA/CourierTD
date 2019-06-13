@@ -403,7 +403,7 @@
 			<Image id="LumberIcon" src="file://{images}/custom_game/lumber_icon.png" onmouseover="UIShowTextTooltip(Coming Soon)"  onmouseout="UIHideTextTooltip()"/>
 		  </Panel>
 		  <Panel hittest="false" id='LumberLabelPanel'>
-			<Label hittest="false" id="LumberText" text="Comig Soon" class="TitleFont" />
+			<Label hittest="false" id="LumberText" text="0" class="TitleFont" />
 		  </Panel>
 		   <Panel hittest="false" id='FoodIconPanel'>
 			<Image id="FoodIcon" src="file://{images}/custom_game/food_icon.png" onmouseover="UIShowTextTooltip(Comig Soon)"  onmouseout="UIHideTextTooltip()" />
@@ -412,7 +412,7 @@
 			<Label hittest="false" id="FoodText" text="Coming Soon" html="true" class="TitleFont" />
 		  </Panel>
 		</Panel>
-		<!--
+	
 		<Panel hittest="false" id='ExchangePanel'>
 		  <Label hittest="false" id="ExchangeLabel" text="Exchange" class="ExchangeLabel" />
 		  <Label hittest="false" id="TangoText1" text="500 Gold"/>
@@ -593,6 +593,6 @@
 					<Panel class="RightArrowButtonIcon"/>
 				</Button>
 			</Panel>
-		</Panel> -->
+		</Panel>
     </Panel>
 </root>

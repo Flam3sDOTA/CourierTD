@@ -16,10 +16,7 @@ function OnExchangeButtonPressed() {
     else{
         Game.EmitSound("ui_select_blue");
 		var playerID = Players.GetLocalPlayer();
-		var data = CustomNetTables.GetTableValue("tango", playerID);
-		if (data && data.value) {
-			$('#LumberText').text = data.value;
-		}
+		$('#LumberText').text = Tango;
     }
 }
 
