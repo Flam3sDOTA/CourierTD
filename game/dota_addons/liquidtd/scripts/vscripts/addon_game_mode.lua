@@ -342,7 +342,7 @@ function LiquidTD:InitGameMode()
 	ListenToGameEvent('entity_hurt', Dynamic_Wrap(LiquidTD, 'OnEntityHurt'), self)
 	ListenToGameEvent('game_rules_state_change', Dynamic_Wrap( LiquidTD, 'OnGameRulesStateChange' ), self )
 	
-	CustomGameEventManager:RegisterListener( "DamagePressed20Classic", function(...) return self:DamagePressed20Classic( ... ) end)
+	CustomGameEventManager:RegisterListener( "TangoShopButtonPressed", function(...) return self:TangoShopButtonPressed( ... ) end)
 	CustomGameEventManager:RegisterListener( "exchange_tango_from_gold", function(...) return self:OnExchangeTangoFromGold( ... ) end)
 	
 	

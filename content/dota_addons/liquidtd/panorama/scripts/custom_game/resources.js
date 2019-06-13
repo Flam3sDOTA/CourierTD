@@ -1,5 +1,6 @@
 "use strict"
 var playerID = Players.GetLocalPlayer();
+var Tangoes = 0;
 
 function UpdateGold() {
 	var gold = Players.GetGold(playerID);
@@ -9,199 +10,46 @@ function UpdateGold() {
 
 function UpdateTangoesOnClient(msg){
 	$('#LumberText').text = msg.amount;
+	Tangoes = msg.amount;
 }
 
 function OnExchangeButtonPressed() {
 	var gold = Players.GetGold(playerID);
-	if(gold < 500){
-        Game.EmitSound("versus_screen.towers_nopass");
-    }
-    else{
-		GameEvents.SendCustomGameEventToServer( "exchange_tango_from_gold", 
-				{ "playerID" : playerID });
-        Game.EmitSound("ui_select_blue");
-    }
+	if (gold < 500){
+		Game.EmitSound("versus_screen.towers_nopass");
+	}
+	else {
+		GameEvents.SendCustomGameEventToServer("exchange_tango_from_gold", {});
+		Game.EmitSound("ui_select_blue");
+	}
 }
 
 function DamagePressed20Classic() {
-    GameEvents.SendCustomGameEventToServer( "DamagePressed20Classic", 
-                { "playerID" : playerID ,
-        "cost" : 1});
+	GameEvents.SendCustomGameEventToServer("DamagePressed20Classic", {"cost" : 1});
 }
 
-function Damage20ClassicPaymentDone(msg)
+function OnShopPurchase(data)
 {
-	var IsSuccess = msg.result 
-    if(IsSuccess){
-		Game.EmitSound("ui_select_blue");
-		$('#LumberText').text = msg.latest_amount ;
-	}
-	else{
-		Game.EmitSound("versus_screen.towers_nopass");
-	}
+	var latest_amount = data.latest_amount;
+	var id = data.panelID;
+	var button = $("#" + id);
+	// Disable the button here
 }
 
-
-
-function DamagePressed50Classic() {
-	if(Tango < 250){
-        Game.EmitSound("versus_screen.towers_nopass");
-    }
-    else{
-	Game.EmitSound("ui_select_blue");
-	}
-}
-
-
-function DamagePressed100Classic() {
-	if(Tango < 750){
-        Game.EmitSound("versus_screen.towers_nopass");
-    }
-    else{
-	Game.EmitSound("ui_select_blue");
-	}
-}
-
-function ManaCost20Classic() {
-	if(Tango < 50){
-        Game.EmitSound("versus_screen.towers_nopass");
-    }
-    else{
-	Game.EmitSound("ui_select_blue");
-	}
-}
-
-function ManaCost30Classic() {
-	if(Tango < 250){
-        Game.EmitSound("versus_screen.towers_nopass");
-    }
-    else{
-	Game.EmitSound("ui_select_blue");
-	}
-}
-
-function ManaCost50Classic() {
-	if(Tango < 750){
-        Game.EmitSound("versus_screen.towers_nopass");
-    }
-    else{
-	Game.EmitSound("ui_select_blue");
-	}
-}
-
-function CD1Classic() {
-	if(Tango < 50){
-        Game.EmitSound("versus_screen.towers_nopass");
-    }
-    else{
-	Game.EmitSound("ui_select_blue");
-	}
-}
-
-function CD2Classic() {
-	if(Tango < 250){
-        Game.EmitSound("versus_screen.towers_nopass");
-    }
-    else{
-	Game.EmitSound("ui_select_blue");
-	}
-}
-
-function CD3Classic() {
-	if(Tango < 750){
-        Game.EmitSound("versus_screen.towers_nopass");
-    }
-    else{
-	Game.EmitSound("ui_select_blue");
-	}
-}
-
-function DamagePressed20Utility() {
-	if(Tango < 50){
-        Game.EmitSound("versus_screen.towers_nopass");
-    }
-    else{
-	Game.EmitSound("ui_select_blue");
-	}
-}
-
-
-function DamagePressed50Utility() {
-	if(Tango < 250){
-        Game.EmitSound("versus_screen.towers_nopass");
-    }
-    else{
-	Game.EmitSound("ui_select_blue");
-	}
-}
-
-
-function DamagePressed100Utility() {
-	if(Tango < 750){
-        Game.EmitSound("versus_screen.towers_nopass");
-    }
-    else{
-	Game.EmitSound("ui_select_blue");
-	}
-}
-
-function ManaCost20Utility() {
-	if(Tango < 50){
-        Game.EmitSound("versus_screen.towers_nopass");
-    }
-    else{
-	Game.EmitSound("ui_select_blue");
-	}
-}
-
-function ManaCost30Utility() {
-	if(Tango < 250){
-        Game.EmitSound("versus_screen.towers_nopass");
-    }
-    else{
-	Game.EmitSound("ui_select_blue");
-	}
-}
-
-function ManaCost50Utility() {
-	if(Tango < 750){
-        Game.EmitSound("versus_screen.towers_nopass");
-    }
-    else{
-	Game.EmitSound("ui_select_blue");
-	}
-}
-
-function CD1Utility() {
-	if(Tango < 50){
-        Game.EmitSound("versus_screen.towers_nopass");
-    }
-    else{
-	Game.EmitSound("ui_select_blue");
-	}
-}
-
-function CD2Utility() {
-	if(Tango < 250){
-        Game.EmitSound("versus_screen.towers_nopass");
-    }
-    else{
-	Game.EmitSound("ui_select_blue");
-	}
-}
-
-function CD3Utility() {
-	if(Tango < 750){
-        Game.EmitSound("versus_screen.towers_nopass");
-    }
-    else{
-	Game.EmitSound("ui_select_blue");
-	}
+function TangoShopButtonPressed(id, cost, type, amount, towerType) {
+	GameEvents.SendCustomGameEventToServer("TangoShopButtonPressed",
+		{
+			"cost" : cost,
+			"type" : type,
+			"amount" : amount,
+			"towerType" : towerType,
+			"panelID" : id
+		});
 }
 
 
 (function () {
-  GameEvents.Subscribe( "tangoes_changed", UpdateTangoesOnClient);	
-  GameEvents.Subscribe( "Damage20Classic_payment_processed", Damage20ClassicPaymentDone);
+  GameEvents.Subscribe("tangoes_changed", UpdateTangoesOnClient);	
+  GameEvents.Subscribe("shop_purchase", OnShopPurchase);
   UpdateGold();
 })();

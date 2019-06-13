@@ -205,7 +205,7 @@ end
 function LiquidTD:OnExchangeTangoFromGold(msg, event)
     print("Player Has Clicked The Exchange Gold --> for Tango Button !")
 
-    local pID =  math.floor(event['playerID'])
+    local pID =  event.PlayerID
     print(pID)
     print("Player's Gold : " .. PlayerResource:GetGold(pID))
     print("Player's Tango : " .. self.LiquidTDTangoManager:GetPlayerTango(pID))    
@@ -219,13 +219,36 @@ function LiquidTD:OnExchangeTangoFromGold(msg, event)
     print("Sent to Client!")
 end
 
-function LiquidTD:DamagePressed20Classic(msg, event)
-    playerID = math.floor(event['playerID'])
-    cost = math.floor(event['cost'])
-    local CurrentTango = self.LiquidTDTangoManager:GetPlayerTango(playerID)
-    IsSuccess = ( CurrentTango >= cost)
-    if IsSuccess then
-         self.LiquidTDTangoManager:PlayerPayTango(playerID, cost)
-    end
-    CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(playerID), "Damage20Classic_payment_processed",  {result = IsSuccess , latest_amount = self.LiquidTDTangoManager:GetPlayerTango(playerID)})
+function LiquidTD:TangoShopButtonPressed(msg, event)
+  local playerID = event.PlayerID
+  local cost = event.cost
+  local purchaseType = event.type
+  local amount = event.amount
+  local towerType = event.towerType
+  local panelID = event.panelID
+
+  print(playerID, cost, purchaseType, amount, towerType, panelID)
+
+  local CurrentTango = self.LiquidTDTangoManager:GetPlayerTango(playerID)
+
+  if CurrentTango < cost then return end
+  
+  self.LiquidTDTangoManager:PlayerPayTango(playerID, cost)
+
+  if purchaseType == "damage" then
+    -- Give towers damage modifier
+    -- use amount and towerType to determine what modifier to give to who
+  elseif purchaseType == "manacost" then
+    -- Give towers mana cost modifier
+  elseif purchaseType == "cooldown" then
+    -- Give towers cooldown modifier
+  else
+    print("Invalid Purchase Type: " .. purchaseType)
+  end
+
+  CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(playerID), "shop_purchase",  
+    {
+      latest_amount = self.LiquidTDTangoManager:GetPlayerTango(playerID),
+      panelID = panelID,
+    })
 end
