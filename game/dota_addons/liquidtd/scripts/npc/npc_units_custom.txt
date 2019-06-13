@@ -4569,7 +4569,7 @@
 		"Damage"                    "60"  
 		"AttackRange"               "800"
 		"AttackAcquisitionRange"    "800"
-		"AttackRate"                "1"
+		"AttackRate"                "0.9"
 		"AttackAnimationPoint"		"0.65"
 
 		"Level"                     "210"
@@ -4666,7 +4666,7 @@
 		"Damage"                    "150"  
 		"AttackRange"               "800"
 		"AttackAcquisitionRange"    "800"
-		"AttackRate"                "0.9"
+		"AttackRate"                "0.8"
 		"AttackAnimationPoint"		"0.65"
 		
 
@@ -4757,7 +4757,7 @@
 		"Damage"                    "240"  
 		"AttackRange"               "800"
 		"AttackAcquisitionRange"    "800"
-		"AttackRate"                "0.8"
+		"AttackRate"                "0.7"
 		"AttackAnimationPoint"		"0.65"
 
 		"Level"                     "1000"

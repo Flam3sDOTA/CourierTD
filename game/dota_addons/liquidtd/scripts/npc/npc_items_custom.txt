@@ -562,7 +562,7 @@
 		"BaseClass" 					"item_datadriven"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"Model"							"models/props_winter/present.vmdl" 
-		"Effect"						"particles/item_effects/item_tier_1_circle.vpcf"
+		"Effect"						"particles/item_effects/item_tier_2_circle.vpcf"
 		"AbilityTextureName" 			"item_custom_ogre_axe"
 		"ItemDroppable" 				"1"
 		"ItemKillable" 					"1" 
@@ -610,7 +610,7 @@
 		"BaseClass" 					"item_datadriven"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"Model"							"models/props_winter/present.vmdl" 
-		"Effect"						"particles/item_effects/item_tier_1_circle.vpcf"
+		"Effect"						"particles/item_effects/item_tier_2_circle.vpcf"
 		"AbilityTextureName" 			"item_custom_mithril_hammer"
 		"ItemDroppable" 				"1"
 		"ItemKillable" 					"1" 
@@ -637,6 +637,150 @@
 		"Modifiers"
 		{
 			"item_custom_mithril_hammer_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"			"%bonus_damage"
+				}
+			}
+		}			
+	}
+	
+	//============================================================
+	// Mind Sigil - Tier 2
+	//============================================================
+	"item_custom_mind_sigil"
+	{
+		"ID" 							"3204"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_2_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_mind_sigil"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1" 
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_mana_regen"			"5"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_mind_sigil_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"			"%bonus_mana_regen"
+				}
+			}
+		}			
+	}
+	
+	//============================================================
+	// Time Sigil - Tier 2
+	//============================================================
+	"item_custom_time_sigil"
+	{
+		"ID" 							"3205"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_2_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_time_sigil"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1" 
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_mana_regen"			"5"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_time_sigil_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"			"%bonus_mana_regen"
+				}
+			}
+		}			
+	}
+	
+	//============================================================
+	// Demon Edge - Tier 2
+	//============================================================
+	"item_custom_demon_edge"
+	{
+		"ID" 							"3206"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_2_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_demon_edge"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1" 
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"30"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_demon_edge_modifier"
 			{
 				"Passive" 				"1" 
 				"IsHidden" 				"1"
@@ -761,7 +905,7 @@
 		"BaseClass" 					"item_datadriven"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"Model"							"models/props_winter/present.vmdl" 
-		"Effect"						"particles/item_effects/item_tier_2_circle.vpcf"
+		"Effect"						"particles/item_effects/item_tier_3_circle.vpcf"
 		"AbilityTextureName" 			"item_custom_yasha"
 		"ItemDroppable" 				"1"
 		"ItemKillable" 					"1" 
@@ -809,7 +953,7 @@
 		"BaseClass" 					"item_datadriven"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"Model"							"models/props_winter/present.vmdl" 
-		"Effect"						"particles/item_effects/item_tier_1_circle.vpcf"
+		"Effect"						"particles/item_effects/item_tier_3_circle.vpcf"
 		"AbilityTextureName" 			"item_custom_sange"
 		"ItemDroppable" 				"1"
 		"ItemKillable" 					"1" 
@@ -860,7 +1004,7 @@
 		"ID"							"3303"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"Model"							"models/props_winter/present.vmdl" 
-		"Effect"						"particles/item_effects/item_tier_1_circle.vpcf"
+		"Effect"						"particles/item_effects/item_tier_3_circle.vpcf"
 		"AbilityTextureName"			"item_custom_skull_basher"
 		
 		// Stats		
@@ -1077,6 +1221,227 @@
 			}
 		}			
 	}
+	
+	//============================================================
+	// Dragon Lance - Tier 3
+	//============================================================
+	"item_custom_dragon_lance"
+	{
+		"ID" 							"3305"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_3_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_dragon_lance"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1" 
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemDisassembleRule" 			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"10"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"18"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_range"			"140"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_dragon_lance_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"			"%bonus_attack_speed"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"				"%bonus_damage"
+					"MODIFIER_PROPERTY_ATTACK_RANGE_BONUS"					"%bonus_range"
+				}
+			}
+		}		
+	}
+	
+	//============================================================
+	// TIER 4 ITEMS
+	//============================================================
+	// Daedalus - Tier 4
+	//============================================================
+	"item_custom_daedalus"
+	{
+		"ID" 							"4000"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl"
+		"Effect"						"particles/item_effects/item_tier_4_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_daedalus"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1"
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemDisassembleRule" 			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"0"
+		"ItemStackable" 				"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"80"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"crit_damage"			"250"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"crit_chance"			"25"
+			}			
+		}
+		"Modifiers"
+		{
+			"item_custom_daedalus_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"			"%bonus_damage"
+				}
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"			"items/item_daedalus.lua"
+						"Function"				"modifier_item_custom_daedalus_recalculate_crit_chance"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"			"items/item_daedalus.lua"
+						"Function"				"modifier_item_custom_daedalus_recalculate_crit_chance"
+					}
+				}
+			}
+			//Crit chance does not stack, so attach it to a non-MULTIPLE modifier.
+			"modifier_item_custom_daedalus_crit_chance"
+			{
+				"Passive"						"1"
+				"IsHidden"						"1"
+				"OnAttackLanded"
+				{
+					"RunScript"
+					{
+						"ScriptFile"			"items/item_daedalus.lua"
+						"Function"				"modifier_item_custom_daedalus_crit_chance_on_attack_landed"
+						"crit_chance"			"%crit_chance"
+						"crit_damage"			"%crit_damage"
+					}
+				}
+			}
+			"modifier_item_custom_daedalus_crit"
+			{
+				"Passive"						"0"
+				"IsHidden"						"0"
+				"IsBuff"						"0"
+				"IsDebuff"						"1"
+				"IsPurgable"					"0"
+				"EffectName"            		"particles/units/heroes/hero_sandking/sandking_caustic_finale_explode.vpcf"
+				"EffectAttachType"      		"follow_overhead"
+			}
+		}
+	}
+	
+	
+	//============================================================
+	// Sange and Yasha - Tier 4
+	//============================================================
+	"item_custom_sange_yasha"
+	{
+		"ID" 							"4001"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_4_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_sange_yasha"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"1" 
+		"ItemAlertable"					"0"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemDisassembleRule" 			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"40"
+			}
+			
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"30"
+			}
+			
+			
+		}
+		"Modifiers"
+		{
+			"item_custom_sange_yasha_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"				"%bonus_damage"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"			"%bonus_attack_speed"
+				}
+			}
+		}		
+	}
+	
 	//============================================================
 	// RECIPES
 	//============================================================
@@ -1085,7 +1450,7 @@
 	//============================================================
 	"item_recipe_custom_crystalys" 
 	{
-		"ID" 				  			"4000"
+		"ID" 				  			"5000"
 		"BaseClass"           			"item_datadriven"
 		"ItemRecipe"          			"1"
 		"ItemCost"            			"0"
@@ -1101,7 +1466,7 @@
 	//============================================================
 	"item_recipe_custom_yasha" 
 	{
-		"ID" 				  			"4001"
+		"ID" 				  			"5001"
 		"BaseClass"           			"item_datadriven"
 		"ItemRecipe"          			"1"
 		"ItemCost"            			"0"
@@ -1117,7 +1482,7 @@
 	//============================================================
 	"item_recipe_custom_sange" 
 	{
-		"ID" 				  			"4002"
+		"ID" 				  			"5002"
 		"BaseClass"           			"item_datadriven"
 		"ItemRecipe"          			"1"
 		"ItemCost"            			"0"
@@ -1133,7 +1498,7 @@
 	//============================================================
 	"item_recipe_custom_skull_basher" 
 	{
-		"ID" 				  			"4003"
+		"ID" 				  			"5003"
 		"BaseClass"           			"item_datadriven"
 		"ItemRecipe"          			"1"
 		"ItemCost"            			"0"
@@ -1149,7 +1514,7 @@
 	//============================================================
 	"item_recipe_custom_desolator" 
 	{
-		"ID" 				  			"4004"
+		"ID" 				  			"5004"
 		"BaseClass"           			"item_datadriven"
 		"ItemRecipe"          			"1"
 		"ItemCost"            			"0"
@@ -1157,6 +1522,86 @@
 		"ItemRequirements"
 		{
 			"01" 			 			"item_custom_blight_stone;item_custom_mithril_hammer;item_custom_mithril_hammer"
+		}
+	}
+	
+	//============================================================
+	// Dragon Lance Recipe
+	//============================================================
+	"item_recipe_custom_dragon_lance" 
+	{
+		"ID" 				  			"5005"
+		"BaseClass"           			"item_datadriven"
+		"ItemRecipe"          			"1"
+		"ItemCost"            			"0"
+		"ItemResult"          			"item_custom_dragon_lance"
+		"ItemRequirements"
+		{
+			"01" 			 			"item_custom_band_of_elvenskin;item_custom_band_of_elvenskin;item_custom_ogre_axe"
+		}
+	}
+	
+	//============================================================
+	// Time Sigil Recipe
+	//============================================================
+	"item_recipe_custom_time_sigil" 
+	{
+		"ID" 				  			"5006"
+		"BaseClass"           			"item_datadriven"
+		"ItemRecipe"          			"1"
+		"ItemCost"            			"0"
+		"ItemResult"          			"item_custom_time_sigil"
+		"ItemRequirements"
+		{
+			"01" 			 			"item_custom_time_stone;item_custom_time_stone;item_custom_time_stone;item_custom_time_stone"
+		}
+	}
+	
+	//============================================================
+	// Mind Sigil Recipe
+	//============================================================
+	"item_recipe_custom_mind_sigil" 
+	{
+		"ID" 				  			"5007"
+		"BaseClass"           			"item_datadriven"
+		"ItemRecipe"          			"1"
+		"ItemCost"            			"0"
+		"ItemResult"          			"item_custom_mind_sigil"
+		"ItemRequirements"
+		{
+			"01" 			 			"item_custom_mind_stone;item_custom_mind_stone;item_custom_mind_stone;item_custom_mind_stone"
+		}
+	}
+	
+	//============================================================
+	// Daedalus Recipe
+	//============================================================
+	"item_recipe_custom_daedalus" 
+	{
+		"ID" 				  			"5008"
+		"BaseClass"           			"item_datadriven"
+		"ItemRecipe"          			"1"
+		"ItemCost"            			"0"
+		"ItemResult"          			"item_custom_daedalus"
+		"ItemRequirements"
+		{
+			"01" 			 			"item_custom_demon_edge;item_custom_crystalys"
+		}
+	}
+	
+	//============================================================
+	// Sange and Yasha Recipe
+	//============================================================
+	"item_recipe_custom_sange_yasha" 
+	{
+		"ID" 				  			"5009"
+		"BaseClass"           			"item_datadriven"
+		"ItemRecipe"          			"1"
+		"ItemCost"            			"0"
+		"ItemResult"          			"item_custom_sange_yasha"
+		"ItemRequirements"
+		{
+			"01" 			 			"item_custom_sange;item_custom_yasha"
 		}
 	}
 }

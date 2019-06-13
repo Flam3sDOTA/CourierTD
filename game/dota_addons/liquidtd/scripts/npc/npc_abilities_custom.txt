@@ -1590,7 +1590,7 @@
 			"02"
 			{
 				"var_type"    					 "FIELD_FLOAT"
-				"ATTACK_SPEED_TOOLTIP"     		 "1"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.9"
 			}
 			"03"
 			{
@@ -1635,7 +1635,7 @@
 			"02"
 			{
 				"var_type"    					 "FIELD_FLOAT"
-				"ATTACK_SPEED_TOOLTIP"     		 "0.9"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.8"
 			}
 			"03"
 			{
@@ -1680,7 +1680,7 @@
 			"02"
 			{
 				"var_type"    					 "FIELD_FLOAT"
-				"ATTACK_SPEED_TOOLTIP"     		 "0.8"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.7"
 			}
 			"03"
 			{

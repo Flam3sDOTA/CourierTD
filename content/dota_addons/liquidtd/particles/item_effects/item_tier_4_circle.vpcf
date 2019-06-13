@@ -1,4 +1,4 @@
-<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf19:version{aafc65d8-7a5a-4e01-bd8d-3ac118422503} -->
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf21:version{7a150ecc-d865-438f-ad53-5963fe1a2720} -->
 {
 	_class = "CParticleSystemDefinition"
 	m_nConstantSequenceNumber = 1
@@ -44,6 +44,7 @@
 			m_nOrientationType = 3
 			m_flSelfIllumAmount = 1.0
 			m_hTexture = resource:"materials/particle/customgames/cp_elements/cp_icon_elements.vtex"
+			m_ColorScale = [ 255, 255, 255 ]
 		},
 	]
 	m_Initializers = 
@@ -59,8 +60,8 @@
 		},
 		{
 			_class = "C_INIT_RandomColor"
-			m_ColorMin = [ 235, 75, 92, 255 ]
-			m_ColorMax = [ 235, 75, 92, 255 ]
+			m_ColorMin = [ 235, 75, 75, 255 ]
+			m_ColorMax = [ 235, 75, 75, 255 ]
 		},
 		{
 			_class = "C_INIT_RandomLifeTime"
