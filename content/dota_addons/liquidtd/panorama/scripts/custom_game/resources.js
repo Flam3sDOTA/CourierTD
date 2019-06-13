@@ -15,7 +15,7 @@ function UpdateTangoesOnClient(msg){
 
 function OnExchangeButtonPressed() {
 	var gold = Players.GetGold(playerID);
-	if (gold < 500){
+	if (gold < 5000){
 		Game.EmitSound("versus_screen.towers_nopass");
 	}
 	else {

@@ -231,7 +231,10 @@ function LiquidTD:TangoShopButtonPressed(msg, event)
 
   local CurrentTango = self.LiquidTDTangoManager:GetPlayerTango(playerID)
 
-  if CurrentTango < cost then return end
+	if CurrentTango < cost then 
+		EmitSoundOnClient( "versus_screen.towers_nopass", playerID )
+		return 
+	end
   
   self.LiquidTDTangoManager:PlayerPayTango(playerID, cost)
 
