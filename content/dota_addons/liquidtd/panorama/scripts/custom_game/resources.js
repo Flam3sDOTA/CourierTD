@@ -1,20 +1,17 @@
 "use strict"
+var playerID = Players.GetLocalPlayer();
 
 function UpdateGold() {
-	var playerID = Players.GetLocalPlayer();
 	var gold = Players.GetGold(playerID);
 	$('#GoldText').text = gold;
 	$.Schedule(0.1, UpdateGold);
 }
 
 function UpdateTangoesOnClient(msg){
-	var tango = msg.amount;
-
-	$('#LumberText').text = tango;
+	$('#LumberText').text = msg.amount;
 }
 
 function OnExchangeButtonPressed() {
-	var playerID = Players.GetLocalPlayer();
 	var gold = Players.GetGold(playerID);
 	if(gold < 500){
         Game.EmitSound("versus_screen.towers_nopass");
@@ -27,13 +24,23 @@ function OnExchangeButtonPressed() {
 }
 
 function DamagePressed20Classic() {
-	if(Tango < 50){
-        Game.EmitSound("versus_screen.towers_nopass");
-    }
-    else{
-	Game.EmitSound("ui_select_blue");
+    GameEvents.SendCustomGameEventToServer( "DamagePressed20Classic", 
+                { "playerID" : playerID ,
+        "cost" : 1});
+}
+
+function Damage20ClassicPaymentDone(msg)
+{
+	var IsSuccess = msg.result 
+    if(IsSuccess){
+		Game.EmitSound("ui_select_blue");
+		$('#LumberText').text = msg.latest_amount ;
+	}
+	else{
+		Game.EmitSound("versus_screen.towers_nopass");
 	}
 }
+
 
 
 function DamagePressed50Classic() {
@@ -195,5 +202,6 @@ function CD3Utility() {
 
 (function () {
   GameEvents.Subscribe( "tangoes_changed", UpdateTangoesOnClient);	
+  GameEvents.Subscribe( "Damage20Classic_payment_processed", Damage20ClassicPaymentDone);
   UpdateGold();
 })();

@@ -2,7 +2,7 @@ if TangoManager == nil then
 	TangoManager = class({})
 end
 
-_G.TANGO_GOLD_COST = 500
+_G.TANGO_GOLD_COST = 5000
 _G.GOLD_TANGO_COST = 1 -- Not as important but can be useful if you have non mutual exchange rate
 
 function TangoManager:GetPlayerTango(iPlayerID)

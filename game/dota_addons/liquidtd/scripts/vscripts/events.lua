@@ -121,23 +121,6 @@ function LiquidTD:OnEntityKilled(event)
 	--end
 end
 
-function LiquidTD:OnExchangeTangoFromGold(msg, event)
-    print("Player Has Clicked The Exchange Gold --> for Tango Button !")
-
-    local pID =  math.floor(event['playerID'])
-    print(pID)
-    print("Player's Gold : " .. PlayerResource:GetGold(pID))
-    print("Player's Tango : " .. self.LiquidTDTangoManager:GetPlayerTango(pID))    
-    PlayerResource:SpendGold(pID, _G.TANGO_GOLD_COST, DOTA_ModifyGold_Unspecified )
-    self.LiquidTDTangoManager:PlayerAddTango(pID, 1)
-
-    print("Completed ! for player : ".. pID)
-    print("Player's Gold : " .. PlayerResource:GetGold(pID))
-    print("Player's Tango : " .. self.LiquidTDTangoManager:GetPlayerTango(pID))
-    CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(pID), "tangoes_changed", {amount = self.LiquidTDTangoManager:GetPlayerTango(pID)})
-    print("Sent to Client!")
-end
-
 function RollDrops(unit)
     local DropInfo = GameRules.DropTable[unit:GetUnitName()]
     if DropInfo then
@@ -219,3 +202,30 @@ local player = PlayerResource:GetPlayer(playerID)
   StartSpawning() 
 end
 
+function LiquidTD:OnExchangeTangoFromGold(msg, event)
+    print("Player Has Clicked The Exchange Gold --> for Tango Button !")
+
+    local pID =  math.floor(event['playerID'])
+    print(pID)
+    print("Player's Gold : " .. PlayerResource:GetGold(pID))
+    print("Player's Tango : " .. self.LiquidTDTangoManager:GetPlayerTango(pID))    
+    PlayerResource:SpendGold(pID, _G.TANGO_GOLD_COST, DOTA_ModifyGold_Unspecified )
+    self.LiquidTDTangoManager:PlayerAddTango(pID, 1)
+
+    print("Completed ! for player : ".. pID)
+    print("Player's Gold : " .. PlayerResource:GetGold(pID))
+    print("Player's Tango : " .. self.LiquidTDTangoManager:GetPlayerTango(pID))
+    CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(pID), "tangoes_changed", {amount = self.LiquidTDTangoManager:GetPlayerTango(pID)})
+    print("Sent to Client!")
+end
+
+function LiquidTD:DamagePressed20Classic(msg, event)
+    playerID = math.floor(event['playerID'])
+    cost = math.floor(event['cost'])
+    local CurrentTango = self.LiquidTDTangoManager:GetPlayerTango(playerID)
+    IsSuccess = ( CurrentTango >= cost)
+    if IsSuccess then
+         self.LiquidTDTangoManager:PlayerPayTango(playerID, cost)
+    end
+    CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(playerID), "Damage20Classic_payment_processed",  {result = IsSuccess , latest_amount = self.LiquidTDTangoManager:GetPlayerTango(playerID)})
+end

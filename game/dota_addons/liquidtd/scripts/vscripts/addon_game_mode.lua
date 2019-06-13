@@ -342,8 +342,10 @@ function LiquidTD:InitGameMode()
 	ListenToGameEvent('entity_hurt', Dynamic_Wrap(LiquidTD, 'OnEntityHurt'), self)
 	ListenToGameEvent('game_rules_state_change', Dynamic_Wrap( LiquidTD, 'OnGameRulesStateChange' ), self )
 	
+	CustomGameEventManager:RegisterListener( "DamagePressed20Classic", function(...) return self:DamagePressed20Classic( ... ) end)
 	CustomGameEventManager:RegisterListener( "exchange_tango_from_gold", function(...) return self:OnExchangeTangoFromGold( ... ) end)
-
+	
+	
 	MAX_NUMBER_OF_TEAMS = 6   
 	CUSTOM_TEAM_PLAYER_COUNT = {}        
 	CUSTOM_TEAM_PLAYER_COUNT[DOTA_TEAM_GOODGUYS] = 1
