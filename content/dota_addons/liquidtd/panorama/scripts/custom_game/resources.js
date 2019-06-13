@@ -7,6 +7,12 @@ function UpdateGold() {
 	$.Schedule(0.1, UpdateGold);
 }
 
+function UpdateTangoesOnClient(msg){
+	var tango = msg.amount;
+
+	$('#LumberText').text = tango;
+}
+
 function OnExchangeButtonPressed() {
 	var playerID = Players.GetLocalPlayer();
 	var gold = Players.GetGold(playerID);
@@ -14,9 +20,9 @@ function OnExchangeButtonPressed() {
         Game.EmitSound("versus_screen.towers_nopass");
     }
     else{
+		GameEvents.SendCustomGameEventToServer( "exchange_tango_from_gold", 
+				{ "playerID" : playerID });
         Game.EmitSound("ui_select_blue");
-		var playerID = Players.GetLocalPlayer();
-		$('#LumberText').text = Tango;
     }
 }
 
@@ -188,5 +194,6 @@ function CD3Utility() {
 
 
 (function () {
+  GameEvents.Subscribe( "tangoes_changed", UpdateTangoesOnClient);	
   UpdateGold();
 })();

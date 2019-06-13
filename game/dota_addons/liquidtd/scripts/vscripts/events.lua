@@ -1,3 +1,4 @@
+require("resources/TangoManager")
 GameRules.DropTable = LoadKeyValues("scripts/kv/item_drops.kv")
 
 ---------------------------------------------------------------------------
@@ -66,6 +67,8 @@ end
 function LiquidTD:OnConnectFull(keys) 
 	local entIndex = keys.index + 1
 	local player = EntIndexToHScript(entIndex)
+
+  if self.playersTangoes then self.playersTangoes[player:GetPlayerID()] = 0  end
 end
 
 ---------------------------------------------------------------------------
@@ -116,6 +119,23 @@ function LiquidTD:OnEntityKilled(event)
 	--if killed:GetUnitName() == "unit_wave50" then
 	--
 	--end
+end
+
+function LiquidTD:OnExchangeTangoFromGold(msg, event)
+    print("Player Has Clicked The Exchange Gold --> for Tango Button !")
+
+    local pID =  math.floor(event['playerID'])
+    print(pID)
+    print("Player's Gold : " .. PlayerResource:GetGold(pID))
+    print("Player's Tango : " .. self.LiquidTDTangoManager:GetPlayerTango(pID))    
+    PlayerResource:SpendGold(pID, _G.TANGO_GOLD_COST, DOTA_ModifyGold_Unspecified )
+    self.LiquidTDTangoManager:PlayerAddTango(pID, 1)
+
+    print("Completed ! for player : ".. pID)
+    print("Player's Gold : " .. PlayerResource:GetGold(pID))
+    print("Player's Tango : " .. self.LiquidTDTangoManager:GetPlayerTango(pID))
+    CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(pID), "tangoes_changed", {amount = self.LiquidTDTangoManager:GetPlayerTango(pID)})
+    print("Sent to Client!")
 end
 
 function RollDrops(unit)
@@ -199,4 +219,3 @@ local player = PlayerResource:GetPlayer(playerID)
   StartSpawning() 
 end
 
-	

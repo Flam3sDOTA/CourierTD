@@ -342,6 +342,8 @@ function LiquidTD:InitGameMode()
 	ListenToGameEvent('entity_hurt', Dynamic_Wrap(LiquidTD, 'OnEntityHurt'), self)
 	ListenToGameEvent('game_rules_state_change', Dynamic_Wrap( LiquidTD, 'OnGameRulesStateChange' ), self )
 	
+	CustomGameEventManager:RegisterListener( "exchange_tango_from_gold", function(...) return self:OnExchangeTangoFromGold( ... ) end)
+
 	MAX_NUMBER_OF_TEAMS = 6   
 	CUSTOM_TEAM_PLAYER_COUNT = {}        
 	CUSTOM_TEAM_PLAYER_COUNT[DOTA_TEAM_GOODGUYS] = 1
@@ -361,6 +363,13 @@ function LiquidTD:InitGameMode()
 	end
 
 	LimitPathingSearchDepth(0.5)
+
+	-- Setting up tango profile of all 6 players ( all zero at start )
+	self.playersTangoes = {}
+	for i=0, 6-1 do
+		self.playersTangoes[i] = 0
+	end
+	self.LiquidTDTangoManager = TangoManager()
 
 	-- Set up global values
 	GameRules.teamToMap = {
