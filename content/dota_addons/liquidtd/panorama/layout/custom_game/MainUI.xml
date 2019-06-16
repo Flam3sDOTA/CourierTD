@@ -589,7 +589,7 @@
 						</Panel>
 					</Panel>
 				</Panel>
-				<Button id="ControlPanelSlideThumb" onactivate="$.GetContextPanel().ToggleClass('Minimized')" onmouseover="UIShowTextTooltip(Tango Shop)"  onmouseout="UIHideTextTooltip()">
+				<Button id="ControlPanelSlideThumb" onactivate="OnShopButtonPressed()" onmouseover="UIShowTextTooltip(Tango Shop)"  onmouseout="UIHideTextTooltip()">
 					<Panel class="RightArrowButtonIcon"/>
 					 <Label id="ShopLabel" text="SHOP" />
 				</Button>

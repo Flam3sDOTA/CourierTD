@@ -33,6 +33,12 @@ function OnLeaderboardCloseButtonPressed() {
 	Game.EmitSound("ui.profile_close")*/
 }
 
+function OnShopButtonPressed()
+{
+  Game.EmitSound("ui_chat_slide_out")
+  $.GetContextPanel().ToggleClass('Minimized')
+}
+
 function SecondsToClock(seconds) {
   var sec_num = parseInt(seconds, 10);
   var hours   = Math.floor(sec_num / 3600);
