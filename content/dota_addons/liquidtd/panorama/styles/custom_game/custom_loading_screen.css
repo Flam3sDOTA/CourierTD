@@ -1,7 +1,10 @@
 .AddonLoadingRoot {
     width: 100%;
     height: 100%;
-    background-image: url("file://{images}/custom_game/backgrounds/background1.png");
+    background-image: url("s2r://panorama/images/backgrounds/gallery_background_png.vtex");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	opacity: 2.2;
 }
 
 .MenuRoot
@@ -9,31 +12,61 @@
 	width: 610px;
 	height: 880px;
 	margin-top: 52px;
-    margin-left: 20px;
+    margin-left: 90px;
     padding: 8px;
     border-radius: 16px;
     flow-children: down;
     background-color: gradient(linear, 0% 0%, 0.1% 0%, from(#111111), color-stop(0.01, #202327), color-stop(0.2, #141619ff), to(#000000dd));
 }
 
+#AmbientFXContainer {
+	width: 100%;
+	height: 100%;	
+	opacity: 0.8;
+	transition-property: transform, opacity;
+	transition-duration: 1s;
+	background-position: left center;
+}
+
+#MainAmbient {
+	vertical-align: bottom;
+	background-color: gradient( radial, 50% 100%, 0% 0%, 70% 70%, from( #9B582400 ), color-stop( .15, #5E371100 ), color-stop( .35, #44290800 ), color-stop( .65, #32200100 ), to( #20130100 ) );
+	width: 100%;
+	height: 100%;
+}
+
+
+.AmbientCameraFX {
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	hue-rotation: 0deg;
+	background-color: gradient( radial, 50% 100%, 0% 0%, 70% 70%, from( #9B582400 ), color-stop( .15, #5E371100 ), color-stop( .35, #44290800 ), color-stop( .65, #32200100 ), to( #20130100 ) );
+	transition-property: hue-rotation, background-color, opacity;
+	transition-duration: 1.5s, 1.5s, 2s;
+	transition-delay: 2.5s, 2.5s, 0s;
+	transition-timing-function: ease-in-out;
+}
+
 #BFATitle
 {
     font-size: 45px;
     font-weight: bold;
-    color: white;
+    color: orange;
     text-transform: uppercase;
 	horizontal-align: center;
 }
+
 
 .HowToPlay
 {
 	margin-top: 15px;
 	margin-left: 15px;
 	horizontal-align: left;
-	font-size: 25px;
-	color: orange;
+	font-size: 35px;
+	color: orangered;
 	text-shadow: 2px 2px 2px #000000;
-	text-decoration: underline;
+	font-weight: bold;
 }
 
 .List

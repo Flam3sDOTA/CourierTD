@@ -400,10 +400,10 @@
 			<Label hittest="false" id="GoldText" text="0" html="true" class="TitleFont" />
 		  </Panel>
 		  <Panel hittest="false" id='LumberIconPanel'>
-			<Image id="LumberIcon" src="file://{images}/custom_game/lumber_icon.png" onmouseover="UIShowTextTooltip(Tango)"  onmouseout="UIHideTextTooltip()"/>
+			<Image id="LumberIcon" src="file://{images}/custom_game/lumber_icon.png" onmouseover="UIShowTextTooltip(Coming Soon)"  onmouseout="UIHideTextTooltip()"/>
 		  </Panel>
 		  <Panel hittest="false" id='LumberLabelPanel'>
-			<Label hittest="false" id="LumberText" text="0" class="TitleFont" />
+			<Label hittest="false" id="LumberText" text="Coming Soon" class="TitleFont" />
 		  </Panel>
 		   <Panel hittest="false" id='FoodIconPanel'>
 			<Image id="FoodIcon" src="file://{images}/custom_game/food_icon.png" onmouseover="UIShowTextTooltip(Comig Soon)"  onmouseout="UIHideTextTooltip()" />
@@ -589,11 +589,26 @@
 						</Panel>
 					</Panel>
 				</Panel>
-				<Button id="ControlPanelSlideThumb" onactivate="OnShopButtonPressed()" onmouseover="UIShowTextTooltip(Tango Shop)"  onmouseout="UIHideTextTooltip()">
+				<Button id="ControlPanelSlideThumb" onactivate="OnShopButtonPressed()">
 					<Panel class="RightArrowButtonIcon"/>
 					 <Label id="ShopLabel" text="SHOP" />
 				</Button>
 			</Panel>
 		</Panel>
+		
+		<Panel id="PatreonPopup">
+			<Panel class="PatreonMain">
+					<Button id="CloseRoot" onactivate="OnPatreonCloseButtonPressed()" onmouseover="UIShowTextTooltip(Close)"  onmouseout="UIHideTextTooltip()"/>
+					<Label id="PatreonTitle" text="Support Courier TD"/>
+					<Label class="PatreonContext" text="I am fully committed to improve Courier TD and I have a lot of plans about it. If you can spare anything, please consider supporting me as these improvements take a lot of time and resources."/>
+					<Button class="BecomePatron" onactivate="ExternalBrowserGoToURL('https://www.patreon.com/Flam3s');">
+						<Label class="BecomePatronLabel" text="Become Patron and Get Rewards" onmouseover="UIShowTextTooltip(Click Here to go to Patreon Page)"  onmouseout="UIHideTextTooltip()"/>
+					</Button>
+					<MoviePanel class="Rewards" src="http://s1.webmshare.com/93MZr.webm" repeat="true" autoplay="onload" />
+			</Panel>
+		</Panel>
+		
+		
+		
     </Panel>
 </root>

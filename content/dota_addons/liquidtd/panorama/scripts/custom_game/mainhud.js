@@ -39,6 +39,12 @@ function OnShopButtonPressed()
   $.GetContextPanel().ToggleClass('Minimized')
 }
 
+function OnPatreonCloseButtonPressed() {
+	var panel = $("#PatreonPopup");
+	panel.visible = !panel.visible;
+	Game.EmitSound("ui_chat_slide_out")
+}
+
 function SecondsToClock(seconds) {
   var sec_num = parseInt(seconds, 10);
   var hours   = Math.floor(sec_num / 3600);

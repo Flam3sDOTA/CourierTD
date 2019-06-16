@@ -17,15 +17,7 @@ LinkLuaModifier( "modifier_3_cooldown", "abilities/modifiers/shop/modifier_3_coo
 ---------------------------------------------------------------------------
 function LiquidTD:OnNPCSpawned(event)
     local spawned = EntIndexToHScript(event.entindex)
-	local player1_towers = {}
-    local player2_towers = {}
-    local player3_towers = {}
-	local player4_towers = {}
-    local player5_towers = {}
-    local player6_towers = {}
-	
-	spawned:GetOwnerPlayerID()
-	
+
     if not spawned then
         return
     end
