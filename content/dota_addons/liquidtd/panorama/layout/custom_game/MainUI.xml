@@ -400,7 +400,7 @@
 			<Label hittest="false" id="GoldText" text="0" html="true" class="TitleFont" />
 		  </Panel>
 		  <Panel hittest="false" id='LumberIconPanel'>
-			<Image id="LumberIcon" src="file://{images}/custom_game/lumber_icon.png" onmouseover="UIShowTextTooltip(Coming Soon)"  onmouseout="UIHideTextTooltip()"/>
+			<Image id="LumberIcon" src="file://{images}/custom_game/lumber_icon.png" onmouseover="UIShowTextTooltip(Tango)"  onmouseout="UIHideTextTooltip()"/>
 		  </Panel>
 		  <Panel hittest="false" id='LumberLabelPanel'>
 			<Label hittest="false" id="LumberText" text="0" class="TitleFont" />
@@ -435,7 +435,7 @@
 									<Image class="TierImageTower" id="TierImageTower" src="file://{images}/custom_game/buff_outline_psd_mip0.tga" />
 									<Image class="TierImageTower2" id="TierImageTower2" src="file://{images}/custom_game/icon_kill_ally_psd_mip0.tga" />
 								</Panel>
-								<Button class="DemoButton" id="DemoButton" onactivate="TangoShopButtonPressed('DemoButton', 1, 'damage', 20, 'classic')" onmouseover="UIShowTextTooltip(+20 Attack Damage for ★ classic towers)"  onmouseout="UIHideTextTooltip()">
+								<Button class="DemoButton" id="DemoButton1" onactivate="TangoShopButtonPressed('DemoButton1', 1, 'damage', 20, 'classic')" onmouseover="UIShowTextTooltip(+20 Attack Damage for ★ classic towers)"  onmouseout="UIHideTextTooltip()">
 									<Image id="LumberIconShop" src="file://{images}/custom_game/lumber_icon.png" />
 									<Label id="LumberCost" text="1"/>
 								</Button>
@@ -591,6 +591,7 @@
 				</Panel>
 				<Button id="ControlPanelSlideThumb" onactivate="$.GetContextPanel().ToggleClass('Minimized')" onmouseover="UIShowTextTooltip(Tango Shop)"  onmouseout="UIHideTextTooltip()">
 					<Panel class="RightArrowButtonIcon"/>
+					 <Label id="ShopLabel" text="SHOP" />
 				</Button>
 			</Panel>
 		</Panel>

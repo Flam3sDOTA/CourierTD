@@ -219,16 +219,16 @@ function LiquidTD:InitGameMode()
 
 	-- Handle Team Colors
 	self.m_TeamColors = {}
-	self.m_TeamColors[DOTA_TEAM_GOODGUYS] = { 61, 210, 150 }	--		Teal
-	self.m_TeamColors[DOTA_TEAM_BADGUYS]  = { 243, 201, 9 }		--		Yellow
-	self.m_TeamColors[DOTA_TEAM_CUSTOM_1] = { 197, 77, 168 }	--      Pink
-	self.m_TeamColors[DOTA_TEAM_CUSTOM_2] = { 255, 108, 0 }		--		Orange
-	self.m_TeamColors[DOTA_TEAM_CUSTOM_3] = { 52, 85, 255 }		--		Blue
-	self.m_TeamColors[DOTA_TEAM_CUSTOM_4] = { 101, 212, 19 }	--		Green
-	self.m_TeamColors[DOTA_TEAM_CUSTOM_5] = { 129, 83, 54 }		--		Brown
-	self.m_TeamColors[DOTA_TEAM_CUSTOM_6] = { 27, 192, 216 }	--		Cyan
-	self.m_TeamColors[DOTA_TEAM_CUSTOM_7] = { 199, 228, 13 }	--		Olive
-	self.m_TeamColors[DOTA_TEAM_CUSTOM_8] = { 140, 42, 244 }	--		Purple
+	self.m_TeamColors[DOTA_TEAM_GOODGUYS] = { 0, 100, 0 }		--		Green
+	self.m_TeamColors[DOTA_TEAM_BADGUYS]  = { 178, 34, 34 }		--		Red
+	self.m_TeamColors[DOTA_TEAM_CUSTOM_1] = { 255, 99, 71 }		--      Orange
+	self.m_TeamColors[DOTA_TEAM_CUSTOM_2] = { 218, 112, 214 }	--		Purple
+	self.m_TeamColors[DOTA_TEAM_CUSTOM_3] = { 30, 144, 225 }	--		Blue
+	self.m_TeamColors[DOTA_TEAM_CUSTOM_4] = { 212, 212, 37 }	--		Yellow
+	self.m_TeamColors[DOTA_TEAM_CUSTOM_5] = { 129, 83, 54 }		--
+	self.m_TeamColors[DOTA_TEAM_CUSTOM_6] = { 27, 192, 216 }	--
+	self.m_TeamColors[DOTA_TEAM_CUSTOM_7] = { 199, 228, 13 }	--
+	self.m_TeamColors[DOTA_TEAM_CUSTOM_8] = { 140, 42, 244 }	--
 	
 	-- Handle Player Colors
 	PLAYER_COLORS = {}

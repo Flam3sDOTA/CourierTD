@@ -35,6 +35,14 @@ function OnStartTouch(trigger)
 				for _,unit in pairs(units) do
 					unit:ForceKill(true)
 				end
+				
+				-- Clean dropped items
+				Timers:CreateTimer(2, function()
+					for _,item in pairs( Entities:FindAllByClassname( "dota_item_drop")) do
+						local containedItem = item:GetContainedItem()
+						UTIL_Remove( item )
+					end
+				end)
 				Timers:CreateTimer(5, function()
 					hero:AddNoDraw()
 				end)

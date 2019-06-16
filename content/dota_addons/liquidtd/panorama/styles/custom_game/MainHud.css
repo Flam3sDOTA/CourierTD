@@ -1617,8 +1617,8 @@ DOTAAvatarImage {
 
 #ControlPanelSlideThumb
 {
-	width: 32px;
-	height: 96px;
+	width: 130px;
+	height: 60px;
 	transform: scaleX(-1);
     background-color: gradient( linear, 0% 0%, 0% 100%, from( #60862d ), to( #3d5f1c ) );
     border-top-right-radius: 12px;
@@ -1633,51 +1633,28 @@ DOTAAvatarImage {
 
 .RightArrowButtonIcon
 {
-	width: 16px;
-	height: 16px;
-	vertical-align: middle;
-	horizontal-align: right;
-	background-image: url("s2r://panorama/images/control_icons/double_arrow_left_png.vtex");
-    background-position: 0% 50%;
-	background-size: contain;
-	background-repeat: no-repeat;
-	wash-color: white;
-
-	transform: translateX( -9px ) rotateZ(0deg);
-	
-	transition-property: transform, wash-color;
-	transition-delay: 0.0s;
-	transition-duration: 0.25s;
-	transition-timing-function: ease-in-out;
+	background-image: url("s2r://panorama/images/custom_game/lumber_icon.png"); 
+	background-size: 100% 100%;
+    width: 36px;
+    height: 26px;
+    horizontal-align: right;
+    vertical-align: center;
+	transform: scaleX(-1);
+	margin-right: 10px;
 }
 
-
-#ControlPanelSlideThumb:hover
+#ShopLabel
 {
-	background-color: gradient( linear, 0% 0%, 0% 100%, from( #307663 ), to( #245a4b ) );
-}
-
-#ControlPanelSlideThumb:hover .RightArrowButtonIcon
-{
-	transform: translateX( 6px ) rotateZ(180deg);
-	wash-color: white;
-}
-
-.Minimized .ControlPanel .RightArrowButtonIcon
-{
-	transform: rotateZ(180deg) translateX( -6px );
-}
-
-.Minimized .ControlPanel #ControlPanelSlideThumb:hover .RightArrowButtonIcon
-{
-	transform: translateX( -6px ) rotateZ(0deg);
-	wash-color: white;
-}
-
-.ControlPanel. #ControlPanelSlideThumb:hover .RightArrowButtonIcon
-{
-    transform: translateX( -6px ) rotateZ(180deg);
-    wash-color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  horizontal-align: center;
+  vertical-align: center;
+  margin-left: 0px;
+  transform: scaleX(-1);
+  color:White ;
+  margin-right: 30px;
+  margin-top: 5px;
 }
 
 .Minimized .ControlPanel
@@ -1861,6 +1838,12 @@ DOTAAvatarImage {
     transition-timing-function: linear;
 	
 	tooltip-position: bottom;
+}
+
+.DemoButtonActivated
+{
+
+	opacity: 0;
 }
 
 #DemoButton

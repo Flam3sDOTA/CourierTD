@@ -24,27 +24,24 @@ function OnExchangeButtonPressed() {
 	}
 }
 
-function DamagePressed20Classic() {
-	GameEvents.SendCustomGameEventToServer("DamagePressed20Classic", {"cost" : 1});
-}
-
 function OnShopPurchase(data)
 {
 	var latest_amount = data.latest_amount;
 	var id = data.panelID;
-	var button = $("#" + id);
-	// Disable the button here
+	$('#LumberText').text = latest_amount;
+	var shopbutton = $("#" + id);
+	shopbutton.SetHasClass("DemoButtonActivated", true)
 }
 
 function TangoShopButtonPressed(id, cost, type, amount, towerType) {
 	GameEvents.SendCustomGameEventToServer("TangoShopButtonPressed",
-		{
-			"cost" : cost,
-			"type" : type,
-			"amount" : amount,
-			"towerType" : towerType,
-			"panelID" : id
-		});
+	{
+		"cost" : cost,
+		"type" : type,
+		"amount" : amount,
+		"towerType" : towerType,
+		"panelID" : id
+	});
 }
 
 

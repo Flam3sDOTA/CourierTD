@@ -1,12 +1,31 @@
 require("resources/TangoManager")
 GameRules.DropTable = LoadKeyValues("scripts/kv/item_drops.kv")
+LinkLuaModifier( "modifier_20_attack_damage", "abilities/modifiers/shop/modifier_20_attack_damage", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_50_attack_damage", "abilities/modifiers/shop/modifier_50_attack_damage", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_100_attack_damage", "abilities/modifiers/shop/modifier_100_attack_damage", LUA_MODIFIER_MOTION_NONE )
+
+LinkLuaModifier( "modifier_20_manacost", "abilities/modifiers/shop/modifier_20_manacost", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_30_manacost", "abilities/modifiers/shop/modifier_30_manacost", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_50_manacost", "abilities/modifiers/shop/modifier_50_manacost", LUA_MODIFIER_MOTION_NONE )
+
+LinkLuaModifier( "modifier_1_cooldown", "abilities/modifiers/shop/modifier_1_cooldown", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_2_cooldown", "abilities/modifiers/shop/modifier_2_cooldown", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_3_cooldown", "abilities/modifiers/shop/modifier_3_cooldown", LUA_MODIFIER_MOTION_NONE )
 
 ---------------------------------------------------------------------------
 -- Event: OnNPCSpawned
 ---------------------------------------------------------------------------
 function LiquidTD:OnNPCSpawned(event)
     local spawned = EntIndexToHScript(event.entindex)
-  
+	local player1_towers = {}
+    local player2_towers = {}
+    local player3_towers = {}
+	local player4_towers = {}
+    local player5_towers = {}
+    local player6_towers = {}
+	
+	spawned:GetOwnerPlayerID()
+	
     if not spawned then
         return
     end
@@ -54,7 +73,7 @@ function LiquidTD:OnEntityHurt(event)
   if attacker:GetTeam() ~= DOTA_TEAM_NEUTRALS and not inflictor then
     local maxMana = attacker:GetMaxMana()
     if maxMana > 0 and attacker:GetMana() < maxMana then
-      local manaGained = damage * 0.03
+      local manaGained = damage * 0.01
       attacker:GiveMana(manaGained)
     end
   end
@@ -159,29 +178,25 @@ function LiquidTD:OnGameInProgress()
       if sID == 289101818 then 
 local player = PlayerResource:GetPlayer(playerID)
         local hero = player:GetAssignedHero()
-        local model = "models/courier/baby_rosh/babyroshan.vmdl"
-		local particleName = "particles/econ/courier/courier_roshan_ti8/courier_roshan_ti8.vpcf"
-        local particle = ParticleManager:CreateParticle( particleName, PATTACH_ABSORIGIN_FOLLOW, hero)
-        hero:SetOriginalModel(model)
-        hero:SetModel(model)
+        local courier = "models/items/courier/carty/carty_flying.vmdl"
+        hero:SetOriginalModel(courier)
+        hero:SetModel(courier)
 		hero:SetMaterialGroup("5")
-		ParticleManager:SetParticleControl(particle, 0, hero:GetOrigin())
-        ParticleManager:SetParticleControl(particle, 3, hero:GetOrigin())
       elseif sID == 160261868 then 
         local player = PlayerResource:GetPlayer(playerID)
         local hero = player:GetAssignedHero()
-        local model = "models/courier/doom_demihero_courier/doom_demihero_courier.vmdl"
-        hero:SetOriginalModel(model)
-        hero:SetModel(model)
+        local courier = "models/courier/doom_demihero_courier/doom_demihero_courier.vmdl"
+        hero:SetOriginalModel(courier)
+        hero:SetModel(courier)
         hero:SetMaterialGroup("1")
 	  elseif sID == 175156710 then 
 	    local player = PlayerResource:GetPlayer(playerID)
         local hero = player:GetAssignedHero()
-        local model = "models/courier/baby_rosh/babyroshan.vmdl"
+        local courier = "models/courier/baby_rosh/babyroshan.vmdl"
 		local particleName = "particles/econ/courier/courier_roshan_ti8/courier_roshan_ti8.vpcf"
         local particle = ParticleManager:CreateParticle( particleName, PATTACH_ABSORIGIN_FOLLOW, hero)
-        hero:SetOriginalModel(model)
-        hero:SetModel(model)
+        hero:SetOriginalModel(courier)
+        hero:SetModel(courier)
 		hero:SetMaterialGroup("5")
 		ParticleManager:SetParticleControl(particle, 0, hero:GetOrigin())
         ParticleManager:SetParticleControl(particle, 3, hero:GetOrigin())
@@ -226,32 +241,29 @@ function LiquidTD:TangoShopButtonPressed(msg, event)
   local amount = event.amount
   local towerType = event.towerType
   local panelID = event.panelID
-
   print(playerID, cost, purchaseType, amount, towerType, panelID)
-
   local CurrentTango = self.LiquidTDTangoManager:GetPlayerTango(playerID)
-
-	if CurrentTango < cost then 
-		EmitSoundOnClient( "versus_screen.towers_nopass", playerID )
-		return 
-	end
   
-  self.LiquidTDTangoManager:PlayerPayTango(playerID, cost)
-
-  if purchaseType == "damage" then
-    -- Give towers damage modifier
-    -- use amount and towerType to determine what modifier to give to who
-  elseif purchaseType == "manacost" then
-    -- Give towers mana cost modifier
-  elseif purchaseType == "cooldown" then
-    -- Give towers cooldown modifier
+  if CurrentTango < cost then
+	EmitSoundOnClient("versus_screen.towers_nopass", PlayerResource:GetPlayer(playerID))
   else
-    print("Invalid Purchase Type: " .. purchaseType)
-  end
-
-  CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(playerID), "shop_purchase",  
-    {
-      latest_amount = self.LiquidTDTangoManager:GetPlayerTango(playerID),
-      panelID = panelID,
-    })
+	  EmitSoundOnClient("ui.herochallenge_complete", PlayerResource:GetPlayer(playerID))
+	  self.LiquidTDTangoManager:PlayerPayTango(playerID, cost)
+	  if purchaseType == "damage" then
+		if towerType == "classic" and amount == "20" then
+			AddNewModifier( self:GetCaster(), self, "modifier_20_attack_damage", {duration = -1})
+		end
+	  elseif purchaseType == "manacost" then
+		-- Give towers mana cost modifier
+	  elseif purchaseType == "cooldown" then
+		-- Give towers cooldown modifier
+	  else
+		print("Invalid Purchase Type: " .. purchaseType)
+	  end
+	  CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(playerID), "shop_purchase",  
+		{
+		  latest_amount = self.LiquidTDTangoManager:GetPlayerTango(playerID),
+		  panelID = panelID,
+		})
+	end
 end

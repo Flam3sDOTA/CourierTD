@@ -2030,7 +2030,7 @@ DOTAHud.IsBeforeGameplay.HUDFlipped #minimap_container
 .HIDE_INVENTORY_SHOP #shop_launcher_block,
 .HIDE_INVENTORY_SHOP #shop
 {
-	visibility: collapse;
+
 }
 
 #shop_launcher_bg
@@ -2088,7 +2088,7 @@ DOTAHud.IsBeforeGameplay.HUDFlipped #minimap_container
 .HIDE_INVENTORY_PANEL #right_flare,
 .HIDE_INVENTORY_PANEL #StatDrawerTopRight
 {
-	visibility: collapse;
+	visibility: visible;
 }
 
 .Reborn #stash
@@ -2424,8 +2424,10 @@ DOTAHud.IsBeforeGameplay.HUDFlipped #minimap_container
 {
 	horizontal-align: right;
 	vertical-align: bottom;
-	margin-bottom: 206px;
+	margin-bottom: 0px;
+	margin-right: 280px;
 	z-index: 8;
+	
 }
 
 .HUDFlipped #shop
