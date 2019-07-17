@@ -76,7 +76,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"1"
 		"BountyGoldMax"         		"2"
-		"StatusHealth"          		"100"
+		"StatusHealth"          		"80"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -109,7 +109,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"2"
 		"BountyGoldMax"         		"3"
-		"StatusHealth"          		"150"
+		"StatusHealth"          		"120"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -142,7 +142,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"3"
 		"BountyGoldMax"         		"4"
-		"StatusHealth"          		"300"
+		"StatusHealth"          		"180"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -175,7 +175,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"4"
 		"BountyGoldMax"         		"5"
-		"StatusHealth"          		"300"
+		"StatusHealth"          		"250"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -203,8 +203,8 @@
 		"Model"                 		"models/items/courier/beaverknight/beaverknight.vmdl"
 		"ModelScale"               		"3"
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"0"
-		"MagicalResistance"     		"0"
+		"ArmorPhysical"         		"1"
+		"MagicalResistance"     		"1"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"150"
 		"BountyGoldMax"         		"150"
@@ -224,6 +224,12 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		
+		
+		"Ability1"					"empty"
+		"Ability2"					"bristleback_bristleback_lua"
+		"Ability3"					"mars_bulwark_lua"
+		"Ability6"					""
 	}
 	
 	//============================================================
@@ -389,6 +395,11 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		
+		"Ability1"					"empty"
+		"Ability2"					"bristleback_bristleback_lua"
+		"Ability3"					"mars_bulwark_lua"
+		"Ability6"					""
 	}
 	
 	//============================================================
@@ -554,6 +565,11 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		
+		"Ability1"					"empty"
+		"Ability2"					"bristleback_bristleback_lua"
+		"Ability3"					"mars_bulwark_lua"
+		"Ability6"					""
 	}
 	
 	//============================================================
@@ -719,6 +735,11 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		
+		"Ability1"					"empty"
+		"Ability2"					"bristleback_bristleback_lua"
+		"Ability3"					"mars_bulwark_lua"
+		"Ability6"					""
 	}
 	
 	//============================================================
@@ -885,6 +906,11 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		
+		"Ability1"					"empty"
+		"Ability2"					"bristleback_bristleback_lua"
+		"Ability3"					"mars_bulwark_lua"
+		"Ability6"					""
 	}
 	
 	//============================================================
@@ -1050,6 +1076,11 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		
+		"Ability1"					"empty"
+		"Ability2"					"bristleback_bristleback_lua"
+		"Ability3"					"mars_bulwark_lua"
+		"Ability6"					""
 	}
 	
 	//============================================================
@@ -1215,6 +1246,11 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		
+		"Ability1"					"empty"
+		"Ability2"					"bristleback_bristleback_lua"
+		"Ability3"					"mars_bulwark_lua"
+		"Ability6"					""
 	}
 	
 	//============================================================
@@ -1380,6 +1416,11 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		
+		"Ability1"					"empty"
+		"Ability2"					"bristleback_bristleback_lua"
+		"Ability3"					"mars_bulwark_lua"
+		"Ability6"					""
 	}
 	
 	//============================================================
@@ -1545,6 +1586,11 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		
+		"Ability1"					"empty"
+		"Ability2"					"bristleback_bristleback_lua"
+		"Ability3"					"mars_bulwark_lua"
+		"Ability6"					""
 	}
 	
 	//============================================================
@@ -1710,6 +1756,11 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		
+		"Ability1"					"empty"
+		"Ability2"					"bristleback_bristleback_lua"
+		"Ability3"					"mars_bulwark_lua"
+		"Ability6"					""
 	}
 	
 	//============================================================
@@ -2381,7 +2432,7 @@
 			{
 				"1"  { "ItemDef" "12307" } // Weapon
 				"2"  { "ItemDef" "9746" } // Left Arm
-				"3"  { "ItemDef" "9042" } // Head
+				"3"  { "ItemDef" "13474" } // Head
 				"4"  { "ItemDef" "4582" } // Shoulder
 				"5"  { "ItemDef" "8007" } // Armor
 			}

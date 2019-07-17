@@ -13,7 +13,6 @@
         GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_TOP_HEROES, false );
 		GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_ENDGAME, false );
         GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_FLYOUT_SCOREBOARD, false );
-		GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_INVENTORY_SHOP, false );
         //GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_INVENTORY_PROTECT, false );
         //GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_SHOP_SUGGESTEDITEMS, false );
 		
@@ -28,9 +27,8 @@
 		var NoTPScrollUI = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("center_with_stats").FindChildTraverse("center_block");
 		var NoCourierControl = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("shop_launcher_block").FindChildTraverse("quickbuy").FindChildTraverse("ShopCourierControls");
 		var NoXPContainer = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("center_with_stats").FindChildTraverse("center_block");
-		var NoShop = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("shop").FindChildTraverse("Main");
 		var NoStash = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("shop_launcher_block");
-		var NoShopLauncher = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud");
+		var NoShop = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("shop").FindChildTraverse("Main");
 		
 		
 		NoTalents.FindChildTraverse("StatBranch").style.visibility = "collapse";
@@ -43,9 +41,11 @@
 		NoTPScrollUI.FindChildTraverse("inventory_tpscroll_container").style.visibility = "collapse";
 		NoCourierControl.FindChildTraverse("courier").style.visibility = "collapse";
 		NoXPContainer.FindChildTraverse("xp").style.visibility = "collapse";
-		NoShop.FindChildTraverse("HeightLimiter").style.visibility = "collapse";
 		NoStash.FindChildTraverse("stash").style.visibility = "collapse";
-		NoShopLauncher.FindChildTraverse("shop_launcher_block").style.visibility = "collapse";
+		NoStash.FindChildTraverse("quickbuy").style.visibility = "collapse";
+		NoStash.FindChildTraverse("shop_launcher_bg").style.visibility = "collapse";
+		NoShop.FindChildTraverse("HeightLimiter").style.visibility = "collapse";
+		
 		
 		
 		GameUI.CustomUIConfig().team_colors = {}
