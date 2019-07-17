@@ -1,0 +1,10 @@
+Ice Tower: Movement Speed Ability: Slow reduced from 15 to 10.
+Poison Tower: Posion Ability: Damage reduced from 15 to 10.
+Poison Tower: Posion Ability: Duration reduced from 4 to 2.
+Changed cosmetics for Lion 3.
+All Bosses now have "Fortified Armor" and "Bulwark" ability that blocks a portion of each physical attack when hit from the front, sides and rear.
+All Bosses now have active abilities and will use those abilities when their HP drop to a certain HP%.
+
+Wave 5 - Boss 1: 
+
+
