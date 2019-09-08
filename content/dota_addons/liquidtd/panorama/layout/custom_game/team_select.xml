@@ -68,7 +68,7 @@
 						<Panel id="UnassignedPlayersContainer" />
 					</Button>						
 				</Panel>
-				<Button id="DiscordButton"  onactivate="ExternalBrowserGoToURL('https://discord.gg/vSYcJRd');" onmouseover="UIShowTextTooltip( Click to join us on Discord!  )"  onmouseout="UIHideTextTooltip()">
+				<Button id="DiscordButton"  onactivate="ExternalBrowserGoToURL('https://discordapp.com/invite/4fzaQBw');" onmouseover="UIShowTextTooltip( Join the community!)"  onmouseout="UIHideTextTooltip()">
 					<Image id="DiscordImage" src="file://{images}/custom_game/game_info/Discord.png" />
 				</Button>
 				<Button id="LockAndStartButton" class="PlayButton" onactivate="OnLockAndStartPressed()">

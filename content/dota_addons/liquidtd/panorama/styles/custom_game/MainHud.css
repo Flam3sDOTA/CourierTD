@@ -34,8 +34,8 @@
     width: 775px;
     height: 149px;
 	margin-top: -30px;
-	margin-left: -240px;
-	background-image: url("file://{images}/custom_game/TopUILeft.png");
+	margin-left: -260px;
+	
 	background-size: 100%;
 	opacity: 1;
 	transition-duration: .05s;
@@ -93,33 +93,15 @@
 	opacity: 2;
 }
 
-#NewSettingsButton {
-	background-image: url("s2r://panorama/images/control_icons/gear_png.vtex");
-	background-size: 25px;
-	margin-top: 44px;
-	margin-left: 425px;
-}
-
-.Discord,
-.Reddit,
-.Steam {
+.Discord {
 	horizontal-align: center;
 	opacity: 1;
 	transition-duration: 0.0s;
 	font-size: 17px;
-	text-decoration: underline;
 	color: white;
-	margin-top: 45px;
+	margin-top: 46px;
 	tooltip-position: bottom;
-}
-.Discord {
-	margin-left: 250px;	
-}
-.Reddit {
-	margin-left: 370px;
-}
-.Steam {
-	margin-left: 510px;
+	margin-left: 395px;	
 }
 
 #NewDashboardButton:hover,
@@ -203,23 +185,6 @@
 	transition-timing-function: ease-in-out;
 }
 
-
-.MainRight {
-    width: 775px;
-    height: 149px;
-	margin-top: -30px;
-	background-image: url("file://{images}/custom_game/topUIRight.png");
-	background-size: 100%;
-	opacity: 1;
-	transition-duration: .05s;
-	transition-property: background-image;
-	transition-timing-function: ease-in-out;
-	horizontal-align: right;
-	margin-right: -61px;
-	z-index: 1;
-}
-
-
 #RoundNumber {
 	margin-top: 30px;
 	margin-left: 90px;
@@ -300,7 +265,7 @@
 
 .NextRound {
 	margin-top: 45px;
-	margin-left: 439px;
+	margin-left: 430px;
     horizontal-align: left;
     vertical-align: top;
     font-weight: bold;

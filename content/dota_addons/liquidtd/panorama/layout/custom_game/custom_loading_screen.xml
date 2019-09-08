@@ -13,14 +13,10 @@
 		</Panel>
 		
 		<Panel class="MenuRoot">
-			<Label id="BFATitle" text="#addon_game_name" style="" />
+			<Label id="GameTitle" text="#addon_game_name" style="" />
 			<Label class="HowToPlay" text="GENERAL" />	
 			<Label class="List" text="• Courier TD is a 6-Man FFA tower defense where the objective is to stay alive longer than your enemy through 50 waves" />
 			<Label class="List" text="• Currently has 50 Waves and waves won't spawn after 50. You can leave once you kill the final boss." />
-			<Label class="HowToPlay" text="NEWS" />	
-			<Label class="List" text="• Gold Exchang for Tango and Food will be added soon." />
-			<Label class="List" text="• Tango Shop will be added soon." />
-			<Label class="List" text="• Unit Shop will be added soon." />
 		</Panel>
 
     </Panel>

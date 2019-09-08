@@ -1569,7 +1569,7 @@
 		"AbilityCastRange"              "260"
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
-		"AbilityGoldCost"               "210"
+		"AbilityGoldCost"               "190"
 		"OnSpellStart"
 		{
 			"RunScript"
@@ -1585,7 +1585,7 @@
 			"01"
 			{
 				"var_type"    					 "FIELD_INTEGER"
-				"ATTACK_DAMAGE_TOOLTIP"    		 "60"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "85"
 			}
 			"02"
 			{

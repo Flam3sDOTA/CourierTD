@@ -34,9 +34,9 @@ function createPlayerPanel(id, steam_id){
   usernamePanel.AddClass("Username");
   usernamePanel.steamid = steam_id;
 
-  var heronamepanel = $.CreatePanel("Label", playerPanel, "");
-  heronamepanel.AddClass("HeroName");
-  heronamepanel.text = $.Localize("Rank");
+  // var heronamepanel = $.CreatePanel("Label", playerPanel, "");
+  // heronamepanel.AddClass("HeroName");
+  // heronamepanel.text = $.Localize("Rank");
   
   var HeroHealthPanel = $.CreatePanel("ProgressBar", playerPanel, "health_bar_" + id);
   HeroHealthPanel.AddClass("PlayerHealth");
