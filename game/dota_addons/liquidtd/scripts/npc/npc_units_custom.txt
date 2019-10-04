@@ -226,9 +226,9 @@
 		"MovementTurnRate"      		"1"
 		
 		
-		"Ability1"					"empty"
-		"Ability2"					"bristleback_bristleback_lua"
-		"Ability3"					"mars_bulwark_lua"
+		"Ability1"					""
+		"Ability2"					""
+		"Ability3"					""
 		"Ability6"					""
 	}
 	
@@ -396,7 +396,7 @@
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		
-		"Ability1"					"empty"
+		"Ability1"					""
 		"Ability2"					"bristleback_bristleback_lua"
 		"Ability3"					"mars_bulwark_lua"
 		"Ability6"					""
@@ -566,7 +566,7 @@
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		
-		"Ability1"					"empty"
+		"Ability1"					""
 		"Ability2"					"bristleback_bristleback_lua"
 		"Ability3"					"mars_bulwark_lua"
 		"Ability6"					""
@@ -736,7 +736,7 @@
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		
-		"Ability1"					"empty"
+		"Ability1"					""
 		"Ability2"					"bristleback_bristleback_lua"
 		"Ability3"					"mars_bulwark_lua"
 		"Ability6"					""
@@ -907,7 +907,7 @@
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		
-		"Ability1"					"empty"
+		"Ability1"					""
 		"Ability2"					"bristleback_bristleback_lua"
 		"Ability3"					"mars_bulwark_lua"
 		"Ability6"					""
@@ -1077,7 +1077,7 @@
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		
-		"Ability1"					"empty"
+		"Ability1"					""
 		"Ability2"					"bristleback_bristleback_lua"
 		"Ability3"					"mars_bulwark_lua"
 		"Ability6"					""
@@ -1247,7 +1247,7 @@
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		
-		"Ability1"					"empty"
+		"Ability1"					""
 		"Ability2"					"bristleback_bristleback_lua"
 		"Ability3"					"mars_bulwark_lua"
 		"Ability6"					""
@@ -1417,7 +1417,7 @@
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		
-		"Ability1"					"empty"
+		"Ability1"					""
 		"Ability2"					"bristleback_bristleback_lua"
 		"Ability3"					"mars_bulwark_lua"
 		"Ability6"					""
@@ -1587,7 +1587,7 @@
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		
-		"Ability1"					"empty"
+		"Ability1"					""
 		"Ability2"					"bristleback_bristleback_lua"
 		"Ability3"					"mars_bulwark_lua"
 		"Ability6"					""
@@ -1757,7 +1757,7 @@
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		
-		"Ability1"					"empty"
+		"Ability1"					""
 		"Ability2"					"bristleback_bristleback_lua"
 		"Ability3"					"mars_bulwark_lua"
 		"Ability6"					""
@@ -2984,10 +2984,10 @@
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
 		"PedestalModelScale"        "0.3"
 		"PedestalOffset"            "5"
-		"SoundSet"                  ""
+		"SoundSet"                  "Hero_Gyrocopter"
 		"MinimapIconSize"           ""
-		"GameSoundsFile"    		""
-		"vscripts"                  "ai/gyro.lua"
+		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_gyrocopter.vsndevts"
+		"vscripts"                  "ai/gyro.lua"	
 
 		// Stats
 		//----------------------------- 
@@ -3039,7 +3039,7 @@
 		
 		"Ability1"					"tower_upgrade_utility_gyro_2"
 		"Ability2"					"sell_tower"
-		"Ability3"					"gyrocopter_call_down"
+		"Ability3"					"flak_cannon_datadriven"
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
@@ -3127,7 +3127,7 @@
 		
 		"Ability1"					"tower_upgrade_utility_gyro_3"
 		"Ability2"					"sell_tower"
-		"Ability3"					"gyrocopter_call_down"
+		"Ability3"					"flak_cannon_datadriven"
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
@@ -3215,7 +3215,7 @@
 		
 		"Ability1"					"empty"
 		"Ability2"					"sell_tower"
-		"Ability3"					"gyrocopter_call_down"
+		"Ability3"					"flak_cannon_datadriven"
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
@@ -3598,7 +3598,7 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/abyssal_underlord/abyssal_underlord_v2.vmdl"
-		"ModelScale"                "0.7"
+		"ModelScale"                "0.8"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
@@ -3686,7 +3686,7 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/abyssal_underlord/abyssal_underlord_v2.vmdl"
-		"ModelScale"                "0.7"
+		"ModelScale"                "0.8"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
@@ -6491,7 +6491,7 @@
 		"ModelScale"                "1"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
 		"PedestalModelScale"        "0.3"
 		"PedestalOffset"            "5"
 		"ProjectileModel"           "particles/units/heroes/hero_keeper_of_the_light/keeper_base_attack.vpcf"
@@ -6590,7 +6590,7 @@
 		"ModelScale"                "1"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
 		"PedestalModelScale"        "0.3"
 		"PedestalOffset"            "5"
 		"ProjectileModel"           "particles/units/heroes/hero_keeper_of_the_light/keeper_base_attack.vpcf"

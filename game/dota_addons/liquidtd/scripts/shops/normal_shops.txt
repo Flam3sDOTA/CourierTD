@@ -1,0 +1,81 @@
+"dota_shops"
+{
+	"consumables"
+	{
+		"item"		"item_custom_blades_of_attack"
+		"item"		"item_custom_band_of_elvenskin"
+		"item"		"item_custom_belt_of_strength"
+		"item"		"item_custom_robe_of_the_magi"
+	}
+
+	"attributes"
+	{
+		"item"		"item_custom_blight_stone"
+		"item"		"item_custom_crown"
+		"item"		"item_custom_time_stone"
+		"item"		"item_custom_mind_stone"
+	}
+
+	"weapons_armor"
+	{
+		"item"		"item_custom_broadsword"
+		"item"		"item_custom_blade_of_alacrity"
+		"item"		"item_custom_ogre_axe"
+		"item"		"item_custom_time_sigil"
+		"item"		"item_custom_mind_sigil"
+		"item"		"item_custom_mithril_hammer"
+		"item"		"item_custom_demon_edge"
+	}
+			
+	"misc"
+	{
+		"item"		"item_custom_crystalys"
+		"item"		"item_custom_yasha"
+		"item"		"item_custom_sange"
+		"item"		"item_custom_skull_basher"
+		"item"		"item_custom_desolator"
+		"item"		"item_custom_dragon_lance"
+		"item"		"item_custom_daedalus"
+		"item"		"item_custom_sange_yasha"
+	}	
+	
+	// Level 1 - Green Recipes
+	"basics"
+	{
+	}
+
+	// Level 2 - Blue Recipes
+	"support"
+	{
+	}
+		
+	"magics"			
+	{
+	}
+
+	// Level 3 - Purple Recipes	
+	"defense"
+	{
+	}
+			
+	"weapons"
+	{					
+	}
+		
+	// Level 4 - Orange / Orb / Artifacts				
+	"artifacts"
+	{
+	}
+
+	"sideshop1"
+	{
+	}
+
+	"sideshop2"
+	{
+	}
+	
+	"secretshop"
+	{
+	}	
+}

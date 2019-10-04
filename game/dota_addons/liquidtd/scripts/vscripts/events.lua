@@ -157,6 +157,8 @@ function LiquidTD:OnGameRulesStateChange()
     print( "[PRE_GAME] in Progress" )
   elseif nNewState == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
     LiquidTD:OnGameInProgress()
+	Convars:SetInt("dota_max_physical_items_purchase_limit", 9999)
+    Convars:SetInt("dota_max_physical_items_drop_limit", 9999)
   end
 end
 

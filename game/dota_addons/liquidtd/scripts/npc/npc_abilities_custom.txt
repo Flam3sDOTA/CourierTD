@@ -101,7 +101,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"MaxLevel"						"0"
 		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
 	}
@@ -186,7 +186,7 @@
 			"02"
 			{
 				"var_type"    					 "FIELD_FLOAT"
-				"ATTACK_SPEED_TOOLTIP"     		 "1"
+				"ATTACK_SPEED_TOOLTIP"     		 "1.5"
 			}
 			"03"
 			{
@@ -3773,7 +3773,6 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"5022"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 		"AbilityCastRange"				"400"
 		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
 		"MaxLevel"						"3"
@@ -4157,86 +4156,134 @@
 	}
 
 	//=================================================================================================================
-	// Gyrocopter: Call Down
+	// Gyrocopter: Flak Cannon
 	//=================================================================================================================
-	"gyrocopter_call_down"
+	/ Rewrite of Gyrocopter Flak Cannon
+	// Author: YOLOSPAGHETTI
+	// Date: March 28, 2016
+	// Version: 6.86
+	// Type: Datadriven
+	//
+	// ----- FILE REQUIREMENTS -----
+	// Script files:
+	// scripts/vscripts/abilities/flak_cannon.lua
+	"flak_cannon_datadriven"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"5364"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
-		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
-		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
-		"FightRecapLevel"				"2"
-		"AbilitySound"					"Hero_Gyrocopter.CallDown.Fire"
+		"BaseClass"						"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"FightRecapLevel"				"1"
+		"AbilityTextureName"			"gyrocopter_flak_cannon"
 		"MaxLevel"						"3"
 
-		"HasScepterUpgrade"				"1"
+		"precache"
+		{
+			"particle"		"particles/units/heroes/hero_gyrocopter/gyro_base_attack.vpcf"
+			"soundfile"		"sounds/weapons/hero/gyrocopter/flack_cannon.vsnd"
+		}
 		
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"1000"
-		"AbilityCastPoint"				"0.3"
-		"AbilityCastAnimation"			"ACT_INVALID"
-
+		"AbilityCastPoint"				"0 0 0"
+		
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"30 25 20"
+		"AbilityCooldown"				"20"
 		
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"				"100"
-		
+
+		//Duration
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDuration"				"15"
+						
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_type"					"FIELD_INTEGER"
-				"slow_duration_first"		"2"
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"900"
 			}
 			"02"
 			{
-				"var_type"					"FIELD_INTEGER"
-				"slow_duration_second"		"4"
+				"var_type"						"FIELD_INTEGER"
+				"max_attacks"					"3 4 5"
 			}
 			"03"
 			{
-				"var_type"					"FIELD_INTEGER"
-				"damage_first"				"150 250 350"
+				"var_type"						"FIELD_INTEGER"
+				"projectile_speed"				"1200"
 			}
-			"04"
+		}
+		
+		"OnSpellStart"
+		{
+			"RunScript"
 			{
-				"var_type"					"FIELD_INTEGER"
-				"damage_second"				"100 150 200"
+				"ScriptFile"	"abilities/flak_cannon.lua"
+				"Function"		"ApplyModifier"
 			}
-			"05"
+		}
+
+		"OnProjectileHitUnit"
+		{
+			"RunScript"
 			{
-				"var_type"					"FIELD_FLOAT"
-				"slow_first"				"30"
+				"ScriptFile"	"abilities/flak_cannon.lua"
+				"Function"		"DealDamage"
 			}
-			"06"
+		}
+		
+		"Modifiers"
+		{
+			"modifier_flak_cannon_datadriven"
 			{
-				"var_type"					"FIELD_FLOAT"
-				"slow_second"				"60"
-			}
-			"07"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"radius"					"300"
-			}			
-			"08"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"range_scepter"				"0"
-			}
-			"09"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"damage_second_scepter"		"175 225 275"
+				"OnAttack"
+				{
+					"FireSound"
+					{
+						"EffectName"	"Hero_Gyrocopter.FlackCannon"
+						"Target"		"TARGET"
+					}
+					
+					"RunScript"
+					{
+						"ScriptFile"	"abilities/flak_cannon.lua"
+						"Function"		"GetMainTarget"
+					}
+				
+					"ActOnTargets"
+					{
+						"Target"
+						{
+							"Center"  				"CASTER"
+							"Radius" 				"%radius"
+							"Teams" 				"DOTA_UNIT_TARGET_TEAM_ENEMY"
+							"Types" 				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+						}
+
+						"Action"
+						{
+							"TrackingProjectile"
+							{
+								"Target"           	"TARGET"
+								"EffectName"       	"particles/units/heroes/hero_gyrocopter/gyro_base_attack.vpcf"
+								"Dodgeable"        	"1"
+								"ProvidesVision"   	"0"
+								"MoveSpeed"        	"%projectile_speed"
+								"SourceAttachment"  "DOTA_PROJECTILE_ATTACHMENT_ATTACK_1"
+								"TargetTypes"    	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+							}
+						}
+					}
+				}
 			}
 		}
 	}

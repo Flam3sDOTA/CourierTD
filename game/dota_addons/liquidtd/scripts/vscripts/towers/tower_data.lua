@@ -479,7 +479,7 @@ return {
     tier = 2,
     spawn_sound = "frostivus_ui_select",
 	abilities = {
-      gyrocopter_call_down = 1
+      flak_cannon_datadriven = 1
     },	
   },
   
@@ -488,7 +488,7 @@ return {
     tier = 2,
     spawn_sound = "frostivus_ui_select",
 	abilities = {
-      gyrocopter_call_down = 2
+      flak_cannon_datadriven = 2
     },	
   },
   
@@ -497,7 +497,7 @@ return {
     tier = 2,
     spawn_sound = "frostivus_ui_select",
 	abilities = {
-      gyrocopter_call_down = 3
+      flak_cannon_datadriven = 3
     },	
   },
   

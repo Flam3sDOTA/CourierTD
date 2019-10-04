@@ -401,7 +401,7 @@
 			<Label hittest="false" id="LumberText" text="Coming Soon" class="TitleFont" />
 		  </Panel>
 		   <Panel hittest="false" id='FoodIconPanel'>
-			<Image id="FoodIcon" src="file://{images}/custom_game/food_icon.png" onmouseover="UIShowTextTooltip(Comig Soon)"  onmouseout="UIHideTextTooltip()" />
+			<Image id="FoodIcon" src="file://{images}/custom_game/food_icon.png" onmouseover="UIShowTextTooltip(Coming Soon)"  onmouseout="UIHideTextTooltip()" />
 		  </Panel>
 		  <Panel hittest="false" id='FoodLabelPanel'>
 			<Label hittest="false" id="FoodText" text="Coming Soon" html="true" class="TitleFont" />
@@ -590,5 +590,10 @@
 				</Button>
 			</Panel>
 		</Panel>
+		
+		 <Button id="ShopButton" hittest="true" onactivate="DOTAHUDToggleShop();">
+			<Image id="ShopIcon" src="file://{images}/custom_game/icon_kill_ally_psd_mip0.tga" />
+			<Label id="ShopLabelItem" text="SHOP" />
+		</Button>
     </Panel>
 </root>

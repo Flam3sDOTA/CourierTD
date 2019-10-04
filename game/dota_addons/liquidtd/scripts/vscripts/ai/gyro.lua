@@ -6,7 +6,7 @@ function Spawn( entityKeyValues )
     if IsServer() == false then
         return
     end
-    CallDown = thisEntity:FindAbilityByName("gyrocopter_call_down")
+    FlakCannon = thisEntity:FindAbilityByName("flak_cannon_datadriven")
     thisEntity:SetContextThink( "GyroThink", GyroThink, .1 )
 end
 
@@ -15,23 +15,20 @@ function GyroThink()
         return
     end
     
-    if CallDown ~= nil and CallDown:IsFullyCastable() then
-        CastCallDown()
+    if FlakCannon ~= nil and FlakCannon:IsFullyCastable() then
+        CastFlakCannon()
     end
     
     return .1
 end
 
-function CastCallDown()
-    local enemies = FindUnitsInRadius( thisEntity:GetTeamNumber(), thisEntity:GetOrigin(), thisEntity, 1000, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_ALL, DOTA_UNIT_TARGET_FLAG_NONE, FIND_CLOSEST, false )
-	if #enemies > 0 then
-	Timers:CreateTimer(0.6, function()	
+function CastFlakCannon()
+    local enemies = FindUnitsInRadius( thisEntity:GetTeamNumber(), thisEntity:GetOrigin(), thisEntity, 900, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_ALL, DOTA_UNIT_TARGET_FLAG_NONE, FIND_CLOSEST, false )
+	if #enemies > 3 then
 		ExecuteOrderFromTable({
 			UnitIndex = thisEntity:entindex(),
-			OrderType = DOTA_UNIT_ORDER_CAST_POSITION,
-			Position = enemies[1]:GetOrigin(),
-			AbilityIndex = CallDown:entindex(),
+			OrderType = DOTA_UNIT_ORDER_CAST_NO_TARGET,
+			AbilityIndex = FlakCannon:entindex()
 		})
-		end)
 	end
 end
