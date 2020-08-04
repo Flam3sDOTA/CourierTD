@@ -28,11 +28,8 @@
 		var NoCourierControl = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("shop_launcher_block").FindChildTraverse("quickbuy").FindChildTraverse("ShopCourierControls");
 		var NoXPContainer = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("center_with_stats").FindChildTraverse("center_block");
 		var NoStash = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("shop_launcher_block");
-		var NoShop = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("shop").FindChildTraverse("Main").FindChildTraverse("HeightLimiter").FindChildTraverse("GridMainShop").FindChildTraverse("GridShopHeaders").FindChildTraverse("NonSearchHeaderContainer").FindChildTraverse("GridMainTabs");
-		var NoShop2 = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("shop").FindChildTraverse("Main").FindChildTraverse("HeightLimiter").FindChildTraverse("GridMainShop").FindChildTraverse("GridShopHeaders").FindChildTraverse("NonSearchHeaderContainer");
-		var NoShop3 = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("shop").FindChildTraverse("Main").FindChildTraverse("HeightLimiter").FindChildTraverse("GridMainShop");
 		var NoCommonItems = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("shop").FindChildTraverse("Main").FindChildTraverse("ItemCombinesAndBasicItemsContainer");
-		
+		var NoRightFlair = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("center_with_stats").FindChildTraverse("center_block");
 		
 		NoTalents.FindChildTraverse("StatBranch").style.visibility = "collapse";
         NoTalentGlow.FindChildTraverse("level_stats_frame").style.visibility = "collapse";
@@ -47,10 +44,9 @@
 		NoStash.FindChildTraverse("quickbuy").style.visibility = "collapse";
 		NoStash.FindChildTraverse("shop_launcher_bg").style.visibility = "collapse";
 		NoCommonItems.FindChildTraverse("CommonItems").style.visibility = "collapse";
-		NoShop.FindChildTraverse("GridModeUpgradesTab").style.visibility = "collapse";
-		NoShop2.FindChildTraverse("RequestSuggestion").style.visibility = "collapse";
-		NoShop3.FindChildTraverse("GridShopHeaders").style.visibility = "collapse";
-		
+		NoRightFlair.FindChildTraverse("right_flare").style.visibility = "collapse";
+		NoRightFlair.FindChildTraverse("inventory_neutral_slot_container").style.visibility = "collapse";
+
 		GameUI.CustomUIConfig().team_colors = {}
 		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_GOODGUYS] = "#006400;"; // { 0, 100, 0 }		--		Green
 		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_BADGUYS ] = "#b22222;"; // { 178, 34, 34 }		--		Red

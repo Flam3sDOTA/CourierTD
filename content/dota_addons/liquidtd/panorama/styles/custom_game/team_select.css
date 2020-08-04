@@ -20,7 +20,7 @@
 {
     width: 400px;
 	height: 950px;
-	margin-top: 144px;
+	margin-top: 200px;
 	flow-children: down;    
     padding-left: 16px;
 	padding-right: 16px;
@@ -116,11 +116,11 @@
 #TeamsListRoot
 {
 	width: 100%;
-	height: 500px;
+	height: 560px;
     flow-children: down;
     overflow: clip scroll;
-	background-color: gradient(linear, 0% 0%, 0.1% 0%, from(#00000000), color-stop(0.1, #202327), color-stop(0.1, #141619ff), to(#000000ee));
-	border-radius: 8px;
+	border-radius: 10px;
+	margin-bottom: -50px;
 }
 
 #ShuffleTeamAssignmentButton
@@ -295,10 +295,8 @@
     flow-children: down;
 	height: fill-parent-flow (1);
 	max-height: 680px;
-	margin-top: 128px;
+	margin-top: 188px;
 	width: 100%;
-	background-color: gradient(linear, 0% 0%, 0.1% 0%, from(#00000000), color-stop(0.1, #202327), color-stop(0.1, #141619ff), to(#000000ee));
-	border-radius: 8px;
 }
 
 #UnassignedPlayersHeader
@@ -415,8 +413,7 @@
     flow-children: down;
     animation-name: TeamsListAppear;
     animation-duration: 0.75s;
-	margin-top: 0px;
-	background-color: gradient(linear, 0% 0%, 0.1% 0%, from(#00000000), color-stop(0.1, #202327), color-stop(0.1, #141619ff), to(#000000ee));
+	margin-bottom: -60px;
 	border-radius: 8px;
 }
 
@@ -662,12 +659,11 @@
     visibility: visible;
 }
 
-
-
 .TeamSelectTeam
 {
     width: 100%;
-    margin: 6px;
+    margin: 3px;
+	border-radius: 10px;
 }
 
 .TeamSelectTeam.local_player_on_this_team
@@ -676,7 +672,6 @@
 
 .TeamSelectTeam:hover
 {    
-    //background-color: #272b30dd;
 }
 
 #TeamBackgroundGradient
@@ -704,10 +699,11 @@
 
 #TeamGroup 
 {
-	background-color: transparent;
     width: 100%;
     padding: 0px;
     flow-children: down;
+	border-radius: 10px;
+	height: 80px;
 }
 
 #TeamHeader

@@ -1,23 +1,38 @@
 <root>
     <styles>
-        <include src="file://{resources}/styles/custom_game/custom_loading_screen.css" />
+		<include src="file://{resources}/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/play.css" />
+		<include src="file://{resources}/styles/custom_game/team_select.css" />
+		<include src="s2r://panorama/styles/dashboard_page_shared.vcss_c"/>
+		<include src="s2r://panorama/styles/dashboard.vcss_c"/>
+		<include src="s2r://panorama/styles/dashboard_search_results.vcss_c"/>
+		<include src="s2r://panorama/styles/battle_pass/international2018/bp_international2018_shared.vcss_c"/>
+		<include src="s2r://panorama/styles/battle_pass/international2018/bp_international2018_home.vcss_c"/>
+		<include src="s2r://panorama/styles/leaf_pages/dashboard_page_debut_dueling_fates.vcss_c" />
+		<include src="file://{resources}/styles/custom_game/custom_loading_screen.css" />
     </styles>
     
     <scripts>
         <include src="file://{resources}/scripts/custom_loading_screen.js" />
     </scripts>
     
-    <Panel class="AddonLoadingRoot">
-		<Panel id="AmbientFXContainer" hittest="false" hittestchildren="false">
-				<DOTAScenePanel id="MainAmbient" class="AmbientCameraFX SceneLoaded" hittest="false"  map="scenes/720_patchbg" /> 
+    <Panel hittest="false" class="AddonLoadingRoot">
+		<Panel id="CompendiumBG" class="FullScreenBackground"/>
+		<DOTAScenePanel id="CompendiumBackgroundScene" hittest="false" camera="camera_1" map="terrain_previews/dota_ti10_preview" light="bp_light" renderdeferred="true" pin-fov="horizontal" deferredalpha="false" particleonly="false"/>
+		<Panel class="Vignette"/>
+		<Panel class="Frost"/>
+		<Label class="TitleBig" text="Courier TD" />
+		<Panel class="CompendiumBody">
+			<Panel id="PredictionWell" class="BattlePassHomeCell">
+				<Panel>
+					<Label class="BattlePassCellTitle" text="#NEWS"/>
+				</Panel>
+			</Panel>
+			<Panel id="PredictionWell2" class="BattlePassHomeCell">
+				<Panel>
+					<Label class="BattlePassCellTitle" text="#Discord"/>
+				</Panel>
+			</Panel>
 		</Panel>
-		
-		<Panel class="MenuRoot">
-			<Label id="GameTitle" text="#addon_game_name" style="" />
-			<Label class="HowToPlay" text="GENERAL" />	
-			<Label class="List" text="• Courier TD is a 6-Man FFA tower defense where the objective is to stay alive longer than your enemy through 50 waves" />
-			<Label class="List" text="• Currently has 50 Waves and waves won't spawn after 50. You can leave once you kill the final boss." />
-		</Panel>
-
-    </Panel>
+	</Panel>
 </root>

@@ -1,171 +1,45 @@
 .AddonLoadingRoot {
     width: 100%;
     height: 100%;
-    background-image: url('file://{images}/custom_game/backgrounds/background1.png');
 	background-repeat: no-repeat;
 	background-size: 100%;
-
 }
 
-.MenuRoot
+.TitleBig
 {
-	width: 610px;
-	height: 880px;
-	margin-top: 52px;
-    margin-left: 90px;
-    padding: 8px;
-    border-radius: 16px;
-    flow-children: down;
-    background-color: gradient(linear, 0% 0%, 0.1% 0%, from(#111111), color-stop(0.01, #202327), color-stop(0.2, #141619ff), to(#000000dd));
-}
-
-#AmbientFXContainer {
-	width: 100%;
-	height: 100%;	
-	opacity: 0.8;
-	transition-property: transform, opacity;
-	transition-duration: 1s;
-	background-position: left center;
-}
-
-#MainAmbient {
-	vertical-align: bottom;
-	background-color: gradient( radial, 50% 100%, 0% 0%, 70% 70%, from( #9B582400 ), color-stop( .15, #5E371100 ), color-stop( .35, #44290800 ), color-stop( .65, #32200100 ), to( #20130100 ) );
-	width: 100%;
-	height: 100%;
-}
-
-
-.AmbientCameraFX {
-	width: 100%;
-	height: 100%;
-	opacity: 1;
-	hue-rotation: 0deg;
-	background-color: gradient( radial, 50% 100%, 0% 0%, 70% 70%, from( #9B582400 ), color-stop( .15, #5E371100 ), color-stop( .35, #44290800 ), color-stop( .65, #32200100 ), to( #20130100 ) );
-	transition-property: hue-rotation, background-color, opacity;
-	transition-duration: 1.5s, 1.5s, 2s;
-	transition-delay: 2.5s, 2.5s, 0s;
-	transition-timing-function: ease-in-out;
-}
-
-#GameTitle
-{
-    font-size: 45px;
-    font-weight: bold;
-    color: white;
-    text-transform: uppercase;
-	horizontal-align: center;
-}
-
-
-.HowToPlay
-{
-	margin-top: 15px;
-	margin-left: 15px;
-	horizontal-align: left;
-	font-size: 35px;
-	color: orangered;
-	text-shadow: 2px 2px 2px #000000;
+	vertical-align: top;
+    horizontal-align: left;
+	margin-left: 20px;
+	margin-top: 110px;
+	font-size: 58px;
+	letter-spacing: 3px;
+	color: white;
+    text-shadow: 0px 1px 12px 3.0 #474c15;
+	text-transform: uppercase;
+	font-family: titleFont;
 	font-weight: bold;
 }
 
-.List
+#PredictionWell
 {
-	margin-top: 15px;
-	margin-left: 15px;
-	horizontal-align: left;
-	font-size: 20px;
-	color: white;
-	text-shadow: 2px 2px 2px #000000;
-}
-
-
-#GalleryHolder
-{
-	margin-top: 20px;
-	width: 100%;
-	height: 80%;
-	flow-children: right;
-}
-
-.GalleryContext
-{
-	padding:8px;
-	margin-top: -20px;
-	flow-children: down;
-	width: 100%;
-	height: 85%;
-}
-
-#Image1Holder
-{
-	flow-children: down;
-	width: 100%;
-	height: 100%;
-}
-
-
-.Image
-{
-	width: 100%;
-	height: 100%;
-	background-size: 100%;
-	flow-children: right;
-}
-
-.ArrowBackground
-{
-	width: 500px;
-	height: 500px;
-	margin-top: -90px;
-	margin-left: 30px;
-}
-
-#LeftArrow
-{
-	transform: rotateZ( 90deg );
-	
-	width: 62px;
-	height: 57px;
-	background-image: url("s2r://panorama/images/control_icons/return_to_game_png.vtex");
-	background-size: 27px;
-	background-repeat: no-repeat;
-	wash-color: #ffffff;
-	margin-left: 180px;
-	margin-top: 12px;
-}
-
-#pageCountLabel
-{
-    font-size: 18px;
-    color: white;
+	background-color: #000000aa;
+	width: 450px;
+	margin-left: 16px;
+	height: 300px;
 	vertical-align: top;
-	margin-top: 2px;
-	horizontal-align: center;
-	margin-top: 13px;
-	margin-left: 30px;
-	background-color: gradient( linear, 0% 0%, 0% 100%, from( #60862d ), to( #3d5f1c ) );
-	border-top: 1px solid #ffffff22;
-	border-left: 1px solid #ffffff11;
-	border-right: 1px solid #00000044;
-	border-bottom: 1px solid #00000088;
-	border-radius: 5px;
-	width: 50px;
-	text-align: center;
+	margin-top: 16px;
+	margin-left: 16px;
 }
 
-#RightArrow
+#PredictionWell2
 {
-	transform: rotateZ( 270deg );
-	
-	width: 62px;
-	height: 57px;
-	background-image: url("s2r://panorama/images/control_icons/return_to_game_png.vtex");
-	background-size: 27px;
-	background-repeat: no-repeat;
-	wash-color: #ffffff;
-	margin-left: 290px;
-	margin-top: -23px;
+	background-color: #000000aa;
+	width: 450px;
+	margin-left: 16px;
+	height: 125px;
+	vertical-align: top;
+	margin-top: 325px;
+	border-style: solid;
+    border-width: 1px;
+    border-color: #1C643D;
 }
-
-

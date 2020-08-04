@@ -8,7 +8,7 @@
 .AvatarsPanel
 {
 	flow-children: down;
-	horizontal-align: right;
+	horizontal-align: left;
 	z-index: 3;
 }
 
@@ -16,9 +16,9 @@
 .PlayerPanel
 {			
 	width: 210px;
-	height: 109px;
-	opacity: 1;
+	height: 89px;
 	background-image: url("file://{images}/custom_game/TopUIcenter.png");
+	opacity: 1;
 	background-color: gradient( linear, 0% 0%, 0% 100%, from( #25282acc ), color-stop( .5, #25282acc), to( #000000dd ) );
 	transition-duration: .05s;
 	transition-property: background-image;
@@ -29,7 +29,7 @@
 .GrayOut
 {
 	width: 210px;
-	height: 109px;
+	height: 89px;
 	background-color: gray;
 	background-image: url("file://{images}/custom_game/TopUIcenter.png");
 	opacity: 0.9;
@@ -41,8 +41,8 @@
 
 .UserAvatar
 {			
-	width: 84px;
-	height: 84px;
+	width: 64px;
+	height: 64px;
 	background-size: 100%;
 	background-image:url('file://{images}/custom_game/user_avatar.png');
 	horizontal-align: left;
@@ -53,8 +53,8 @@
 .Username
 {	
 	horizontal-align: center;
-	margin-top: 25px;
-	margin-left: 80px;
+	margin-top: 15px;
+	margin-left: 55px;
 }
 Label {
 	color: white;
@@ -78,12 +78,13 @@ Label {
 {	
   width: 210px;
   height: 25px;  
-  margin-top: 84px;
-  margin-left:0px;
+
+  margin-left: 0px;
   border-style: solid;
   border-width: 0.7px;
   border-radius: 0px;
   border-color: #25282acc;
+  margin-top: 64px;
 }
 
 .PlayerHealth .ProgressBarLeft
@@ -94,7 +95,7 @@ Label {
 
 .HealthPercentage
 {
-	margin-top: 83px;
+	margin-top: 63px;
 	font-size: 22px;
 	horizontal-align: right;
 	margin-right: 2px;

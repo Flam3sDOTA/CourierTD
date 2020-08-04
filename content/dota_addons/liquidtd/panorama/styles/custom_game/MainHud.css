@@ -31,42 +31,60 @@
 }
 
 .TopLeftMenu {
-    width: 775px;
-    height: 149px;
-	margin-top: -30px;
-	margin-left: -260px;
-	
-	background-size: 100%;
-	opacity: 1;
-	transition-duration: .05s;
-	transition-property: background-image;
-	transition-timing-function: ease-in-out;
+	width: 220px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: -5px;
+    background-color: gradient( linear, 0% 0%, 100% 0%, from( rgba(0, 0, 0, 0.800) ), to( #42310D00 ) );
+    border-radius: 5px;
+    opacity: 1.2;
+    transition-duration: .05s;
+    transition-property: background-image;
+    transition-timing-function: ease-in-out;
 }
 
 .TopLeftMenuButton {
 	width: 30px;
-	height: 30px;
-	background-repeat: no-repeat;
-	margin-bottom: 0px;
-	opacity: 0.7;
-	wash-color: #CCDDFF;
-	transition-property: opacity;
-	transition-duration: 0.2s;
-	tooltip-position: bottom;
+    height: 30px;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    opacity: 0.7;
+    wash-color: #CCDDFF;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    tooltip-position: bottom;
 }
 
 #NewDashboardButton {
-	background-image: url("s2r://panorama/images/control_icons/return_to_game_png.vtex");
-	background-size: 100%;
-	margin-top: 42px;
-	margin-left: 265px;
+	background-image: url("s2r://panorama/images/control_icons/dota_logo_white_png.vtex");
+    background-size: 100%;
+    margin-top: 4px;
+    margin-left: 20px;
+    transition-duration: 0.3s;
+    transition-property: wash-color;
+    transition-timing-function: ease-in-out;
 }
+
+#NewSettingsButton {
+    background-image: url("s2r://panorama/images/control_icons/gear_png.vtex");
+    background-size: 25px;
+    margin-top: 7px;
+    margin-left: 67px;
+    transition-duration: 0.3s;
+    transition-property: wash-color;
+    transition-timing-function: ease-in-out;
+}
+
 #NewScoreboardButton {
-	background-image: url("s2r://panorama/images/control_icons/hamburger_png.vtex");
-	background-size: 25px;
-	margin-top: 43px;
-	margin-left: 305px;
+    background-image: url("s2r://panorama/images/control_icons/hamburger_png.vtex");
+    background-size: 26px;
+    margin-top: 6px;
+    margin-left: 110px;
+    transition-duration: 0.3s;
+    transition-property: wash-color;
+    transition-timing-function: ease-in-out;
 }
+
 #LeaderboardButton {
 	background-image: url("s2r://panorama/images/hud/reborn/icon_combat_log_psd.vtex");
 	background-size: 26px;
@@ -309,7 +327,7 @@
 	font-size: 20px;
 	text-shadow: 2px 2px 2px black;
 	text-overflow: clip;
-	margin-top: 115px;
+	margin-top: 113px;
 	margin-left: 357px;		
 	tooltip-position: bottom;
 }
@@ -1333,7 +1351,7 @@ DOTAAvatarImage {
 	vertical-align: bottom;
 	z-index: -2;
 	width: 131px;
-	height: 140px;
+	height: 70px;
 	background-color: #111920bb;
 	background-size: 100%;
 	border-top: 1px solid #ffffff11;
@@ -1404,6 +1422,22 @@ DOTAAvatarImage {
   text-overflow: shrink;
 }
 
+#ExchangeText
+{
+  color: white;
+  font-size: 20px;
+  font-family: Radiance;
+  font-weight: bold;
+  text-align: left;
+  vertical-align: center;
+  horizontal-align: left;
+  margin-left: 5px;
+  text-shadow: 0px 0px 3px 3.0 #000000;
+  margin-top: 4px;
+  text-overflow: shrink;
+  text-transform: uppercase;
+}
+
 #LumberIcon 
 { 
 	background-image: url("s2r://panorama/images/custom_game/lumber_icon.png"); 
@@ -1427,7 +1461,6 @@ DOTAAvatarImage {
     z-index: -1;
     box-shadow: #000000aa 0px 0px 2px 2px;
     align: right bottom;
-    margin-bottom: 74px;
     transition-property: background-image;
     transition-duration: .18s;
     transition-timing-function: ease-in-out;
@@ -1441,7 +1474,6 @@ DOTAAvatarImage {
 	background-color: #111920bb;
 	background-size: 100%;
 	vertical-align: bottom;
-	margin-bottom: 74px;
 	border-top: 1px solid #ffffff22;
 	border-left: 1px solid #ffffff11;
 	border-right: 1px solid #00000044;
@@ -1536,8 +1568,6 @@ DOTAAvatarImage {
     width: 100%;
     height: 100%;
 	margin-top: 180px;
-	visibility: collapse;
-	
 }
 
 .DemoHud
@@ -1550,10 +1580,10 @@ DOTAAvatarImage {
 
 .ControlPanel
 {
-    transform: translateX( 8.3% ) translateY( -100px );
+    transform: translateX( -100px ) translateY( 100px );
     vertical-align: middle;
-    horizontal-align: right;
-	flow-children: left;
+    horizontal-align: left;
+	flow-children: right;
     padding: 4px;
     padding-left: 0px;
 	padding-top: 0px;
@@ -1566,9 +1596,9 @@ DOTAAvatarImage {
 
 .ControlPanelContainer
 {
-    flow-children: right;
+    flow-children: left;
     vertical-align: middle;
-    horizontal-align: right;
+    horizontal-align: left;
     height: 690px;
     width: 610px;
     font-size: 16;
@@ -2139,7 +2169,6 @@ DOTAAvatarImage {
 	border-left: 1px solid #ffffff11;
 	border-right: 1px solid #ffffff11;
 	border-bottom: 1px solid #ffffff11;
-	visibility: collapse;
 }
 
 #ExchangeLabel
