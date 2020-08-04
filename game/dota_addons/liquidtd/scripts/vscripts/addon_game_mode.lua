@@ -273,14 +273,14 @@ function LiquidTD:InitGameMode()
 	GameRules:SetUseUniversalShopMode(true)
 	GameRules:SetHeroRespawnEnabled(false)
 	GameRules:SetSafeToLeave(true)
-	GameRules:SetCustomGameSetupAutoLaunchDelay(5)
+	GameRules:SetCustomGameSetupAutoLaunchDelay(30)
 	GameRules:SetCustomGameEndDelay(0)
 	GameRules:SetHeroSelectionTime(0)
 	GameRules:SetPreGameTime(0)
 	GameRules:SetStrategyTime(0)
 	GameRules:SetShowcaseTime(0)
 	GameRules:SetGoldTickTime(0)
-	GameRules:SetStartingGold(195) -- default 185
+	GameRules:SetStartingGold(195) -- default 195
 	GameRules:SetGoldPerTick(0)
 	
 	-- Gamemode Rules

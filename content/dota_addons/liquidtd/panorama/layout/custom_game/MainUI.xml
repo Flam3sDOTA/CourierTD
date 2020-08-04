@@ -36,7 +36,7 @@
 			<Label id="UnitCount" class="UnitCount" text="Unit Count:" />
 			<Label id="UnitCountLabel" class="UnitCountLabel" text="20" />
 			
-			<Label id="NextRound" class="NextRound" text="Next Round Starts in:" />
+			<Label id="NextRound" class="NextRound" text="Next Round in:" />
 			<Label id="NextRoundLabel" class="NextRoundLabel" text="00:30" />
 		</Panel>
 		
@@ -387,14 +387,6 @@
 			</Panel>	
 		</Panel>
 		
-		<Panel hittest="false" id='ResourcePanel'>
-		  <Label hittest="false" id="ResourcesLabel" text="RESOURCES" html="true" class="TitleFont" />
-		  <Panel hittest="false" id='GoldIconPanel'>
-			<Image id="GoldIcon" src="file://{images}/custom_game/gold_icon.png" onmouseover="UIShowTextTooltip(Gold)"  onmouseout="UIHideTextTooltip()" />
-		  </Panel>
-		  <Panel hittest="false" id='GoldLabelPanel'>
-			<Label hittest="false" id="GoldText" text="0" html="true" class="TitleFont" />
-		  </Panel>
-		</Panel>
+		 
 	</Panel>
 </root>

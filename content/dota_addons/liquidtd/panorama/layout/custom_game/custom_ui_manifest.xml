@@ -26,8 +26,8 @@
         var NoKillCam = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements");
 		var NoTPScrollUI = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("center_with_stats").FindChildTraverse("center_block");
 		var NoCourierControl = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("shop_launcher_block").FindChildTraverse("quickbuy").FindChildTraverse("ShopCourierControls");
+		var NoCourierControl2 = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("shop_launcher_block").FindChildTraverse("quickbuy");
 		var NoXPContainer = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("center_with_stats").FindChildTraverse("center_block");
-		var NoStash = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("shop_launcher_block");
 		var NoCommonItems = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("shop").FindChildTraverse("Main").FindChildTraverse("ItemCombinesAndBasicItemsContainer");
 		var NoRightFlair = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("center_with_stats").FindChildTraverse("center_block");
 		
@@ -41,8 +41,6 @@
 		NoTPScrollUI.FindChildTraverse("inventory_tpscroll_container").style.visibility = "collapse";
 		NoCourierControl.FindChildTraverse("courier").style.visibility = "collapse";
 		NoXPContainer.FindChildTraverse("xp").style.visibility = "collapse";
-		NoStash.FindChildTraverse("quickbuy").style.visibility = "collapse";
-		NoStash.FindChildTraverse("shop_launcher_bg").style.visibility = "collapse";
 		NoCommonItems.FindChildTraverse("CommonItems").style.visibility = "collapse";
 		NoRightFlair.FindChildTraverse("right_flare").style.visibility = "collapse";
 		NoRightFlair.FindChildTraverse("inventory_neutral_slot_container").style.visibility = "collapse";

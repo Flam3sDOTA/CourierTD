@@ -198,7 +198,7 @@
 #StartGameCountdownTimer
 {
 	width: 96px;
-	margin-top: 65px;
+	margin-top: 35px;
 	horizontal-align: right;
 	margin-right: 30px;
 }
@@ -221,7 +221,16 @@
 	wash-color: #222222;
 }
 
-#TimerBg,
+#TimerBg
+{
+	width: 70px;
+	height: 70px;
+	margin-top: 2px;
+	horizontal-align: center;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+}
+
 #TimerRing
 {
 	width: 70px;
@@ -230,6 +239,7 @@
 	horizontal-align: center;
     transition-property: opacity;
     transition-duration: 0.2s;
+	wash-color: #1C643F;
 }
 
 #TimerLabelBox 
@@ -333,7 +343,7 @@
 	height: 2px;
     margin-left: 8px;
     margin-right: 8px;
-	background-color: gray;
+	background-color: #1C643D;
 }
 
 #UnassignedPlayersContainer
@@ -446,8 +456,8 @@
 	height: 2px;
     margin-left: 8px;
     margin-right: 8px;
-	margin-top: 30px;
-	background-color: gray;
+	margin-top: 10px;
+	background-color: #1C643D;
 }
 
 #OptionDivider2
@@ -457,16 +467,16 @@
     margin-left: 8px;
     margin-right: 8px;
 	margin-top: 184px;
-	background-color: gray;
+	background-color: #1C643D;
 }
 
 #Options {
 	width: 100%;
 	height: 100%;
-    margin-top: -60px;
     text-transform: uppercase;
     flow-children: down;
 	margin-left: 5px;
+	margin-top: -90px;
 }
 
 #AutoAssignButtonNew
@@ -488,34 +498,24 @@
 
 .toggled
 {
-	background-color: gradient( linear, 0% 0%, 0% 100%, from( #2d4881cc ), to( #84acff ) );
-	box-shadow: fill #486ca922 -4px -4px 8px 8px;
-	border-top: 1px solid #ffffff03;
-	border-left: 1px solid #ffffff03; 
+	border: 1px solid #1C643D;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #0D1C14 ), to( #1B2318 ) );
 }
 
 .untoggled 
 { 
-	background-color: gradient( linear, 0% 0%, 0% 100%, from( #2d4881cc ), to( #486ca9cc ) );
-	box-shadow: fill #486ca922 -4px -4px 8px 8px;
-	border-top: 1px solid #ffffff03;
-	border-left: 1px solid #ffffff03; 
+	border: 1px solid #1C643D;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #0D1C14 ), to( #1B2318 ) );
 }
 
 .toggled:hover
 {
-	background-color: gradient( linear, 0% 0%, 0% 100%, from( #2d4881cc ), to( #486ca9cc ) );
-	box-shadow: fill #486ca922 -4px -4px 8px 8px;
-	border-top: 1px solid #ffffff03;
-	border-left: 1px solid #ffffff03; 
+	brightness: 2;
 }
 
 .untoggled:hover
 {
-	background-color: gradient( linear, 0% 0%, 0% 100%, from( #2d4881cc ), to( #84acff ) );
-	box-shadow: fill #486ca922 -4px -4px 8px 8px;
-	border-top: 1px solid #ffffff03;
-	border-left: 1px solid #ffffff03; 
+	brightness: 2;
 }
 
 .tradetoggled
@@ -767,7 +767,7 @@
     margin-right: 8px;
 	margin-top: -5px;
 	margin-bottom: 5px;
-	background-color: gray;
+	background-color: #1C643D;
 }
 
 #PlayerList

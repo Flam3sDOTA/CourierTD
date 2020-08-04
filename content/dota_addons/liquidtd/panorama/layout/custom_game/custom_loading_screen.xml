@@ -23,15 +23,17 @@
 		<Panel class="Frost"/>
 		<Label class="TitleBig" text="Courier TD" />
 		<Panel class="CompendiumBody">
-			<Panel id="PredictionWell" class="BattlePassHomeCell">
+			<!--<Panel id="PredictionWell" class="BattlePassHomeCell">
 				<Panel>
 					<Label class="BattlePassCellTitle" text="#NEWS"/>
 				</Panel>
-			</Panel>
-			<Panel id="PredictionWell2" class="BattlePassHomeCell">
+			</Panel>-->
+			<Panel id="PredictionWell2" class="BattlePassHomeCell" hittest="true">
 				<Panel>
 					<Label class="BattlePassCellTitle" text="#Discord"/>
 				</Panel>
+				<Label class="ReportBugsDiscordText" text="We invite you to put on your bug-hunting hat to report any bugs that you encountered."/>
+				<TextButton class="BattlePassButtonNEW" id="BattlePassButtonNEW" hittest="true" text="Click here to join our server!" onactivate="ExternalBrowserGoToURL('https://discord.gg/WPmtWyB');"/>
 			</Panel>
 		</Panel>
 	</Panel>
