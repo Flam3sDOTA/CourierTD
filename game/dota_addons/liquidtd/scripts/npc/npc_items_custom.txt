@@ -1561,6 +1561,104 @@
 		}		
 	}
 	
+	//============================================================
+	// Yasha and Yasha - Tier 4
+	//============================================================
+	"item_custom_yasha_yasha"
+	{
+		"ID" 							"4002"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_4_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_yasha_yasha"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"0" 
+		"ItemAlertable"					"1"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemDisassembleRule" 			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"ItemCost" 						"2500"
+		"ItemSellable" 					"1"
+		"ItemPurchasable" 				"1"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"40"
+			}
+			
+			
+		}
+		"Modifiers"
+		{
+			"item_custom_yasha_yasha_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"			"%bonus_attack_speed"
+				}
+			}
+		}		
+	}
+	
+	//============================================================
+	// Sange and Sange - Tier 4
+	//============================================================
+	"item_custom_sange_sange"
+	{
+		"ID" 							"4003"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_4_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_sange_sange"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"0" 
+		"ItemAlertable"					"1"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemDisassembleRule" 			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"ItemCost" 						"2500"
+		"ItemSellable" 					"1"
+		"ItemPurchasable" 				"1"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"70"
+			}	
+		}
+		"Modifiers"
+		{
+			"item_custom_sange_yasha_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"				"%bonus_damage"
+				}
+			}
+		}		
+	}
+	
 	
 	//============================================================
 	// TIER SSR ITEMS
@@ -1874,6 +1972,38 @@
 		"ItemRequirements"
 		{
 			"01" 			 			"item_custom_sange;item_custom_yasha"
+		}
+	}
+	
+	//============================================================
+	// Yasha and Yasha Recipe
+	//============================================================
+	"item_recipe_custom_yasha_yasha" 
+	{
+		"ID" 				  			"5010"
+		"BaseClass"           			"item_datadriven"
+		"ItemRecipe"          			"1"
+		"ItemCost"            			"0"
+		"ItemResult"          			"item_custom_yasha_yasha"
+		"ItemRequirements"
+		{
+			"01" 			 			"item_custom_yasha;item_custom_yasha"
+		}
+	}
+	
+	//============================================================
+	// Sange and Sange Recipe
+	//============================================================
+	"item_recipe_custom_sange_sange" 
+	{
+		"ID" 				  			"5011"
+		"BaseClass"           			"item_datadriven"
+		"ItemRecipe"          			"1"
+		"ItemCost"            			"0"
+		"ItemResult"          			"item_custom_sange_sange"
+		"ItemRequirements"
+		{
+			"01" 			 			"item_custom_sange;item_custom_sange"
 		}
 	}
 }

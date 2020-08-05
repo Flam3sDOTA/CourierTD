@@ -6,14 +6,20 @@
 		"item"		"item_custom_band_of_elvenskin"
 		"item"		"item_custom_belt_of_strength"
 		"item"		"item_custom_robe_of_the_magi"
-	}
-
-	"attributes"
-	{
 		"item"		"item_custom_blight_stone"
 		"item"		"item_custom_crown"
 		"item"		"item_custom_time_stone"
 		"item"		"item_custom_mind_stone"
+	}
+
+	"attributes"
+	{
+		"item"		"item_custom_crystalys"
+		"item"		"item_custom_yasha"
+		"item"		"item_custom_sange"
+		"item"		"item_custom_skull_basher"
+		"item"		"item_custom_desolator"
+		"item"		"item_custom_dragon_lance"
 	}
 
 	"weapons_armor"
@@ -26,17 +32,14 @@
 		"item"		"item_custom_mithril_hammer"
 		"item"		"item_custom_demon_edge"
 	}
-			
+
 	"misc"
 	{
-		"item"		"item_custom_crystalys"
-		"item"		"item_custom_yasha"
-		"item"		"item_custom_sange"
-		"item"		"item_custom_skull_basher"
-		"item"		"item_custom_desolator"
-		"item"		"item_custom_dragon_lance"
+		
 		"item"		"item_custom_daedalus"
 		"item"		"item_custom_sange_yasha"
+		"item"		"item_custom_yasha_yasha"
+		"item"		"item_custom_sange_sange"
 	}	
 	
 	// Level 1 - Green Recipes
@@ -72,10 +75,6 @@
 	}
 
 	"sideshop2"
-	{
-	}
-	
-	"secretshop"
 	{
 	}	
 }
