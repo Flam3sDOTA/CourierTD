@@ -1,20 +1,11 @@
 "AddonInfo" {
 	"TeamCount"				"6"
 	"maps"					"normal"
-	"IsPlayable"			"1"
-	"PenaltiesEnabled"		"0"
-	"HeroGuidesSupported"	"0"
+	"IsPlayable"				"1"
+	"PenaltiesEnabled"			"0"
+	"HeroGuidesSupported"			"0"
 	"normal" 
 	{ 
-		"MaxPlayers" "6" 
+		"MaxPlayers" 			"6" 
 	}
-	"Default_Keys"
-    {
-        "01"
-        {
-            "Key"       "Space"
-            "Command"   "ToggleStatistics"
-            "Name"      "Toggle Statistics Hotkey"
-        }
-    }
 }

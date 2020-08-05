@@ -92,6 +92,18 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
+		
 	}
 	
 	//============================================================
@@ -125,6 +137,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -158,6 +181,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -191,6 +225,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -198,7 +243,7 @@
 	//============================================================
 	"unit_wave5"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
+		"vscripts"         				"ai/boss_wave5.lua"
 		
 		"Model"                 		"models/items/courier/beaverknight/beaverknight.vmdl"
 		"ModelScale"               		"3"
@@ -222,14 +267,24 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
+		"MovementSpeed"         		"400"
 		"MovementTurnRate"      		"1"
-		
-		
-		"Ability1"					""
+
+		"Ability1"					"lifestealer_rage_lua"
 		"Ability2"					""
 		"Ability3"					""
 		"Ability6"					""
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "5000"
+            "ArmorGain"                 "10"
+            "MagicResistGain"           "10"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "250"
+		}
 	}
 	
 	//============================================================
@@ -263,6 +318,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -296,6 +362,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -329,6 +406,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -362,6 +450,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -398,8 +497,19 @@
 		
 		"Ability1"					""
 		"Ability2"					"bristleback_bristleback_lua"
-		"Ability3"					"mars_bulwark_lua"
+		"Ability3"					""
 		"Ability6"					""
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "1000"
+            "ArmorGain"                 "10"
+            "MagicResistGain"           "10"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "500"
+		}
 	}
 	
 	//============================================================
@@ -433,6 +543,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -466,6 +587,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -499,6 +631,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -532,6 +675,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -565,11 +719,22 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
 		
 		"Ability1"					""
 		"Ability2"					"bristleback_bristleback_lua"
-		"Ability3"					"mars_bulwark_lua"
+		"Ability3"					""
 		"Ability6"					""
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "15000"
+            "ArmorGain"                 "10"
+            "MagicResistGain"           "10"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "1000"
+		}
 	}
 	
 	//============================================================
@@ -603,6 +768,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -636,6 +812,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -669,6 +856,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -702,6 +900,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -735,11 +944,22 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
 		
 		"Ability1"					""
 		"Ability2"					"bristleback_bristleback_lua"
-		"Ability3"					"mars_bulwark_lua"
+		"Ability3"					""
 		"Ability6"					""
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "20000"
+            "ArmorGain"                 "10"
+            "MagicResistGain"           "10"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "1500"
+		}
 	}
 	
 	//============================================================
@@ -773,6 +993,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -806,6 +1037,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -839,6 +1081,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -872,6 +1125,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	
@@ -906,11 +1170,22 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
 		
 		"Ability1"					""
 		"Ability2"					"bristleback_bristleback_lua"
-		"Ability3"					"mars_bulwark_lua"
+		"Ability3"					""
 		"Ability6"					""
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "25000"
+            "ArmorGain"                 "10"
+            "MagicResistGain"           "10"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "1500"
+		}
 	}
 	
 	//============================================================
@@ -944,6 +1219,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -977,6 +1263,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -1010,6 +1307,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -1043,6 +1351,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -1053,7 +1372,7 @@
 		"vscripts"         				"ai/wave_creep.lua"
 		
 		"Model"                 		"models/items/furion/treant/defender_of_the_jungle_lakad_coconut/defender_of_the_jungle_lakad_coconut.vmdl"
-		"ModelScale"               		"2.5"
+		"ModelScale"               		"1.5"
 		"SoundSet"              		"Creep_Good_Melee"
 		"ArmorPhysical"         		"15"
 		"MagicalResistance"     		"15"
@@ -1076,11 +1395,22 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
 		
 		"Ability1"					""
 		"Ability2"					"bristleback_bristleback_lua"
-		"Ability3"					"mars_bulwark_lua"
+		"Ability3"					""
 		"Ability6"					""
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "30000"
+            "ArmorGain"                 "15"
+            "MagicResistGain"           "15"
+            "MoveSpeedGain"             "20"
+            "BountyGain"                "2000"
+		}
 	}
 	
 	//============================================================
@@ -1114,6 +1444,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -1147,6 +1488,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -1180,6 +1532,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -1213,6 +1576,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -1246,11 +1620,22 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
 		
 		"Ability1"					""
 		"Ability2"					"bristleback_bristleback_lua"
 		"Ability3"					"mars_bulwark_lua"
 		"Ability6"					""
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "35000"
+            "ArmorGain"                 "15"
+            "MagicResistGain"           "15"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "2500"
+		}
 	}
 	
 	//============================================================
@@ -1284,6 +1669,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -1317,6 +1713,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -1350,6 +1757,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -1383,6 +1801,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -1416,11 +1845,22 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
 		
 		"Ability1"					""
 		"Ability2"					"bristleback_bristleback_lua"
 		"Ability3"					"mars_bulwark_lua"
 		"Ability6"					""
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "40000"
+            "ArmorGain"                 "25"
+            "MagicResistGain"           "25"
+            "MoveSpeedGain"             "20"
+            "BountyGain"                "2000"
+		}
 	}
 	
 	//============================================================
@@ -1454,6 +1894,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -1487,6 +1938,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -1497,7 +1959,7 @@
 		"vscripts"         				"ai/wave_creep.lua"
 		
 		"Model"                 		"models/items/courier/pangolier_squire/pangolier_squire.vmdl"
-		"ModelScale"               		"1.5"
+		"ModelScale"               		"1"
 		"SoundSet"              		"Creep_Good_Melee"
 		"ArmorPhysical"         		"4"
 		"MagicalResistance"     		"4"
@@ -1520,6 +1982,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -1553,6 +2026,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -1586,11 +2070,22 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
 		
 		"Ability1"					""
 		"Ability2"					"bristleback_bristleback_lua"
 		"Ability3"					"mars_bulwark_lua"
 		"Ability6"					""
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "50000"
+            "ArmorGain"                 "30"
+            "MagicResistGain"           "30"
+            "MoveSpeedGain"             "20"
+            "BountyGain"                "3000"
+		}
 	}
 	
 	//============================================================
@@ -1624,6 +2119,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -1657,6 +2163,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -1690,6 +2207,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -1723,6 +2251,17 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "3000"
+            "ArmorGain"                 "5"
+            "MagicResistGain"           "5"
+            "MoveSpeedGain"             "10"
+            "BountyGain"                "40"
+		}
 	}
 	
 	//============================================================
@@ -1756,11 +2295,22 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"Level" 						"1"
 		
-		"Ability1"					""
-		"Ability2"					"bristleback_bristleback_lua"
-		"Ability3"					"mars_bulwark_lua"
-		"Ability6"					""
+		"Ability1"						""
+		"Ability2"						"bristleback_bristleback_lua"
+		"Ability3"						"mars_bulwark_lua"
+		"Ability6"						""
+		"Creature"
+        {
+			//Level Up Parameters
+            //-----------------------------------------------------------------
+            "HPGain"                    "100000"
+            "ArmorGain"                 "30"
+            "MagicResistGain"           "30"
+            "MoveSpeedGain"             "30"
+            "BountyGain"                "4500"
+		}
 	}
 	
 	//============================================================

@@ -37,11 +37,11 @@ end
 function SpawnNextWave()
   CURRENT_WAVE = CURRENT_WAVE + 1
 
-  local waveData = wave_table["wave" .. CURRENT_WAVE]
-  if not waveData then
-    print("wave" .. CURRENT_WAVE .. " doesn't exist. TODO: Implement final wave logic")
-    return
-  end
+   local waveData = wave_table["wave" .. CURRENT_WAVE]
+   if not waveData then
+		CURRENT_WAVE = 1
+		waveData = wave_table["wave" .. CURRENT_WAVE]
+   end
 
   CustomGameEventManager:Send_ServerToAllClients("round_started", 
     {

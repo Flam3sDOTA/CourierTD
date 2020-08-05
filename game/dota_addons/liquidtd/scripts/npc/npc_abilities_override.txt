@@ -1160,4 +1160,12 @@
 	{
 		"ItemPurchasable" "0"
 	}
+	"item_voodoo_mask"
+	{
+		"ItemPurchasable" "0"
+	}
+	"item_blitz_knuckles"
+	{
+		"ItemPurchasable" "0"
+	}
 }

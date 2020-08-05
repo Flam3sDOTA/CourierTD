@@ -314,7 +314,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"magic_resistance_reduced"	"-20"
+				"magic_resistance_reduced"	"-10"
 			}
 			"02"
 			{
@@ -434,7 +434,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"armor_reduction"			"-3"
+				"armor_reduction"			"-2"
 			}
 			"02"
 			{
@@ -882,7 +882,7 @@
 		"ItemRequiresCharges"			"0"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"ItemCost" 						"1500"
+		"ItemCost" 						"1800"
 		"ItemSellable" 					"1"
 		"ItemPurchasable" 				"1"
 		"ItemStackable" 				"0"
@@ -913,6 +913,180 @@
 	}
 	
 	//============================================================
+	// Claymore - Tier 2
+	//============================================================
+	"item_custom_claymore"
+	{
+		"ID" 							"3207"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_2_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_claymore"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"0" 
+		"ItemAlertable"					"1"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"1250"
+		"ItemSellable" 					"1"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"21"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_broadsword_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"			"%bonus_damage"
+				}
+			}
+		}
+	}
+	
+	//============================================================
+	// Orb of Destruction - Tier 2
+	//============================================================
+	"item_custom_orb_of_destruction"
+	{
+		"ID" 							"3208"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_2_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_orb_of_destruction"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"0" 
+		"ItemAlertable"					"1"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"1000"
+		"ItemSellable" 					"1"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"armor_reduction"			"-5"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"magic_resistance_reduced"	"-20"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"duration"					"4"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_orb_of_destruction_modifier"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"OnAttackLanded"
+				{
+					"ApplyModifier"
+					{
+						"ModifierName"	"item_custom_orb_of_destruction_modifier_debuff"
+						"Duration"		"%duration"
+						"Target"		"TARGET"
+					}
+				}
+			}
+		
+			"item_custom_orb_of_destruction_modifier_debuff"
+			{
+				"IsHidden"			"0"
+				"IsBuff"			"0"
+				"IsDebuff"			"1"
+				"EffectName"		"particles/units/heroes/hero_monkey_king/monkey_king_jump_armor_debuff_model.vpcf"
+				"EffectAttachType"	"follow_overhead"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%armor_reduction"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"%magic_resistance_reduced"
+				}
+			
+			}
+		}			
+	}
+	
+	//============================================================
+	// Quickening Charm - Tier 2
+	//============================================================
+	"item_custom_quickening_charm"
+	{
+		"ID" 							"3209"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_2_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_quickening_charm"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"0" 
+		"ItemAlertable"					"1"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"1000"
+		"ItemSellable" 					"1"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"cooldown_reduction"			"3"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_mind_sigil_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_NONE"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_COOLDOWN_REDUCTION_CONSTANT"	"%cooldown_reduction"
+				}
+			}
+		}			
+	}
+	
+	//============================================================
 	// TIER 3 ITEMS
 	//============================================================
 	// Crystalys - Tier 3
@@ -933,7 +1107,7 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ItemDisassembleRule" 			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
-		"ItemCost" 						"1250"
+		"ItemCost" 						"2250"
 		"ItemSellable" 					"1"
 		"ItemPurchasable" 				"1"
 		"ItemStackable" 				"0"
@@ -1034,7 +1208,7 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ItemDisassembleRule" 			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
-		"ItemCost" 						"1250"
+		"ItemCost" 						"2250"
 		"ItemSellable" 					"1"
 		"ItemPurchasable" 				"1"
 		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
@@ -1082,7 +1256,7 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ItemDisassembleRule" 			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
-		"ItemCost" 						"1250"
+		"ItemCost" 						"2250"
 		"ItemSellable" 					"1"
 		"ItemPurchasable" 				"1"
 		"ItemStackable" 				"0"
@@ -1132,7 +1306,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost" 						"1750"
+		"ItemCost" 						"2750"
 		"ItemSellable" 					"1"
 		"ItemPurchasable" 				"1"
 		"ItemStackable" 				"0"
@@ -1256,7 +1430,7 @@
 	
 	
 	//============================================================
-	// Desolator - Tier 3
+	// Desolator - Tier 4
 	//============================================================
 	"item_custom_desolator"
 	{
@@ -1264,7 +1438,7 @@
 		"BaseClass" 					"item_datadriven"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"Model"							"models/props_winter/present.vmdl" 
-		"Effect"						"particles/item_effects/item_tier_3_circle.vpcf"
+		"Effect"						"particles/item_effects/item_tier_4_circle.vpcf"
 		"AbilityTextureName" 			"item_custom_desolator"
 		"ItemDroppable" 				"1"
 		"ItemKillable" 					"0" 
@@ -1360,7 +1534,7 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ItemDisassembleRule" 			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
-		"ItemCost" 						"1500"
+		"ItemCost" 						"2500"
 		"ItemSellable" 					"1"
 		"ItemPurchasable" 				"1"
 		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
@@ -1371,7 +1545,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_attack_speed"	"10"
+				"bonus_attack_speed"	"25"
 			}
 			"02"
 			{
@@ -1381,7 +1555,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_range"			"140"
+				"bonus_range"			"200"
 			}
 		}
 		"Modifiers"
@@ -1398,6 +1572,61 @@
 				}
 			}
 		}		
+	}
+	
+	//============================================================
+	// Spell Prism - Tier 3
+	//============================================================
+	"item_custom_spell_prism"
+	{
+		"ID" 							"3306"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_3_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_spell_prism"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"0" 
+		"ItemAlertable"					"1"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"2500"
+		"ItemSellable" 					"1"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_mana_regen"			"5"
+			}
+			
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"cooldown_reduction"		"8"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_spell_prism_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_NONE"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"			"%bonus_mana_regen"
+					"MODIFIER_PROPERTY_COOLDOWN_REDUCTION_CONSTANT"	"%cooldown_reduction"
+				}
+			}
+		}			
 	}
 	
 	//============================================================
@@ -1421,7 +1650,7 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ItemDisassembleRule" 			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
-		"ItemCost" 						"2750"
+		"ItemCost" 						"3050"
 		"ItemSellable" 					"1"
 		"ItemPurchasable" 				"1"
 		"ItemStackable" 				"0"
@@ -1523,7 +1752,7 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ItemDisassembleRule" 			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
-		"ItemCost" 						"2500"
+		"ItemCost" 						"4500"
 		"ItemSellable" 					"1"
 		"ItemPurchasable" 				"1"
 		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
@@ -1580,7 +1809,7 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ItemDisassembleRule" 			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
-		"ItemCost" 						"2500"
+		"ItemCost" 						"4500"
 		"ItemSellable" 					"1"
 		"ItemPurchasable" 				"1"
 		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
@@ -1630,7 +1859,7 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ItemDisassembleRule" 			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
-		"ItemCost" 						"2500"
+		"ItemCost" 						"4500"
 		"ItemSellable" 					"1"
 		"ItemPurchasable" 				"1"
 		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
@@ -1659,6 +1888,54 @@
 		}		
 	}
 	
+	//============================================================
+	// The Leveller - Tier 4
+	//============================================================
+	"item_custom_the_leveller"
+	{
+		"ID" 							"4004"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_4_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_the_leveller"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"0" 
+		"ItemAlertable"					"1"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemDisassembleRule" 			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"ItemCost" 						"5500"
+		"ItemSellable" 					"1"
+		"ItemPurchasable" 				"1"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"60"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_the_leveller_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"			"%bonus_attack_speed"
+				}
+			}
+		}		
+	}
+	
 	
 	//============================================================
 	// TIER SSR ITEMS
@@ -1670,8 +1947,8 @@
 		"ID" 							"7500"
 		"BaseClass" 					"item_datadriven"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"Model"							"models/props_gameplay/divine_rapier.vmdl" 
-		"Effect"						""
+		"Model"							"models/props_winter/present.vmdl"
+		"Effect"						"particles/item_effects/item_tier_5_circle.vpcf"
 		"AbilityTextureName" 			"item_custom_rapier"
 		"ItemDroppable" 				"1"
 		"ItemKillable" 					"0" 
@@ -1718,8 +1995,8 @@
 		"ID" 							"7501"
 		"BaseClass" 					"item_datadriven"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"Model"							"models/props_gameplay/red_box.vmdl" 
-		"Effect"						""
+		"Model"							"models/props_winter/present.vmdl"
+		"Effect"						"particles/item_effects/item_tier_5_circle.vpcf"
 		"AbilityTextureName" 			"item_custom_moonshard"
 		"ItemDroppable" 				"1"
 		"ItemKillable" 					"0"
@@ -1781,6 +2058,8 @@
 		"ItemShopTags"					"damage"
 		"ItemQuality"					"epic"
 		"ItemAliases"					"radiance"
+		"Model"							"models/props_winter/present.vmdl"
+		"Effect"						"particles/item_effects/item_tier_5_circle.vpcf"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
@@ -1795,7 +2074,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"aura_damage"			"50"
+				"aura_damage"			"200"
 			}
 			"03"
 			{
@@ -1805,12 +2084,191 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"aura_radius"			"720"
+				"aura_radius"			"1000"
 			}
 		}
 	}
 	
+	//============================================================
+	// Stygian Desolator - Tier SSR
+	//============================================================
+	"item_custom_desolator2"
+	{
+		"ID" 							"7502"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_5_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_desolator2"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"0"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"0"
+		"ItemAlertable"					"1"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemDisassembleRule" 			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"ItemStackable" 				"0"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"armor_reduction"			"-10"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"duration"					"7"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_damage"				"100"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_desolator2_modifier"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"		"%bonus_damage"
+				}
+				"OnAttackLanded"
+				{
+					"ApplyModifier"
+					{
+						"ModifierName"	"item_custom_desolator2_modifier_debuff"
+						"Duration"		"%duration"
+						"Target"		"TARGET"
+					}
+					"FireSound"
+					{
+						"EffectName"		"Item_Desolator.Target"
+						"Target"			"TARGET"
+					}
+				}
+			}
+		
+			"item_custom_desolator2_modifier_debuff"
+			{
+				"IsHidden"			"0"
+				"IsBuff"			"0"
+				"IsDebuff"			"1"
+				"EffectName"		"particles/units/heroes/hero_monkey_king/monkey_king_jump_armor_debuff_model.vpcf"
+				"EffectAttachType"	"follow_overhead"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%armor_reduction"
+				}
+			
+			}
+		}			
+	}
+	
+	//============================================================
+	// Ballista - Tier SSR
+	//============================================================
+	"item_custom_ballista"
+	{
+		"ID" 							"7503"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_5_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_ballista"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"0"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"0"
+		"ItemAlertable"					"1"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemDisassembleRule" 			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_range"			"350"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_ballista_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACK_RANGE_BONUS"					"%bonus_range"
+				}
+			}
+		}		
+	}
 
+	//============================================================
+	// Pirate Hat - Tier SSR
+	//============================================================
+	"item_custom_pirate_hat"
+	{
+		"ID" 							"7504"
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_5_circle.vpcf"
+		"AbilityTextureName" 			"item_custom_pirate_hat"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"0"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"0"
+		"ItemAlertable"					"1"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemDisassembleRule" 			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"200"
+			}
+		}
+		"Modifiers"
+		{
+			"item_custom_pirate_hat_modifier"
+			{
+				"Passive" 				"1" 
+				"IsHidden" 				"1"
+				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"			"%bonus_attack_speed"
+				}
+			}
+		}		
+	}
 	
 	//============================================================
 	// RECIPES
@@ -1823,8 +2281,9 @@
 		"ID" 				  			"5000"
 		"BaseClass"           			"item_datadriven"
 		"ItemRecipe"          			"1"
-		"ItemCost"            			"0"
 		"ItemResult"          			"item_custom_crystalys"
+		"ItemCost"            			"1000"
+		"AbilityTextureName" 			"item_custom_recipe"
 		"ItemRequirements"
 		{
 			"01" 			 			"item_custom_blades_of_attack;item_custom_broadsword"
@@ -1839,8 +2298,9 @@
 		"ID" 				  			"5001"
 		"BaseClass"           			"item_datadriven"
 		"ItemRecipe"          			"1"
-		"ItemCost"            			"0"
 		"ItemResult"          			"item_custom_yasha"
+		"ItemCost"            			"1000"
+		"AbilityTextureName" 			"item_custom_recipe"
 		"ItemRequirements"
 		{
 			"01" 			 			"item_custom_band_of_elvenskin;item_custom_blade_of_alacrity"
@@ -1855,8 +2315,9 @@
 		"ID" 				  			"5002"
 		"BaseClass"           			"item_datadriven"
 		"ItemRecipe"          			"1"
-		"ItemCost"            			"0"
 		"ItemResult"          			"item_custom_sange"
+		"ItemCost"            			"1000"
+		"AbilityTextureName" 			"item_custom_recipe"
 		"ItemRequirements"
 		{
 			"01" 			 			"item_custom_belt_of_strength;item_custom_ogre_axe"
@@ -1871,8 +2332,9 @@
 		"ID" 				  			"5003"
 		"BaseClass"           			"item_datadriven"
 		"ItemRecipe"          			"1"
-		"ItemCost"            			"0"
 		"ItemResult"          			"item_custom_skull_basher"
+		"ItemCost"            			"1000"
+		"AbilityTextureName" 			"item_custom_recipe"
 		"ItemRequirements"
 		{
 			"01" 			 			"item_custom_belt_of_strength;item_custom_mithril_hammer"
@@ -1903,8 +2365,9 @@
 		"ID" 				  			"5005"
 		"BaseClass"           			"item_datadriven"
 		"ItemRecipe"          			"1"
-		"ItemCost"            			"0"
 		"ItemResult"          			"item_custom_dragon_lance"
+		"ItemCost"            			"1000"
+		"AbilityTextureName" 			"item_custom_recipe"
 		"ItemRequirements"
 		{
 			"01" 			 			"item_custom_band_of_elvenskin;item_custom_band_of_elvenskin;item_custom_ogre_axe"
@@ -2004,6 +2467,40 @@
 		"ItemRequirements"
 		{
 			"01" 			 			"item_custom_sange;item_custom_sange"
+		}
+	}
+	
+	//============================================================
+	// Orb of Destruction
+	//============================================================
+	"item_recipe_custom_orb_of_destruction" 
+	{
+		"ID" 				  			"5012"
+		"BaseClass"           			"item_datadriven"
+		"ItemRecipe"          			"1"
+		"ItemCost"            			"500"
+		"ItemResult"          			"item_custom_orb_of_destruction"
+		"AbilityTextureName" 			"item_custom_recipe"
+		"ItemRequirements"
+		{
+			"01" 			 			"item_custom_blight_stone;item_custom_robe_of_the_magi"
+		}
+	}
+	
+	//============================================================
+	// Orb of Destruction
+	//============================================================
+	"item_recipe_custom_spell_prism" 
+	{
+		"ID" 				  			"5013"
+		"BaseClass"           			"item_datadriven"
+		"ItemRecipe"          			"1"
+		"ItemCost"            			"500"
+		"ItemResult"          			"item_custom_spell_prism"
+		"AbilityTextureName" 			"item_custom_recipe"
+		"ItemRequirements"
+		{
+			"01" 			 			"item_custom_time_sigil;item_custom_mind_sigil;item_custom_quickening_charm"
 		}
 	}
 }

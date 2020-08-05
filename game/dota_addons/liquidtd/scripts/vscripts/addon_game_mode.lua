@@ -82,6 +82,7 @@ function Precache( context )
 	PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_announcer_dlc_darkest_dungeon.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_announcer_dlc_workshop_pirate.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_announcer_dlc_fallout4.vsndevts", context )
+	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_life_stealer.vsndevts", context )
 	
 -- Particles
 	PrecacheResource( "particle_folder", "particles/buildinghelper", context )
@@ -109,6 +110,8 @@ function Precache( context )
 	PrecacheResource( "particle", "particles/creep_effects/spawn_effect.vpcf", context )
 	PrecacheResource( "particle", "particles/creep_effects/leak_effect.vpcf", context )
 	PrecacheResource( "particle", "particles/econ/events/ti8/hero_levelup_ti8.vpcf", contetxt )
+	PrecacheResource( "particle", "particles/units/heroes/hero_life_stealer/life_stealer_rage.vpcf", contetxt )
+	
 	-- Tower Stars
 	PrecacheResource( "particle", "particles/arrow/star1.vpcf", context )
 	PrecacheResource( "particle", "particles/arrow/star2_1.vpcf", context )
@@ -136,7 +139,12 @@ function Precache( context )
 	-- Courier Particles
 	PrecacheResource( "particle", "particles/courier_effects/trail_baby_roshan_platinum.vpcf", context )
 	PrecacheResource( "particle", "particles/econ/courier/courier_roshan_ti8/courier_roshan_ti8.vpcf", context )
-	
+	-- Item Rarity Particles
+	PrecacheResource( "particle", "particles/item_effects/item_tier_1_circle.vpcf", context )
+	PrecacheResource( "particle", "particles/item_effects/item_tier_2_circle.vpcf", context )
+	PrecacheResource( "particle", "particles/item_effects/item_tier_3_circle.vpcf", context )
+	PrecacheResource( "particle", "particles/item_effects/item_tier_4_circle.vpcf", context )
+	PrecacheResource( "particle", "particles/item_effects/item_tier_5_circle.vpcf", context )
 	
 -- Models
 	-- Tower Pedestals
@@ -207,7 +215,7 @@ function Precache( context )
 	PrecacheResource( "model", "models/courier/baby_rosh/babyroshan_winter18.vmdl", context )
 	
 		-- Developer
-	PrecacheResource( "model", "models/items/courier/shagbark/shagbark.vmdl", context )
+	PrecacheResource( "model", "models/courier/baby_rosh/babyroshan_ti10.vmdl", context )
 end
 
 function Activate()

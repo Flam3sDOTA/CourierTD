@@ -69,6 +69,6 @@ function updateHealthBar(id) {
  
   
   if (Entities.GetHealthPercent(hero) == 0 ) {
-      HealthPercentages.text = "FAILED";
+      HealthPercentages.text = "ELIMINATED";
     }
 }

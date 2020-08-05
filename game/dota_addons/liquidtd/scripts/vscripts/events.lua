@@ -172,7 +172,7 @@ function LiquidTD:OnGameInProgress()
       if sID == 289101818 then 
 local player = PlayerResource:GetPlayer(playerID)
         local hero = player:GetAssignedHero()
-        local courier = "models/items/courier/carty/carty_flying.vmdl"
+        local courier = "models/courier/baby_rosh/babyroshan_ti10.vmdl"
         hero:SetOriginalModel(courier)
         hero:SetModel(courier)
 		hero:SetMaterialGroup("5")
