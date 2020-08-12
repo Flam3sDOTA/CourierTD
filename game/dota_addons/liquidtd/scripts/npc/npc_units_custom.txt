@@ -243,7 +243,7 @@
 	//============================================================
 	"unit_wave5"
 	{
-		"vscripts"         				"ai/boss_wave5.lua"
+		"vscripts"         				"ai/wave_creep.lua"
 		
 		"Model"                 		"models/items/courier/beaverknight/beaverknight.vmdl"
 		"ModelScale"               		"3"
@@ -267,10 +267,10 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"400"
+		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 
-		"Ability1"					"lifestealer_rage_lua"
+		"Ability1"					""
 		"Ability2"					""
 		"Ability3"					""
 		"Ability6"					""
@@ -468,7 +468,7 @@
 	//============================================================
 	"unit_wave10"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
+		"vscripts"         				"ai/boss_wave10.lua"
 		
 		"Model"                 		"models/items/courier/boris_baumhauer/boris_baumhauer.vmdl"
 		"ModelScale"               		"2.5"
@@ -492,10 +492,10 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
+		"MovementSpeed"         		"400"
 		"MovementTurnRate"      		"1"
 		
-		"Ability1"					""
+		"Ability1"					"lifestealer_rage_lua"
 		"Ability2"					"bristleback_bristleback_lua"
 		"Ability3"					""
 		"Ability6"					""
@@ -693,7 +693,7 @@
 	//============================================================
 	"unit_wave15"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
+		"vscripts"         				"ai/boss_wave15.lua"
 		
 		"Model"                 		"models/items/courier/guardians_of_justice_enix/guardians_of_justice_enix.vmdl"
 		"ModelScale"               		"2.5"
@@ -721,7 +721,7 @@
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
 		
-		"Ability1"					""
+		"Ability1"					"weaver_shukuchi"
 		"Ability2"					"bristleback_bristleback_lua"
 		"Ability3"					""
 		"Ability6"					""
@@ -918,7 +918,7 @@
 	//============================================================
 	"unit_wave20"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
+		"vscripts"         				"ai/boss_wave20.lua"
 		
 		"Model"                 		"models/items/courier/vaal_the_animated_constructdire/vaal_the_animated_constructdire.vmdl"
 		"ModelScale"               		"2.5"
@@ -946,7 +946,7 @@
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
 		
-		"Ability1"					""
+		"Ability1"					"necrolyte_sadist"
 		"Ability2"					"bristleback_bristleback_lua"
 		"Ability3"					""
 		"Ability6"					""
@@ -1144,7 +1144,7 @@
 	//============================================================
 	"unit_wave25"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
+		"vscripts"         				"ai/boss_wave25.lua"
 		
 		"Model"                 		"models/items/courier/faceless_rex/faceless_rex.vmdl"
 		"ModelScale"               		"2.5"
@@ -1172,7 +1172,7 @@
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
 		
-		"Ability1"					""
+		"Ability1"					"void_spirit_resonant_pulse"
 		"Ability2"					"bristleback_bristleback_lua"
 		"Ability3"					""
 		"Ability6"					""

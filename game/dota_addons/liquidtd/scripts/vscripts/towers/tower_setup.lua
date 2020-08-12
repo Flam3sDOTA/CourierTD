@@ -27,7 +27,7 @@ end
 function OnTowerSpawned(tower)
   local towerName = tower:GetUnitName()
   local towerInfo = tower_data[towerName]
-  -- If it's not in the tower_data
+  
   if not towerInfo then return end
 
 
@@ -55,7 +55,7 @@ end
 
 function OnTowerKilled(tower)
   local towerInfo = tower_data[tower:GetUnitName()]
-  -- If it's not in the tower_data
+  
   if not towerInfo then return end
 
   if towerInfo.death_model then tower:SetOriginalModel(towerInfo.death_model) end

@@ -3,8 +3,8 @@ return {
 		round_name = "Wave 1",
 		round_number = "01",
 		round_type = "Normal",
-		unit_name = "unit_wave1",
-		wave_count = 32,
+		unit_name = "unit_wave25",
+		wave_count = 1,
 		spawn_interval = 0.7,
 	},
 
