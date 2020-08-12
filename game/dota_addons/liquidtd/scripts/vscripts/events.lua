@@ -127,9 +127,21 @@ function LiquidTD:OnEntityKilled(event)
         RollDrops(killed)
     end
 	
-	--if killed:GetUnitName() == "unit_wave50" then
-	--
-	--end
+  if killed:IsHero() then
+    local numAlive = 0
+    local lastHero
+    -- check to see if we have a winner
+    for _,hero in pairs(HeroList:GetAllHeroes()) do
+      if hero:IsAlive() then
+        numAlive = numAlive + 1
+        lastHero = hero
+      end
+    end
+
+    if numAlive == 1 then
+      GameRules:SetGameWinner(hero:GetTeam())
+    end
+  end
 end
 
 function RollDrops(unit)

@@ -3,6 +3,7 @@ local wave_table = require("waves/wave_tables")
 local CURRENT_WAVE = 0
 local TIME_BETWEEN_ROUNDS = 20
 local TIME_BEFORE_FIRST_ROUND = 15
+local NUM_ROUNDS = TableCount(wave_table)
 
 function StartSpawning()
   local timeToNextRound = TIME_BEFORE_FIRST_ROUND
@@ -37,16 +38,19 @@ end
 function SpawnNextWave()
   CURRENT_WAVE = CURRENT_WAVE + 1
 
-   local waveData = wave_table["wave" .. CURRENT_WAVE]
-   if not waveData then
-		CURRENT_WAVE = 1
-		waveData = wave_table["wave" .. CURRENT_WAVE]
-   end
+  local waveData = wave_table["wave" .. CURRENT_WAVE]
+  if not waveData then
+    -- start over from the start
+    local waveNumber = CURRENT_WAVE % NUM_ROUNDS
+    waveData = wave_table["wave" .. waveNumber]
+  end
+
+  local ascension = math.floor((CURRENT_WAVE - 1) / NUM_ROUNDS)
 
   CustomGameEventManager:Send_ServerToAllClients("round_started", 
     {
       round_type = waveData.round_type,
-      round_number = waveData.round_number,
+      round_number = CURRENT_WAVE,
       unit_count = waveData.wave_count,
     }
   )
@@ -80,12 +84,12 @@ function SpawnNextWave()
   -- Get the team for each hero (assume there is one hero per player)
   for _,hero in pairs(HeroList:GetAllHeroes()) do
     if hero:IsAlive() then
-      SpawnWave(hero, waveData)
+      SpawnWave(hero, waveData, ascension)
     end
   end
 end
 
-function SpawnWave(hero, waveData)
+function SpawnWave(hero, waveData, ascension)
   local team = hero:GetTeam()
   local map = GameRules.teamToMap[team]
 
@@ -101,10 +105,12 @@ function SpawnWave(hero, waveData)
     if spawned >= numToSpawn then return end
 
     local creep = CreateUnitByName(creepName, spawnPoint, true, nil, nil, DOTA_TEAM_NEUTRALS)
-	creep:RemoveGesture(ACT_DOTA_SPAWN)
+    creep:RemoveGesture(ACT_DOTA_SPAWN)
     creep:AddNewModifier(nil, nil, "modifier_phased", {})
+    creep:CreatureLevelUp(ascension)
     creep.map = map
     creep.heroToDamage = hero
+
     if round_type == "Boss" then
       creep.leakDamage = 5
     else
