@@ -42,6 +42,9 @@ function SpawnNextWave()
   if not waveData then
     -- start over from the start
     local waveNumber = CURRENT_WAVE % NUM_ROUNDS
+    if waveNumber == 0 then
+      waveNumber = 50
+    end
     waveData = wave_table["wave" .. waveNumber]
   end
 
