@@ -7,7 +7,6 @@
 		"item"		"item_custom_belt_of_strength"
 		"item"		"item_custom_robe_of_the_magi"
 		"item"		"item_custom_blight_stone"
-		"item"		"item_custom_crown"
 		"item"		"item_custom_time_stone"
 		"item"		"item_custom_mind_stone"
 	}

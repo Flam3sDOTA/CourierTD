@@ -97,7 +97,7 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "7500"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
@@ -142,7 +142,7 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "7700"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
@@ -186,7 +186,7 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "8000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
@@ -230,7 +230,7 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "8250"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
@@ -279,7 +279,7 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "5000"
+            "HPGain"                    "10000"
             "ArmorGain"                 "10"
             "MagicResistGain"           "10"
             "MoveSpeedGain"             "10"
@@ -323,7 +323,7 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "8750"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
@@ -367,7 +367,7 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "9000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
@@ -411,7 +411,7 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "9250"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
@@ -455,7 +455,7 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "9500"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
@@ -504,7 +504,7 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "1000"
+            "HPGain"                    "15000"
             "ArmorGain"                 "10"
             "MagicResistGain"           "10"
             "MoveSpeedGain"             "10"
@@ -548,11 +548,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "9750"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "80"
 		}
 	}
 	
@@ -592,11 +592,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "10000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "80"
 		}
 	}
 	
@@ -636,11 +636,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "10250"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "80"
 		}
 	}
 	
@@ -680,11 +680,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "10500"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "80"
 		}
 	}
 	
@@ -729,7 +729,7 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "15000"
+            "HPGain"                    "20000"
             "ArmorGain"                 "10"
             "MagicResistGain"           "10"
             "MoveSpeedGain"             "10"
@@ -773,11 +773,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "10750"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "80"
 		}
 	}
 	
@@ -817,11 +817,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "11000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "80"
 		}
 	}
 	
@@ -861,11 +861,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "12000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "80"
 		}
 	}
 	
@@ -905,11 +905,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "13000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "80"
 		}
 	}
 	
@@ -954,7 +954,7 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "20000"
+            "HPGain"                    "30000"
             "ArmorGain"                 "10"
             "MagicResistGain"           "10"
             "MoveSpeedGain"             "10"
@@ -998,11 +998,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "15000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "120"
 		}
 	}
 	
@@ -1042,11 +1042,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "17000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "120"
 		}
 	}
 	
@@ -1086,11 +1086,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "19000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "120"
 		}
 	}
 	
@@ -1130,11 +1130,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "21000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "120"
 		}
 	}
 	
@@ -1180,7 +1180,7 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "25000"
+            "HPGain"                    "35000"
             "ArmorGain"                 "10"
             "MagicResistGain"           "10"
             "MoveSpeedGain"             "10"
@@ -1224,11 +1224,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "23000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "120"
 		}
 	}
 	
@@ -1268,11 +1268,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "24000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "120"
 		}
 	}
 	
@@ -1312,11 +1312,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "25000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "120"
 		}
 	}
 	
@@ -1356,11 +1356,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "25000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "120"
 		}
 	}
 	
@@ -1405,7 +1405,7 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "30000"
+            "HPGain"                    "40000"
             "ArmorGain"                 "15"
             "MagicResistGain"           "15"
             "MoveSpeedGain"             "20"
@@ -1449,11 +1449,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "25000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "160"
 		}
 	}
 	
@@ -1493,11 +1493,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "25000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "160"
 		}
 	}
 	
@@ -1537,11 +1537,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "25000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "160"
 		}
 	}
 	
@@ -1581,11 +1581,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "25000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "160"
 		}
 	}
 	
@@ -1630,7 +1630,7 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "35000"
+            "HPGain"                    "50000"
             "ArmorGain"                 "15"
             "MagicResistGain"           "15"
             "MoveSpeedGain"             "10"
@@ -1674,11 +1674,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "25000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "160"
 		}
 	}
 	
@@ -1718,11 +1718,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "25000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "160"
 		}
 	}
 	
@@ -1762,11 +1762,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "25000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "160"
 		}
 	}
 	
@@ -1806,11 +1806,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "25000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "160"
 		}
 	}
 	
@@ -1855,7 +1855,7 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "40000"
+            "HPGain"                    "60000"
             "ArmorGain"                 "25"
             "MagicResistGain"           "25"
             "MoveSpeedGain"             "20"
@@ -1899,11 +1899,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "25000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "200"
 		}
 	}
 	
@@ -1943,11 +1943,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "25000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "200"
 		}
 	}
 	
@@ -1987,11 +1987,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "25000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "200"
 		}
 	}
 	
@@ -2031,11 +2031,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "25000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "200"
 		}
 	}
 	
@@ -2124,11 +2124,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "25000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "200"
 		}
 	}
 	
@@ -2168,11 +2168,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "25000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "200"
 		}
 	}
 	
@@ -2212,11 +2212,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "25000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "200"
 		}
 	}
 	
@@ -2256,11 +2256,11 @@
         {
 			//Level Up Parameters
             //-----------------------------------------------------------------
-            "HPGain"                    "3000"
+            "HPGain"                    "25000"
             "ArmorGain"                 "5"
             "MagicResistGain"           "5"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
+            "BountyGain"                "200"
 		}
 	}
 	
@@ -2626,10 +2626,10 @@
 		{
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "8990" } // Head
-				"2"  { "ItemDef" "8003" } // Neck
-				"3"  { "ItemDef" "9243" } // Belt
-				"4"  { "ItemDef" "9071" } // Arms
+				"1"  { "ItemDef" "319" } // Head
+				"2"  { "ItemDef" "318" } // Neck
+				"3"  { "ItemDef" "321" } // Belt
+				"4"  { "ItemDef" "320" } // Arms
 			}
 		}
 	}

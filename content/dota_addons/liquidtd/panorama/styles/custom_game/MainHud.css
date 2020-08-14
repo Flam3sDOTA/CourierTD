@@ -205,18 +205,20 @@
 
 #RoundNumber {
 	margin-top: 30px;
-	margin-left: 90px;
+	margin-left: 80px;
     horizontal-align: left;
     vertical-align: top;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 29px;
 	color: gradient( linear, 0% 0%, 0% 100%, from( #c88423 ), color-stop( 0.25, #c88423 ), color-stop( 0.5, #fffb84 ), color-stop( 0.75, #c88423 ), to( #9a6717 ) );
     text-overflow: clip;
+	text-transform: uppercase;
+	
 }
 
 #RoundNumberLabel {
-	margin-top: 55px;
-	margin-left: 115px;
+	margin-top: 54px;
+	margin-left: 116px;
     horizontal-align: left;
     vertical-align: top;
     font-weight: bold;

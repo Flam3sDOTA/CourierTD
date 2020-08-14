@@ -71,7 +71,7 @@
 	transition-property: brightness;
 	transition-duration: 0.2s;
 	transition-timing-function: linear;
-	brightness: 1;
+	brightness: 2;
 	
 	align: center center;
 	margin-top: 70px;
@@ -80,11 +80,6 @@
 .BattlePassButtonNEW:hover
 {
 	brightness: 2;
-}
-
-.BattlePassButtonNEW:hover Label
-{
-	brightness: 0;
 }
 
 .BattlePassButtonNEW:active
@@ -121,13 +116,7 @@
 	transform: translateY(1px);
 }
 
-.BattlePassButtonNEW:disabled
+.BattlePassButtonNEW:hover Label
 {
-	background-color: gradient( linear, 0% 0%, 0% 100%, from( #191e1e ), to( #292e2e ) );
-	border: 1px solid #111111;
-}
-
-.BattlePassButtonNEW:disabled Label
-{
-	color: #5d676933;
+	brightness: 2;
 }

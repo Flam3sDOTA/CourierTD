@@ -1,16 +1,5 @@
 require("resources/TangoManager")
 GameRules.DropTable = LoadKeyValues("scripts/kv/item_drops.kv")
-LinkLuaModifier( "modifier_20_attack_damage", "abilities/modifiers/shop/modifier_20_attack_damage", LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_50_attack_damage", "abilities/modifiers/shop/modifier_50_attack_damage", LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_100_attack_damage", "abilities/modifiers/shop/modifier_100_attack_damage", LUA_MODIFIER_MOTION_NONE )
-
-LinkLuaModifier( "modifier_20_manacost", "abilities/modifiers/shop/modifier_20_manacost", LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_30_manacost", "abilities/modifiers/shop/modifier_30_manacost", LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_50_manacost", "abilities/modifiers/shop/modifier_50_manacost", LUA_MODIFIER_MOTION_NONE )
-
-LinkLuaModifier( "modifier_1_cooldown", "abilities/modifiers/shop/modifier_1_cooldown", LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_2_cooldown", "abilities/modifiers/shop/modifier_2_cooldown", LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_3_cooldown", "abilities/modifiers/shop/modifier_3_cooldown", LUA_MODIFIER_MOTION_NONE )
 
 ---------------------------------------------------------------------------
 -- Event: OnNPCSpawned
@@ -139,7 +128,7 @@ function LiquidTD:OnEntityKilled(event)
     end
 
     if numAlive == 1 then
-      GameRules:SetGameWinner(hero:GetTeam())
+      GameRules:SetGameWinner(lastHero:GetTeam())
     end
   end
 end

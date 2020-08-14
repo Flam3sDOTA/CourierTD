@@ -28,7 +28,7 @@
 		<Panel hittest="false" class="MainCenter">
 			<Label id="Timer" class="Timer" text="00:00:00" />
 			<Label id="RoundNumber" text="Round" />
-			<Label id="RoundNumberLabel" text="01" />
+			<Label id="RoundNumberLabel" text="1" />
 			
 			<Label id="RoundName" class="RoundName" text="Unit Type:" />
 			<Label id="RoundNameLabel" class="RoundNameLabel" text="Normal" />

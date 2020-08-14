@@ -16,13 +16,13 @@
         <include src="file://{resources}/scripts/custom_loading_screen.js" />
     </scripts>
     
-    <Panel hittest="false" class="AddonLoadingRoot">
+    <Panel hittest="true" class="AddonLoadingRoot" >
 		<Panel id="CompendiumBG" class="FullScreenBackground"/>
-		<DOTAScenePanel id="CompendiumBackgroundScene" hittest="false" camera="camera_1" map="terrain_previews/dota_ti10_preview" light="bp_light" renderdeferred="true" pin-fov="horizontal" deferredalpha="false" particleonly="false"/>
+		<DOTAScenePanel id="CompendiumBackgroundScene" hittest="true" camera="camera_1" map="terrain_previews/dota_ti10_preview" light="bp_light" renderdeferred="true" pin-fov="horizontal" deferredalpha="false" particleonly="false"/>
 		<Panel class="Vignette"/>
 		<Panel class="Frost"/>
 		<Label class="TitleBig" text="Courier TD" />
-		<Panel class="CompendiumBody">
+		<Panel class="CompendiumBody" hittest="true">
 			<!--<Panel id="PredictionWell" class="BattlePassHomeCell">
 				<Panel>
 					<Label class="BattlePassCellTitle" text="#NEWS"/>
