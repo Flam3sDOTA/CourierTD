@@ -101,8 +101,8 @@
 #StoreButton {
 	background-image: url("s2r://panorama/images/hud/reborn/icon_courier_dead_psd.vtex");
 	background-size: 26px;
-	margin-top: 43px;
-	margin-left: 385px;
+	margin-top: 6px;
+	margin-left: 110px;
 	wash-color: white;
 	animation-name: blinker;
     animation-duration: 1s;

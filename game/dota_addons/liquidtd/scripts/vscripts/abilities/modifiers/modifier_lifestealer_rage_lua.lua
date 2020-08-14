@@ -30,7 +30,6 @@ function modifier_lifestealer_rage_lua:OnRefresh( kv )
 end
 
 function modifier_lifestealer_rage_lua:OnDestroy( kv )
-
 end
 
 --------------------------------------------------------------------------------

@@ -60,7 +60,7 @@ function Precache( context )
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_abaddon.vsndevts", context)
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts", context)
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_skeletonking.vsndevts", context)
-	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_centaur.vsndevts", context)
+	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_dark_willow.vsndevts", context)
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_ursa.vsndevts", context)
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_enigma.vsndevts", context)
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_dark_seer.vsndevts", context)
@@ -120,6 +120,13 @@ function Precache( context )
 	PrecacheResource( "particle", "particles/creep_effects/leak_effect.vpcf", context )
 	PrecacheResource( "particle", "particles/econ/events/ti8/hero_levelup_ti8.vpcf", contetxt )
 	PrecacheResource( "particle", "particles/units/heroes/hero_life_stealer/life_stealer_rage.vpcf", contetxt )
+	PrecacheResource( "particle", "particles/units/heroes/hero_windrunner/windrunner_windrun.vpcf", contetxt )
+	PrecacheResource( "particle", "particles/status_fx/status_effect_dark_willow_shadow_realm.vpcf", contetxt )
+	PrecacheResource( "particle", "particles/units/heroes/hero_dark_willow/dark_willow_shadow_realm.vpcf", contetxt )
+	
+	
+	
+	
 	
 	-- Tower Stars
 	PrecacheResource( "particle", "particles/arrow/star1.vpcf", context )
@@ -156,6 +163,9 @@ function Precache( context )
 	PrecacheResource( "particle", "particles/item_effects/item_tier_5_circle.vpcf", context )
 	
 -- Models
+	-- Item Models
+	PrecacheResource( "model", "models/props_gameplay/gold_bag.vmdl", context )
+	
 	-- Tower Pedestals
 	PrecacheResource( "model", "models/items/pedestals/pedestal_2/pedestal_2.vmdl", context )
 	PrecacheResource( "model", "models/heroes/pedestal/pedestal_1_small.vmdl", context )
@@ -188,7 +198,7 @@ function Precache( context )
 	PrecacheResource( "model", "models/heroes/sniper/sniper.vmdl", context )
 	PrecacheResource( "model", "models/heroes/medusa/medusa.vmdl", context )
 	PrecacheResource( "model", "models/heroes/windrunner/windrunner.vmdl", context )
-	-- Couriers
+-- Couriers
 		-- Rare
 	PrecacheResource( "model", "models/items/courier/basim/basim.vmdl", context )
 	PrecacheResource( "model", "models/items/courier/blue_lightning_horse/blue_lightning_horse.vmdl", context )
@@ -225,6 +235,7 @@ function Precache( context )
 	
 		-- Developer
 	PrecacheResource( "model", "models/courier/baby_rosh/babyroshan_ti10.vmdl", context )
+	PrecacheResource( "model", "models/courier/baby_rosh/babyroshan_ti10_dire.vmdl", context )
 end
 
 function Activate()
@@ -233,7 +244,7 @@ function Activate()
 end
 
 function LiquidTD:InitGameMode()
-	print( "Duel TD is loaded." )
+	print( "Courier TD is loaded." )
 
 	-- Handle Team Colors
 	self.m_TeamColors = {}
@@ -307,12 +318,12 @@ function LiquidTD:InitGameMode()
 	GameMode:DisableHudFlip(true)
 	GameMode:SetBuybackEnabled(false)
 	GameMode:SetFogOfWarDisabled(true)
+	GameMode:SetUnseenFogOfWarEnabled(false)
 	GameMode:SetLoseGoldOnDeath(false)
 	GameMode:SetAnnouncerDisabled(true)
 	GameMode:SetDeathOverlayDisabled(true)
 	GameMode:SetDaynightCycleDisabled(true)
 	GameMode:SetWeatherEffectsDisabled(true)
-	GameMode:SetUnseenFogOfWarEnabled(false)
 	GameMode:SetRemoveIllusionsOnDeath(true)
 	GameMode:SetStashPurchasingDisabled(false)
 	GameMode:SetTopBarTeamValuesVisible(false)

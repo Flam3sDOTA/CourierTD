@@ -4321,7 +4321,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"1000"
 		"AbilityCastPoint"				"0.2"
-		"AbilityChannelTime"			"4.0"
+		"AbilityChannelTime"			"2.5"
 
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
@@ -4338,7 +4338,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"far_damage"			"50 100 150"
+				"far_damage"			"25 50 75"
 			}
 			"02"
 			{
@@ -4373,7 +4373,7 @@
 			"08"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"				"4.0 4.0 4.0"
+				"duration"				"2.5 2.5 3.0"
 			}
 			"09"
 			{
@@ -4634,12 +4634,12 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"side_damage_reduction"			"12"
+				"side_damage_reduction"			"10"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"back_damage_reduction"			"24"
+				"back_damage_reduction"			"15"
 			}
 			"03"
 			{
@@ -4696,7 +4696,7 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"physical_damage_reduction"		"25"
+				"physical_damage_reduction"		"15"
 			}
 			"02"
 			{
@@ -4718,7 +4718,7 @@
 	
 	
 	//=================================================================================================================
-	// Lifestealer: Rage (Lua version)
+	// Boss 2 - Wave 10: Lifestealer: Rage (Lua version)
 	// Credits: https://github.com/Elfansoer/dota-2-lua-abilities/blob/master/scripts/vscripts/lua_abilities/lifestealer_rage_lua/lifestealer_rage_lua.txt
 	//=================================================================================================================
 	"lifestealer_rage_lua"
@@ -4815,7 +4815,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"speed"					"200"
+				"speed"					"500"
 			}
 			"03"
 			{
@@ -4830,7 +4830,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"				"4.0"
+				"duration"				"4.5"
 			}
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
@@ -4897,37 +4897,22 @@
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
 	}
 	
+	
 	//=================================================================================================================
-	// Boss 5 - Wave 25: Void Spirit Pulse
+	// Boss 5 - Wave 25: Bonus Gold
 	//=================================================================================================================
-	"void_spirit_resonant_pulse"
+	"creature_bonus_chicken"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"7710"	// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
-		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
-		"FightRecapLevel"				"1"
-		"MaxLevel"						"1"
-		"AbilitySound"					"Hero_VoidSpirit.Pulse.Cast"
-		"HasScepterUpgrade"				"0"
-	
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"0"
-		"AbilityCastPoint"				"0.0"
-		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
-		"AbilityCastGestureSlot"		"DEFAULT"
+		"BaseClass"						"ability_lua"
+		"AbilityTextureName"			"alchemist_goblins_greed"
+		"ScriptFile"					"abilities/creature_bonus_chicken"
 
-		// Time
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"16"
+        "IsOnCastBar"                   "0"
 
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"0"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -4936,55 +4921,291 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"radius"				"500"
+				"total_gold"			"10000"
 			}
 			"02"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"speed"					"1200"
+				"var_type"				"FIELD_FLOAT"
+				"gold_bag_duration"		"40.0"		
+			}
+		}
+	}
+	
+	//=================================================================================================================
+	// Boss 6 - Wave 30: Timbersaw: Reactive Armor (Lua version)
+	// Credits: https://github.com/Elfansoer/dota-2-lua-abilities/tree/master/scripts/vscripts/lua_abilities/timbersaw_reactive_armor_lua
+	//=================================================================================================================
+	"timbersaw_reactive_armor_lua"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/timbersaw_reactive_armor_lua"
+		"AbilityTextureName"			"timbersaw_reactive_armor"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_shredder.vsndevts"
+//			"particle"	"particles/units/heroes/hero_<hero>/<hero>_<ability>.vpcf"
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"							"FIELD_FLOAT"
+				"bonus_armor"						"1.2"
+			}
+			"02"
+			{
+				"var_type"							"FIELD_FLOAT"
+				"bonus_hp_regen"							"1.2"
 			}
 			"03"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"damage"				"0"
-				"LinkedSpecialBonus"	"special_bonus_unique_void_spirit_4"
+				"var_type"							"FIELD_INTEGER"
+				"stack_limit"						"20"
 			}
 			"04"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"buff_duration"			"6"
+				"var_type"							"FIELD_FLOAT"
+				"stack_duration"					"13"
+			}
+		}
+	}
+	
+	//=================================================================================================================
+	// Boss 8 - Wave 40: Windrunner: Windrun (Lua version)
+	// Credits: https://github.com/Elfansoer/dota-2-lua-abilities/tree/master/scripts/vscripts/lua_abilities/windranger_windrun_lua
+	//=================================================================================================================
+	"windranger_windrun_lua"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/windranger_windrun_lua"
+		"AbilityTextureName"			"windrunner_windrun"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
+			"particle"	"particles/units/heroes/hero_windrunner/windrunner_windrun.vpcf"
+			"particle"	"particles/units/heroes/hero_windrunner/windrunner_windrun_slow.vpcf"
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0"
+		"AbilityDuration"				"4"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"12"
+		"AbilityManaCost"				"0"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"movespeed_bonus_pct"	"60"		
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"evasion_pct_tooltip"	"100"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"enemy_movespeed_bonus_pct"	"-15 -20 -25 -30"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"325"
 			}
 			"05"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"base_absorb_amount"	"120"
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"4"
 			}
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"absorb_per_hero_hit"	"45"
+				"max_charges"			"1"
 			}
 			"07"
 			{
-				"var_type"					"FIELD_INTEGER"
-				"return_projectile_speed"	"900"
+				"var_type"				"FIELD_INTEGER"
+				"charge_restore_time"	"12"
 			}
 			"08"
 			{
-				"var_type"			"FIELD_INTEGER"
-				"max_charges"		"2"
-				"RequiresScepter"			"1"
+				"var_type"				"FIELD_INTEGER"
+				"scepter_bonus_movement"	"45"
 			}
-			"09"
+		}
+	}
+	
+	
+	//=================================================================================================================
+	// Boss 9 - Wave 45: Dark Willow: Shadow Realm (Lua version)
+	// Credits: https://github.com/Elfansoer/dota-2-lua-abilities/blob/master/scripts/vscripts/lua_abilities/dark_willow_shadow_realm_lua/dark_willow_shadow_realm_lua.txt
+	//=================================================================================================================
+	"dark_willow_shadow_realm_lua"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/dark_willow_shadow_realm_lua"
+		"AbilityTextureName"			"dark_willow_shadow_realm"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+
+		"HasScepterUpgrade"			"0"
+
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_dark_willow.vsndevts"
+			"particle"	"particles/status_fx/status_effect_dark_willow_shadow_realm.vpcf"
+			"particle"	"particles/units/heroes/hero_dark_willow/dark_willow_shadow_realm.vpcf"
+			"particle"	"particles/units/heroes/hero_dark_willow/dark_willow_shadow_attack.vpcf"
+			"particle"	"particles/units/heroes/hero_dark_willow/dark_willow_shadow_attack_dummy.vpcf"
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"14"
+		"AbilityManaCost"				"0"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
 			{
-				"var_type"			"FIELD_INTEGER"
-				"charge_restore_time"		"18"
-				"RequiresScepter"			"1"
+				"var_type"						"FIELD_FLOAT"
+				"duration"						"5"
 			}
-			"10"
+		}
+	}
+	
+	//=================================================================================================================
+	// Boss 10 - Wave 50: Ursa Enrage (Lua Version)
+	// Credits: https://github.com/Elfansoer/dota-2-lua-abilities/blob/master/scripts/vscripts/lua_abilities/ursa_enrage_lua/ursa_enrage_lua.txt
+	//=================================================================================================================
+	"ursa_enrage_lua"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/ursa_enrage_lua"
+		"AbilityTextureName"			"ursa_enrage"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_ursa.vsndevts"
+			"particle"	"particles/units/heroes/hero_ursa/ursa_enrage_buff.vpcf"
+		}
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		"HasScepterUpgrade"				"0"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"0"
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"50 40 30"
+		"AbilityManaCost"				"0"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"silence_duration_scepter"			"2.0"
+				"var_type"					"FIELD_FLOAT"
+				"enrage_multiplier"			"1.5 1.75 2.0"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage_reduction"			"70"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"4.0"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"cooldown_scepter"			"30 24 18"
 			}
 		}
 	}

@@ -20,9 +20,9 @@
         <Panel hittest="false" class="TopLeftMenu">
 			<Button id="NewDashboardButton" class="TopLeftMenuButton" onactivate="DOTAHUDShowDashboard();" onmouseover="UIShowTextTooltip(DOTA_HUD_BackToDashboard)"  onmouseout="UIHideTextTooltip()" />
 			<Button id="NewSettingsButton" class="TopLeftMenuButton" onactivate="DOTAShowSettingsPopup();" onmouseover="UIShowTextTooltip(DOTA_HUD_Settings)"  onmouseout="UIHideTextTooltip()" />
+			<Button id="StoreButton" class="TopLeftMenuButton" onactivate="ExternalBrowserGoToURL('https://www.patreon.com/Flam3s');" onload="DOTAShowTextTooltip(Click Here to Become a Patron and Get Rewards!)" onmouseover="UIShowTextTooltip(Become a Patron and Get Rewards!)"  onmouseout="UIHideTextTooltip()"/>
 			<!--<Button id="NewScoreboardButton" class="TopLeftMenuButton" onactivate="DOTAHUDToggleScoreboard();" onmouseover="UIShowTextTooltip(DOTA_HUD_Scoreboard)"  onmouseout="UIHideTextTooltip()" />
-			<Button id="LeaderboardButton" class="TopLeftMenuButton" onactivate="OnLeaderboardOpenButtonPressed();" onmouseover="UIShowTextTooltip(Statistics - Coming Soon)"  onmouseout="UIHideTextTooltip()" />
-			<Button id="StoreButton" class="TopLeftMenuButton" onactivate="ExternalBrowserGoToURL('https://www.patreon.com/Flam3s');" onload="DOTAShowTextTooltip(Click Here to Become a Patron and Get Rewards!)" onmouseover="UIShowTextTooltip(Become a Patron and Get Rewards!)"  onmouseout="UIHideTextTooltip()"/>-->
+			<Button id="LeaderboardButton" class="TopLeftMenuButton" onactivate="OnLeaderboardOpenButtonPressed();" onmouseover="UIShowTextTooltip(Statistics - Coming Soon)"  onmouseout="UIHideTextTooltip()" />-->
 		</Panel>
 		
 		<Panel hittest="false" class="MainCenter">
@@ -34,10 +34,10 @@
 			<Label id="RoundNameLabel" class="RoundNameLabel" text="Normal" />
 			
 			<Label id="UnitCount" class="UnitCount" text="Unit Count:" />
-			<Label id="UnitCountLabel" class="UnitCountLabel" text="20" />
+			<Label id="UnitCountLabel" class="UnitCountLabel" text="32" />
 			
 			<Label id="NextRound" class="NextRound" text="Next Round in:" />
-			<Label id="NextRoundLabel" class="NextRoundLabel" text="00:30" />
+			<Label id="NextRoundLabel" class="NextRoundLabel" text="00:29" />
 		</Panel>
 		
 		<Panel hittest="false" id="LeaderboardsRoot">

@@ -24,4 +24,8 @@ function lifestealer_rage_lua:OnSpellStart()
 	-- play effects
 	local sound_cast = "Hero_LifeStealer.Rage"
 	EmitSoundOn( sound_cast, caster )
+	caster:SetRenderColor(150, 0, 0)
+	Timers:CreateTimer(duration, function()
+		caster:SetRenderColor(255, 255, 255)
+	end)
 end

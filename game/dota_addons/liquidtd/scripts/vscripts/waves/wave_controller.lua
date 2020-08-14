@@ -2,7 +2,7 @@ local wave_table = require("waves/wave_tables")
 
 local CURRENT_WAVE = 0
 local TIME_BETWEEN_ROUNDS = 20
-local TIME_BEFORE_FIRST_ROUND = 15
+local TIME_BEFORE_FIRST_ROUND = 60
 local NUM_ROUNDS = TableCount(wave_table)
 
 function StartSpawning()
@@ -115,11 +115,13 @@ function SpawnWave(hero, waveData, ascension)
     creep.heroToDamage = hero
 
     if round_type == "Boss" then
-      creep.leakDamage = 5
-    else
-      creep.leakDamage = 1
-    end
-
+		creep.leakDamage = 5
+	elseif round_type == "Normal" then
+		creep.leakDamage = 1
+	elseif round_type == "Bonus" then
+		creep.leakDamage = 0
+	end
+	
     spawned = spawned + 1
 	
     return spawnInterval

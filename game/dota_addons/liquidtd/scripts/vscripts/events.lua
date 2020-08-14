@@ -67,8 +67,6 @@ end
 function LiquidTD:OnConnectFull(keys) 
 	local entIndex = keys.index + 1
 	local player = EntIndexToHScript(entIndex)
-
-  if self.playersTangoes then self.playersTangoes[player:GetPlayerID()] = 0  end
 end
 
 ---------------------------------------------------------------------------

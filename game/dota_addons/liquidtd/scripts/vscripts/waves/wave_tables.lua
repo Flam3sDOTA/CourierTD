@@ -216,9 +216,9 @@ return {
 	},
 	
 	wave25 = {
-		round_name = "Boss 5",
+		round_name = "Bonus",
 		round_number = "25",
-		round_type = "Boss",
+		round_type = "Bonus",
 		unit_name = "unit_wave25",
 		wave_count = 1,
 		spawn_interval = 30,

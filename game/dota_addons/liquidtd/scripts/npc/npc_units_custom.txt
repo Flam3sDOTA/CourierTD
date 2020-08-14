@@ -269,6 +269,7 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
+		"ConsideredHero"				"1"
 
 		"Ability1"					""
 		"Ability2"					""
@@ -483,7 +484,7 @@
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
-		"HealthBarOffset"       		"150"
+		"HealthBarOffset"       		"250"
 		"AttackCapabilities" 			"DOTA_UNIT_CAP_NO_ATTACK"
 		"AttackAcquisitionRange" 		"0"
 		"AttackRange" 					"0"
@@ -494,9 +495,10 @@
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"         		"400"
 		"MovementTurnRate"      		"1"
+		"ConsideredHero"				"1"
 		
 		"Ability1"					"lifestealer_rage_lua"
-		"Ability2"					"bristleback_bristleback_lua"
+		"Ability2"					""
 		"Ability3"					""
 		"Ability6"					""
 		"Level" 						"1"
@@ -708,7 +710,7 @@
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
-		"HealthBarOffset"       		"150"
+		"HealthBarOffset"       		"170"
 		"AttackCapabilities" 			"DOTA_UNIT_CAP_NO_ATTACK"
 		"AttackAcquisitionRange" 		"0"
 		"AttackRange" 					"0"
@@ -720,9 +722,10 @@
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
+		"ConsideredHero"				"1"
 		
 		"Ability1"					"weaver_shukuchi"
-		"Ability2"					"bristleback_bristleback_lua"
+		"Ability2"					""
 		"Ability3"					""
 		"Ability6"					""
 		"Creature"
@@ -933,7 +936,7 @@
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
-		"HealthBarOffset"       		"150"
+		"HealthBarOffset"       		"220"
 		"AttackCapabilities" 			"DOTA_UNIT_CAP_NO_ATTACK"
 		"AttackAcquisitionRange" 		"0"
 		"AttackRange" 					"0"
@@ -945,9 +948,10 @@
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
+		"ConsideredHero"				"1"
 		
 		"Ability1"					"necrolyte_sadist"
-		"Ability2"					"bristleback_bristleback_lua"
+		"Ability2"					""
 		"Ability3"					""
 		"Ability6"					""
 		"Creature"
@@ -1144,7 +1148,7 @@
 	//============================================================
 	"unit_wave25"
 	{
-		"vscripts"         				"ai/boss_wave25.lua"
+		"vscripts"         				"ai/wave_creep.lua"
 		
 		"Model"                 		"models/items/courier/faceless_rex/faceless_rex.vmdl"
 		"ModelScale"               		"2.5"
@@ -1152,14 +1156,14 @@
 		"ArmorPhysical"         		"10"
 		"MagicalResistance"     		"10"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"2000"
-		"BountyGoldMax"         		"2000"
-		"StatusHealth"          		"12500"
+		"BountyGoldMin"         		"0"
+		"BountyGoldMax"         		"0"
+		"StatusHealth"          		"10000"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
-		"HealthBarOffset"       		"150"
+		"HealthBarOffset"       		"180"
 		"AttackCapabilities" 			"DOTA_UNIT_CAP_NO_ATTACK"
 		"AttackAcquisitionRange" 		"0"
 		"AttackRange" 					"0"
@@ -1168,12 +1172,13 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
+		"MovementSpeed"         		"400"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
+		"ConsideredHero"				"1"
 		
-		"Ability1"					"void_spirit_resonant_pulse"
-		"Ability2"					"bristleback_bristleback_lua"
+		"Ability1"					"creature_bonus_chicken"
+		"Ability2"					""
 		"Ability3"					""
 		"Ability6"					""
 		"Creature"
@@ -1184,7 +1189,7 @@
             "ArmorGain"                 "10"
             "MagicResistGain"           "10"
             "MoveSpeedGain"             "10"
-            "BountyGain"                "1500"
+            "BountyGain"                "20000"
 		}
 	}
 	
@@ -1384,7 +1389,7 @@
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
-		"HealthBarOffset"       		"150"
+		"HealthBarOffset"       		"165"
 		"AttackCapabilities" 			"DOTA_UNIT_CAP_NO_ATTACK"
 		"AttackAcquisitionRange" 		"0"
 		"AttackRange" 					"0"
@@ -1396,9 +1401,10 @@
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
+		"ConsideredHero"				"1"
 		
-		"Ability1"					""
-		"Ability2"					"bristleback_bristleback_lua"
+		"Ability1"					"timbersaw_reactive_armor_lua"
+		"Ability2"					""
 		"Ability3"					""
 		"Ability6"					""
 		"Creature"
@@ -1609,7 +1615,7 @@
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
-		"HealthBarOffset"       		"150"
+		"HealthBarOffset"       		"250"
 		"AttackCapabilities" 			"DOTA_UNIT_CAP_NO_ATTACK"
 		"AttackAcquisitionRange" 		"0"
 		"AttackRange" 					"0"
@@ -1621,10 +1627,11 @@
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
+		"ConsideredHero"				"1"
 		
-		"Ability1"					""
+		"Ability1"					"mars_bulwark_lua"
 		"Ability2"					"bristleback_bristleback_lua"
-		"Ability3"					"mars_bulwark_lua"
+		"Ability3"					""
 		"Ability6"					""
 		"Creature"
         {
@@ -1819,7 +1826,7 @@
 	//============================================================
 	"unit_wave40"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
+		"vscripts"         				"ai/boss_wave40.lua"
 		
 		"Model"                 		"models/courier/baby_rosh/babyroshan_ti9.vmdl"
 		"ModelScale"               		"2.5"
@@ -1834,7 +1841,7 @@
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
-		"HealthBarOffset"       		"150"
+		"HealthBarOffset"       		"250"
 		"AttackCapabilities" 			"DOTA_UNIT_CAP_NO_ATTACK"
 		"AttackAcquisitionRange" 		"0"
 		"AttackRange" 					"0"
@@ -1843,13 +1850,14 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
+		"MovementSpeed"         		"400"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
+		"ConsideredHero"				"1"
 		
-		"Ability1"					""
-		"Ability2"					"bristleback_bristleback_lua"
-		"Ability3"					"mars_bulwark_lua"
+		"Ability1"					"windranger_windrun_lua"
+		"Ability2"					""
+		"Ability3"					""
 		"Ability6"					""
 		"Creature"
         {
@@ -2044,7 +2052,7 @@
 	//============================================================
 	"unit_wave45"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
+		"vscripts"         				"ai/boss_wave45.lua"
 		
 		"Model"                 		"models/courier/otter_dragon/otter_dragon.vmdl"
 		"ModelScale"               		"2.5"
@@ -2059,7 +2067,7 @@
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
-		"HealthBarOffset"       		"150"
+		"HealthBarOffset"       		"180"
 		"AttackCapabilities" 			"DOTA_UNIT_CAP_NO_ATTACK"
 		"AttackAcquisitionRange" 		"0"
 		"AttackRange" 					"0"
@@ -2071,11 +2079,12 @@
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
+		"ConsideredHero"				"1"
 		
-		"Ability1"					""
-		"Ability2"					"bristleback_bristleback_lua"
-		"Ability3"					"mars_bulwark_lua"
-		"Ability6"					""
+		"Ability1"					    "dark_willow_shadow_realm_lua"
+		"Ability2"					    ""
+		"Ability3"					    ""
+		"Ability6"						""
 		"Creature"
         {
 			//Level Up Parameters
@@ -2269,9 +2278,9 @@
 	//============================================================
 	"unit_wave50"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
+		"vscripts"         				"ai/boss_wave50.lua"
 		
-		"Model"                 		"models/items/courier/hermit_crab/hermit_crab_aegis.vmdl"
+		"Model"                 		"models/courier/baby_rosh/babyroshan_ti10.vmdl"
 		"ModelScale"               		"2.5"
 		"SoundSet"              		"Creep_Good_Melee"
 		"ArmorPhysical"         		"30"
@@ -2284,7 +2293,7 @@
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
-		"HealthBarOffset"       		"150"
+		"HealthBarOffset"       		"250"
 		"AttackCapabilities" 			"DOTA_UNIT_CAP_NO_ATTACK"
 		"AttackAcquisitionRange" 		"0"
 		"AttackRange" 					"0"
@@ -2296,10 +2305,11 @@
 		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
+		"ConsideredHero"				"1"
 		
-		"Ability1"						""
-		"Ability2"						"bristleback_bristleback_lua"
-		"Ability3"						"mars_bulwark_lua"
+		"Ability1"						"ursa_enrage_lua"
+		"Ability2"						""
+		"Ability3"						""
 		"Ability6"						""
 		"Creature"
         {
@@ -2325,7 +2335,7 @@
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
-		"PedestalModelScale"        "0.3"
+		"PedestalModelScale"        "0.4"
 		"PedestalOffset"            "5"
 		"ProjectileModel"           "particles/tower_effects/arrow_tower_base_attack.vpcf"
 		"SoundSet"                  "Hero_Mirana"
@@ -2400,8 +2410,8 @@
 		"ModelScale"                "0.8"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/wisp/wisp.vmdl"
-		"PedestalModelScale"        "1"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.4"
 		"PedestalOffset"            "4"
 		"ProjectileModel"           "particles/econ/items/viper/viper_ti7_immortal/viper_poison_attack_ti7.vpcf"
 		"SoundSet"                  "Hero_Viper"
@@ -2478,7 +2488,7 @@
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
-		"PedestalModelScale"        "0.3"
+		"PedestalModelScale"        "0.4"
 		"PedestalOffset"            "5"
 		"SoundSet"                  "Hero_ancient_apparition"
 		"MinimapIconSize"           "10"
@@ -2804,11 +2814,11 @@
 		{
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "6944" } // Weapon
-				"2"  { "ItemDef" "5818" } // Left Arm
-				"3"  { "ItemDef" "7073" } // Head
-				"4"  { "ItemDef" "9043" } // Shoulder
-				"5"  { "ItemDef" "5460" } // Armor
+				"1"  { "ItemDef" "365" } // Weapon
+				"2"  { "ItemDef" "369" } // Left Arm
+				"3"  { "ItemDef" "572" } // Head
+				"4"  { "ItemDef" "368" } // Shoulder
+				"5"  { "ItemDef" "366" } // Armor
 			}
 		}
 	}
@@ -2892,11 +2902,11 @@
 		{
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "6561" } // Weapon
-				"2"  { "ItemDef" "6024" } // Left Arm
-				"3"  { "ItemDef" "9442" } // Head
-				"4"  { "ItemDef" "9444" } // Shoulder
-				"5"  { "ItemDef" "8269" } // Armor
+				"1"  { "ItemDef" "6944" } // Weapon
+				"2"  { "ItemDef" "7067" } // Left Arm
+				"3"  { "ItemDef" "7073" } // Head
+				"4"  { "ItemDef" "7074" } // Shoulder
+				"5"  { "ItemDef" "7068" } // Armor
 			}
 		}
 	}
@@ -2980,11 +2990,11 @@
 		{
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "12307" } // Weapon
+				"1"  { "ItemDef" "6561" } // Weapon
 				"2"  { "ItemDef" "9746" } // Left Arm
-				"3"  { "ItemDef" "13474" } // Head
-				"4"  { "ItemDef" "4582" } // Shoulder
-				"5"  { "ItemDef" "8007" } // Armor
+				"3"  { "ItemDef" "12950" } // Head
+				"4"  { "ItemDef" "12951" } // Shoulder
+				"5"  { "ItemDef" "12948" } // Armor
 			}
 		}
 	}
@@ -3068,11 +3078,12 @@
 		{
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "9904" } // Weapon
-				"2"  { "ItemDef" "9906" } // Off-Hand
-				"3"  { "ItemDef" "4417" } // Head
-				"4"  { "ItemDef" "5500" } // Arms
-				"5"  { "ItemDef" "5501" } // Belt
+				"1"  { "ItemDef" "246" } // Weapon
+				"2"  { "ItemDef" "247" } // Off-Hand
+				"3"  { "ItemDef" "251" } // Head
+				"4"  { "ItemDef" "248" } // Headress
+				"5"  { "ItemDef" "249" } // Arms
+				"6"  { "ItemDef" "250" } // Belt
 			}
 		}
 	}
@@ -3156,11 +3167,12 @@
 		{
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "6647" } // Weapon
-				"2"  { "ItemDef" "9794" } // Off-Hand
-				"3"  { "ItemDef" "8341" } // Head
-				"4"  { "ItemDef" "9885" } // Arms
-				"5"  { "ItemDef" "9886" } // Belt
+				"1"  { "ItemDef" "9904" } // Weapon
+				"2"  { "ItemDef" "9906" } // Off-Hand
+				"3"  { "ItemDef" "4417" } // Head
+				"4"  { "ItemDef" "5500" } // Arms
+				"5"  { "ItemDef" "5501" } // Belt
+				"6"  { "ItemDef" "251" } // Head
 			}
 		}
 	}
@@ -3244,11 +3256,12 @@
 		{
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "6915" } // Weapon
-				"2"  { "ItemDef" "12419" } // Off-Hand
-				"3"  { "ItemDef" "9907" } // Head
-				"4"  { "ItemDef" "9909" } // Arms
-				"5"  { "ItemDef" "9908" } // Belt
+				"1"  { "ItemDef" "13364" } // Weapon
+				"2"  { "ItemDef" "13366" } // Off-Hand
+				"3"  { "ItemDef" "8341" } // Head
+				"4"  { "ItemDef" "9885" } // Arms
+				"5"  { "ItemDef" "9886" } // Belt
+				"6"  { "ItemDef" "251" } // Head
 			}
 		}
 	}
@@ -3332,12 +3345,12 @@
 		{
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "7684" } // Weapon
-				"2"  { "ItemDef" "4427" } // Head
-				"3"  { "ItemDef" "4421" } // Shoulder
-				"4"  { "ItemDef" "6562" } // Back
-				"5"  { "ItemDef" "6342" } // Arms
-				"6"  { "ItemDef" "7202" } // Tail
+				"1"  { "ItemDef" "104" } // Weapon
+				"2"  { "ItemDef" "296" } // Head
+				"3"  { "ItemDef" "298" } // Shoulder
+				"4"  { "ItemDef" "297" } // Back
+				"5"  { "ItemDef" "299" } // Arms
+				"6"  { "ItemDef" "300" } // Tail
 			}
 		}
 	}
@@ -3421,12 +3434,12 @@
 		{
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "4912" } // Weapon
-				"2"  { "ItemDef" "9836" } // Head
-				"3"  { "ItemDef" "9835" } // Shoulder
-				"4"  { "ItemDef" "9837" } // Back
-				"5"  { "ItemDef" "9832" } // Arms
-				"6"  { "ItemDef" "6229" } // Tail
+				"1"  { "ItemDef" "7684" } // Weapon
+				"2"  { "ItemDef" "4427" } // Head
+				"3"  { "ItemDef" "4421" } // Shoulder
+				"4"  { "ItemDef" "6562" } // Back
+				"5"  { "ItemDef" "6342" } // Arms
+				"6"  { "ItemDef" "7202" } // Tail
 			}
 		}
 	}
@@ -3599,11 +3612,13 @@
 		{
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "9137" } // Guns
-				"2"  { "ItemDef" "9140" } // Head
-				"3"  { "ItemDef" "9141" } // Back
-				"4"  { "ItemDef" "9139" } // Propeller
-				"5"  { "ItemDef" "9138" } // Missile
+				"1"  { "ItemDef" "177" } // Guns
+				"2"  { "ItemDef" "176" } // Googles
+				"3"  { "ItemDef" "126" } // Back
+				"4"  { "ItemDef" "178" } // Propeller
+				"5"  { "ItemDef" "179" } // Missile
+				"6"  { "ItemDef" "131" } // Head
+				"7"  { "ItemDef" "527" } // Ambient Effects
 			}
 		}
 	}
@@ -3687,11 +3702,13 @@
 		{
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "9261" } // Guns
-				"2"  { "ItemDef" "8434" } // Head
-				"3"  { "ItemDef" "8437" } // Back
-				"4"  { "ItemDef" "8457" } // Propeller
-				"5"  { "ItemDef" "8459" } // Missile
+				"1"  { "ItemDef" "9137" } // Guns
+				"2"  { "ItemDef" "9140" } // Head
+				"3"  { "ItemDef" "9141" } // Back
+				"4"  { "ItemDef" "9139" } // Propeller
+				"5"  { "ItemDef" "9138" } // Missile
+				"6"  { "ItemDef" "131"  } // Head
+				"7"  { "ItemDef" "527"  } // Ambient Effects
 			}
 		}
 	}
@@ -3775,11 +3792,13 @@
 		{
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "9428" } // Guns
-				"2"  { "ItemDef" "8381" } // Head
-				"3"  { "ItemDef" "9398" } // Back
-				"4"  { "ItemDef" "8383" } // Propeller
-				"5"  { "ItemDef" "6965" } // Missile
+				"1"  { "ItemDef" "9261" } // Guns
+				"2"  { "ItemDef" "8434" } // Head
+				"3"  { "ItemDef" "8437" } // Back
+				"4"  { "ItemDef" "8457" } // Propeller
+				"5"  { "ItemDef" "8459" } // Missile
+				"6"  { "ItemDef" "131"  } // Head
+				"7"  { "ItemDef" "527"  } // Ambient Effects
 			}
 		}
 	}
@@ -3863,12 +3882,12 @@
 		{
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "8353" } // Weapon
-				"2"  { "ItemDef" "4210" } // Head
-				"3"  { "ItemDef" "4207" } // Shoulder
-				"4"  { "ItemDef" "4238" } // Back
-				"5"  { "ItemDef" "4239" } // Belt
-				"6"  { "ItemDef" "4211" } // Arms
+				"1"  { "ItemDef" "17" } // Weapon
+				"2"  { "ItemDef" "16" } // Head
+				"3"  { "ItemDef" "20" } // Shoulder
+				"4"  { "ItemDef" "581" } // Back
+				"5"  { "ItemDef" "18" } // Belt
+				"6"  { "ItemDef" "19" } // Arms
 			}
 		}
 	}
@@ -3952,12 +3971,12 @@
 		{
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "7876" } // Weapon
-				"2"  { "ItemDef" "8847" } // Head
-				"3"  { "ItemDef" "8851" } // Shoulder
-				"4"  { "ItemDef" "8846" } // Back
-				"5"  { "ItemDef" "8849" } // Belt
-				"6"  { "ItemDef" "8848" } // Arms
+				"1"  { "ItemDef" "8353" } // Weapon
+				"2"  { "ItemDef" "4210" } // Head
+				"3"  { "ItemDef" "4207" } // Shoulder
+				"4"  { "ItemDef" "4238" } // Back
+				"5"  { "ItemDef" "4239" } // Belt
+				"6"  { "ItemDef" "4211" } // Arms
 			}
 		}
 	}
@@ -4042,7 +4061,7 @@
 			"AttachWearables"
 			{
 				"1"  { "ItemDef" "9449" } // Weapon
-				"2"  { "ItemDef" "12991" } // Head
+				"2"  { "ItemDef" "13811" } // Head
 				"3"  { "ItemDef" "12992" } // Shoulder
 				"4"  { "ItemDef" "12990" } // Back
 				"5"  { "ItemDef" "12989" } // Belt
@@ -4060,7 +4079,7 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/abyssal_underlord/abyssal_underlord_v2.vmdl"
-		"ModelScale"                "0.7"
+		"ModelScale"                "0.8"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
@@ -4219,7 +4238,7 @@
 		{
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "9742" } // Weapon
+				"1"  { "ItemDef" "9076" } // Weapon
 				"2"  { "ItemDef" "9078" } // Head
 				"3"  { "ItemDef" "9077" } // Armor
 				"4"  { "ItemDef" "622" } // Head
@@ -4307,9 +4326,9 @@
 		{
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "12421" } // Weapon
-				"2"  { "ItemDef" "12293" } // Head
-				"3"  { "ItemDef" "12294" } // Armor
+				"1"  { "ItemDef" "9742" } // Weapon
+				"2"  { "ItemDef" "14199" } // Head
+				"3"  { "ItemDef" "14200" } // Armor
 				"4"  { "ItemDef" "622" } // Head
 				"5"	 { "ItemDef" "617" } // Ambient Effects
 			}
@@ -4396,11 +4415,11 @@
 		{
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "4020" } // Weapon
-				"2"  { "ItemDef" "6284" } // Head
-				"3"  { "ItemDef" "12655" } // Shoulder
-				"4"	 { "ItemDef" "6282" } // Belt
-				"5"  { "ItemDef" "6281" } // Arms
+				"1"  { "ItemDef" "15" } // Weapon
+				"2"  { "ItemDef" "90" } // Head
+				"3"  { "ItemDef" "91" } // Shoulder
+				"4"	 { "ItemDef" "93" } // Belt
+				"5"  { "ItemDef" "92" } // Arms
 			}
 		}
 	}
@@ -4484,11 +4503,11 @@
 		{
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "6921" } // Weapon
-				"2"  { "ItemDef" "12659" } // Head
-				"3"  { "ItemDef" "7378" } // Shoulder
-				"4"	 { "ItemDef" "4596" } // Belt
-				"5"  { "ItemDef" "7816" } // Arms
+				"1"  { "ItemDef" "5898" } // Weapon
+				"2"  { "ItemDef" "5868" } // Head
+				"3"  { "ItemDef" "5896" } // Shoulder
+				"4"	 { "ItemDef" "5897" } // Belt
+				"5"  { "ItemDef" "5861" } // Arms
 			}
 		}
 	}
@@ -4572,11 +4591,11 @@
 		{
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "7571" } // Weapon
-				"2"  { "ItemDef" "6576" } // Head
-				"3"  { "ItemDef" "8268" } // Shoulder
-				"4"	 { "ItemDef" "12657" } // Belt
-				"5"  { "ItemDef" "7996" } // Arms
+				"1"  { "ItemDef" "4020" } // Weapon
+				"2"  { "ItemDef" "6284" } // Head
+				"3"  { "ItemDef" "12655" } // Shoulder
+				"4"	 { "ItemDef" "6282" } // Belt
+				"5"  { "ItemDef" "6281" } // Arms
 			}
 		}
 	}
@@ -4660,9 +4679,9 @@
 		{
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "9471" } // Head
-				"2"  { "ItemDef" "9476" } // Armor
-				"3"  { "ItemDef" "9474" } // Arms
+				"1"  { "ItemDef" "628" } // Head
+				"2"  { "ItemDef" "629" } // Armor
+				"3"  { "ItemDef" "498" } // Ambient Effects
 			}
 		}
 	}
@@ -4746,9 +4765,10 @@
 		{
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "13021" } // Head
-				"2"  { "ItemDef" "13023" } // Armor
-				"3"  { "ItemDef" "13022" } // Arms
+				"1"  { "ItemDef" "9471" } // Head
+				"2"  { "ItemDef" "9476" } // Armor
+				"3"  { "ItemDef" "9474" } // Arms
+				"4"  { "ItemDef" "498"  } // Ambient Effects
 			}
 		}
 	}
@@ -4832,9 +4852,10 @@
 		{
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "12332" } // Head
-				"2"  { "ItemDef" "12330" } // Armor
-				"3"  { "ItemDef" "8326" } // Arms
+				"1"  { "ItemDef" "13021" } // Head
+				"2"  { "ItemDef" "13023" } // Armor
+				"3"  { "ItemDef" "13022" } // Arms
+				"4"  { "ItemDef" "498"   } // Ambient Effects
 			}
 		}
 	}
@@ -5229,13 +5250,13 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "13070" } // Weapon
-				"2"  { "ItemDef" "13072" } // Quiver
-				"3"  { "ItemDef" "13074" } // Head
-				"4"  { "ItemDef" "13075" } // Back
-				"5"  { "ItemDef" "13071" } // Shoulder
-				"6"  { "ItemDef" "13073" } // Legs
-				"7"  { "ItemDef" "13076" } // Arms
+				"1"  { "ItemDef" "77" } // Weapon
+				"2"  { "ItemDef" "79" } // Quiver
+				"3"  { "ItemDef" "267" } // Head
+				"4"  { "ItemDef" "76" } // Back
+				"5"  { "ItemDef" "80" } // Shoulder
+				"6"  { "ItemDef" "78" } // Legs
+				"7"  { "ItemDef" "75" } // Arms
 			}
 		}
 	}
@@ -5319,13 +5340,13 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "12616" } // Weapon
-				"2"  { "ItemDef" "12619" } // Quiver
-				"3"  { "ItemDef" "12906" } // Head
-				"4"  { "ItemDef" "8006" } // Back
-				"5"  { "ItemDef" "12618" } // Shoulder
-				"6"  { "ItemDef" "6555" } // Legs
-				"7"  { "ItemDef" "9871" } // Arms
+				"1"  { "ItemDef" "5706" } // Weapon
+				"2"  { "ItemDef" "5703" } // Quiver
+				"3"  { "ItemDef" "5707" } // Head
+				"4"  { "ItemDef" "5701" } // Back
+				"5"  { "ItemDef" "5705" } // Shoulder
+				"6"  { "ItemDef" "5702" } // Legs
+				"7"  { "ItemDef" "5700" } // Arms
 			}
 		}
 	}
@@ -5417,13 +5438,13 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "12946" } // Weapon
+				"1"  { "ItemDef" "6556" } // Weapon
 				"2"  { "ItemDef" "6557" } // Quiver
-				"3"  { "ItemDef" "6785" } // Head
-				"4"  { "ItemDef" "8037" } // Back
-				"5"  { "ItemDef" "12903" } // Shoulder
-				"6"  { "ItemDef" "12905" } // Legs
-				"7"  { "ItemDef" "12908" } // Arms
+				"3"  { "ItemDef" "6552" } // Head
+				"4"  { "ItemDef" "6558" } // Back
+				"5"  { "ItemDef" "6554" } // Shoulder
+				"6"  { "ItemDef" "6555" } // Legs
+				"7"  { "ItemDef" "6553" } // Arms
 			}
 		}
 	}
@@ -5520,13 +5541,13 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "17100" } // Mount
-				"2"  { "ItemDef" "6658" }  // Weapon 
-				"3"  { "ItemDef" "6153" } // Quiver
-				"4"  { "ItemDef" "5850" }  // Head
-				"5"  { "ItemDef" "6938" } // Shoulder
-				"6"  { "ItemDef" "4691" } // Back
-				"7"  { "ItemDef" "6935" } // Arms
+				"1"  { "ItemDef" "404" } // Mount
+				"2"  { "ItemDef" "403" }  // Weapon 
+				"3"  { "ItemDef" "409" } // Quiver
+				"4"  { "ItemDef" "405" }  // Head
+				"5"  { "ItemDef" "407" } // Shoulder
+				"6"  { "ItemDef" "406" } // Back
+				"7"  { "ItemDef" "408" } // Arms
 			}
 		}
 	}
@@ -5623,13 +5644,13 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "7398" } // Mount
-				"2"  { "ItemDef" "8540" }  // Weapon
-				"3"  { "ItemDef" "6662" } // Quiver
-				"4"  { "ItemDef" "7100" }  // Head
-				"5"  { "ItemDef" "8537" } // Shoulder
-				"6"  { "ItemDef" "9271" } // Back
-				"7"  { "ItemDef" "9275" } // Arms
+				"1"  { "ItemDef" "5287" } // Mount
+				"2"  { "ItemDef" "4950" }  // Weapon
+				"3"  { "ItemDef" "4955" } // Quiver
+				"4"  { "ItemDef" "4954" }  // Head
+				"5"  { "ItemDef" "4951" } // Shoulder
+				"6"  { "ItemDef" "4952" } // Back
+				"7"  { "ItemDef" "4949" } // Arms
 			}
 		}
 	}
@@ -5726,13 +5747,13 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "9247" } // Mount
+				"1"  { "ItemDef" "7398" } // Mount
 				"2"  { "ItemDef" "7936" } // Weapon
-				"3"  { "ItemDef" "6937" } // Quiver
-				"4"  { "ItemDef" "6936" } // Head
-				"5"  { "ItemDef" "9272" } // Shoulder
-				"6"  { "ItemDef" "8538" } // Back
-				"7"  { "ItemDef" "8541" } // Arms
+				"3"  { "ItemDef" "14417" } // Quiver
+				"4"  { "ItemDef" "14418" } // Head
+				"5"  { "ItemDef" "14415" } // Shoulder
+				"6"  { "ItemDef" "14419" } // Back
+				"7"  { "ItemDef" "14420" } // Arms
 			}
 		}
 	}
@@ -5829,12 +5850,12 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "8971" } // Weapon
-				"2"  { "ItemDef" "6748" } // Head
-				"3"  { "ItemDef" "6853" } // Neck
-				"4"  { "ItemDef" "9003" } // Shoulder
-				"5"  { "ItemDef" "4029" } // Back
-				"6"  { "ItemDef" "5799" } // Arms
+				"1"  { "ItemDef" "29" } // Weapon
+				"2"  { "ItemDef" "30" } // Head
+				"3"  { "ItemDef" "31" } // Neck
+				"4"  { "ItemDef" "33" } // Shoulder
+				"5"  { "ItemDef" "32" } // Back
+				"6"  { "ItemDef" "49" } // Arms
 			}
 		}
 	}
@@ -6134,10 +6155,11 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "9917" } // Stinger Limbs
-				"2"  { "ItemDef" "9916" } // Head
-				"3"  { "ItemDef" "9915" } // Shoulder
-				"4"  { "ItemDef" "9918" } // Tail
+				"1"  { "ItemDef" "293" } // Stinger Limbs
+				"2"  { "ItemDef" "291" } // Head
+				"3"  { "ItemDef" "292" } // Shoulder
+				"4"  { "ItemDef" "294" } // Tail
+				"5"  { "ItemDef" "518" } // Ambient Effects
 			}
 		}
 	}
@@ -6234,10 +6256,10 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "9896" } // Stinger Limbs
-				"2"  { "ItemDef" "9894" } // Head
-				"3"  { "ItemDef" "9895" } // Shoulder
-				"4"  { "ItemDef" "9897" } // Tail
+				"1"  { "ItemDef" "9917" } // Stinger Limbs
+				"2"  { "ItemDef" "9916" } // Head
+				"3"  { "ItemDef" "9915" } // Shoulder
+				"4"  { "ItemDef" "9918" } // Tail
 			}
 		}
 	}
@@ -6432,9 +6454,10 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "9230" } // Head
-				"2"  { "ItemDef" "9233" } // Back
-				"3"  { "ItemDef" "9670" } // Tail
+				"1"  { "ItemDef" "623" } // Head
+				"2"  { "ItemDef" "611" } // Back
+				"3"  { "ItemDef" "654" } // Tail
+				"4"  { "ItemDef" "519"  } // Ambient Effects
 			}
 		}
 	}
@@ -6530,9 +6553,10 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "7811" } // Head
-				"2"  { "ItemDef" "9630" } // Back
-				"3"  { "ItemDef" "9669" } // Tail
+				"1"  { "ItemDef" "9230" } // Head
+				"2"  { "ItemDef" "9233" } // Back
+				"3"  { "ItemDef" "9670" } // Tail
+				"4"  { "ItemDef" "519"  } // Ambient Effects
 			}
 		}
 	}
@@ -6628,9 +6652,10 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "7995" } // Head
+				"1"  { "ItemDef" "7811" } // Head
 				"2"  { "ItemDef" "9630" } // Back
-				"3"  { "ItemDef" "9758" } // Tail
+				"3"  { "ItemDef" "9669" } // Tail
+				"4"  { "ItemDef" "519"  } // Ambient Effects
 			}
 		}
 	}
@@ -6724,11 +6749,12 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "5737" } 	// Weapon
-				"2"  { "ItemDef" "9626" }  	// Head
-				"3"  { "ItemDef" "4389" } 	// Shoulder
-				"4"  { "ItemDef" "4386" }  	// Back
-				"5"  { "ItemDef" "4420" } 	// Arms
+				"1"  { "ItemDef" "40"  } 	// Weapon
+				"2"  { "ItemDef" "311" }  	// Head
+				"3"  { "ItemDef" "39"  } 	// Shoulder
+				"4"  { "ItemDef" "38"  }  	// Back
+				"5"  { "ItemDef" "41"  } 	// Arms
+				"6"  { "ItemDef" "502" }    // Ambient Effects
 			}
 		}
 	}
@@ -6822,11 +6848,12 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "6573" } 	// Weapon
-				"2"  { "ItemDef" "5738" }  	// Head
-				"3"  { "ItemDef" "8401" } 	// Shoulder
-				"4"  { "ItemDef" "9627" }  	// Back
-				"5"  { "ItemDef" "8448" } 	// Arms
+				"1"  { "ItemDef" "5737" } 	// Weapon
+				"2"  { "ItemDef" "9626" }  	// Head
+				"3"  { "ItemDef" "4389" } 	// Shoulder
+				"4"  { "ItemDef" "4386" }  	// Back
+				"5"  { "ItemDef" "4420" } 	// Arms
+				"6"  { "ItemDef" "502"  }    // Ambient Effects
 			}
 		}
 	}
@@ -6921,11 +6948,12 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "6784" } 	// Weapon
-				"2"  { "ItemDef" "6686" }  	// Head
-				"3"  { "ItemDef" "9205" } 	// Shoulder
-				"4"  { "ItemDef" "7385" }  	// Back
-				"5"  { "ItemDef" "8398" } 	// Arms
+				"1"  { "ItemDef" "6573" } 	// Weapon
+				"2"  { "ItemDef" "5738" }  	// Head
+				"3"  { "ItemDef" "8401" } 	// Shoulder
+				"4"  { "ItemDef" "9627" }  	// Back
+				"5"  { "ItemDef" "8448" } 	// Arms
+				"6"  { "ItemDef" "502"  }    // Ambient Effects
 			}
 		}
 	}
@@ -7022,10 +7050,12 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "9564" } 	 // Mount
-				"2"  { "ItemDef" "4865" }  	 // Weapon
-				"3"  { "ItemDef" "4868" } 	 // Head
-				"4"  { "ItemDef" "4866" }  	 // Belt
+				"1"  { "ItemDef" "252" } 	 // Mount
+				"2"  { "ItemDef" "253" }  	 // Weapon
+				"3"  { "ItemDef" "254" } 	 // Head
+				"4"  { "ItemDef" "255" }  	 // Belt
+				"5"  { "ItemDef" "256" }     // Horse Armor
+				"6"  { "ItemDef" "528"  }    // Ambient Effects
 			}
 		}
 	}
@@ -7042,8 +7072,8 @@
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
-		"PedestalModelScale"        "0.3"
-		"PedestalOffset"            "5"
+		"PedestalModelScale"        "1.5"
+		"PedestalOffset"            "4"
 		"ProjectileModel"           "particles/units/heroes/hero_keeper_of_the_light/keeper_base_attack.vpcf"
 		"SoundSet"                  "Hero_KeeperOfTheLight"
 		"MinimapIconSize"           "10"
@@ -7121,10 +7151,11 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "12775" } 	 // Mount
-				"2"  { "ItemDef" "4803" }  	 // Weapon
-				"3"  { "ItemDef" "9565" } 	 // Head
-				"4"  { "ItemDef" "9566" }  	 // Belt
+				"1"  { "ItemDef" "9564" } 	 // Mount
+				"2"  { "ItemDef" "4865" }  	 // Weapon
+				"3"  { "ItemDef" "4960" } 	 // Head
+				"4"  { "ItemDef" "4866" }  	 // Belt
+				"5"  { "ItemDef" "528"  }    // Ambient Effects
 			}
 		}
 	}
@@ -7141,8 +7172,8 @@
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
-		"PedestalModelScale"        "0.3"
-		"PedestalOffset"            "5"
+		"PedestalModelScale"        "1.5"
+		"PedestalOffset"            "4"
 		"ProjectileModel"           "particles/units/heroes/hero_keeper_of_the_light/keeper_base_attack.vpcf"
 		"SoundSet"                  "Hero_KeeperOfTheLight"
 		"MinimapIconSize"           "10"
@@ -7220,10 +7251,11 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "9198" } 	 // Mount
-				"2"  { "ItemDef" "12772" }   // Weapon
-				"3"  { "ItemDef" "12774" } 	 // Head
-				"4"  { "ItemDef" "12773" }   // Belt
+				"1"  { "ItemDef" "9198"  } 	 // Mount
+				"2"  { "ItemDef" "13773" }   // Weapon
+				"3"  { "ItemDef" "9565"  } 	 // Head
+				"4"  { "ItemDef" "9566"  }   // Belt
+				"5"  { "ItemDef" "528"  }    // Ambient Effects
 			}
 		}
 	}
@@ -7320,10 +7352,11 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "8618" }   // Weapon
-				"2"  { "ItemDef" "9889" }   // Head
-				"3"  { "ItemDef" "8616" }   // Shoulder
-				"4"  { "ItemDef" "8920" }   // Legs
+				"1"  { "ItemDef" "442" }   // Weapon
+				"2"  { "ItemDef" "441" }   // Head
+				"3"  { "ItemDef" "445" }   // Shoulder
+				"4"  { "ItemDef" "447" }   // Legs
+				"5"  { "ItemDef" "517" }   // Ambient Effects
 			}
 		}
 	}
@@ -7420,10 +7453,11 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "8994" }  // Weapon
-				"2"  { "ItemDef" "8617" }  // Head
-				"3"  { "ItemDef" "9749" }  // Shoulder
-				"4"  { "ItemDef" "8619" }  // Legs
+				"1"  { "ItemDef" "8618" }   // Weapon
+				"2"  { "ItemDef" "9889" }   // Head
+				"3"  { "ItemDef" "8616" }   // Shoulder
+				"4"  { "ItemDef" "8920" }   // Legs
+				"5"  { "ItemDef" "517"  }   // Ambient Effects
 			}
 		}
 	}
@@ -7519,10 +7553,11 @@
 			}
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "9891" }   // Weapon
-				"2"  { "ItemDef" "8919" }   // Head
-				"3"  { "ItemDef" "12420" }  // Shoulder
-				"4"  { "ItemDef" "9892" }   // Legs
+				"1"  { "ItemDef" "8994" }  // Weapon
+				"2"  { "ItemDef" "8617" }  // Head
+				"3"  { "ItemDef" "9749" }  // Shoulder
+				"4"  { "ItemDef" "8619" }  // Legs
+				"5"  { "ItemDef" "517"  }   // Ambient Effects
 			}
 		}
 	}
