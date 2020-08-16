@@ -2983,7 +2983,7 @@
 		
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastPoint"				"0.5 0.5 0.5"
+		"AbilityCastPoint"				"0.5 0.7 1.0"
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
@@ -2992,7 +2992,7 @@
 
 		// Damage.
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"100 200 450"
+		"AbilityDamage"					"100 200 350"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -3005,12 +3005,12 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"starfall_radius"	"1100"		
+				"starfall_radius"	"800"		
 			}
 			"02"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"starfall_secondary_radius"	"175"
+				"starfall_secondary_radius"	"0"
 			}
 			"03"
 			{
@@ -3020,12 +3020,12 @@
 			"04"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"starfall_secondary_damage_pct"	"0.75"
+				"starfall_secondary_damage_pct"	"0"
 			}
 			"05"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"starfall_secondary_targets"	"1"
+				"starfall_secondary_targets"	"0"
 			}
 		}
 

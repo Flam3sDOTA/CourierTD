@@ -23,8 +23,6 @@
 
 	"weapons_armor"
 	{
-		"item"		"item_custom_time_sigil"
-		"item"		"item_custom_mind_sigil"
 		"item"		"item_custom_quickening_charm"
 		"item"		"item_custom_orb_of_destruction"
 		"item"		"item_custom_blade_of_alacrity"

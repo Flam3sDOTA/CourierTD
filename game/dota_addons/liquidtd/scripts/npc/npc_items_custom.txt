@@ -500,7 +500,7 @@
 			{
 				"Passive" 				"1" 
 				"IsHidden" 				"1"
-				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Attributes" 			"MODIFIER_ATTRIBUTE_NONE" //This makes duplicate items stack their properties
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"			"%bonus_mana_regen"
@@ -548,7 +548,7 @@
 			{
 				"Passive" 				"1" 
 				"IsHidden" 				"1"
-				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Attributes" 			"MODIFIER_ATTRIBUTE_NONE" //This makes duplicate items not stack their properties
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"			"%bonus_mana_regen"
@@ -748,102 +748,6 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"			"%bonus_damage"
-				}
-			}
-		}			
-	}
-	
-	//============================================================
-	// Mind Sigil - Tier 2
-	//============================================================
-	"item_custom_mind_sigil"
-	{
-		"ID" 							"3204"
-		"BaseClass" 					"item_datadriven"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"Model"							"models/props_winter/present.vmdl" 
-		"Effect"						"particles/item_effects/item_tier_2_circle.vpcf"
-		"AbilityTextureName" 			"item_custom_mind_sigil"
-		"ItemDroppable" 				"1"
-		"ItemKillable" 					"0" 
-		"ItemAlertable"					"1"
-		"ItemPermanent"					"1"
-		"ItemRequiresCharges"			"0"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"ItemCost" 						"1000"
-		"ItemSellable" 					"1"
-		"ItemPurchasable" 				"1"
-		"ItemStackable" 				"0"
-		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
-		"UIPickupSound" 				"Item.DropGemShop"
-		"UIDropSound" 					"Item.DropGemShop"
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"bonus_mana_regen"			"2"
-			}
-		}
-		"Modifiers"
-		{
-			"item_custom_mind_sigil_modifier"
-			{
-				"Passive" 				"1" 
-				"IsHidden" 				"1"
-				"Attributes" 			"MODIFIER_ATTRIBUTE_NONE"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"			"%bonus_mana_regen"
-				}
-			}
-		}			
-	}
-	
-	//============================================================
-	// Time Sigil - Tier 2
-	//============================================================
-	"item_custom_time_sigil"
-	{
-		"ID" 							"3205"
-		"BaseClass" 					"item_datadriven"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"Model"							"models/props_winter/present.vmdl" 
-		"Effect"						"particles/item_effects/item_tier_2_circle.vpcf"
-		"AbilityTextureName" 			"item_custom_time_sigil"
-		"ItemDroppable" 				"1"
-		"ItemKillable" 					"0" 
-		"ItemAlertable"					"1"
-		"ItemPermanent"					"1"
-		"ItemRequiresCharges"			"0"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"ItemCost" 						"1000"
-		"ItemSellable" 					"1"
-		"ItemPurchasable" 				"1"
-		"ItemStackable" 				"0"
-		"ItemShareability" 				"ITEM_FULLY_SHAREABLE"	
-		"UIPickupSound" 				"Item.DropGemShop"
-		"UIDropSound" 					"Item.DropGemShop"
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"bonus_mana_regen"			"2"
-			}
-		}
-		"Modifiers"
-		{
-			"item_custom_time_sigil_modifier"
-			{
-				"Passive" 				"1" 
-				"IsHidden" 				"1"
-				"Attributes" 			"MODIFIER_ATTRIBUTE_NONE" //This makes duplicate items stack their properties
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"			"%bonus_mana_regen"
 				}
 			}
 		}			
@@ -1058,7 +962,7 @@
 		}
 		"Modifiers"
 		{
-			"item_custom_mind_sigil_modifier"
+			"item_custom_quickening_charm_modifier"
 			{
 				"Passive" 				"1" 
 				"IsHidden" 				"1"
@@ -1589,13 +1493,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"bonus_mana_regen"			"5"
-			}
-			
-			"02"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"cooldown_reduction"		"8"
+				"cooldown_reduction"		"6"
 			}
 		}
 		"Modifiers"
@@ -1607,7 +1505,6 @@
 				"Attributes" 			"MODIFIER_ATTRIBUTE_NONE"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"			"%bonus_mana_regen"
 					"MODIFIER_PROPERTY_COOLDOWN_REDUCTION_CONSTANT"	"%cooldown_reduction"
 				}
 			}
@@ -2360,38 +2257,6 @@
 	}
 	
 	//============================================================
-	// Time Sigil Recipe
-	//============================================================
-	"item_recipe_custom_time_sigil" 
-	{
-		"ID" 				  			"5006"
-		"BaseClass"           			"item_datadriven"
-		"ItemRecipe"          			"1"
-		"ItemCost"            			"0"
-		"ItemResult"          			"item_custom_time_sigil"
-		"ItemRequirements"
-		{
-			"01" 			 			"item_custom_time_stone;item_custom_time_stone"
-		}
-	}
-	
-	//============================================================
-	// Mind Sigil Recipe
-	//============================================================
-	"item_recipe_custom_mind_sigil" 
-	{
-		"ID" 				  			"5007"
-		"BaseClass"           			"item_datadriven"
-		"ItemRecipe"          			"1"
-		"ItemCost"            			"0"
-		"ItemResult"          			"item_custom_mind_sigil"
-		"ItemRequirements"
-		{
-			"01" 			 			"item_custom_mind_stone;item_custom_mind_stone"
-		}
-	}
-	
-	//============================================================
 	// Daedalus Recipe
 	//============================================================
 	"item_recipe_custom_daedalus" 
@@ -2480,12 +2345,12 @@
 		"ID" 				  			"5013"
 		"BaseClass"           			"item_datadriven"
 		"ItemRecipe"          			"1"
-		"ItemCost"            			"500"
+		"ItemCost"            			"1500"
 		"ItemResult"          			"item_custom_spell_prism"
 		"AbilityTextureName" 			"item_custom_recipe"
 		"ItemRequirements"
 		{
-			"01" 			 			"item_custom_time_sigil;item_custom_mind_sigil;item_custom_quickening_charm"
+			"01" 			 			"item_custom_quickening_charm"
 		}
 	}
 }

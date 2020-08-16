@@ -27,7 +27,7 @@ return {
   tower_windranger_1 = {
     level = 1,
     tier = 1,
-    spawn_sound = "frostivus_ui_select",  
+    spawn_sound = "windrunner_wind_spawn_03",  
 	abilities = {
       windrunner_shackleshot_datadriven = 1
     },
@@ -54,7 +54,7 @@ return {
   tower_drow_1 = {
     level = 1,
     tier = 1,
-    spawn_sound = "frostivus_ui_select",
+    spawn_sound = "drowranger_dro_spawn_04",
 	abilities = {
       drow_ranger_marksmanship = 1
     },
@@ -81,7 +81,7 @@ return {
   tower_mirana_1 = {
     level = 1,
     tier = 1,
-    spawn_sound = "frostivus_ui_select",  
+    spawn_sound = "mirana_mir_spawn_01",  
 	abilities = {
       mirana_starfall_datadriven = 1
     },
@@ -108,7 +108,7 @@ return {
   tower_furion_1 = {
     level = 1,
     tier = 1,
-    spawn_sound = "frostivus_ui_select",
+    spawn_sound = "furion_furi_spawn_01",
 	abilities = {
       furion_sprout_datadriven = 1
     },
@@ -135,7 +135,7 @@ return {
   tower_venomancer_1 = {
     level = 1,
     tier = 1,
-    spawn_sound = "frostivus_ui_select",
+    spawn_sound = "venomancer_venm_spawn_01",
 	abilities = {
       venomancer_venomous_gale_datadriven = 1
     },
@@ -162,7 +162,7 @@ return {
   tower_viper_1 = {
     level = 1,
     tier = 1,
-    spawn_sound = "frostivus_ui_select",
+    spawn_sound = "viper_vipe_spawn_01",
 	abilities = {
       viper_viper_strike_datadriven = 1
     },
@@ -189,7 +189,7 @@ return {
   tower_cm_1 = {
     level = 1,
     tier = 1,
-    spawn_sound = "frostivus_ui_select",
+    spawn_sound = "crystalmaiden_cm_spawn_01",
 	abilities = {
       crystal_maiden_crystal_nova = 1
     },	
@@ -216,7 +216,7 @@ return {
   tower_kotl_1 = {
     level = 1,
     tier = 1,
-    spawn_sound = "frostivus_ui_select",  
+    spawn_sound = "keeper_of_the_light_keep_spawn_01",  
 	abilities = {
       chakra_magic_datadriven = 1
     },
@@ -243,7 +243,7 @@ return {
   tower_venge_1 = {
     level = 1,
     tier = 1,
-    spawn_sound = "frostivus_ui_select",  
+    spawn_sound = "vengefulspirit_vng_spawn_01",  
 	abilities = {
       vengefulspirit_magic_missile_datadriven = 1
     },
@@ -396,7 +396,7 @@ return {
   tower_utility_lion_1 = {
     level = 1,
     tier = 2,
-    spawn_sound = "frostivus_ui_select", 
+    spawn_sound = "lion_lion_spawn_01", 
 	abilities = {
       lion_hex_lua = 1
     },	
@@ -423,7 +423,7 @@ return {
   tower_utility_shaman_1 = {
     level = 1,
     tier = 2,
-    spawn_sound = "frostivus_ui_select",  
+    spawn_sound = "shadowshaman_shad_spawn_02",  
 	abilities = {
       shadow_shaman_shackles_datadriven = 1
     },
@@ -450,7 +450,7 @@ return {
    tower_utility_meepo_1 = {
     level = 1,
     tier = 2,
-    spawn_sound = "frostivus_ui_select",
+    spawn_sound = "meepo_meepo_divided_23",
 	abilities = {
       meepo_earthbind = 1
     },	
@@ -459,7 +459,7 @@ return {
   tower_utility_meepo_2 = {
     level = 2,
     tier = 2,
-    spawn_sound = "frostivus_ui_select",
+    spawn_sound = "meepo_meepo_divided_24",
 	abilities = {
       meepo_earthbind = 2
     },	
@@ -468,7 +468,7 @@ return {
   tower_utility_meepo_3 = {
     level = 3,
     tier = 2,
-    spawn_sound = "frostivus_ui_select",
+    spawn_sound = "meepo_meepo_divided_25",
 	abilities = {
       meepo_earthbind = 3
     },	
@@ -477,7 +477,7 @@ return {
   tower_utility_gyro_1 = {
     level = 1,
     tier = 2,
-    spawn_sound = "frostivus_ui_select",
+    spawn_sound = "gyrocopter_gyro_spawn_01",
 	abilities = {
       flak_cannon_datadriven = 1
     },	
@@ -504,7 +504,7 @@ return {
    tower_utility_sven_1 = {
     level = 1,
     tier = 2,
-    spawn_sound = "frostivus_ui_select",  
+    spawn_sound = "sven_sven_spawn_04",  
 	abilities = {
       sven_storm_bolt = 1
     },
@@ -531,7 +531,7 @@ return {
   tower_utility_underlord_1 = {
     level = 1,
     tier = 2,
-    spawn_sound = "frostivus_ui_select",
+    spawn_sound = "abyssal_underlord_abys_move_06",
 	abilities = {
       abyssal_underlord_pit_of_malice = 1
     },	
@@ -558,7 +558,7 @@ return {
   tower_utility_void_1 = {
     level = 1,
     tier = 2,
-    spawn_sound = "frostivus_ui_select",
+    spawn_sound = "faceless_void_face_spawn_01",
 	abilities = {
       faceless_void_chronosphere_lua = 1
     },
@@ -585,7 +585,7 @@ return {
   tower_utility_enigma_1 = {
     level = 1,
     tier = 2,
-    spawn_sound = "frostivus_ui_select",
+    spawn_sound = "enigma_enig_spawn_01",
 	abilities = {
       enigma_black_hole_lua = 1
     },	

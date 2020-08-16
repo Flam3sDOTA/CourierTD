@@ -981,7 +981,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"18"
 		"BountyGoldMax"         		"19"
-		"StatusHealth"          		"2000"
+		"StatusHealth"          		"2300"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -1025,7 +1025,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"18"
 		"BountyGoldMax"         		"19"
-		"StatusHealth"          		"2100"
+		"StatusHealth"          		"2500"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -1069,7 +1069,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"20"
 		"BountyGoldMax"         		"21"
-		"StatusHealth"          		"2200"
+		"StatusHealth"          		"2700"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -1113,7 +1113,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"21"
 		"BountyGoldMax"         		"22"
-		"StatusHealth"          		"2300"
+		"StatusHealth"          		"3100"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -1208,7 +1208,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"22"
 		"BountyGoldMax"         		"23"
-		"StatusHealth"          		"2400"
+		"StatusHealth"          		"3500"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -1252,7 +1252,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"23"
 		"BountyGoldMax"         		"24"
-		"StatusHealth"          		"2500"
+		"StatusHealth"          		"3700"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -1296,7 +1296,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"24"
 		"BountyGoldMax"         		"25"
-		"StatusHealth"          		"2600"
+		"StatusHealth"          		"4000"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -1340,7 +1340,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"25"
 		"BountyGoldMax"         		"26"
-		"StatusHealth"          		"2700"
+		"StatusHealth"          		"4100"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -1434,7 +1434,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"26"
 		"BountyGoldMax"         		"27"
-		"StatusHealth"          		"3000"
+		"StatusHealth"          		"4200"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -1478,7 +1478,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"27"
 		"BountyGoldMax"         		"28"
-		"StatusHealth"          		"3100"
+		"StatusHealth"          		"4400"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -1522,7 +1522,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"28"
 		"BountyGoldMax"         		"29"
-		"StatusHealth"          		"3200"
+		"StatusHealth"          		"4600"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -1566,7 +1566,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"29"
 		"BountyGoldMax"         		"30"
-		"StatusHealth"          		"3300"
+		"StatusHealth"          		"4700"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -1660,7 +1660,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"30"
 		"BountyGoldMax"         		"31"
-		"StatusHealth"          		"3500"
+		"StatusHealth"          		"5000"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -1704,7 +1704,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"31"
 		"BountyGoldMax"         		"32"
-		"StatusHealth"          		"3700"
+		"StatusHealth"          		"5250"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -1748,7 +1748,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"32"
 		"BountyGoldMax"         		"33"
-		"StatusHealth"          		"3900"
+		"StatusHealth"          		"5500"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -1792,7 +1792,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"33"
 		"BountyGoldMax"         		"34"
-		"StatusHealth"          		"4000"
+		"StatusHealth"          		"6000"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -1836,7 +1836,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"3500"
 		"BountyGoldMax"         		"3500"
-		"StatusHealth"          		"20000"
+		"StatusHealth"          		"25000"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -1886,7 +1886,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"34"
 		"BountyGoldMax"         		"35"
-		"StatusHealth"          		"4300"
+		"StatusHealth"          		"6250"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -1930,7 +1930,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"35"
 		"BountyGoldMax"         		"36"
-		"StatusHealth"          		"4500"
+		"StatusHealth"          		"6500"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -1974,7 +1974,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"36"
 		"BountyGoldMax"         		"37"
-		"StatusHealth"          		"4700"
+		"StatusHealth"          		"6750"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -2018,7 +2018,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"37"
 		"BountyGoldMax"         		"38"
-		"StatusHealth"          		"5000"
+		"StatusHealth"          		"7000"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -2062,7 +2062,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"4500"
 		"BountyGoldMax"         		"4500"
-		"StatusHealth"          		"25000"
+		"StatusHealth"          		"30000"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -2112,7 +2112,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"38"
 		"BountyGoldMax"         		"39"
-		"StatusHealth"          		"5250"
+		"StatusHealth"          		"7250"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -2156,7 +2156,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"39"
 		"BountyGoldMax"         		"40"
-		"StatusHealth"          		"5500"
+		"StatusHealth"          		"7500"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -2200,7 +2200,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"40"
 		"BountyGoldMax"         		"41"
-		"StatusHealth"          		"6000"
+		"StatusHealth"          		"7750"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
@@ -2244,7 +2244,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"BountyGoldMin"         		"41"
 		"BountyGoldMax"         		"42"
-		"StatusHealth"          		"7000"
+		"StatusHealth"          		"8000"
 		"StatusMana"            		"0"
 		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"

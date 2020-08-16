@@ -7,7 +7,7 @@ function OnStartTouch(trigger)
 		activator:AddNoDraw()
 		-- Damage the player
 		local hero = activator.heroToDamage
-		EmitSoundOnClient( "General.CompendiumLevelUpMinor", PlayerResource:GetPlayer( hero:GetPlayerID() ) )
+		EmitSoundOnClient( "Frostivus.PointScored.Enemy", PlayerResource:GetPlayer( hero:GetPlayerID() ) )
 		if hero and hero:IsAlive() then      
 			local damage = activator.leakDamage or 1
 			local damageTable = {

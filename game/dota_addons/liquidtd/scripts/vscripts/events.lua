@@ -1,4 +1,3 @@
-require("resources/TangoManager")
 GameRules.DropTable = LoadKeyValues("scripts/kv/item_drops.kv")
 
 ---------------------------------------------------------------------------
@@ -162,23 +161,22 @@ function LiquidTD:OnGameRulesStateChange()
 end
 
 function LiquidTD:OnGameInProgress()
-	EmitGlobalSound("MegaCreeps.Dire")
   -- Give these players a custom builder model
 	Timers:CreateTimer(4, function()
     local maxPlayerID = PlayerResource:GetTeamPlayerCount()
     for playerID=0,(maxPlayerID-1) do
     local sID = PlayerResource:GetSteamAccountID(playerID)
       if sID == 289101818 then 
-local player = PlayerResource:GetPlayer(playerID)
+		local player = PlayerResource:GetPlayer(playerID)
         local hero = player:GetAssignedHero()
         local courier = "models/courier/baby_rosh/babyroshan_ti10.vmdl"
         hero:SetOriginalModel(courier)
         hero:SetModel(courier)
 		hero:SetMaterialGroup("5")
-      elseif sID == 160261868 then 
+      elseif sID == 43305444 then 
         local player = PlayerResource:GetPlayer(playerID)
         local hero = player:GetAssignedHero()
-        local courier = "models/courier/doom_demihero_courier/doom_demihero_courier.vmdl"
+        local courier = "models/courier/baby_rosh/babyroshan_winter18.vmdl"
         hero:SetOriginalModel(courier)
         hero:SetModel(courier)
         hero:SetMaterialGroup("1")
