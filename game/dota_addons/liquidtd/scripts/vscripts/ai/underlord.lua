@@ -6,7 +6,7 @@ function Spawn( entityKeyValues )
     if IsServer() == false then
         return
     end
-    Malice = thisEntity:FindAbilityByName("abyssal_underlord_pit_of_malice")
+    Malice = thisEntity:FindAbilityByName("underlord_pit_of_malice_lua")
     thisEntity:SetContextThink( "UnderlordThink", UnderlordThink, .1 )
 end
 

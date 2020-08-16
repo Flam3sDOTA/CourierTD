@@ -533,7 +533,7 @@ return {
     tier = 2,
     spawn_sound = "abyssal_underlord_abys_move_06",
 	abilities = {
-      abyssal_underlord_pit_of_malice = 1
+      underlord_pit_of_malice_lua = 1
     },	
   },
   
@@ -542,7 +542,7 @@ return {
     tier = 2,
     spawn_sound = "frostivus_ui_select",
 	abilities = {
-      abyssal_underlord_pit_of_malice = 2
+      underlord_pit_of_malice_lua = 2
     },	
   },
   
@@ -551,7 +551,7 @@ return {
     tier = 2,
     spawn_sound = "frostivus_ui_select",
 	abilities = {
-      abyssal_underlord_pit_of_malice = 3
+      underlord_pit_of_malice_lua = 3
     },	
   },
   

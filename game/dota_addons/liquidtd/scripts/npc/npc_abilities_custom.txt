@@ -4468,31 +4468,48 @@
 	}
 	
 	//=================================================================================================================
-	// Abyssal Underlord: Pit of Malice
+	// Underlord: Pit of Malice (Lua version)
+	// Credits: https://github.com/Elfansoer/dota-2-lua-abilities/tree/master/scripts/vscripts/lua_abilities/underlord_pit_of_malice_lua
 	//=================================================================================================================
-	"abyssal_underlord_pit_of_malice"
+	"underlord_pit_of_malice_lua"
 	{
-		// General
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
 		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"5614"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/underlord_pit_of_malice_lua"
+		"AbilityTextureName"			"underlord_pit_of_malice"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"3"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_abyssal_underlord.vsndevts"
+			"particle"	"particles/units/heroes/heroes_underlord/underlord_pitofmalice_pre.vpcf"
+			"particle"	"particles/units/heroes/heroes_underlord/underlord_pitofmalice.vpcf"
+			"particle"	"particles/units/heroes/heroes_underlord/abyssal_underlord_pitofmalice_stun.vpcf"
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
-		"AbilitySound"					"Hero_AbyssalUnderlord.PitOfMalice"
-		"MaxLevel"						"3"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"1000"
-		"AbilityCastPoint"				"0.35"
-		"FightRecapLevel"				"1"
-		
-		// Time		
+		"AbilityCastPoint"				"0.45"
+
+		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"25 20 15"
-
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"				"100"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -4500,18 +4517,18 @@
 		{
 			"01"
 			{
-				"var_type"						"FIELD_INTEGER"
-				"radius"						"300"
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"300"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"pit_duration"					"5.0"
+				"pit_duration"					"5 6 7"
 			}		
 			"03"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"pit_interval"					"2"
+				"pit_interval"					"3"
 			}
 			"04"
 			{
@@ -4521,11 +4538,9 @@
 			"05"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"ensnare_duration"				"1.5 2 2.5"
-				"LinkedSpecialBonus"			"special_bonus_unique_underlord"
+				"ensnare_duration"				"1 1.5 2"
 			}
 		}
-		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
 	}
 	
 	//=================================================================================================================

@@ -4140,7 +4140,7 @@
 		
 		"Ability1"					"tower_upgrade_utility_underlord_2"
 		"Ability2"					"sell_tower"
-		"Ability3"					"abyssal_underlord_pit_of_malice"
+		"Ability3"					"underlord_pit_of_malice_lua"
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
@@ -4228,7 +4228,7 @@
 		
 		"Ability1"					"tower_upgrade_utility_underlord_3"
 		"Ability2"					"sell_tower"
-		"Ability3"					"abyssal_underlord_pit_of_malice"
+		"Ability3"					"underlord_pit_of_malice_lua"
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
@@ -4316,7 +4316,7 @@
 		
 		"Ability1"					"empty"
 		"Ability2"					"sell_tower"
-		"Ability3"					"abyssal_underlord_pit_of_malice"
+		"Ability3"					"underlord_pit_of_malice_lua"
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size

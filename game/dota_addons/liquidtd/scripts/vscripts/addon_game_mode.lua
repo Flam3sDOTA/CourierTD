@@ -126,16 +126,15 @@ function Precache( context )
 	PrecacheResource( "particle", "particles/units/heroes/hero_lina/lina_base_attack.vpcf", context )
 	PrecacheResource( "particle", "particles/creep_effects/spawn_effect.vpcf", context )
 	PrecacheResource( "particle", "particles/creep_effects/leak_effect.vpcf", context )
-	PrecacheResource( "particle", "particles/econ/events/ti8/hero_levelup_ti8.vpcf", contetxt )
-	PrecacheResource( "particle", "particles/units/heroes/hero_life_stealer/life_stealer_rage.vpcf", contetxt )
-	PrecacheResource( "particle", "particles/units/heroes/hero_windrunner/windrunner_windrun.vpcf", contetxt )
-	PrecacheResource( "particle", "particles/status_fx/status_effect_dark_willow_shadow_realm.vpcf", contetxt )
-	PrecacheResource( "particle", "particles/units/heroes/hero_dark_willow/dark_willow_shadow_realm.vpcf", contetxt )
-	
-	
-	
-	
-	
+	PrecacheResource( "particle", "particles/econ/events/ti8/hero_levelup_ti8.vpcf", context )
+	PrecacheResource( "particle", "particles/units/heroes/hero_life_stealer/life_stealer_rage.vpcf", context )
+	PrecacheResource( "particle", "particles/units/heroes/hero_windrunner/windrunner_windrun.vpcf", context )
+	PrecacheResource( "particle", "particles/status_fx/status_effect_dark_willow_shadow_realm.vpcf", context )
+	PrecacheResource( "particle", "particles/units/heroes/hero_dark_willow/dark_willow_shadow_realm.vpcf", context )
+	PrecacheResource( "particle", "particles/units/heroes/heroes_underlord/abyssal_underlord_weapon_blur_a.vpcf", context )
+	PrecacheResource( "particle", "particles/units/heroes/heroes_underlord/abyssal_underlord_weapon_blur_b.vpcf", context )
+	PrecacheResource( "particle", "particles/units/heroes/heroes_underlord/underlord_pitofmalice.vpcf", context )
+		
 	-- Tower Stars
 	PrecacheResource( "particle", "particles/arrow/star1.vpcf", context )
 	PrecacheResource( "particle", "particles/arrow/star2_1.vpcf", context )
