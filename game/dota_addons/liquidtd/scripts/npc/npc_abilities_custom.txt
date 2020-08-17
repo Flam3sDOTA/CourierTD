@@ -2798,7 +2798,7 @@
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"movement_speed"			"-10"
+				"movement_speed"			"-5"
 			}			
 		}
 
