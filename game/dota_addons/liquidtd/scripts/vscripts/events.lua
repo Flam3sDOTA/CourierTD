@@ -53,7 +53,7 @@ function LiquidTD:OnEntityHurt(event)
   if attacker:GetTeam() ~= DOTA_TEAM_NEUTRALS and not inflictor then
     local maxMana = attacker:GetMaxMana()
     if maxMana > 0 and attacker:GetMana() < maxMana then
-      local manaGained = damage * 0.01
+      local manaGained = damage * 0.02
       attacker:GiveMana(manaGained)
     end
   end

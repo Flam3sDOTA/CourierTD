@@ -13,6 +13,7 @@
 
 	"attributes"
 	{
+		"item"		"item_custom_mask_of_madness"
 		"item"		"item_custom_crystalys"
 		"item"		"item_custom_yasha"
 		"item"		"item_custom_sange"

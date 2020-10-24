@@ -27,7 +27,14 @@ function CastChakraMagic()
     local target
     for i=1, #friends do
 		if not target and friends[i] ~= thisEntity and not friends[i]:IsHero() and friends[i]:GetMana() < 90 then
-			target = friends[i]
+			for mom=0, 8 do
+				local item = friends[i]:GetItemInSlot(mom)
+				if item == "item_custom_mask_of_madness" then
+					return KotlThink()
+				else
+					target = friends[i]
+				end
+			end
 		end
     end
     if target then

@@ -3,6 +3,7 @@
   width: 100%;
   height: 100%;
   margin-top: 60px;
+  margin-left: -1px;
 }
 
 .AvatarsPanel
@@ -15,28 +16,30 @@
 
 .PlayerPanel
 {			
-	width: 210px;
-	height: 89px;
-	background-image: url("file://{images}/custom_game/TopUIcenter.png");
+	width: 211px;
+	height: 90px;
+	background-image: url("file://{images}/custom_game/card_background_psd.png");
+	background-size: 100%;
 	opacity: 1;
 	background-color: gradient( linear, 0% 0%, 0% 100%, from( #25282acc ), color-stop( .5, #25282acc), to( #000000dd ) );
 	transition-duration: .05s;
 	transition-property: background-image;
 	transition-timing-function: ease-in-out;
 	margin-bottom: 5px;
+	border-top-right-radius: 5px;
 }
 
 .GrayOut
 {
 	width: 210px;
-	height: 89px;
+	height: 90px;
 	background-color: gray;
-	background-image: url("file://{images}/custom_game/TopUIcenter.png");
 	opacity: 0.9;
 	transition-duration: .05s;
 	transition-property: background-image;
 	transition-timing-function: ease-in-out;
 	margin-bottom: 5px;
+	border-top-right-radius: 5px;
 }
 
 .UserAvatar
@@ -55,50 +58,51 @@
 	horizontal-align: center;
 	margin-top: 15px;
 	margin-left: 55px;
+	overflow: clip;
+	text-overflow: clip;
 }
 Label {
 	color: white;
-	font-size: 25px;
-	text-shadow: 2px 2px 2px black;
+	font-size: 20px;
+	text-shadow: 1px 1px 2px 3.0 #000000;
+	overflow: clip;
 	text-overflow: clip;
-}
-
-.HeroName
-{	
-	horizontal-align: center;
-	color: orange;
-	font-size: 24px;
-	text-shadow: 2px 2px 2px black;
-	text-overflow: clip;
-	margin-top: 45px;
-	margin-left: 85px;
 }
 
 .PlayerHealth
 {	
   width: 210px;
-  height: 25px;  
-
+  height: 27px;  
   margin-left: 0px;
   border-style: solid;
   border-width: 0.7px;
   border-radius: 0px;
   border-color: #25282acc;
-  margin-top: 64px;
+  margin-top: 62px;
 }
 
 .PlayerHealth .ProgressBarLeft
 {
-  background-color: #339933;
-  background-color: gradient( linear, 0% 0%, 0% 100%, from( #425d25 ), color-stop( 0.2, #5BA539 ), color-stop( .5, #4D9030), to( #425d25) );
+  background-color: gradient( linear, 0% 0%, 0% 100%, from( #320000 ), color-stop( 0.3, #ff4A07 ), color-stop( .5, #ff4A07 ), to( #320000 ) );
+  box-shadow: inset #000 1px 1px 3px 3px;	
+  border-radius: 1px;
+}
+
+.PlayerHealth .ProgressBarRight
+{
+	background-color: gradient( linear, 0% 0%, 100% 0%, from( #222222FF ), to( black ) );
+	
 }
 
 .HealthPercentage
 {
-	margin-top: 63px;
-	font-size: 22px;
+	margin-top: 68px;
+	font-size: 15px;
 	horizontal-align: right;
 	margin-right: 2px;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 2px 3.0 #000000;
+	color: white;
 }
 
 .Invisible
