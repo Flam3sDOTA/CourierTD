@@ -695,7 +695,7 @@
 	//============================================================
 	"unit_wave15"
 	{
-		"vscripts"         				"ai/boss_wave15.lua"
+		"vscripts"         				"ai/wave_creep.lua"
 		
 		"Model"                 		"models/items/courier/guardians_of_justice_enix/guardians_of_justice_enix.vmdl"
 		"ModelScale"               		"2.5"
@@ -724,7 +724,7 @@
 		"Level" 						"1"
 		"ConsideredHero"				"1"
 		
-		"Ability1"					"weaver_shukuchi"
+		"Ability1"					""
 		"Ability2"					""
 		"Ability3"					""
 		"Ability6"					""

@@ -35,6 +35,7 @@ function OnStartTouch(trigger)
 				local units = FindUnitsInRadius( hero:GetTeam(), hero:GetAbsOrigin(), nil, FIND_UNITS_EVERYWHERE, DOTA_UNIT_TARGET_TEAM_FRIENDLY, DOTA_UNIT_TARGET_ALL, DOTA_UNIT_TARGET_FLAG_PLAYER_CONTROLLED, FIND_ANY_ORDER, false )
 				for _,unit in pairs(units) do
 					unit:ForceKill(true)
+					unit:AddNoDraw()
 				end
 				
 				-- Clean dropped items

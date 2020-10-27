@@ -133,7 +133,7 @@ function Precache( context )
 	PrecacheResource( "particle", "particles/units/heroes/hero_dark_willow/dark_willow_shadow_realm.vpcf", context )
 	PrecacheResource( "particle", "particles/units/heroes/heroes_underlord/abyssal_underlord_weapon_blur_a.vpcf", context )
 	PrecacheResource( "particle", "particles/units/heroes/heroes_underlord/abyssal_underlord_weapon_blur_b.vpcf", context )
-	PrecacheResource( "particle", "particles/units/heroes/heroes_underlord/underlord_pitofmalice.vpcf", context )
+	PrecacheResource( "particle", "particles/units/heroes/heroes_underlord/underlord_pitofmalice.vpcf", context )	
 		
 	-- Tower Stars
 	PrecacheResource( "particle", "particles/arrow/star1.vpcf", context )
@@ -243,6 +243,7 @@ function Precache( context )
 		-- Developer
 	PrecacheResource( "model", "models/courier/baby_rosh/babyroshan_ti10.vmdl", context )
 	PrecacheResource( "model", "models/courier/baby_rosh/babyroshan_ti10_dire.vmdl", context )
+	PrecacheResource( "particle", "particles/econ/courier/courier_babyroshan_ti10/courier_babyroshan_ti10_ambient.vpcf", context )
 end
 
 function Activate()
