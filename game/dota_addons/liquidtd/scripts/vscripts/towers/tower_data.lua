@@ -191,7 +191,7 @@ return {
     tier = 1,
     spawn_sound = "crystalmaiden_cm_spawn_01",
 	abilities = {
-      crystal_maiden_crystal_nova = 1
+      crystal_maiden_arcane_aura_lua = 1
     },	
   },
 
@@ -200,7 +200,7 @@ return {
     tier = 1,
     spawn_sound = "frostivus_ui_select",
 	abilities = {
-      crystal_maiden_crystal_nova = 2
+      crystal_maiden_arcane_aura_lua = 2
     },
   },
 
@@ -209,7 +209,7 @@ return {
     tier = 1,
     spawn_sound = "frostivus_ui_select",
 	abilities = {
-      crystal_maiden_crystal_nova = 3
+      crystal_maiden_arcane_aura_lua = 3
     },
   },
   

@@ -65,20 +65,32 @@
 	// Wave 1 Unit
 	//============================================================
 	"unit_wave1"
-	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/courier/seekling/seekling.vmdl"
-		"ModelScale"               		"1.5"
+	{	
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/courier/seekling/seekling.vmdl"
+			"ModelScale"               		"1.5"
+			
+			"StatusHealth"          		"80"
+			"ArmorPhysical"         		"0"
+			"MagicalResistance"     		"0"
+			"MovementSpeed"         		"450"
+			"BountyGoldMin"         		"2"
+			"BountyGoldMax"         		"2"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "7500"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "40"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"0"
-		"MagicalResistance"     		"0"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"2"
-		"BountyGoldMax"         		"2"
-		"StatusHealth"          		"80"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -90,20 +102,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"450"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "7500"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
-		}
-		
 	}
 	
 	//============================================================
@@ -111,19 +111,31 @@
 	//============================================================
 	"unit_wave2"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/basim/basim.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/basim/basim.vmdl"
+			"ModelScale"               		"1.5"
+			
+			"StatusHealth"          		"120"
+			"ArmorPhysical"         		"0"
+			"MagicalResistance"     		"0"
+			"MovementSpeed"         		"450"
+			"BountyGoldMin"         		"3"
+			"BountyGoldMax"         		"3"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "7700"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "40"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"0"
-		"MagicalResistance"     		"0"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"3"
-		"BountyGoldMax"         		"3"
-		"StatusHealth"          		"120"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -135,19 +147,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"450"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "7700"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
-		}
 	}
 	
 	//============================================================
@@ -155,19 +156,31 @@
 	//============================================================
 	"unit_wave3"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/devourling/devourling.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/devourling/devourling.vmdl"
+			"ModelScale"               		"1.5"
+			
+			"StatusHealth"          		"150"
+			"ArmorPhysical"         		"0"
+			"MagicalResistance"     		"0"
+			"MovementSpeed"         		"450"
+			"BountyGoldMin"         		"4"
+			"BountyGoldMax"         		"5"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "8000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "40"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"0"
-		"MagicalResistance"     		"0"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"4"
-		"BountyGoldMax"         		"5"
-		"StatusHealth"          		"150"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"200"
@@ -179,19 +192,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"450"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "8000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
-		}
 	}
 	
 	//============================================================
@@ -199,19 +201,31 @@
 	//============================================================
 	"unit_wave4"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/mighty_chicken/mighty_chicken.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/mighty_chicken/mighty_chicken.vmdl"
+			"ModelScale"               		"1.5"
+			
+			"StatusHealth"          		"180"
+			"ArmorPhysical"         		"0"
+			"MagicalResistance"     		"0"
+			"MovementSpeed"         		"450"
+			"BountyGoldMin"         		"5"
+			"BountyGoldMax"         		"6"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "8250"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "40"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"0"
-		"MagicalResistance"     		"0"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"5"
-		"BountyGoldMax"         		"6"
-		"StatusHealth"          		"180"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -223,19 +237,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"450"
-		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "8250"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
-		}
+		"MovementTurnRate"      		"1"
 	}
 	
 	//============================================================
@@ -243,20 +246,32 @@
 	//============================================================
 	"unit_wave5"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/beaverknight/beaverknight.vmdl"
-		"ModelScale"               		"3"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/beaverknight/beaverknight.vmdl"
+			"ModelScale"               		"3"
+			
+			"StatusHealth"          		"2500"
+			"ArmorPhysical"         		"1"
+			"MagicalResistance"     		"1"
+			"MovementSpeed"         		"470"
+			"BountyGoldMin"         		"200"
+			"BountyGoldMax"         		"200"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "10000"
+				"ArmorGain"                 "10"
+				"MagicResistGain"           "10"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "250"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"1"
-		"MagicalResistance"     		"1"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"200"
-		"BountyGoldMax"         		"200"
-		"StatusHealth"          		"2500"
 		"StatusMana"            		"0"
 		"HealthBarOffset"       		"250"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"AttackCapabilities" 			"DOTA_UNIT_CAP_NO_ATTACK"
@@ -267,25 +282,13 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"470"
 		"MovementTurnRate"      		"1"
 		"ConsideredHero"				"1"
-
+		"Level" 						"1"
 		"Ability1"					""
 		"Ability2"					""
 		"Ability3"					""
 		"Ability6"					""
-		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "10000"
-            "ArmorGain"                 "10"
-            "MagicResistGain"           "10"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "250"
-		}
 	}
 	
 	//============================================================
@@ -293,19 +296,31 @@
 	//============================================================
 	"unit_wave6"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/carty_dire/carty_dire.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/carty_dire/carty_dire.vmdl"
+			"ModelScale"               		"1.5"
+			
+			"StatusHealth"          		"350"
+			"ArmorPhysical"         		"0"
+			"MagicalResistance"     		"0"
+			"MovementSpeed"         		"450"
+			"BountyGoldMin"         		"6"
+			"BountyGoldMax"         		"7"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "8750"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "40"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"0"
-		"MagicalResistance"     		"0"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"6"
-		"BountyGoldMax"         		"7"
-		"StatusHealth"          		"350"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -317,19 +332,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"450"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "8750"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
-		}
 	}
 	
 	//============================================================
@@ -337,19 +341,31 @@
 	//============================================================
 	"unit_wave7"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/furion/treant/fungal_lord_shroomthing/fungal_lord_shroomthing.vmdl"
-		"ModelScale"               		"1.1"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/furion/treant/fungal_lord_shroomthing/fungal_lord_shroomthing.vmdl"
+			"ModelScale"               		"1.1"
+			
+			"StatusHealth"          		"450"
+			"ArmorPhysical"         		"0"
+			"MagicalResistance"     		"0"
+			"MovementSpeed"         		"450"
+			"BountyGoldMin"         		"10"
+			"BountyGoldMax"         		"11"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "9000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "40"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"0"
-		"MagicalResistance"     		"0"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"10"
-		"BountyGoldMax"         		"11"
-		"StatusHealth"          		"450"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -361,19 +377,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"450"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "9000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
-		}
 	}
 	
 	//============================================================
@@ -381,19 +386,31 @@
 	//============================================================
 	"unit_wave8"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/itsy/itsy.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/itsy/itsy.vmdl"
+			"ModelScale"               		"1.5"
+			
+			"StatusHealth"          		"550"
+			"ArmorPhysical"         		"0"
+			"MagicalResistance"     		"0"
+			"MovementSpeed"         		"450"
+			"BountyGoldMin"         		"11"
+			"BountyGoldMax"         		"12"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "9250"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "40"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"0"
-		"MagicalResistance"     		"0"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"11"
-		"BountyGoldMax"         		"12"
-		"StatusHealth"          		"550"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -405,19 +422,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"450"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "9250"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
-		}
 	}
 	
 	//============================================================
@@ -425,19 +431,31 @@
 	//============================================================
 	"unit_wave9"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/lilnova/lilnova.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/lilnova/lilnova.vmdl"
+			"ModelScale"               		"1.5"
+			
+			"StatusHealth"          		"650"
+			"ArmorPhysical"         		"0"
+			"MagicalResistance"     		"0"
+			"MovementSpeed"         		"450"
+			"BountyGoldMin"         		"12"
+			"BountyGoldMax"         		"13"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "9500"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "40"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"0"
-		"MagicalResistance"     		"0"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"12"
-		"BountyGoldMax"         		"13"
-		"StatusHealth"          		"650"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -449,19 +467,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"450"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "9500"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "40"
-		}
 	}
 	
 	//============================================================
@@ -469,19 +476,31 @@
 	//============================================================
 	"unit_wave10"
 	{
-		"vscripts"         				"ai/boss_wave10.lua"
-		
-		"Model"                 		"models/items/courier/boris_baumhauer/boris_baumhauer.vmdl"
-		"ModelScale"               		"2.5"
+		//============================================================
+			"vscripts"         				"ai/boss_wave10.lua"
+			"Model"                 		"models/items/courier/boris_baumhauer/boris_baumhauer.vmdl"
+			"ModelScale"               		"2.5"
+			
+			"StatusHealth"          		"4000"
+			"ArmorPhysical"         		"5"
+			"MagicalResistance"     		"0"
+			"MovementSpeed"         		"470"
+			"BountyGoldMin"         		"500"
+			"BountyGoldMax"         		"500"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "15000"
+				"ArmorGain"                 "10"
+				"MagicResistGain"           "10"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "500"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"5"
-		"MagicalResistance"     		"0"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"500"
-		"BountyGoldMax"         		"500"
-		"StatusHealth"          		"4000"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"250"
@@ -493,25 +512,14 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"470"
 		"MovementTurnRate"      		"1"
 		"ConsideredHero"				"1"
+		"Level" 						"1"
 		
 		"Ability1"					"lifestealer_rage_lua"
 		"Ability2"					""
 		"Ability3"					""
 		"Ability6"					""
-		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "15000"
-            "ArmorGain"                 "10"
-            "MagicResistGain"           "10"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "500"
-		}
 	}
 	
 	//============================================================
@@ -519,19 +527,31 @@
 	//============================================================
 	"unit_wave11"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/captain_bamboo/captain_bamboo.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/captain_bamboo/captain_bamboo.vmdl"
+			"ModelScale"               		"1.5"
+			
+			"StatusHealth"          		"850"
+			"ArmorPhysical"         		"2"
+			"MagicalResistance"     		"1"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"13"
+			"BountyGoldMax"         		"14"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "9750"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "80"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"2"
-		"MagicalResistance"     		"1"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"13"
-		"BountyGoldMax"         		"14"
-		"StatusHealth"          		"850"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -543,19 +563,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "9750"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "80"
-		}
 	}
 	
 	//============================================================
@@ -563,19 +572,31 @@
 	//============================================================
 	"unit_wave12"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/d2l_steambear/d2l_steambear.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/d2l_steambear/d2l_steambear.vmdl"
+			"ModelScale"               		"1.5"
+			
+			"StatusHealth"          		"1000"
+			"ArmorPhysical"         		"2"
+			"MagicalResistance"     		"1"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"14"
+			"BountyGoldMax"         		"15"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "10000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "80"
+			}
+		//============================================================		
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"2"
-		"MagicalResistance"     		"1"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"14"
-		"BountyGoldMax"         		"15"
-		"StatusHealth"          		"1000"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -587,19 +608,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "10000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "80"
-		}
 	}
 	
 	//============================================================
@@ -607,19 +617,31 @@
 	//============================================================
 	"unit_wave13"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/flightless_dod/flightless_dod.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/flightless_dod/flightless_dod.vmdl"
+			"ModelScale"               		"1.5"
+			
+			"StatusHealth"          		"1150"
+			"ArmorPhysical"         		"2"
+			"MagicalResistance"     		"1"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"15"
+			"BountyGoldMax"         		"16"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "10250"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "80"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"2"
-		"MagicalResistance"     		"1"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"15"
-		"BountyGoldMax"         		"16"
-		"StatusHealth"          		"1150"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -631,19 +653,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "10250"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "80"
-		}
 	}
 	
 	//============================================================
@@ -651,19 +662,31 @@
 	//============================================================
 	"unit_wave14"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/shroomy/shroomy.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/shroomy/shroomy.vmdl"
+			"ModelScale"               		"1.5"
+			
+			"StatusHealth"          		"1400"
+			"ArmorPhysical"         		"2"
+			"MagicalResistance"     		"1"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"15"
+			"BountyGoldMax"         		"16"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "10500"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "80"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"2"
-		"MagicalResistance"     		"1"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"15"
-		"BountyGoldMax"         		"16"
-		"StatusHealth"          		"1400"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -675,19 +698,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "10500"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "80"
-		}
 	}
 	
 	//============================================================
@@ -695,19 +707,31 @@
 	//============================================================
 	"unit_wave15"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/guardians_of_justice_enix/guardians_of_justice_enix.vmdl"
-		"ModelScale"               		"2.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/guardians_of_justice_enix/guardians_of_justice_enix.vmdl"
+			"ModelScale"               		"2.5"
+			
+			"StatusHealth"          		"7500"
+			"ArmorPhysical"         		"5"
+			"MagicalResistance"     		"5"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"1000"
+			"BountyGoldMax"         		"1000"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "20000"
+				"ArmorGain"                 "10"
+				"MagicResistGain"           "10"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "1000"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"5"
-		"MagicalResistance"     		"5"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"1000"
-		"BountyGoldMax"         		"1000"
-		"StatusHealth"          		"7500"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"170"
@@ -719,25 +743,13 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
-		"Level" 						"1"
 		"ConsideredHero"				"1"
-		
+		"Level" 						"1"
 		"Ability1"					""
 		"Ability2"					""
 		"Ability3"					""
 		"Ability6"					""
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "20000"
-            "ArmorGain"                 "10"
-            "MagicResistGain"           "10"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "1000"
-		}
 	}
 	
 	//============================================================
@@ -745,19 +757,31 @@
 	//============================================================
 	"unit_wave16"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/courier/baby_winter_wyvern/baby_winter_wyvern.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/courier/baby_winter_wyvern/baby_winter_wyvern.vmdl"
+			"ModelScale"               		"1.5"
+			
+			"StatusHealth"          		"1600"
+			"ArmorPhysical"         		"2"
+			"MagicalResistance"     		"5"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"15"
+			"BountyGoldMax"         		"16"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "10750"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "80"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"2"
-		"MagicalResistance"     		"5"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"15"
-		"BountyGoldMax"         		"16"
-		"StatusHealth"          		"1600"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -769,19 +793,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "10750"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "80"
-		}
 	}
 	
 	//============================================================
@@ -789,19 +802,31 @@
 	//============================================================
 	"unit_wave17"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/courier/doom_demihero_courier/doom_demihero_courier.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/courier/doom_demihero_courier/doom_demihero_courier.vmdl"
+			"ModelScale"               		"1.5"
+			
+			"StatusHealth"          		"1700"
+			"ArmorPhysical"         		"2"
+			"MagicalResistance"     		"5"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"15"
+			"BountyGoldMax"         		"16"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "11000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "80"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"2"
-		"MagicalResistance"     		"5"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"15"
-		"BountyGoldMax"         		"16"
-		"StatusHealth"          		"1700"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -813,19 +838,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "11000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "80"
-		}
 	}
 	
 	//============================================================
@@ -833,19 +847,31 @@
 	//============================================================
 	"unit_wave18"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/courier/mega_greevil_courier/mega_greevil_courier.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/courier/mega_greevil_courier/mega_greevil_courier.vmdl"
+			"ModelScale"               		"1.5"
+			
+			"StatusHealth"          		"1800"
+			"ArmorPhysical"         		"2"
+			"MagicalResistance"     		"5"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"16"
+			"BountyGoldMax"         		"17"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "12000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "80"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"2"
-		"MagicalResistance"     		"5"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"16"
-		"BountyGoldMax"         		"17"
-		"StatusHealth"          		"1800"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -857,19 +883,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "12000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "80"
-		}
 	}
 	
 	//============================================================
@@ -877,19 +892,31 @@
 	//============================================================
 	"unit_wave19"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/courier/huntling/huntling.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/courier/huntling/huntling.vmdl"
+			"ModelScale"               		"1.5"
+			
+			"StatusHealth"          		"1900"
+			"ArmorPhysical"         		"2"
+			"MagicalResistance"     		"5"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"17"
+			"BountyGoldMax"         		"18"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "13000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "80"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"2"
-		"MagicalResistance"     		"5"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"17"
-		"BountyGoldMax"         		"18"
-		"StatusHealth"          		"1900"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -901,19 +928,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "13000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "80"
-		}
 	}
 	
 	//============================================================
@@ -921,19 +937,31 @@
 	//============================================================
 	"unit_wave20"
 	{
-		"vscripts"         				"ai/boss_wave20.lua"
-		
-		"Model"                 		"models/items/courier/vaal_the_animated_constructdire/vaal_the_animated_constructdire.vmdl"
-		"ModelScale"               		"2.5"
+		//============================================================
+			"vscripts"         				"ai/boss_wave20.lua"
+			"Model"                 		"models/items/courier/vaal_the_animated_constructdire/vaal_the_animated_constructdire.vmdl"
+			"ModelScale"               		"2.5"
+			
+			"StatusHealth"          		"10000"
+			"ArmorPhysical"         		"10"
+			"MagicalResistance"     		"10"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"1500"
+			"BountyGoldMax"         		"1500"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "30000"
+				"ArmorGain"                 "10"
+				"MagicResistGain"           "10"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "1500"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"10"
-		"MagicalResistance"     		"10"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"1500"
-		"BountyGoldMax"         		"1500"
-		"StatusHealth"          		"10000"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"220"
@@ -949,21 +977,10 @@
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
 		"ConsideredHero"				"1"
-		
 		"Ability1"					"necrolyte_sadist"
 		"Ability2"					""
 		"Ability3"					""
 		"Ability6"					""
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "30000"
-            "ArmorGain"                 "10"
-            "MagicResistGain"           "10"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "1500"
-		}
 	}
 	
 	//============================================================
@@ -971,19 +988,31 @@
 	//============================================================
 	"unit_wave21"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/courier/minipudge/minipudge.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/courier/minipudge/minipudge.vmdl"
+			"ModelScale"               		"1.5"
+			
+			"StatusHealth"          		"2300"
+			"ArmorPhysical"         		"3"
+			"MagicalResistance"     		"10"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"18"
+			"BountyGoldMax"         		"19"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "15000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "120"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"3"
-		"MagicalResistance"     		"10"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"18"
-		"BountyGoldMax"         		"19"
-		"StatusHealth"          		"2300"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -995,19 +1024,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "15000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "120"
-		}
 	}
 	
 	//============================================================
@@ -1015,19 +1033,31 @@
 	//============================================================
 	"unit_wave22"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/courier/smeevil_bird/smeevil_bird.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/courier/smeevil_bird/smeevil_bird.vmdl"
+			"ModelScale"               		"1.5"
+			
+			"StatusHealth"          		"2500"
+			"ArmorPhysical"         		"3"
+			"MagicalResistance"     		"10"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"18"
+			"BountyGoldMax"         		"19"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "17000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "120"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"3"
-		"MagicalResistance"     		"10"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"18"
-		"BountyGoldMax"         		"19"
-		"StatusHealth"          		"2500"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -1039,19 +1069,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "17000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "120"
-		}
 	}
 	
 	//============================================================
@@ -1059,19 +1078,31 @@
 	//============================================================
 	"unit_wave23"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/courier/venoling/venoling.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/courier/venoling/venoling.vmdl"
+			"ModelScale"               		"1.5"
+	
+			"StatusHealth"          		"2700"
+			"ArmorPhysical"         		"3"
+			"MagicalResistance"     		"10"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"20"
+			"BountyGoldMax"         		"21"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "19000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "120"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"3"
-		"MagicalResistance"     		"10"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"20"
-		"BountyGoldMax"         		"21"
-		"StatusHealth"          		"2700"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -1083,19 +1114,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "19000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "120"
-		}
 	}
 	
 	//============================================================
@@ -1103,19 +1123,31 @@
 	//============================================================
 	"unit_wave24"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/deathbringer/deathbringer.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/deathbringer/deathbringer.vmdl"
+			"ModelScale"               		"1.5"
+	
+			"StatusHealth"          		"3100"
+			"ArmorPhysical"         		"3"
+			"MagicalResistance"     		"10"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"21"
+			"BountyGoldMax"         		"22"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "21000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "120"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"3"
-		"MagicalResistance"     		"10"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"21"
-		"BountyGoldMax"         		"22"
-		"StatusHealth"          		"3100"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -1127,19 +1159,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "21000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "120"
-		}
 	}
 	
 	
@@ -1148,19 +1169,31 @@
 	//============================================================
 	"unit_wave25"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/faceless_rex/faceless_rex.vmdl"
-		"ModelScale"               		"2.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/faceless_rex/faceless_rex.vmdl"
+			"ModelScale"               		"2.5"
+	
+			"StatusHealth"          		"10000"
+			"ArmorPhysical"         		"10"
+			"MagicalResistance"     		"10"
+			"MovementSpeed"         		"400"
+			"BountyGoldMin"         		"0"
+			"BountyGoldMax"         		"0"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "35000"
+				"ArmorGain"                 "10"
+				"MagicResistGain"           "10"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "20000"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"10"
-		"MagicalResistance"     		"10"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"0"
-		"BountyGoldMax"         		"0"
-		"StatusHealth"          		"10000"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"180"
@@ -1172,25 +1205,13 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"400"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
 		"ConsideredHero"				"1"
-		
 		"Ability1"					"creature_bonus_chicken"
 		"Ability2"					""
 		"Ability3"					""
 		"Ability6"					""
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "35000"
-            "ArmorGain"                 "10"
-            "MagicResistGain"           "10"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "20000"
-		}
 	}
 	
 	//============================================================
@@ -1198,19 +1219,31 @@
 	//============================================================
 	"unit_wave26"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/dokkaebi_nexon_courier/dokkaebi_nexon_courier.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/dokkaebi_nexon_courier/dokkaebi_nexon_courier.vmdl"
+			"ModelScale"               		"1.5"
+	
+			"StatusHealth"          		"3500"
+			"ArmorPhysical"         		"3"
+			"MagicalResistance"     		"15"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"22"
+			"BountyGoldMax"         		"23"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "23000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "120"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"3"
-		"MagicalResistance"     		"15"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"22"
-		"BountyGoldMax"         		"23"
-		"StatusHealth"          		"3500"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -1222,19 +1255,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "23000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "120"
-		}
 	}
 	
 	//============================================================
@@ -1242,19 +1264,31 @@
 	//============================================================
 	"unit_wave27"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/jin_yin_white_fox/jin_yin_white_fox.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/jin_yin_white_fox/jin_yin_white_fox.vmdl"
+			"ModelScale"               		"1.5"
+	
+			"StatusHealth"          		"3700"
+			"ArmorPhysical"         		"3"
+			"MagicalResistance"     		"15"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"23"
+			"BountyGoldMax"         		"24"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "24000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "120"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"3"
-		"MagicalResistance"     		"15"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"23"
-		"BountyGoldMax"         		"24"
-		"StatusHealth"          		"3700"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -1266,19 +1300,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "24000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "120"
-		}
 	}
 	
 	//============================================================
@@ -1286,19 +1309,31 @@
 	//============================================================
 	"unit_wave28"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/little_fraid_the_courier_of_simons_retribution/little_fraid_the_courier_of_simons_retribution.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/little_fraid_the_courier_of_simons_retribution/little_fraid_the_courier_of_simons_retribution.vmdl"
+			"ModelScale"               		"1.5"
+	
+			"StatusHealth"          		"4000"
+			"ArmorPhysical"         		"3"
+			"MagicalResistance"     		"15"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"24"
+			"BountyGoldMax"         		"25"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "25000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "120"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"3"
-		"MagicalResistance"     		"15"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"24"
-		"BountyGoldMax"         		"25"
-		"StatusHealth"          		"4000"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -1310,19 +1345,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "25000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "120"
-		}
 	}
 	
 	//============================================================
@@ -1330,19 +1354,31 @@
 	//============================================================
 	"unit_wave29"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/mole_messenger/mole_messenger_lvl3.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/mole_messenger/mole_messenger_lvl3.vmdl"
+			"ModelScale"               		"1.5"
+	
+			"StatusHealth"          		"4100"
+			"ArmorPhysical"         		"3"
+			"MagicalResistance"     		"15"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"25"
+			"BountyGoldMax"         		"26"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "25000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "120"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"3"
-		"MagicalResistance"     		"15"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"25"
-		"BountyGoldMax"         		"26"
-		"StatusHealth"          		"4100"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -1354,19 +1390,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "25000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "120"
-		}
 	}
 	
 	//============================================================
@@ -1374,19 +1399,31 @@
 	//============================================================
 	"unit_wave30"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/furion/treant/defender_of_the_jungle_lakad_coconut/defender_of_the_jungle_lakad_coconut.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/furion/treant/defender_of_the_jungle_lakad_coconut/defender_of_the_jungle_lakad_coconut.vmdl"
+			"ModelScale"               		"1.5"
+	
+			"StatusHealth"          		"15000"
+			"ArmorPhysical"         		"15"
+			"MagicalResistance"     		"15"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"2500"
+			"BountyGoldMax"         		"2500"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "40000"
+				"ArmorGain"                 "15"
+				"MagicResistGain"           "15"
+				"MoveSpeedGain"             "20"
+				"BountyGain"                "2000"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"15"
-		"MagicalResistance"     		"15"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"2500"
-		"BountyGoldMax"         		"2500"
-		"StatusHealth"          		"15000"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"165"
@@ -1398,25 +1435,13 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
 		"ConsideredHero"				"1"
-		
 		"Ability1"					"timbersaw_reactive_armor_lua"
 		"Ability2"					""
 		"Ability3"					""
 		"Ability6"					""
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "40000"
-            "ArmorGain"                 "15"
-            "MagicResistGain"           "15"
-            "MoveSpeedGain"             "20"
-            "BountyGain"                "2000"
-		}
 	}
 	
 	//============================================================
@@ -1424,19 +1449,31 @@
 	//============================================================
 	"unit_wave31"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/nexon_turtle_11_blue/nexon_turtle_11_blue.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/nexon_turtle_11_blue/nexon_turtle_11_blue.vmdl"
+			"ModelScale"               		"1.5"
+	
+			"StatusHealth"          		"4200"
+			"ArmorPhysical"         		"3"
+			"MagicalResistance"     		"3"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"26"
+			"BountyGoldMax"         		"27"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "25000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "160"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"3"
-		"MagicalResistance"     		"3"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"26"
-		"BountyGoldMax"         		"27"
-		"StatusHealth"          		"4200"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -1448,19 +1485,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "25000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "160"
-		}
 	}
 	
 	//============================================================
@@ -1468,19 +1494,31 @@
 	//============================================================
 	"unit_wave32"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/royal_griffin_cub/royal_griffin_cub.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/royal_griffin_cub/royal_griffin_cub.vmdl"
+			"ModelScale"               		"1.5"
+	
+			"StatusHealth"          		"4400"
+			"ArmorPhysical"         		"3"
+			"MagicalResistance"     		"3"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"27"
+			"BountyGoldMax"         		"28"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "25000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "160"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"3"
-		"MagicalResistance"     		"3"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"27"
-		"BountyGoldMax"         		"28"
-		"StatusHealth"          		"4400"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -1492,19 +1530,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "25000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "160"
-		}
 	}
 	
 	//============================================================
@@ -1512,19 +1539,31 @@
 	//============================================================
 	"unit_wave33"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/shagbark/shagbark.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/shagbark/shagbark.vmdl"
+			"ModelScale"               		"1.5"
+	
+			"StatusHealth"          		"4600"
+			"ArmorPhysical"         		"3"
+			"MagicalResistance"     		"3"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"28"
+			"BountyGoldMax"         		"29"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "25000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "160"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"3"
-		"MagicalResistance"     		"3"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"28"
-		"BountyGoldMax"         		"29"
-		"StatusHealth"          		"4600"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -1536,19 +1575,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "25000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "160"
-		}
 	}
 	
 	//============================================================
@@ -1556,19 +1584,31 @@
 	//============================================================
 	"unit_wave34"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/snapjaw/snapjaw.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/snapjaw/snapjaw.vmdl"
+			"ModelScale"               		"1.5"
+	
+			"StatusHealth"          		"4700"
+			"ArmorPhysical"         		"3"
+			"MagicalResistance"     		"3"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"29"
+			"BountyGoldMax"         		"30"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "25000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "160"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"3"
-		"MagicalResistance"     		"3"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"29"
-		"BountyGoldMax"         		"30"
-		"StatusHealth"          		"4700"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -1580,19 +1620,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "25000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "160"
-		}
 	}
 	
 	//============================================================
@@ -1600,19 +1629,31 @@
 	//============================================================
 	"unit_wave35"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/courier/baby_rosh/babyroshan_winter18.vmdl"
-		"ModelScale"               		"2.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/courier/baby_rosh/babyroshan_winter18.vmdl"
+			"ModelScale"               		"2.5"
+	
+			"StatusHealth"          		"17500"
+			"ArmorPhysical"         		"20"
+			"MagicalResistance"     		"20"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"3000"
+			"BountyGoldMax"         		"3000"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "50000"
+				"ArmorGain"                 "15"
+				"MagicResistGain"           "15"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "2500"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"20"
-		"MagicalResistance"     		"20"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"3000"
-		"BountyGoldMax"         		"3000"
-		"StatusHealth"          		"17500"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"250"
@@ -1624,7 +1665,6 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
 		"ConsideredHero"				"1"
@@ -1633,16 +1673,6 @@
 		"Ability2"					"bristleback_bristleback_lua"
 		"Ability3"					""
 		"Ability6"					""
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "50000"
-            "ArmorGain"                 "15"
-            "MagicResistGain"           "15"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "2500"
-		}
 	}
 	
 	//============================================================
@@ -1650,19 +1680,31 @@
 	//============================================================
 	"unit_wave36"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/nexon_turtle_15_red/nexon_turtle_15_red.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/nexon_turtle_15_red/nexon_turtle_15_red.vmdl"
+			"ModelScale"               		"1.5"
+	
+			"StatusHealth"          		"5000"
+			"ArmorPhysical"         		"3"
+			"MagicalResistance"     		"3"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"30"
+			"BountyGoldMax"         		"31"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "25000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "160"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"3"
-		"MagicalResistance"     		"3"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"30"
-		"BountyGoldMax"         		"31"
-		"StatusHealth"          		"5000"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -1674,19 +1716,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "25000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "160"
-		}
 	}
 	
 	//============================================================
@@ -1694,19 +1725,31 @@
 	//============================================================
 	"unit_wave37"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/virtus_werebear_t3/virtus_werebear_t3.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/virtus_werebear_t3/virtus_werebear_t3.vmdl"
+			"ModelScale"               		"1.5"
+	
+			"StatusHealth"          		"5250"
+			"ArmorPhysical"         		"3"
+			"MagicalResistance"     		"3"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"31"
+			"BountyGoldMax"         		"32"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "25000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "160"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"3"
-		"MagicalResistance"     		"3"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"31"
-		"BountyGoldMax"         		"32"
-		"StatusHealth"          		"5250"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -1718,19 +1761,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "25000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "160"
-		}
 	}
 	
 	//============================================================
@@ -1738,19 +1770,31 @@
 	//============================================================
 	"unit_wave38"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/vigilante_fox_green/vigilante_fox_green.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/vigilante_fox_green/vigilante_fox_green.vmdl"
+			"ModelScale"               		"1.5"
+	
+			"StatusHealth"          		"5500"
+			"ArmorPhysical"         		"3"
+			"MagicalResistance"     		"3"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"32"
+			"BountyGoldMax"         		"33"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "25000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "160"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"3"
-		"MagicalResistance"     		"3"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"32"
-		"BountyGoldMax"         		"33"
-		"StatusHealth"          		"5500"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -1762,19 +1806,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "25000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "160"
-		}
 	}
 	
 	//============================================================
@@ -1782,19 +1815,31 @@
 	//============================================================
 	"unit_wave39"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/vigilante_fox_red/vigilante_fox_red.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/vigilante_fox_red/vigilante_fox_red.vmdl"
+			"ModelScale"               		"1.5"
+	
+			"StatusHealth"          		"6000"
+			"ArmorPhysical"         		"3"
+			"MagicalResistance"     		"3"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"33"
+			"BountyGoldMax"         		"34"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "25000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "160"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"3"
-		"MagicalResistance"     		"3"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"33"
-		"BountyGoldMax"         		"34"
-		"StatusHealth"          		"6000"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -1806,19 +1851,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "25000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "160"
-		}
 	}
 	
 	//============================================================
@@ -1826,19 +1860,31 @@
 	//============================================================
 	"unit_wave40"
 	{
-		"vscripts"         				"ai/boss_wave40.lua"
-		
-		"Model"                 		"models/courier/baby_rosh/babyroshan_ti9.vmdl"
-		"ModelScale"               		"2.5"
+		//============================================================
+			"vscripts"         				"ai/boss_wave40.lua"
+			"Model"                 		"models/courier/baby_rosh/babyroshan_ti9.vmdl"
+			"ModelScale"               		"2.5"
+	
+			"StatusHealth"          		"25000"
+			"ArmorPhysical"         		"25"
+			"MagicalResistance"     		"25"
+			"MovementSpeed"         		"400"
+			"BountyGoldMin"         		"3500"
+			"BountyGoldMax"         		"3500"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "60000"
+				"ArmorGain"                 "25"
+				"MagicResistGain"           "25"
+				"MoveSpeedGain"             "20"
+				"BountyGain"                "2000"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"25"
-		"MagicalResistance"     		"25"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"3500"
-		"BountyGoldMax"         		"3500"
-		"StatusHealth"          		"25000"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"250"
@@ -1850,7 +1896,6 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"400"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
 		"ConsideredHero"				"1"
@@ -1859,16 +1904,7 @@
 		"Ability2"					""
 		"Ability3"					""
 		"Ability6"					""
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "60000"
-            "ArmorGain"                 "25"
-            "MagicResistGain"           "25"
-            "MoveSpeedGain"             "20"
-            "BountyGain"                "2000"
-		}
+
 	}
 	
 	//============================================================
@@ -1876,19 +1912,31 @@
 	//============================================================
 	"unit_wave41"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/white_the_crystal_courier/white_the_crystal_courier.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/white_the_crystal_courier/white_the_crystal_courier.vmdl"
+			"ModelScale"               		"1.5"
+	
+			"StatusHealth"          		"6250"
+			"ArmorPhysical"         		"4"
+			"MagicalResistance"     		"4"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"34"
+			"BountyGoldMax"         		"35"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "25000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "200"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"4"
-		"MagicalResistance"     		"4"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"34"
-		"BountyGoldMax"         		"35"
-		"StatusHealth"          		"6250"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -1900,19 +1948,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "25000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "200"
-		}
 	}
 	
 	//============================================================
@@ -1920,19 +1957,31 @@
 	//============================================================
 	"unit_wave42"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/teron/teron.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/teron/teron.vmdl"
+			"ModelScale"               		"1.5"
+	
+			"StatusHealth"          		"6500"
+			"ArmorPhysical"         		"4"
+			"MagicalResistance"     		"4"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"35"
+			"BountyGoldMax"         		"36"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "25000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "200"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"4"
-		"MagicalResistance"     		"4"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"35"
-		"BountyGoldMax"         		"36"
-		"StatusHealth"          		"6500"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -1944,19 +1993,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "25000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "200"
-		}
 	}
 	
 	//============================================================
@@ -1964,19 +2002,31 @@
 	//============================================================
 	"unit_wave43"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/pangolier_squire/pangolier_squire.vmdl"
-		"ModelScale"               		"1"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/pangolier_squire/pangolier_squire.vmdl"
+			"ModelScale"               		"1"
+	
+			"StatusHealth"          		"6750"
+			"ArmorPhysical"         		"4"
+			"MagicalResistance"     		"4"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"36"
+			"BountyGoldMax"         		"37"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "25000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "200"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"4"
-		"MagicalResistance"     		"4"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"36"
-		"BountyGoldMax"         		"37"
-		"StatusHealth"          		"6750"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -1988,19 +2038,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "25000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "200"
-		}
 	}
 	
 	//============================================================
@@ -2008,19 +2047,31 @@
 	//============================================================
 	"unit_wave44"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/ig_dragon/ig_dragon.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/ig_dragon/ig_dragon.vmdl"
+			"ModelScale"               		"1.5"
+	
+			"StatusHealth"          		"7000"
+			"ArmorPhysical"         		"4"
+			"MagicalResistance"     		"4"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"37"
+			"BountyGoldMax"         		"38"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "25000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "200"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"4"
-		"MagicalResistance"     		"4"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"37"
-		"BountyGoldMax"         		"38"
-		"StatusHealth"          		"7000"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -2032,19 +2083,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "25000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "200"
-		}
 	}
 	
 	//============================================================
@@ -2052,19 +2092,31 @@
 	//============================================================
 	"unit_wave45"
 	{
-		"vscripts"         				"ai/boss_wave45.lua"
-		
-		"Model"                 		"models/courier/otter_dragon/otter_dragon.vmdl"
-		"ModelScale"               		"2.5"
+		//============================================================
+			"vscripts"         				"ai/boss_wave45.lua"
+			"Model"                 		"models/courier/otter_dragon/otter_dragon.vmdl"
+			"ModelScale"               		"2.5"
+	
+			"StatusHealth"          		"30000"
+			"ArmorPhysical"         		"30"
+			"MagicalResistance"     		"30"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"4500"
+			"BountyGoldMax"         		"4500"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "50000"
+				"ArmorGain"                 "30"
+				"MagicResistGain"           "30"
+				"MoveSpeedGain"             "20"
+				"BountyGain"                "3000"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"30"
-		"MagicalResistance"     		"30"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"4500"
-		"BountyGoldMax"         		"4500"
-		"StatusHealth"          		"30000"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"180"
@@ -2076,7 +2128,6 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
 		"ConsideredHero"				"1"
@@ -2085,16 +2136,6 @@
 		"Ability2"					    ""
 		"Ability3"					    ""
 		"Ability6"						""
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "50000"
-            "ArmorGain"                 "30"
-            "MagicResistGain"           "30"
-            "MoveSpeedGain"             "20"
-            "BountyGain"                "3000"
-		}
 	}
 	
 	//============================================================
@@ -2102,19 +2143,31 @@
 	//============================================================
 	"unit_wave46"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/defense4_dire/defense4_dire.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/defense4_dire/defense4_dire.vmdl"
+			"ModelScale"               		"1.5"
+	
+			"StatusHealth"          		"7250"
+			"ArmorPhysical"         		"4"
+			"MagicalResistance"     		"4"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"38"
+			"BountyGoldMax"         		"39"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "25000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "200"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"4"
-		"MagicalResistance"     		"4"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"38"
-		"BountyGoldMax"         		"39"
-		"StatusHealth"          		"7250"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -2126,19 +2179,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "25000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "200"
-		}
 	}
 	
 	//============================================================
@@ -2146,19 +2188,31 @@
 	//============================================================
 	"unit_wave47"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/bucktooth_jerry/bucktooth_jerry.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/bucktooth_jerry/bucktooth_jerry.vmdl"
+			"ModelScale"               		"1.5"
+	
+			"StatusHealth"          		"7500"
+			"ArmorPhysical"         		"4"
+			"MagicalResistance"     		"4"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"39"
+			"BountyGoldMax"         		"40"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "25000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "200"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"4"
-		"MagicalResistance"     		"4"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"39"
-		"BountyGoldMax"         		"40"
-		"StatusHealth"          		"7500"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -2170,19 +2224,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "25000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "200"
-		}
 	}
 	
 	//============================================================
@@ -2190,19 +2233,31 @@
 	//============================================================
 	"unit_wave48"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/items/courier/babka_bewitcher/babka_bewitcher.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/items/courier/babka_bewitcher/babka_bewitcher.vmdl"
+			"ModelScale"               		"1.5"
+	
+			"StatusHealth"          		"7750"
+			"ArmorPhysical"         		"5"
+			"MagicalResistance"     		"5"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"40"
+			"BountyGoldMax"         		"41"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "25000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "200"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"5"
-		"MagicalResistance"     		"5"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"40"
-		"BountyGoldMax"         		"41"
-		"StatusHealth"          		"7750"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -2214,19 +2269,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "25000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "200"
-		}
 	}
 	
 	//============================================================
@@ -2234,19 +2278,31 @@
 	//============================================================
 	"unit_wave49"
 	{
-		"vscripts"         				"ai/wave_creep.lua"
-		
-		"Model"                 		"models/courier/baby_rosh/babyroshan.vmdl"
-		"ModelScale"               		"1.5"
+		//============================================================
+			"vscripts"         				"ai/wave_creep.lua"
+			"Model"                 		"models/courier/baby_rosh/babyroshan.vmdl"
+			"ModelScale"               		"1.5"
+	
+			"StatusHealth"          		"8000"
+			"ArmorPhysical"         		"5"
+			"MagicalResistance"     		"5"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"41"
+			"BountyGoldMax"         		"42"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "25000"
+				"ArmorGain"                 "5"
+				"MagicResistGain"           "5"
+				"MoveSpeedGain"             "10"
+				"BountyGain"                "200"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"5"
-		"MagicalResistance"     		"5"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"41"
-		"BountyGoldMax"         		"42"
-		"StatusHealth"          		"8000"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"150"
@@ -2258,19 +2314,8 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "25000"
-            "ArmorGain"                 "5"
-            "MagicResistGain"           "5"
-            "MoveSpeedGain"             "10"
-            "BountyGain"                "200"
-		}
 	}
 	
 	//============================================================
@@ -2278,19 +2323,31 @@
 	//============================================================
 	"unit_wave50"
 	{
-		"vscripts"         				"ai/boss_wave50.lua"
-		
-		"Model"                 		"models/courier/baby_rosh/babyroshan_ti10.vmdl"
-		"ModelScale"               		"2.5"
+		//============================================================
+			"vscripts"         				"ai/boss_wave50.lua"
+			"Model"                 		"models/courier/baby_rosh/babyroshan_ti10.vmdl"
+			"ModelScale"               		"2.5"
+	
+			"StatusHealth"          		"50000"
+			"ArmorPhysical"         		"30"
+			"MagicalResistance"     		"30"
+			"MovementSpeed"         		"500"
+			"BountyGoldMin"         		"5000"
+			"BountyGoldMax"         		"5000"
+			"Creature"
+			{
+				//Level Up Parameters
+				//-----------------------------------------------------------------
+				"HPGain"                    "100000"
+				"ArmorGain"                 "30"
+				"MagicResistGain"           "30"
+				"MoveSpeedGain"             "30"
+				"BountyGain"                "4500"
+			}
+		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
-		"ArmorPhysical"         		"30"
-		"MagicalResistance"     		"30"
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"BountyGoldMin"         		"5000"
-		"BountyGoldMax"         		"5000"
-		"StatusHealth"          		"50000"
 		"StatusMana"            		"0"
-		//==================================================================
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
 		"RingRadius"            		"45"
 		"HealthBarOffset"       		"250"
@@ -2302,7 +2359,6 @@
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         		"500"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
 		"ConsideredHero"				"1"
@@ -2311,16 +2367,6 @@
 		"Ability2"						""
 		"Ability3"						""
 		"Ability6"						""
-		"Creature"
-        {
-			//Level Up Parameters
-            //-----------------------------------------------------------------
-            "HPGain"                    "100000"
-            "ArmorGain"                 "30"
-            "MagicResistGain"           "30"
-            "MoveSpeedGain"             "30"
-            "BountyGain"                "4500"
-		}
 	}
 	
 	//============================================================
@@ -2727,10 +2773,10 @@
 		{
 			"AttachWearables"
 			{
-				"1"  { "ItemDef" "8990" } // Head
-				"2"  { "ItemDef" "8003" } // Neck
-				"3"  { "ItemDef" "9243" } // Belt
-				"4"  { "ItemDef" "9071" } // Arms
+				"1"  { "ItemDef" "319" } // Head
+				"2"  { "ItemDef" "318" } // Neck
+				"3"  { "ItemDef" "321" } // Belt
+				"4"  { "ItemDef" "320" } // Arms
 			}
 		}
 	}
@@ -5194,9 +5240,9 @@
 		"AttackRate"                "0.9"
 		"AttackAnimationPoint"		"0.65"
 
-		"Level"                     "210"
-		"Cost"                      "210"
-		"TotalCost"                 "210"
+		"Level"                     "190"
+		"Cost"                      "190"
+		"TotalCost"                 "190"
 		"BuildTime"                 "1"
 		"ScriptClass"               "BasicTower"
 		"TowerType"                 "Normal"
@@ -5290,6 +5336,14 @@
 		"AttackAcquisitionRange"    "800"
 		"AttackRate"                "0.8"
 		"AttackAnimationPoint"		"0.65"
+		
+		"Level"                     "450"
+		"Cost"                      "450"
+		"TotalCost"                 "450"
+		"BuildTime"                 "1"
+		"ScriptClass"               "BasicTower"
+		"TowerType"                 "Normal"
+		"BuffPriority"              "11"
 		
 
 		// General
@@ -6728,7 +6782,7 @@
 		"ConsideredHero"			"1"
 		"Ability1"					"upgrade_tower_cm_2"
 		"Ability2"					"sell_tower"
-		"Ability3"					"crystal_maiden_crystal_nova"
+		"Ability3"					"crystal_maiden_arcane_aura_lua"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -6827,7 +6881,7 @@
 		"ConsideredHero"			"1"
 		"Ability1"					"upgrade_tower_cm_3"
 		"Ability2"					"sell_tower"
-		"Ability3"					"crystal_maiden_crystal_nova"
+		"Ability3"					"crystal_maiden_arcane_aura_lua"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -6927,7 +6981,7 @@
 		
 		"Ability1"					"empty"
 		"Ability2"					"sell_tower"
-		"Ability3"					"crystal_maiden_crystal_nova"
+		"Ability3"					"crystal_maiden_arcane_aura_lua"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -7561,8 +7615,4 @@
 			}
 		}
 	}
-	//========================================================================================================================
-	// TIER 1 TOWERS END
-	//========================================================================================================================
-	
 }

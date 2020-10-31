@@ -63,6 +63,7 @@
     transition-duration: 0.3s;
     transition-property: wash-color;
     transition-timing-function: ease-in-out;
+	wash-color: #9FB7E3;
 }
 
 #NewSettingsButton {
@@ -73,6 +74,7 @@
     transition-duration: 0.3s;
     transition-property: wash-color;
     transition-timing-function: ease-in-out;
+	wash-color: #9FB7E3;
 }
 
 #NewScoreboardButton {
@@ -125,7 +127,10 @@
 #NewDashboardButton:hover,
 #LeaderboardButton:hover,
 #NewScoreboardButton:hover,
-#NewSettingsButton:hover { opacity: 1; }
+#NewSettingsButton:hover { 
+	opacity: 1; 
+	wash-color: white;
+}
 
 #StoreButton:hover { opacity: 1; }
 

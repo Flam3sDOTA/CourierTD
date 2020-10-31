@@ -6,7 +6,6 @@
     
     <scripts>
         <include src="file://{resources}/scripts/custom_game/mainhud.js" />
-		<include src="file://{resources}/scripts/custom_game/resources.js" />  
     </scripts>
 	
 	 <script>
