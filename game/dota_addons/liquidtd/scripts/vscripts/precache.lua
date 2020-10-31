@@ -109,7 +109,7 @@ g_ParticlePrecache =
 	"particles/base_attacks/ranged_siege_good_explosion.vpcf",
 	"particles/econ/world/towers/rock_golem/radiant_rock_golem_attack.vpcf",
 	
-	-- Courier Particles
+	-- Hero/Courier Particles
 	"particles/courier_effects/trail_baby_roshan_platinum.vpcf",
 	"particles/econ/courier/courier_roshan_ti8/courier_roshan_ti8.vpcf",
 	"particles/econ/courier/courier_babyroshan_ti10/courier_babyroshan_ti10_ambient.vpcf",
@@ -121,9 +121,12 @@ g_ParticlePrecache =
 	"particles/item_effects/item_tier_4_circle.vpcf",
 	"particles/item_effects/item_tier_5_circle.vpcf",
 	
-	-- Spawn and Leak Particles
+	-- Wave Particles
 	"particles/creep_effects/spawn_effect.vpcf",
 	"particles/creep_effects/leak_effect.vpcf",
+	"particles/creep_effects/overhead_normal.vpcf",
+	"particles/creep_effects/overhead_boss.vpcf",
+	"particles/creep_effects/overhead_bonus.vpcf",
 	
 	-- Other
 	"particles/units/heroes/heroes_underlord/abyssal_underlord_weapon_blur_c.vpcf",

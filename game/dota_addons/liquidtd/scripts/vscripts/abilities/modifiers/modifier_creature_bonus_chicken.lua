@@ -67,10 +67,16 @@ function modifier_creature_bonus_chicken:OnTakeDamage( params )
 				local pos_launch = pos+RandomVector(RandomFloat(150,200))
 				newItem:LaunchLoot( true, 50, 0.75, pos_launch )
 				newItem:SetLifeTime( self.gold_bag_duration )
-
+				
 				self.flAccumDamage = self.flAccumDamage - 50
 				self.nBagsDropped = self.nBagsDropped + 1
 				self.total_gold = self.total_gold - 20
+				
+				for _, item in pairs(Entities:FindAllByClassname("dota_item_drop")) do
+					if item:GetContainedItem() == newItem then
+						item:SetModelScale(1.8)
+					end
+				end
 			end
 		end
 	end

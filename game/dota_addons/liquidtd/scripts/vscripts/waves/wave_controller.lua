@@ -116,10 +116,19 @@ function SpawnWave(hero, waveData, ascension)
 
     if round_type == "Boss" then
 		creep.leakDamage = 5
+		local particle = ParticleManager:CreateParticle( "particles/creep_effects/overhead_boss.vpcf", PATTACH_OVERHEAD_FOLLOW, creep)
+		ParticleManager:SetParticleControl(particle, 0, creep:GetOrigin())
+		ParticleManager:SetParticleControl(particle, 3, creep:GetOrigin())
 	elseif round_type == "Normal" then
 		creep.leakDamage = 1
+		local particle = ParticleManager:CreateParticle( "particles/creep_effects/overhead_normal.vpcf", PATTACH_OVERHEAD_FOLLOW, creep)
+		ParticleManager:SetParticleControl(particle, 0, creep:GetOrigin())
+		ParticleManager:SetParticleControl(particle, 3, creep:GetOrigin())
 	elseif round_type == "Bonus" then
 		creep.leakDamage = 0
+		local particle = ParticleManager:CreateParticle( "particles/creep_effects/overhead_bonus.vpcf", PATTACH_OVERHEAD_FOLLOW, creep)
+		ParticleManager:SetParticleControl(particle, 0, creep:GetOrigin())
+		ParticleManager:SetParticleControl(particle, 3, creep:GetOrigin())
 	end
 	
     spawned = spawned + 1

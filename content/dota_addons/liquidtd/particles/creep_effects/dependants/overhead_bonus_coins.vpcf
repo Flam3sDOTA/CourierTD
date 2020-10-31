@@ -1,0 +1,147 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf31:version{593cd181-a1d6-4c6f-9a8c-0534e8d44db0} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 6
+	m_nBehaviorVersion = 10
+	m_nFirstMultipleOverride_BackwardCompat = 8
+	m_controlPointConfigurations = 
+	[
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				{
+					m_iControlPoint = 1
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_vecOffset = [ 0.0, 0.0, 0.0 ]
+					m_angOffset = [ 0.0, 0.0, 0.0 ]
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_NoiseEmitter"
+			m_flNoiseScale = 3.0
+			m_flOutputMin = -2.0
+			m_flOutputMax = 6.0
+		},
+	]
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 0.75
+			m_fLifetimeMax = 1.0
+		},
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_LocalCoordinateSystemSpeedMax = [ 170.0, 0.0, 95.0 ]
+			m_LocalCoordinateSystemSpeedMin = [ 50.0, 0.0, 50.0 ]
+			m_fRadiusMax = 5.0
+			m_fSpeedMax = 50.0
+			m_nControlPointNumber = 1
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 0.5
+			m_flRadiusMax = 0.6
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMin = [ 255, 198, 61 ]
+			m_ColorMax = [ 255, 255, 255 ]
+			m_TintMin = [ 0, 0, 0 ]
+			m_TintMax = [ 255, 255, 255 ]
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		{
+			_class = "C_INIT_RandomYaw"
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 0.8
+			m_flRadiusMax = 0.8
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+	]
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_BasicMovement"
+			m_Gravity = [ 0.0, 0.0, -750.0 ]
+			m_fDrag = 0.085
+		},
+		{
+			_class = "C_OP_PositionLock"
+			m_nControlPointNumber = 1
+			m_flStartTime_min = 0.1
+			m_flStartTime_max = 0.1
+			m_flEndTime_min = 0.1
+			m_flEndTime_max = 0.1
+		},
+		{
+			_class = "C_OP_RampScalarSpline"
+			m_nField = "12"
+			m_RateMin = -15.0
+			m_RateMax = 15.0
+		},
+		{
+			_class = "C_OP_RampScalarSpline"
+			m_RateMax = 10.0
+			m_RateMin = -10.0
+			m_nField = "20"
+		},
+		{
+			_class = "C_OP_RampScalarSpline"
+			m_nField = "4"
+			m_RateMin = -15.0
+			m_RateMax = 15.0
+		},
+		{
+			_class = "C_OP_RotateVector"
+			m_flRotRateMax = 920.0
+			m_flRotRateMin = -920.0
+			m_vecRotAxisMax = [ 1.0, 1.0, 1.0 ]
+			m_vecRotAxisMin = [ -1.0, -1.0, -1.0 ]
+			m_flOpStartFadeOutTime = 0.8
+			m_flOpEndFadeOutTime = 1.6
+		},
+		{
+			_class = "C_OP_FadeAndKill"
+			m_flEndFadeInTime = 0.1
+			m_flStartFadeOutTime = 0.8
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flStartTime = 0.9
+			m_flEndScale = 0.0
+		},
+	]
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderModels"
+			m_ModelList = 
+			[
+				{
+					m_model = resource:"models/particle/coin.vmdl"
+				},
+			]
+			m_bAnimated = true
+			m_nLOD = 1
+			m_bForceLoopingAnimation = true
+			m_hOverrideMaterial = resource:"materials/models/items/antimage/ti7_immortal_armor/log_gold.vmat"
+		},
+	]
+}
