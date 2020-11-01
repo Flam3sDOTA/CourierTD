@@ -22,7 +22,7 @@ end
 ---------------------------------------------------------------------------
 function LiquidTD:OnHeroInGame(hero)
   local abilities = {
-    "builder_invulnerable",
+    "hero_nohealthbar",
     "build_tower_arrow",
     "build_tower_poison",
     "build_tower_ice",

@@ -12,7 +12,7 @@
 		"AbilityTextureName"   	  	"invulnerable"
 		"Modifiers"
 		{
-			"builder_invulnerable_modifier"
+			"tower_invulnerable_modifier"
 			{
 				"Passive"    "1"
 				"IsHidden"	 "1"
@@ -28,6 +28,29 @@
 					"MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PHYSICAL" 	"1"
 					"MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_MAGICAL" 		"1"
 					"MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PURE" 		"1"
+				}
+			}
+		}
+	}
+	
+	//============================================================
+	// Tower: Invulnerable (No Health Bar)
+	//============================================================
+	"hero_nohealthbar"
+	{
+		"BaseClass"             	"ability_datadriven"
+		"AbilityBehavior"         	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"MaxLevel"                	"1"
+		"AbilityTextureName"   	  	"invulnerable"
+		"Modifiers"
+		{
+			"hero_nohealthbar_modifier"
+			{
+				"Passive"    "1"
+				"IsHidden"	 "1"
+				"States"
+				{
+					"MODIFIER_STATE_NO_HEALTH_BAR"			"MODIFIER_STATE_VALUE_ENABLED"
 				}
 			}
 		}
