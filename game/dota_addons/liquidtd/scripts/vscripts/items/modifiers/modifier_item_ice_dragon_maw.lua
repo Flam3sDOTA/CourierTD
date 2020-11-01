@@ -52,11 +52,10 @@ function modifier_item_ice_dragon_maw:OnAttackLanded( params )
 
 		if hTarget:IsMagicImmune() == false and hTarget:IsInvulnerable() == false and RollPercentage( self.chance_to_freeze ) then
 			hTarget:AddNewModifier( self:GetParent(), self:GetAbility(), "modifier_large_frostbitten_icicle", { duration = self.freeze_duration } )
+			local nFXIndex = ParticleManager:CreateParticle( "particles/act_2/frostbitten_icicle.vpcf", PATTACH_POINT_FOLLOW, hTarget )
+			ParticleManager:SetParticleControl( nFXIndex, 0, hTarget:GetOrigin() + Vector( 0, 0, 40 ) )
+			ParticleManager:ReleaseParticleIndex( nFXIndex )
 		end
-		
-		local nFXIndex = ParticleManager:CreateParticle( "particles/act_2/frostbitten_icicle.vpcf", PATTACH_POINT_FOLLOW, hTarget )
-		ParticleManager:SetParticleControl( nFXIndex, 0, hTarget:GetOrigin() + Vector( 0, 0, 40 ) )
-		ParticleManager:ReleaseParticleIndex( nFXIndex )
 	end
 	return 0
 end

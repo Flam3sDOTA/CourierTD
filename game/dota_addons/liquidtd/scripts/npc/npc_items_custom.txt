@@ -1613,12 +1613,12 @@
 			"02"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"base_attack_time_penalty_pct"		"95"
+				"base_attack_time_penalty_pct"		"90"
 			}
 			"03"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"attack_speed_penalty_pct"			"95"
+				"attack_speed_penalty_pct"			"90"
 			}
 			"04"
 			{
@@ -1744,12 +1744,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_attack_range"	"275"
+				"bonus_attack_range"	"250"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chance_to_freeze"		"10"
+				"chance_to_freeze"		"15"
 			}
 			"03"
 			{
@@ -2581,7 +2581,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_range"			"350"
+				"bonus_range"			"300"
 			}
 		}
 		"Modifiers"
