@@ -1,3 +1,8 @@
+g_ItemPrecache =
+{
+	"item_bag_of_gold",
+}
+
 g_ModelPrecache =
 {
 	-- Item Models
@@ -128,6 +133,16 @@ g_ParticlePrecache =
 	"particles/creep_effects/overhead_boss.vpcf",
 	"particles/creep_effects/overhead_bonus.vpcf",
 	
+	-- Modifier Related
+	"particles/units/heroes/hero_ogre_magi/ogre_magi_multicast.vpcf",
+	"particles/test_particle/ogre_melee_smash.vpcf",
+	"particles/units/heroes/hero_phantom_assassin/phantom_assassin_crit_impact.vpcf",
+	"particles/units/heroes/hero_sandking/sandking_caustic_finale_debuff.vpcf",
+	"particles/units/heroes/hero_sandking/sandking_caustic_finale_explode.vpcf",
+	"particles/status_fx/status_effect_wyvern_cold_embrace.vpcf",
+	"particles/act_2/frostbitten_icicle.vpcf",
+	"particles/econ/events/ti9/mjollnir_shield_ti9.vpcf",
+	
 	-- Other
 	"particles/units/heroes/heroes_underlord/abyssal_underlord_weapon_blur_c.vpcf",
 	"particles/econ/items/alchemist/alchemist_midas_knuckles/alch_knuckles_lasthit_coins.vpcf",
@@ -152,12 +167,14 @@ g_ParticlePrecache =
 	"particles/units/heroes/hero_dark_willow/dark_willow_shadow_realm.vpcf",
 	"particles/units/heroes/heroes_underlord/abyssal_underlord_weapon_blur_a.vpcf",
 	"particles/units/heroes/heroes_underlord/abyssal_underlord_weapon_blur_b.vpcf",
-	"particles/units/heroes/heroes_underlord/underlord_pitofmalice.vpcf",	
+	"particles/units/heroes/heroes_underlord/underlord_pitofmalice.vpcf",
 }
 
 g_ParticleFolderPrecache =
 {
 	"particles/buildinghelper",
+	"particles/test_particle",
+	"particles/act_2",
 }
 
 g_SoundPrecache =
@@ -171,8 +188,19 @@ g_SoundPrecache =
 	"soundevents/soundevents_conquest.vsndevts",
 	"soundevents/soundevents_dota_ui.vsndevts",
 	"soundevents/music/game_sounds_music_tutorial.vsndevts",
+	"soundevents/game_sounds_dungeon.vsndevts",
+	"soundevents/game_sounds_dungeon_enemies.vsndevts",
+	"soundevents/game_sounds_creeps.vsndevts",
 	
 	-- Hero Sounds
+	"soundevents/game_sounds_heroes/game_sounds_nyx_assassin.vsndevts",
+	"soundevents/game_sounds_heroes/game_sounds_batrider.vsndevts",
+	"soundevents/game_sounds_heroes/game_sounds_centaur.vsndevts",
+	"soundevents/game_sounds_roshan_halloween.vsndevts", 
+	"soundevents/game_sounds_heroes/game_sounds_earthshaker.vsndevts",
+	"soundevents/game_sounds_heroes/game_sounds_sandking.vsndevts",
+	"soundevents/game_sounds_heroes/game_sounds_phoenix.vsndevts",
+	"soundevents/game_sounds_heroes/game_sounds_ember_spirit.vsndevts",
 	"soundevents/game_sounds_heroes/game_sounds_lycan.vsndevts",
 	"soundevents/game_sounds_heroes/game_sounds_drowranger.vsndevts",
 	"soundevents/game_sounds_heroes/game_sounds_troll_warlord.vsndevts",
@@ -245,6 +273,11 @@ g_SoundPrecache =
 	"soundevents/voscripts/game_sounds_vo_windrunner.vsndevts",
 	"soundevents/voscripts/game_sounds_vo_wisp.vsndevts",
 	"soundevents/game_sounds_heroes/game_sounds_life_stealer.vsndevts",
+	"soundevents/voscripts/game_sounds_vo_lycan.vsndevts",
+	"soundevents/voscripts/game_sounds_vo_sandking.vsndevts",
+	"soundevents/voscripts/game_sounds_vo_ogre_magi.vsndevts",
+	"soundevents/voscripts/game_sounds_vo_broodmother.vsndevts",
+	"soundevents/voscripts/game_sounds_vo_invoker.vsndevts",
 	
 	-- Announcers
 	"soundevents/voscripts/game_sounds_vo_announcer_dlc_bastion.vsndevts",

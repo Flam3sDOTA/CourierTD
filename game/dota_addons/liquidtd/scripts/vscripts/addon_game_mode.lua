@@ -15,6 +15,10 @@ require("events")
 require("precache")
 
 function Precache( context )
+	for _,Item in pairs( g_ItemPrecache ) do
+    	PrecacheItemByNameSync( Item, context )
+    end
+
 	for _,Model in pairs( g_ModelPrecache ) do
 		PrecacheResource( "model", Model, context )
 	end

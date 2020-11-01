@@ -172,7 +172,10 @@
 			}
 		}
 	}
-
+	
+	//============================================================
+	// TIER 1 ITEMS
+	//============================================================
 	//============================================================
 	// Blades of Attack - Tier 1
 	//============================================================
@@ -557,6 +560,60 @@
 		}			
 	}
 	
+	//============================================================
+	// Longclaw's Amulet - Tier 1
+	//============================================================
+	"item_longclaws_amulet"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"AbilityTextureName"			"item_longclaws_amulet"
+		"ScriptFile"					"items/item_longclaws_amulet"
+
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_1_circle.vpcf"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"100"
+		"AbilityCastPoint"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1000"
+		"ItemPurchasable"				"1"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"0"
+		"ItemSellable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"1"
+		"ItemKillable"					"0"
+		"ItemDroppable" 				"1"
+		"ItemAlertable"					"1"
+		"ItemRequiresCharges"			"0"
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"cooldown_reduction"	"1"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"mana_cost_reduction_pct"			"10"
+			}
+		}
+	}
+	
 	
 	//============================================================
 	// TIER 2 ITEMS
@@ -884,7 +941,7 @@
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"magic_resistance_reduced"	"-20"
+				"magic_resistance_reduced"	"-10"
 			}
 			"03"
 			{
@@ -974,6 +1031,121 @@
 			}
 		}			
 	}
+	
+	//============================================================
+	// Sign of the Arachnid - Tier 2
+	//============================================================
+	"item_sign_of_the_arachnid"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"AbilityTextureName"			"item_sign_of_the_arachnid"
+		"ScriptFile"					"items/item_sign_of_the_arachnid"
+
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_2_circle.vpcf"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"380"
+		"AbilityCastPoint"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"3000"
+		"ItemPurchasable"				"1"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"0"
+		"ItemSellable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"1"
+		"ItemKillable"					"0"
+		"ItemDroppable" 				"1"
+		"ItemAlertable"					"1"
+		"ItemRequiresCharges"			"0"
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"attack_speed"			"10"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"380"
+			}
+		}
+	}
+	
+	//============================================================
+	// Ambient Sorcery - Tier 2
+	//============================================================
+	"item_ambient_sorcery"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"AbilityTextureName"			"item_ambient_sorcery"
+		"ScriptFile"					"items/item_ambient_sorcery"
+
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_2_circle.vpcf"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"800"
+		"AbilityCastPoint"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"3000"
+		"ItemPurchasable"				"1"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"0"
+		"ItemSellable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"1"
+		"ItemKillable"					"0"
+		"ItemDroppable" 				"1"
+		"ItemAlertable"					"1"
+		"ItemRequiresCharges"			"0"
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"800"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"aura_magic_reduction"		"-10"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"aura_magic_reduction_tooltip"	"10"
+			}
+		}
+	}
+	
+	
 	
 	//============================================================
 	// TIER 3 ITEMS
@@ -1313,6 +1485,276 @@
 				"Duration"              "%bash_cooldown"
 				"Passive"				"0"
 				"IsHidden"				"1"
+			}
+		}
+	}
+	
+	//============================================================
+	// Paw of Lucius - Tier 3
+	//============================================================
+	"item_paw_of_lucius"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"AbilityTextureName"			"item_paw_of_lucius"
+		"ScriptFile"					"items/item_paw_of_lucius"
+
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_3_circle.vpcf"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"100"
+		"AbilityCastPoint"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"5000"
+		"ItemPurchasable"				"1"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"0"
+		"ItemSellable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"1"
+		"ItemKillable"					"0"
+		"ItemDroppable" 				"1"
+		"ItemAlertable"					"1"
+		"ItemRequiresCharges"			"0"
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"		"20"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"rupture_chance"			"15"
+			}
+			"03"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "movement_damage_pct"       "20"
+            }
+            "04"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "damage_cap_amount"         "250"
+            }
+            "05"
+            {
+                "var_type"                  "FIELD_FLOAT"
+                "damage_cap_interval"       "0.25"
+            }
+            "06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"rupture_duration"			"3.0"
+			}
+		}
+	}
+	
+	
+	//=================================================================================================================
+	// Bogdugg's Cudgel - Tier 4
+	//=================================================================================================================
+	"item_bogduggs_cudgel"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"AbilityTextureName"			"item_bogduggs_cudgel"
+		"ScriptFile"					"items/item_bogduggs_cudgel"
+
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_4_circle.vpcf"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"250"
+		"AbilityCastPoint"				"0.0"
+
+		/// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"10000"
+		"ItemPurchasable"				"1"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"0"
+		"ItemSellable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"1"
+		"ItemKillable"					"0"
+		"ItemDroppable" 				"1"
+		"ItemAlertable"					"1"
+		"ItemRequiresCharges"			"0"
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"				"50"
+			}
+			"02"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"base_attack_time_penalty_pct"		"95"
+			}
+			"03"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"attack_speed_penalty_pct"			"95"
+			}
+			"04"
+			{
+				"var_type"								"FIELD_INTEGER"
+				"damage_radius"							"300"
+			}
+			"05"
+			{
+				"var_type"								"FIELD_FLOAT"
+				"stun_duration"							"1.0"
+			}
+		}
+	}
+	
+	//=================================================================================================================
+	// The Caustic Finale - Tier 4
+	//=================================================================================================================
+	"item_the_caustic_finale"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"AbilityTextureName"			"item_the_caustic_finale"
+		"ScriptFile"					"items/item_the_caustic_finale"
+
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_4_circle.vpcf"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+
+		/// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"10000"
+		"ItemPurchasable"				"1"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"0"
+		"ItemSellable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"1"
+		"ItemKillable"					"0"
+		"ItemDroppable" 				"1"
+		"ItemAlertable"					"1"
+		"ItemRequiresCharges"			"0"
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"		"30"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"caustic_armor_reduction_pct"	"5"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"caustic_duration"			"3.0"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"caustic_radius"			"300"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"caustic_damage"			"300"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"max_stack_count"			"5"
+			}
+		}
+	}
+	
+	//=================================================================================================================
+	// Ice Dragon Maw - Tier 4
+	//=================================================================================================================
+	"item_ice_dragon_maw"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"AbilityTextureName"			"item_ice_dragon_maw"
+		"ScriptFile"					"items/item_ice_dragon_maw"
+
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_4_circle.vpcf"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		/// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"10000"
+		"ItemPurchasable"				"1"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"0"
+		"ItemSellable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"1"
+		"ItemKillable"					"0"
+		"ItemDroppable" 				"1"
+		"ItemAlertable"					"1"
+		"ItemRequiresCharges"			"0"
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_range"	"275"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"chance_to_freeze"		"10"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"freeze_duration"		"1.0"
 			}
 		}
 	}
@@ -2054,12 +2496,12 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"armor_reduction"			"-10"
+				"armor_reduction"			"-15"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"duration"					"7"
+				"duration"					"10"
 			}
 			"03"
 			{
@@ -2202,6 +2644,64 @@
 				}
 			}
 		}		
+	}
+	
+	//=================================================================================================================
+	// Corrupting Blade - Tier SSR
+	//=================================================================================================================
+	"item_corrupting_blade"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/item_corrupting_blade"
+		"AbilityTextureName"			"item_corrupting_blade"
+
+		"Model"							"models/props_winter/present.vmdl" 
+		"Effect"						"particles/item_effects/item_tier_5_circle.vpcf"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		/// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"0"
+		"ItemPurchasable"				"0"
+		"ItemStackable"					"0"
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"1"
+		"ItemKillable"					"0"
+		"ItemDroppable" 				"1"
+		"ItemAlertable"					"1"
+		"ItemRequiresCharges"			"0"
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"150"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"150"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"corruption_armor"		"-10"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"corruption_duration"	"7"
+			}
+		}
 	}
 	
 	//============================================================

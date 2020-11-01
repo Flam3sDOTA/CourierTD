@@ -9,6 +9,7 @@
 		"item"		"item_custom_blight_stone"
 		"item"		"item_custom_time_stone"
 		"item"		"item_custom_mind_stone"
+		"item"		"item_longclaws_amulet"
 	}
 
 	"attributes"
@@ -20,6 +21,7 @@
 		"item"		"item_custom_dragon_lance"
 		"item"		"item_custom_spell_prism"
 		"item"		"item_custom_skull_basher"
+		"item"		"item_paw_of_lucius"
 	}
 
 	"weapons_armor"
@@ -32,6 +34,8 @@
 		"item"		"item_custom_claymore"
 		"item"		"item_custom_mithril_hammer"
 		"item"		"item_custom_demon_edge"
+		"item"		"item_sign_of_the_arachnid"
+		"item"		"item_ambient_sorcery"
 	}
 
 	"misc"
@@ -42,6 +46,9 @@
 		"item"		"item_custom_yasha_yasha"
 		"item"		"item_custom_sange_sange"
 		"item"		"item_custom_the_leveller"
+		"item"		"item_bogduggs_cudgel"
+		"item"		"item_the_caustic_finale"
+		"item"		"item_ice_dragon_maw"
 	}	
 	
 	

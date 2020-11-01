@@ -5248,7 +5248,7 @@
 
 		// Ability Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"500"
+		"AbilityCastRange"				"380"
 		
 		// Ability Resource
 		//-------------------------------------------------------------------------------------------------------------
@@ -5263,17 +5263,17 @@
 			"01"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"mana_regen"		"0.5 1 2"
+				"mana_regen"		"0.5 1 1.5"
 			}
 			"02"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"mana_regen_self"	"0.5 1 2"
+				"mana_regen_self"	"0.5 1 1.5"
 			}
 			"03"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"radius"			"500"
+				"radius"			"380"
 			}
 		}
 	}

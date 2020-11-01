@@ -38,15 +38,6 @@
 			_class = "C_INIT_CreateWithinSphere"
 		},
 		{
-			_class = "C_INIT_RandomNamedModelSequence"
-			m_bModelFromRenderer = true
-			m_names = 
-			[
-				"spawn",
-			]
-			m_nFieldOutput = "13"
-		},
-		{
 			_class = "C_INIT_RandomScalar"
 			m_flMin = -0.85
 			m_flMax = -0.85
@@ -78,36 +69,6 @@
 		{
 			_class = "C_OP_EndCapTimedDecay"
 			m_flDecayTime = 3.0
-		},
-		{
-			_class = "C_OP_RemapNamedModelSequenceOnceTimed"
-			m_nOpEndCapState = "PARTICLE_ENDCAP_ENDCAP_OFF"
-			m_flRemapTime = 0.466667
-			m_bModelFromRenderer = true
-			m_inNames = 
-			[
-				"spawn",
-			]
-			m_outNames = 
-			[
-				"wave_v1",
-			]
-			m_nFieldInput = "13"
-			m_nFieldOutput = "13"
-		},
-		{
-			_class = "C_OP_RemapNamedModelSequenceEndCap"
-			m_bModelFromRenderer = true
-			m_inNames = 
-			[
-				"wave_v1",
-			]
-			m_outNames = 
-			[
-				"hanging",
-			]
-			m_nFieldInput = "13"
-			m_nFieldOutput = "13"
 		},
 		{
 			_class = "C_OP_EndCapTimedDecay"
