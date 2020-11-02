@@ -6732,7 +6732,6 @@
 		"SoundSet"                  "hero_Crystal"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
-		"vscripts"					"ai/cm"
 
 		// Stats
 		//----------------------------- 
@@ -6831,7 +6830,6 @@
 		"SoundSet"                  "hero_Crystal"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
-		"vscripts"					"ai/cm"
 
 		// Stats
 		//----------------------------- 
@@ -6930,7 +6928,6 @@
 		"SoundSet"                  "hero_Crystal"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
-		"vscripts"					"ai/cm"
 
 		// Stats
 		//----------------------------- 
@@ -7332,9 +7329,6 @@
 		"SoundSet"                  "Hero_VengefulSpirit"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_vengefulspirit.vsndevts"
-		"vscripts"					"ai/venge"
-		
-		
 
 		// Stats
 		//----------------------------- 
@@ -7385,7 +7379,7 @@
 		
 		"Ability1"					"upgrade_tower_venge_2"
 		"Ability2"					"sell_tower"
-		"Ability3"					"vengefulspirit_magic_missile_datadriven"
+		"Ability3"					"vengeful_spirit_vengeance_aura_lua"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -7433,9 +7427,6 @@
 		"SoundSet"                  "Hero_VengefulSpirit"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_vengefulspirit.vsndevts"
-		"vscripts"					"ai/venge"
-		
-		
 
 		// Stats
 		//----------------------------- 
@@ -7486,7 +7477,7 @@
 		
 		"Ability1"					"upgrade_tower_venge_3"
 		"Ability2"					"sell_tower"
-		"Ability3"					"vengefulspirit_magic_missile_datadriven"
+		"Ability3"					"vengeful_spirit_vengeance_aura_lua"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
@@ -7534,9 +7525,7 @@
 		"SoundSet"                  "Hero_VengefulSpirit"
 		"MinimapIconSize"           "10"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_vengefulspirit.vsndevts"
-		"vscripts"					"ai/venge"
 		
-
 		// Stats
 		//----------------------------- 
 		"AttackDamageMin"           "280"
@@ -7586,7 +7575,7 @@
 		
 		"Ability1"					"empty"
 		"Ability2"					"sell_tower"
-		"Ability3"					"vengefulspirit_magic_missile_datadriven"
+		"Ability3"					"vengeful_spirit_vengeance_aura_lua"
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size

@@ -245,7 +245,7 @@ return {
     tier = 1,
     spawn_sound = "vengefulspirit_vng_spawn_01",  
 	abilities = {
-      vengefulspirit_magic_missile_datadriven = 1
+      vengeful_spirit_vengeance_aura_lua = 1
     },
   },
   
@@ -254,7 +254,7 @@ return {
     tier = 1,
     spawn_sound = "frostivus_ui_select", 
 	abilities = {
-      vengefulspirit_magic_missile_datadriven = 2
+      vengeful_spirit_vengeance_aura_lua = 2
     },	
   },
   
@@ -263,7 +263,7 @@ return {
     tier = 1,
     spawn_sound = "frostivus_ui_select",
 	abilities = {
-      vengefulspirit_magic_missile_datadriven = 3
+      vengeful_spirit_vengeance_aura_lua = 3
     },
   },
   
