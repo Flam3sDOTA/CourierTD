@@ -1525,6 +1525,11 @@
 		"ItemRequiresCharges"			"0"
 		"UIPickupSound" 				"Item.DropGemShop"
 		"UIDropSound" 					"Item.DropGemShop"
+		
+		"ItemStockTime"                 "999999" 
+		"ItemStockInitial"              "2"
+		"ItemStockMax"                  "2"
+		"ItemInitialStockTime"          "1.0"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -1600,6 +1605,11 @@
 		"ItemRequiresCharges"			"0"
 		"UIPickupSound" 				"Item.DropGemShop"
 		"UIDropSound" 					"Item.DropGemShop"
+		
+		"ItemStockTime"                 "999999" 
+		"ItemStockInitial"              "2"
+		"ItemStockMax"                  "2"
+		"ItemInitialStockTime"          "1.0"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -1667,6 +1677,11 @@
 		"ItemRequiresCharges"			"0"
 		"UIPickupSound" 				"Item.DropGemShop"
 		"UIDropSound" 					"Item.DropGemShop"
+		
+		"ItemStockTime"                 "999999" 
+		"ItemStockInitial"              "2"
+		"ItemStockMax"                  "2"
+		"ItemInitialStockTime"          "1.0"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -1736,6 +1751,11 @@
 		"ItemRequiresCharges"			"0"
 		"UIPickupSound" 				"Item.DropGemShop"
 		"UIDropSound" 					"Item.DropGemShop"
+		
+		"ItemStockTime"                 "999999" 
+		"ItemStockInitial"              "2"
+		"ItemStockMax"                  "2"
+		"ItemInitialStockTime"          "1.0"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
