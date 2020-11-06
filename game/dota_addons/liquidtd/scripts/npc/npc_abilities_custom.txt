@@ -204,7 +204,7 @@
 			"01"
 			{
 				"var_type"    					 "FIELD_INTEGER"
-				"ATTACK_DAMAGE_TOOLTIP"    		 "50"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "70"
 			}
 			"02"
 			{
@@ -249,12 +249,12 @@
 			"01"
 			{
 				"var_type"    					 "FIELD_INTEGER"
-				"ATTACK_DAMAGE_TOOLTIP"    		 "65"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "50"
 			}
 			"02"
 			{
 				"var_type"    					 "FIELD_FLOAT"
-				"ATTACK_SPEED_TOOLTIP"     		 "1"
+				"ATTACK_SPEED_TOOLTIP"     		 "1.5"
 			}
 			"03"
 			{

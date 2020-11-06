@@ -106,7 +106,7 @@ function LiquidTD:InitGameMode()
 	GameRules:SetStrategyTime(0)
 	GameRules:SetShowcaseTime(0)
 	GameRules:SetGoldTickTime(0)
-	GameRules:SetStartingGold(160) -- default 195
+	GameRules:SetStartingGold(150) -- default 150
 	GameRules:SetGoldPerTick(0)
 	
 	-- Gamemode Rules

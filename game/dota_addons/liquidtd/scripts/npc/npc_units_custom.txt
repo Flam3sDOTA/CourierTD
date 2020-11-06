@@ -75,13 +75,13 @@
 			"ArmorPhysical"         		"0"
 			"MagicalResistance"     		"0"
 			"MovementSpeed"         		"450"
-			"BountyGoldMin"         		"2"
-			"BountyGoldMax"         		"2"
+			"BountyGoldMin"         		"6"
+			"BountyGoldMax"         		"7"
 			"Creature"
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "7500"
+				"HPGain"                    "11000"
 				"ArmorGain"                 "5"
 				"MagicResistGain"           "5"
 				"MoveSpeedGain"             "10"
@@ -120,13 +120,13 @@
 			"ArmorPhysical"         		"0"
 			"MagicalResistance"     		"0"
 			"MovementSpeed"         		"450"
-			"BountyGoldMin"         		"3"
-			"BountyGoldMax"         		"3"
+			"BountyGoldMin"         		"7"
+			"BountyGoldMax"         		"7"
 			"Creature"
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "7700"
+				"HPGain"                    "11500"
 				"ArmorGain"                 "5"
 				"MagicResistGain"           "5"
 				"MoveSpeedGain"             "10"
@@ -165,13 +165,13 @@
 			"ArmorPhysical"         		"0"
 			"MagicalResistance"     		"0"
 			"MovementSpeed"         		"450"
-			"BountyGoldMin"         		"4"
-			"BountyGoldMax"         		"5"
+			"BountyGoldMin"         		"7"
+			"BountyGoldMax"         		"8"
 			"Creature"
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "8000"
+				"HPGain"                    "12000"
 				"ArmorGain"                 "5"
 				"MagicResistGain"           "5"
 				"MoveSpeedGain"             "10"
@@ -210,13 +210,13 @@
 			"ArmorPhysical"         		"0"
 			"MagicalResistance"     		"0"
 			"MovementSpeed"         		"450"
-			"BountyGoldMin"         		"5"
-			"BountyGoldMax"         		"6"
+			"BountyGoldMin"         		"8"
+			"BountyGoldMax"         		"8"
 			"Creature"
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "8250"
+				"HPGain"                    "12500"
 				"ArmorGain"                 "5"
 				"MagicResistGain"           "5"
 				"MoveSpeedGain"             "10"
@@ -255,17 +255,17 @@
 			"ArmorPhysical"         		"1"
 			"MagicalResistance"     		"1"
 			"MovementSpeed"         		"470"
-			"BountyGoldMin"         		"200"
-			"BountyGoldMax"         		"200"
+			"BountyGoldMin"         		"300"
+			"BountyGoldMax"         		"300"
 			"Creature"
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "10000"
+				"HPGain"                    "50000"
 				"ArmorGain"                 "10"
 				"MagicResistGain"           "10"
 				"MoveSpeedGain"             "10"
-				"BountyGain"                "250"
+				"BountyGain"                "5200"
 			}
 		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
@@ -305,13 +305,13 @@
 			"ArmorPhysical"         		"0"
 			"MagicalResistance"     		"0"
 			"MovementSpeed"         		"450"
-			"BountyGoldMin"         		"6"
-			"BountyGoldMax"         		"7"
+			"BountyGoldMin"         		"8"
+			"BountyGoldMax"         		"9"
 			"Creature"
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "8750"
+				"HPGain"                    "13000"
 				"ArmorGain"                 "5"
 				"MagicResistGain"           "5"
 				"MoveSpeedGain"             "10"
@@ -350,13 +350,13 @@
 			"ArmorPhysical"         		"0"
 			"MagicalResistance"     		"0"
 			"MovementSpeed"         		"450"
-			"BountyGoldMin"         		"10"
-			"BountyGoldMax"         		"11"
+			"BountyGoldMin"         		"9"
+			"BountyGoldMax"         		"10"
 			"Creature"
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "9000"
+				"HPGain"                    "13500"
 				"ArmorGain"                 "5"
 				"MagicResistGain"           "5"
 				"MoveSpeedGain"             "10"
@@ -395,13 +395,13 @@
 			"ArmorPhysical"         		"0"
 			"MagicalResistance"     		"0"
 			"MovementSpeed"         		"450"
-			"BountyGoldMin"         		"11"
-			"BountyGoldMax"         		"12"
+			"BountyGoldMin"         		"10"
+			"BountyGoldMax"         		"11"
 			"Creature"
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "9250"
+				"HPGain"                    "14000"
 				"ArmorGain"                 "5"
 				"MagicResistGain"           "5"
 				"MoveSpeedGain"             "10"
@@ -440,13 +440,13 @@
 			"ArmorPhysical"         		"0"
 			"MagicalResistance"     		"0"
 			"MovementSpeed"         		"450"
-			"BountyGoldMin"         		"12"
-			"BountyGoldMax"         		"13"
+			"BountyGoldMin"         		"11"
+			"BountyGoldMax"         		"12"
 			"Creature"
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "9500"
+				"HPGain"                    "14500"
 				"ArmorGain"                 "5"
 				"MagicResistGain"           "5"
 				"MoveSpeedGain"             "10"
@@ -491,11 +491,11 @@
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "15000"
+				"HPGain"                    "50000"
 				"ArmorGain"                 "10"
 				"MagicResistGain"           "10"
 				"MoveSpeedGain"             "10"
-				"BountyGain"                "500"
+				"BountyGain"                "5000"
 			}
 		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
@@ -536,13 +536,13 @@
 			"ArmorPhysical"         		"2"
 			"MagicalResistance"     		"1"
 			"MovementSpeed"         		"500"
-			"BountyGoldMin"         		"13"
-			"BountyGoldMax"         		"14"
+			"BountyGoldMin"         		"12"
+			"BountyGoldMax"         		"12"
 			"Creature"
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "9750"
+				"HPGain"                    "15000"
 				"ArmorGain"                 "5"
 				"MagicResistGain"           "5"
 				"MoveSpeedGain"             "10"
@@ -581,13 +581,13 @@
 			"ArmorPhysical"         		"2"
 			"MagicalResistance"     		"1"
 			"MovementSpeed"         		"500"
-			"BountyGoldMin"         		"14"
-			"BountyGoldMax"         		"15"
+			"BountyGoldMin"         		"12"
+			"BountyGoldMax"         		"13"
 			"Creature"
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "10000"
+				"HPGain"                    "15500"
 				"ArmorGain"                 "5"
 				"MagicResistGain"           "5"
 				"MoveSpeedGain"             "10"
@@ -626,13 +626,13 @@
 			"ArmorPhysical"         		"2"
 			"MagicalResistance"     		"1"
 			"MovementSpeed"         		"500"
-			"BountyGoldMin"         		"15"
-			"BountyGoldMax"         		"16"
+			"BountyGoldMin"         		"13"
+			"BountyGoldMax"         		"13"
 			"Creature"
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "10250"
+				"HPGain"                    "16000"
 				"ArmorGain"                 "5"
 				"MagicResistGain"           "5"
 				"MoveSpeedGain"             "10"
@@ -671,13 +671,13 @@
 			"ArmorPhysical"         		"2"
 			"MagicalResistance"     		"1"
 			"MovementSpeed"         		"500"
-			"BountyGoldMin"         		"15"
-			"BountyGoldMax"         		"16"
+			"BountyGoldMin"         		"13"
+			"BountyGoldMax"         		"14"
 			"Creature"
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "10500"
+				"HPGain"                    "16500"
 				"ArmorGain"                 "5"
 				"MagicResistGain"           "5"
 				"MoveSpeedGain"             "10"
@@ -722,11 +722,11 @@
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "20000"
+				"HPGain"                    "50000"
 				"ArmorGain"                 "10"
 				"MagicResistGain"           "10"
 				"MoveSpeedGain"             "10"
-				"BountyGain"                "1000"
+				"BountyGain"                "5000"
 			}
 		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
@@ -766,13 +766,13 @@
 			"ArmorPhysical"         		"2"
 			"MagicalResistance"     		"5"
 			"MovementSpeed"         		"500"
-			"BountyGoldMin"         		"15"
-			"BountyGoldMax"         		"16"
+			"BountyGoldMin"         		"14"
+			"BountyGoldMax"         		"15"
 			"Creature"
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "10750"
+				"HPGain"                    "17000"
 				"ArmorGain"                 "5"
 				"MagicResistGain"           "5"
 				"MoveSpeedGain"             "10"
@@ -817,7 +817,7 @@
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "11000"
+				"HPGain"                    "17500"
 				"ArmorGain"                 "5"
 				"MagicResistGain"           "5"
 				"MoveSpeedGain"             "10"
@@ -862,7 +862,7 @@
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "12000"
+				"HPGain"                    "18000"
 				"ArmorGain"                 "5"
 				"MagicResistGain"           "5"
 				"MoveSpeedGain"             "10"
@@ -907,7 +907,7 @@
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "13000"
+				"HPGain"                    "18500"
 				"ArmorGain"                 "5"
 				"MagicResistGain"           "5"
 				"MoveSpeedGain"             "10"
@@ -946,17 +946,17 @@
 			"ArmorPhysical"         		"10"
 			"MagicalResistance"     		"10"
 			"MovementSpeed"         		"500"
-			"BountyGoldMin"         		"1500"
-			"BountyGoldMax"         		"1500"
+			"BountyGoldMin"         		"2000"
+			"BountyGoldMax"         		"2000"
 			"Creature"
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "30000"
+				"HPGain"                    "50000"
 				"ArmorGain"                 "10"
 				"MagicResistGain"           "10"
 				"MoveSpeedGain"             "10"
-				"BountyGain"                "1500"
+				"BountyGain"                "5000"
 			}
 		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
@@ -1003,7 +1003,7 @@
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "15000"
+				"HPGain"                    "19000"
 				"ArmorGain"                 "5"
 				"MagicResistGain"           "5"
 				"MoveSpeedGain"             "10"
@@ -1042,13 +1042,13 @@
 			"ArmorPhysical"         		"3"
 			"MagicalResistance"     		"10"
 			"MovementSpeed"         		"500"
-			"BountyGoldMin"         		"18"
-			"BountyGoldMax"         		"19"
+			"BountyGoldMin"         		"19"
+			"BountyGoldMax"         		"20"
 			"Creature"
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "17000"
+				"HPGain"                    "19500"
 				"ArmorGain"                 "5"
 				"MagicResistGain"           "5"
 				"MoveSpeedGain"             "10"
@@ -1093,7 +1093,7 @@
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "19000"
+				"HPGain"                    "20000"
 				"ArmorGain"                 "5"
 				"MagicResistGain"           "5"
 				"MoveSpeedGain"             "10"
@@ -1184,11 +1184,11 @@
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "35000"
+				"HPGain"                    "50000"
 				"ArmorGain"                 "10"
 				"MagicResistGain"           "10"
 				"MoveSpeedGain"             "10"
-				"BountyGain"                "20000"
+				"BountyGain"                "5000"
 			}
 		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
@@ -1234,7 +1234,7 @@
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "23000"
+				"HPGain"                    "22000"
 				"ArmorGain"                 "5"
 				"MagicResistGain"           "5"
 				"MoveSpeedGain"             "10"
@@ -1279,7 +1279,7 @@
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "24000"
+				"HPGain"                    "23000"
 				"ArmorGain"                 "5"
 				"MagicResistGain"           "5"
 				"MoveSpeedGain"             "10"
@@ -1324,7 +1324,7 @@
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "25000"
+				"HPGain"                    "24000"
 				"ArmorGain"                 "5"
 				"MagicResistGain"           "5"
 				"MoveSpeedGain"             "10"
@@ -1408,17 +1408,17 @@
 			"ArmorPhysical"         		"15"
 			"MagicalResistance"     		"15"
 			"MovementSpeed"         		"500"
-			"BountyGoldMin"         		"2500"
-			"BountyGoldMax"         		"2500"
+			"BountyGoldMin"         		"3000"
+			"BountyGoldMax"         		"3000"
 			"Creature"
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "40000"
+				"HPGain"                    "60000"
 				"ArmorGain"                 "15"
 				"MagicResistGain"           "15"
 				"MoveSpeedGain"             "20"
-				"BountyGain"                "2000"
+				"BountyGain"                "5000"
 			}
 		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
@@ -1638,17 +1638,17 @@
 			"ArmorPhysical"         		"20"
 			"MagicalResistance"     		"20"
 			"MovementSpeed"         		"500"
-			"BountyGoldMin"         		"3000"
-			"BountyGoldMax"         		"3000"
+			"BountyGoldMin"         		"3500"
+			"BountyGoldMax"         		"3500"
 			"Creature"
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "50000"
+				"HPGain"                    "70000"
 				"ArmorGain"                 "15"
 				"MagicResistGain"           "15"
 				"MoveSpeedGain"             "10"
-				"BountyGain"                "2500"
+				"BountyGain"                "5000"
 			}
 		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
@@ -1730,7 +1730,7 @@
 			"Model"                 		"models/items/courier/virtus_werebear_t3/virtus_werebear_t3.vmdl"
 			"ModelScale"               		"1.5"
 	
-			"StatusHealth"          		"5250"
+			"StatusHealth"          		"5500"
 			"ArmorPhysical"         		"3"
 			"MagicalResistance"     		"3"
 			"MovementSpeed"         		"500"
@@ -1775,7 +1775,7 @@
 			"Model"                 		"models/items/courier/vigilante_fox_green/vigilante_fox_green.vmdl"
 			"ModelScale"               		"1.5"
 	
-			"StatusHealth"          		"5500"
+			"StatusHealth"          		"6000"
 			"ArmorPhysical"         		"3"
 			"MagicalResistance"     		"3"
 			"MovementSpeed"         		"500"
@@ -1820,7 +1820,7 @@
 			"Model"                 		"models/items/courier/vigilante_fox_red/vigilante_fox_red.vmdl"
 			"ModelScale"               		"1.5"
 	
-			"StatusHealth"          		"6000"
+			"StatusHealth"          		"6500"
 			"ArmorPhysical"         		"3"
 			"MagicalResistance"     		"3"
 			"MovementSpeed"         		"500"
@@ -1869,17 +1869,17 @@
 			"ArmorPhysical"         		"25"
 			"MagicalResistance"     		"25"
 			"MovementSpeed"         		"400"
-			"BountyGoldMin"         		"3500"
-			"BountyGoldMax"         		"3500"
+			"BountyGoldMin"         		"4000"
+			"BountyGoldMax"         		"4000"
 			"Creature"
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "60000"
+				"HPGain"                    "80000"
 				"ArmorGain"                 "25"
 				"MagicResistGain"           "25"
 				"MoveSpeedGain"             "20"
-				"BountyGain"                "2000"
+				"BountyGain"                "5000"
 			}
 		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
@@ -1917,7 +1917,7 @@
 			"Model"                 		"models/items/courier/white_the_crystal_courier/white_the_crystal_courier.vmdl"
 			"ModelScale"               		"1.5"
 	
-			"StatusHealth"          		"6250"
+			"StatusHealth"          		"7000"
 			"ArmorPhysical"         		"4"
 			"MagicalResistance"     		"4"
 			"MovementSpeed"         		"500"
@@ -1962,7 +1962,7 @@
 			"Model"                 		"models/items/courier/teron/teron.vmdl"
 			"ModelScale"               		"1.5"
 	
-			"StatusHealth"          		"6500"
+			"StatusHealth"          		"7500"
 			"ArmorPhysical"         		"4"
 			"MagicalResistance"     		"4"
 			"MovementSpeed"         		"500"
@@ -2007,7 +2007,7 @@
 			"Model"                 		"models/items/courier/pangolier_squire/pangolier_squire.vmdl"
 			"ModelScale"               		"1"
 	
-			"StatusHealth"          		"6750"
+			"StatusHealth"          		"8000"
 			"ArmorPhysical"         		"4"
 			"MagicalResistance"     		"4"
 			"MovementSpeed"         		"500"
@@ -2052,7 +2052,7 @@
 			"Model"                 		"models/items/courier/ig_dragon/ig_dragon.vmdl"
 			"ModelScale"               		"1.5"
 	
-			"StatusHealth"          		"7000"
+			"StatusHealth"          		"8500"
 			"ArmorPhysical"         		"4"
 			"MagicalResistance"     		"4"
 			"MovementSpeed"         		"500"
@@ -2107,11 +2107,11 @@
 			{
 				//Level Up Parameters
 				//-----------------------------------------------------------------
-				"HPGain"                    "50000"
+				"HPGain"                    "90000"
 				"ArmorGain"                 "30"
 				"MagicResistGain"           "30"
 				"MoveSpeedGain"             "20"
-				"BountyGain"                "3000"
+				"BountyGain"                "5000"
 			}
 		//============================================================
 		"SoundSet"              		"Creep_Good_Melee"
@@ -2148,7 +2148,7 @@
 			"Model"                 		"models/items/courier/defense4_dire/defense4_dire.vmdl"
 			"ModelScale"               		"1.5"
 	
-			"StatusHealth"          		"7250"
+			"StatusHealth"          		"9000"
 			"ArmorPhysical"         		"4"
 			"MagicalResistance"     		"4"
 			"MovementSpeed"         		"500"
@@ -2193,7 +2193,7 @@
 			"Model"                 		"models/items/courier/bucktooth_jerry/bucktooth_jerry.vmdl"
 			"ModelScale"               		"1.5"
 	
-			"StatusHealth"          		"7500"
+			"StatusHealth"          		"9500"
 			"ArmorPhysical"         		"4"
 			"MagicalResistance"     		"4"
 			"MovementSpeed"         		"500"
@@ -2238,7 +2238,7 @@
 			"Model"                 		"models/items/courier/babka_bewitcher/babka_bewitcher.vmdl"
 			"ModelScale"               		"1.5"
 	
-			"StatusHealth"          		"7750"
+			"StatusHealth"          		"10000"
 			"ArmorPhysical"         		"5"
 			"MagicalResistance"     		"5"
 			"MovementSpeed"         		"500"
@@ -2283,7 +2283,7 @@
 			"Model"                 		"models/courier/baby_rosh/babyroshan.vmdl"
 			"ModelScale"               		"1.5"
 	
-			"StatusHealth"          		"8000"
+			"StatusHealth"          		"10500"
 			"ArmorPhysical"         		"5"
 			"MagicalResistance"     		"5"
 			"MovementSpeed"         		"500"
@@ -2466,9 +2466,9 @@
 
 		// Stats
 		//----------------------------- 
-		"AttackDamageMin"           "50"
-		"AttackDamageMax"           "50"
-		"Damage"                    "50"  
+		"AttackDamageMin"           "70"
+		"AttackDamageMax"           "70"
+		"Damage"                    "70"  
 		"AttackRange"               "800"
 		"AttackAcquisitionRange"    "800"
 		"AttackRate"                "1.5"
@@ -2542,12 +2542,12 @@
 
 		// Stats
 		//----------------------------- 
-		"AttackDamageMin"           "65"
-		"AttackDamageMax"           "65"
-		"Damage"                    "65" 
+		"AttackDamageMin"           "50"
+		"AttackDamageMax"           "50"
+		"Damage"                    "50" 
 		"AttackRange"               "800"
 		"AttackAcquisitionRange"    "800"
-		"AttackRate"                "1"
+		"AttackRate"                "1.5"
 		"AttackAnimationPoint"      "0.5"
 		"ProjectileSpeed"           "2000"
 		"ProjectileModel"           "particles/econ/world/towers/rock_golem/radiant_rock_golem_attack.vpcf"
