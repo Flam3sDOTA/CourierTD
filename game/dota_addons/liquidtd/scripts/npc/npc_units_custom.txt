@@ -2377,15 +2377,16 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/props_structures/dire_tower002.vmdl"
-		"ModelScale"                "0.7"
+		"ModelScale"                "0.6"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
-		"PedestalModelScale"        "0.4"
+		"PedestalModel"             "models/props_teams/logo_teams_tintable.vmdl"
+		"PedestalModelScale"        "0.5"
 		"PedestalOffset"            "5"
 		"ProjectileModel"           "particles/tower_effects/arrow_tower_base_attack.vpcf"
 		"SoundSet"                  "Hero_Mirana"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_mirana.vsndevts"
 
 		// Stats
@@ -2441,7 +2442,7 @@
 		"Ability5"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"	
 	}
 	
@@ -2453,15 +2454,16 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/undying/undying_tower.vmdl"
-		"ModelScale"                "0.8"
+		"ModelScale"                "0.6"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
-		"PedestalModelScale"        "0.4"
+		"PedestalModel"             "models/props_teams/logo_teams_tintable.vmdl"
+		"PedestalModelScale"        "0.5"
 		"PedestalOffset"            "4"
 		"ProjectileModel"           "particles/econ/items/viper/viper_ti7_immortal/viper_poison_attack_ti7.vpcf"
 		"SoundSet"                  "Hero_Viper"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_viper.vsndevts"
 
 		// Stats
@@ -2518,7 +2520,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 	}
 	
@@ -2533,11 +2535,12 @@
 		"ModelScale"                "0.7"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
-		"PedestalModelScale"        "0.4"
+		"PedestalModel"             "models/props_teams/logo_teams_tintable.vmdl"
+		"PedestalModelScale"        "0.5"
 		"PedestalOffset"            "5"
 		"SoundSet"                  "Hero_ancient_apparition"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_ancient_apparition.vsndevts"
 
 		// Stats
@@ -2595,7 +2598,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 	}
 	
@@ -2607,14 +2610,15 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/lina/lina.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "0.9"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
-		"PedestalModelScale"        "0.3"
+		"PedestalModel"             "models/props_teams/logo_teams_tintable.vmdl"
+		"PedestalModelScale"        "0.5"
 		"PedestalOffset"            "5"
 		"SoundSet"                  "Hero_Lina"
-		"MinimapIconSize"           ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_lina.vsndevts"
 		"vscripts"                  "ai/lina.lua"
 
@@ -2676,7 +2680,7 @@
 		"Ability8"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -2698,14 +2702,15 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/lina/lina.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "0.9"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
-		"PedestalModelScale"        "0.3"
+		"PedestalModel"             "models/props_teams/logo_teams_tintable.vmdl"
+		"PedestalModelScale"        "0.5"
 		"PedestalOffset"            "5"
 		"SoundSet"                  "Hero_Lina"
-		"MinimapIconSize"           ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_lina.vsndevts"
 		"vscripts"                  "ai/lina.lua"
 
@@ -2767,7 +2772,7 @@
 		"Ability8"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -2789,14 +2794,15 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/lion/lion.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "0.7"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
-		"PedestalModelScale"        "0.3"
+		"PedestalModel"             "models/props_teams/logo_teams_tintable.vmdl"
+		"PedestalModelScale"        "0.5"
 		"PedestalOffset"            "5"
 		"SoundSet"                  "Hero_Lion"
-		"MinimapIconSize"           ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_lion.vsndevts"
 		"vscripts"                  "ai/lion.lua"
 
@@ -2854,7 +2860,7 @@
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -2877,14 +2883,15 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/lion/lion.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "0.7"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_teams/logo_teams_tintable.vmdl"
+		"PedestalModelScale"        "0.5"
 		"PedestalOffset"            "4"
 		"SoundSet"                  "Hero_Lion"
-		"MinimapIconSize"           ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_lion.vsndevts"
 		"vscripts"                  "ai/lion.lua"
 
@@ -2942,7 +2949,7 @@
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -2965,14 +2972,15 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/lion/lion.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "0.7"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_teams/logo_teams_tintable.vmdl"
+		"PedestalModelScale"        "0.5"
 		"PedestalOffset"            "4"
 		"SoundSet"                  "Hero_Lion"
-		"MinimapIconSize"           ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_lion.vsndevts"
 		"vscripts"                  "ai/lion.lua"
 
@@ -3030,7 +3038,7 @@
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -3053,14 +3061,15 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/shadowshaman/shadowshaman.vmdl"
-		"ModelScale"                "1.2"
+		"ModelScale"                "0.8"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
-		"PedestalModelScale"        "0.3"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "5"
 		"SoundSet"                  "Hero_ShadowShaman"
-		"MinimapIconSize"           ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_shadowshaman.vsndevts"
 		"vscripts"                  "ai/shaman.lua"
 
@@ -3118,7 +3127,7 @@
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -3142,14 +3151,15 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/shadowshaman/shadowshaman.vmdl"
-		"ModelScale"                "1.2"
+		"ModelScale"                "0.8"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"SoundSet"                  "Hero_ShadowShaman"
-		"MinimapIconSize"           ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_shadowshaman.vsndevts"
 		"vscripts"                  "ai/shaman.lua"
 
@@ -3207,7 +3217,7 @@
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -3231,14 +3241,15 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/shadowshaman/shadowshaman.vmdl"
-		"ModelScale"                "1.2"
+		"ModelScale"                "0.8"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"SoundSet"                  "Hero_ShadowShaman"
-		"MinimapIconSize"           ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_shadowshaman.vsndevts"
 		"vscripts"                  "ai/shaman.lua"
 
@@ -3296,7 +3307,7 @@
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -3320,14 +3331,15 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/meepo/meepo.vmdl"
-		"ModelScale"                "1.2"
+		"ModelScale"                "1"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
-		"PedestalModelScale"        "0.3"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "5"
 		"SoundSet"                  ""
-		"MinimapIconSize"           ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		""
 		"vscripts"                  "ai/meepo.lua"
 
@@ -3385,7 +3397,7 @@
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -3409,14 +3421,15 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/meepo/meepo.vmdl"
-		"ModelScale"                "1.2"
+		"ModelScale"                "1"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"SoundSet"                  ""
-		"MinimapIconSize"           ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		""
 		"vscripts"                  "ai/meepo.lua"
 
@@ -3474,7 +3487,7 @@
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -3498,14 +3511,15 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/meepo/meepo.vmdl"
-		"ModelScale"                "1.2"
+		"ModelScale"                "1"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"SoundSet"                  ""
-		"MinimapIconSize"           ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		""
 		"vscripts"                  "ai/meepo.lua"
 
@@ -3563,7 +3577,7 @@
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -3587,14 +3601,15 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/gyro/gyro.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "0.7"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
-		"PedestalModelScale"        "0.3"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "5"
 		"SoundSet"                  "Hero_Gyrocopter"
-		"MinimapIconSize"           ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_gyrocopter.vsndevts"
 		"vscripts"                  "ai/gyro.lua"	
 
@@ -3652,7 +3667,7 @@
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -3677,14 +3692,15 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/gyro/gyro.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "0.7"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"SoundSet"                  ""
-		"MinimapIconSize"           ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		""
 		"vscripts"                  "ai/gyro.lua"
 
@@ -3742,7 +3758,7 @@
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -3767,14 +3783,15 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/gyro/gyro.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "0.7"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"SoundSet"                  ""
-		"MinimapIconSize"           ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		""
 		"vscripts"                  "ai/gyro.lua"
 
@@ -3832,7 +3849,7 @@
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -3857,14 +3874,15 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/sven/sven.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "0.9"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
-		"PedestalModelScale"        "0.3"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "5"
 		"SoundSet"                  ""
-		"MinimapIconSize"           ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		""
 		"vscripts"                  "ai/sven.lua"
 
@@ -3922,7 +3940,7 @@
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -3946,14 +3964,15 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/sven/sven.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "0.9"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"SoundSet"                  ""
-		"MinimapIconSize"           ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		""
 		"vscripts"                  "ai/sven.lua"
 
@@ -4011,7 +4030,7 @@
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -4035,14 +4054,15 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/sven/sven.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "0.9"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"SoundSet"                  ""
-		"MinimapIconSize"           ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		""
 		"vscripts"                  "ai/sven.lua"
 
@@ -4100,7 +4120,7 @@
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -4125,14 +4145,15 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/abyssal_underlord/abyssal_underlord_v2.vmdl"
-		"ModelScale"                "0.8"
+		"ModelScale"                "0.6"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
-		"PedestalModelScale"        "0.3"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "5"
 		"SoundSet"                  ""
-		"MinimapIconSize"           ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		""
 		"vscripts"                  "ai/underlord.lua"
 
@@ -4190,7 +4211,7 @@
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -4213,14 +4234,15 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/abyssal_underlord/abyssal_underlord_v2.vmdl"
-		"ModelScale"                "0.8"
+		"ModelScale"                "0.6"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"SoundSet"                  ""
-		"MinimapIconSize"           ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		""
 		"vscripts"                  "ai/underlord.lua"
 
@@ -4278,7 +4300,7 @@
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -4301,14 +4323,15 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/abyssal_underlord/abyssal_underlord_v2.vmdl"
-		"ModelScale"                "0.8"
+		"ModelScale"                "0.6"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"SoundSet"                  ""
-		"MinimapIconSize"           ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		""
 		"vscripts"                  "ai/underlord.lua"
 
@@ -4366,7 +4389,7 @@
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -4390,14 +4413,15 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/faceless_void/faceless_void.vmdl"
-		"ModelScale"                "1.1"
+		"ModelScale"                "0.8"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
-		"PedestalModelScale"        "0.3"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "5"
 		"SoundSet"                  ""
-		"MinimapIconSize"           ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		""
 		"vscripts"                  "ai/void.lua"
 
@@ -4455,7 +4479,7 @@
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -4478,14 +4502,15 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/faceless_void/faceless_void.vmdl"
-		"ModelScale"                "1.1"
+		"ModelScale"                "0.8"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"SoundSet"                  ""
-		"MinimapIconSize"           ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		""
 		"vscripts"                  "ai/void.lua"
 
@@ -4543,7 +4568,7 @@
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -4566,14 +4591,15 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/faceless_void/faceless_void.vmdl"
-		"ModelScale"                "1.1"
+		"ModelScale"                "0.8"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"SoundSet"                  ""
-		"MinimapIconSize"           ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		""
 		"vscripts"                  "ai/void.lua"
 
@@ -4631,7 +4657,7 @@
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -4654,14 +4680,15 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/enigma/enigma.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "0.6"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
-		"PedestalModelScale"        "0.3"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "5"
 		"SoundSet"                  ""
-		"MinimapIconSize"           ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		""
 		"vscripts"                  "ai/enigma.lua"
 
@@ -4719,7 +4746,7 @@
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -4740,14 +4767,15 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/enigma/enigma.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "0.6"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"SoundSet"                  ""
-		"MinimapIconSize"           ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		""
 		"vscripts"                  "ai/enigma.lua"
 
@@ -4805,7 +4833,7 @@
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -4827,14 +4855,15 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/enigma/enigma.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "0.6"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"SoundSet"                  ""
-		"MinimapIconSize"           ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		""
 		"vscripts"                  "ai/enigma.lua"
 
@@ -4892,7 +4921,7 @@
 		"Ability4"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -4917,15 +4946,16 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/windrunner/windrunner.vmdl"
-		"ModelScale"                "1.4"
+		"ModelScale"                "1"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
-		"PedestalModelScale"        "0.3"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "5"
 		"ProjectileModel"           "particles/tower_effects/tower_windranger_1_base_attack.vpcf"
 		"SoundSet"                  "Hero_Windrunner"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
 		"vscripts"                  "ai/windranger.lua"
 
@@ -4982,7 +5012,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -5016,15 +5046,16 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/windrunner/windrunner.vmdl"
-		"ModelScale"                "1.4"
+		"ModelScale"                "1"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"ProjectileModel"           "particles/tower_effects/tower_windranger_2_base_attack.vpcf"
 		"SoundSet"                  "Hero_Windrunner"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
 		"vscripts"                  "ai/windranger.lua"
 		
@@ -5082,7 +5113,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -5116,15 +5147,16 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/windrunner/windrunner.vmdl"
-		"ModelScale"                "1.4"
+		"ModelScale"                "1"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"ProjectileModel"           "particles/tower_effects/tower_windranger_3_base_attack.vpcf"
 		"SoundSet"                  "Hero_Windrunner"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
 		"vscripts"                  "ai/windranger.lua"
 		
@@ -5182,7 +5214,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -5217,16 +5249,17 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/drow/drow_base.vmdl"
-		"ModelScale"                "1.4"
+		"ModelScale"                "1"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
-		"PedestalModelScale"        "0.3"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "5"
 		"ProjectileModel"           "particles/units/heroes/hero_drow/drow_base_attack.vpcf"
 		"ProjectileSpeed"           "2500"
 		"SoundSet"                  "Hero_DrowRanger"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_drowranger.vsndevts"
 		
 
@@ -5279,7 +5312,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -5315,16 +5348,17 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/drow/drow_base.vmdl"
-		"ModelScale"                "1.4"
+		"ModelScale"                "1"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"ProjectileModel"           "particles/units/heroes/hero_drow/drow_base_attack.vpcf"
 		"ProjectileSpeed"           "2500"
 		"SoundSet"                  "Hero_DrowRanger"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_drowranger.vsndevts"
 		
 		// Stats
@@ -5377,7 +5411,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -5413,16 +5447,17 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/drow/drow_base.vmdl"
-		"ModelScale"                "1.4"
+		"ModelScale"                "1"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"ProjectileModel"           "particles/units/heroes/hero_drow/drow_base_attack.vpcf"
 		"ProjectileSpeed"           "2500"
 		"SoundSet"                  "Hero_DrowRanger"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_drowranger.vsndevts"
 		
 
@@ -5475,7 +5510,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -5511,15 +5546,16 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/mirana/mirana.vmdl"
-		"ModelScale"                "1.1"
+		"ModelScale"                "0.7"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
-		"PedestalModelScale"        "0.3"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "5"
 		"ProjectileModel"           "particles/tower_effects/tower_mirana_1_base_attack.vpcf"
 		"SoundSet"					"Hero_Mirana"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_mirana.vsndevts"
 		"vscripts"         			"ai/mirana.lua"
 		
@@ -5578,7 +5614,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -5614,15 +5650,16 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/mirana/mirana.vmdl"
-		"ModelScale"                "1.1"
+		"ModelScale"                "0.7"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"ProjectileModel"           "particles/tower_effects/tower_mirana_2_base_attack.vpcf"
 		"SoundSet"                  "Hero_Mirana"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_mirana.vsndevts"
 		"vscripts"         			"ai/mirana.lua"
 		
@@ -5681,7 +5718,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -5717,15 +5754,16 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/mirana/mirana.vmdl"
-		"ModelScale"                "1.1"
+		"ModelScale"                "0.7"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"ProjectileModel"           "particles/tower_effects/tower_mirana_3_base_attack.vpcf"
 		"SoundSet"                  "Hero_Mirana"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_mirana.vsndevts"
 		"vscripts"         			"ai/mirana.lua"
 		
@@ -5784,7 +5822,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -5820,15 +5858,16 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/furion/furion.vmdl"
-		"ModelScale"                "1.1"
+		"ModelScale"                "0.8"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
-		"PedestalModelScale"        "0.3"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "5"
 		"ProjectileModel"           "particles/units/heroes/hero_furion/furion_base_attack.vpcf"
 		"SoundSet"                  "Hero_Furion"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_furion.vsndevts"
 		"vscripts"         			"ai/furion.lua"
 		
@@ -5887,7 +5926,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -5923,15 +5962,16 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/furion/furion.vmdl"
-		"ModelScale"                "1.1"
+		"ModelScale"                "0.8"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"ProjectileModel"           "particles/units/heroes/hero_furion/furion_base_attack.vpcf"
 		"SoundSet"                  "Hero_Furion"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_furion.vsndevts"
 		"vscripts"         			"ai/furion.lua"
 		
@@ -5989,7 +6029,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -6024,15 +6064,16 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/furion/furion.vmdl"
-		"ModelScale"                "1.1"
+		"ModelScale"                "0.8"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"ProjectileModel"           "particles/units/heroes/hero_furion/furion_base_attack.vpcf"
 		"SoundSet"                  "Hero_Furion"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_furion.vsndevts"
 		"vscripts"         			"ai/furion.lua"
 		
@@ -6090,7 +6131,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -6125,15 +6166,16 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/venomancer/venomancer.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "0.6"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
-		"PedestalModelScale"        "0.3"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "5"
 		"ProjectileModel"           "particles/units/heroes/hero_venomancer/venomancer_base_attack.vpcf"
 		"SoundSet"                  "Hero_Venomancer"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_venomancer.vsndevts"
 		"vscripts"         			"ai/venomancer.lua"
 		
@@ -6192,7 +6234,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -6226,15 +6268,16 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/venomancer/venomancer.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "0.6"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"ProjectileModel"           "particles/units/heroes/hero_venomancer/venomancer_base_attack.vpcf"
 		"SoundSet"                  "Hero_Venomancer"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_venomancer.vsndevts"
 		"vscripts"         			"ai/venomancer.lua"
 		
@@ -6293,7 +6336,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -6326,15 +6369,16 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/venomancer/venomancer.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "0.6"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"ProjectileModel"           "particles/units/heroes/hero_venomancer/venomancer_base_attack.vpcf"
 		"SoundSet"                  "Hero_Venomancer"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_venomancer.vsndevts"
 		"vscripts"         			"ai/venomancer.lua"
 		
@@ -6392,7 +6436,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -6425,15 +6469,16 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/viper/viper.vmdl"
-		"ModelScale"                "0.7"
+		"ModelScale"                "0.5"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
-		"PedestalModelScale"        "0.3"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "5"
 		"ProjectileModel"           "particles/units/heroes/hero_viper/viper_base_attack.vpcf"
 		"SoundSet"                  "Hero_Viper"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_viper.vsndevts"
 		"vscripts"         			"ai/viper.lua"
 		
@@ -6491,7 +6536,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -6524,15 +6569,16 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/viper/viper.vmdl"
-		"ModelScale"                "0.7"
+		"ModelScale"                "0.5"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"ProjectileModel"           "particles/econ/items/viper/viper_ti7_immortal/viper_poison_attack_ti7.vpcf"
 		"SoundSet"                  "Hero_Viper"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_viper.vsndevts"
 		"vscripts"         			"ai/viper.lua"
 		
@@ -6590,7 +6636,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -6623,15 +6669,16 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/viper/viper.vmdl"
-		"ModelScale"                "0.7"
+		"ModelScale"                "0.5"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"ProjectileModel"           "particles/econ/items/viper/viper_ti7_immortal/viper_poison_crimson_attack_ti7.vpcf"
 		"SoundSet"                  "Hero_Viper"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_Viper.vsndevts"
 		"vscripts"         			"ai/viper.lua"
 		
@@ -6689,7 +6736,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -6722,15 +6769,16 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/crystal_maiden/crystal_maiden.vmdl"
-		"ModelScale"                "1.2"
+		"ModelScale"                "0.8"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
-		"PedestalModelScale"        "0.3"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "5"
 		"ProjectileModel"           "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 		"SoundSet"                  "hero_Crystal"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
 
 		// Stats
@@ -6785,7 +6833,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -6820,15 +6868,16 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/crystal_maiden/crystal_maiden.vmdl"
-		"ModelScale"                "1.2"
+		"ModelScale"                "0.8"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"ProjectileModel"           "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 		"SoundSet"                  "hero_Crystal"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
 
 		// Stats
@@ -6883,7 +6932,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -6918,15 +6967,16 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/crystal_maiden/crystal_maiden.vmdl"
-		"ModelScale"                "1.2"
+		"ModelScale"                "0.8"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"ProjectileModel"           "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 		"SoundSet"                  "hero_Crystal"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
 
 		// Stats
@@ -6982,7 +7032,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -7017,15 +7067,16 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/keeper_of_the_light/keeper_of_the_light.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "0.7"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
-		"PedestalModelScale"        "0.3"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "5"
 		"ProjectileModel"           "particles/units/heroes/hero_keeper_of_the_light/keeper_base_attack.vpcf"
 		"SoundSet"                  "Hero_KeeperOfTheLight"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_morphling.vsndevts"
 		"vscripts"         			"ai/kotl.lua"
 		
@@ -7084,7 +7135,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -7119,15 +7170,16 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/keeper_of_the_light/keeper_of_the_light.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "0.7"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"ProjectileModel"           "particles/units/heroes/hero_keeper_of_the_light/keeper_base_attack.vpcf"
 		"SoundSet"                  "Hero_KeeperOfTheLight"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_morphling.vsndevts"
 		"vscripts"         			"ai/kotl.lua"
 		
@@ -7185,7 +7237,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -7219,15 +7271,16 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/keeper_of_the_light/keeper_of_the_light.vmdl"
-		"ModelScale"                "1"
+		"ModelScale"                "0.7"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"ProjectileModel"           "particles/units/heroes/hero_keeper_of_the_light/keeper_base_attack.vpcf"
 		"SoundSet"                  "Hero_KeeperOfTheLight"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_morphling.vsndevts"
 		"vscripts"         			"ai/kotl.lua"
 		
@@ -7285,7 +7338,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -7319,15 +7372,16 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/vengeful/vengeful.vmdl"
-		"ModelScale"                "1.4"
+		"ModelScale"                "0.9"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
 		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
-		"PedestalModelScale"        "0.3"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "5"
 		"ProjectileModel"           "particles/econ/items/crystal_maiden/ti7_immortal_shoulder/cm_ti7_immortal_base_attack.vpcf"
 		"SoundSet"                  "Hero_VengefulSpirit"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_vengefulspirit.vsndevts"
 
 		// Stats
@@ -7383,7 +7437,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -7417,15 +7471,16 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/vengeful/vengeful.vmdl"
-		"ModelScale"                "1.4"
+		"ModelScale"                "0.9"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/effigy_pedestal_ti5.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"ProjectileModel"           "particles/econ/items/crystal_maiden/ti7_immortal_shoulder/cm_ti7_immortal_base_attack.vpcf"
 		"SoundSet"                  "Hero_VengefulSpirit"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_vengefulspirit.vsndevts"
 
 		// Stats
@@ -7481,7 +7536,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{
@@ -7515,15 +7570,16 @@
 		// Visual
 		//-----------------------------
 		"Model"                     "models/heroes/vengeful/vengeful.vmdl"
-		"ModelScale"                "1.4"
+		"ModelScale"                "0.9"
 		"ModelRotation"             "180"
 		"ModelOffset"               "1"
-		"PedestalModel"             "models/heroes/pedestal/mesh/effigy_pedestal_ti6_model.vmdl"
-		"PedestalModelScale"        "1.5"
+		"PedestalModel"             "models/props_structures/stone_trim/stone_trim_00.vmdl"
+		"PedestalModelScale"        "0.2"
 		"PedestalOffset"            "4"
 		"ProjectileModel"           "particles/econ/items/crystal_maiden/ti7_immortal_shoulder/cm_ti7_immortal_base_attack.vpcf"
 		"SoundSet"                  "Hero_VengefulSpirit"
-		"MinimapIconSize"           "10"
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_vengefulspirit.vsndevts"
 		
 		// Stats
@@ -7579,7 +7635,7 @@
 		"Ability6"					"tower_invulnerable"
 
 		// Building Size
-		"ConstructionSize"          "4"
+		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 		"Creature"
 		{

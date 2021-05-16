@@ -120,7 +120,7 @@
     flow-children: down;
     overflow: clip scroll;
 	border-radius: 10px;
-	margin-bottom: -50px;
+	margin-bottom: -215px;
 }
 
 #ShuffleTeamAssignmentButton
@@ -810,17 +810,18 @@ DOTAAvatarImage {
 
 #PlayerIsHostPanel
 {   
-    background-image: url( "file://{images}/icon_star.png");
+    background-image: url( "file://{images}/custom_game/icons/host.png");
     background-repeat: no-repeat;
     background-size: contain;
     overflow: noclip;
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     visibility: collapse;
-    margin-top: 2px;
+    margin-top: 7px;
     margin-right: 4px;
-    margin-left: 4px;
+    margin-left: 8px;
     visibility: collapse;
+	wash-color: gold;
 }
 
 .TeamSelectPlayer.player_has_host_privileges #PlayerIsHostPanel
@@ -836,7 +837,7 @@ DOTAAvatarImage {
     text-shadow: 2px 2px 2px black;
     width: fill-parent-flow( 1 );
 	white-space: nowrap;
-	margin-top: 6px;
+	margin-top: 5px;
 }
 
 #PlayerLeaveTeamButton 

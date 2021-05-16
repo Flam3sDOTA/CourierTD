@@ -7,7 +7,7 @@ function chest_open(keys)
 	if keys.gold >0 then
 		gold = keys.gold_amt + math.random(-(keys.gold_rand),(keys.gold_rand))
 	end
-	caster:RemoveItem(item)--Here we remove the chest
+	caster:RemoveItem(item) --Here we remove the chest
 	local chest_name = keys.chest_name
 
 	item_list = item_list[chest_name] --Here we load the item list specific to this chest

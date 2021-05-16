@@ -41,7 +41,7 @@ function Build( event )
         hero:ModifyGold(-gold_cost, false, 0)
 
         -- Play a sound
-        EmitSoundOnClient("DOTA_Item.ObserverWard.Activate", PlayerResource:GetPlayer(playerID))
+        EmitSoundOnClient("Damage.Building", PlayerResource:GetPlayer(playerID))
     end)
 
     -- The construction failed and was never confirmed due to the gridnav being blocked in the attempted area

@@ -1,8 +1,8 @@
 local wave_table = require("waves/wave_tables")
 
 local CURRENT_WAVE = 0
-local TIME_BETWEEN_ROUNDS = 20
-local TIME_BEFORE_FIRST_ROUND = 60
+local TIME_BETWEEN_ROUNDS = 15
+local TIME_BEFORE_FIRST_ROUND = 10
 local NUM_ROUNDS = TableCount(wave_table)
 
 function StartSpawning()
@@ -121,9 +121,6 @@ function SpawnWave(hero, waveData, ascension)
 		ParticleManager:SetParticleControl(particle, 3, creep:GetOrigin())
 	elseif round_type == "Normal" then
 		creep.leakDamage = 1
-		local particle = ParticleManager:CreateParticle( "particles/creep_effects/overhead_normal.vpcf", PATTACH_OVERHEAD_FOLLOW, creep)
-		ParticleManager:SetParticleControl(particle, 0, creep:GetOrigin())
-		ParticleManager:SetParticleControl(particle, 3, creep:GetOrigin())
 	elseif round_type == "Bonus" then
 		creep.leakDamage = 0
 		local particle = ParticleManager:CreateParticle( "particles/creep_effects/overhead_bonus.vpcf", PATTACH_OVERHEAD_FOLLOW, creep)

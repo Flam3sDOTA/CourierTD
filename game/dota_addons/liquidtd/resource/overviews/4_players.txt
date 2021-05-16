@@ -1,0 +1,8 @@
+4_players
+{
+	material materials/overviews/4_players.vmat
+	pos_x -6400
+	pos_y 6400
+	scale 12.500
+}
+

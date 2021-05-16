@@ -1,11 +1,11 @@
 "AddonInfo" {
-	"TeamCount"				"6"
-	"maps"					"normal"
+	"TeamCount"				"4"
+	"maps"					"4_players"
 	"IsPlayable"				"1"
 	"PenaltiesEnabled"			"0"
 	"HeroGuidesSupported"			"0"
 	"normal" 
 	{ 
-		"MaxPlayers" 			"6" 
+		"MaxPlayers" 			"4" 
 	}
 }
