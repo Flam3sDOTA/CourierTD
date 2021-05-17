@@ -18,6 +18,18 @@ function KotlThink()
     if ChakraMagic ~= nil and ChakraMagic:IsFullyCastable() then
         CastChakraMagic()
     end
+	
+	if thisEntity:GetAttackTarget() == nil and not ChakraMagic:IsFullyCastable() then
+		local enemies = FindUnitsInRadius( thisEntity:GetTeamNumber(), thisEntity:GetOrigin(), thisEntity, 800, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_ALL, DOTA_UNIT_TARGET_FLAG_NONE, FIND_CLOSEST, false )
+		if #enemies > 0 then
+			ExecuteOrderFromTable({
+				UnitIndex = thisEntity:entindex(),
+				OrderType = DOTA_UNIT_ORDER_ATTACK_TARGET,
+				AbilityIndex = nil,
+				TargetIndex = enemies[1]:entindex(),
+			})
+		end
+	end
     
     return .1
 end

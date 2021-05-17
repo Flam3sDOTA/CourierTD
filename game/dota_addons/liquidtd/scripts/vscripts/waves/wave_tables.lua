@@ -4,7 +4,7 @@ return {
 		round_number = "01",
 		round_type = "Normal",
 		unit_name = "unit_wave1",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 
@@ -13,7 +13,7 @@ return {
 		round_number = "02",
 		round_type = "Normal",
 		unit_name = "unit_wave2",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 
@@ -22,7 +22,7 @@ return {
 		round_number = "03",
 		round_type = "Normal",
 		unit_name = "unit_wave3",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 
@@ -31,7 +31,7 @@ return {
 		round_number = "04",
 		round_type = "Normal",
 		unit_name = "unit_wave4",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 
@@ -49,7 +49,7 @@ return {
 		round_number = "06",
 		round_type = "Normal",
 		unit_name = "unit_wave6",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 
@@ -58,7 +58,7 @@ return {
 		round_number = "07",
 		round_type = "Normal",
 		unit_name = "unit_wave7",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 
@@ -67,7 +67,7 @@ return {
 		round_number = "08",
 		round_type = "Normal",
 		unit_name = "unit_wave8",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 
@@ -76,7 +76,7 @@ return {
 		round_number = "09",
 		round_type = "Normal",
 		unit_name = "unit_wave9",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 
@@ -94,7 +94,7 @@ return {
 		round_number = "11",
 		round_type = "Normal",
 		unit_name = "unit_wave11",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -103,7 +103,7 @@ return {
 		round_number = "12",
 		round_type = "Normal",
 		unit_name = "unit_wave12",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -112,7 +112,7 @@ return {
 		round_number = "13",
 		round_type = "Normal",
 		unit_name = "unit_wave13",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -121,7 +121,7 @@ return {
 		round_number = "14",
 		round_type = "Normal",
 		unit_name = "unit_wave14",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -139,7 +139,7 @@ return {
 		round_number = "16",
 		round_type = "Normal",
 		unit_name = "unit_wave16",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -148,7 +148,7 @@ return {
 		round_number = "17",
 		round_type = "Normal",
 		unit_name = "unit_wave17",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -157,7 +157,7 @@ return {
 		round_number = "18",
 		round_type = "Normal",
 		unit_name = "unit_wave18",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -166,7 +166,7 @@ return {
 		round_number = "19",
 		round_type = "Normal",
 		unit_name = "unit_wave19",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -184,7 +184,7 @@ return {
 		round_number = "21",
 		round_type = "Normal",
 		unit_name = "unit_wave21",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -193,7 +193,7 @@ return {
 		round_number = "22",
 		round_type = "Normal",
 		unit_name = "unit_wave22",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -202,7 +202,7 @@ return {
 		round_number = "23",
 		round_type = "Normal",
 		unit_name = "unit_wave23",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -211,7 +211,7 @@ return {
 		round_number = "24",
 		round_type = "Normal",
 		unit_name = "unit_wave24",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -229,7 +229,7 @@ return {
 		round_number = "26",
 		round_type = "Normal",
 		unit_name = "unit_wave26",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -238,7 +238,7 @@ return {
 		round_number = "27",
 		round_type = "Normal",
 		unit_name = "unit_wave27",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -247,7 +247,7 @@ return {
 		round_number = "28",
 		round_type = "Normal",
 		unit_name = "unit_wave28",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -256,7 +256,7 @@ return {
 		round_number = "29",
 		round_type = "Normal",
 		unit_name = "unit_wave29",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -274,7 +274,7 @@ return {
 		round_number = "31",
 		round_type = "Normal",
 		unit_name = "unit_wave31",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -283,7 +283,7 @@ return {
 		round_number = "32",
 		round_type = "Normal",
 		unit_name = "unit_wave32",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -292,7 +292,7 @@ return {
 		round_number = "33",
 		round_type = "Normal",
 		unit_name = "unit_wave33",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -301,7 +301,7 @@ return {
 		round_number = "34",
 		round_type = "Normal",
 		unit_name = "unit_wave34",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -319,7 +319,7 @@ return {
 		round_number = "36",
 		round_type = "Normal",
 		unit_name = "unit_wave36",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -328,7 +328,7 @@ return {
 		round_number = "37",
 		round_type = "Normal",
 		unit_name = "unit_wave37",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -337,7 +337,7 @@ return {
 		round_number = "38",
 		round_type = "Normal",
 		unit_name = "unit_wave38",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -346,7 +346,7 @@ return {
 		round_number = "39",
 		round_type = "Normal",
 		unit_name = "unit_wave39",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -364,7 +364,7 @@ return {
 		round_number = "41",
 		round_type = "Normal",
 		unit_name = "unit_wave41",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -373,7 +373,7 @@ return {
 		round_number = "42",
 		round_type = "Normal",
 		unit_name = "unit_wave42",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -382,7 +382,7 @@ return {
 		round_number = "43",
 		round_type = "Normal",
 		unit_name = "unit_wave43",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -391,7 +391,7 @@ return {
 		round_number = "44",
 		round_type = "Normal",
 		unit_name = "unit_wave44",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -409,7 +409,7 @@ return {
 		round_number = "46",
 		round_type = "Normal",
 		unit_name = "unit_wave46",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -418,7 +418,7 @@ return {
 		round_number = "47",
 		round_type = "Normal",
 		unit_name = "unit_wave47",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -427,7 +427,7 @@ return {
 		round_number = "48",
 		round_type = "Normal",
 		unit_name = "unit_wave48",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	
@@ -436,7 +436,7 @@ return {
 		round_number = "49",
 		round_type = "Normal",
 		unit_name = "unit_wave49",
-		wave_count = 32,
+		wave_count = 40,
 		spawn_interval = 0.6,
 	},
 	

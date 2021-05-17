@@ -18,7 +18,19 @@ function LinaThink()
     if LightStrikeArray ~= nil and LightStrikeArray:IsFullyCastable() then
         CastLightStrikeArray()
     end
-    
+	
+	if thisEntity:GetAttackTarget() == nil and not LightStrikeArray:IsFullyCastable() then
+		local enemies = FindUnitsInRadius( thisEntity:GetTeamNumber(), thisEntity:GetOrigin(), thisEntity, 1000, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_ALL, DOTA_UNIT_TARGET_FLAG_NONE, FIND_CLOSEST, false )
+		if #enemies > 0 then
+			ExecuteOrderFromTable({
+				UnitIndex = thisEntity:entindex(),
+				OrderType = DOTA_UNIT_ORDER_ATTACK_TARGET,
+				AbilityIndex = nil,
+				TargetIndex = enemies[1]:entindex(),
+			})
+		end
+	end
+	
     return .1
 end
 
