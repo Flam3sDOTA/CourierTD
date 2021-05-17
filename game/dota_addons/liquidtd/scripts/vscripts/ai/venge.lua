@@ -14,7 +14,7 @@ function VengeThink()
         return
     end
     
-	if thisEntity:GetAttackTarget() == nil then
+	if thisEntity:GetAttackTarget() == nil and not thisEntity:IsChanneling() then
 		local enemies = FindUnitsInRadius( thisEntity:GetTeamNumber(), thisEntity:GetOrigin(), thisEntity, 800, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_ALL, DOTA_UNIT_TARGET_FLAG_NONE, FIND_CLOSEST, false )
 		if #enemies > 0 then
 			ExecuteOrderFromTable({

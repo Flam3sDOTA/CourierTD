@@ -19,7 +19,7 @@ function EnigmaThink()
         CastBlackHole()
     end
 	
-	if thisEntity:GetAttackTarget() == nil and not BlackHole:IsFullyCastable() then
+	if thisEntity:GetAttackTarget() == nil and not BlackHole:IsFullyCastable() and not thisEntity:IsChanneling() then
 		local enemies = FindUnitsInRadius( thisEntity:GetTeamNumber(), thisEntity:GetOrigin(), thisEntity, 1000, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_ALL, DOTA_UNIT_TARGET_FLAG_NONE, FIND_CLOSEST, false )
 		if #enemies > 0 then
 			ExecuteOrderFromTable({
