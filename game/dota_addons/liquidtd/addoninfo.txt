@@ -4,7 +4,7 @@
 	"IsPlayable"				"1"
 	"PenaltiesEnabled"			"0"
 	"HeroGuidesSupported"			"0"
-	"normal" 
+	"4_players" 
 	{ 
 		"MaxPlayers" 			"4" 
 	}
