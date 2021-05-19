@@ -104,6 +104,7 @@
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityChannelTime"		"1"
+
 		"OnChannelSucceeded"
 		{
 			"RunScript"
@@ -314,7 +315,7 @@
 	"tower_upgrade_utility_lion_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToLion"
@@ -325,8 +326,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "250"
-		"AbilityChannelTime"			"5"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -362,7 +362,7 @@
 	"tower_upgrade_utility_lion_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToLion"
@@ -371,8 +371,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "500"
-		"AbilityChannelTime"			"6"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -408,7 +407,7 @@
 	"tower_upgrade_utility_lion_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToLion"
@@ -417,8 +416,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "750"
-		"AbilityChannelTime"			"7"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -454,7 +452,7 @@
 	"tower_upgrade_utility_shaman_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToShaman"
@@ -463,8 +461,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "450"
-		"AbilityChannelTime"			"5"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -500,7 +497,7 @@
 	"tower_upgrade_utility_shaman_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToShaman"
@@ -509,8 +506,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "700"
-		"AbilityChannelTime"			"6"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -546,7 +542,7 @@
 	"tower_upgrade_utility_shaman_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToShaman"
@@ -555,8 +551,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "950"
-		"AbilityChannelTime"			"7"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -592,7 +587,7 @@
 	"tower_upgrade_utility_meepo_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToMeepo"
@@ -601,8 +596,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "500"
-		"AbilityChannelTime"			"5"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -638,7 +632,7 @@
 	"tower_upgrade_utility_meepo_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToMeepo"
@@ -647,8 +641,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "750"
-		"AbilityChannelTime"			"6"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -684,7 +677,7 @@
 	"tower_upgrade_utility_meepo_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToMeepo"
@@ -693,8 +686,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1000"
-		"AbilityChannelTime"			"7"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -730,7 +722,7 @@
 	"tower_upgrade_utility_gyro_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToGyro"
@@ -739,8 +731,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "650"
-		"AbilityChannelTime"			"5"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -776,7 +767,7 @@
 	"tower_upgrade_utility_gyro_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToGyro"
@@ -785,8 +776,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "900"
-		"AbilityChannelTime"			"6"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -822,7 +812,7 @@
 	"tower_upgrade_utility_gyro_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToGyro"
@@ -831,8 +821,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1150"
-		"AbilityChannelTime"			"7"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -869,7 +858,7 @@
 	"tower_upgrade_utility_sven_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToSven"
@@ -878,8 +867,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "700"
-		"AbilityChannelTime"			"5"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -915,7 +903,7 @@
 	"tower_upgrade_utility_sven_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToSven"
@@ -924,8 +912,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "950"
-		"AbilityChannelTime"			"6"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -961,7 +948,7 @@
 	"tower_upgrade_utility_sven_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToSven"
@@ -970,8 +957,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1200"
-		"AbilityChannelTime"			"7"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -1007,7 +993,7 @@
 	"tower_upgrade_utility_underlord_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToUnderlord"
@@ -1016,8 +1002,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "750"
-		"AbilityChannelTime"			"5"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -1053,7 +1038,7 @@
 	"tower_upgrade_utility_underlord_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToUnderlord"
@@ -1062,8 +1047,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1000"
-		"AbilityChannelTime"			"6"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -1099,7 +1083,7 @@
 	"tower_upgrade_utility_underlord_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToUnderlord"
@@ -1108,8 +1092,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1250"
-		"AbilityChannelTime"			"7"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -1145,7 +1128,7 @@
 	"tower_upgrade_utility_void_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToVoid"
@@ -1154,8 +1137,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "800"
-		"AbilityChannelTime"			"5"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -1191,7 +1173,7 @@
 	"tower_upgrade_utility_void_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToVoid"
@@ -1200,8 +1182,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1050"
-		"AbilityChannelTime"			"6"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -1237,7 +1218,7 @@
 	"tower_upgrade_utility_void_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToVoid"
@@ -1246,8 +1227,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1300"
-		"AbilityChannelTime"			"7"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -1283,7 +1263,7 @@
 	"tower_upgrade_utility_enigma_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToEnigma"
@@ -1292,8 +1272,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "850"
-		"AbilityChannelTime"			"5"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -1329,7 +1308,7 @@
 	"tower_upgrade_utility_enigma_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToEnigma"
@@ -1338,8 +1317,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1100"
-		"AbilityChannelTime"			"6"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -1375,7 +1353,7 @@
 	"tower_upgrade_utility_enigma_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToEnigma"
@@ -1384,8 +1362,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1350"
-		"AbilityChannelTime"			"7"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -1474,7 +1451,7 @@
 	"upgrade_tower_wind_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToWindranger"
@@ -1483,8 +1460,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "250"
-		"AbilityChannelTime"			"3"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -1520,7 +1496,7 @@
 	"upgrade_tower_wind_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToWindranger"
@@ -1529,8 +1505,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "500"
-		"AbilityChannelTime"			"4"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -1566,7 +1541,7 @@
 	"upgrade_tower_wind_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToWindranger"
@@ -1575,8 +1550,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1000"
-		"AbilityChannelTime"			"5"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -1612,7 +1586,7 @@
 	"upgrade_tower_drow_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToDrow"
@@ -1621,8 +1595,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "190"
-		"AbilityChannelTime"			"3"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -1658,7 +1631,7 @@
 	"upgrade_tower_drow_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToDrow"
@@ -1667,8 +1640,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "450"
-		"AbilityChannelTime"			"4"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -1704,7 +1676,7 @@
 	"upgrade_tower_drow_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToDrow"
@@ -1713,8 +1685,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1000"
-		"AbilityChannelTime"			"5"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -1750,7 +1721,7 @@
 	"upgrade_tower_mirana_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToMirana"
@@ -1759,8 +1730,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "225"
-		"AbilityChannelTime"			"3"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -1796,7 +1766,7 @@
 	"upgrade_tower_mirana_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToMirana"
@@ -1805,8 +1775,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "475"
-		"AbilityChannelTime"			"4"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -1842,7 +1811,7 @@
 	"upgrade_tower_mirana_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToMirana"
@@ -1851,8 +1820,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1000"
-		"AbilityChannelTime"			"5"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -1889,7 +1857,7 @@
 	"upgrade_tower_furion_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToFurion"
@@ -1898,8 +1866,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "250"
-		"AbilityChannelTime"			"3"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -1935,7 +1902,7 @@
 	"upgrade_tower_furion_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToFurion"
@@ -1944,8 +1911,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "500"
-		"AbilityChannelTime"			"4"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -1981,7 +1947,7 @@
 	"upgrade_tower_furion_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToFurion"
@@ -1990,8 +1956,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1000"
-		"AbilityChannelTime"			"5"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -2027,7 +1992,7 @@
 	"upgrade_tower_venomancer_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToVenomancer"
@@ -2036,8 +2001,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "225"
-		"AbilityChannelTime"			"3"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -2073,7 +2037,7 @@
 	"upgrade_tower_venomancer_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToVenomancer"
@@ -2082,8 +2046,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "475"
-		"AbilityChannelTime"			"4"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -2119,7 +2082,7 @@
 	"upgrade_tower_venomancer_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToVenomancer"
@@ -2128,8 +2091,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1000"
-		"AbilityChannelTime"			"5"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -2165,7 +2127,7 @@
 	"upgrade_tower_viper_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToViper"
@@ -2174,8 +2136,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "210"
-		"AbilityChannelTime"			"3"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -2211,7 +2172,7 @@
 	"upgrade_tower_viper_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToViper"
@@ -2220,8 +2181,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "450"
-		"AbilityChannelTime"			"4"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -2257,7 +2217,7 @@
 	"upgrade_tower_viper_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToViper"
@@ -2266,8 +2226,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1000"
-		"AbilityChannelTime"			"5"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -2304,7 +2263,7 @@
 	"upgrade_tower_cm_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "upgradeToCM"
@@ -2313,8 +2272,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "250"
-		"AbilityChannelTime"			"3"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -2350,7 +2308,7 @@
 	"upgrade_tower_cm_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "upgradeToCM"
@@ -2359,8 +2317,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "500"
-		"AbilityChannelTime"			"4"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -2396,7 +2353,7 @@
 	"upgrade_tower_cm_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "upgradeToCM"
@@ -2405,8 +2362,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1000"
-		"AbilityChannelTime"			"5"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -2442,7 +2398,7 @@
 	"upgrade_tower_kotl_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "upgradeToKotl"
@@ -2451,8 +2407,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "225"
-		"AbilityChannelTime"			"3"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -2488,7 +2443,7 @@
 	"upgrade_tower_kotl_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "upgradeToKotl"
@@ -2497,8 +2452,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "475"
-		"AbilityChannelTime"			"4"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -2534,7 +2488,7 @@
 	"upgrade_tower_kotl_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "upgradeToKotl"
@@ -2543,8 +2497,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1000"
-		"AbilityChannelTime"			"5"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -2582,7 +2535,7 @@
 	"upgrade_tower_venge_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToVenge"
@@ -2591,8 +2544,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "210"
-		"AbilityChannelTime"			"3"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -2628,7 +2580,7 @@
 	"upgrade_tower_venge_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToVenge"
@@ -2637,8 +2589,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "450"
-		"AbilityChannelTime"			"4"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
@@ -2674,7 +2625,7 @@
 	"upgrade_tower_venge_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToVenge"
@@ -2683,8 +2634,7 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1000"
-		"AbilityChannelTime"			"5"
-		"OnChannelSucceeded"
+		"OnSpellStart"
 		{
 			"RunScript"
 			{
