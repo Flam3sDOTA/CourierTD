@@ -15,7 +15,7 @@ function MiranaThink()
         return
     end
     
-    if Starfall ~= nil and Starfall:IsFullyCastable() then
+    if Starfall ~= nil and Starfall:IsFullyCastable() and not thisEntity:IsChanneling() then
         CastStarfall()
     end
 	

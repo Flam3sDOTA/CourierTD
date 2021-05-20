@@ -15,7 +15,7 @@ function SvenThink()
         return
     end
     
-    if StormBolt ~= nil and StormBolt:IsFullyCastable() then
+    if StormBolt ~= nil and StormBolt:IsFullyCastable() and not thisEntity:IsChanneling() then
         CastStormBolt()
     end
 	

@@ -15,7 +15,7 @@ function KotlThink()
         return
     end
     
-    if ChakraMagic ~= nil and ChakraMagic:IsFullyCastable() then
+    if ChakraMagic ~= nil and ChakraMagic:IsFullyCastable() and not thisEntity:IsChanneling() then
         CastChakraMagic()
     end
 	

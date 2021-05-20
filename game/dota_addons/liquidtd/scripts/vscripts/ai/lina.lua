@@ -15,7 +15,7 @@ function LinaThink()
         return
     end
     
-    if LightStrikeArray ~= nil and LightStrikeArray:IsFullyCastable() then
+    if LightStrikeArray ~= nil and LightStrikeArray:IsFullyCastable() and not thisEntity:IsChanneling() then
         CastLightStrikeArray()
     end
 	

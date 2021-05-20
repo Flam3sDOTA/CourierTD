@@ -15,7 +15,7 @@ function ShamanThink()
         return
     end
     
-    if Shackle ~= nil and Shackle:IsFullyCastable() then
+    if Shackle ~= nil and Shackle:IsFullyCastable() and not thisEntity:IsChanneling() then
         CastShackle()
     end
 	

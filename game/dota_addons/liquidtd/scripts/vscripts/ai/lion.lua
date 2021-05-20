@@ -15,7 +15,7 @@ function LionThink()
         return
     end
     
-    if Hex ~= nil and Hex:IsFullyCastable() then
+    if Hex ~= nil and Hex:IsFullyCastable() and not thisEntity:IsChanneling() then
         CastHex()
     end
 	

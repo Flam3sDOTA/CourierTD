@@ -97,6 +97,13 @@ g_ParticlePrecache =
 	"particles/arrow/5/star3_1.vpcf",
 	"particles/arrow/5/star3_2.vpcf",
 	
+	-- Teleport Effects
+	"particles/econ/events/ti8/teleport_start_ti8_lvl2.vpcf",
+	"particles/econ/events/ti8/teleport_start_ti8_lvl3.vpcf",
+	"particles/upgrade/upgrade_tier2.vpcf",
+	"particles/upgrade/upgrade_tier3.vpcf",
+	"particles/econ/events/ti6/blink_dagger_start_ti6.vpcf",
+	
 	-- Base Attacks
 	"particles/tower_effects/arrow_tower_base_attack.vpcf",
 	"particles/tower_effects/tower_windranger_1_base_attack.vpcf",

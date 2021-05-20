@@ -15,7 +15,7 @@ function VoidThink()
         return
     end
     
-    if Chrono ~= nil and Chrono:IsFullyCastable() then
+    if Chrono ~= nil and Chrono:IsFullyCastable() and not thisEntity:IsChanneling() then
         CastChrono()
     end
 	

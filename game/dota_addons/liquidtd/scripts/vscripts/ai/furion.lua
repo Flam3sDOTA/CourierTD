@@ -15,7 +15,7 @@ function FurionThink()
         return
     end
     
-    if Sprout ~= nil and Sprout:IsFullyCastable() then
+    if Sprout ~= nil and Sprout:IsFullyCastable() and not thisEntity:IsChanneling() then
         CastSprout()
     end
 	

@@ -15,7 +15,7 @@ function VenomancerThink()
         return
     end
     
-    if VenomousGale ~= nil and VenomousGale:IsFullyCastable() then
+    if VenomousGale ~= nil and VenomousGale:IsFullyCastable() and not thisEntity:IsChanneling() then
         CastVenomousGale()
     end
 	

@@ -2388,6 +2388,7 @@
 		"MinimapIconSize"           "1"
 		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_mirana.vsndevts"
+		"vscripts"         			"ai/arrow.lua"
 
 		// Stats
 		//----------------------------- 
@@ -2465,6 +2466,7 @@
 		"MinimapIconSize"           "1"
 		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_viper.vsndevts"
+		"vscripts"         			"ai/poison.lua"
 
 		// Stats
 		//----------------------------- 
@@ -2542,6 +2544,7 @@
 		"MinimapIconSize"           "1"
 		"MinimapIcon"				"minimap_racks90"
 		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_ancient_apparition.vsndevts"
+		"vscripts"         			"ai/ice.lua"
 
 		// Stats
 		//----------------------------- 

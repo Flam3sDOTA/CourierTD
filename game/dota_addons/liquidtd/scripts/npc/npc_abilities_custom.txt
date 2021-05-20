@@ -315,24 +315,34 @@
 	"tower_upgrade_utility_lion_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToLion"
 		"Building"                      "1"
 		"BuildTime"						"5"
-		"AbilityCooldown"				"5"
 		"AbilityCastRange"              "260"
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "250"
-		"OnSpellStart"
+		"AbilityChannelTime"			"5"
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_lion_1"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_utility_lion_1"
 			}
 		}
@@ -362,7 +372,7 @@
 	"tower_upgrade_utility_lion_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToLion"
@@ -371,13 +381,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "500"
+		"AbilityChannelTime"			"6"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeUtilityTower2"
+				"tower"			"tower_utility_lion_2"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_lion_2"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_utility_lion_2"
 			}
 		}
@@ -407,7 +438,7 @@
 	"tower_upgrade_utility_lion_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToLion"
@@ -416,13 +447,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "750"
+		"AbilityChannelTime"			"7"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeUtilityTower3"
+				"tower"			"tower_utility_lion_3"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_lion_3"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_utility_lion_3"
 			}
 		}
@@ -452,7 +504,7 @@
 	"tower_upgrade_utility_shaman_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToShaman"
@@ -461,13 +513,24 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "450"
-		"OnSpellStart"
+		"AbilityChannelTime"			"5"
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_shaman_1"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_utility_shaman_1"
 			}
 		}
@@ -497,7 +560,7 @@
 	"tower_upgrade_utility_shaman_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToShaman"
@@ -506,13 +569,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "700"
+		"AbilityChannelTime"			"6"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeUtilityTower2"
+				"tower"			"tower_utility_shaman_2"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_shaman_2"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_utility_shaman_2"
 			}
 		}
@@ -542,7 +626,7 @@
 	"tower_upgrade_utility_shaman_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToShaman"
@@ -551,13 +635,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "950"
+		"AbilityChannelTime"			"7"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeUtilityTower3"
+				"tower"			"tower_utility_shaman_3"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_shaman_3"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_utility_shaman_3"
 			}
 		}
@@ -587,7 +692,7 @@
 	"tower_upgrade_utility_meepo_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToMeepo"
@@ -596,13 +701,24 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "500"
-		"OnSpellStart"
+		"AbilityChannelTime"			"5"
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_meepo_1"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_utility_meepo_1"
 			}
 		}
@@ -632,7 +748,7 @@
 	"tower_upgrade_utility_meepo_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToMeepo"
@@ -641,13 +757,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "750"
+		"AbilityChannelTime"			"6"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeUtilityTower2"
+				"tower"			"tower_utility_meepo_2"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_meepo_2"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_utility_meepo_2"
 			}
 		}
@@ -677,7 +814,7 @@
 	"tower_upgrade_utility_meepo_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToMeepo"
@@ -686,13 +823,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1000"
+		"AbilityChannelTime"			"7"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeUtilityTower3"
+				"tower"			"tower_utility_meepo_3"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_meepo_3"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_utility_meepo_3"
 			}
 		}
@@ -722,7 +880,7 @@
 	"tower_upgrade_utility_gyro_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToGyro"
@@ -731,13 +889,24 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "650"
-		"OnSpellStart"
+		"AbilityChannelTime"			"5"
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_gyro_1"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_utility_gyro_1"
 			}
 		}
@@ -767,7 +936,7 @@
 	"tower_upgrade_utility_gyro_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToGyro"
@@ -776,13 +945,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "900"
+		"AbilityChannelTime"			"6"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeUtilityTower2"
+				"tower"			"tower_utility_gyro_2"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_gyro_2"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_utility_gyro_2"
 			}
 		}
@@ -812,7 +1002,7 @@
 	"tower_upgrade_utility_gyro_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToGyro"
@@ -821,13 +1011,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1150"
+		"AbilityChannelTime"			"7"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeUtilityTower3"
+				"tower"			"tower_utility_gyro_3"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_gyro_3"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_utility_gyro_3"
 			}
 		}
@@ -858,7 +1069,7 @@
 	"tower_upgrade_utility_sven_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToSven"
@@ -867,13 +1078,24 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "700"
-		"OnSpellStart"
+		"AbilityChannelTime"			"5"
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_sven_1"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_utility_sven_1"
 			}
 		}
@@ -903,7 +1125,7 @@
 	"tower_upgrade_utility_sven_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToSven"
@@ -912,13 +1134,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "950"
+		"AbilityChannelTime"			"6"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeUtilityTower2"
+				"tower"			"tower_utility_sven_2"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_sven_2"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_utility_sven_2"
 			}
 		}
@@ -948,7 +1191,7 @@
 	"tower_upgrade_utility_sven_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToSven"
@@ -957,13 +1200,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1200"
+		"AbilityChannelTime"			"7"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeUtilityTower3"
+				"tower"			"tower_utility_sven_3"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_sven_3"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_utility_sven_3"
 			}
 		}
@@ -993,7 +1257,7 @@
 	"tower_upgrade_utility_underlord_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToUnderlord"
@@ -1002,13 +1266,24 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "750"
-		"OnSpellStart"
+		"AbilityChannelTime"			"5"
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_underlord_1"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_utility_underlord_1"
 			}
 		}
@@ -1038,7 +1313,7 @@
 	"tower_upgrade_utility_underlord_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToUnderlord"
@@ -1047,13 +1322,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1000"
+		"AbilityChannelTime"			"6"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeUtilityTower2"
+				"tower"			"tower_utility_underlord_2"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_underlord_2"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_utility_underlord_2"
 			}
 		}
@@ -1083,7 +1379,7 @@
 	"tower_upgrade_utility_underlord_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToUnderlord"
@@ -1092,13 +1388,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1250"
+		"AbilityChannelTime"			"7"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeUtilityTower3"
+				"tower"			"tower_utility_underlord_3"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_underlord_3"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_utility_underlord_3"
 			}
 		}
@@ -1128,7 +1445,7 @@
 	"tower_upgrade_utility_void_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToVoid"
@@ -1137,13 +1454,24 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "800"
-		"OnSpellStart"
+		"AbilityChannelTime"			"5"
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_void_1"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_utility_void_1"
 			}
 		}
@@ -1173,7 +1501,7 @@
 	"tower_upgrade_utility_void_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToVoid"
@@ -1182,13 +1510,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1050"
+		"AbilityChannelTime"			"6"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeUtilityTower2"
+				"tower"			"tower_utility_void_2"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_void_2"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_utility_void_2"
 			}
 		}
@@ -1218,7 +1567,7 @@
 	"tower_upgrade_utility_void_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToVoid"
@@ -1227,13 +1576,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1300"
+		"AbilityChannelTime"			"7"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeUtilityTower3"
+				"tower"			"tower_utility_void_3"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_void_3"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_utility_void_3"
 			}
 		}
@@ -1263,7 +1633,7 @@
 	"tower_upgrade_utility_enigma_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToEnigma"
@@ -1272,13 +1642,24 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "850"
-		"OnSpellStart"
+		"AbilityChannelTime"			"5"
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_enigma_1"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_utility_enigma_1"
 			}
 		}
@@ -1308,7 +1689,7 @@
 	"tower_upgrade_utility_enigma_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToEnigma"
@@ -1317,13 +1698,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1100"
+		"AbilityChannelTime"			"6"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeUtilityTower2"
+				"tower"			"tower_utility_enigma_2"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_enigma_2"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_utility_enigma_2"
 			}
 		}
@@ -1353,7 +1755,7 @@
 	"tower_upgrade_utility_enigma_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToEnigma"
@@ -1362,13 +1764,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1350"
+		"AbilityChannelTime"			"7"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeUtilityTower3"
+				"tower"			"tower_utility_enigma_3"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_utility_enigma_3"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_utility_enigma_3"
 			}
 		}
@@ -1451,7 +1874,7 @@
 	"upgrade_tower_wind_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToWindranger"
@@ -1460,13 +1883,24 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "250"
-		"OnSpellStart"
+		"AbilityChannelTime"			"3"
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_windranger_1"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_windranger_1"
 			}
 		}
@@ -1496,7 +1930,7 @@
 	"upgrade_tower_wind_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToWindranger"
@@ -1505,13 +1939,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "500"
+		"AbilityChannelTime"			"4"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeNormalTower2"
+				"tower"			"tower_windranger_2"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_windranger_2"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_windranger_2"
 			}
 		}
@@ -1541,7 +1996,7 @@
 	"upgrade_tower_wind_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToWindranger"
@@ -1550,13 +2005,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1000"
+		"AbilityChannelTime"			"5"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeNormalTower3"
+				"tower"			"tower_windranger_3"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_windranger_3"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_windranger_3"
 			}
 		}
@@ -1586,7 +2062,7 @@
 	"upgrade_tower_drow_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToDrow"
@@ -1595,13 +2071,24 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "190"
-		"OnSpellStart"
+		"AbilityChannelTime"			"3"
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_drow_1"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_drow_1"
 			}
 		}
@@ -1631,7 +2118,7 @@
 	"upgrade_tower_drow_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToDrow"
@@ -1640,13 +2127,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "450"
+		"AbilityChannelTime"			"4"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeNormalTower2"
+				"tower"			"tower_drow_2"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_drow_2"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_drow_2"
 			}
 		}
@@ -1676,7 +2184,7 @@
 	"upgrade_tower_drow_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToDrow"
@@ -1685,13 +2193,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1000"
+		"AbilityChannelTime"			"5"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeNormalTower3"
+				"tower"			"tower_drow_3"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_drow_3"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_drow_3"
 			}
 		}
@@ -1721,7 +2250,7 @@
 	"upgrade_tower_mirana_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToMirana"
@@ -1730,13 +2259,24 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "225"
-		"OnSpellStart"
+		"AbilityChannelTime"			"3"
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_mirana_1"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_mirana_1"
 			}
 		}
@@ -1766,7 +2306,7 @@
 	"upgrade_tower_mirana_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToMirana"
@@ -1775,13 +2315,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "475"
+		"AbilityChannelTime"			"4"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeNormalTower2"
+				"tower"			"tower_mirana_2"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_mirana_2"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_mirana_2"
 			}
 		}
@@ -1811,7 +2372,7 @@
 	"upgrade_tower_mirana_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToMirana"
@@ -1820,13 +2381,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1000"
+		"AbilityChannelTime"			"5"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeNormalTower3"
+				"tower"			"tower_mirana_3"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_mirana_3"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_mirana_3"
 			}
 		}
@@ -1857,7 +2439,7 @@
 	"upgrade_tower_furion_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToFurion"
@@ -1866,13 +2448,24 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "250"
-		"OnSpellStart"
+		"AbilityChannelTime"			"3"
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_furion_1"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_furion_1"
 			}
 		}
@@ -1902,7 +2495,7 @@
 	"upgrade_tower_furion_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToFurion"
@@ -1911,13 +2504,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "500"
+		"AbilityChannelTime"			"4"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeNormalTower2"
+				"tower"			"tower_furion_2"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_furion_2"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_furion_2"
 			}
 		}
@@ -1947,7 +2561,7 @@
 	"upgrade_tower_furion_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToFurion"
@@ -1956,13 +2570,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1000"
+		"AbilityChannelTime"			"5"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeNormalTower3"
+				"tower"			"tower_furion_3"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_furion_3"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_furion_3"
 			}
 		}
@@ -1992,7 +2627,7 @@
 	"upgrade_tower_venomancer_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToVenomancer"
@@ -2001,13 +2636,24 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "225"
-		"OnSpellStart"
+		"AbilityChannelTime"			"3"
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_venomancer_1"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_venomancer_1"
 			}
 		}
@@ -2037,7 +2683,7 @@
 	"upgrade_tower_venomancer_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToVenomancer"
@@ -2046,13 +2692,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "475"
+		"AbilityChannelTime"			"4"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeNormalTower2"
+				"tower"			"tower_venomancer_2"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_venomancer_2"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_venomancer_2"
 			}
 		}
@@ -2082,7 +2749,7 @@
 	"upgrade_tower_venomancer_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToVenomancer"
@@ -2091,13 +2758,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1000"
+		"AbilityChannelTime"			"5"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeNormalTower3"
+				"tower"			"tower_venomancer_3"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_venomancer_3"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_venomancer_3"
 			}
 		}
@@ -2127,7 +2815,7 @@
 	"upgrade_tower_viper_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET  | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToViper"
@@ -2136,13 +2824,24 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "210"
-		"OnSpellStart"
+		"AbilityChannelTime"			"3"
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_viper_1"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_viper_1"
 			}
 		}
@@ -2172,7 +2871,7 @@
 	"upgrade_tower_viper_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToViper"
@@ -2181,13 +2880,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "450"
+		"AbilityChannelTime"			"4"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeNormalTower2"
+				"tower"			"tower_viper_2"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_viper_2"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_viper_2"
 			}
 		}
@@ -2217,7 +2937,7 @@
 	"upgrade_tower_viper_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToViper"
@@ -2226,13 +2946,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1000"
+		"AbilityChannelTime"			"5"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeNormalTower3"
+				"tower"			"tower_viper_3"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_viper_3"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_viper_3"
 			}
 		}
@@ -2263,7 +3004,7 @@
 	"upgrade_tower_cm_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "upgradeToCM"
@@ -2272,13 +3013,24 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "250"
-		"OnSpellStart"
+		"AbilityChannelTime"			"3"
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_cm_1"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_cm_1"
 			}
 		}
@@ -2308,7 +3060,7 @@
 	"upgrade_tower_cm_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "upgradeToCM"
@@ -2317,13 +3069,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "500"
+		"AbilityChannelTime"			"4"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeNormalTower2"
+				"tower"			"tower_cm_2"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_cm_2"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_cm_2"
 			}
 		}
@@ -2353,7 +3126,7 @@
 	"upgrade_tower_cm_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "upgradeToCM"
@@ -2362,13 +3135,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1000"
+		"AbilityChannelTime"			"5"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeNormalTower3"
+				"tower"			"tower_cm_3"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_cm_3"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_cm_3"
 			}
 		}
@@ -2398,7 +3192,7 @@
 	"upgrade_tower_kotl_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "upgradeToKotl"
@@ -2407,13 +3201,24 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "225"
-		"OnSpellStart"
+		"AbilityChannelTime"			"3"
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_kotl_1"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_kotl_1"
 			}
 		}
@@ -2443,7 +3248,7 @@
 	"upgrade_tower_kotl_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "upgradeToKotl"
@@ -2452,13 +3257,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "475"
+		"AbilityChannelTime"			"4"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeNormalTower2"
+				"tower"			"tower_kotl_2"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_kotl_2"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_kotl_2"
 			}
 		}
@@ -2488,7 +3314,7 @@
 	"upgrade_tower_kotl_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "upgradeToKotl"
@@ -2497,13 +3323,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1000"
+		"AbilityChannelTime"			"5"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeNormalTower3"
+				"tower"			"tower_kotl_3"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_kotl_3"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_kotl_3"
 			}
 		}
@@ -2535,7 +3382,7 @@
 	"upgrade_tower_venge_1"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToVenge"
@@ -2544,13 +3391,24 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "210"
-		"OnSpellStart"
+		"AbilityChannelTime"			"3"
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_venge_1"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_venge_1"
 			}
 		}
@@ -2580,7 +3438,7 @@
 	"upgrade_tower_venge_2"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToVenge"
@@ -2589,13 +3447,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "450"
+		"AbilityChannelTime"			"4"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeNormalTower2"
+				"tower"			"tower_venge_2"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_venge_2"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_venge_2"
 			}
 		}
@@ -2625,7 +3504,7 @@
 	"upgrade_tower_venge_3"
 	{
 		"BaseClass"                     "ability_datadriven"
-		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
 		"MaxLevel"                      "1"
 		"LevelsBetweenUpgrades"         "0"
 		"AbilityTextureName"            "UpgradeToVenge"
@@ -2634,13 +3513,34 @@
 		"Scale"                         "3"
 		"PlayerCanControl"              "1"
 		"AbilityGoldCost"               "1000"
+		"AbilityChannelTime"			"5"
 		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeNormalTower3"
+				"tower"			"tower_venge_3"
+			}
+		}
+		"OnChannelSucceeded"
 		{
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
 				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeTower"
+				"tower"			"tower_venge_3"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
 				"tower"			"tower_venge_3"
 			}
 		}

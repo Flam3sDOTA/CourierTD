@@ -15,7 +15,7 @@ function ViperThink()
         return
     end
     
-    if ViperStrike ~= nil and ViperStrike:IsFullyCastable() then
+    if ViperStrike ~= nil and ViperStrike:IsFullyCastable() and not thisEntity:IsChanneling() then
         CastViperStrike()
     end
 	

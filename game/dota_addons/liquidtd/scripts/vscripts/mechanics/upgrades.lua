@@ -38,3 +38,16 @@ function UpgradeTower(keys)
 	end
     return new_building
 end
+
+function RefundTower(keys)
+	local tower = keys.caster
+    local player = tower:GetOwner()
+	local playerID = player:GetPlayerID()
+    local team = player:GetTeam()
+    local pos = tower:GetAbsOrigin()
+	local ability = keys.ability
+	local gold_cost = ability:GetGoldCost(1) 
+	local hero = player:IsRealHero() and player or player:GetOwner()
+	
+	hero:ModifyGold(gold_cost, false, 0)
+end

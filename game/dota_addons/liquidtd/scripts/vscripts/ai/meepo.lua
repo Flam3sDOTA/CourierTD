@@ -15,7 +15,7 @@ function MeepoThink()
         return
     end
     
-    if EarthBind ~= nil and EarthBind:IsFullyCastable() then
+    if EarthBind ~= nil and EarthBind:IsFullyCastable() and not thisEntity:IsChanneling() then
         CastEarthBind()
     end
 	

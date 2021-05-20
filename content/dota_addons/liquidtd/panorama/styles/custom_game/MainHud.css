@@ -77,14 +77,16 @@
 	wash-color: #9FB7E3;
 }
 
-#NewScoreboardButton {
-	background-image: url("file://{images}/custom_game/icons/hamburger.png");
-    background-size: 26px;
-    margin-top: 6px;
-    margin-left: 110px;
+#NewDiscordButton {
+	background-image: url("file://{images}/custom_game/icons/discord.png");
+    background-size: 100%;
+	width: 20%;
+    margin-top: 7px;
+    margin-left: 100px;
     transition-duration: 0.3s;
     transition-property: wash-color;
     transition-timing-function: ease-in-out;
+	wash-color: #9FB7E3;
 }
 
 #LeaderboardButton {
@@ -126,7 +128,7 @@
 
 #NewDashboardButton:hover,
 #LeaderboardButton:hover,
-#NewScoreboardButton:hover,
+#NewDiscordButton:hover,
 #NewSettingsButton:hover { 
 	opacity: 1; 
 	wash-color: white;
@@ -136,7 +138,7 @@
 
 #NewDashboardButton:active,
 #LeaderboardButton:active,
-#NewScoreboardButton:active,
+#NewDiscordButton:active,
 #NewSettingsButton:active,
 #StoreButton:active { opacity: 1.0; }
 

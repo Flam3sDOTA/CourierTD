@@ -15,7 +15,7 @@ function WindrangerThink()
         return
     end
     
-    if shackle ~= nil and shackle:IsFullyCastable() then
+    if shackle ~= nil and shackle:IsFullyCastable() and not thisEntity:IsChanneling() then
         CastShackle()
     end
 	

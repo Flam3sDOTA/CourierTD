@@ -15,7 +15,7 @@ function EnigmaThink()
         return
     end
     
-    if BlackHole ~= nil and BlackHole:IsFullyCastable() then
+    if BlackHole ~= nil and BlackHole:IsFullyCastable() and not thisEntity:IsChanneling() then
         CastBlackHole()
     end
 	

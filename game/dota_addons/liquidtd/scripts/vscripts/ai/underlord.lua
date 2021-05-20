@@ -15,7 +15,7 @@ function UnderlordThink()
         return
     end
     
-    if Malice ~= nil and Malice:IsFullyCastable() then
+    if Malice ~= nil and Malice:IsFullyCastable() and not thisEntity:IsChanneling() then
         CastMalice()
     end
 	

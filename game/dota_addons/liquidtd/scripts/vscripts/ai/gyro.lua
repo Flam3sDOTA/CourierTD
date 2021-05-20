@@ -15,7 +15,7 @@ function GyroThink()
         return
     end
     
-    if FlakCannon ~= nil and FlakCannon:IsFullyCastable() then
+    if FlakCannon ~= nil and FlakCannon:IsFullyCastable() and not thisEntity:IsChanneling() then
         CastFlakCannon()
     end
 	
