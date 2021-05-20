@@ -31,7 +31,7 @@
 			<Label id="RoundNameLabel" class="RoundNameLabel" text="Normal" />
 			
 			<Label id="UnitCount" class="UnitCount" text="Unit Count:" />
-			<Label id="UnitCountLabel" class="UnitCountLabel" text="32" />
+			<Label id="UnitCountLabel" class="UnitCountLabel" text="40" />
 			
 			<Label id="NextRound" class="NextRound" text="Next Round in:" />
 			<Label id="NextRoundLabel" class="NextRoundLabel" text="00:29" />
