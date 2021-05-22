@@ -2,7 +2,7 @@
 {
 	"Version"		"1"
 	//============================================================
-	// Tower: Invulnerable (No Health Bar)
+	// Tower: Invulnerable
 	//============================================================
 	"tower_invulnerable"
 	{
@@ -6245,6 +6245,255 @@
 			{
 				"var_type"				"FIELD_INTEGER"
 				"radius"				"380"
+			}
+		}
+	}
+
+	//============================================================
+	// Upgrade Windranger 3 to Sniper 1
+	//============================================================
+	"upgrade_tower_sniper_1"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToSniper"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "2000"
+		"AbilityChannelTime"			"5"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeNormalTower3"
+				"tower"			"tower_sniper_1"
+			}
+		}
+		"OnChannelSucceeded"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_sniper_1"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
+				"tower"			"tower_sniper_1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "450"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.6"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"800"
+			}
+		}
+	}
+
+	//============================================================
+	// Upgrade Mirana 3 to Luna 1
+	//============================================================
+	"upgrade_tower_luna_1"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToLuna"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "2000"
+		"AbilityChannelTime"			"5"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"Function"		"UpgradeNormalTower3"
+				"tower"			"tower_luna_1"
+			}
+		}
+		"OnChannelSucceeded"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_luna_1"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
+				"tower"			"tower_luna_1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "355"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.9"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"800"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Sniper: Headshot (Lua version)
+	// Credits: https://github.com/Elfansoer/dota-2-lua-abilities/tree/master/scripts/vscripts/lua_abilities/sniper_headshot_lua
+	//=================================================================================================================
+	"sniper_headshot_lua"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/sniper_headshot_lua"
+		"AbilityTextureName"			"sniper_headshot"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts"
+			"particle"	"particles/units/heroes/hero_sniper/sniper_headshot_slow.vpcf"
+		}
+
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDamage"					"65"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"slow_duration"				"0.5"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"proc_chance"				"40"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"slow"						"-100"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Luna: Moon Glaive (Lua version)
+	// Credits: https://github.com/Elfansoer/dota-2-lua-abilities/blob/master/scripts/vscripts/lua_abilities/luna_moon_glaive_lua/luna_moon_glaive_lua.txt
+	//=================================================================================================================
+	"luna_moon_glaive_lua"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/luna_moon_glaive_lua"
+		"AbilityTextureName"			"luna_moon_glaive"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_luna.vsndevts"
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"range"						"500"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bounces"					"3"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage_reduction_percent"	"45"
 			}
 		}
 	}

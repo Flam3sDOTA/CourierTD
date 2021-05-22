@@ -6,6 +6,9 @@ function AddTowerParticle(tower, level, tier)
   if tier == 2 then
     baseParticle = "particles/arrow/5/star"
   end
+  if tier == 3 then
+	baseParticle = "particles/arrow/4/star"
+  end
 
   local particle = ParticleManager:CreateParticle( baseParticle .. "1.vpcf", PATTACH_OVERHEAD_FOLLOW, tower)
   ParticleManager:SetParticleControl(particle, 0, tower:GetOrigin())

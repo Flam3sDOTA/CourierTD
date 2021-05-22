@@ -51,6 +51,24 @@ return {
     },
   },
   
+  tower_sniper_1 = {
+    level = 3,
+    tier = 3,
+    spawn_sound = "sniper_snip_spawn_03",  
+	abilities = {
+      sniper_headshot_lua = 1
+    },
+  },
+  
+  tower_luna_1 = {
+    level = 3,
+    tier = 3,
+    spawn_sound = "luna_luna_spawn_02",  
+	abilities = {
+      luna_moon_glaive_lua = 1
+    },
+  },
+  
   tower_drow_1 = {
     level = 1,
     tier = 1,
@@ -265,132 +283,6 @@ return {
 	abilities = {
       vengeful_spirit_vengeance_aura_lua = 3
     },
-  },
-  
-  tower_medusa_1 = {
-    level = 1,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",  
-  },
-
-  tower_medusa_2 = {
-    level = 2,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",  
-  },
-
-  tower_medusa_3 = {
-    level = 3,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",  
-  },
-
-  tower_sniper_1 = {
-    level = 1,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",  
-  },
-
-  tower_sniper_2 = {
-    level = 2,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",  
-  },
-
-  tower_sniper_3 = {
-    level = 3,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",  
-  },
-
-  tower_troll_1 = {
-    level = 1,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",
-  },
-
-  tower_troll_2 = {
-    level = 2,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",
-  },
-
-  tower_troll_3 = {
-    level = 3,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",
-  },
-
-  tower_ld_1 = {
-    level = 1,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",
-  },
-
-  tower_ld_2 = {
-    level = 2,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",
-  },
-
-  tower_ld_3 = {
-    level = 3,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",
-  },
-
-  tower_lich_1 = {
-    level = 1,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",  
-  },
-  
-  tower_lich_2 = {
-    level = 2,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",  
-  },
-  
-  tower_lich_3 = {
-    level = 3,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",  
-  },
-  
-  tower_zeus_1 = {
-    level = 1,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",  
-  },
-  
-  tower_zeus_2 = {
-    level = 2,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",  
-  },
-  
-  tower_zeus_3 = {
-    level = 3,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",  
-  },
-  
-  tower_sky_1 = {
-    level = 1,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",  
-  },
-  
-  tower_sky_2 = {
-    level = 2,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",  
-  },
-  
-  tower_sky_3 = {
-    level = 3,
-    tier = 1,
-    spawn_sound = "frostivus_ui_select",  
   },
   
   tower_utility_lion_1 = {
