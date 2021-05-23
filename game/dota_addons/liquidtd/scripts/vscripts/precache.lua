@@ -122,6 +122,8 @@ g_ParticlePrecache =
 	"particles/econ/world/towers/rock_golem/radiant_rock_golem_attack.vpcf",
 	"particles/econ/items/sniper/sniper_fall20_immortal/sniper_fall20_immortal_base_attack.vpcf",
 	"particles/econ/items/luna/luna_ti9_weapon/luna_ti9_base_attack.vpcf",
+	"particles/tower_effects/troll_base_attack.vpcf",
+	"particles/units/heroes/hero_lone_druid/lone_druid_base_attack.vpcf",
 	
 	-- Hero/Courier Particles
 	"particles/courier_effects/trail_baby_roshan_platinum.vpcf",

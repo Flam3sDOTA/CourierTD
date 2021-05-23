@@ -51,24 +51,6 @@ return {
     },
   },
   
-  tower_sniper_1 = {
-    level = 3,
-    tier = 3,
-    spawn_sound = "sniper_snip_spawn_03",  
-	abilities = {
-      sniper_headshot_lua = 1
-    },
-  },
-  
-  tower_luna_1 = {
-    level = 3,
-    tier = 3,
-    spawn_sound = "luna_luna_spawn_02",  
-	abilities = {
-      luna_moon_glaive_lua = 1
-    },
-  },
-  
   tower_drow_1 = {
     level = 1,
     tier = 1,
@@ -536,6 +518,42 @@ return {
     tier = 1,  
 	abilities = {
       lina_light_strike_array_lua = 1
+    },
+  },
+
+  tower_sniper_1 = {
+    level = 3,
+    tier = 3,
+    spawn_sound = "sniper_snip_spawn_03",  
+	abilities = {
+      sniper_headshot_lua = 1
+    },
+  },
+  
+  tower_luna_1 = {
+    level = 3,
+    tier = 3,
+    spawn_sound = "luna_luna_spawn_02",  
+	abilities = {
+      luna_moon_glaive_lua = 1
+    },
+  },
+
+  tower_troll_1 = {
+    level = 3,
+    tier = 3,
+    spawn_sound = "troll_warlord_troll_spawn_01",  
+	abilities = {
+      troll_warlord_fervor_lua = 1
+    },
+  },
+
+  tower_ld_1 = {
+    level = 3,
+    tier = 3,
+    spawn_sound = "lone_druid_lone_druid_spawn_01",  
+	abilities = {
+      troll_warlord_fervor_lua = 1
     },
   },
 }

@@ -387,7 +387,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeUtilityTower2"
 				"tower"			"tower_utility_lion_2"
 			}
@@ -453,7 +453,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeUtilityTower3"
 				"tower"			"tower_utility_lion_3"
 			}
@@ -575,7 +575,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeUtilityTower2"
 				"tower"			"tower_utility_shaman_2"
 			}
@@ -641,7 +641,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeUtilityTower3"
 				"tower"			"tower_utility_shaman_3"
 			}
@@ -763,7 +763,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeUtilityTower2"
 				"tower"			"tower_utility_meepo_2"
 			}
@@ -829,7 +829,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeUtilityTower3"
 				"tower"			"tower_utility_meepo_3"
 			}
@@ -951,7 +951,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeUtilityTower2"
 				"tower"			"tower_utility_gyro_2"
 			}
@@ -1017,7 +1017,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeUtilityTower3"
 				"tower"			"tower_utility_gyro_3"
 			}
@@ -1140,7 +1140,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeUtilityTower2"
 				"tower"			"tower_utility_sven_2"
 			}
@@ -1206,7 +1206,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeUtilityTower3"
 				"tower"			"tower_utility_sven_3"
 			}
@@ -1328,7 +1328,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeUtilityTower2"
 				"tower"			"tower_utility_underlord_2"
 			}
@@ -1394,7 +1394,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeUtilityTower3"
 				"tower"			"tower_utility_underlord_3"
 			}
@@ -1516,7 +1516,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeUtilityTower2"
 				"tower"			"tower_utility_void_2"
 			}
@@ -1582,7 +1582,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeUtilityTower3"
 				"tower"			"tower_utility_void_3"
 			}
@@ -1704,7 +1704,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeUtilityTower2"
 				"tower"			"tower_utility_enigma_2"
 			}
@@ -1770,7 +1770,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeUtilityTower3"
 				"tower"			"tower_utility_enigma_3"
 			}
@@ -1945,7 +1945,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeNormalTower2"
 				"tower"			"tower_windranger_2"
 			}
@@ -2011,7 +2011,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeNormalTower3"
 				"tower"			"tower_windranger_3"
 			}
@@ -2133,7 +2133,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeNormalTower2"
 				"tower"			"tower_drow_2"
 			}
@@ -2199,7 +2199,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeNormalTower3"
 				"tower"			"tower_drow_3"
 			}
@@ -2321,7 +2321,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeNormalTower2"
 				"tower"			"tower_mirana_2"
 			}
@@ -2387,7 +2387,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeNormalTower3"
 				"tower"			"tower_mirana_3"
 			}
@@ -2510,7 +2510,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeNormalTower2"
 				"tower"			"tower_furion_2"
 			}
@@ -2576,7 +2576,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeNormalTower3"
 				"tower"			"tower_furion_3"
 			}
@@ -2698,7 +2698,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeNormalTower2"
 				"tower"			"tower_venomancer_2"
 			}
@@ -2764,7 +2764,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeNormalTower3"
 				"tower"			"tower_venomancer_3"
 			}
@@ -2886,7 +2886,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeNormalTower2"
 				"tower"			"tower_viper_2"
 			}
@@ -2952,7 +2952,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeNormalTower3"
 				"tower"			"tower_viper_3"
 			}
@@ -3075,7 +3075,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeNormalTower2"
 				"tower"			"tower_cm_2"
 			}
@@ -3141,7 +3141,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeNormalTower3"
 				"tower"			"tower_cm_3"
 			}
@@ -3263,7 +3263,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeNormalTower2"
 				"tower"			"tower_kotl_2"
 			}
@@ -3329,7 +3329,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeNormalTower3"
 				"tower"			"tower_kotl_3"
 			}
@@ -3453,7 +3453,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeNormalTower2"
 				"tower"			"tower_venge_2"
 			}
@@ -3519,7 +3519,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeNormalTower3"
 				"tower"			"tower_venge_3"
 			}
@@ -6270,7 +6270,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeNormalTower3"
 				"tower"			"tower_sniper_1"
 			}
@@ -6336,7 +6336,7 @@
 			"RunScript"
 			{
 				"TARGET"		"CASTER"
-				"ScriptFile"	"mechanics/upgrade_animation.lua"
+				"ScriptFile"	"mechanics/upgrades.lua"
 				"Function"		"UpgradeNormalTower3"
 				"tower"			"tower_luna_1"
 			}
@@ -6372,6 +6372,138 @@
 			{
 				"var_type"    					 "FIELD_FLOAT"
 				"ATTACK_SPEED_TOOLTIP"     		 "0.9"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"800"
+			}
+		}
+	}
+
+	//============================================================
+	// Upgrade Drow 3 to Troll 1
+	//============================================================
+	"upgrade_tower_troll_1"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToTroll"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "2000"
+		"AbilityChannelTime"			"5"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeNormalTower3"
+				"tower"			"tower_troll_1"
+			}
+		}
+		"OnChannelSucceeded"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_troll_1"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
+				"tower"			"tower_troll_1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "400"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1.25"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"800"
+			}
+		}
+	}
+
+	//============================================================
+	// Upgrade Furion 3 to Lone Druid 1
+	//============================================================
+	"upgrade_tower_ld_1"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "UpgradeToLoneDruid"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "2000"
+		"AbilityChannelTime"			"5"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeNormalTower3"
+				"tower"			"tower_ld_1"
+			}
+		}
+		"OnChannelSucceeded"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_ld_1"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
+				"tower"			"tower_ld_1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "425"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.8"
 			}
 			"03"
 			{
@@ -6494,6 +6626,54 @@
 			{
 				"var_type"					"FIELD_INTEGER"
 				"damage_reduction_percent"	"45"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Troll Warlord: Fervor (Lua version)
+	// Credits: https://github.com/Elfansoer/dota-2-lua-abilities/tree/master/scripts/vscripts/lua_abilities/troll_warlord_fervor_lua
+	//=================================================================================================================
+	"troll_warlord_fervor_lua"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/troll_warlord_fervor_lua"
+		"AbilityTextureName"			"troll_warlord_fervor"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"max_stacks"			"5"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"attack_speed"			"25"
 			}
 		}
 	}

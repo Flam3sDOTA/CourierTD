@@ -13,7 +13,7 @@ require("towers/tower_setup")
 require("waves/wave_controller")
 require("events")
 require("precache")
-require("mechanics/upgrade_animation")
+require("mechanics/upgrades")
 
 function Precache( context )
 	for _,Item in pairs( g_ItemPrecache ) do

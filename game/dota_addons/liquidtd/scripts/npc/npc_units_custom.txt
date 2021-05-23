@@ -5510,7 +5510,7 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"empty"
+		"Ability1"					"upgrade_tower_troll_1"
 		"Ability2"					"sell_tower"
 		"Ability3"					"drow_ranger_marksmanship"
 		"Ability6"					"tower_invulnerable"
@@ -6129,7 +6129,7 @@
 		"HasInventory"				"1"
 		"ConsideredHero"			"1"
 		
-		"Ability1"					"empty"
+		"Ability1"					"upgrade_tower_ld_1"
 		"Ability2"					"sell_tower"
 		"Ability3"					"furion_sprout_datadriven"
 		"Ability6"					"tower_invulnerable"
@@ -7687,10 +7687,10 @@
 		"PedestalModelScale"        "0.5"
 		"PedestalOffset"            "4"
 		"ProjectileModel"           "particles/econ/items/sniper/sniper_fall20_immortal/sniper_fall20_immortal_base_attack.vpcf"
-		"SoundSet"                  "Hero_Sniper"
+		"SoundSet"                  ""
 		"MinimapIconSize"           "1"
 		"MinimapIcon"				"minimap_racks90"
-		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts"
+		"GameSoundsFile"    		""
 		"vscripts"                  "ai/sniper.lua"
 		
 
@@ -7788,10 +7788,10 @@
 		"PedestalModelScale"        "0.5"
 		"PedestalOffset"            "4"
 		"ProjectileModel"           "particles/econ/items/luna/luna_ti9_weapon/luna_ti9_base_attack.vpcf"
-		"SoundSet"                  "Hero_Luna"
+		"SoundSet"                  ""
 		"MinimapIconSize"           "1"
 		"MinimapIcon"				"minimap_racks90"
-		"GameSoundsFile"    		"soundevents/game_sounds_heroes/game_sounds_luna.vsndevts"
+		"GameSoundsFile"    		""
 		"vscripts"                  "ai/luna.lua"
 		
 
@@ -7870,6 +7870,199 @@
 				"3"  { "ItemDef" "8301" } // Shield
 				"4"  { "ItemDef" "12552" } // Helmet
 				"5"  { "ItemDef" "12554" } // Armor
+			}
+		}
+	}
+
+	//============================================================
+	// Tower: Troll - 1
+	//============================================================
+	"tower_troll_1"
+	{
+		// Visual
+		//-----------------------------
+		"Model"                     "models/heroes/troll_warlord/troll_warlord.vmdl"
+		"ModelScale"                "0.75"
+		"ModelRotation"             "180"
+		"ModelOffset"               "1"
+		"PedestalModel"             "models/props_teams/logo_teams_tintable.vmdl"
+		"PedestalModelScale"        "0.5"
+		"PedestalOffset"            "4"
+		"ProjectileModel"           "particles/tower_effects/troll_base_attack.vpcf"
+		"SoundSet"                  ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
+		"GameSoundsFile"    		""
+		"vscripts"                  "ai/troll.lua"
+		
+
+		// Stats
+		//----------------------------- 
+		"AttackDamageMin"           "400"
+		"AttackDamageMax"           "400"
+		"Damage"                    "400"  
+		"AttackRange"               "800"
+		"AttackAcquisitionRange"    "800"
+		"AttackRate"                "1.25"
+		"AttackAnimationPoint"      "0.30000"
+		"ProjectileSpeed"           "1200"
+
+		"Level"                     "2000"
+		"Cost"                      "2000"
+		"TotalCost"                 "2000"
+		"BuildTime"                 "1"
+		"ScriptClass"               "Basic"
+		"TowerType"                 "Normal"
+		"BuffPriority"              "11"
+		
+		// General
+		//-----------------------------
+		"BaseClass"                 "npc_dota_creature"
+		"ArmorPhysical"             "0"
+		"MagicalResistance"         "0"
+		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
+		"TeamName"                  "DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"VisionDaytimeRange"        "1900"
+		"VisionNighttimeRange"      "1900"  
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+		"ProjectileCollisionSize"   "50"
+		"RingRadius"                "80"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"             "0"
+		"MovementTurnRate"          "1.0"
+		"StatusHealth"              "175"
+		"StatusHealthRegen"         "0"
+		"StatusMana"                "0"
+		"StatusManaRegen"           "1"
+		"StatusStartingMana"	    "0"
+		"HealthBarOffset"       	"230"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		
+		"Ability1"					"empty"
+		"Ability2"					"sell_tower"
+		"Ability3"					"troll_warlord_fervor_lua"
+		"Ability6"					"tower_invulnerable"
+
+		// Building Size
+		"ConstructionSize"          "2"
+		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
+			}
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "7818" } // Weapon
+				"2"  { "ItemDef" "9595" } // Head
+				"3"  { "ItemDef" "9596" } // Armor
+				"4"  { "ItemDef" "14296" } // Shoulder
+			}
+		}
+	}
+
+	//============================================================
+	// Tower: Lone Druid - 1
+	//============================================================
+	"tower_ld_1"
+	{
+		// Visual
+		//-----------------------------
+		"Model"                     "models/items/lone_druid/true_form/wolf_hunter_true_form/wolf_hunter_true_form.vmdl"
+		"ModelScale"                "0.7"
+		"ModelRotation"             "180"
+		"ModelOffset"               "1"
+		"PedestalModel"             "models/props_teams/logo_teams_tintable.vmdl"
+		"PedestalModelScale"        "0.5"
+		"PedestalOffset"            "4"
+		"ProjectileModel"           "particles/units/heroes/hero_lone_druid/lone_druid_base_attack.vpcf"
+		"SoundSet"                  ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
+		"GameSoundsFile"    		""
+		"vscripts"                  "ai/ld.lua"
+		
+
+		// Stats
+		//----------------------------- 
+		"AttackDamageMin"           "425"
+		"AttackDamageMax"           "425"
+		"Damage"                    "425"  
+		"AttackRange"               "800"
+		"AttackAcquisitionRange"    "800"
+		"AttackRate"                "0.8"
+		"AttackAnimationPoint"      "0.330000"
+		"ProjectileSpeed"           "900"
+
+		"Level"                     "2000"
+		"Cost"                      "2000"
+		"TotalCost"                 "2000"
+		"BuildTime"                 "1"
+		"ScriptClass"               "Basic"
+		"TowerType"                 "Normal"
+		"BuffPriority"              "11"
+		
+		// General
+		//-----------------------------
+		"BaseClass"                 "npc_dota_creature"
+		"ArmorPhysical"             "0"
+		"MagicalResistance"         "0"
+		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
+		"TeamName"                  "DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"VisionDaytimeRange"        "1900"
+		"VisionNighttimeRange"      "1900"  
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+		"ProjectileCollisionSize"   "50"
+		"RingRadius"                "80"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"             "0"
+		"MovementTurnRate"          "1.0"
+		"StatusHealth"              "175"
+		"StatusHealthRegen"         "0"
+		"StatusMana"                "0"
+		"StatusManaRegen"           "1"
+		"StatusStartingMana"	    "0"
+		"HealthBarOffset"       	"230"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		
+		"Ability1"					"empty"
+		"Ability2"					"sell_tower"
+		"Ability3"					"troll_warlord_fervor_lua"
+		"Ability6"					"tower_invulnerable"
+
+		// Building Size
+		"ConstructionSize"          "2"
+		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  		"Invade"
+					"Aggression"    "100.0"
+					"Avoidance" 	"0.0"
+					"Support"   	"0.0"
+				}
 			}
 		}
 	}
