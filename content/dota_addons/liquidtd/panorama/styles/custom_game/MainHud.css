@@ -249,17 +249,17 @@
 }
 
 .RoundNameLabel {
-	margin-top: 35px;
-	margin-left: 318px;
+	margin-top: 34px;
+	margin-left: 316px;
     horizontal-align: left;
     vertical-align: top;
     font-weight: bold;
-    font-size: 18px;
-	color: greenyellow;
+    font-size: 20px;
 	border-color: black;
 	font-weight: bold;
     text-overflow: clip;
 	text-shadow: 2px 2px 2px black;
+	color: gradient( linear, 0% 0%, 0% 100%, from( #c88423 ), color-stop( 0.25, #c88423 ), color-stop( 0.5, #fffb84 ), color-stop( 0.75, #c88423 ), to( #9a6717 ) );
 }
 
 .UnitCount {
@@ -277,13 +277,13 @@
 }
 
 .UnitCountLabel {
-	margin-top: 60px;
-	margin-left: 325px;
+	margin-top: 59px;
+	margin-left: 323px;
     horizontal-align: left;
     vertical-align: top;
     font-weight: bold;
-    font-size: 18px;
-	color: greenyellow;
+    font-size: 20px;
+	color: gradient( linear, 0% 0%, 0% 100%, from( #c88423 ), color-stop( 0.25, #c88423 ), color-stop( 0.5, #fffb84 ), color-stop( 0.75, #c88423 ), to( #9a6717 ) );
 	border-color: black;
 	font-weight: bold;
     text-overflow: clip;
@@ -306,13 +306,13 @@
 }
 
 .NextRoundLabel {
-	margin-top: 46px;
+	margin-top: 43px;
 	margin-left: 605px;
     horizontal-align: left;
     vertical-align: top;
     font-weight: bold;
-    font-size: 20px;
-	color: greenyellow;
+    font-size: 23px;
+	color: gradient( linear, 0% 0%, 0% 100%, from( #c88423 ), color-stop( 0.25, #c88423 ), color-stop( 0.5, #fffb84 ), color-stop( 0.75, #c88423 ), to( #9a6717 ) );
 	border-color: black;
 	font-weight: bold;
     text-overflow: clip;
@@ -333,12 +333,13 @@
 #Timer {
 	horizontal-align: left;
 	vertical-align: center;
+	font-weight: bold;
 	color: white;
 	font-size: 20px;
 	text-shadow: 2px 2px 2px black;
 	text-overflow: clip;
-	margin-top: 113px;
-	margin-left: 357px;		
+	margin-top: 112px;
+	margin-left: 354px;		
 	tooltip-position: bottom;
 }
 

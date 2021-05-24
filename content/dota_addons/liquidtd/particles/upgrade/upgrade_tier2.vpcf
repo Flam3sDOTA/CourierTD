@@ -69,8 +69,5 @@
 		{
 			m_ChildRef = resource:"particles/upgrade/required/tier2_core.vpcf"
 		},
-		{
-			m_ChildRef = resource:"particles/upgrade/required/tier2_rays_light.vpcf"
-		},
 	]
 }

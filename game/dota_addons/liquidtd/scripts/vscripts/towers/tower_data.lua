@@ -553,7 +553,52 @@ return {
     tier = 3,
     spawn_sound = "lone_druid_lone_druid_spawn_01",  
 	abilities = {
-      troll_warlord_fervor_lua = 1
+    lone_druid_spirit_bear_entangle = 1
+    },
+  },
+
+  tower_medusa_1 = {
+    level = 3,
+    tier = 3,
+    spawn_sound = "medusa_medus_spawn_01",  
+	abilities = {
+    medusa_split_shot_lua = 1
+    },
+  },
+
+  tower_weaver_1 = {
+    level = 3,
+    tier = 3,
+    spawn_sound = "weaver_weav_spawn_01",  
+	abilities = {
+    weaver_geminate_attack = 1
+    },
+  },
+
+  tower_zeus_1 = {
+    level = 3,
+    tier = 3,
+    spawn_sound = "zuus_zuus_spawn_04",  
+	abilities = {
+    zuus_arc_lightning = 1
+    },
+  },
+
+  tower_ogremagi_1 = {
+    level = 3,
+    tier = 3,
+    spawn_sound = "ogre_magi_ogmag_spawn_01",  
+	abilities = {
+    ogre_magi_ignite_lua = 1
+    },
+  },
+
+  tower_sf_1 = {
+    level = 3,
+    tier = 3,
+    spawn_sound = "nevermore_nev_arc_spawn_11",  
+	abilities = {
+    shadow_fiend_presence_of_the_dark_lord_lua = 1
     },
   },
 }

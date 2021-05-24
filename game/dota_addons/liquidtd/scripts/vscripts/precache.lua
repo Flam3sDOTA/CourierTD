@@ -124,6 +124,8 @@ g_ParticlePrecache =
 	"particles/econ/items/luna/luna_ti9_weapon/luna_ti9_base_attack.vpcf",
 	"particles/tower_effects/troll_base_attack.vpcf",
 	"particles/units/heroes/hero_lone_druid/lone_druid_base_attack.vpcf",
+	"particles/units/heroes/hero_medusa/medusa_base_attack.vpcf",
+	"particles/econ/events/ti9/rock_golem_tower/radiant_tower_attack.vpcf",
 	
 	-- Hero/Courier Particles
 	"particles/courier_effects/trail_baby_roshan_platinum.vpcf",
@@ -179,6 +181,13 @@ g_ParticlePrecache =
 	"particles/units/heroes/heroes_underlord/abyssal_underlord_weapon_blur_a.vpcf",
 	"particles/units/heroes/heroes_underlord/abyssal_underlord_weapon_blur_b.vpcf",
 	"particles/units/heroes/heroes_underlord/underlord_pitofmalice.vpcf",
+	"particles/units/heroes/hero_zuus/zuus_arc_lightning_.vpcf",
+	"particles/units/heroes/hero_zuus/zuus_arc_lightning.vpcf",
+	"particles/econ/items/zeus/lightning_weapon_fx/zuus_base_attack_arc_immortal_lightning.vpcf",
+	"particles/econ/items/zeus/lightning_weapon_fx/zuus_lightning_bolt_bodyarc_immortal_lightningyzuus_lightning_bolt_bodyarc_immortal_lightning.vpcf",
+	"particles/econ/items/zeus/zeus_ti8_immortal_arms/zeus_ti8_immortal_arc.vpcf",
+	"particles/econ/items/shadow_fiend/sf_desolation/nvm_atk_blur_dso.vpcf",
+	"particles/econ/items/shadow_fiend/sf_desolation/nvm_atk_blur_b_dso.vpcf",
 }
 
 g_ParticleFolderPrecache =
@@ -186,6 +195,9 @@ g_ParticleFolderPrecache =
 	"particles/buildinghelper",
 	"particles/test_particle",
 	"particles/act_2",
+	"particles/units/heroes/hero_zuus",
+	"particles/units/heroes/hero_zeus",
+	"particles/econ/items/zeus",
 }
 
 g_SoundPrecache =
@@ -245,6 +257,7 @@ g_SoundPrecache =
 	"soundevents/game_sounds_heroes/game_sounds_faceless_void.vsndevts",
 	"soundevents/game_sounds_heroes/game_sounds_alchemist.vsndevts",
 	"soundevents/game_sounds_heroes/game_sounds_abaddon.vsndevts",
+	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts",
 	"soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts",
 	"soundevents/game_sounds_heroes/game_sounds_skeletonking.vsndevts",
 	"soundevents/game_sounds_heroes/game_sounds_dark_willow.vsndevts",
@@ -253,6 +266,7 @@ g_SoundPrecache =
 	"soundevents/game_sounds_heroes/game_sounds_dark_seer.vsndevts",
 	"soundevents/game_sounds_heroes/game_sounds_weaver.vsndevts",
 	"soundevents/game_sounds_heroes/game_sounds_necrolyte.vsndevts",
+	"soundevents/game_sounds_heroes/game_sounds_nevermore.vsndevts",
 	"soundevents/voscripts/game_sounds_vo_medusa.vsndevts",
 	"soundevents/voscripts/game_sounds_vo_sniper.vsndevts",
 	"soundevents/voscripts/game_sounds_vo_viper.vsndevts",
@@ -289,6 +303,7 @@ g_SoundPrecache =
 	"soundevents/voscripts/game_sounds_vo_ogre_magi.vsndevts",
 	"soundevents/voscripts/game_sounds_vo_broodmother.vsndevts",
 	"soundevents/voscripts/game_sounds_vo_invoker.vsndevts",
+	"soundevents/voscripts/game_sounds_vo_nevermore.vsndevts",
 	
 	-- Announcers
 	"soundevents/voscripts/game_sounds_vo_announcer_dlc_bastion.vsndevts",
