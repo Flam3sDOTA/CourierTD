@@ -1,7 +1,6 @@
 "use strict";
 GameUI.SetCameraDistance( 1520 );
 Game.AddCommand( "ToggleStatistics", ToggleStatistics, "", 0);
-var StatisticsOn = false;
 
 /* ERROR FRAME */
 function ErrorMessage(data) {
@@ -19,17 +18,15 @@ function ClearErrorMessage() {
 
 /* LEADERBOARD */
 function OnLeaderboardOpenButtonPressed() {
-	/*var panel = $("#LeaderboardsRoot");
+	var panel = $("#LeaderboardsRoot");
 	panel.visible = !panel.visible;
-	StatisticsOn = true;
-	Game.EmitSound("ui_chat_slide_out")*/
+	Game.EmitSound("ui_chat_slide_out")
 }
 
 function OnLeaderboardCloseButtonPressed() {
-	/*var panel = $("#LeaderboardsRoot");
+	var panel = $("#LeaderboardsRoot");
 	panel.visible = !panel.visible;
-	StatisticsOn = false;
-	Game.EmitSound("ui.profile_close")*/
+	Game.EmitSound("ui.profile_close")
 }
 
 function OnShopButtonPressed()
@@ -56,15 +53,6 @@ function SecondsToClock(seconds) {
 
   return hours+':'+minutes+':'+seconds;
 }	
-
-function ToggleStatistics() {
-    if(StatisticsOn){
-        OnLeaderboardCloseButtonPressed()
-    }
-    else{
-        OnLeaderboardOpenButtonPressed()
-    }
-}
 
 function UpdateGameTime(data) {
   $("#Timer").text = SecondsToClock(data.seconds);

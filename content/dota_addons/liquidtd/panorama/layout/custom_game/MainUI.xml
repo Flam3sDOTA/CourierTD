@@ -19,6 +19,7 @@
         <Panel hittest="false" class="TopLeftMenu">
 			<Button id="NewDashboardButton" class="TopLeftMenuButton" onactivate="DOTAHUDShowDashboard();" onmouseover="UIShowTextTooltip(DOTA_HUD_BackToDashboard)"  onmouseout="UIHideTextTooltip()" />
 			<Button id="NewSettingsButton" class="TopLeftMenuButton" onactivate="DOTAShowSettingsPopup();" onmouseover="UIShowTextTooltip(DOTA_HUD_Settings)"  onmouseout="UIHideTextTooltip()" />
+			<Button id="LeaderboardButton" class="TopLeftMenuButton" onactivate="OnLeaderboardOpenButtonPressed()" onload="DOTAShowTextTooltip('Leaderboards - Season 0')" onmouseover="UIShowTextTooltip(Leaderboards - Season 0)"  onmouseout="UIHideTextTooltip()" />
 			<Button id="NewDiscordButton" class="TopLeftMenuButton" onactivate="ExternalBrowserGoToURL('https://discord.gg/WPmtWyB');" onmouseover="UIShowTextTooltip(Join the Discord Server)"  onmouseout="UIHideTextTooltip()" />
 		</Panel>
 
@@ -37,5 +38,171 @@
 			<Label id="NextRoundLabel" class="NextRoundLabel" text="00:29" />
 		</Panel>
 		
+		<Panel hittest="false" id="LeaderboardsRoot">
+			<Panel hittest="false" class="LeaderboardsHeader">
+				<Panel class="LeaderboardsTitleIcon" />
+				<Label class="LeaderboardsTitle" text="Leaderboards" />
+				<Button id="CloseRoot" onactivate="OnLeaderboardCloseButtonPressed()"/>
+			</Panel>
+			<Panel hittest="false" class="LeaderboardsMain">
+				<Panel hittest="false" id="LeaderboardsRankingContainer">
+					<Panel hittest="false" id="Player1Panel" class="Row">
+						<Panel hittest="false" class="NumberContainer1">
+							<Label class="NumberContainerLabel" text="1"/>
+						</Panel>
+						<Panel hittest="false" class="SteamAvatarContainer1">
+							<DOTAAvatarImage id="Avatar1" class="AvatarImage"/>
+						</Panel>
+						<Panel hittest="false" class="SteamUserNameContainer">
+							<Label text="FirstPlace" id="SteamName1" class="UserNameLabelSteam"/>
+						</Panel>
+						<Panel hittest="false" class="MMRContainer">
+							<Label text="500" id="MMR1" class="MMRLabel"/>
+						</Panel>
+					</Panel>
+					<Panel hittest="false" id="Player2Panel" class="Row">
+						<Panel hittest="false" class="NumberContainer2">
+							<Label class="NumberContainerLabel" text="2"/>
+						</Panel>
+						<Panel hittest="false" class="SteamAvatarContainer2">
+							<DOTAAvatarImage id="Avatar2" class="AvatarImage"/>
+						</Panel>
+						<Panel hittest="false" class="SteamUserNameContainer">
+							<Label text="SecondPlace" id="SteamName2" class="UserNameLabelSteam"/>
+						</Panel>
+						<Panel hittest="false" class="MMRContainer">
+							<Label text="450" id="MMR2" class="MMRLabel"/>
+						</Panel>
+					</Panel>
+					<Panel hittest="false" id="Player3Panel" class="Row">
+						<Panel hittest="false" class="NumberContainer3">
+							<Label class="NumberContainerLabel" text="3"/>
+						</Panel>
+						<Panel hittest="false" class="SteamAvatarContainer3">
+							<DOTAAvatarImage id="Avatar3" class="AvatarImage"/>
+						</Panel>
+						<Panel hittest="false" class="SteamUserNameContainer">
+							<Label text="ThirdPlace" id="SteamName3" class="UserNameLabelSteam"/>
+						</Panel>
+						<Panel hittest="false" class="MMRContainer">
+							<Label text="400" id="MMR3" class="MMRLabel"/>
+						</Panel>
+					</Panel>
+					<Panel hittest="false" id="Player4Panel" class="Row">
+						<Panel hittest="false" class="NumberContainer">
+							<Label class="NumberContainerLabel" text="4"/>
+						</Panel>
+						<Panel hittest="false" class="SteamAvatarContainer">
+							<DOTAAvatarImage id="Avatar4" class="AvatarImage"/>
+						</Panel>
+						<Panel hittest="false" class="SteamUserNameContainer">
+							<Label text="FourthPlace" id="SteamName4" class="UserNameLabelSteam"/>
+						</Panel>
+						<Panel hittest="false" class="MMRContainer">
+							<Label text="350" id="MMR4" class="MMRLabel"/>
+						</Panel>
+					</Panel>
+					<Panel hittest="false" id="Player5Panel" class="Row">
+						<Panel hittest="false" class="NumberContainer">
+							<Label class="NumberContainerLabel" text="5"/>
+						</Panel>
+						<Panel hittest="false" class="SteamAvatarContainer">
+							<DOTAAvatarImage id="Avatar5" class="AvatarImage"/>
+						</Panel>
+						<Panel hittest="false" class="SteamUserNameContainer">
+							<Label text="FifthPlace" id="SteamName5" class="UserNameLabelSteam"/>
+						</Panel>
+						<Panel hittest="false" class="MMRContainer">
+							<Label text="300" id="MMR5" class="MMRLabel"/>
+						</Panel>
+					</Panel>
+					<Panel hittest="false" id="Player6Panel" class="Row">
+						<Panel hittest="false" class="NumberContainer">
+							<Label class="NumberContainerLabel" text="6"/>
+						</Panel>
+						<Panel hittest="false" class="SteamAvatarContainer">
+							<DOTAAvatarImage id="Avatar6" class="AvatarImage"/>
+						</Panel>
+						<Panel hittest="false" class="SteamUserNameContainer">
+							<Label text="SixthPlace" id="SteamName6" class="UserNameLabelSteam"/>
+						</Panel>
+						<Panel hittest="false" class="MMRContainer">
+							<Label text="250" id="MMR6" class="MMRLabel"/>
+						</Panel>
+					</Panel>
+					<Panel hittest="false" id="Player7Panel" class="Row">
+						<Panel hittest="false" class="NumberContainer">
+							<Label class="NumberContainerLabel" text="7"/>
+						</Panel>
+						<Panel hittest="false" class="SteamAvatarContainer">
+							<DOTAAvatarImage id="Avatar7" class="AvatarImage"/>
+						</Panel>
+						<Panel hittest="false" class="SteamUserNameContainer">
+							<Label text="SeventhPlace" id="SteamName7" class="UserNameLabelSteam"/>
+						</Panel>
+						<Panel hittest="false" class="MMRContainer">
+							<Label text="200" id="MMR7" class="MMRLabel"/>
+						</Panel>
+					</Panel>
+					<Panel hittest="false" id="Player8Panel" class="Row">
+						<Panel hittest="false" class="NumberContainer">
+							<Label class="NumberContainerLabel" text="8"/>
+						</Panel>
+						<Panel hittest="false" class="SteamAvatarContainer">
+							<DOTAAvatarImage id="Avatar8" class="AvatarImage"/>
+						</Panel>
+						<Panel hittest="false" class="SteamUserNameContainer">
+							<Label text="EightPlace" id="SteamName8" class="UserNameLabelSteam"/>
+						</Panel>
+						<Panel hittest="false" class="MMRContainer">
+							<Label text="150" id="MMR8" class="MMRLabel"/>
+						</Panel>
+					</Panel>
+					<Panel hittest="false" id="Player9Panel" class="Row">
+						<Panel hittest="false" class="NumberContainer">
+							<Label class="NumberContainerLabel" text="9"/>
+						</Panel>
+						<Panel hittest="false" class="SteamAvatarContainer">
+							<DOTAAvatarImage id="Avatar9" class="AvatarImage"/>
+						</Panel>
+						<Panel hittest="false" class="SteamUserNameContainer">
+							<Label text="NinthPlace" id="SteamName9" class="UserNameLabelSteam"/>
+						</Panel>
+						<Panel hittest="false" class="MMRContainer">
+							<Label text="100" id="MMR9" class="MMRLabel"/>
+						</Panel>
+					</Panel>
+					<Panel hittest="false" id="Player10Panel" class="Row">
+						<Panel hittest="false" class="NumberContainer">
+							<Label class="NumberContainerLabel" text="10"/>
+						</Panel>
+						<Panel hittest="false" class="SteamAvatarContainer">
+							<DOTAAvatarImage id="Avatar10" class="AvatarImage"/>
+						</Panel>
+						<Panel hittest="false" class="SteamUserNameContainer">
+							<Label text="TenthPlace" id="SteamName10" class="UserNameLabelSteam"/>
+						</Panel>
+						<Panel hittest="false" class="MMRContainer">
+							<Label text="50" id="MMR10" class="MMRLabel"/>
+						</Panel>
+					</Panel>
+					<Panel hittest="false" class="LocalPlayerDivider" />
+					<Panel hittest="false" id="PlayerLocalPanel" class="Row">
+						<Panel hittest="false" class="NumberContainer">
+							<Label class="NumberContainerLabelLocal" text="50000"/>
+						</Panel>
+						<Panel hittest="false" class="SteamAvatarContainer">
+							<DOTAAvatarImage id="Avatar" steamid="local"/>
+						</Panel>
+						<Panel hittest="false" class="SteamUserNameContainer">
+							<Label text="LocalPlayer" id="LocalPlayer" class="UserNameLabelSteam"/>
+						</Panel>
+						<Panel hittest="false" class="MMRContainer">
+							<Label text="0" id="MMRLocal" class="MMRLabel"/>
+						</Panel>
+					</Panel>
+				</Panel>
+			</Panel>
+		</Panel>		
 	</Panel>
 </root>

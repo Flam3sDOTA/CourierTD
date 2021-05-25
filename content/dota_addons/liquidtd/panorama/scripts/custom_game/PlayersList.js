@@ -33,6 +33,11 @@ function createPlayerPanel(id, steam_id){
   var usernamePanel = $.CreatePanel("DOTAUserName", playerPanel, "username_player_" + id);
   usernamePanel.AddClass("Username");
   usernamePanel.steamid = steam_id;
+  
+  var mmrPanel = $.CreatePanel("Label", playerPanel, "mmr_panel" + id);
+  mmrPanel.AddClass("MMRNumber");
+  mmrPanel.text = "MMR: " + "5000";
+  
 
   // var heronamepanel = $.CreatePanel("Label", playerPanel, "");
   // heronamepanel.AddClass("HeroName");

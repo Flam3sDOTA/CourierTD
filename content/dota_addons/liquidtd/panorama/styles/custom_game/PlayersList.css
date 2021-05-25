@@ -56,7 +56,7 @@
 .Username
 {	
 	horizontal-align: center;
-	margin-top: 15px;
+	margin-top: 12px;
 	margin-left: 55px;
 	overflow: clip;
 	text-overflow: clip;
@@ -67,6 +67,18 @@ Label {
 	text-shadow: 1px 1px 2px 3.0 #000000;
 	overflow: clip;
 	text-overflow: clip;
+}
+
+.MMRNumber
+{
+	margin-top: 39px;
+	margin-left: 55px;
+	font-size: 14px;
+	horizontal-align: center;
+	margin-right: 2px;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 2px 3.0 #000000;
+	color: white;
 }
 
 .PlayerHealth
@@ -83,15 +95,19 @@ Label {
 
 .PlayerHealth .ProgressBarLeft
 {
-  background-color: gradient( linear, 0% 0%, 0% 100%, from( #320000 ), color-stop( 0.3, #ff4A07 ), color-stop( .5, #ff4A07 ), to( #320000 ) );
-  box-shadow: inset #000 1px 1px 3px 3px;	
+  background-color: gradient( linear, 0% 0%, 0% 100%, from( #320000 ), color-stop( 0.3, green ), color-stop( .5, green ), to( #320000 ) );
+  box-shadow: inset #000 1px 1px 2px 2px;	
   border-radius: 1px;
 }
 
 .PlayerHealth .ProgressBarRight
 {
 	background-color: gradient( linear, 0% 0%, 100% 0%, from( #222222FF ), to( black ) );
-	
+}
+
+.Invisible
+{
+	opacity: 0;
 }
 
 .HealthPercentage
@@ -103,9 +119,4 @@ Label {
 	letter-spacing: 2px;
 	text-shadow: 1px 1px 2px 3.0 #000000;
 	color: white;
-}
-
-.Invisible
-{
-	opacity: 0;
 }
