@@ -1,6 +1,5 @@
 "use strict";
 GameUI.SetCameraDistance( 1520 );
-Game.AddCommand( "ToggleStatistics", ToggleStatistics, "", 0);
 
 /* ERROR FRAME */
 function ErrorMessage(data) {
