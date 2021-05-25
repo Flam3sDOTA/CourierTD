@@ -404,12 +404,12 @@
     transition-property: wash-color;
     transition-timing-function: ease-in-out;
 	align: left center;
-	margin-left: 145px;
+	margin-left: 135px;
 }
 
 .LeaderboardsTitle {
 	align: center center;
-	font-size: 25px;
+	font-size: 28px;
 	color: white;
 	text-transform: uppercase;
 	margin-left: 35px;
@@ -444,22 +444,22 @@
 	height: 8%;
 	border-top: 1px solid #3b404777;
 	border-bottom: 1px solid #00000088;
-	background-color: gradient( linear, 0% 0%, 100% 0%, from( rgba(0, 0, 0, 0.800) ), to( #42310D00 ) );
+	background-color: gradient( linear, 0% 0%, 100% 0%, from( rgba(134, 74, 2, 0.150) ), to( rgba(134, 74, 2, 0.200) ) );
 }
 
 #Player1Panel {
 	margin-top: 0px;
-	background-color: gradient( linear, 0% 0%, 100% 0%, from( rgba(0, 0, 0, 0.800) ), to( rgba(218, 165, 32, 0.663) ) );
+	background-color: gradient( linear, 0% 0%, 100% 0%, from( rgba(84, 42, 95, 0.150) ), to( rgba(84, 42, 95, 0.999) ) );
 }
 
 #Player2Panel {
 	margin-top: 55px;
-	background-color: gradient( linear, 0% 0%, 100% 0%, from( rgba(0, 0, 0, 0.800) ), to( rgba(90, 97, 94, 0.463) ) );
+	background-color: gradient( linear, 0% 0%, 100% 0%, from( rgba(34, 56, 130, 0.150) ), to( rgba(34, 56, 130, 0.999) ) );
 }
 
 #Player3Panel {
 	margin-top: 110px;
-	background-color: gradient( linear, 0% 0%, 100% 0%, from( rgba(0, 0, 0, 0.800) ), to( rgba(180, 108, 35, 0.263) ) );
+	background-color: gradient( linear, 0% 0%, 100% 0%, from( rgba(76, 113, 130, 0.150) ), to( rgba(76, 113, 130, 0.999) ) );
 }
 
 #Player4Panel {
@@ -503,42 +503,52 @@
 
 #PlayerLocalPanel {
 	margin-top: 570px;
+	background-color: gradient( linear, 0% 0%, 100% 0%, from( rgba(0, 0, 0, 0.800) ), to( #42310D00 ) );
 }
 
 .NumberContainer {
 	width: 11%;
 	height: 100%;
-	background-color: gradient( linear, 0% 0%, 100% 0%, from( #143271 ), color-stop( 0.5, #2d4475), to( #0E2453 ) );
-	border-top: 1px solid #ffffff11;
-	border-left: 1px solid #ffffff11;
-	border-radius: 3px;
+	background-image:url('file://{images}/custom_game/leaderboards/place_medal.png');
+	background-size: 68px 68px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 }
 
 .NumberContainer1 {
 	width: 11%;
 	height: 100%;
-	background-color: gradient( linear, 0% 0%, 100% 0%, from( rgba(0, 0, 0, 0.800) ), to( rgba(218, 165, 32, 0.999) ) );
-	border-top: 1px solid #DCD08680;
-	border-left: 1px solid #DCD08680;
-	border-radius: 3px;
+	background-image:url('file://{images}/custom_game/leaderboards/first_place_medal.png');
+	background-size: 54px 54px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 }
 
 .NumberContainer2 {
 	width: 11%;
 	height: 100%;
-	background-color: gradient( linear, 0% 0%, 100% 0%, from( rgba(0, 0, 0, 0.800) ), to( rgba(90, 97, 94, 0.999) ) );
-	border-top: 1px solid #ffffff11;
-	border-left: 1px solid #ffffff11;
-	border-radius: 3px;
+	background-image:url('file://{images}/custom_game/leaderboards/second_place_medal.png');
+	background-size: 53px 53px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 }
 
 .NumberContainer3 {
 	width: 11%;
 	height: 100%;
-	background-color: gradient( linear, 0% 0%, 100% 0%, from( rgba(0, 0, 0, 0.100) ), to( rgba(180, 108, 35, 0.999) ) );
-	border-top: 1px solid #ffffff11;
-	border-left: 1px solid #ffffff11;
-	border-radius: 3px;
+	background-image:url('file://{images}/custom_game/leaderboards/third_place_medal.png');
+	background-size: 53px 53px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.NumberContainerLocal {
+	width: 11%;
+	height: 100%;
+	background-image:url('file://{images}/custom_game/leaderboards/place_local.png');
+	background-size: 68px 68px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 }
 
 .NumberContainerLabel {
@@ -546,9 +556,9 @@
 	color: white;
 	
 	text-align: center;
-    text-shadow: 2px 2px 2px #000000;
+    text-shadow: 0px 0px 4px 5 black;
 	
-	font-size: 35px;
+	font-size: 30px;
 	font-weight: bold;
 	letter-spacing: 0px;
 }
@@ -594,6 +604,14 @@
 }
 
 .SteamAvatarContainer3 {
+	width: 10%;
+	height: 100%;
+	background-image: url("file://{images}/custom_game/leaderboards/third_place_avatar.png");
+	background-size: 100% 100%;
+	margin-left: 65px;
+}
+
+.SteamAvatarContainerLocal {
 	width: 10%;
 	height: 100%;
 	background-image: url("file://{images}/custom_game/leaderboards/third_place_avatar.png");

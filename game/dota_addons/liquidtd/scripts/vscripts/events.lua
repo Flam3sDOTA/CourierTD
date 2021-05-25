@@ -163,11 +163,10 @@ end
 function LiquidTD:OnGameInProgress()
   -- Give these players a custom builder model
 	Timers:CreateTimer(5, function()
-    local maxPlayerID = PlayerResource:GetTeamPlayerCount()
-    for playerID=0,(maxPlayerID-1) do
+    local maxPlayerID = PlayerResource:GetNumConnectedHumanPlayers()
+    for playerID=0,(maxPlayerID) do
 	local sID = PlayerResource:GetSteamAccountID(playerID)
       if sID == 289101818 then 
-		print( "COURIER CHANGE SYSTEM 4" )
 		local player = PlayerResource:GetPlayer(playerID)
         local hero = player:GetAssignedHero()
         local courier = "models/courier/baby_rosh/babyroshan_ti10.vmdl"
