@@ -97,7 +97,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"					"ability_datadriven"
-		"AbilityTextureName"		"alchemist_goblins_greed"
+		"AbilityTextureName"		"SellTower"
 		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"MaxLevel"					"1"
 

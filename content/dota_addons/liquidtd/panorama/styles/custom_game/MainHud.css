@@ -510,45 +510,49 @@
 	width: 11%;
 	height: 100%;
 	background-image:url('file://{images}/custom_game/leaderboards/place_medal.png');
-	background-size: 68px 68px;
+	background-size: 60px 60px;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
+	margin-top: 1px;
 }
 
 .NumberContainer1 {
 	width: 11%;
 	height: 100%;
 	background-image:url('file://{images}/custom_game/leaderboards/first_place_medal.png');
-	background-size: 54px 54px;
+	background-size: 58px 58px;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
+	margin-top: -2px;
 }
 
 .NumberContainer2 {
 	width: 11%;
 	height: 100%;
 	background-image:url('file://{images}/custom_game/leaderboards/second_place_medal.png');
-	background-size: 53px 53px;
+	background-size: 60px 60px;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
+	margin-top: 1px;
 }
 
 .NumberContainer3 {
 	width: 11%;
 	height: 100%;
 	background-image:url('file://{images}/custom_game/leaderboards/third_place_medal.png');
-	background-size: 53px 53px;
+	background-size: 60px 60px;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
+	margin-top: 2px;
 }
 
 .NumberContainerLocal {
 	width: 11%;
 	height: 100%;
-	background-image:url('file://{images}/custom_game/leaderboards/place_local.png');
-	background-size: 68px 68px;
+	background-size: 32px 32px;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
+	margin-top: 1px;
 }
 
 .NumberContainerLabel {
@@ -561,6 +565,9 @@
 	font-size: 30px;
 	font-weight: bold;
 	letter-spacing: 0px;
+
+	margin-bottom: 5px;
+	margin-right: 2px;
 }
 
 .NumberContainerLabelLocal {
@@ -570,13 +577,13 @@
 	text-align: center;
     text-shadow: 2px 2px 2px #000000;
 	
-	font-size: 35px;
+	font-size: 25px;
 	font-weight: bold;
 	letter-spacing: 0px;
 	
 	text-overflow: shrink;
-	margin-right: 1px;
-	margin-left: 0px;
+	margin-right: 0px;
+	margin-left: 4px;
 }
 
 .SteamAvatarContainer {

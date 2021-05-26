@@ -189,7 +189,7 @@
 					<Panel hittest="false" class="LocalPlayerDivider" />
 					<Panel hittest="false" id="PlayerLocalPanel" class="Row">
 						<Panel hittest="false" class="NumberContainerLocal">
-							<Label class="NumberContainerLabelLocal" text="50000"/>
+							<Label class="NumberContainerLabelLocal" text="5000"/>
 						</Panel>
 						<Panel hittest="false" class="SteamAvatarContainerLocal">
 							<DOTAAvatarImage id="Avatar" steamid="local"/>
