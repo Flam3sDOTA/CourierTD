@@ -28,9 +28,6 @@ function chest_open(keys)
 		local item_reward = CreateItem( item_name, caster, caster )
 		caster:AddItem(item_reward)
 		item_reward:SetSellable(false)
-		Timers:CreateTimer(10, function()
-			item_reward:SetSellable(true)
-		end)
 		if keys.gold == 2 then
 			PlayerResource:ModifyGold(Player_ID, gold, true, 0 ) 
 		end
