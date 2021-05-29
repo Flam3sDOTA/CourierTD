@@ -165,36 +165,12 @@ function LiquidTD:OnGameInProgress()
 	Timers:CreateTimer(5, function()
     local maxPlayerID = PlayerResource:GetNumConnectedHumanPlayers()
     for playerID=0,(maxPlayerID) do
-	local sID = PlayerResource:GetSteamAccountID(playerID)
-      if sID == 289101818 then 
-		local player = PlayerResource:GetPlayer(playerID)
+	  local sID = PlayerResource:GetSteamAccountID(playerID)
+      if sID then 
+		    local player = PlayerResource:GetPlayer(playerID)
         local hero = player:GetAssignedHero()
-        local courier = "models/courier/baby_rosh/babyroshan_ti10.vmdl"
-		local particleName = "particles/econ/courier/courier_babyroshan_ti10/courier_babyroshan_ti10_ambient.vpcf"
-		local particle = ParticleManager:CreateParticle( particleName, PATTACH_ABSORIGIN_FOLLOW, hero)
-        hero:SetOriginalModel(courier)
-        hero:SetModel(courier)
-		hero:SetMaterialGroup("1")
-		ParticleManager:SetParticleControl(particle, 0, hero:GetOrigin())
-        ParticleManager:SetParticleControl(particle, 3, hero:GetOrigin())
-      elseif sID == 43305444 then 
-        local player = PlayerResource:GetPlayer(playerID)
-        local hero = player:GetAssignedHero()
-        local courier = "models/courier/baby_rosh/babyroshan_winter18.vmdl"
-        hero:SetOriginalModel(courier)
-        hero:SetModel(courier)
-        hero:SetMaterialGroup("1")
-	  elseif sID == 175156710 then 
-	    local player = PlayerResource:GetPlayer(playerID)
-        local hero = player:GetAssignedHero()
-        local courier = "models/courier/baby_rosh/babyroshan.vmdl"
-		local particleName = "particles/econ/courier/courier_roshan_ti8/courier_roshan_ti8.vpcf"
-        local particle = ParticleManager:CreateParticle( particleName, PATTACH_ABSORIGIN_FOLLOW, hero)
-        hero:SetOriginalModel(courier)
-        hero:SetModel(courier)
-		hero:SetMaterialGroup("5")
-		ParticleManager:SetParticleControl(particle, 0, hero:GetOrigin())
-        ParticleManager:SetParticleControl(particle, 3, hero:GetOrigin())
+        AssignCosmetics(sID, hero)
+        print( "[Cosmetics] AssignCosmetics" )
       end
     end
     return
