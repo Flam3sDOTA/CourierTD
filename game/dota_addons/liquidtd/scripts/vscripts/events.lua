@@ -134,9 +134,9 @@ function LiquidTD:OnEntityKilled(event)
 	
 	OnTowerKilled(killed)
 
-  if killed:IsHero() then
-    
-  end
+	if killed:IsHero() then
+		LiquidTD:OnHeroKilled(killed)
+	end
 	
 	if killed.nodraw_on_death == true then
 		killed:AddNoDraw()
