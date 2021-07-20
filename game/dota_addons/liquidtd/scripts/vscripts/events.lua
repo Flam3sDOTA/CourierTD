@@ -66,6 +66,37 @@ end
 function LiquidTD:OnConnectFull(keys) 
 	local entIndex = keys.index + 1
 	local player = EntIndexToHScript(entIndex)
+  local playerID = player:GetPlayerID()
+
+  if not TableContainsValue(GameRules.playerIDs, playerID) then
+    local steamID = tostring(PlayerResource:GetSteamAccountID(playerID))
+    -- insert player data for stat tracking
+    local playerData = {
+      playerID = playerID,
+      steamID = steamID,
+      username = PlayerResource:GetPlayerName(playerID),
+    }
+
+    table.insert(GameRules.playerIDs, playerID)
+
+    GetPlayerDataFromServer(
+      steamID,
+      function(data)
+        if data and data.mmr then
+          playerData.mmr = data.mmr
+        else
+          playerData.mmr = 1000
+        end
+        table.insert(GameRules.GameData.players, playerData)
+      end,
+      function(err)
+        print("Error looking up player data, using default mmr/rank")
+        playerData.mmr = 1000
+        playerData.rank = -1
+        table.insert(GameRules.GameData.players, playerData)
+      end
+    )
+  end
 end
 
 ---------------------------------------------------------------------------
@@ -102,6 +133,10 @@ function LiquidTD:OnEntityKilled(event)
 	end
 	
 	OnTowerKilled(killed)
+
+  if killed:IsHero() then
+    
+  end
 	
 	if killed.nodraw_on_death == true then
 		killed:AddNoDraw()
@@ -110,40 +145,54 @@ function LiquidTD:OnEntityKilled(event)
 	end	
 	
 	if killed:IsCreature() and not killed.destination_reached then
-        RollDrops(killed)
-    end
-	
-  if killed:IsHero() then
-    local numAlive = 0
-    local lastHero
-    -- check to see if we have a winner
-    for _,hero in pairs(HeroList:GetAllHeroes()) do
-      if hero:IsAlive() then
-        numAlive = numAlive + 1
-        lastHero = hero
-      end
-    end
+    RollDrops(killed)
+  end
+end
 
-    if numAlive == 1 then
-      GameRules:SetGameWinner(lastHero:GetTeam())
+function LiquidTD:OnHeroKilled(hero)
+  local numAlive = 0
+  local lastHero
+  -- check to see if there is one hero left
+  for _,hero in pairs(HeroList:GetAllHeroes()) do
+    if hero:IsAlive() then
+      numAlive = numAlive + 1
+      lastHero = hero
     end
+  end
+
+  local place = numAlive + 1
+
+  local player = hero:GetPlayerOwner() 
+  LiquidTD:OnPlayerFinished(player, place)
+
+  if numAlive == 1 then
+    local winnerPlayer = lastHero:GetPlayerOwner()
+    LiquidTD:OnPlayerFinished(winnerPlayer, 1)
+    SaveGameDuration(GameRules:GetDOTATime(false, false))
+    GameRules:SetGameWinner(lastHero:GetTeam())
+  end
+end
+
+function LiquidTD:OnPlayerFinished(player, place)
+  if player then
+    SaveGamePlayer(player, place)
   end
 end
 
 function RollDrops(unit)
-    local DropInfo = GameRules.DropTable[unit:GetUnitName()]
-    if DropInfo then
-        for item_name,chance in pairs(DropInfo) do
-            if RollPercentage(chance) then
-                -- Create the item
-                local item = CreateItem(item_name, nil, nil)
-                local pos = unit:GetAbsOrigin()
-                local drop = CreateItemOnPositionSync( pos, item )
-                local pos_launch = pos+RandomVector(RandomFloat(150,200))
-                item:LaunchLoot(false, 200, 0.75, pos_launch)
-            end
-        end
+  local DropInfo = GameRules.DropTable[unit:GetUnitName()]
+  if DropInfo then
+    for item_name,chance in pairs(DropInfo) do
+      if RollPercentage(chance) then
+        -- Create the item
+        local item = CreateItem(item_name, nil, nil)
+        local pos = unit:GetAbsOrigin()
+        local drop = CreateItemOnPositionSync( pos, item )
+        local pos_launch = pos+RandomVector(RandomFloat(150,200))
+        item:LaunchLoot(false, 200, 0.75, pos_launch)
+      end
     end
+  end
 end
 
 ---------------------------------------------------------------------------

@@ -9,11 +9,16 @@ require("libraries/projectiles")
 require("libraries/keyvalues")
 require("libraries/animations")
 require("libraries/utility_functions")
+GameRules.JSON = require("libraries/json")
+require("libraries/stat_tracking")
+
 require("towers/tower_setup")
 require("cosmetics/cosmetics_setup")
 require("waves/wave_controller")
 require("events")
 require("precache")
+require("testing")
+require("utility_functions")
 require("mechanics/upgrades")
 
 function Precache( context )
@@ -41,6 +46,11 @@ end
 function Activate()
 	GameRules.LiquidTD = LiquidTD()
 	GameRules.LiquidTD:InitGameMode()
+	LiquidTD.Initialized = true
+end
+
+if LiquidTD.Initialized then
+  LiquidTD:OnScriptReload()
 end
 
 function LiquidTD:InitGameMode()
@@ -179,6 +189,11 @@ function LiquidTD:InitGameMode()
 	CUSTOM_TEAM_PLAYER_COUNT[DOTA_TEAM_BADGUYS]  = 1
 	CUSTOM_TEAM_PLAYER_COUNT[DOTA_TEAM_CUSTOM_1] = 1
 	CUSTOM_TEAM_PLAYER_COUNT[DOTA_TEAM_CUSTOM_2] = 1
+
+	GameRules.playerIDs = {}
+	GameRules.GameData = {}
+	GameRules.GameData.players = {}
+	GameRules.GameData.matchID = tonumber(tostring(GameRules:Script_GetMatchID()))
 	
 	local count = 0
 	for team,number in pairs(CUSTOM_TEAM_PLAYER_COUNT) do
