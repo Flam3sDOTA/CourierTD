@@ -1,0 +1,2349 @@
+@define accentColor: #88fcbd80;
+@define accentColorBright: #88fcbd;
+@define accentColorGlow: #88fcbd63;
+@define accentBorderColor: #88fcbd10;
+@define accentColorSectionBG: #1b633c;
+@define textMediumColor: #505251;
+@define textBrightColor: #a3a9a6;
+@define textColoredMediumColor: #2b9c5f;
+@define textColoredBrightColor: #3bde85;
+@define textColoredBrightAltColor: #86ae98;
+@define textColoredVeryBrightColor: #7cffb8;
+@define textColoredDarkColor: #376a4e;
+@define SecondaryTabButton: #7ca18d;
+@define SecondaryTabButtonSelected: #01d361;
+@define SecondaryTabSeparator: #36694d;
+@define backgroundVeryDimColor: #011a0c;
+@define backgroundDimColor: #012311;
+@define backgroundMediumColor: #012311;
+@define backgroundBrightColor: #1f8c51;
+@define backgroundVeryBrightColor: #a3fdcc;
+@define bp_battlePassLogoColor: #37da81;
+@define bp_wagerTokenColor: #7cffb8;
+@define PurchaseLevelsButtonColor: #2cbd71;
+@define PurchaseLevelsButtonColorSecondary: #19a34f;
+@define bp_color1: #11492b;
+@define bp_color2: #11492b;
+@define bp_color3: #17201b;
+@define bp_color4: #aab8b0;
+@define bp_color5: #1f6840;
+@define bp_color6: #064221;
+@define bp_color7: #2faf69;
+@define bp_color8: #034a23;
+@define bp_color9: #8cdeb1;
+@define bp_color10: #2d533e;
+@define bp_color11: #157541;
+@define bp_color12: #196039;
+@define bp_color13: #3c7e5a;
+@define bp_color14: #7cc39c;
+@define bp_color15: #75ffb5;
+@define BRD: 1px solid #5ecb9030;
+@define XPCircleGradient: gradient( linear, 0% 0%, 0% 100%, from( bp_color8), to( bp_color11));
+@define XPCircleBorder: 1px solid bp_color7;
+@define XPRequiredHeroCircleGradient: gradient( linear, 0% 0%, 0% 100%, from( bp_color11), to( bp_battlePassLogoColor));
+@define XPRequiredHeroCircleBorder: 1px solid bp_color7;
+@define bp_battleLevelColor: #88fcbd;
+@define bp_single_point: url("s2r://panorama/images/compendium/international2018/single_point_psd.vtex");
+@define bp_single_point_selected: url("s2r://panorama/images/compendium/international2018/single_point_selected_psd.vtex");
+@define bp_activequestring_small: url("s2r://panorama/images/compendium/international2018/activequestring_small_psd.vtex");
+@define bp_activequestring_endscreen: url("s2r://panorama/images/compendium/international2018/activequestring_endscreen_psd.vtex");
+@define bp_shield_icon_endscreen: url("s2r://panorama/images/compendium/international2018/shield_icon_end_screen_psd.vtex");
+@define bp_tip_button_points: url("s2r://panorama/images/compendium/international2018/tip_button_points_psd.vtex");
+@define bp_tip_button_points_hover: url("s2r://panorama/images/compendium/international2018/tip_button_points_hover_psd.vtex");
+@define bp_total_tokens: url("s2r://panorama/images/compendium/international2018/totaltokens_psd.vtex");
+@define bp_total_points: url("s2r://panorama/images/compendium/international2018/totalpoints_psd.vtex");
+@define bp_cavern_crawl_logo: url("s2r://panorama/images/cavern/icon_logo_png.vtex");
+@define bp_cavern_crawl_challenge: url("s2r://panorama/images/cavern/icon_challenge_available_png.vtex");
+@define bp_cavern_crawl_post_game: url("s2r://panorama/images/compendium/international2018/cavern_icon_png.vtex");
+@define bp_quest_rank_empty: url("s2r://panorama/images/status_icons/3star_empty_psd.vtex");
+@define bp_quest_rank_1: url("s2r://panorama/images/status_icons/3star_1_psd.vtex");
+@define bp_quest_rank_2: url("s2r://panorama/images/status_icons/3star_2_psd.vtex");
+@define bp_quest_rank_3: url("s2r://panorama/images/status_icons/3star_3_psd.vtex");
+@define bp_quest_tabletop: url("s2r://panorama/images/compendium/international2018/tabletop_psd.vtex");
+@define bp_quest_scroll_left_texture: url("s2r://panorama/images/compendium/international2018/scroll_left_texture_psd.vtex");
+@define bp_quest_scroll_texture: url("s2r://panorama/images/compendium/international2018/scroll_texture_psd.vtex");
+@define bp_profile_tooltip_max: url("s2r://panorama/images/compendium/international2018/profiletooltip_max_psd.vtex");
+@define bp_platinum_backer: url("s2r://panorama/images/compendium/international2018/platinum_backer_psd.vtex");
+@define bp_avatar_border_default: url("s2r://panorama/images/compendium/international2018/avatarborder_default_psd.vtex");
+@define bp_avatar_border_max: url("s2r://panorama/images/compendium/international2018/avatarborder_max_psd.vtex");
+@define bp_point_log_tip_received: url("s2r://panorama/images/compendium/international2018/logicon_gottip_psd.vtex");
+@define bp_point_log_tip_given: url("s2r://panorama/images/compendium/international2018/logicon_gavetip_psd.vtex");
+@define bp_point_log_pass_activated: url("s2r://panorama/images/compendium/international2018/logicon_activate_psd.vtex");
+@define bp_point_log_wager_won: url("s2r://panorama/images/compendium/international2018/logicon_wonwager_psd.vtex");
+@define bp_point_log_prediction_correct: url("s2r://panorama/images/compendium/international2018/logicon_prediction_psd.vtex");
+@define bp_point_log_recycled_item: url("s2r://panorama/images/compendium/international2018/logicon_recycle_psd.vtex");
+@define bp_point_log_achievement: url("s2r://panorama/images/compendium/international2018/logicon_achievement_psd.vtex");
+@define bp_point_log_wheel_reward: url("s2r://panorama/images/compendium/international2018/logicon_spinwheel_psd.vtex");
+@define bp_point_log_community_goal: url("s2r://panorama/images/compendium/international2018/logicon_community_goal_psd.vtex");
+@define bp_point_log_quest_complete: url("s2r://panorama/images/compendium/international2018/logicon_questcomplete_psd.vtex");
+@define bp_point_log_points_consumed: url("s2r://panorama/images/compendium/international2018/totalpoints_psd.vtex");
+@define bp_point_log_won_battlecup: url("s2r://panorama/images/weekend_tourney/battlecup_icon_psd.vtex");
+@define bp_point_log_prediction_tokens: url("s2r://panorama/images/compendium/international2018/prediction_tokens_psd.vtex");
+@define bp_point_log_event_game: url("s2r://panorama/images/compendium/international2018/underhollow_icon_psd.vtex");
+@define bp_rewardsList_LevelContainer_background_color: gradient( linear,
+0% 0%,
+0% 100%,
+from( bp_color1),
+to( #000000FF));
+@define bp_rewardsList_LevelContainer_StatSub_silverTier_Label_color: bp_color3;
+@define bp_rewardsList_pointLog_silverTier_Label_color: #e9faff;
+@define bp_rewardsList_LevelContainer_LevelLabel_PrizePoolNumber_silverTier_color: bp_battlePassLogoColor;
+@define bp_rewardsList_LevelContainer_LevelLabel_PrizePoolNumber_silverTier_text_shadow: 1px 1px 6px 5 #000000;
+@define bp_rewardsList_LevelContainer_LevelCircle_silverTier_Label_color: bp_battlePassLogoColor;
+@define bp_rewardsList_LevelContainer_LevelCircle_Label_silverTier_wash_color: bp_color4;
+@define bp_rewardsList_LevelContainer_StatSub_goldTier_Label_color: #A5744A;
+@define bp_rewardsList_pointLog_goldTier_Label_color: #FFFFE9;
+@define bp_rewardsList_LevelContainer_LevelCircle_Label_goldTier_wash_color: #F9BE2D;
+@define bp_rewardsList_LevelContainer_StatSub_platinumTier_Label_color: backgroundBrightColor;
+@define bp_rewardsList_pointLog_platinumTier_Label_color: #e9faff;
+@define bp_rewardsList_LevelContainer_LevelCircle_Label_platinumTier_wash_color: bp_color5;
+@define bp_LevelCircle_wash_color: accentColor;
+@define bp_levelup_popup_background: url("s2r://panorama/images/compendium/international2018/battlepass_levelup_popup_background_psd.vtex");
+@define bp_battlepoint_popup_header: url("s2r://panorama/images/compendium/international2018/battlepointlog_header_psd.vtex");
+@define bp_battlepoint_purchase_header: url("s2r://panorama/images/compendium/international2018/battepointlog_purchase_header_psd.vtex");
+.bp_text_accent_color {
+    color: accentColor;
+}
+
+.bp_tip_button_points {
+    background-image: bp_tip_button_points;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+.bp_tip_button_points_hover {
+    background-image: bp_tip_button_points_hover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+.bp_single_point {
+    background-image: bp_single_point;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.bp_single_point_selected {
+    background-image: bp_single_point_selected;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.bp_activequestring_small {
+    background-image: bp_activequestring_small;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.bp_activequestring_endscreen {
+    background-image: bp_activequestring_endscreen;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.bp_shield_icon_endscreen {
+    background-image: bp_shield_icon_endscreen;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+@define bp_bracket_help_header_image: url("s2r://panorama/images/compendium/international2018/bracket_info_header_psd.vtex");
+@define bp_bracket_help_footer_image: url("s2r://panorama/images/compendium/international2018/bracket_info_footer_psd.vtex");
+.bp_bracket_help_header_image {
+    background-image: bp_bracket_help_header_image;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.bp_bracket_help_footer_image {
+    background-image: bp_bracket_help_footer_image;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.BattlePassPage {
+    width: 100%;
+    height: 100%;
+    flow-children: none;
+    wash-color: #2d5604;
+    wash-color: #043256;
+    wash-color: #07793b;
+}
+
+.BattlePassButton {
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #A9372E11 ), to( #A9372E11 ) );
+	border: 1px solid #A9372E;
+	transition-property: brightness;
+	transition-duration: 0.2s;
+	transition-timing-function: linear;
+	brightness: 2;
+	
+	align: center center;
+	margin-top: 70px;
+}
+
+.BattlePassButton:enabled:hover {
+    brightness: 3;
+}
+
+.BattlePassButton:hover Label {
+    color: white;
+}
+
+.BattlePassButton:active {
+    border: 1px solid bp_color8;
+    sound: "ui_generic_button_click";
+}
+
+.BattlePassButton Label {
+   margin-top: 2px;
+	text-transform: uppercase;
+
+	horizontal-align: center;
+	font-weight: thin;
+	font-size: 14px;
+	letter-spacing: 2px;
+	text-align: center;
+	vertical-align: middle;
+	text-shadow: 0px 0px 6px 1.0 #000000;
+	padding: 7px 8px 5px 8px;
+
+	color: #ffffffdd;
+
+	transition-property: color;
+	transition-duration: 0.1s;
+	transition-timing-function: linear;
+}
+
+.BattlePassButton:active Label {
+    transform: translateY(1px);
+}
+
+.BattlePassButton:disabled {
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #191e1e), to( #292e2e));
+    border: 1px solid #111111;
+}
+
+.BattlePassButton:disabled Label {
+    color: #5d676933;
+}
+
+.BattlePassBrightButton {
+    background-color: accentColor;
+    padding: 5px 10px 2px 10px;
+    border-top: 1px solid #88fcbd;
+    border-bottom: 1px solid #00000055;
+    border-left: 1px solid #88fcbd;
+    border-right: 1px solid #00000088;
+    transition-property: brightness;
+    transition-duration: .2s;
+}
+
+.BattlePassBrightButton Label {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    text-align: center;
+    horizontal-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.BattlePassBrightButton:disabled {
+    saturation: 0.0;
+    wash-color: #000c;
+}
+
+.BattlePassBrightButton:hover:enabled {
+    brightness: 2.0;
+}
+
+.BattlePassBrightButton:active {
+    brightness: 1.5;
+}
+
+.BattlePassLargeBrightButton {
+    background-color: accentColor;
+    padding: 5px 10px 2px 10px;
+    border-top: 1px solid #88fcbd;
+    border-bottom: 1px solid #00000055;
+    border-left: 1px solid #88fcbd;
+    border-right: 1px solid #00000088;
+    transition-property: brightness;
+    transition-duration: .2s;
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( PurchaseLevelsButtonColorSecondary), to( PurchaseLevelsButtonColor));
+}
+
+.BattlePassLargeBrightButton Label {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 21px;
+    text-align: center;
+    horizontal-align: center;
+    color: white;
+    font-weight: normal;
+    text-shadow: 0px 2px 2px black;
+    padding: 8px 0px;
+    text-align: center;
+}
+
+.BattlePassLargeBrightButton:hover:enabled {
+    brightness: 1.5;
+}
+
+.BattlePassLargeBrightButton:active {
+    brightness: 1.25;
+}
+
+.BattlePassDarkLink {
+    padding: 6px 10px;
+}
+
+.BattlePassDarkLink > Label {
+    color: textBrightColor;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 16px;
+    text-align: center;
+    transition-property: color;
+    transition-duration: .2s;
+}
+
+.BattlePassDarkLink:hover > Label {
+    color: #acff53;
+    color: #53bcff;
+    color: accentColor;
+}
+
+.BattlePassCell {
+    background-color: #000000aa;
+}
+
+.BattlePassCellContents {
+    margin: 12px;
+}
+
+.SecondaryTabButton Label {
+    color: SecondaryTabButton;
+    vertical-align: middle;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0px;
+    letter-spacing: 3px;
+}
+
+.BattlePassQuestLineDropDown {
+    width: 24px;
+    height: 24px;
+    transform: rotateZ( 0deg) translateY(0px);
+    background-image: url("s2r://panorama/images/control_icons/arrow_dropdown_png.vtex");
+    wash-color: bp_battlePassLogoColor&dd;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2px;
+    transition-property: transform;
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out;
+}
+
+.WagerValue {
+    font-size: 42px;
+    color: textBrightColor;
+}
+
+.PointTotalIcon,
+.WagerTotalIcon {
+    width: 30px;
+    height: 36px;
+    background-image: url("s2r://panorama/images/compendium/international2018/totaltokens_psd.vtex");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 12px;
+    margin-top: 6px;
+}
+
+.PointTotalIcon {
+    background-image: url("s2r://panorama/images/compendium/international2018/totalpoints_psd.vtex");
+}
+
+.DetailsQuad {
+    width: 327px;
+    height: 336px;
+    background-color: #243244;
+    border: 1px solid accentBorderColor;
+    margin: 8px;
+    margin-bottom: 8px;
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #3E3C3822), to( #4D211A));
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #383e3e22), to( #1e2b20));
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #383e3e22), to( #1e262b));
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( bp_color10&22), to( bp_color2));
+}
+
+.DetailsQuad .InfoIcon {
+    vertical-align: bottom;
+    horizontal-align: left;
+    margin: 16px;
+    wash-color: textColoredMediumColor;
+    opacity: .4;
+    transition-property: opacity;
+    transition-timing-function: ease-in;
+    transition-duration: 0.2s;
+}
+
+.DetailsText {
+    vertical-align: bottom;
+    color: #92B4D9;
+    color: #78a0c8;
+    color: #CDBBB5;
+    color: #c2cdb5;
+    color: #b5c3cd;
+    color: textBrightColor;
+    text-shadow: 0px 1px 2px 3.0 #000000;
+    opacity: 0;
+    background-color: #000000aa;
+    width: 100%;
+    padding-top: 84px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #4C211A00), color-stop( 0.5, #4C211Add), to( #4C211Add));
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #334c1a00), color-stop( 0.5, #334c1add), to( #334c1add));
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #1a374c00), color-stop( 0.5, #1a374cdd), to( #1a374cdd));
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( bp_color1&00), color-stop( 0.5, bp_color1&dd), to( bp_color1&dd));
+    transition-property: opacity;
+    transition-timing-function: ease-in;
+    transition-duration: 0.2s;
+}
+
+.DetailsTitle {
+    vertical-align: top;
+    text-transform: uppercase;
+    font-size: 24px;
+    horizontal-align: center;
+    letter-spacing: 1px;
+    color: textBrightColor;
+    margin-top: 16px;
+    transition-property: color;
+    transition-timing-function: ease-in;
+    transition-duration: 0.2s;
+}
+
+.DetailsQuad:hover .DetailsTitle {
+    color: white;
+}
+
+.DetailsQuad:hover .DetailsText {
+    opacity: 1;
+}
+
+.DetailsQuad:hover .InfoIcon {
+    opacity: 0;
+}
+
+.DetailsNext {
+    width: 72px;
+    height: 87px;
+    horizontal-align: center;
+    margin-top: 64px;
+    background-image: url("s2r://panorama/images/compendium/international2018/wagerdesc_next_psd.vtex");
+    background-repeat: no-repeat;
+    background-size: cover;
+    hue-rotation: 00deg;
+}
+
+#BPLeaderBoard .LeaderListRow {
+    margin-left: 4px;
+    background-color: transparent;
+    margin-bottom: 0px;
+    padding-right: 16px;
+    border-bottom: 1px solid #11492b;
+}
+
+.LeaderListRow {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-right: 6px;
+    background-color: #151515;
+}
+
+.LeaderListRow.IsCurrentUser {
+    background-color: bp_color10&55;
+}
+
+.LeaderListRow.IsCurrentUser Label {
+    color: white;
+}
+
+.LeaderListRow:hover Label {
+    brightness: 2;
+}
+
+.LeaderListRow.IsCurrentUser:hover Label {
+    color: white;
+}
+
+#LeaderList {
+    padding-right: 16px;
+    overflow: clip scroll;
+    opacity-mask: url("s2r://panorama/images/masks/softedge_vertical_vscroll_psd.vtex") 1.0;
+    padding-top: 4px;
+    width: 100%;
+}
+
+.LeaderListAvatar {
+    width: 24px;
+    height: 24px;
+    background-color: #333333;
+    border: 1px solid black;
+    vertical-align: middle;
+    margin-left: 2px;
+}
+
+.LeaderListName {
+    margin-left: 32px;
+    width: 220px;
+    height: 24px;
+    padding-top: 2px;
+}
+
+#FriendsLeaderboardPanel .LeaderListName {
+    margin-left: 32px;
+    width: 220px;
+    height: 24px;
+    padding-top: 2px;
+}
+
+.LeaderListName Label {
+    color: white;
+}
+
+.LeaderListTier {
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #925b1f), to( #a27e37));
+    color: white;
+    padding-top: 2px;
+}
+
+.LeaderListName .PersonaName {
+    color: textBrightColor;
+}
+
+.IsCurrentUser .LeaderListName .PersonaName {
+    color: white;
+}
+
+.LeaderListName:hover {
+    brightness: 2;
+}
+
+.LeaderListValue,
+.LeaderListValueString {
+    color: #666262;
+    horizontal-align: right;
+    text-align: right;
+    padding-top: 2px;
+}
+
+.UseStringValue .LeaderListValue,
+.LeaderListValueString {
+    visibility: collapse;
+}
+
+.UseStringValue .LeaderListValueString {
+    visibility: visible;
+}
+
+.BattlePassPage VerticalScrollBar {
+    background-color: bp_color3;
+    width: 6px;
+}
+
+.BattlePassPage VerticalScrollBar .ScrollThumb,
+.BattlePassPage VerticalScrollBar:active .ScrollThumb,
+.BattlePassPage VerticalScrollBar:hover .ScrollThumb {
+    background-color: bp_color10;
+    border: 1px solid #ffffff02;
+}
+
+.XPCircle {
+    margin-left: 10px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    horizontal-align: left;
+    flow-children: down;
+    margin-right: 16px;
+    margin-top: 16px;
+    padding-left: 0px;
+    background-color: XPCircleGradient;
+    border: XPCircleBorder;
+    box-shadow: 0px 2px 4px 0px #00000066;
+    transition-property: brightness, pre-transform-scale2d;
+    transition-duration: .25s;
+}
+
+#RequiredHero.XPCircle {
+    border: 1px solid accentBorderColor;
+    visibility: visible;
+}
+
+#RequiredHero.HideRequiredHero {
+    visibility: collapse;
+}
+
+#RequiredHeroIcon {
+    vertical-align: center;
+    horizontal-align: center;
+}
+
+.XPCircle #QuestXP {
+    margin: 0px;
+    margin-top: 6px;
+    margin-left: 3px;
+    font-size: 18px;
+    text-overflow: shrink;
+    color: white;
+    horizontal-align: center;
+    vertical-align: middle;
+}
+
+#PTS {
+    background-image: url("s2r://panorama/images/compendium/international2018/totalpoints_psd.vtex");
+    background-size: cover;
+    width: 12px;
+    height: 12px;
+    margin-top: -2px;
+    horizontal-align: center;
+}
+
+.PointsEarned #PTS {
+    background-image: url("s2r://panorama/images/control_icons/check_png.vtex");
+    wash-color: #C59D79;
+}
+
+.PointsIcon {
+    background-image: url("s2r://panorama/images/compendium/international2018/totalpoints_psd.vtex");
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+    margin-top: 1px;
+    horizontal-align: center;
+    vertical-align: center;
+    opacity: 1;
+}
+
+.BattlePassButton:disabled .PointsIcon {
+    saturation: 0;
+    brightness: 0.5;
+}
+
+#TitleBackground {
+    width: 100%;
+    background-image: url("s2r://panorama/images/compendium/international2018/battlepointlog_header_psd.vtex");
+    background-size: 100%;
+    border-top: 1px solid #b3ff9f09;
+    flow-children: none;
+}
+
+.bp_total_tokens {
+    width: 30px;
+    height: 36px;
+    background-image: bp_total_tokens;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bp_total_points {
+    width: 30px;
+    height: 36px;
+    background-image: bp_total_points;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.CompendiumBody {
+    width: 100%;
+    height: 770px;
+    margin-top: 180px;
+    background-color: #000000aa;
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( bp_color1&22), color-stop( 0.01, bp_color3&cc), color-stop( 0.99, backgroundVeryDimColor&30), to( bp_color3&22));
+    border-top: 1px solid bp_color10&66;
+    border-bottom: 1px solid bp_color10&33;
+}
+
+@define battlecup_current_season_icon: url("s2r://panorama/images/icon_trophy_battle_cup_summer_psd.vtex");
+@define battlecup_current_season_champions_icon: url("s2r://panorama/images/icon_trophy_champions_cup_psd.vtex");
+@define battlecup_current_season_champions_animation_icon: url("s2r://panorama/images/icon_trophy_champions_cup_animation_png.vtex");
+.WagerToken {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    wash-color: bp_wagerTokenColor;
+    background-image: url("s2r://panorama/images/control_icons/wagertoken_psd.vtex");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.TeamWagerToken {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    wash-color: #D69600;
+    background-image: url("s2r://panorama/images/control_icons/wagertoken_psd.vtex");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.TeamWagerTokenContainer {
+    vertical-align: bottom;
+    horizontal-align: center;
+    margin-right: 64px;
+    margin-bottom: 20px;
+    flow-children: down;
+}
+
+.TeamWagerTokenLabel {
+    color: white;
+    horizontal-align: center;
+    vertical-align: center;
+    text-align: center;
+    width: 58px;
+    margin-top: 3px;
+}
+
+.TeamWagerTokenCount {
+    vertical-align: center;
+    margin-top: 2px;
+    margin-left: 4px;
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+#BackgroundGradient {
+    width: 100%;
+    height: 100px;
+    vertical-align: bottom;
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #00000000), color-stop( 0.7, #0000003f), color-stop( 0.75, #0000003f), to( #000000ff));
+}
+
+#QuestWell HorizontalScrollBar {
+    width: 200px;
+    height: 32px;
+    border: 1px solid #244064;
+    background-color: transparent;
+    vertical-align: top;
+    horizontal-align: right;
+    margin-top: 16px;
+    margin-right: 16px;
+    padding: 4px;
+    transform: rotateX(35deg);
+}
+
+#QuestWell HorizontalScrollBar .ScrollThumb {
+    background-color: bp_color8&55;
+    border-top: 1px solid bp_color8;
+    margin: 4px;
+}
+
+#UnclaimedButton {
+    margin-left: 20px;
+    visibility: collapse;
+}
+
+.HasUnclaimedRewards #UnclaimedButton {
+    visibility: visible;
+}
+
+.HasUnclaimedRewards #GoToCurrentLevel {
+    visibility: collapse;
+}
+
+#RewardListUIContainer {
+    width: 1392px;
+    height: 100%;
+    horizontal-align: center;
+    border-top: BRD;
+}
+
+#TopSection {
+    padding-bottom: 0px;
+    width: 1392px;
+    width: 100%;
+    height: 360px;
+    horizontal-align: center;
+    vertical-align: bottom;
+    z-index: 2;
+}
+
+#BottomSection {
+    width: 1392px;
+    height: 380px;
+    horizontal-align: center;
+    z-index: 2;
+    vertical-align: top;
+    margin-top: 16px;
+    flow-children: right;
+}
+
+#BottomRightSection {
+    width: 458px;
+    width: fill-parent-flow(1.0);
+    height: 100%;
+    horizontal-align: right;
+    flow-children: down;
+    margin-left: 16px;
+}
+
+#CompendiumLevelContainer {
+    padding-top: 16px;
+    background-color: #000000aa;
+    width: 250px;
+    height: 390px;
+    z-index: 1;
+    transition-property: height;
+    transition-duration: .25s;
+    border: BRD;
+    horizontal-align: right;
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( bp_color1&aa), to( bp_color1&10));
+}
+
+#GoToCurrentLevel {
+    box-shadow: fill #000e 6px 0px 12px;
+}
+
+#GoToCurrentLevel Label {
+    color: textColoredMediumColor;
+}
+
+#GoToCurrentLevel:hover Label {
+    color: textColoredBrightColor;
+}
+
+.SelfEventNotActive.GlobalEventPurchasable #CompendiumLevelContainer {
+    background-color: gradient( linear, 100% 90%, 0% 0%, from( bp_color1), to( bp_color2));
+}
+
+.SelfEventNotActive.GlobalEventPurchasable #CompendiumLevelContainer .ButtonBattlePass:enabled {
+    background-color: accentColor;
+    box-shadow: black 3px 0px 6px;
+}
+
+.SelfEventNotActive.GlobalEventPurchasable #CompendiumLevelContainer .ButtonBattlePass:enabled Label {
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.SelfEventNotActive.GlobalEventPurchasable #CompendiumLevelContainer .ButtonBattlePass:enabled:hover {
+    brightness: 2;
+}
+
+.SelfEventNeedsActivate #CompendiumLevelContainer {
+    background-color: #000000aa;
+}
+
+.SelfEventNeedsActivate #CompendiumLevelContainer .ButtonBattlePass {
+    background-color: accentColor;
+    box-shadow: black 3px 0px 6px;
+}
+
+.SelfEventNeedsActivate #CompendiumLevelContainer .ButtonBattlePass Label {
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.SelfEventNeedsActivate #CompendiumLevelContainer .ButtonBattlePass:hover {
+    brightness: 2;
+}
+
+.SelfEventTierSilver #CompendiumLevelContainer {
+    background-image: url("s2r://panorama/images/compendium/international2018/home_block_backgrounds/silver_panel_psd.vtex");
+    background-size: 100%;
+    border: BRD;
+}
+
+.SelfEventTierSilver #CompendiumLevelContainer .StatSub,
+.SelfEventTierSilver #CompendiumLevelContainer .StatSub Label {
+    font-weight: bold;
+    color: bp_color3;
+}
+
+.SelfEventTierSilver #BattlePassPointLog Label:hover {
+    color: #ffffffdd;
+}
+
+.SelfEventTierSilver #CompendiumLevelContainer #LevelLabel {
+    color: #e2ffff;
+}
+
+.SelfEventTierSilver #TierGlow {
+    wash-color: bp_color4;
+}
+
+.SelfEventTierGold #CompendiumLevelContainer {
+    background-image: url("s2r://panorama/images/compendium/international2018/home_block_backgrounds/gold_panel_psd.vtex");
+    background-size: 100%;
+    border: BRD;
+}
+
+.SelfEventTierGold #CompendiumLevelContainer .StatSub,
+.SelfEventTierGold #CompendiumLevelContainer .StatSub Label {
+    color: #A5744A;
+}
+
+.SelfEventTierGold #BattlePassPointLog Label:hover {
+    color: #FFFFFFdd;
+}
+
+.SelfEventTierGold #TierGlow {
+    wash-color: #F9BE2D;
+}
+
+.SelfEventTierGold #CompendiumLevelContainer #LevelLabel {
+    color: #ffe4d1;
+}
+
+.SelfEventTierPlatinum #CompendiumLevelContainer {
+    background-image: url("s2r://panorama/images/compendium/international2018/home_block_backgrounds/max_panel_psd.vtex");
+    background-size: 100%;
+    border: 1px solid #00000000;
+    box-shadow: #06262c 0px 0px 6px 0px;
+}
+
+.SelfEventTierPlatinum #CompendiumLevelContainer .StatSub,
+.SelfEventTierPlatinum #CompendiumLevelContainer .StatSub Label {
+    color: backgroundBrightColor;
+}
+
+.SelfEventTierPlatinum #BattlePassPointLog Label:hover {
+    color: #FFFFFFdd;
+}
+
+.SelfEventTierPlatinum #TierGlow {
+    wash-color: bp_color5;
+}
+
+#CompendiumLevelContainer.ExpandLeaderBoard {
+    height: 353px;
+}
+
+#LevelWageringWell {
+    height: 50%;
+    width: 100%;
+}
+
+#LeaderboardWell {
+    height: 100%;
+    overflow: clip;
+    border: BRD;
+    width: 324px;
+    margin-left: 16px;
+}
+
+#LeaderboardPanel {
+    width: 100%;
+    height: 100%;
+    background-color: #000000aa;
+    opacity: 1;
+    padding-top: 6px;
+}
+
+#PointsLeaderList {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    overflow: clip scroll;
+    padding: 16px;
+    opacity-mask: url("s2r://panorama/images/masks/softedge_vertical_vscroll_psd.vtex") 1.0;
+    transition-property: height, wash-color;
+    transition-duration: .25s;
+}
+
+.ExpandLeaderBoard #PointsLeaderList {
+    height: 203px;
+    wash-color: white;
+}
+
+#LevelLabel {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: accentColor;
+    font-size: 28px;
+    letter-spacing: 1px;
+    vertical-align: center;
+    text-shadow: 1px 1px 6px 2 #000000;
+}
+
+#LevelWell {
+    horizontal-align: center;
+    margin-bottom: 16px;
+    flow-children: right;
+}
+
+#TilNextLevel {
+    width: 100%;
+    height: 16px;
+    border: BRD;
+    margin-bottom: 6px;
+    padding: 3px;
+    box-shadow: inset bp_color6 -3px 0px 6px;
+}
+
+.ProgressBarLeft {
+    box-shadow: inset accentColorGlow -3px 0px 6px;
+    border-radius: 3px;
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( bp_battlePassLogoColor), to( #111111));
+}
+
+#LevelButtons>Button {
+    margin-bottom: 16px;
+    width: 216px;
+    visibility: collapse;
+}
+
+.CurrentSeason.Season_International2018.SelfEventNeedsActivate #ActivateBattlePassButton {
+    visibility: visible;
+}
+
+.CurrentSeason.Season_International2018.GlobalEventPurchasable.SelfEventNotActive #PurchaseBattlePassButton {
+    visibility: visible;
+}
+
+.BattlePassPurchaseButton {
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #229358), to( #0c7d42));
+    border-top: 1px solid #859d6e;
+    border-right: 1px solid #496922;
+    border-left: 1px solid #496922;
+    border-bottom: 1px solid #294211;
+    box-shadow: -4px 0px 8px 0px accentColor&33;
+    animation-name: PurchaseButtonGlow;
+    animation-duration: 2.35s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes 'PurchaseButtonGlow' {
+    0% {
+        brightness: 2.3;
+        box-shadow: #96ee9730 0px 0px 12px 0px;
+    }
+    50% {
+        brightness: 1;
+        box-shadow: #96ee9710 0px 0px 2px 0px;
+    }
+    100% {
+        brightness: 2.3;
+        box-shadow: #96ee9730 0px 0px 12px 0px;
+    }
+}
+
+#PurchaseBattlePassButton Label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.CurrentSeason.Season_International2018.SelfEventActive.GlobalEventPurchaseble #PurchaseLevelsButton {
+    visibility: visible;
+}
+
+.CurrentSeason.Season_International2018.GlobalEventPurchasable #GiftBattlePassButton {
+    visibility: visible;
+}
+
+#BattlePassPointLog {
+    horizontal-align: center;
+}
+
+#BattlePassPointLog Label {
+    horizontal-align: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+#BattlePassPointLog:hover Label {
+    color: white;
+}
+
+#LevelButtons {
+    horizontal-align: center;
+    vertical-align: bottom;
+}
+
+.FriendsLeaderBoardButton Label {
+    text-transform: uppercase;
+    margin-left: 8px;
+    color: #4F5760;
+    transition-property: color;
+    transition-duration: .15s;
+}
+
+.ExpandLeaderBoard .FriendsLeaderBoardButton Label {
+    color: white;
+}
+
+.ExpandDownArrow {
+    wash-color: #4F5760;
+}
+
+.FriendsLeaderBoardButton:hover Label {
+    color: #ffffff;
+}
+
+.FriendsLeaderBoardButton:active Label {
+    color: #888888;
+}
+
+.FriendsLeaderBoardButton {
+    horizontal-align: center;
+    margin-top: 96px;
+}
+
+.FriendsLeaderBoardButton:hover .ExpandDownArrow {
+    wash-color: white;
+    transform: translateY(2px);
+}
+
+.ExpandLeaderBoard .ExpandDownArrow {
+    transform: rotateZ(180deg);
+}
+
+.ExpandLeaderBoard .FriendsLeaderBoardButton:hover .ExpandDownArrow {
+    transform: rotateZ(180deg) translateY(-2px);
+}
+
+#QuestsRequiresActivate,
+#QuestsRequiresPass {
+    width: 140px;
+    visibility: collapse;
+    vertical-align: bottom;
+    margin-bottom: 10px;
+    color: accentColor;
+    horizontal-align: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#QuestsRequiresActivate,
+#QuestsRequiresPass {
+    vertical-align: middle;
+    width: 200px;
+}
+
+#DetailsWell {
+    width: 100%;
+    horizontal-align: center;
+    margin-top: 128px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+#DetailsWell .DetailsWellText {
+    color: #ffffffdd;
+    font-weight: thin;
+    font-size: 15px;
+    horizontal-align: center;
+    vertical-align: center;
+    letter-spacing: 1px;
+}
+
+#DetailsWell .DetailsWellTextNumbers {
+    font-size: 26px;
+    font-weight: thin;
+}
+
+#TokenRemainingWidget {
+    horizontal-align: center;
+}
+
+.StatLabel,
+.StatValue,
+.StatSub,
+.StatSub Label {
+    color: #FFFFFFdd;
+    font-weight: thin;
+    font-size: 14px;
+    horizontal-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.StatValue {
+    font-size: 24px;
+}
+
+.StatSub,
+.StatSub Label {
+    color: textMediumColor;
+    margin-right: -4px;
+    text-overflow: shrink;
+}
+
+#TokensRemaining {
+    max-width: 180px;
+    text-align: center;
+}
+
+#CampaignVignette {
+    width: 100%;
+    height: 100%;
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #00000000), color-stop( 0.2, #00000000), color-stop( 0.3, #00000000), to( #000000aa));
+    background-color: transparent;
+    z-index: -3;
+}
+
+#QuestRewardWell {
+    horizontal-align: left;
+    vertical-align: bottom;
+    width: 454px;
+    border: BRD;
+    background-color: #000000aa;
+    visibility: collapse;
+}
+
+#CurrentAndClaim {
+    horizontal-align: center;
+    vertical-align: bottom;
+    margin-bottom: 16px;
+}
+
+#QuestEventGoal {
+    width: 250px;
+    border: 1px solid accentColorSectionBG;
+    vertical-align: bottom;
+    horizontal-align: right;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    z-index: 2;
+}
+
+#QuestEventGoal.InvalidData {
+    visibility: collapse;
+}
+
+#ActiveQuestBlock {
+    width: 100%;
+    vertical-align: top;
+    padding: 16px;
+    padding-top: 42px;
+    transition-property: opacity, transform;
+    transition-duration: .6s;
+    transition-timing-function: ease-in-out;
+}
+
+#ActiveQuestChallenge {
+    width: 650px;
+    animation-duration: 0.51s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes 'QuestChangeStatus' {
+    0% {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+#CurrentLabel {
+    margin-top: 0px;
+    font-size: 14px;
+    color: textMediumColor;
+    margin-left: 6px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#QuestLineName {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    padding-top: 5px;
+    margin-left: 16px;
+    color: #cccccc;
+    font-size: 32px;
+    text-shadow: 1px 1px 1px 2 #000000;
+    margin-top: 22px;
+}
+
+#ActiveQuestBlock #QuestLineName {
+    font-size: 18px;
+    visibility: collapse;
+}
+
+#QuestlinePickerContainer {
+    z-index: 3;
+    opacity: 0;
+    width: 900px;
+    height: 353px;
+    padding-top: 32px;
+    background-color: #000000ad;
+    border: 1px solid black;
+    transition-property: opacity;
+    transition-duration: .24s;
+    transition-timing-function: ease-in-out;
+}
+
+#QuestLinePicker:hover #QuestLineName {
+    color: white;
+}
+
+#QuestLinePicker:hover .QuestLineDropDown {
+    wash-color: white;
+}
+
+.ChooseQuestline #QuestlinePickerContainer {
+    opacity: 1;
+}
+
+.QuestlinePickerPanels {
+    width: 500px;
+    height: 106px;
+    border: 2px solid black;
+    margin-left: 16px;
+    margin-top: 0px;
+    saturation: 0.2;
+    background-color: #000000ee;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition-property: opacity, saturation;
+    transition-duration: .24s;
+    transition-timing-function: ease-in-out;
+}
+
+.QuestlinePickerPanels:hover {
+    saturation: 1;
+}
+
+.QuestlinePickerPanels:hover Label {
+    color: white;
+}
+
+.QuestlinePickerPanels:hover .Vignette {
+    opacity: 0;
+}
+
+.QuestlinePickerPanels.ActiveQuestline {
+    box-shadow: fill -3px 0px 6px 0px #3F80BE66;
+    border: 2px solid #3F80BE77;
+    box-shadow: fill -3px 0px 6px 0px bp_color7&66;
+    border: 2px solid bp_color7&77;
+    saturation: 1;
+}
+
+.QuestlinePickerPanels.ActiveQuestline Label {
+    color: white;
+}
+
+#Questline4Picker .QuestPickerQuestName {
+    color: #FDB706;
+}
+
+.QuestlinePickerPanels Label {
+    font-size: 20px;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    horizontal-align: center;
+    margin-bottom: 20px;
+    color: #3F82C0;
+    color: bp_color7;
+    text-shadow: 0px 1px 2px 3.0 #000000;
+    box-shadow: fill -7px 0px 14px 0px #000000dd;
+    transition-property: color;
+    transition-duration: .24s;
+    transition-timing-function: ease-in-out;
+}
+
+.QuestlinePickerPanels .QuestPickerQuestType {
+    margin-top: 42px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    wash-color: #00000088;
+}
+
+#Questline1Picker {
+    background-image: url("s2r://panorama/images/compendium/winter2016/support_quest_psd.vtex");
+}
+
+#Questline2Picker {
+    background-image: url("s2r://panorama/images/compendium/winter2016/solo_quest_psd.vtex");
+}
+
+#Questline3Picker {
+    background-image: url("s2r://panorama/images/compendium/winter2016/carry_quest_psd.vtex");
+}
+
+#Questline4Picker {
+    background-image: url("s2r://panorama/images/compendium/winter2016/newbloom_quest_psd.vtex");
+    horizontal-align: center;
+    saturation: 0.75;
+}
+
+#Questline4Picker.ActiveQuestline {
+    saturation: 1;
+}
+
+#Questline4Picker {
+    visibility: collapse;
+}
+
+#HomeCampaignPicker {
+    z-index: 3;
+    visibility: collapse;
+}
+
+#QuestNameLabel {
+    text-transform: uppercase;
+    min-width: 200px;
+    text-overflow: shrink;
+    height: 32px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-size: 24px;
+    padding-left: 6px;
+    padding-top: 4px;
+    background-color: gradient( linear, 0% 0%, 100% 0%, from( #BD4D3822), to( #BD4D3800));
+    background-color: gradient( linear, 0% 0%, 100% 0%, from( #334e2566), to( #334e2500));
+    background-color: gradient( linear, 0% 0%, 100% 0%, from( #122b5aaa), to( #122b5a00));
+    background-color: gradient( linear, 0% 0%, 100% 0%, from( bp_color1&ff), to( bp_color1&00));
+}
+
+#ActiveQuestDescription {
+    color: textBrightColor;
+    padding-left: 6px;
+    padding-top: 6px;
+    width: 290px;
+    height: fit-children;
+}
+
+#QuestWell {
+    width: 900px;
+    height: 353px;
+    overflow: clip;
+    opacity-mask: url("s2r://panorama/images/masks/softedge_box_png.vtex") 1.0;
+    visibility: collapse;
+}
+
+#RewardsWell {
+    width: 1126px;
+    height: 390px;
+    vertical-align: top;
+    overflow: clip;
+    z-index: 3;
+}
+
+#RewardsWell.RewardNode {
+    margin: 0px;
+}
+
+.AspectRatio4x3 #RewardsWell {
+    opacity-mask: url("s2r://panorama/images/masks/softedge_horizontal_sharp_png.vtex") 1;
+}
+
+.LowVisualQuality #RewardsWell {
+    opacity-mask: none;
+}
+
+#RewardsPanel {
+    width: 1126px;
+    width: 100%;
+    height: 390px;
+    background-color: transparent;
+    transition-property: border;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+
+#RewardsList {
+    width: 100%;
+    height: 100%;
+    horizontal-align: center;
+    background-color: #00000044;
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #00000000), to( #000000aa));
+    background-color: transparent;
+}
+
+#WageringAndDoubleDown {
+    width: 100%;
+    flow-children: right;
+}
+
+#ArcanaAndCarousel {
+    width: 100%;
+    flow-children: right;
+}
+
+#WageringWell {
+    background-color: #000000aa;
+    width: 242px;
+    height: 182px;
+    vertical-align: top;
+    border: BRD;
+    margin-top: 16px;
+}
+
+#CampaignHomeCell {
+    width: 260px;
+    height: 100%;
+    margin-left: 16px;
+    background-color: #000a;
+    border: BRD;
+}
+
+#CurrentQuest {
+    transform: scaleX(0.8) scaleY(0.8);
+    margin-bottom: 64px;
+    margin-top: 0px;
+}
+
+#PredictionWell
+{
+	background-color: #000000aa;
+	width: 450px;
+	margin-left: 16px;
+	height: 300px;
+	vertical-align: top;
+	margin-top: 16px;
+	margin-left: 16px;
+}
+
+#PredictionWell2
+{
+	background-color: #000000aa;
+	width: 450px;
+	margin-left: 16px;
+	height: 155px;
+	vertical-align: top;
+	margin-top: 16px; /* Change it to 325px after activating the NEWS Tab. */
+	border: 1px solid #A9372E;
+}
+
+#BalanceWell,
+#BalanceRankWell {
+    horizontal-align: left;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #282a2900), color-stop( .3, #282a2977), color-stop( .5, #282a29bb), color-stop( .7, #282a2977), to( #282a2900));
+}
+
+#BalanceWell {
+    margin-top: 0px;
+}
+
+#WageringWell .CurrentBalance {
+    color: white;
+    horizontal-align: center;
+    text-align: center;
+}
+
+#TokenRemainingWidget .TokenTotalIcon {
+    width: 32px;
+    height: 40px;
+    margin-top: 0px;
+    margin-right: 5px;
+    background-image: url("s2r://panorama/images/compendium/totaltokens_psd.vtex");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#TokenRemainingWidget .TokenTotalIcon.PredictionToken {
+    background-image: bp_point_log_prediction_tokens;
+    width: 32px;
+    height: 32px;
+    margin-top: 8px;
+}
+
+.LeaderBoardHeader {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: textMediumColor;
+    margin-top: 16px;
+    margin-right: 12px;
+    text-shadow: 0px 1px 1px 2.0 #000000;
+}
+
+.HomeLeaderboard {
+    width: 100%;
+    margin-top: -16px;
+    transition-property: wash-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+.ExpandLeaderBoard .HomeLeaderboard {
+    wash-color: white;
+}
+
+#TokenRemainingWidget .WagerValue,
+#TokenRemainingWidget .PredictionValue {
+    color: accentColor;
+    font-size: 36px;
+    margin-top: 1px;
+}
+
+.AsyncWagerInfoData {
+    opacity: 0;
+    transition-property: opacity;
+    transition-timing-function: ease-in;
+    transition-duration: 0.2s;
+}
+
+#BalanceWell #TeamBalance {
+    margin-bottom: 0px;
+    padding-top: 30px;
+}
+
+#TeamBalance {
+    horizontal-align: center;
+    padding-top: 6px;
+}
+
+#TeamBalance .TeamWagerToken {
+    width: 40px;
+    height: 40px;
+}
+
+#TeamBalance .TeamWagerTokenLabel {
+    width: 30px;
+    font-size: 14px;
+}
+
+#TeamBalance .TeamWagerTokenCount {
+    font-size: 20px;
+    margin-right: 6px;
+}
+
+#BalanceWell #TeamBalance .TeamWagerTokenCount {
+    font-size: 14px;
+    color: #acacac;
+    font-weight: thin;
+}
+
+.HasAsyncWagerInfoData .AsyncWagerInfoData {
+    opacity: 1;
+}
+
+#HeroAndPoints {
+    margin-top: 12px;
+    horizontal-align: center;
+    visibility: collapse;
+}
+
+.XPCircle.HomePage {
+    margin: 0px;
+    margin-left: 6px;
+    margin-right: 6px;
+    vertical-align: center;
+}
+
+#EventEnds {
+    margin-top: 6px;
+    horizontal-align: right;
+}
+
+#EventEndsLabel,
+#EventEndedLabel {
+    text-transform: uppercase;
+    text-shadow: 0px 0px 12px 2.0 #035581;
+    color: #88b1d1;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: thin;
+    margin-top: 2px;
+    margin-right: 6px;
+    text-shadow: 0px 0px 12px 2.0 backgroundBrightColor&cc;
+    color: bp_color9;
+    visibility: collapse;
+}
+
+#TotalPointsWon {
+    vertical-align: middle;
+    margin-bottom: 0px;
+}
+
+#PointsWon {
+    margin-top: 21px;
+    font-size: 32px;
+}
+
+#TIWell {
+    width: 100%;
+    height: 100%;
+}
+
+#GotoQuestsButton {
+    margin-bottom: 20px;
+    width: 216px;
+    vertical-align: bottom;
+    horizontal-align: center;
+}
+
+#MyQuests {
+    height: 100%;
+    width: 100%;
+}
+
+#PurchaseLevelsContainer {
+    horizontal-align: center;
+    vertical-align: middle;
+}
+
+.JumpLevels {
+    visibility: collapse;
+    background-image: url("s2r://panorama/images/control_icons/fastforward_psd.vtex");
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: 72% 20%;
+    width: 58px;
+    height: 67px;
+    vertical-align: bottom;
+    margin-bottom: 77px;
+    wash-color: textMediumColor;
+    opacity: 0;
+    transition-property: opacity, wash-color;
+    transition-duration: .12s;
+    background-color: gradient( linear, 0% 0%, 100% 0%, from( #0b270500), to( #28533933));
+    background-color: gradient( linear, 0% 0%, 100% 0%, from( backgroundMediumColor&00), to( bp_color5&18));
+}
+
+#RewardsPanel:hover .JumpLevels {
+    opacity: 1;
+}
+
+.JumpLevels:hover {
+    wash-color: white;
+}
+
+.JumpLevels:active {
+    wash-color: #444444;
+}
+
+.JumpLevels Label {
+    vertical-align: bottom;
+    color: white;
+    horizontal-align: center;
+    margin-bottom: 8px;
+    margin-left: 12px;
+}
+
+#BackJump {
+    transform: scaleX(-1);
+}
+
+#BackJump Label {
+    transform: scaleX(-1);
+}
+
+#ForwardJump {
+    horizontal-align: right;
+}
+
+.BigDeal {
+    vertical-align: bottom;
+    margin-bottom: 16px;
+    horizontal-align: right;
+    margin-right: 16px;
+    min-width: 400px;
+    flow-children: right;
+    transition-property: opacity, wash-color;
+    transition-duration: .12s;
+}
+
+#NextBigDeal .BigDealContainer {
+    horizontal-align: right;
+}
+
+.BigDeal Label {
+    vertical-align: middle;
+    color: textColoredMediumColor;
+}
+
+.BigDeal .RewardLevel {
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #66281F), to( #A6352B));
+    border: 2px solid #BF686D;
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #3b661f), to( #5ca62b));
+    border: 2px solid #97bf68;
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #1f4066), to( #2b68a6));
+    border: 2px solid #6893bf;
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( bp_color12), to( bp_color7));
+    border: 2px solid accentColor;
+    width: 40px;
+    height: 40px;
+}
+
+.BigDeal .RewardLevel > Label {
+    width: 100%;
+    text-align: center;
+    horizontal-align: center;
+    vertical-align: center;
+    margin-top: 2px;
+    text-overflow: shrink;
+    color: white;
+}
+
+.BigDeal .RewardName {
+    margin: 0px 16px;
+}
+
+#LastBigDeal {
+    horizontal-align: left;
+    margin-left: 16px;
+}
+
+.BigDeal:disabled {
+    opacity: 0.0;
+}
+
+.BigDeal:enabled:hover {
+    brightness: 2.0;
+}
+
+.BigDeal:enabled:hover > Label {
+    text-decoration: underline;
+}
+
+.BigDeal:active {
+    brightness: 1.5;
+}
+
+#QuestTotalPointsWon {
+    margin-top: 10px;
+    horizontal-align: center;
+    text-align: center;
+}
+
+#QuestRanks.HomePageQuestRanks {
+    horizontal-align: center;
+}
+
+#ArcanaVotePanel {
+    width: 242px;
+    height: 182px;
+    border: BRD;
+    background-color: #00000088;
+    transition-property: border, background-color;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+
+#ChallengeCarousel {
+    margin-left: 16px;
+    width: 258px;
+    height: 182px;
+    border: BRD;
+    background-color: #00000088;
+    transition-property: border, background-color;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+
+#ChallengeInnerCarousel {
+    width: 100%;
+    height: 100%;
+}
+
+#ChallengeCarouselControls {
+    horizontal-align: right;
+    vertical-align: bottom;
+}
+
+.BattlePassHomeCell {
+    box-shadow: #000a 6px 0px 12px;
+}
+
+#WageringWell .InfoIcon {
+    horizontal-align: right;
+    vertical-align: bottom;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    wash-color: accentColor;
+}
+
+#PredictionWell .InfoIcon {
+    horizontal-align: right;
+    vertical-align: bottom;
+    margin: 8px;
+    wash-color: accentColor;
+}
+
+#SubtitleContainer {
+    horizontal-align: center;
+    vertical-align: bottom;
+    margin-bottom: 0px;
+    visibility: collapse;
+}
+
+.PredictButton {
+    margin-top: 135px;
+    horizontal-align: center;
+}
+
+.PredictButton > Label {
+    horizontal-align: center;
+}
+
+#ProCircuitStartText {
+    margin-top: 135px;
+    horizontal-align: center;
+}
+
+.ProCircuitStarted #ProCircuitResetText,
+.ProCircuitComing #ProCircuitStartText,
+    {
+    visibility: visible;
+}
+
+.ProCircuitComing #ProCircuitResetText,
+.ProCircuitStarted #ProCircuitStartText,
+.ProCircuitComing #ProCircuitShow {
+    visibility: collapse;
+}
+
+#ZooContents {
+    padding: 10px;
+    flow-children: right;
+    overflow: scroll squish;
+}
+
+#ZooContents .BattlePassCell {
+    margin-right: 10px;
+    flow-children: down;
+}
+
+#ZooContents .BattlePassCellContents {
+    flow-children: down;
+}
+
+#ButtonsZoo>.BattlePassCellContents>TextButton {
+    margin-bottom: 12px;
+}
+
+.ImageContainer {
+    flow-children: right;
+}
+
+.ImageContainer Label {
+    vertical-align: middle;
+    margin-top: 2px;
+    margin-left: 8px;
+    color: #ccc;
+}
+
+.TestColorContainer {
+    flow-children: right;
+    margin-bottom: 8px;
+}
+
+.TestColorContainer>Label {
+    vertical-align: middle;
+    margin-right: 9px;
+}
+
+#TestColorTextEntry {
+    width: 100px;
+}
+
+#ColorDisplay {
+    flow-children: right;
+}
+
+#TestColorSwatch {
+    height: 100%;
+    width: 80px;
+}
+
+#ColorPreviews {
+    flow-children: down;
+}
+
+.ColorPreview {
+    flow-children: right;
+}
+
+.ColorSwatch {
+    width: 80px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.ColorPreview>Label {
+    color: #ccc;
+    vertical-align: middle;
+    margin-top: 2px;
+    font-size: 16px;
+}
+
+.ImageContainer .DetailsNext {
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+}
+
+.ImageContainer #TitleBackground {
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+}
+
+.ImageContainer #bp_quest_tabletop {
+    background-image: bp_quest_tabletop;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+}
+
+.ImageContainer #bp_quest_scroll_left_texture {
+    background-image: bp_quest_scroll_left_texture;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+}
+
+.ImageContainer #bp_quest_scroll_texture {
+    background-image: bp_quest_scroll_texture;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+}
+
+.ImageContainer #bp_profile_tooltip_max {
+    background-image: bp_profile_tooltip_max;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+}
+
+.ImageContainer #bp_platinum_backer {
+    background-image: bp_platinum_backer;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+}
+
+.ImageContainer #bp_avatar_border_default {
+    background-image: bp_avatar_border_default;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+}
+
+.ImageContainer #bp_avatar_border_max {
+    background-image: bp_avatar_border_max;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+}
+
+.ImageContainer #bp_point_log_tip_received {
+    background-image: bp_point_log_tip_received;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.ImageContainer #bp_point_log_tip_given {
+    background-image: bp_point_log_tip_given;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.ImageContainer #bp_point_log_pass_activated {
+    background-image: bp_point_log_pass_activated;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.ImageContainer #bp_point_log_wager_won {
+    background-image: bp_point_log_wager_won;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.ImageContainer #bp_point_log_prediction_correct {
+    background-image: bp_point_log_prediction_correct;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.ImageContainer #bp_point_log_recycled_item {
+    background-image: bp_point_log_recycled_item;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.ImageContainer #bp_point_log_achievement {
+    background-image: bp_point_log_achievement;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.ImageContainer #bp_point_log_wheel_reward {
+    background-image: bp_point_log_wheel_reward;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.ImageContainer #bp_point_log_community_goal {
+    background-image: bp_point_log_community_goal;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.ImageContainer #bp_point_log_quest_complete {
+    background-image: bp_point_log_quest_complete;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.ImageContainer #bp_point_log_points_consumed {
+    background-image: bp_point_log_points_consumed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.ImageContainer #bp_point_log_won_battlecup {
+    background-image: bp_point_log_won_battlecup;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    wash-color: accentColor;
+}
+
+.EventCrestContainer {
+    flow-children: right;
+}
+
+.EventCrestContainer>Label {
+    vertical-align: middle;
+    color: #ccc;
+    margin-left: 4px;
+}
+
+#EventTiers {
+    flow-children: right;
+    padding-left: 8px;
+    padding-bottom: 8px;
+}
+
+.EventTier {
+    flow-children: down;
+    margin-right: 8px;
+}
+
+.EventTierIcons {
+    flow-children: right;
+}
+
+.EventTierIcons>DOTAEventCrestImage {
+    vertical-align: middle;
+}
+
+.EventTierName {
+    vertical-align: middle;
+}
+
+.EventTierProfileCardBackground {
+    width: 366px;
+    height: 48px;
+    background-size: 100% 100%;
+    ui-scale: 60%;
+}
+
+.EventTierBronze .EventTierProfileCardBackground {
+    background-image: url("s2r://panorama/images/compendium/international2018/compendium/profiletooltip_bronze_png.vtex");
+}
+
+.EventTierSilver .EventTierProfileCardBackground {
+    background-image: url("s2r://panorama/images/compendium/international2018/compendium/profiletooltip_silver_png.vtex");
+}
+
+.EventTierGold .EventTierProfileCardBackground {
+    background-image: url("s2r://panorama/images/compendium/international2018/compendium/profiletooltip_gold_png.vtex");
+}
+
+.EventTierPlatinum .EventTierProfileCardBackground {
+    background-image: bp_platinum_backer;
+}
+
+.EventTierHomeCellBackground {
+    width: 250px;
+    height: 390px;
+    background-size: 100% 100%;
+    horizontal-align: center;
+    margin-top: 8px;
+    ui-scale: 60%;
+}
+
+.EventTierBronze .EventTierHomeCellBackground {
+    background-color: gradient( linear, 100% 90%, 0% 0%, from( bp_color1), to( bp_color2));
+}
+
+.EventTierSilver .EventTierHomeCellBackground {
+    background-image: url("s2r://panorama/images/compendium/international2018/home_block_backgrounds/silver_panel_psd.vtex");
+}
+
+.EventTierGold .EventTierHomeCellBackground {
+    background-image: url("s2r://panorama/images/compendium/international2018/home_block_backgrounds/gold_panel_psd.vtex");
+}
+
+.EventTierPlatinum .EventTierHomeCellBackground {
+    background-image: url("s2r://panorama/images/compendium/international2018/home_block_backgrounds/max_panel_psd.vtex");
+}
+
+.ReportBugsDiscordText
+{
+	text-transform: uppercase;
+	margin-top: 35px;
+	horizontal-align: center;
+	font-weight: thin;
+	font-size: 16px;
+	letter-spacing: 1px;
+	text-align: center;
+	vertical-align: top;
+	text-shadow: 0px 0px 6px 1.0 #000000;
+	padding: 7px 8px 5px 8px;
+
+	color: #ffffffdd;
+
+	transition-property: color;
+	transition-duration: 0.1s;
+	transition-timing-function: linear;	
+}
+
+/* -- Battle Pass Default Button -------------------------------------------- */
+
+.BattlePassButtonNEW
+{
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #A9372E11 ), to( #A9372E11 ) );
+	border: 1px solid #A9372E;
+	transition-property: brightness;
+	transition-duration: 0.2s;
+	transition-timing-function: linear;
+	brightness: 2;
+	
+	align: center center;
+	margin-top: 70px;
+}
+
+.BattlePassButtonNEW:hover
+{
+	brightness: 2;
+}
+
+.BattlePassButtonNEW:active
+{
+	//background-color: gradient( linear, 0% 0%, 0% 100%, from( red ), to( blue ) );
+	border: 1px solid bp_color8;
+
+	sound: "ui_generic_button_click";
+}
+
+.BattlePassButtonNEW Label
+{
+	margin-top: 2px;
+	text-transform: uppercase;
+
+	horizontal-align: center;
+	font-weight: thin;
+	font-size: 14px;
+	letter-spacing: 2px;
+	text-align: center;
+	vertical-align: middle;
+	text-shadow: 0px 0px 6px 1.0 #000000;
+	padding: 7px 8px 5px 8px;
+
+	color: #ffffffdd;
+
+	transition-property: color;
+	transition-duration: 0.1s;
+	transition-timing-function: linear;
+}
+
+.BattlePassButtonNEW:active Label
+{
+	transform: translateY(1px);
+}
+
+.BattlePassButtonNEW:hover Label
+{
+	brightness: 2;
+}
+
+.BattlePassCellTitle
+{
+	height: 30px;
+	background-color: #A9372E11;
+	text-align: center;
+	color: white;
+	font-size: 16px;
+	padding: 6px;
+	letter-spacing: 2.25px;
+	text-transform: uppercase;
+	z-index: 2;
+	text-overflow: shrink;
+	border-bottom: 1px solid #A9372E;
+	border-right: 1px solid #A9372E;
+}

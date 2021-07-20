@@ -136,7 +136,7 @@
 
 .player_has_host_privileges #ShuffleTeamAssignmentButton
 {
-    visibility: visible;
+    visibility: collapse;
 }
 
 #ShuffleTeamAssignmentButton Label
@@ -147,6 +147,7 @@
     margin-left: 5px;
     color: white;
     vertical-align: center;
+	visibility: collapse;
 }
 
 #ShuffleTeamAssignmentButton:hover Label
@@ -198,14 +199,14 @@
 #StartGameCountdownTimer
 {
 	width: 96px;
-	margin-top: 35px;
+	margin-top: 0px;
 	horizontal-align: right;
 	margin-right: 30px;
 }
 
 #TeamSelectTimer
 {
-	margin-top: 8px;
+	margin-top: 9px;
     font-size: 48px;
     color: #CCCCCC;
 	horizontal-align: center;
@@ -367,7 +368,7 @@
 
 .player_has_host_privileges #AutoAssignButton
 {
-    visibility: visible;
+    visibility: collapse;
 }
 
 #AutoAssignButton Label
@@ -378,6 +379,7 @@
     margin-left: 5px;
     color: white;
     vertical-align: center;
+	visibility: collapse;
 }
 
 .unassigned_players #AutoAssignButton:hover Label
