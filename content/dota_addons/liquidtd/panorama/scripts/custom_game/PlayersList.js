@@ -36,7 +36,7 @@ function createPlayerPanel(id, steam_id){
   
   var mmrPanel = $.CreatePanel("Label", playerPanel, "mmr_panel" + id);
   mmrPanel.AddClass("MMRNumber");
-  mmrPanel.text = "MMR: " + "5000";
+  mmrPanel.text = "MMR: " + "TBD";
   
 
   // var heronamepanel = $.CreatePanel("Label", playerPanel, "");
