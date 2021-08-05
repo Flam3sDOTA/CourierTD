@@ -121,6 +121,7 @@ function LiquidTD:InitGameMode()
 	GameRules:SetGoldTickTime(0)
 	GameRules:SetStartingGold(150) -- default 150
 	GameRules:SetGoldPerTick(0)
+	GameRules:SetTimeOfDay(0.751)
 	
 	-- Gamemode Rules
 	local GameMode = GameRules:GetGameModeEntity()

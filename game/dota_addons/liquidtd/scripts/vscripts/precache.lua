@@ -79,6 +79,16 @@ g_ModelPrecache =
 	-- Developer
 	"models/courier/baby_rosh/babyroshan_ti10.vmdl",
 	"models/courier/baby_rosh/babyroshan_ti10_dire.vmdl",
+
+
+	-- Couriers
+	-- Most Games Played
+	"models/courier/juggernaut_dog/juggernaut_dog.vmdl",
+	"models/items/courier/faceless_rex/faceless_rex.vmdl",
+	"models/items/courier/waldi_the_faithful/waldi_the_faithful.vmdl",
+	"models/items/courier/duskie/duskie.vmdl",
+	"models/items/courier/beaverknight/beaverknight.vmdl",
+	"models/items/courier/little_fraid_the_courier_of_simons_retribution/little_fraid_the_courier_of_simons_retribution.vmdl",
 }
 
 g_ParticlePrecache =
@@ -131,6 +141,13 @@ g_ParticlePrecache =
 	"particles/courier_effects/trail_baby_roshan_platinum.vpcf",
 	"particles/econ/courier/courier_roshan_ti8/courier_roshan_ti8.vpcf",
 	"particles/econ/courier/courier_babyroshan_ti10/courier_babyroshan_ti10_ambient.vpcf",
+		-- Most Games Played
+	"particles/econ/courier/courier_trail_04/courier_trail_04.vpcf",
+	"particles/econ/courier/courier_trail_blossoms/courier_trail_blossoms.vpcf",
+	"particles/econ/courier/courier_trail_divine/courier_divine_ambient.vpcf",
+	"particles/econ/courier/courier_trail_hw_2013/courier_trail_hw_2013.vpcf",
+	"particles/econ/courier/courier_trail_orbit/courier_trail_orbit.vpcf",
+	"particles/econ/courier/courier_faceless_rex/cour_rex_flying.vpcf",
 	
 	-- Item Rarity Particles
 	"particles/item_effects/item_tier_1_circle.vpcf",
@@ -188,6 +205,7 @@ g_ParticlePrecache =
 	"particles/econ/items/zeus/zeus_ti8_immortal_arms/zeus_ti8_immortal_arc.vpcf",
 	"particles/econ/items/shadow_fiend/sf_desolation/nvm_atk_blur_dso.vpcf",
 	"particles/econ/items/shadow_fiend/sf_desolation/nvm_atk_blur_b_dso.vpcf",
+	"particles/rain_fx/econ_weather_ash.vpcf",
 }
 
 g_ParticleFolderPrecache =
