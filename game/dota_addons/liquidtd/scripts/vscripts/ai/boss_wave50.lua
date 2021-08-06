@@ -5,10 +5,19 @@ function Spawn(keys)
 	destination_reached = false
     local map = thisEntity.map
     local waypoints = {}
-	local particleName = "particles/creep_effects/spawn_effect.vpcf"
-    local particle = ParticleManager:CreateParticle( particleName, PATTACH_ABSORIGIN_FOLLOW, thisEntity)
-	ParticleManager:SetParticleControl(particle, 0, thisEntity:GetOrigin())
-    ParticleManager:SetParticleControl(particle, 3, thisEntity:GetOrigin())
+	Timers:CreateTimer(0.20, function()
+		local particleName = "particles/econ/events/spring_2021/blink_dagger_spring_2021_start_lvl2.vpcf"
+		local particle = ParticleManager:CreateParticle( particleName, PATTACH_ABSORIGIN_FOLLOW, thisEntity)
+		ParticleManager:SetParticleControl(particle, 0, thisEntity:GetOrigin())
+		ParticleManager:SetParticleControl(particle, 3, thisEntity:GetOrigin())
+	end)
+	
+	Timers:CreateTimer(2, function()
+		local TrailParticleName = "particles/econ/courier/courier_babyroshan_ti10/courier_babyroshan_ti10_ambient.vpcf"
+		local TrailParticle = ParticleManager:CreateParticle( TrailParticleName, PATTACH_ABSORIGIN_FOLLOW, thisEntity)
+		ParticleManager:SetParticleControl(TrailParticle, 0, thisEntity:GetOrigin())
+		ParticleManager:SetParticleControl(TrailParticle, 3, thisEntity:GetOrigin())
+	end)
 	
     for i=1,18 do
       local waypointName = map .. "_goal" .. i

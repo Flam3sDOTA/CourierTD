@@ -141,6 +141,8 @@ g_ParticlePrecache =
 	"particles/courier_effects/trail_baby_roshan_platinum.vpcf",
 	"particles/econ/courier/courier_roshan_ti8/courier_roshan_ti8.vpcf",
 	"particles/econ/courier/courier_babyroshan_ti10/courier_babyroshan_ti10_ambient.vpcf",
+	"particles/econ/courier/courier_babyroshan_winter18/courier_babyroshan_winter18_ambient.vpcf",
+	"particles/econ/courier/courier_babyroshan_ti9/courier_babyroshan_ti9_ambient.vpcf",
 		-- Most Games Played
 	"particles/econ/courier/courier_trail_04/courier_trail_04.vpcf",
 	"particles/econ/courier/courier_trail_blossoms/courier_trail_blossoms.vpcf",
@@ -162,6 +164,8 @@ g_ParticlePrecache =
 	"particles/creep_effects/overhead_normal.vpcf",
 	"particles/creep_effects/overhead_boss.vpcf",
 	"particles/creep_effects/overhead_bonus.vpcf",
+	"particles/econ/events/spring_2021/blink_dagger_spring_2021_start_lvl2.vpcf",
+	"particles/units/heroes/hero_warlock/warlock_fatal_bonds_icon.vpcf",
 	
 	-- Modifier Related
 	"particles/units/heroes/hero_ogre_magi/ogre_magi_multicast.vpcf",

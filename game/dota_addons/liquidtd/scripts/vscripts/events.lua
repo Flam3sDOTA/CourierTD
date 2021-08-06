@@ -139,7 +139,9 @@ function LiquidTD:OnEntityKilled(event)
 	end
 	
 	if killed.nodraw_on_death == true then
-		killed:AddNoDraw()
+		Timers:CreateTimer(0.7, function()
+			killed:AddNoDraw()
+		end)
 	else
 		return
 	end	

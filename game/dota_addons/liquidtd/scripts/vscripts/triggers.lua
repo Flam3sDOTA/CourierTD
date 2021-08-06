@@ -20,7 +20,7 @@ function OnStartTouch(trigger)
 			ability = nil, --Optional.
 			}
 			ApplyDamage(damageTable)
-			SendOverheadEventMessage( hero, OVERHEAD_ALERT_LAST_HIT_MISS , hero, damage, nil )
+			SendOverheadEventMessage( hero, OVERHEAD_ALERT_MISS , hero, damage, nil )
 			-- Check if the health is 0
 			if hero:GetHealth() <= 0 then
 				-- Player is dead.
