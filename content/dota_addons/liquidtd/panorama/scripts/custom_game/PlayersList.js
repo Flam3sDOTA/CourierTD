@@ -38,7 +38,6 @@ function createPlayerPanel(id, steam_id){
   mmrPanel.AddClass("MMRNumber");
   mmrPanel.text = "MMR: " + "TBD";
   
-
   // var heronamepanel = $.CreatePanel("Label", playerPanel, "");
   // heronamepanel.AddClass("HeroName");
   // heronamepanel.text = $.Localize("Rank");
@@ -68,7 +67,7 @@ function updateHealthBar(id) {
   var healthBar = $("#health_bar_" + id);
   healthBar.value = Entities.GetHealthPercent(hero);
   var HealthPercentages = $("#health_percentage_" + id);
-  HealthPercentages.text = Entities.GetHealthPercent(hero) + "%";
+  HealthPercentages.text = Entities.GetHealthPercent(hero) + " / 100";;
   
   var playerPanels = $("#player_panel_" + id);
  

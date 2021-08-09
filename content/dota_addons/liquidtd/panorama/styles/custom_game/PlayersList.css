@@ -26,7 +26,8 @@
 	transition-property: background-image;
 	transition-timing-function: ease-in-out;
 	margin-bottom: 5px;
-	border-top-right-radius: 5px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
 }
 
 .GrayOut
@@ -39,7 +40,8 @@
 	transition-property: background-image;
 	transition-timing-function: ease-in-out;
 	margin-bottom: 5px;
-	border-top-right-radius: 5px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
 }
 
 .UserAvatar
@@ -86,23 +88,30 @@ Label {
   width: 210px;
   height: 27px;  
   margin-left: 0px;
-  border-style: solid;
-  border-width: 0.7px;
-  border-radius: 0px;
-  border-color: #25282acc;
   margin-top: 62px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .PlayerHealth .ProgressBarLeft
 {
-  background-color: gradient( linear, 0% 0%, 0% 100%, from( #320000 ), color-stop( 0.3, green ), color-stop( .5, green ), to( #320000 ) );
-  box-shadow: inset #000 1px 1px 2px 2px;	
-  border-radius: 1px;
+  background-color: gradient( linear, 0% 0%, 0% 100%, from( #425d25 ), color-stop( 0.2, #5ba539cc ), color-stop( .5, #4D9030), to( #425d25) );	
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: #339933c9;
 }
 
 .PlayerHealth .ProgressBarRight
 {
-	background-color: gradient( linear, 0% 0%, 100% 0%, from( #222222FF ), to( black ) );
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #17200d ), color-stop( 0.2, #222e13 ), color-stop( .5, #1e2911), to( #17200d) );
+	border-top-right-radius: 2px;
+  	border-bottom-right-radius: 2px;
+  	border-top-left-radius: 0px;
+  	border-bottom-left-radius: 0px;
 }
 
 .Invisible
@@ -112,11 +121,13 @@ Label {
 
 .HealthPercentage
 {
-	margin-top: 68px;
-	font-size: 15px;
-	horizontal-align: right;
+	font-size: 16px;
+	horizontal-align: center;
 	margin-right: 2px;
+	margin-top: 67px;
+	margin-left: 15px
 	letter-spacing: 2px;
 	text-shadow: 1px 1px 2px 3.0 #000000;
 	color: white;
+	font-family: defaultFont;
 }

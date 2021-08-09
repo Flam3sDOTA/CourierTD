@@ -40,6 +40,28 @@ function OnPatreonCloseButtonPressed() {
 	Game.EmitSound("ui_chat_slide_out")
 }
 
+function WatchButtonClicked()
+{
+	var panel = $("#PlayerDeathInformationPanel");
+	panel.visible = !panel.visible;
+	Game.EmitSound("ui_chat_slide_out")
+}
+
+function RankedSeason0PopupWindowButtonClicked()
+{
+	var panel = $("#RankedSeason0PopupWindow");
+	panel.visible = !panel.visible;
+	Game.EmitSound("ui.profile_close")
+}
+
+function SchedulePopupClose()
+{
+    var panel = $("#RankedSeason0PopupWindow");
+    $.Schedule(10, function () {
+        panel.visible = false;
+    });
+}
+
 function SecondsToClock(seconds) {
   var sec_num = parseInt(seconds, 10);
   var hours   = Math.floor(sec_num / 3600);
@@ -73,4 +95,5 @@ function OnRoundStart(data){
 	GameEvents.Subscribe("error", ErrorMessage);
 	GameEvents.Subscribe("round_started", OnRoundStart);
 	$.GetContextPanel().ToggleClass("Minimized");
+	SchedulePopupClose();
 })();
