@@ -48,8 +48,7 @@
 			<Panel id="Buttons" class="PopupButtonRow" onactivate="RankedSeason0PopupWindowButtonClicked()">
 				<TextButton class="ButtonBevel" text="#DOTA_Continue"/>
 			</Panel>
-
-    </Panel>
+    	</Panel>
 
 		<Panel hittest="false" class="MainCenter">
 			<Label id="Timer" class="Timer" text="00:00:00" />
