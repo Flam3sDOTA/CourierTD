@@ -122,12 +122,13 @@ Label {
 .HealthPercentage
 {
 	font-size: 16px;
-	horizontal-align: center;
 	margin-right: 2px;
-	margin-top: 67px;
+	margin-top: 61px;
 	margin-left: 15px
 	letter-spacing: 2px;
-	text-shadow: 1px 1px 2px 3.0 #000000;
+	width: 65px;
+	align: center center;
+	text-shadow: 1px 1px 2px 3 #000000;
 	color: white;
 	font-family: defaultFont;
 }

@@ -825,15 +825,15 @@ DOTAAvatarImage {
 	border-radius: 5px;
 	align: center center;
 	margin-bottom: 50px;
-    opacity: 1;
-    transform: scale3d(1, 1, 1);
+    opacity: 0; /* Set to 1 later */
+    transform: scale3d(0, 0, 0); /* Set to 1,1,1 later */
     transition-property: opacity, transform;
     transition-duration: 0.3s;
 }
 
 #RankedSeason0PopupWindow.Visible {
-    opacity: 1;
-    transform: scale3d(1, 1, 1);
+    opacity: 0; /* Set to 1,1,1 later */
+    transform: scale3d(0, 0, 0); /* Set to 1,1,1 later */
 }
 
 .Popup687

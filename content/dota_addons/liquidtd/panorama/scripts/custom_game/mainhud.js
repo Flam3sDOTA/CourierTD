@@ -18,18 +18,18 @@ function ClearErrorMessage() {
 	$("#ErrorMessage").text = "";
 }
 
-/* LEADERBOARD */
+/* LEADERBOARD
 function OnLeaderboardOpenButtonPressed() {
 	const panel = $("#LeaderboardsRoot");
 	panel.visible = !panel.visible;
 	Game.EmitSound("ui_chat_slide_out");
-}
+} 
 
 function OnLeaderboardCloseButtonPressed() {
 	const panel = $("#LeaderboardsRoot");
 	panel.visible = !panel.visible;
 	Game.EmitSound("ui.profile_close");
-}
+}*/
 
 function getLeaderboard() {
 	$.AsyncWebRequest(
@@ -160,13 +160,13 @@ function RankedSeason0PopupWindowButtonClicked()
 	Game.EmitSound("ui.profile_close")
 }
 
-function SchedulePopupClose()
-{
-	let panel = $("#RankedSeason0PopupWindow");
-	$.Schedule(10, function () {
-		panel.visible = false;
-	});
-}
+//function SchedulePopupClose()
+//{
+	//let panel = $("#RankedSeason0PopupWindow");
+	//$.Schedule(10, function () {
+		//panel.visible = false;
+	//});
+//}
 
 function SecondsToClock(seconds) {
   var sec_num = parseInt(seconds, 10);
