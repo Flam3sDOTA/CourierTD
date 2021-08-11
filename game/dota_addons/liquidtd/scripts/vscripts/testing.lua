@@ -15,5 +15,12 @@ function LiquidTD:OnScriptReload()
   --     end
   --   )
 
-  -- SaveGamePlayer(player, 1)
+  GetLeaderboard(
+      function(data)
+        DeepPrintTable(data)
+      end,
+      function(data)
+        print("Error fetching leaderboard data")
+      end
+    )
 end

@@ -96,6 +96,15 @@ function LiquidTD:OnConnectFull(keys)
         table.insert(GameRules.GameData.players, playerData)
       end
     )
+
+    GetLeaderboard(
+      function(data)
+        DeepPrintTable(data)
+      end,
+      function(data)
+        print("Error fetching leaderboard data")
+      end
+    )
   end
 end
 

@@ -1,4 +1,7 @@
 "use strict";
+
+const SERVER_URL = "http://138.68.85.26";
+
 GameUI.SetCameraDistance( 1520 );
 
 /* ERROR FRAME */
@@ -17,15 +20,105 @@ function ClearErrorMessage() {
 
 /* LEADERBOARD */
 function OnLeaderboardOpenButtonPressed() {
-	var panel = $("#LeaderboardsRoot");
+	const panel = $("#LeaderboardsRoot");
 	panel.visible = !panel.visible;
-	Game.EmitSound("ui_chat_slide_out")
+	Game.EmitSound("ui_chat_slide_out");
 }
 
 function OnLeaderboardCloseButtonPressed() {
-	var panel = $("#LeaderboardsRoot");
+	const panel = $("#LeaderboardsRoot");
 	panel.visible = !panel.visible;
-	Game.EmitSound("ui.profile_close")
+	Game.EmitSound("ui.profile_close");
+}
+
+function getLeaderboard() {
+	$.AsyncWebRequest(
+		`${SERVER_URL}/api/leaderboard`,
+		{
+			type: 'GET',
+			success: function(data) {
+				createLeaderboardPanels(data);
+			},
+			timeout: 5000,
+		})
+}
+
+function getLocalPlayer() {
+	const steamid = Game.GetPlayerInfo(Players.GetLocalPlayer()).player_steamid;
+	$.AsyncWebRequest(
+		`${SERVER_URL}/api/players/${steamid}`,
+		{
+			type: 'GET',
+			success: function(data) {
+				loadPlayerStats(data);
+			},
+			error: function(err) {
+				showDefaultPlayerStats(err);
+			},
+			timeout: 5000,
+		})
+}
+
+function loadPlayerStats(data) {
+	$("#MMRLocal").text = data.mmr;
+}
+
+function showDefaultPlayerStats(err) {
+	$.Msg(err);
+	// Player was not found
+}
+
+function createLeaderboardPanels(data) {
+	const rootPanel = $("#LeaderboardsRankingContainer");
+
+	rootPanel.RemoveAndDeleteChildren();
+
+	for(let i=0; i<10; i++) {
+		const leaderboardPlayer = data[i];
+		if (leaderboardPlayer) {
+			const steamID = leaderboardPlayer.steam_id;
+			const mmr = leaderboardPlayer.mmr;
+			const username = leaderboardPlayer.username;
+			const index = i+1;
+			const styleIndex = index > 3 ? "" : index;
+			rootPanel.BCreateChildren(`
+				<Panel hittest="false" id="Player${index}Panel" class="Row">
+				<Panel hittest="false" class="NumberContainer${styleIndex}">
+					<Label class="NumberContainerLabel" text="${index}"/>
+				</Panel>
+				<Panel hittest="false" class="SteamAvatarContainer${styleIndex}">
+					<DOTAAvatarImage id="Avatar${index}" class="AvatarImage" steamid="local"/>
+				</Panel>
+				<Panel hittest="false" class="SteamUserNameContainer">
+					<Label text="${username}" id="SteamName${index}" class="UserNameLabelSteam"/>
+				</Panel>
+				<Panel hittest="false" class="MMRContainer">
+					<Label text="${mmr}" id="MMR${index}" class="MMRLabel"/>
+				</Panel>
+			</Panel>
+			`);
+		}
+	}
+
+	const localPlayerName = Players.GetPlayerName(Players.GetLocalPlayer());
+
+	rootPanel.BCreateChildren(`
+		<Panel hittest="false" class="LocalPlayerDivider" />
+			<Panel hittest="false" id="PlayerLocalPanel" class="Row">
+				<Panel hittest="false" class="NumberContainerLocal">
+					<Label class="NumberContainerLabelLocal" text="???"/>
+				</Panel>
+				<Panel hittest="false" class="SteamAvatarContainerLocal">
+					<DOTAAvatarImage id="Avatar" steamid="local"/>
+				</Panel>
+				<Panel hittest="false" class="SteamUserNameContainer">
+					<Label text="${localPlayerName}" id="LocalPlayer" class="UserNameLabelSteam"/>
+				</Panel>
+				<Panel hittest="false" class="MMRContainer">
+					<Label text="1000" id="MMRLocal" class="MMRLabel"/>
+				</Panel>
+			</Panel>
+	`);
 }
 
 function OnShopButtonPressed()
@@ -69,8 +162,11 @@ function OnRoundStart(data){
 
 (function () {
 	GameEvents.Subscribe("game_time_changed", UpdateGameTime);
-    GameEvents.Subscribe("next_round_time_changed", UpdateNextRoundTime);
+	GameEvents.Subscribe("next_round_time_changed", UpdateNextRoundTime);
 	GameEvents.Subscribe("error", ErrorMessage);
 	GameEvents.Subscribe("round_started", OnRoundStart);
 	$.GetContextPanel().ToggleClass("Minimized");
+
+	getLeaderboard();
+	getLocalPlayer();
 })();

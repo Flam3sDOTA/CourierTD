@@ -1,7 +1,7 @@
 local SERVER_URL = (IsInToolsMode() and "http://localhost:3000") or "http://138.68.85.26";
 local SERVER_KEY = "v1";
 
-function SendDataToServer(request_url, data)
+function SendDataToServer(request_url, data, onSuccess, onError)
   print(request_url)
   local raw_json_text = json.encode(data)
   local req = CreateHTTPRequestScriptVM("POST", request_url)
@@ -13,14 +13,20 @@ function SendDataToServer(request_url, data)
     "data",
     raw_json_text
   )
-  DeepPrintTable(req)
   req:Send(function(res)
-    if not res.StatusCode == 201 then
+    local body = json.decode(res.Body)
+
+    if res.StatusCode ~= 201 then
       print("Failed SendGameStatsToServer error: " .. res.StatusCode)
+      if onError then
+        onError(body)
+      end
       return
     end
-    local body = json.decode(res.Body)
-    print(res.Body)
+
+    if onSuccess then
+      onSuccess(body)
+    end
   end)
 end
 
@@ -53,14 +59,24 @@ function SaveGamePlayer(player, place)
   local data = {
     matchID = GameRules.GameData.matchID,
     steamID = tostring(PlayerResource:GetSteamAccountID(playerID)),
+    steamID64 = tostring(PlayerResource:GetSteamID(playerID)),
     username = PlayerResource:GetPlayerName(playerID),
     ranked = IsRanked(),
     place = place,
     rounds = CURRENT_WAVE,
-    players = GameRules.GameData.playerInfo,
+    players = GameRules.GameData.players,
   }
 
-  SendDataToServer(request_url, data)
+  local onSuccess = function(data)
+    local mmrChange = data.mmrChange
+    for _,playerData in pairs(GameRules.GameData.players) do
+      if playerData.playerID == playerID then
+        playerData.mmrChange = mmrChange
+      end
+    end
+  end
+
+  SendDataToServer(request_url, data, onSuccess)
 end
 
 function SaveGameDuration(duration)
@@ -68,12 +84,19 @@ function SaveGameDuration(duration)
   local data = {
     matchID = GameRules.GameData.matchID,
     duration = duration
-  }  
+  }
+
   SendDataToServer(request_url, data)
 end
 
 function GetPlayerDataFromServer(steamID, onSuccess, onError)
   local request_url = SERVER_URL .. "/api/players/" .. steamID
+  GetDataFromServer(request_url, onSuccess, onError)
+end
+
+
+function GetLeaderboard(onSuccess, onError)
+  local request_url = SERVER_URL .. "/api/leaderboard/"
   GetDataFromServer(request_url, onSuccess, onError)
 end
 

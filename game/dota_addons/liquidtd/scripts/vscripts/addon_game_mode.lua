@@ -195,6 +195,9 @@ function LiquidTD:InitGameMode()
 	GameRules.GameData = {}
 	GameRules.GameData.players = {}
 	GameRules.GameData.matchID = tonumber(tostring(GameRules:Script_GetMatchID()))
+	if IsInToolsMode() then
+		GameRules.GameData.matchID = RandomInt(1,9999999)
+	end
 	
 	local count = 0
 	for team,number in pairs(CUSTOM_TEAM_PLAYER_COUNT) do
