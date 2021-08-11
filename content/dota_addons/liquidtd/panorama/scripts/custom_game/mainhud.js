@@ -128,16 +128,51 @@ function OnShopButtonPressed()
 }
 
 function OnPatreonCloseButtonPressed() {
-	var panel = $("#PatreonPopup");
+	let panel = $("#PatreonPopup");
 	panel.visible = !panel.visible;
 	Game.EmitSound("ui_chat_slide_out")
 }
 
+function OnPlayerEliminated(data) {
+	const mmrChange = data.mmr_change;
+	const sign = mmrChange >= 0 ? "+" : "-";
+	const mmrClass = mmrChange >= 0 ? "MMRChangePositive" : "MMRChangeNegative";
+
+	let panel = $("#PlayerDeathInformationPanel");
+	let mmrPanel = $("#PlayerDeathInformationPanelMMRChange");
+	mmrPanel.AddClass(mmrClass);
+
+	mmrPanel.text = `${sign}${mmrChange}`;
+	panel.visible = true;
+}
+
+function WatchButtonClicked()
+{
+	let panel = $("#PlayerDeathInformationPanel");
+	panel.visible = !panel.visible;
+	Game.EmitSound("ui_chat_slide_out")
+}
+
+function RankedSeason0PopupWindowButtonClicked()
+{
+	let panel = $("#RankedSeason0PopupWindow");
+	panel.visible = !panel.visible;
+	Game.EmitSound("ui.profile_close")
+}
+
+function SchedulePopupClose()
+{
+	let panel = $("#RankedSeason0PopupWindow");
+	$.Schedule(10, function () {
+		panel.visible = false;
+	});
+}
+
 function SecondsToClock(seconds) {
-  var sec_num = parseInt(seconds, 10);
-  var hours   = Math.floor(sec_num / 3600);
-  var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
-  var seconds = sec_num - (hours * 3600) - (minutes * 60);
+  const sec_num = parseInt(seconds, 10);
+  const hours   = Math.floor(sec_num / 3600);
+  const minutes = Math.floor((sec_num - (hours * 3600)) / 60);
+  const seconds = sec_num - (hours * 3600) - (minutes * 60);
 
   if (hours   < 10) {hours   = "0"+hours;}
   if (minutes < 10) {minutes = "0"+minutes;}
@@ -165,8 +200,10 @@ function OnRoundStart(data){
 	GameEvents.Subscribe("next_round_time_changed", UpdateNextRoundTime);
 	GameEvents.Subscribe("error", ErrorMessage);
 	GameEvents.Subscribe("round_started", OnRoundStart);
+	GameEvents.Subscribe("player_eliminated", OnPlayerEliminated);
 	$.GetContextPanel().ToggleClass("Minimized");
 
 	getLeaderboard();
 	getLocalPlayer();
+	SchedulePopupClose();
 })();

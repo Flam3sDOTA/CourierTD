@@ -23,6 +23,33 @@
 			<Button id="NewDiscordButton" class="TopLeftMenuButton" onactivate="ExternalBrowserGoToURL('https://discord.gg/WPmtWyB');" onmouseover="UIShowTextTooltip(Join the Discord Server)"  onmouseout="UIHideTextTooltip()" />
 		</Panel>
 
+		<Panel id="PlayerDeathInformationPanel">
+            <Label id="PlayerDeathInformationPanelTitle" text="#Summary" />
+			<Panel class="PlayerDeathInformationPanelTop">
+				<Label id="PlayerDeathInformationPanelMMRTitle" text="MMR Change:" />
+				<Label id="PlayerDeathInformationPanelMMRChange" text="+25" />
+			</Panel>
+            <Panel class="PlayerDeathInformationPanelBottom">
+                <Button id="WatchButton" onactivate="WatchButtonClicked()">
+                    <Label text="#Watch"/>
+                </Button>
+                <Button id="QuitButton" onactivate="DOTAHUDShowDashboard();">
+                    <Label text="#Quit"/>
+                </Button>
+            </Panel>
+        </Panel>
+
+		<Panel hittest="false" id="RankedSeason0PopupWindow">
+			<Panel id="BackgroundImage"/>
+			<Panel id="Contents">
+				<Label id="Title" text="Ranked Season 0 is Live"/>
+				<Label id="Message" text="12 August 2021 - 01 October 2021"/>
+			</Panel>
+			<Panel id="Buttons" class="PopupButtonRow" onactivate="RankedSeason0PopupWindowButtonClicked()">
+				<TextButton class="ButtonBevel" text="#DOTA_Continue"/>
+			</Panel>
+    	</Panel>
+
 		<Panel hittest="false" class="MainCenter">
 			<Label id="Timer" class="Timer" text="00:00:00" />
 			<Label id="RoundNumber" text="Round" />

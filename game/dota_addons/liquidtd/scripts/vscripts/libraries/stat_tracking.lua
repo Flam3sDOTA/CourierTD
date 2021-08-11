@@ -52,7 +52,7 @@ function GetDataFromServer(request_url, onSuccess, onError)
   end)
 end
 
-function SaveGamePlayer(player, place)
+function SaveGamePlayer(player, place, onSuccess)
   local request_url = SERVER_URL .. "/api/games/addGamePlayer"
   local playerID = player:GetPlayerID()
 
@@ -66,16 +66,7 @@ function SaveGamePlayer(player, place)
     rounds = CURRENT_WAVE,
     players = GameRules.GameData.players,
   }
-
-  local onSuccess = function(data)
-    local mmrChange = data.mmrChange
-    for _,playerData in pairs(GameRules.GameData.players) do
-      if playerData.playerID == playerID then
-        playerData.mmrChange = mmrChange
-      end
-    end
-  end
-
+  
   SendDataToServer(request_url, data, onSuccess)
 end
 

@@ -15,12 +15,11 @@ function LiquidTD:OnScriptReload()
   --     end
   --   )
 
-  GetLeaderboard(
-      function(data)
-        DeepPrintTable(data)
-      end,
-      function(data)
-        print("Error fetching leaderboard data")
-      end
-    )
+  CustomGameEventManager:Send_ServerToPlayer(
+        player,
+        "player_eliminated",
+        {
+          mmr_change = 50,
+        }
+      )
 end

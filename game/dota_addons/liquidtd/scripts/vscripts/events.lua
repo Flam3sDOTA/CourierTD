@@ -59,7 +59,6 @@ function LiquidTD:OnEntityHurt(event)
   end
 end
 
-
 ---------------------------------------------------------------------------
 -- Event: OnConnectFull
 ---------------------------------------------------------------------------
@@ -186,6 +185,22 @@ end
 
 function LiquidTD:OnPlayerFinished(player, place)
   if player then
+    local onSuccess = function(data)
+      local mmrChange = data.mmrChange
+      for _,playerData in pairs(GameRules.GameData.players) do
+        if playerData.playerID == playerID then
+          playerData.mmrChange = mmrChange
+        end
+      end
+      CustomGameEventManager:Send_ServerToPlayer(
+        player,
+        "player_eliminated",
+        {
+          mmr_change = 50,
+        }
+      )
+    end
+
     SaveGamePlayer(player, place)
   end
 end
