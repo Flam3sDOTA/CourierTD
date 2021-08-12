@@ -34,9 +34,9 @@ function createPlayerPanel(id, steam_id){
   usernamePanel.AddClass("Username");
   usernamePanel.steamid = steam_id;
   
-  var mmrPanel = $.CreatePanel("Label", playerPanel, "mmr_panel" + id);
-  mmrPanel.AddClass("MMRNumber");
-  mmrPanel.text = "MMR: " + "TBD";
+  // var mmrPanel = $.CreatePanel("Label", playerPanel, "mmr_panel" + id);
+  // mmrPanel.AddClass("MMRNumber");
+  // mmrPanel.text = "MMR: " + "TBD";
   
   // var heronamepanel = $.CreatePanel("Label", playerPanel, "");
   // heronamepanel.AddClass("HeroName");
