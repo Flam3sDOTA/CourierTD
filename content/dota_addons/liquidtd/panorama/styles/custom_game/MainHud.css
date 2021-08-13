@@ -200,44 +200,6 @@
 	margin-left: 465px;
 }
 
-.MainCenter {
-	width: 775px;
-    height: 159px;
-	horizontal-align: center;
-	margin-top: -30px;
-	margin-left: 150px;
-	background-image: url("file://{images}/custom_game/TopUICenternew.png");
-	background-size: 100%;
-	opacity: 1;
-	transition-duration: .05s;
-	transition-property: background-image;
-	transition-timing-function: ease-in-out;
-}
-
-#RoundNumber {
-	margin-top: 30px;
-	margin-left: 80px;
-    horizontal-align: left;
-    vertical-align: top;
-    font-weight: bold;
-    font-size: 29px;
-	color: gradient( linear, 0% 0%, 0% 100%, from( #c88423 ), color-stop( 0.25, #c88423 ), color-stop( 0.5, #fffb84 ), color-stop( 0.75, #c88423 ), to( #9a6717 ) );
-    text-overflow: clip;
-	text-transform: uppercase;
-	
-}
-
-#RoundNumberLabel {
-	margin-top: 54px;
-	margin-left: 116px;
-    horizontal-align: left;
-    vertical-align: top;
-    font-weight: bold;
-    font-size: 32px;
-	color: gradient( linear, 0% 0%, 0% 100%, from( #c88423 ), color-stop( 0.25, #c88423 ), color-stop( 0.5, #fffb84 ), color-stop( 0.75, #c88423 ), to( #9a6717 ) );
-    text-overflow: clip;
-}
-
 .RoundName {
 	margin-top: 35px;
 	margin-left: 230px;
@@ -250,20 +212,6 @@
 	font-weight: bold;
     text-overflow: clip;
 	text-shadow: 2px 2px 2px black;
-}
-
-.RoundNameLabel {
-	margin-top: 34px;
-	margin-left: 316px;
-    horizontal-align: left;
-    vertical-align: top;
-    font-weight: bold;
-    font-size: 20px;
-	border-color: black;
-	font-weight: bold;
-    text-overflow: clip;
-	text-shadow: 2px 2px 2px black;
-	color: gradient( linear, 0% 0%, 0% 100%, from( #c88423 ), color-stop( 0.25, #c88423 ), color-stop( 0.5, #fffb84 ), color-stop( 0.75, #c88423 ), to( #9a6717 ) );
 }
 
 .UnitCount {
@@ -280,49 +228,6 @@
 	text-shadow: 2px 2px 2px black;
 }
 
-.UnitCountLabel {
-	margin-top: 59px;
-	margin-left: 323px;
-    horizontal-align: left;
-    vertical-align: top;
-    font-weight: bold;
-    font-size: 20px;
-	color: gradient( linear, 0% 0%, 0% 100%, from( #c88423 ), color-stop( 0.25, #c88423 ), color-stop( 0.5, #fffb84 ), color-stop( 0.75, #c88423 ), to( #9a6717 ) );
-	border-color: black;
-	font-weight: bold;
-    text-overflow: clip;
-	text-shadow: 2px 2px 2px black;
-}
-
-.NextRound {
-	margin-top: 45px;
-	margin-left: 450px;
-    horizontal-align: left;
-    vertical-align: top;
-    font-weight: bold;
-    font-size: 20px;
-	color: #ffffee;
-	border-color: black;
-	font-weight: bold;
-    text-overflow: clip;
-	text-shadow: 2px 2px 2px black;
-	text-transform: uppercase;
-}
-
-.NextRoundLabel {
-	margin-top: 43px;
-	margin-left: 605px;
-    horizontal-align: left;
-    vertical-align: top;
-    font-weight: bold;
-    font-size: 23px;
-	color: gradient( linear, 0% 0%, 0% 100%, from( #c88423 ), color-stop( 0.25, #c88423 ), color-stop( 0.5, #fffb84 ), color-stop( 0.75, #c88423 ), to( #9a6717 ) );
-	border-color: black;
-	font-weight: bold;
-    text-overflow: clip;
-	text-shadow: 2px 2px 2px black;
-}
-
 #TimeTitleLabel {
 	horizontal-align: left;
 	vertical-align: center;
@@ -332,19 +237,6 @@
 	text-overflow: clip;
 	margin-top: 108px;
 	margin-left: 330px;	
-}
-
-#Timer {
-	horizontal-align: left;
-	vertical-align: center;
-	font-weight: bold;
-	color: white;
-	font-size: 20px;
-	text-shadow: 2px 2px 2px black;
-	text-overflow: clip;
-	margin-top: 112px;
-	margin-left: 354px;		
-	tooltip-position: bottom;
 }
 
 #LeaderboardsRoot {
@@ -905,4 +797,191 @@ DOTAAvatarImage {
 #Buttons TextButton
 {
 	margin-left: 20px;
+}
+
+.TopInformationPanelRoot {
+	width: 500px;
+	height: 90px;
+	align: center top;
+	flow-children: down;
+	margin-top: -1px;
+}
+
+.TopInformatioPanelTop {
+	width: 500px;
+	height: 65px;
+	background-color: gradient( linear, 0% 0%, 3% 100%, color-stop(0.0, #000000e0 ), color-stop(1.0, #000000e0 ) );
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+	border-right: 1px solid #00000088;
+	border-left: 1px solid #4c434677;
+	border-bottom: 1px solid #00000088;
+	box-shadow: fill #00000055 1px 1px 6px 0px;
+	background-size: 100%;
+	background-image: url("file://{images}/custom_game/bg_profile_psd.png");
+}
+
+.TopInformatioPanelTopLeft {
+	horizontal-align: left;
+	width: 27%;
+	height: 100%;
+	flow-children: right;
+}
+
+.TopInformatioPanelTopCenter {
+	horizontal-align: center;
+	margin-right: 66px;
+	width: 32%;
+	height: 100%;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.TopInformatioPanelTopRight {
+	horizontal-align: right;
+	width: 40%;
+	height: 100%;
+}
+
+.TopInformatioPanelBottom {
+	width: 100px;
+	height: 25px;
+	align: center center;
+	background-color: gradient( linear, 0% 0%, 3% 100%, color-stop(0.0, #000000e0 ), color-stop(1.0, #000000e0 ) );
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-right: 1px solid #00000088;
+	border-left: 1px solid #4c434677;
+	border-bottom: 1px solid #00000088;
+	background-size: 100%;
+	box-shadow: fill #00000055 1px 1px 6px 0px;
+	background-size: 100%;
+	background-image: url("file://{images}/custom_game/bg_profile_psd.png");
+}
+
+#Timer {
+	horizontal-align: center;
+	vertical-align: center;
+	font-weight: bold;
+	color: white;
+	font-size: 18px;
+	text-shadow: 1px 1px 2px 3 #000000;
+	text-overflow: clip;	
+	tooltip-position: bottom;
+	margin-top: -1px;
+}
+
+#RoundNumber {
+	margin-left: 19px;
+    align: center center;
+    font-weight: bold;
+    font-size: 22px;
+	color: white;
+	font-family: titleFont;
+	text-shadow: 1px 1px 2px 3 #000000;
+    text-overflow: clip;
+	text-transform: uppercase;
+}
+
+#RoundNumberLabel {
+    align: center center;
+    font-weight: bold;
+    font-size: 22px;
+	color: gradient( linear, 0% 0%, 0% 100%, from( #c88423 ), color-stop( 0.25, #c88423 ), color-stop( 0.5, #fffb84 ), color-stop( 0.75, #c88423 ), to( #9a6717 ) );
+	font-family: titleFont;
+	text-shadow: 1px 1px 2px 3 #000000;
+    text-overflow: clip;
+	margin-right: 1px;
+	text-overflow: shrink;
+}
+
+.TopInformatioPanelTopCenterLeft {
+	width: 38%;
+	height: 100%;
+	horizontal-align: left;
+}
+
+.TopInformatioPanelTopCenterRight {
+	width: 60%;
+	height: 100%;
+	horizontal-align: right;
+}
+
+.RoundNameIcon {
+	width: 24px;
+	height: 24px;
+	margin-top: 5px;
+	margin-left: 30px;
+    horizontal-align: left;
+    vertical-align: top;
+    font-weight: bold;
+	background-image: url("file://{images}/custom_game/icons/RoundNameIcon.png");
+    background-size: 100%;
+	tooltip-position: bottom;
+}
+
+.UnitCountIcon {
+	width: 24px;
+	height: 24px;
+	margin-bottom: 5px;
+	margin-left: 30px;
+    horizontal-align: left;
+    vertical-align: bottom;
+    font-weight: bold;
+	background-image: url("file://{images}/custom_game/icons/UnitCountIcon.png");
+    background-size: 100%;
+	tooltip-position: bottom;
+}
+
+.RoundNameLabel {
+	margin-top: 5px;
+    horizontal-align: left;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 20px;
+	border-color: black;
+	font-weight: bold;
+    text-overflow: clip;
+	text-shadow: 2px 2px 2px black;
+	color: white;
+}
+
+.UnitCountLabel {
+	margin-bottom: 5px;
+    horizontal-align: left;
+    vertical-align: bottom;
+    font-weight: bold;
+    font-size: 20px;
+	color: white;
+	border-color: black;
+	font-weight: bold;
+    text-overflow: clip;
+	text-shadow: 2px 2px 2px black;
+}
+
+.NextRound {
+	margin-top: 7px;
+    horizontal-align: center;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 20px;
+	color: white;
+	border-color: black;
+	font-weight: bold;
+    text-overflow: clip;
+	text-shadow: 2px 2px 2px black;
+	text-transform: uppercase;
+}
+
+.NextRoundLabel {
+	margin-bottom: 7px;
+    horizontal-align: center;
+    vertical-align: bottom;
+    font-weight: bold;
+    font-size: 23px;
+	color: gradient( linear, 0% 0%, 0% 100%, from( #c88423 ), color-stop( 0.25, #c88423 ), color-stop( 0.5, #fffb84 ), color-stop( 0.75, #c88423 ), to( #9a6717 ) );
+	border-color: black;
+	font-weight: bold;
+    text-overflow: clip;
+	text-shadow: 2px 2px 2px black;
 }

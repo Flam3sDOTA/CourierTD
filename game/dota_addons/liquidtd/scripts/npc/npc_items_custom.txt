@@ -503,7 +503,7 @@
 			{
 				"Passive" 				"1" 
 				"IsHidden" 				"1"
-				"Attributes" 			"MODIFIER_ATTRIBUTE_NONE" //This makes duplicate items stack their properties
+				"Attributes" 			"MODIFIER_ATTRIBUTE_NONE" //This makes duplicate items not stack their properties
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"			"%bonus_mana_regen"
@@ -2323,7 +2323,7 @@
 			{
 				"Passive" 				"1" 
 				"IsHidden" 				"1"
-				"Attributes" 			"MODIFIER_ATTRIBUTE_MULTIPLE" //This makes duplicate items stack their properties
+				"Attributes" 			"MODIFIER_ATTRIBUTE_NONE" //This makes duplicate items not stack their properties
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"			"%bonus_attack_speed"

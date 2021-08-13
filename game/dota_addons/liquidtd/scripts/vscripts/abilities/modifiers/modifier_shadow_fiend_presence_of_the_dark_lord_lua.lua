@@ -9,9 +9,6 @@ function modifier_shadow_fiend_presence_of_the_dark_lord_lua:IsHidden()
 	return self:GetParent()==self:GetAbility():GetCaster()
 end
 
-function modifier_shadow_fiend_presence_of_the_dark_lord_lua:GetAttributes()
-	return MODIFIER_ATTRIBUTE_MULTIPLE
-end
 --------------------------------------------------------------------------------
 
 function modifier_shadow_fiend_presence_of_the_dark_lord_lua:IsAura()

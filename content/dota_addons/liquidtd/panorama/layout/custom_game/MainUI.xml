@@ -50,19 +50,30 @@
 			</Panel>
     	</Panel>
 
-		<Panel hittest="false" class="MainCenter">
-			<Label id="Timer" class="Timer" text="00:00:00" />
-			<Label id="RoundNumber" text="Round" />
-			<Label id="RoundNumberLabel" text="1" />
-			
-			<Label id="RoundName" class="RoundName" text="Unit Type:" />
-			<Label id="RoundNameLabel" class="RoundNameLabel" text="Normal" />
-			
-			<Label id="UnitCount" class="UnitCount" text="Unit Count:" />
-			<Label id="UnitCountLabel" class="UnitCountLabel" text="40" />
-			
-			<Label id="NextRound" class="NextRound" text="Next Round in:" />
-			<Label id="NextRoundLabel" class="NextRoundLabel" text="00:29" />
+		<Panel hittest="false" class="TopInformationPanelRoot">
+			<Panel hittest="false" class="TopInformatioPanelTop">
+				<Panel hittest="false" class="TopInformatioPanelTopLeft">
+					<Label id="RoundNumber" text="#Wave" />
+					<Label id="RoundNumberLabel" text="1" />
+				</Panel>
+				<Panel hittest="false" class="TopInformatioPanelTopCenter">
+					<Panel hittest="false" class="TopInformatioPanelTopCenterLeft">
+						<Panel class="RoundNameIcon" onmouseover="UIShowTextTooltip('Unity Type')"  onmouseout="UIHideTextTooltip()"/>
+						<Panel class="UnitCountIcon" onmouseover="UIShowTextTooltip('Unit Count')"  onmouseout="UIHideTextTooltip()"/>
+					</Panel>
+					<Panel hittest="false" class="TopInformatioPanelTopCenterRight">
+						<Label id="RoundNameLabel" class="RoundNameLabel" text="Normal" />
+						<Label id="UnitCountLabel" class="UnitCountLabel" text="40x" />
+					</Panel>
+				</Panel>
+				<Panel hittest="false" class="TopInformatioPanelTopRight">
+					<Label id="NextRound" class="NextRound" text="Next Round in:" />
+					<Label id="NextRoundLabel" class="NextRoundLabel" text="00:29" />
+				</Panel>
+			</Panel>
+			<Panel hittest="false" class="TopInformatioPanelBottom">
+				<Label id="Timer" class="Timer" text="00:00:00" />
+			</Panel>
 		</Panel>
 		
 		<Panel hittest="false" id="LeaderboardsRoot">
