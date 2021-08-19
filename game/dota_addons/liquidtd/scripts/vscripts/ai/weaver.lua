@@ -6,10 +6,10 @@ function Spawn( entityKeyValues )
     if IsServer() == false then
         return
     end
-    thisEntity:SetContextThink( "MedusaThink", MedusaThink, .1 )
+    thisEntity:SetContextThink( "WeaverThink", WeaverThink, .1 )
 end
 
-function MedusaThink()
+function WeaverThink()
     if GameRules:IsGamePaused() or GameRules:State_Get() == DOTA_GAMERULES_STATE_POST_GAME or not thisEntity:IsAlive() then
         return
     end

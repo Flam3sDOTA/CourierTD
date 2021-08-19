@@ -7130,7 +7130,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"MaxLevel"						"1"
 		
-		"AbilityCooldown"				"3"
+		"AbilityCooldown"				"4"
 			
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -7342,4 +7342,5 @@
 			}
 		}
 	}
+
 }

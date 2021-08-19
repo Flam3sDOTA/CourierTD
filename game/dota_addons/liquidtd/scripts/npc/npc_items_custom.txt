@@ -1014,7 +1014,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"cooldown_reduction"			"3"
+				"cooldown_reduction"		"15"
 			}
 		}
 		"Modifiers"
@@ -1026,7 +1026,7 @@
 				"Attributes" 			"MODIFIER_ATTRIBUTE_NONE"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_COOLDOWN_REDUCTION_CONSTANT"	"%cooldown_reduction"
+					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"%cooldown_reduction"
 				}
 			}
 		}			
@@ -1955,7 +1955,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"cooldown_reduction"		"6"
+				"cooldown_reduction"		"25"
 			}
 		}
 		"Modifiers"
@@ -1967,7 +1967,7 @@
 				"Attributes" 			"MODIFIER_ATTRIBUTE_NONE"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_COOLDOWN_REDUCTION_CONSTANT"	"%cooldown_reduction"
+					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"%cooldown_reduction"
 				}
 			}
 		}			
