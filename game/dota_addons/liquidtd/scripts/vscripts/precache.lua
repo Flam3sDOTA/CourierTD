@@ -136,6 +136,7 @@ g_ParticlePrecache =
 	"particles/units/heroes/hero_lone_druid/lone_druid_base_attack.vpcf",
 	"particles/units/heroes/hero_medusa/medusa_base_attack.vpcf",
 	"particles/econ/events/ti9/rock_golem_tower/radiant_tower_attack.vpcf",
+	"particles/units/heroes/hero_invoker_kid/invoker_kid_base_attack_exort.vpcf",
 	
 	-- Hero/Courier Particles
 	"particles/courier_effects/trail_baby_roshan_platinum.vpcf",
@@ -326,6 +327,7 @@ g_SoundPrecache =
 	"soundevents/voscripts/game_sounds_vo_broodmother.vsndevts",
 	"soundevents/voscripts/game_sounds_vo_invoker.vsndevts",
 	"soundevents/voscripts/game_sounds_vo_nevermore.vsndevts",
+	"soundevents/voscripts/game_sounds_vo_alchemist.vsndevts",
 	
 	-- Announcers
 	"soundevents/voscripts/game_sounds_vo_announcer_dlc_bastion.vsndevts",

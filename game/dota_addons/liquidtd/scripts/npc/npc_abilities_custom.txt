@@ -265,6 +265,183 @@
 	}		
 	
 	//============================================================
+	// Build Tower: Gold
+	//============================================================
+	"build_tower_gold"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "tower_gold"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"UnitName"                      "tower_gold_1"
+		"OverrideBuildingGhost"         "tower_gold_1"
+		"AbilityGoldCost"               "500"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"        "mechanics/builder.lua"
+				"Function"          "Build"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "150"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"750"
+			}
+		}
+	}
+
+	//============================================================
+	// Upgrade to Gold Tower 2
+	//============================================================
+	"upgrade_tower_gold_2"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "tower_gold"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "750"
+		"AbilityChannelTime"			"4"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeNormalTower2"
+				"tower"			"tower_gold_2"
+			}
+		}
+		"OnChannelSucceeded"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_gold_2"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
+				"tower"			"tower_gold_2"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "225"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "1"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"750"
+			}
+		}
+	}
+
+	//============================================================
+	// Upgrade to Gold Tower 3
+	//============================================================
+	"upgrade_tower_gold_3"
+	{
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"                      "1"
+		"LevelsBetweenUpgrades"         "0"
+		"AbilityTextureName"            "tower_gold"
+		"Building"                      "1"
+		"AbilityCastRange"              "260"
+		"Scale"                         "3"
+		"PlayerCanControl"              "1"
+		"AbilityGoldCost"               "950"
+		"AbilityChannelTime"			"5"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeNormalTower3"
+				"tower"			"tower_gold_3"
+			}
+		}
+		"OnChannelSucceeded"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"UpgradeTower"
+				"tower"			"tower_gold_3"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"TARGET"		"CASTER"
+				"ScriptFile"	"mechanics/upgrades.lua"
+				"Function"		"RefundTower"
+				"tower"			"tower_gold_3"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    					 "FIELD_INTEGER"
+				"ATTACK_DAMAGE_TOOLTIP"    		 "350"
+			}
+			"02"
+			{
+				"var_type"    					 "FIELD_FLOAT"
+				"ATTACK_SPEED_TOOLTIP"     		 "0.9"
+			}
+			"03"
+			{
+				"var_type"    					"FIELD_INTEGER"
+				"ATTACK_RANGE_TOOLTIP"     		"750"
+			}
+		}
+	}
+	
+	//============================================================
 	// Build Tower: Utility
 	//============================================================
 	"build_tower_utility"
@@ -3612,6 +3789,7 @@
 			}
 		}
 	}
+	
 	
 	// Rewrite of the Venomancer Poison Sting ability
 	// Author: Pizzalol and Rook
@@ -7339,6 +7517,68 @@
 			{
 				"var_type"						"FIELD_INTEGER"
 				"presence_radius"				"800"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Alchemist: Greevil's Greed (Lua version)
+	// Credits: https://github.com/Elfansoer/dota-2-lua-abilities/tree/master/scripts/vscripts/lua_abilities/alchemist_greevils_greed_lua
+	//=================================================================================================================
+	"alchemist_greevils_greed_lua"
+	{
+		// Ability Technical Aspect
+		// base script folder	: scripts/vscripts
+		// base texture folder	: resource/flash3/images/spellicons
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/alchemist_greevils_greed_lua"
+		"AbilityTextureName"			"tower_gold_greevil"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"3"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_alchemist.vsndevts"
+			"particle"	"particles/units/heroes/hero_alchemist/alchemist_lasthit_coins.vpcf"
+			"particle"	"particles/units/heroes/hero_alchemist/alchemist_lasthit_msg_gold.vpcf"
+		}
+		
+		// Ability General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Ability Casting
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Ability Resource
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"10"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_gold"			"2"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_bonus_gold"		"2"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_gold_cap"		"6 10 14"
 			}
 		}
 	}

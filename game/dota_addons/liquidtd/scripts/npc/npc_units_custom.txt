@@ -2405,7 +2405,7 @@
 		"Level"                     "100"
 		"Cost"                      "100"
 		"TotalCost"                 "100"
-		"BuildTime"                 "0.3"
+		"BuildTime"                 "1.5"
 		"ScriptClass"               "BasicTower"
 		"TowerType"                 "Normal"
 		"BuffPriority"              "11"
@@ -2483,7 +2483,7 @@
 		"Level"                     "75"
 		"Cost"                      "75"
 		"TotalCost"                 "75"
-		"BuildTime"                 "0.3"
+		"BuildTime"                 "1.5"
 		"ScriptClass"               "BasicTower"
 		"TowerType"                 "Normal"
 		"BuffPriority"              "11"
@@ -2562,7 +2562,7 @@
 		"Level"                     "50"
 		"Cost"                      "50"
 		"TotalCost"                 "50"
-		"BuildTime"                 "0.3"
+		"BuildTime"                 "1.5"
 		"ScriptClass"               "BasicTower"
 		"TowerType"                 "Normal"
 		"BuffPriority"              "11"
@@ -2605,6 +2605,284 @@
 		"ConstructionSize"          "2"
 		"BlockPathingSize"          "0"
 	}
+
+	//============================================================
+	// Tower: Gold
+	//============================================================
+	"tower_gold_1"
+	{
+		// Visual
+		//-----------------------------
+		"Model"                     "models/heroes/alchemist/alchemist.vmdl"
+		"ModelScale"                "0.8"
+		"ModelRotation"             "180"
+		"ModelOffset"               "1"
+		"PedestalModel"             "models/development/invisiblebox.vmdl"
+		"PedestalModelScale"        "0.5"
+		"PedestalOffset"            "5"
+		"SoundSet"                  ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
+		"GameSoundsFile"    		""
+		"vscripts"                  "ai/alchemist.lua"
+
+		// Stats
+		//----------------------------- 
+		"AttackDamageMin"           "150"
+		"AttackDamageMax"           "150"
+		"Damage"                    "150" 
+		"AttackRange"               "750"
+		"AttackAcquisitionRange"    "750"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.350000"
+		"ProjectileSpeed"           "1500"
+		"ProjectileModel"           "particles/units/heroes/hero_invoker_kid/invoker_kid_base_attack_exort.vpcf"
+
+		"Level"                     "500"
+		"Cost"                      "500"
+		"TotalCost"                 "500"
+		"BuildTime"                 "2"
+		"ScriptClass"               "BasicTower"
+		"TowerType"                 "Normal"
+		"BuffPriority"              "11"
+		
+		// General
+		//-----------------------------
+		"BaseClass"                 "npc_dota_creature"
+		"ArmorPhysical"             "0"
+		"MagicalResistance"         "0"
+		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
+		"TeamName"                  "DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"VisionDaytimeRange"        "1900"
+		"VisionNighttimeRange"      "1900"  
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+		"ProjectileCollisionSize"   "50"
+		"RingRadius"                "80"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"             "0"
+		"MovementTurnRate"          "1.0"
+		"StatusHealth"              "175"
+		"StatusHealthRegen"         "0"
+		"StatusMana"                "0"
+		"StatusManaRegen"           "0"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		
+		"Ability1"					"upgrade_tower_gold_2"
+		"Ability2"					"sell_tower"
+		"Ability3"					"alchemist_greevils_greed_lua"
+		"Ability4"					"tower_invulnerable"
+
+		// Building Size
+		"ConstructionSize"          "2"
+		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "117" } // Back
+				"2"  { "ItemDef" "118" } // Weapon
+				"3"  { "ItemDef" "119" } // Armor
+				"4"  { "ItemDef" "120" } // Arms
+				"5"  { "ItemDef" "121" } // Neck
+				"6"  { "ItemDef" "122" } // Offhand
+				"7"  { "ItemDef" "123" } // Head
+				"8"  { "ItemDef" "124" } // Body-Head
+				"9"  { "ItemDef" "125" } // Shoulder
+			}
+		}
+	}
+
+	//============================================================
+	// Tower: Gold
+	//============================================================
+	"tower_gold_2"
+	{
+		// Visual
+		//-----------------------------
+		"Model"                     "models/heroes/alchemist/alchemist.vmdl"
+		"ModelScale"                "0.8"
+		"ModelRotation"             "180"
+		"ModelOffset"               "1"
+		"PedestalModel"             "models/development/invisiblebox.vmdl"
+		"PedestalModelScale"        "0.5"
+		"PedestalOffset"            "5"
+		"SoundSet"                  ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
+		"GameSoundsFile"    		""
+		"vscripts"                  "ai/alchemist.lua"
+
+		// Stats
+		//----------------------------- 
+		"AttackDamageMin"           "225"
+		"AttackDamageMax"           "225"
+		"Damage"                    "225" 
+		"AttackRange"               "750"
+		"AttackAcquisitionRange"    "750"
+		"AttackRate"                "1"
+		"AttackAnimationPoint"		"0.350000"
+		"ProjectileSpeed"           "1500"
+		"ProjectileModel"           "particles/units/heroes/hero_invoker_kid/invoker_kid_base_attack_exort.vpcf"
+
+		"Level"                     "750"
+		"Cost"                      "750"
+		"TotalCost"                 "750"
+		"BuildTime"                 "2"
+		"ScriptClass"               "BasicTower"
+		"TowerType"                 "Normal"
+		"BuffPriority"              "11"
+		
+		// General
+		//-----------------------------
+		"BaseClass"                 "npc_dota_creature"
+		"ArmorPhysical"             "0"
+		"MagicalResistance"         "0"
+		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
+		"TeamName"                  "DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"VisionDaytimeRange"        "1900"
+		"VisionNighttimeRange"      "1900"  
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+		"ProjectileCollisionSize"   "50"
+		"RingRadius"                "80"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"             "0"
+		"MovementTurnRate"          "1.0"
+		"StatusHealth"              "175"
+		"StatusHealthRegen"         "0"
+		"StatusMana"                "0"
+		"StatusManaRegen"           "0"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		
+		"Ability1"					"upgrade_tower_gold_3"
+		"Ability2"					"sell_tower"
+		"Ability3"					"alchemist_greevils_greed_lua"
+		"Ability4"					"tower_invulnerable"
+
+		// Building Size
+		"ConstructionSize"          "2"
+		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "6118" } // Back
+				"2"  { "ItemDef" "6123" } // Weapon
+				"3"  { "ItemDef" "6121" } // Armor
+				"4"  { "ItemDef" "6117" } // Arms
+				"5"  { "ItemDef" "6119" } // Neck
+				"6"  { "ItemDef" "6120" } // Offhand
+				"7"  { "ItemDef" "123" } // Head
+				"8"  { "ItemDef" "124" } // Body-Head
+				"9"  { "ItemDef" "6122" } // Shoulder
+			}
+		}
+	}
+
+	//============================================================
+	// Tower: Gold
+	//============================================================
+	"tower_gold_3"
+	{
+		// Visual
+		//-----------------------------
+		"Model"                     "models/heroes/alchemist/alchemist.vmdl"
+		"ModelScale"                "0.8"
+		"ModelRotation"             "180"
+		"ModelOffset"               "1"
+		"PedestalModel"             "models/development/invisiblebox.vmdl"
+		"PedestalModelScale"        "0.5"
+		"PedestalOffset"            "5"
+		"SoundSet"                  ""
+		"MinimapIconSize"           "1"
+		"MinimapIcon"				"minimap_racks90"
+		"GameSoundsFile"    		""
+		"vscripts"                  "ai/alchemist.lua"
+
+		// Stats
+		//----------------------------- 
+		"AttackDamageMin"           "350"
+		"AttackDamageMax"           "350"
+		"Damage"                    "350" 
+		"AttackRange"               "750"
+		"AttackAcquisitionRange"    "750"
+		"AttackRate"                "0.9"
+		"AttackAnimationPoint"		"0.350000"
+		"ProjectileSpeed"           "1500"
+		"ProjectileModel"           "particles/units/heroes/hero_invoker_kid/invoker_kid_base_attack_exort.vpcf"
+
+		"Level"                     "950"
+		"Cost"                      "950"
+		"TotalCost"                 "950"
+		"BuildTime"                 "2"
+		"ScriptClass"               "BasicTower"
+		"TowerType"                 "Normal"
+		"BuffPriority"              "11"
+		
+		// General
+		//-----------------------------
+		"BaseClass"                 "npc_dota_creature"
+		"ArmorPhysical"             "0"
+		"MagicalResistance"         "0"
+		"BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
+		"TeamName"                  "DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"     	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" 	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"VisionDaytimeRange"        "1900"
+		"VisionNighttimeRange"      "1900"  
+		"AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+		"ProjectileCollisionSize"   "50"
+		"RingRadius"                "80"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"             "0"
+		"MovementTurnRate"          "1.0"
+		"StatusHealth"              "175"
+		"StatusHealthRegen"         "0"
+		"StatusMana"                "0"
+		"StatusManaRegen"           "0"
+		"StatusStartingMana"		"0"
+		"HealthBarOffset"       	"230"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		
+		"Ability1"					"sell_tower"
+		"Ability2"					"alchemist_greevils_greed_lua"
+		"Ability3"					"tower_invulnerable"
+
+		// Building Size
+		"ConstructionSize"          "2"
+		"BlockPathingSize"          "0"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"1"  { "ItemDef" "8530" } // Back
+				"2"  { "ItemDef" "8529" } // Weapon
+				"3"  { "ItemDef" "8532" } // Armor
+				"4"  { "ItemDef" "8518" } // Arms
+				"5"  { "ItemDef" "8533" } // Neck
+				"6"  { "ItemDef" "8528" } // Offhand
+				"7"  { "ItemDef" "123" } // Head
+				"8"  { "ItemDef" "124" } // Body-Head
+				"9"  { "ItemDef" "8531" } // Shoulder
+			}
+		}
+	}
 	
 	//============================================================
 	// Tower: Utility
@@ -2641,7 +2919,7 @@
 		"Level"                     "250"
 		"Cost"                      "250"
 		"TotalCost"                 "250"
-		"BuildTime"                 "0.3"
+		"BuildTime"                 "3"
 		"ScriptClass"               "BasicTower"
 		"TowerType"                 "Normal"
 		"BuffPriority"              "11"

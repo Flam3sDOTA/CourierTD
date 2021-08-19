@@ -26,6 +26,7 @@ function LiquidTD:OnHeroInGame(hero)
     "build_tower_arrow",
     "build_tower_poison",
     "build_tower_ice",
+    "build_tower_gold",
     "build_tower_utility"
   }
 

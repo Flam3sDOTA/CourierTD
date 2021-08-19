@@ -511,6 +511,32 @@ return {
       tower_ice_slow = 1
     },
   },
+
+  tower_gold_1 = {
+    level = 1,
+    tier = 1, 
+	abilities = {
+    alchemist_greevils_greed_lua = 1
+    },
+  },
+
+  tower_gold_2 = {
+    level = 2,
+    tier = 1, 
+    spawn_sound = "frostivus_ui_select", 
+	abilities = {
+    alchemist_greevils_greed_lua = 2
+    },
+  },
+
+  tower_gold_3 = {
+    level = 3,
+    tier = 1, 
+    spawn_sound = "frostivus_ui_select", 
+	abilities = {
+    alchemist_greevils_greed_lua = 3
+    },
+  },
   
   tower_utility = {
     is_farm = true,
