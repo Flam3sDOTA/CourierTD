@@ -151,6 +151,7 @@ g_ParticlePrecache =
 	"particles/econ/courier/courier_trail_hw_2013/courier_trail_hw_2013.vpcf",
 	"particles/econ/courier/courier_trail_orbit/courier_trail_orbit.vpcf",
 	"particles/econ/courier/courier_faceless_rex/cour_rex_flying.vpcf",
+	"particles/econ/courier/courier_minipudge/courier_minipudge_ambient.vpcf",
 	
 	-- Item Rarity Particles
 	"particles/item_effects/item_tier_1_circle.vpcf",

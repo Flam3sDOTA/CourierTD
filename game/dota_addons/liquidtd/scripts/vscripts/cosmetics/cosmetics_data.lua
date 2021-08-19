@@ -65,5 +65,11 @@ return {
     particle = nil,
     material_group = nil,
   },
+
+  [331105348] = { -- Most Games Played - KDen
+    model = "models/courier/minipudge/minipudge.vmdl",
+    particle = "particles/econ/courier/courier_minipudge/courier_minipudge_ambient.vpcf",
+    material_group = "0",
+  },
   
 }

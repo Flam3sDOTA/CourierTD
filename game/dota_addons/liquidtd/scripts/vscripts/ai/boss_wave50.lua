@@ -19,7 +19,7 @@ function Spawn(keys)
 		ParticleManager:SetParticleControl(TrailParticle, 3, thisEntity:GetOrigin())
 	end)
 	
-    for i=1,18 do
+    for i=1,17 do
       local waypointName = map .. "_goal" .. i
       local waypoint = Entities:FindByName(nil, waypointName)
 	  table.insert(waypoints, waypoint)
